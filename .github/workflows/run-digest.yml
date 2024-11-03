@@ -1,0 +1,37 @@
+name: Update GitHub Pages with Daily Digest
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 0 * * *"
+
+jobs:
+  update-gh-pages:
+    runs-on: macos-latest # Uses the macOS runner (emulated on x86, compatible with Apple Silicon)
+
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v2
+
+      - name: Install Rosetta 2 (for Apple Silicon Macs)
+        if: runner.os == 'macOS'
+        run: |
+          softwareupdate --install-rosetta --agree-to-license || echo "Rosetta already installed"
+
+      - name: Configure Git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Run rdigest refresh
+        run: |
+          chmod +x ./rdigest
+          ./rdigest refresh
+
+      - name: Commit and push changes
+        run: |
+          git add .
+          git commit -m "Update daily digest"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
