@@ -1,0 +1,138 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = true;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">October 26, 2024</span>:</h1>
+  <p class="summary">There are 69 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (6)</summary><ul><a class="li" href="https://fgiesen.wordpress.com/2024/10/26/why-those-particular-integer-multiplies/"><li><div class="title">Why those particular integer multiplies?</div><div class="domain">fgiesen.wordpress.com &bull; October 26, 2024</div></li></a><a class="li" href="https://en.wikipedia.org/wiki/EICAR_test_file"><li><div class="title">EICAR test file: a string that can trigger anti-virus</div><div class="domain">en.wikipedia.org &bull; October 26, 2024</div></li></a><a class="li" href="https://blog.podman.io/2024/10/podman-5-3-changes-for-improved-networking-experience-with-pasta/"><li><div class="title">Podman 5.3 changes for improved networking experience with pasta</div><div class="domain">blog.podman.io &bull; October 26, 2024</div></li></a><a class="li" href="https://lwn.net/SubscriberLink/994334/5e1f97f08916b494/"><li><div class="title">Toward safe transmutation in Rust</div><div class="domain">lwn.net &bull; October 26, 2024</div></li></a><a class="li" href="https://blog.apnic.net/2022/12/02/improving-sshs-security-with-sshfp-dns-records/"><li><div class="title">Improving SSH's security with SSHFP DNS records (2022)</div><div class="domain">blog.apnic.net &bull; October 26, 2024</div></li></a><a class="li" href="https://naildrivin5.com/blog/2024/10/10/a-simple-explanation-of-postgres-timestamp-with-time-zone.html"><li><div class="title">A Simple Explanation of Postgres' Timestamp with Time Zone</div><div class="domain">naildrivin5.com &bull; October 26, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (10)</summary><ul><a class="li" href="https://laforge.gnumonks.org/blog/20241025-linux-maintainers-russian/"><li><div class="title">On Linux MAINTAINERS file removal of Russian developers</div><div class="domain">laforge.gnumonks.org &bull; October 26, 2024</div></li></a><a class="li" href="https://pen.org/press-release/cancellation-of-naval-academy-lecture-by-ruth-ben-ghiat-at-behest-of-republican-politicians-threatens-institutional-autonomy/"><li><div class="title">Cancellation of Naval Academy Lecture by Ruth Ben-Ghiat Threatens Inst. Autonomy</div><div class="domain">pen.org &bull; October 26, 2024</div></li></a><a class="li" href="https://linderud.dev/blog/nixos-is-not-reproducible/"><li><div class="title">NixOS Is Not Reproducible</div><div class="domain">linderud.dev &bull; October 26, 2024</div></li></a><a class="li" href="https://beige.party/@possibledog/113367977656537478"><li><div class="title">Bluesky Is Not Decentralized</div><div class="domain">beige.party &bull; October 26, 2024</div></li></a><a class="li" href="https://gizmodo.com/feds-say-you-dont-have-a-right-to-check-out-retro-video-games-like-library-books-2000516767"><li><div class="title">Feds: You Don't Have a Right to Check Out Retro Video Games Like Library Books</div><div class="domain">gizmodo.com &bull; October 26, 2024</div></li></a><a class="li" href="https://lwn.net/SubscriberLink/995159/a37fb9817a00ebcb/"><li><div class="title">OSI readies controversial open-source AI definition</div><div class="domain">lwn.net &bull; October 26, 2024</div></li></a><a class="li" href="https://foreignpolicy.com/2024/10/25/senegal-cryptocurrency-akon-city-akoin/"><li><div class="title">Akon's Cryptocurrency City in Senegal Has Evaporated</div><div class="domain">foreignpolicy.com &bull; October 26, 2024</div></li></a><a class="li" href="https://github.com/dim0x69/mdx"><li><div class="title">Mdx – Execute Your Markdown Code Blocks, Now in Go</div><div class="domain">github.com &bull; October 26, 2024</div></li></a><a class="li" href="https://www.youtube.com/watch?v=SioCwvR_PYY"><li><div class="title">How can this 6 axis robot have a static accuracy of 0.05 mm? (2021) [video]</div><div class="domain">youtube.com &bull; October 26, 2024</div></li></a><a class="li" href="https://tristanrhodes.com/blog/Adventures-in-Algorithmic-Trading-on-the-Runescape-Grand-Exchange"><li><div class="title">Adventures in algorithmic trading on the Runescape Grand Exchange</div><div class="domain">tristanrhodes.com &bull; October 26, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Seth's Blog (seths.blog)</h2> (1)</summary><ul><a class="li" href="https://seths.blog/2024/10/boring-to-who/"><li><div class="title">Boring to who?</div><div class="domain">seths.blog &bull; October 26, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (8)</summary><ul><a class="li" href="https://yourstory.com/2024/10/meta-indiaai-advance-open-source-ai-innovation-rd-skill-development"><li><div class="title">Meta teams up with IndiaAI to advance open source AI innovation, R&D, skill development</div><div class="domain">yourstory.com &bull; October 26, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/10/wazirx-needs-cash-fast-from-literature-to-investment-banking"><li><div class="title">WazirX needs cash, fast; From literature to investment banking</div><div class="domain">yourstory.com &bull; October 26, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/10/soft-landing-of-global-economy-is-increasingly-a-possibility-sitharaman"><li><div class="title">Soft landing of global economy is increasingly a possibility: Sitharaman</div><div class="domain">yourstory.com &bull; October 26, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/10/trai-rating-platform-assess-rate-properties-quality-digital-connectivity"><li><div class="title">Trai's rating platform to assess, rate properties on quality of digital connectivity</div><div class="domain">yourstory.com &bull; October 26, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/10/algorithmic-trading-automation-in-trading-transforming-financial-markets"><li><div class="title">How automation in trading transforming financial markets</div><div class="domain">yourstory.com &bull; October 26, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/10/ai-will-open-up-opportunities-for-youths-in-various-sectors-says-president-murmu"><li><div class="title">AI will open up opportunities for youths in various sectors, says President Murmu</div><div class="domain">yourstory.com &bull; October 26, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/10/prints-textiles-sculptures-creativity-art-museum-photography-culture-heritage"><li><div class="title">Prints, textiles, sculptures: the creative explorations of three award-winning artists</div><div class="domain">yourstory.com &bull; October 26, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/10/how-organisations-are-leveraging-executive-education-for-agility"><li><div class="title">Navigating the shift: How organisations are leveraging executive education for agility</div><div class="domain">yourstory.com &bull; October 26, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">ThePrint (youtube.com)</h2> (7)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=5HXnThMhrRI"><li><div class="title">'RSS has remained relevant for 100 yrs despite challenges, world now embraces its ideologies'</div><div class="domain">youtube.com &bull; October 26, 2024</div></li></a><a class="li" href="https://www.youtube.com/watch?v=9p7Gwagsmh0"><li><div class="title">Tahawwur Rana's extradition to India: Canadian-Pakistani’s role in 26/11, links with Headley, ISI</div><div class="domain">youtube.com &bull; October 26, 2024</div></li></a><a class="li" href="https://www.youtube.com/watch?v=F4IXd1IcZfw"><li><div class="title">Goa has a Ravana of its own—but playful</div><div class="domain">youtube.com &bull; October 26, 2024</div></li></a><a class="li" href="https://www.youtube.com/watch?v=4h8vFn5ADP4"><li><div class="title">Israel confirms attacks on against Iran</div><div class="domain">youtube.com &bull; October 26, 2024</div></li></a><a class="li" href="https://www.youtube.com/watch?v=L1kI6H7VOXA"><li><div class="title">How Science in modern India took shape- Watch ex-Director of IISc Prof P Balaram explain</div><div class="domain">youtube.com &bull; October 26, 2024</div></li></a><a class="li" href="https://www.youtube.com/watch?v=5wBYmM6lq38"><li><div class="title">Video shows Iranian air defence systems activated after Israeli strikes</div><div class="domain">youtube.com &bull; October 26, 2024</div></li></a><a class="li" href="https://www.youtube.com/watch?v=j5UW5qo6eIM"><li><div class="title">China and India are disengaging on the LAC. Question is if it will bring peace</div><div class="domain">youtube.com &bull; October 26, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Papa Mummy Kitchen - Specials (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=-DEoXtfhZ4o"><li><div class="title">न घी, न मावा, न दूध - इन त्योहारों में बस 2 चीजों से बनाएं ये बिलकुल नयी और अनोखी मिठाई Peanut Sweet</div><div class="domain">youtube.com &bull; October 26, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">newslaundry (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=JY3bJ3yowKE"><li><div class="title">How did Lawrence Bishnoi rise from a student leader to international kingpin? | NL deep-dive report</div><div class="domain">youtube.com &bull; October 26, 2024</div></li></a><a class="li" href="https://www.youtube.com/watch?v=xtw17l6GWZg"><li><div class="title">Sudhir's mind-blowing Modi Vs Jinping analysis | Zee News invents 'Mehndi Jihad' | TV Newsance 271</div><div class="domain">youtube.com &bull; October 26, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Mouth and Foot Painting Artists (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=5MTSiWgwCNM"><li><div class="title">What Story Do These Vibrant Blooms Tell You? ✨</div><div class="domain">youtube.com &bull; October 26, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">ICM Indian Classical Music (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=ZiKCi3bLvto"><li><div class="title">Pt. Rajendra Gangani & Ustad Zakir Hussain Ji 🙏✨ #kathak #icmtabla #classical #music #shorts</div><div class="domain">youtube.com &bull; October 26, 2024</div></li></a><a class="li" href="https://www.youtube.com/watch?v=ZqJn08UMk4k"><li><div class="title">Pt. Arvind Kumar Azad Ji 🙏✨ Tabla Laggi Part 2 #icmtabla #classical #music #shorts</div><div class="domain">youtube.com &bull; October 26, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Global Cycling Network (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=PG6ZTaxf6Bw"><li><div class="title">Is This The End Of Team Ineos?</div><div class="domain">youtube.com &bull; October 26, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=OegjJtFPk1I"><li><div class="title">Kartik Aaryan Faces the Wild on Star vs Food Survival Season 2! Discovery Channel</div><div class="domain">youtube.com &bull; October 26, 2024</div></li></a><a class="li" href="https://www.youtube.com/watch?v=6u7JW6vkI8w"><li><div class="title">Akshay Kumar’s Thrill Ride! | Into The Wild with Akshay Kumar | Full Episode | Discovery Channel</div><div class="domain">youtube.com &bull; October 26, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">BBC News (youtube.com)</h2> (3)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=RytqrIuw2mk"><li><div class="title">Israel has hit Tehran and other sites in Iran with retaliatory air strikes | BBC News</div><div class="domain">youtube.com &bull; October 26, 2024</div></li></a><a class="li" href="https://www.youtube.com/watch?v=bzb7x7CZHhg"><li><div class="title">Is the US election too close to call? | BBC News</div><div class="domain">youtube.com &bull; October 26, 2024</div></li></a><a class="li" href="https://www.youtube.com/watch?v=aX7zqLGnBFg"><li><div class="title">Will Donald Trump supporters accept US election result? | BBC Americast</div><div class="domain">youtube.com &bull; October 26, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Aileen and Deven (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=3NERsa28xZE"><li><div class="title">Boyfriends FIRST PILATES CLASS</div><div class="domain">youtube.com &bull; October 26, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Y Combinator (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=Wi_Wj3Miugo"><li><div class="title">The "overnight success" of Kalshi</div><div class="domain">youtube.com &bull; October 26, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">This Guy Edits (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=tLXfAAk-ewg"><li><div class="title">GENIUS!  How Nolan ENDS & OPENS Every Film.</div><div class="domain">youtube.com &bull; October 26, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">The Daily Show (youtube.com)</h2> (3)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=4MPayfbcuc0"><li><div class="title">Kamala got Beyoncé for her rally, and Trump got the guy who calls him “daddy” #dailyshow</div><div class="domain">youtube.com &bull; October 26, 2024</div></li></a><a class="li" href="https://www.youtube.com/watch?v=gTot3YQ16fI"><li><div class="title">Trump vs. Hitler: Spot the Difference | The Daily Show</div><div class="domain">youtube.com &bull; October 26, 2024</div></li></a><a class="li" href="https://www.youtube.com/watch?v=ZJ_NSBKzWfo"><li><div class="title">The way Republicans vs. Democrats guard their political yard signs is this election in a nutshell</div><div class="domain">youtube.com &bull; October 26, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">StarTalk (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=_RakXz4r3kY"><li><div class="title">how successful is SpaceX really?</div><div class="domain">youtube.com &bull; October 26, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Sisyphus 55 (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=lN0cpoD0FW0"><li><div class="title">Only Good People Get Depressed</div><div class="domain">youtube.com &bull; October 26, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Rick Beato (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=_68ZKaZUK0I"><li><div class="title">Keith Urban on his perfectionism #guitar #keithurban #songwriter #performance #shorts</div><div class="domain">youtube.com &bull; October 26, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Law Chambers of Amish Aggarwala (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=ClxFIM__jwc"><li><div class="title">Getting married abroad to avoid false cases?</div><div class="domain">youtube.com &bull; October 26, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Laasya (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=NAwLsp76JDo"><li><div class="title">Mere Mehboob Mere Sanam | Bad Newz | Vicky Kaushal Triptii Dimri | Nivi and Ishanvi |</div><div class="domain">youtube.com &bull; October 26, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Krishnamurti Foundation Trust (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=ZKxiVI0wlkY"><li><div class="title">Can you live without opinion and prejudice? | Krishnamurti</div><div class="domain">youtube.com &bull; October 26, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Khan Academy (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=txIzRPiDacY"><li><div class="title">Lo-Fi Khan Beats to Study/Relax to</div><div class="domain">youtube.com &bull; October 26, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Jay & Sharon (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=Mu5_4vRNwdk"><li><div class="title">Bitcoin, the big rubber ball?! Take your shot at one + $25,000 in actual Bitcoin</div><div class="domain">youtube.com &bull; October 26, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Half as Interesting (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=c3FFdZaPfeM"><li><div class="title">How This Card Game Accidentally Became a Stock Market</div><div class="domain">youtube.com &bull; October 26, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Groww (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=fqzLaSg3Itk"><li><div class="title">Why are FIIs selling Indian stocks? #shorts</div><div class="domain">youtube.com &bull; October 26, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">FRONTLINE PBS | Official (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=xOMP6MC_x_I"><li><div class="title">Harris As Vice President | Kamala Harris | The Choice 2024 Shorts</div><div class="domain">youtube.com &bull; October 26, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Freethink (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=BzNIxeHVKOM"><li><div class="title">This robot dog eats cigarette butts</div><div class="domain">youtube.com &bull; October 26, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Deep Look (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=P0M3VJvVmMY"><li><div class="title">Deep Look Turns 10! | #DeepLook #shorts</div><div class="domain">youtube.com &bull; October 26, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Continuous Delivery (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=Y_LutsGs-Xw"><li><div class="title">Why Version Control Is AWESOME #softwareengineering #developer</div><div class="domain">youtube.com &bull; October 26, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">ChessNetwork (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=7Jb3nPh1g-8"><li><div class="title">Leela scares Grandmaster from Frankenstein-Dracula</div><div class="domain">youtube.com &bull; October 26, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">ChessBase India (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=PcFnpkbGuHg"><li><div class="title">Checkmate Ends the Game - Aravindh v Rauf | 10th Gashimov Memorial 2024</div><div class="domain">youtube.com &bull; October 26, 2024</div></li></a><a class="li" href="https://www.youtube.com/watch?v=G0rqO4RiaYA"><li><div class="title">Magnus Carlsen REVEALS his Biggest Project 😍  *The Future of Chess*</div><div class="domain">youtube.com &bull; October 26, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Chess.com (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=Lz2laUe0oPI"><li><div class="title">Anish Giri STOLE MY PAWN so I Had to Play with BOOTLE CAP?!</div><div class="domain">youtube.com &bull; October 26, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Chef Ranveer Brar (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=oIAxjJ2goqo"><li><div class="title">No-fail trick for Fluffy Pooris #cookingtips #perfectpoori #poorirecipe #ranveerbrar</div><div class="domain">youtube.com &bull; October 26, 2024</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
