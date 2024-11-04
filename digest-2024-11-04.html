@@ -1,0 +1,138 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = true;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">November 04, 2024</span>:</h1>
+  <p class="summary">There are 25 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (1)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/oxyGrTczrgjGodWAh/why-our-politicians-aren-t-median"><li><div class="title">Why our politicians aren't Median</div><div class="domain">lesswrong.com &bull; November 04, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (1)</summary><ul><a class="li" href="https://lucapette.me/writing/writing-integration-tests-for-a-go-cli-application/"><li><div class="title">Writing integration tests for a Go CLI application</div><div class="domain">lucapette.me &bull; November 04, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (6)</summary><ul><a class="li" href="https://fortune.com/2024/03/25/mounting-evidence-starting-business-reduces-stress-persistent-myths-stopping-employees-careers-success/"><li><div class="title">There is mounting evidence that starting a business reduces stress</div><div class="domain">fortune.com &bull; November 04, 2024</div></li></a><a class="li" href="https://www.cs.cmu.edu/~weigand/staff/"><li><div class="title">Reasonable Person Principle</div><div class="domain">cs.cmu.edu &bull; November 04, 2024</div></li></a><a class="li" href="https://xenondata.org"><li><div class="title">New better alterative to XML, JSON and YAML</div><div class="domain">xenondata.org &bull; November 04, 2024</div></li></a><a class="li" href="https://arxiv.org/abs/2410.16454"><li><div class="title">An embarrassingly simple approach to recover unlearned knowledge for LLMs</div><div class="domain">arxiv.org &bull; November 04, 2024</div></li></a><a class="li" href="https://sgringwe.com/2019/10/10/Please-just-stop-saying-just.html"><li><div class="title">Please just stop saying "just" (2019)</div><div class="domain">sgringwe.com &bull; November 04, 2024</div></li></a><a class="li" href="https://med.stanford.edu/news/all-news/2024/10/protein-cancer.html"><li><div class="title">Scientists glue two proteins together, driving cancer cells to self-destruct</div><div class="domain">med.stanford.edu &bull; November 04, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (3)</summary><ul><a class="li" href="https://yourstory.com/2024/11/october-records-1b-in-vc-funding-inside-daalchini-technologies-game-plan"><li><div class="title">October records $1B in VC funding; Inside Daalchini Technologies’ game plan</div><div class="domain">yourstory.com &bull; November 04, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/11/daalchini-revenue-growth-vending-machine-startup-ai-ml-retail"><li><div class="title">After 3.5X revenue growth in 2 years, this vending machine startup is integrating AI in retail</div><div class="domain">yourstory.com &bull; November 04, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/11/from-job-interviews-to-leadership-roles-how-communication-skills-can-shape-your-career-trajectory"><li><div class="title">From job interviews to leadership roles: How communication skills can shape your career trajectory</div><div class="domain">yourstory.com &bull; November 04, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">ThePrint (youtube.com)</h2> (3)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=8CnJhSYa0e4"><li><div class="title">215 mn hectares of degraded land across the world can naturally regrow into forests</div><div class="domain">youtube.com &bull; November 04, 2024</div></li></a><a class="li" href="https://www.youtube.com/watch?v=8EFk-O4kCmo"><li><div class="title">Next CJI has a family legacy connecting him to Indira Gandhi’s Emergency</div><div class="domain">youtube.com &bull; November 04, 2024</div></li></a><a class="li" href="https://www.youtube.com/watch?v=6Gju03tqfTE"><li><div class="title">Priyanka Gandhi holds election campaign in Kenichira, Sultan Bathery| Wayanad</div><div class="domain">youtube.com &bull; November 04, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">The Dodo (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=03YE2YqNnnQ"><li><div class="title">Skinny Dog Completely Transforms | The Dodo</div><div class="domain">youtube.com &bull; November 04, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">newslaundry (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=HR7KtgaFIO0"><li><div class="title">Why are Indians giving up citizenship in record numbers</div><div class="domain">youtube.com &bull; November 04, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">National Geographic (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=XYVKcthqvJU"><li><div class="title">Curse of the Mummy (Full Episode) | Lost Treasures of Egypt</div><div class="domain">youtube.com &bull; November 04, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">M M F A Mellisai Mannar Fans Association (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=1xDa7ZhHhxk"><li><div class="title">MSV IRAVIN MADIYIL KAVIGNAR VAALI BIRTH DAY SPL PART 2 ANCHOR  RAJESH LAVANYA IN ENGAL MSV W A GROUP</div><div class="domain">youtube.com &bull; November 04, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Law Chambers of Amish Aggarwala (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=F2KKqs-T4jc"><li><div class="title">This is how lawyers trick you in property dispute matters</div><div class="domain">youtube.com &bull; November 04, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">LastWeekTonight (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=t5lVEMpfRDI"><li><div class="title">S11 E28: Trump’s Businesses & Election 2024: 11/3/24: Last Week Tonight with John Oliver</div><div class="domain">youtube.com &bull; November 04, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Jay & Sharon (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=uXAWyCxX220"><li><div class="title">@granttheyeti yes, I keep TABS</div><div class="domain">youtube.com &bull; November 04, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">ICM Indian Classical Music (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=8FVd1YqR1Sg"><li><div class="title">Shiv Kailashon Ke Vasi By Rishabh Rikhirim Sharma✨#indian #semiclassical #music #icmtabla #shorts</div><div class="domain">youtube.com &bull; November 04, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">GOTO Conferences (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=gFk9BqUThJ4"><li><div class="title">Interview with Yaron Minsky • YOW! 2018</div><div class="domain">youtube.com &bull; November 04, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">ChessBase India (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=ZJtLmtsFmAI"><li><div class="title">This venue can host 1100 fans at the Chennai Grand Masters 2024 | Anna Centenary Library</div><div class="domain">youtube.com &bull; November 04, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Bar & Bench (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=vKNdrOsiILc"><li><div class="title">Book Launch | "Play in the Joints" ( Authored by  Aseem Chawla ) on 9th November 2024 3 pm onwards</div><div class="domain">youtube.com &bull; November 04, 2024</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>

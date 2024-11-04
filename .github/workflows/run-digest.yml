@@ -2,8 +2,6 @@ name: Update GitHub Pages with Daily Digest
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: "0 0 * * *"
 
 jobs:
   update-gh-pages:
@@ -26,9 +24,10 @@ jobs:
       - name: Run rdigest refresh
         run: |
           chmod +x ./rdigest
-          ./rdigest refresh
+          ./rdigest help
 
       - name: Commit and push changes
+        if: false
         run: |
           git add .
           git commit -m "Update daily digest"
