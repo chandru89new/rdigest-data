@@ -5,16 +5,11 @@ on:
 
 jobs:
   update-gh-pages:
-    runs-on: macos-latest # Uses the macOS runner (emulated on x86, compatible with Apple Silicon)
+    runs-on: macos-15 # Uses the macOS runner (emulated on x86, compatible with Apple Silicon)
 
     steps:
       - name: Check out the repository
         uses: actions/checkout@v2
-
-      - name: Install Rosetta 2 (for Apple Silicon Macs)
-        if: runner.os == 'macOS'
-        run: |
-          softwareupdate --install-rosetta --agree-to-license || echo "Rosetta already installed"
 
       - name: Configure Git
         run: |
