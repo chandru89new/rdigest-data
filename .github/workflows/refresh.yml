@@ -9,7 +9,7 @@ permissions:
   contents: write
 
 jobs:
-  run-binary:
+  refresh:
     runs-on: ubuntu-latest
 
     steps:

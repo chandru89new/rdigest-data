@@ -16,7 +16,7 @@ permissions:
   contents: write
 
 jobs:
-  run-binary:
+  create-digest:
     runs-on: ubuntu-latest
 
     steps:
