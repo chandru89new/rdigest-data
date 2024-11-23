@@ -1,0 +1,138 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = true;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">November 09, 2024</span>:</h1>
+  <p class="summary">There are 27 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (2)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/MoF426vqQFmuwwnFf/bigger-livers"><li><div class="title">Bigger Livers?</div><div class="domain">lesswrong.com &bull; November 09, 2024</div></li></a><a class="li" href="https://www.lesswrong.com/posts/wN4oWB4xhiiHJF9bS/llms-look-increasingly-like-general-reasoners"><li><div class="title">LLMs Look Increasingly Like General Reasoners</div><div class="domain">lesswrong.com &bull; November 09, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (1)</summary><ul><a class="li" href="https://jsgroth.dev/blog/posts/snes-ps1-cubic-adpcm-interpolation/"><li><div class="title">SNES & PlayStation cubic ADPCM interpolation</div><div class="domain">jsgroth.dev &bull; November 09, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (2)</summary><ul><a class="li" href="https://allthatsinteresting.com/glyptodon-fossils"><li><div class="title">Argentinian Farmer Finds Family of 20k-Year-Old Car-Sized Armadillos</div><div class="domain">allthatsinteresting.com &bull; November 09, 2024</div></li></a><a class="li" href="https://gizmodo.com/nasa-remains-stubbornly-silent-on-dragon-splashdown-that-sent-crew-to-hospital-2000522187"><li><div class="title">NASA Remains Silent on Why Crew Went to Hospital After Dragon Splashdown</div><div class="domain">gizmodo.com &bull; November 09, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (4)</summary><ul><a class="li" href="https://yourstory.com/2024/11/emami-art-crafts-gallery-exhibition-diversity-design-creativity-photography"><li><div class="title">Diversity and design—how Emami Art gallery acts as a hub for creativity</div><div class="domain">yourstory.com &bull; November 09, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/11/ola-electrics-q2-loss-shrinks"><li><div class="title">Ola Electric’s Q2 loss shrinks; Shareholder buybacks or worker wellbeing</div><div class="domain">yourstory.com &bull; November 09, 2024</div></li></a><a class="li" href="https://yourstory.com/2023/08/bsnl-comeback-telecom-revival"><li><div class="title">BSNL's comeback: Can it reclaim India's telecom market?</div><div class="domain">yourstory.com &bull; November 09, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/11/how-schools-are-adapting-to-the-digital-divide-india"><li><div class="title">How schools are adapting to the digital divide?</div><div class="domain">yourstory.com &bull; November 09, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Vikkals (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=Yj4ARGD3YsA"><li><div class="title">When You Marry Your Friend #vikkals</div><div class="domain">youtube.com &bull; November 09, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">ThePrint (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=nn2-ZgPMcg8"><li><div class="title">Goa & Dharamshala are favourites of India’s digital nomads fleeing big cities for work-bliss balance</div><div class="domain">youtube.com &bull; November 09, 2024</div></li></a><a class="li" href="https://www.youtube.com/watch?v=4ZHJbCVRtX4"><li><div class="title">Why PM Modi & Amit Shah are raising the issue of infiltration in Jharkhand ahead of elections</div><div class="domain">youtube.com &bull; November 09, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">The Wire (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=37xCB0GQKNk"><li><div class="title">Pawan Kalyan Is Playing a "Heads I Win, Tails You Lose" Game</div><div class="domain">youtube.com &bull; November 09, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">The Dodo (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=APoSLfNHYUM"><li><div class="title">Guy Finds 3 Puppies On Side Of Road | The Dodo</div><div class="domain">youtube.com &bull; November 09, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">TED (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=VuJbzKpbIVk"><li><div class="title">Trump’s 2024 Election Win — and What’s Next | TED Explains the World with Ian Bremmer</div><div class="domain">youtube.com &bull; November 09, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=Nzhpz6wwfoE"><li><div class="title">Recovering Fentanyl Addict-Jake</div><div class="domain">youtube.com &bull; November 09, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Sisyphus 55 (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=N6x_oOPfigo"><li><div class="title">this video is not real</div><div class="domain">youtube.com &bull; November 09, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">newslaundry (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=Fh5W-Jsz60c"><li><div class="title">US election, Trump’s triumph and cheer in Indian newsrooms | TV Newsance 273</div><div class="domain">youtube.com &bull; November 09, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Law Chambers of Amish Aggarwala (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=PCjAEXow91g"><li><div class="title">Giving post dated cheques because company has limited liability</div><div class="domain">youtube.com &bull; November 09, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Khan Academy (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=wwe6c-wIE10"><li><div class="title">Creating modules | Intro to CS - Python | Khan Academy</div><div class="domain">youtube.com &bull; November 09, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Jist (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=i9E_X8zQnGo"><li><div class="title">How Gadar Became A Cult Classic ft. Director Anil Sharma | #vanvas</div><div class="domain">youtube.com &bull; November 09, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">ICM Indian Classical Music (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=-pCxZYfa4tY"><li><div class="title">Rakesh Chaurasia & Ojas Adhiya Ji ❣️✨#flute #icmtabla #classicalimusic #shorts</div><div class="domain">youtube.com &bull; November 09, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">freeCodeCamp.org (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=Dsx1oTPgLqE"><li><div class="title">The State of AI with Stanford Researcher Yifan Mai [Podcast #149]</div><div class="domain">youtube.com &bull; November 09, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Danny Elfman (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=LuTjmeI8zQU"><li><div class="title">Danny Elfman - MONKEYS IN THE NEWS</div><div class="domain">youtube.com &bull; November 09, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">ChessBase India (youtube.com)</h2> (3)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=k8nHZ3GPm2A"><li><div class="title">A visit to the ChessBase India stall at Chennai Grandmasters 2024</div><div class="domain">youtube.com &bull; November 09, 2024</div></li></a><a class="li" href="https://www.youtube.com/watch?v=T90CpV4alL8"><li><div class="title">The power of 2805 Elo | Amin Tabatabaei vs Arjun Erigaisi | Chennai Grand Masters 2024</div><div class="domain">youtube.com &bull; November 09, 2024</div></li></a><a class="li" href="https://www.youtube.com/watch?v=ReQW6QqbFyk"><li><div class="title">There is a reason why he slayed Carlsen and Firouzja | Karthikeyan vs Harika | Chennai GM 2024</div><div class="domain">youtube.com &bull; November 09, 2024</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
