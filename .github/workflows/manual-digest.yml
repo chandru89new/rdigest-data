@@ -1,9 +1,16 @@
-name: Automate Binary Run and Commit
+name: Create digest
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: "00 18 * * *" # 6pm UTC -> approx 11pm IST
+  inputs:
+    from:
+      description: "Starting date for the digest (YYYY-MM-DD)"
+      required: true
+      default: ""
+    to:
+      description: "Ending date for the digest (YYYY-MM-DD)"
+      required: true
+      default: ""
 
 permissions:
   contents: write
@@ -33,11 +40,15 @@ jobs:
           curl -L $BINARY_URL -o ./rdigest
           chmod +x ./rdigest
 
-      # Step 3: Run the binary
-      - name: Refresh feeds
+      - name: Refresh feeds first
         run: |
           export RDIGEST_FOLDER=.
           ./rdigest refresh
+
+      - name: Create the digest for the given date range
+        run: |
+          export RDIGEST_FOLDER=.
+          ./rdigest digest --from ${{ inputs.from }} --to ${{ inputs.to }}
 
       # Step 4: Configure Git
       - name: Configure Git
@@ -49,5 +60,5 @@ jobs:
       - name: Commit and Push Changes
         run: |
           git add .
-          git commit -m "Refresh."
+          git commit -m "Update repo with new digest."
           git push origin main

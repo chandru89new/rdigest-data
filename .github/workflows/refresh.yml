@@ -1,0 +1,53 @@
+name: Scheduled refresh
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "00 18 * * *" # 6pm UTC -> approx 11pm IST
+
+permissions:
+  contents: write
+
+jobs:
+  run-binary:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Checkout the current repo
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # Step 2: Download the latest binary dynamically
+      - name: Download rdigest
+        run: |
+          REPO_OWNER="chandru89new" # Replace with actual owner
+          REPO_NAME="rdigest"   # Replace with actual repo name
+
+          # Fetch the latest release tag
+          LATEST_TAG=$(curl -s https://api.github.com/repos/$REPO_OWNER/$REPO_NAME/releases/latest | jq -r .tag_name)
+
+          # Construct the download URL
+          BINARY_URL="https://github.com/$REPO_OWNER/$REPO_NAME/releases/download/$LATEST_TAG/rdigest"
+
+          # Download and make the binary executable
+          curl -L $BINARY_URL -o ./rdigest
+          chmod +x ./rdigest
+
+      # Step 3: Run the binary
+      - name: Refresh feeds
+        run: |
+          export RDIGEST_FOLDER=.
+          ./rdigest refresh
+
+      # Step 4: Configure Git
+      - name: Configure Git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+      # Step 5: Commit and Push Changes
+      - name: Commit and Push Changes
+        run: |
+          git add .
+          git commit -m "Refresh."
+          git push origin main
