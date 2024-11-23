@@ -2,15 +2,15 @@ name: Create digest
 
 on:
   workflow_dispatch:
-  inputs:
-    from:
-      description: "Starting date for the digest (YYYY-MM-DD)"
-      required: true
-      default: ""
-    to:
-      description: "Ending date for the digest (YYYY-MM-DD)"
-      required: true
-      default: ""
+    inputs:
+      from:
+        description: "Starting date for the digest (YYYY-MM-DD)"
+        required: true
+        default: ""
+      to:
+        description: "Ending date for the digest (YYYY-MM-DD)"
+        required: true
+        default: ""
 
 permissions:
   contents: write
