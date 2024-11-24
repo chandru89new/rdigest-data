@@ -3,7 +3,7 @@ name: Scheduled refresh
 on:
   workflow_dispatch:
   schedule:
-    - cron: "00 18 * * *" # 6pm UTC -> approx 11pm IST
+    - cron: "0 */12 * * *" # runs once every 12 hours
 
 permissions:
   contents: write
