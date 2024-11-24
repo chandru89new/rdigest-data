@@ -1,0 +1,138 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = true;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2024-08-08</span>:</h1>
+  <p class="summary">There are 13 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">매일맛나 delicious day (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=7J7hgKEK9mY"><li><div class="title">계란3개로 계란꽃김밥 만들기 :: 진짜 맛있는 계란김밥 :: 계란요리 :: Korean Egg Flower Kimbap Recipe</div><div class="domain">youtube.com &bull; August 08, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">UNFILTERED by Samdish (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=cgnAKOkd4f8"><li><div class="title">Inside Akhilesh Yadav's Wild Wild Rally ft. Samdish Bhatia | Unfiltered by Samdish</div><div class="domain">youtube.com &bull; August 08, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Sixty Symbols (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=3zSkxkXkJHE"><li><div class="title">The Problem with Ranking Universities (League Tables) - Sixty Symbols</div><div class="domain">youtube.com &bull; August 08, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Primer (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=goePYJ74Ydg"><li><div class="title">Simulating Green Beard Altruism</div><div class="domain">youtube.com &bull; August 08, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Practical Engineering (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=aFZM_BY6jBw"><li><div class="title">How French Drains Work</div><div class="domain">youtube.com &bull; August 08, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Plip Plip (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=hizgRMZgDsI"><li><div class="title">Growing Up 🥸 | Plip Plip</div><div class="domain">youtube.com &bull; August 08, 2024</div></li></a><a class="li" href="https://www.youtube.com/watch?v=1vVNtTDocNw"><li><div class="title">MY DARKEST FEARS 💀☠️ | Plip Plip</div><div class="domain">youtube.com &bull; August 08, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Kannadhasan Productions by Annadurai Kannadhasan (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=JOVhOYtsDXM"><li><div class="title">206 ) எம்ஜியாருடன் எனக்குதானே சண்டை. உனக்கென்ன?</div><div class="domain">youtube.com &bull; August 08, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">John Mayer (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=EUwynJ-WHGo"><li><div class="title">John Mayer - Wild Blue (Official Video)</div><div class="domain">youtube.com &bull; August 08, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">JackStauber (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=b4lNq4nhdDQ"><li><div class="title">New Normal - Jack Stauber</div><div class="domain">youtube.com &bull; August 08, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">History of the Universe (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=milGLbH3Ukg"><li><div class="title">What Is The Biggest Thing In The Universe?</div><div class="domain">youtube.com &bull; August 08, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">clown energy (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=CPYCkba_pog"><li><div class="title">lord farquaad being chaotic part 1</div><div class="domain">youtube.com &bull; August 08, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">After Skool (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=q-inyoirs4o"><li><div class="title">The Mysterious History Of Magic (What the Ancients Knew & We Lost) - Agrippa's Diary</div><div class="domain">youtube.com &bull; August 08, 2024</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>

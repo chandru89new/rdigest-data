@@ -1,0 +1,138 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = true;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2024-10-13</span>:</h1>
+  <p class="summary">There are 76 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Bear Blog Trending Posts (bearblog.dev)</h2> (1)</summary><ul><a class="li" href="https://tbskyen.bearblog.dev/100-songs-to-get-to-know-me/"><li><div class="title">100 songs to get to know me</div><div class="domain">tbskyen.bearblog.dev &bull; October 13, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">The Marginalian (feeds.feedburner.com)</h2> (1)</summary><ul><a class="li" href="https://www.themarginalian.org/2024/10/13/octavia-butler-interview-america/"><li><div class="title">Octavia Butler (and Whitman’s Ghost) on America</div><div class="domain">themarginalian.org &bull; October 13, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Seth's Blog (seths.blog)</h2> (1)</summary><ul><a class="li" href="https://seths.blog/2024/10/amplifying-the-fringes/"><li><div class="title">Amplifying the fringes</div><div class="domain">seths.blog &bull; October 13, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Sympolymathesy, by Chris Krycho (v5.chriskrycho.com)</h2> (1)</summary><ul><a class="li" href="https://v5.chriskrycho.com/journal/2024-longview-half-marathon-race-report/"><li><div class="title">[journal] I Won! 2024 Longview Half Marathon Race Report</div><div class="domain">v5.chriskrycho.com &bull; October 13, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Y Combinator (youtube.com)</h2> (3)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=eBVi_sLaYsc"><li><div class="title">Why Vertical LLM Agents Are The New $1 Billion SaaS Opportunities</div><div class="domain">youtube.com &bull; October 13, 2024</div></li></a><a class="li" href="https://www.youtube.com/watch?v=nty_szMaNTs"><li><div class="title">The best consumer companies incorporate both virality and network effect to grow organically.</div><div class="domain">youtube.com &bull; October 13, 2024</div></li></a><a class="li" href="https://www.youtube.com/watch?v=HB3l1BPi7zo"><li><div class="title">How Do Billion Dollar Startups Start?</div><div class="domain">youtube.com &bull; October 13, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Wolfram (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=9uayi_ioZb8"><li><div class="title">Live CEOing Ep 852: Design Review of Hypergraph Paclet</div><div class="domain">youtube.com &bull; October 13, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Vikkals (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=S__ALRDjUVc"><li><div class="title">What if !? SANA MARRIES CHITTI | Vikkals</div><div class="domain">youtube.com &bull; October 13, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">V3Cars (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=58_XLloHd6k"><li><div class="title">Nexon CNG Variants Explained Review | Nexon w/ Panoramic Sunroof Driven | The Ultimate Review</div><div class="domain">youtube.com &bull; October 13, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Uncomfortable (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=treOc3Pp-aE"><li><div class="title">Drawabox Lesson 1: Line Weight and Overlaps</div><div class="domain">youtube.com &bull; October 13, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">The Royal Institution (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=Go28Rovnrko"><li><div class="title">The languages of animals: Be mine - David Attenborough's 1973 Christmas Lectures 2/5</div><div class="domain">youtube.com &bull; October 13, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">The Knowledge Project Podcast (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=ttAcWt87nQ0"><li><div class="title">Life is short, don't waste it</div><div class="domain">youtube.com &bull; October 13, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">The Graham Norton Show (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=0VuIgNqt6Cg"><li><div class="title">Miranda Hart Makes Selena Gomez Cry (For Good Reason) | The Graham Norton Show</div><div class="domain">youtube.com &bull; October 13, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">The Deshbhakt (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=YB2J88x0apk"><li><div class="title">How BJP Stumped Congress & Won Haryana For A Record 3rd Term | Akash Banerjee & Mohit</div><div class="domain">youtube.com &bull; October 13, 2024</div></li></a><a class="li" href="https://www.youtube.com/watch?v=lYWnSNsSHSM"><li><div class="title">How Omar Abdullah Led NC-Cong Alliance Won Big In J&K Elections | Akash Banerjee & Adwaith</div><div class="domain">youtube.com &bull; October 13, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">The Cinema Cartography (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=zR_l8E70hv0"><li><div class="title">The Slaver</div><div class="domain">youtube.com &bull; October 13, 2024</div></li></a><a class="li" href="https://www.youtube.com/watch?v=3cJqAPjkuwI"><li><div class="title">Joker: Folie à Deux - Defending The Indefensible</div><div class="domain">youtube.com &bull; October 13, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">TED-Ed (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=YYZCpJmHAqI"><li><div class="title">Greek mythology’s greatest warrior - Iseult Gillespie</div><div class="domain">youtube.com &bull; October 13, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Steve Mould (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=8nuHPM29nmQ"><li><div class="title">Check out NileRed's most recent video. He made his own amorphous metal!</div><div class="domain">youtube.com &bull; October 13, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">StarTalk (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=A3FFKYyuem4"><li><div class="title">Why Hurricanes Are Becoming More Dangerous</div><div class="domain">youtube.com &bull; October 13, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Socrates Studio (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=VcJf_pz30NE"><li><div class="title">Edward Said ll Post Colonialism ll Orientalism ll எட்வர்ட் சையத் ll கீழைத்தேயம் ll பேரா.இரா.முரளி</div><div class="domain">youtube.com &bull; October 13, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Sideprojects (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=mibfxTrfwzY"><li><div class="title">4 Horrific African Wars You've Probably Never Heard Of</div><div class="domain">youtube.com &bull; October 13, 2024</div></li></a><a class="li" href="https://www.youtube.com/watch?v=lWDhlxNF3fM"><li><div class="title">Four Incredible Machines That Are No Longer With Us</div><div class="domain">youtube.com &bull; October 13, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Senthil kumar (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=ffYkHiahvKk"><li><div class="title">70th National Film Awards for Best Music Direction - Background Score - Ponniyin Selvan - A.R.Rahman</div><div class="domain">youtube.com &bull; October 13, 2024</div></li></a><a class="li" href="https://www.youtube.com/watch?v=J_3Elzw-Gd0"><li><div class="title">Ekk Deewana Tha | Taj Mahal Scene - Climax Suite | #Remastered BGM | A.R.Rahman</div><div class="domain">youtube.com &bull; October 13, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Seinfeld Shorts (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=VilnSa3qyJ4"><li><div class="title">Bad Boy George - Seinfeld</div><div class="domain">youtube.com &bull; October 13, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">SciShow (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=AmPgH57vVO4"><li><div class="title">The 5 Largest Living Things</div><div class="domain">youtube.com &bull; October 13, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Sabine Hossenfelder (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=58I6YQzBrPo"><li><div class="title">“People Don’t Realize This” about Climate Change, Elon Musk Says</div><div class="domain">youtube.com &bull; October 13, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Rick Beato (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=26utwXIpyPE"><li><div class="title">Rick Rubin on Run-D.M.C. #rundmc #aerosmith #rap #rapmusic #guitar #shorts</div><div class="domain">youtube.com &bull; October 13, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Raga Rang (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=KmTdPHW_RuM"><li><div class="title">Raag Puriya Dhanashree by Pandit Nikhil Banerjee Alap Jor Vilambit Drut</div><div class="domain">youtube.com &bull; October 13, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Principles by Ray Dalio (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=VyrPinKphsI"><li><div class="title">Psychometric Testing</div><div class="domain">youtube.com &bull; October 13, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Parithabangal (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=4ucvoqiw2C0"><li><div class="title">நல்ல ஆள கூட்டு வந்திருக்கீங்க🙄 | Parithabangal #shorts</div><div class="domain">youtube.com &bull; October 13, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Numberphile (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=c066hLi78B0"><li><div class="title">The Prime Constant - Numberphile</div><div class="domain">youtube.com &bull; October 13, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">NASA Jet Propulsion Laboratory (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=52uJItWKWH4"><li><div class="title">Possible Volcanic Moon Detected 635 Light-Years Away</div><div class="domain">youtube.com &bull; October 13, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Mouth and Foot Painting Artists (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=2HZbBI8kaW4"><li><div class="title">How Does He Do It? You’ll Be Amazed! 😲| MFPA | Lombard Rudolf</div><div class="domain">youtube.com &bull; October 13, 2024</div></li></a><a class="li" href="https://www.youtube.com/watch?v=mNph0KL-vP4"><li><div class="title">Wishing you a victorious and joyous Dussehra! 🏹 | MFPA | Dhiraj Satvilkar</div><div class="domain">youtube.com &bull; October 13, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Lex Fridman (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=q8VePUwjB9Y"><li><div class="title">Jordan Peterson: Nietzsche, Hitler, God, Psychopathy, Suffering & Meaning | Lex Fridman Podcast #448</div><div class="domain">youtube.com &bull; October 13, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Law Chambers of Amish Aggarwala (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=4VPHuSGvIfI"><li><div class="title">Why so many lawyers are suffering in India</div><div class="domain">youtube.com &bull; October 13, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Klaus Schulze - Topic (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=-FmPJdy4bz4"><li><div class="title">Loreley (Live at the Loreley)</div><div class="domain">youtube.com &bull; October 13, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Jay Lee Painting (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=nPbUPV-hBgk"><li><div class="title">Painting a tree on a hill in the countryside / Simple Acrylic Painting</div><div class="domain">youtube.com &bull; October 13, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Jay & Sharon (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=6LnoRcTxxuM"><li><div class="title">Smart Dryer</div><div class="domain">youtube.com &bull; October 13, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Jack Whitehall (youtube.com)</h2> (3)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=0lFvPbIucoo"><li><div class="title">Drinking attitudes in the U.K Vs the U.S 🍺🇺🇸🇬🇧</div><div class="domain">youtube.com &bull; October 13, 2024</div></li></a><a class="li" href="https://www.youtube.com/watch?v=1ntrwhvs9Yg"><li><div class="title">Heartburn Attack | Jack Whitehall</div><div class="domain">youtube.com &bull; October 13, 2024</div></li></a><a class="li" href="https://www.youtube.com/watch?v=IW0w6joSrxM"><li><div class="title">This s**t should not be happening to me!</div><div class="domain">youtube.com &bull; October 13, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Intelligence Squared (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=Sr5IpVRvhMA"><li><div class="title">The Intelligence Squared Economic Outlook with Paul Johnson</div><div class="domain">youtube.com &bull; October 13, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Groww (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=AMGEMVgdrYs"><li><div class="title">3 stocks with order book more than revenue and market cap | ₹57,000 crore order book</div><div class="domain">youtube.com &bull; October 13, 2024</div></li></a><a class="li" href="https://www.youtube.com/watch?v=9xSwsGTByTY"><li><div class="title">Hyundai IPO: What you need to know in 60 seconds! #shorts</div><div class="domain">youtube.com &bull; October 13, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">GreatScott! (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=pSFExYlX_SU"><li><div class="title">I tried finding Hidden Gems on AliExpress AGAIN! (Part 11)</div><div class="domain">youtube.com &bull; October 13, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">FRONTLINE PBS | Official (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=WIOmgos38xc"><li><div class="title">The Choice 2024: Marc Fisher (interview) | FRONTLINE</div><div class="domain">youtube.com &bull; October 13, 2024</div></li></a><a class="li" href="https://www.youtube.com/watch?v=JK9rAceRRZg"><li><div class="title">Tim Walz’s Shifting Stance on Guns | The VP Choice: Vance vs. Walz | FRONTLINE</div><div class="domain">youtube.com &bull; October 13, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Freethink (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=1Gi1xRQSfEU"><li><div class="title">A 💩 pill to treat Parkinson's?</div><div class="domain">youtube.com &bull; October 13, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">freeCodeCamp.org (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=2l-HYpPp7ng"><li><div class="title">Is AI coming for developer jobs? – YK Sugi</div><div class="domain">youtube.com &bull; October 13, 2024</div></li></a><a class="li" href="https://www.youtube.com/watch?v=pi6cBAICoAI"><li><div class="title">Open Source Superstar and Roadmap.sh Founder Kamran Ahmed [Podcast #145]</div><div class="domain">youtube.com &bull; October 13, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Francesco Parrino (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=VHBbz3qFsKY"><li><div class="title">Just The Way You Are - Billy Joel | Piano Cover + Sheet Music</div><div class="domain">youtube.com &bull; October 13, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">European Space Agency, ESA (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=ljPZKwAN1IY"><li><div class="title">ESA's Hera mission launch highlight</div><div class="domain">youtube.com &bull; October 13, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">DD Movies (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=wiSUOXVXigM"><li><div class="title">Thayamma - Tamil Movie | Pandiyan | Anand Babu | Babu | Senthil #ddmovies #ddcinemas</div><div class="domain">youtube.com &bull; October 13, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Curiosity Stream (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=yGdtQsMQ01k"><li><div class="title">New York City Runs On Steam | NYC: Revealed</div><div class="domain">youtube.com &bull; October 13, 2024</div></li></a><a class="li" href="https://www.youtube.com/watch?v=mrRVdS9GQ8I"><li><div class="title">The Truth Of The Asteroid Belt | Breakthrough</div><div class="domain">youtube.com &bull; October 13, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Cookd (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=2bF-wncZ_4I"><li><div class="title">Kachayam is truly an emotion🥰  the best evening snack with ✨🎶</div><div class="domain">youtube.com &bull; October 13, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Continuous Delivery (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=PlN2UWOnzW0"><li><div class="title">5 Things That Waste Time & Money On A Software Project</div><div class="domain">youtube.com &bull; October 13, 2024</div></li></a><a class="li" href="https://www.youtube.com/watch?v=4qP4i1ViJL4"><li><div class="title">Most Apps DON'T NEED Google-Scale Solutions #softwareengineering #developer</div><div class="domain">youtube.com &bull; October 13, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Circle Line Art School (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=rQ9P2njgD04"><li><div class="title">How to Draw a City Street in One-Point Perspective for Beginners</div><div class="domain">youtube.com &bull; October 13, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Cini Mini Movies (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=eECMlI5EFO8"><li><div class="title">வரவன் போறவன் எல்லாம் பாத்துட்டுட்டு போறதுக்கு நா என்ன மாட..? | Vaazhvey Maayam Movie #shorts</div><div class="domain">youtube.com &bull; October 13, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">ChessNetwork (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=EZ3SdZb64_w"><li><div class="title">Chess Master solves chess puzzles (Checkmate in 3)</div><div class="domain">youtube.com &bull; October 13, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Chef Ranveer Brar (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=Nrw-VNC-JTU"><li><div class="title">One Masala for any dish! 😎 #cookingtips #gravyrecipe #ranveerbrar</div><div class="domain">youtube.com &bull; October 13, 2024</div></li></a><a class="li" href="https://www.youtube.com/watch?v=Bvk2tr3joLA"><li><div class="title">होटल जैसी आलू गोभी अदरकी | Adraki Aloo Gobhi | Dhaba Style Aloo Gobi bonus | Chef Ranveer Brar</div><div class="domain">youtube.com &bull; October 13, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">CGP Grey (youtube.com)</h2> (4)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=d6tgmGqXysM"><li><div class="title">Testing Tesla on the Deadliest Road in America 🐉</div><div class="domain">youtube.com &bull; October 13, 2024</div></li></a><a class="li" href="https://www.youtube.com/watch?v=qD6bPNZRRbQ"><li><div class="title">The Simple Secret of Runway Digits</div><div class="domain">youtube.com &bull; October 13, 2024</div></li></a><a class="li" href="https://www.youtube.com/watch?v=jfOUVYQnuhw"><li><div class="title">✈️ The Maddening Mess of Airport Codes! ✈️</div><div class="domain">youtube.com &bull; October 13, 2024</div></li></a><a class="li" href="https://www.youtube.com/watch?v=U0wTDK0VOeY"><li><div class="title">The Coolest ''''Country''''' Flag You Need To Know</div><div class="domain">youtube.com &bull; October 13, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Bob & Brad (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=61rCxEP4rKA"><li><div class="title">Fix Your Hunched Over Posture #posture #painrelief #healthandwellness #bobandbrad #physicaltherapy</div><div class="domain">youtube.com &bull; October 13, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">BBC Earth (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=-34SuR14GnU"><li><div class="title">Meet the Himalaya's heaviest and largest vulture: The Himalayan griffon vulture #Animals #Shorts</div><div class="domain">youtube.com &bull; October 13, 2024</div></li></a><a class="li" href="https://www.youtube.com/watch?v=1LpQFqDqrw8"><li><div class="title">Making a splash 💦 #Blackbird #Rain #Splash</div><div class="domain">youtube.com &bull; October 13, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Acid Is Bad For Business (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=TOIuzEnFA_8"><li><div class="title">The Philosophy of Shock Sites | AIBFB</div><div class="domain">youtube.com &bull; October 13, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">3Blue1Brown (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=DnjATyPuFFk"><li><div class="title">Holograms are wild (full video linked above)</div><div class="domain">youtube.com &bull; October 13, 2024</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>

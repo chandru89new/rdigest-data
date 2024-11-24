@@ -1,0 +1,138 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = true;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2024-10-07</span>:</h1>
+  <p class="summary">There are 41 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Cabinet Magazine (cabinetmagazine.org)</h2> (1)</summary><ul><a class="li" href="http://www.cabinetmagazine.org/exhibitions/one_for_the_ages_the_world_of_matt_freedman.php"><li><div class="title">&ldquo;Exhibition / “One for the Ages: The World of Matt Freedman”&rdquo;</div><div class="domain">cabinetmagazine.org &bull; October 07, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Two-Wrongs (entropicthoughts.com)</h2> (1)</summary><ul><a class="li" href="https://two-wrongs.com/no-feedback-no-good"><li><div class="title">No Feedback ∴ No Good</div><div class="domain">two-wrongs.com &bull; October 07, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Go Make Things (gomakethings.com)</h2> (1)</summary><ul><a class="li" href="https://gomakethings.com/user-defined-web-components/"><li><div class="title">User-defined Web Components</div><div class="domain">gomakethings.com &bull; October 07, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (1)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/hvj9NGodhva9pKGTj/struggling-like-a-shadowmoth"><li><div class="title">Struggling like a Shadowmoth</div><div class="domain">lesswrong.com &bull; October 07, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Reasons to be Cheerful (reasonstobecheerful.world)</h2> (1)</summary><ul><a class="li" href="https://reasonstobecheerful.world/new-york-public-spaces-gotham-park/"><li><div class="title">‘Incredible Things Are Possible’: The Power and Potential of New York’s Public Spaces</div><div class="domain">reasonstobecheerful.world &bull; October 07, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Trevor I. Lasn Thoughts (trevorlasn.com)</h2> (2)</summary><ul><a class="li" href="https://www.trevorlasn.com/blog/the-credit-vacuum"><li><div class="title">The Credit Vacuum</div><div class="domain">trevorlasn.com &bull; October 07, 2024</div></li></a><a class="li" href="https://www.trevorlasn.com/blog/how-to-launch-software-projects-on-time-and-on-budget"><li><div class="title">How to Launch Software Projects On Time and On Budget</div><div class="domain">trevorlasn.com &bull; October 07, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">베지이즈 Vege is (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=5iFfN68BtgQ"><li><div class="title">HEALTHY RECIPES | Quick & Delicious Chickpea Salad Jars |Meal Prep Ideas for the Week</div><div class="domain">youtube.com &bull; October 07, 2024</div></li></a><a class="li" href="https://www.youtube.com/watch?v=ginK1appzYk"><li><div class="title">HEALTHY RECIPES | Quick & Delicious Chickpea Salad Jars |Meal Prep Ideas for the Week</div><div class="domain">youtube.com &bull; October 07, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Y Combinator (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=DY5Z-uZ6ZMc"><li><div class="title">Stripe Head of Design Katie Dill Reviews Startup Websites</div><div class="domain">youtube.com &bull; October 07, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Vaak (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=1nFrgNx8Loo"><li><div class="title">Siddhi Vinayakam Anisham | Vinayaka Kritis by Muthuswami Dikshitar | Ganesha Chaturthi Special</div><div class="domain">youtube.com &bull; October 07, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Think School (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=EfoXe2a91H4"><li><div class="title">Lost 55 Lakhs in Mithai business?</div><div class="domain">youtube.com &bull; October 07, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">The School of Life (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=CX36tONlEFM"><li><div class="title">The Impact of Anger on Young Children</div><div class="domain">youtube.com &bull; October 07, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">The Closer Look (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=RGx8rYbRVR4"><li><div class="title">Why People Hate Avatar: A Lesson In Lazy Commentary</div><div class="domain">youtube.com &bull; October 07, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Steve Mould (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=KTC6OgWQtuw"><li><div class="title">How do grasshoppers jump so far?</div><div class="domain">youtube.com &bull; October 07, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">StarTalk (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=470h2ttcbzE"><li><div class="title">is the mini-moon just clickbait? 🤔</div><div class="domain">youtube.com &bull; October 07, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Sheena Melwani (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=IuL2nZDpeeg"><li><div class="title">Cleaning Prank | #shorts #prankwars</div><div class="domain">youtube.com &bull; October 07, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">SciShow (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=F0ifFtGTOsY"><li><div class="title">5 Weird Ways Identical Twins Aren't Actually Identical</div><div class="domain">youtube.com &bull; October 07, 2024</div></li></a><a class="li" href="https://www.youtube.com/watch?v=qNOZlGkX0GM"><li><div class="title">Why They Can't Make an HIV Vaccine (They're Trying!)</div><div class="domain">youtube.com &bull; October 07, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Principles by Ray Dalio (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=yolTJ5rWYwc"><li><div class="title">My Life Advice for Teenagers</div><div class="domain">youtube.com &bull; October 07, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Primer (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=yhO6jfHPFQU"><li><div class="title">Simulating alternate voting systems</div><div class="domain">youtube.com &bull; October 07, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Philosophies for Life (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=5VEPSRAR6FE"><li><div class="title">Miyamoto Musashi - Stop Settling For Mediocrity And Break Free</div><div class="domain">youtube.com &bull; October 07, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">PBS Origins (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=6AMh6KAazwQ"><li><div class="title">Brigham Morris Young: Drag Star? #americanhistory #Draghistory #MormonHistory</div><div class="domain">youtube.com &bull; October 07, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Papa Mummy Kitchen - Specials (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=Ae8N_Fs2iYk"><li><div class="title">व्रत स्पेशल फूली-फूली और रूई जैसी सोफ्ट इडली बनाएं बस ३ सामग्री से | Vrat Special Idli Chutney</div><div class="domain">youtube.com &bull; October 07, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Origami World (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=C2CJLcmT3HI"><li><div class="title">ORIGAMI FOLDABLE PHONE STAND EASY TUTORIAL | EASY DIY PAPER STAND FOR YOUR PHONE INSTRUCTIONS CRAFT</div><div class="domain">youtube.com &bull; October 07, 2024</div></li></a><a class="li" href="https://www.youtube.com/watch?v=7lFy3hapYbU"><li><div class="title">ORIGAMI PHONE STAND FOLDABLE CRAFT TUTORIAL | HOW TO MAKE ORIGAMI PHONE STAND FROM PAPER INSTRUCTION</div><div class="domain">youtube.com &bull; October 07, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">One Percent Better (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=Tgb3ovnTH84"><li><div class="title">Recovering From Injury, Functional Workouts, Psychedelics | Patrick Koo</div><div class="domain">youtube.com &bull; October 07, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Nerdwriter1 (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=EpV6MycYg-0"><li><div class="title">How Matisse Revolutionized Color In Art</div><div class="domain">youtube.com &bull; October 07, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Mustard (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=W1L1sU0uI0o"><li><div class="title">This Jet Terrified the West: The MiG-25 Foxbat</div><div class="domain">youtube.com &bull; October 07, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">minutephysics (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=-eqdj63nEr4"><li><div class="title">Why Penrose Tiles Never Repeat</div><div class="domain">youtube.com &bull; October 07, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">lucaas (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=8y0AP6d4oCI"><li><div class="title">United Pilot Enters Runway Too Early</div><div class="domain">youtube.com &bull; October 07, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Lex Fridman (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=AzzE7GOvYz8"><li><div class="title">Ed Barnhart: Maya, Aztec, Inca, and Lost Civilizations of South America | Lex Fridman Podcast #446</div><div class="domain">youtube.com &bull; October 07, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Jackson Galaxy (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=onxmiAgmUas"><li><div class="title">Vet EXPLAINS Must-Have Cat Survival Kit!</div><div class="domain">youtube.com &bull; October 07, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Jack Whitehall (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=Gva5zzD0cPs"><li><div class="title">"How old were you when you started teabagging?" 🫖</div><div class="domain">youtube.com &bull; October 07, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">FRONTLINE PBS | Official (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=pZaO5zlJv-k"><li><div class="title">The Choice 2024: Lateefah Simon (interview) | FRONTLINE</div><div class="domain">youtube.com &bull; October 07, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Fermilab (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=Rg5IbbCLH2Q"><li><div class="title">How do we know neutrinos have mass? #shorts</div><div class="domain">youtube.com &bull; October 07, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">darbarfestival (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=AHsggMyQwaU"><li><div class="title">Indian Music Appreciation Course | Music of India #music #musicofindia #indianmusicexperience</div><div class="domain">youtube.com &bull; October 07, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Continuous Delivery (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=F5WkftHqexQ"><li><div class="title">The Reason Extreme Programming Works Better Than Anything Else</div><div class="domain">youtube.com &bull; October 07, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Beyond the Frame (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=nUMFVzkCYVk"><li><div class="title">Bibliophilia - Books in the Films of Wes Anderson</div><div class="domain">youtube.com &bull; October 07, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Bad Lip Reading (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=kCqN4xdkrbY"><li><div class="title">NFL 2023: A Decade of NFL Bad Lip Reading</div><div class="domain">youtube.com &bull; October 07, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Angela Collier (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=DM5qBRwU5EU"><li><div class="title">long live scientific debate</div><div class="domain">youtube.com &bull; October 07, 2024</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>

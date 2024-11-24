@@ -1,0 +1,138 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = true;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2024-09-28</span>:</h1>
+  <p class="summary">There are 38 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Trevor I. Lasn Thoughts (trevorlasn.com)</h2> (1)</summary><ul><a class="li" href="https://www.trevorlasn.com/blog/being-a-self-taught-developer"><li><div class="title">Self-Taught Developer's Guide to Thriving in Tech</div><div class="domain">trevorlasn.com &bull; September 28, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Vox (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=k-a0EFhr3vE"><li><div class="title">How Kodak invented the “snapshot”</div><div class="domain">youtube.com &bull; September 28, 2024</div></li></a><a class="li" href="https://www.youtube.com/watch?v=cyMYtNaB9NU"><li><div class="title">The camera that changed photography forever #shorts</div><div class="domain">youtube.com &bull; September 28, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">vewn (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=2LQ9iasdc7Q"><li><div class="title">Stupid Dinner</div><div class="domain">youtube.com &bull; September 28, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">UNFILTERED by Samdish (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=clTZ9OkyjgE"><li><div class="title">Former CM of J&K Omar Abdullah Drove Me Around Kashmir | Unfiltered by Samdish | J&K Elections 2024</div><div class="domain">youtube.com &bull; September 28, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Trevor Noah (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=u5P2VLkpgy8"><li><div class="title">Flipmode is the greatest!!! 🔥 #Grammys @bustarhymes</div><div class="domain">youtube.com &bull; September 28, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">The Thought Emporium (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=mQtfLPbCEyc"><li><div class="title">Radiation on airplane rides</div><div class="domain">youtube.com &bull; September 28, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">The Paperclip (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=k0t6VyOQg7A"><li><div class="title">How This Indian Circus Act Changed Medical Science Forever!</div><div class="domain">youtube.com &bull; September 28, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">The Knowledge Project Podcast (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=3dmT5NRVKe0"><li><div class="title">How to live longer</div><div class="domain">youtube.com &bull; September 28, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">The Diplomat (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=g8P4AS9iytw"><li><div class="title">Malaysia’s 1MDB Scandal and ‘The Siege Within’</div><div class="domain">youtube.com &bull; September 28, 2024</div></li></a><a class="li" href="https://www.youtube.com/watch?v=n4v1aL6K7uU"><li><div class="title">Feminism and Geopolitics in the Asia-Pacific</div><div class="domain">youtube.com &bull; September 28, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">The Action Lab (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=lSQkeGr5AFc"><li><div class="title">How LiDAR Works: Measuring Light Speed with the First and Best Floor-Washing Robot Vacuum</div><div class="domain">youtube.com &bull; September 28, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">TED-Ed (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=T1aZxcyiYAw"><li><div class="title">Why did it take so long to find giant squids? - Anna Rothschild</div><div class="domain">youtube.com &bull; September 28, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Qiskit (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=jemWEdnJTnI"><li><div class="title">Purifications and Fidelity | Understanding Quantum Information and Computation - Lesson 12</div><div class="domain">youtube.com &bull; September 28, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Principles by Ray Dalio (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=khJBMgGeZgw"><li><div class="title">What The U.S. Need to Do?</div><div class="domain">youtube.com &bull; September 28, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">One Percent Better (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=Iwru70WonFM"><li><div class="title">How to Thrive on 3 Hours Sleep: Ancient Yogic Method</div><div class="domain">youtube.com &bull; September 28, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">NEVER TOO SMALL (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=nk7KBEY4MGo"><li><div class="title">Floating lanterns and high ceilings—what could be more calming than this? 🤍 #nevertoosmall #shorts</div><div class="domain">youtube.com &bull; September 28, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">M M F A Mellisai Mannar Fans Association (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=pE_6J4H7CUM"><li><div class="title">VALIBAN SUTRUM ULAGAM NAAN DEIVATHTHAAI -MUSIC MELLISAI MANNAR MSV LYRIC KAVIGNAR VAALI SUNG BY SPB</div><div class="domain">youtube.com &bull; September 28, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Khan Academy (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=UmNKiV7Lekk"><li><div class="title">Functions | Intro to CS - Python | Khan Academy</div><div class="domain">youtube.com &bull; September 28, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Kannadhasan Productions by Annadurai Kannadhasan (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=mcB2jp7TPqI"><li><div class="title">211) கண்ணதாசனின் மரணசாசனம்.. கவிஞரின் தீர்க்க தரிசனம்</div><div class="domain">youtube.com &bull; September 28, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">John Williams - Topic (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=aTYEEkOkzPc"><li><div class="title">Main Title And First Victim (From "Jaws" Soundtrack)</div><div class="domain">youtube.com &bull; September 28, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Jackson Galaxy (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=gHPJXHIw1RY"><li><div class="title">Enough said 😹! #cats #pets #funny</div><div class="domain">youtube.com &bull; September 28, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Harry Gregson-Williams - Topic (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=V0TU7mxQznI"><li><div class="title">Frizzle</div><div class="domain">youtube.com &bull; September 28, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Francesco Parrino (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=1MDeOo0VBbY"><li><div class="title">Well... it's a famous movie soundtrack! 😉 #shorts</div><div class="domain">youtube.com &bull; September 28, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">CrashCourse (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=eTlGeL6Yeas"><li><div class="title">What is the Future of Art?</div><div class="domain">youtube.com &bull; September 28, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Continuous Delivery (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=pySTS5a8-xs"><li><div class="title">Waterfall vs. Agile #developer</div><div class="domain">youtube.com &bull; September 28, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Cini Mini Movies (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=5VWXJMV-pj8"><li><div class="title">கமல் பற்றி பகல் கனவு காணும் ஸ்ரீதேவி - Vaazhvey Maayam | Sripriya #moviescenes #shorts</div><div class="domain">youtube.com &bull; September 28, 2024</div></li></a><a class="li" href="https://www.youtube.com/watch?v=L5eQrKG-Np4"><li><div class="title">அவளா தப்பு பண்ணமாட்டா.. தப்பு பண்றவங்கள விட மாட்டா | Vaazhvey Maayam | Kamal | Sridevi | CMM</div><div class="domain">youtube.com &bull; September 28, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">CinemaStix (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=qMHCI1DnikA"><li><div class="title">when film critics clearly just do not get the movie</div><div class="domain">youtube.com &bull; September 28, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">ChessNetwork (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=jKLiWuQ8LBw"><li><div class="title">Golden Gukesh D destroys Fedoseev's London System</div><div class="domain">youtube.com &bull; September 28, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Buildofy (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=lO9dRmUdsNw"><li><div class="title">Modern Tranquility|Official Promo #buildofy #architecture #bengaluru #karnataka #traditional #design</div><div class="domain">youtube.com &bull; September 28, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Bizarre Beasts (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=tq0Uhsv2WD0"><li><div class="title">Good Information Is Worth It</div><div class="domain">youtube.com &bull; September 28, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">BBC Ideas (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=TgMGw_GlMNg"><li><div class="title">How can we solve the plastic problem? #PlasticPollution #Plastic #BBCIdeas</div><div class="domain">youtube.com &bull; September 28, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Bar & Bench (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=rtvMyPh7eFE"><li><div class="title">Perhaps amendments would be better than entire criminal law overhaul: Justice Hima Kohli</div><div class="domain">youtube.com &bull; September 28, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Bad Lip Reading (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=lUvkDJX99Uk"><li><div class="title">"EVEN MORE TWILIGHT" — A Bad Lip Reading of The Twilight Saga: Breaking Dawn – Part 1</div><div class="domain">youtube.com &bull; September 28, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Alan Silvestri - Topic (youtube.com)</h2> (3)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=nJ2E1OiiVy8"><li><div class="title">Burn It Down! (From "Van Helsing" Soundtrack)</div><div class="domain">youtube.com &bull; September 28, 2024</div></li></a><a class="li" href="https://www.youtube.com/watch?v=h4zQ1bSDPCo"><li><div class="title">A Good F'Ing Reason (The Mexican/Soundtrack Version)</div><div class="domain">youtube.com &bull; September 28, 2024</div></li></a><a class="li" href="https://www.youtube.com/watch?v=a6Zr-99Fjfc"><li><div class="title">Transylvania 1887 (From "Van Helsing" Soundtrack)</div><div class="domain">youtube.com &bull; September 28, 2024</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>

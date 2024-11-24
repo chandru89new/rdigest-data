@@ -1,0 +1,138 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = true;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2024-09-12</span>:</h1>
+  <p class="summary">There are 22 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Trevor I. Lasn Thoughts (trevorlasn.com)</h2> (1)</summary><ul><a class="li" href="https://www.trevorlasn.com/blog/when-should-you-actually-worry-about-tech-debt"><li><div class="title">When Should You Actually Worry About Tech Debt?</div><div class="domain">trevorlasn.com &bull; September 12, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Sympolymathesy, by Chris Krycho (v5.chriskrycho.com)</h2> (1)</summary><ul><a class="li" href="https://v5.chriskrycho.com/journal/time/"><li><div class="title">[journal] Time</div><div class="domain">v5.chriskrycho.com &bull; September 12, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">The Well (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=L8RifPByK6k"><li><div class="title">Zero: The key to understanding everything?  | Talithia Williams</div><div class="domain">youtube.com &bull; September 12, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">The School of Life (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=MXeYrjFQdHA"><li><div class="title">On Feeling Obliged</div><div class="domain">youtube.com &bull; September 12, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Sasikanth (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=EM9NeIPT7OI"><li><div class="title">Android Dev | CLI to Compose Desktop app</div><div class="domain">youtube.com &bull; September 12, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Quanta Magazine (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=yESSv7OgCv0"><li><div class="title">What Your Brain Is Really Doing When You're Doing 'Nothing'</div><div class="domain">youtube.com &bull; September 12, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">oliSUNvia (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=o3dYr1ojXwo"><li><div class="title">Q&A from that one video essay girl | 500k subs</div><div class="domain">youtube.com &bull; September 12, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Nino's Home (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=zYlQmnOHAYE"><li><div class="title">Oyakodon Recipe Japanese Street Food</div><div class="domain">youtube.com &bull; September 12, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Newsthink (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=5aM5LliSX0c"><li><div class="title">The Cousins Running Rival Tech Empires</div><div class="domain">youtube.com &bull; September 12, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">NASA Jet Propulsion Laboratory (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=YSgSQMnfTWg"><li><div class="title">Behind the Spacecraft: Europa Clipper (Teaser Trailer)</div><div class="domain">youtube.com &bull; September 12, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">MadRasana Official (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=6ei4Us4A8_0"><li><div class="title">Omanaththingal | The Indian Choral Ensemble  | @theindianchoralensemble</div><div class="domain">youtube.com &bull; September 12, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">lucaas (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=P1vOxjLv0y8"><li><div class="title">Strong Winds Hit Plane at Worst Moment</div><div class="domain">youtube.com &bull; September 12, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Little White Lies (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=LUNtRoAddTo"><li><div class="title">What does an A24 movie look like?</div><div class="domain">youtube.com &bull; September 12, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Kannadhasan Productions by Annadurai Kannadhasan (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=B0Ro5tmaU6s"><li><div class="title">205) என்ன பிரச்சனை கலைஞர் கருணாநிதிக்கும், எம்.ஜி.ஆருக்கும்? மாடர்ன் தியேட்டர்ஸுக்கு ஏன் உதவவில்லை?</div><div class="domain">youtube.com &bull; September 12, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Innovations Tech Lab (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=IfF3tlhGzis"><li><div class="title">8 August 2024</div><div class="domain">youtube.com &bull; September 12, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Evo-Ed (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=Fqj9rcVU-ng"><li><div class="title">Evolution Explained in 2 Minutes</div><div class="domain">youtube.com &bull; September 12, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Every Frame a Painting (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=ojm74VGsZBU"><li><div class="title">Vancouver Never Plays Itself</div><div class="domain">youtube.com &bull; September 12, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Empty Hand (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=WeXy2mbvLPU"><li><div class="title">THE GOAT Movie Review - இத நான் எதிர்பார்க்கல😱 | Tamil Review | Thalapathy Vijay | Venkat Prabhu</div><div class="domain">youtube.com &bull; September 12, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Coke Studio Tamil (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=P-T8qVqM2yQ"><li><div class="title">Music, Friendship & Banter 🎶🥳</div><div class="domain">youtube.com &bull; September 12, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Cini Mini Movies (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=hni-XYTJvlY"><li><div class="title">Kamal Funny Phone Call Flirting with Sridevi | Vaazhvey Maayam | CMM #shorts</div><div class="domain">youtube.com &bull; September 12, 2024</div></li></a><a class="li" href="https://www.youtube.com/watch?v=3UOqyik0RB0"><li><div class="title">Kamal Haasan Cheating Sridevi Catch Kamal Haasan Red Handed😂Love Scene ❤ | Vaazhvey Maayam #shorts</div><div class="domain">youtube.com &bull; September 12, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Adrian Bliss (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=DPf-eiZhaAY"><li><div class="title">Tudor job centre</div><div class="domain">youtube.com &bull; September 12, 2024</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>

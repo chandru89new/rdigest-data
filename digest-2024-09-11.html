@@ -1,0 +1,138 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = true;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2024-09-11</span>:</h1>
+  <p class="summary">There are 20 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Commoncog (commoncog.com)</h2> (1)</summary><ul><a class="li" href="https://commoncog.com/hospitality-solution-business/"><li><div class="title">The Hospitality Solution in Your Business</div><div class="domain">commoncog.com &bull; September 11, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Two-Wrongs (entropicthoughts.com)</h2> (1)</summary><ul><a class="li" href="https://two-wrongs.com/python-programmers-experience"><li><div class="title">Python Programmers' Experience</div><div class="domain">two-wrongs.com &bull; September 11, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">The Marginalian (feeds.feedburner.com)</h2> (2)</summary><ul><a class="li" href="https://www.themarginalian.org/2024/09/11/peter-kropotkin-mutual-aid-solidarity/"><li><div class="title">Kinship in the Light of Conscience: Peter Kropotkin on the Crucial Difference Between Love, Sympathy, and Solidarity</div><div class="domain">themarginalian.org &bull; September 11, 2024</div></li></a><a class="li" href="https://www.themarginalian.org/2024/09/11/great-blue-heron/"><li><div class="title">The Great Blue Heron, Signs vs. Omens, and Our Search for Meaning</div><div class="domain">themarginalian.org &bull; September 11, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Trevor I. Lasn Thoughts (trevorlasn.com)</h2> (2)</summary><ul><a class="li" href="https://www.trevorlasn.com/blog/google-is-killing-information-economics-on-the-internet"><li><div class="title">Google is Killing Information Economics on the Internet</div><div class="domain">trevorlasn.com &bull; September 11, 2024</div></li></a><a class="li" href="https://www.trevorlasn.com/blog/mental-toughness-is-the-best-quality-a-developer-can-have"><li><div class="title">Mental Toughness is the Best Quality a Developer Can Have</div><div class="domain">trevorlasn.com &bull; September 11, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Zendria 🕊 (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=hg_36zSgpg0"><li><div class="title">Ekdantaya Vakratundaya | Shree Ganeshay Dheemahi | Zendria</div><div class="domain">youtube.com &bull; September 11, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Up and Atom (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=A5RxUW7VC-A"><li><div class="title">World's Largest Nuclear Fusion Reactor!</div><div class="domain">youtube.com &bull; September 11, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Tsoding Daily (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=LTP5c4NqA8k"><li><div class="title">I tried Swift and came out a different person</div><div class="domain">youtube.com &bull; September 11, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Practical Engineering (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=HRx_dZawN44"><li><div class="title">The Hidden Engineering of Landfills</div><div class="domain">youtube.com &bull; September 11, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">PolyMatter (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=KuWAdYl5icY"><li><div class="title">Why There Are No Flights Between India and China</div><div class="domain">youtube.com &bull; September 11, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Plip Plip (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=8Xibb1C_iv0"><li><div class="title">The GOAT Roast 🐐💥 | Plip Plip</div><div class="domain">youtube.com &bull; September 11, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">NASA Jet Propulsion Laboratory (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=bLhVllgLZ94"><li><div class="title">What's Up: September 2024 Skywatching Tips from NASA</div><div class="domain">youtube.com &bull; September 11, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Half as Interesting (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=K7urHM2_7yQ"><li><div class="title">The Massively Bureaucratic  System for Confirming a “Miracle”</div><div class="domain">youtube.com &bull; September 11, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Engineering Facts (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=ts0l0ZDBRSk"><li><div class="title">EB unit easya measure pannalam..🧾</div><div class="domain">youtube.com &bull; September 11, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Design Theory (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=CGRtyxEpoGg"><li><div class="title">Why Western Designs Fail in Developing Countries</div><div class="domain">youtube.com &bull; September 11, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">DD Movies (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=LRm2f0x0CU4"><li><div class="title">Vandhaan Vendraan - Tamil Movie | Jiiva | Taapsee | Santhanam #ddmovies #ddcinemas</div><div class="domain">youtube.com &bull; September 11, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">CrashCourse (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=O77IFewBxcg"><li><div class="title">Crash Course Religions Preview</div><div class="domain">youtube.com &bull; September 11, 2024</div></li></a><a class="li" href="https://www.youtube.com/watch?v=Zb60nWtmFpA"><li><div class="title">Making of Crash Course: Live Sound Design with the Team! #Learnathon2024</div><div class="domain">youtube.com &bull; September 11, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">clown energy (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=cE127sNU3uk"><li><div class="title">Willy Wonka being iconic for 6 minutes straight</div><div class="domain">youtube.com &bull; September 11, 2024</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>

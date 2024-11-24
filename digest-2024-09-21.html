@@ -1,0 +1,138 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = true;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2024-09-21</span>:</h1>
+  <p class="summary">There are 70 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Scattered Thoughts (scattered-thoughts.net)</h2> (1)</summary><ul><a class="li" href="https://www.scattered-thoughts.net/writing/hytradboi-2025/"><li><div class="title">HYTRADBOI 2025</div><div class="domain">scattered-thoughts.net &bull; September 21, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Trevor I. Lasn Thoughts (trevorlasn.com)</h2> (2)</summary><ul><a class="li" href="https://www.trevorlasn.com/blog/week-of-coding-can-save-you-hours-of-planning"><li><div class="title">Weeks of Coding Can Save You Hours of Planning</div><div class="domain">trevorlasn.com &bull; September 21, 2024</div></li></a><a class="li" href="https://www.trevorlasn.com/blog/attracting-top-engineering-talent"><li><div class="title">Attracting Top Engineering Talent to Your Startup</div><div class="domain">trevorlasn.com &bull; September 21, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Zendria 🕊 (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=QGLIa51OfZk"><li><div class="title">Kanha | Am I Your Friend? | Original | Zendria</div><div class="domain">youtube.com &bull; September 21, 2024</div></li></a><a class="li" href="https://www.youtube.com/watch?v=jEhMONH92bk"><li><div class="title">Roasting Myself | Reacting To My First YouTube Video | Zendria</div><div class="domain">youtube.com &bull; September 21, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Wint Wealth (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=xaJvmFxgUto"><li><div class="title">Retired from Army with ₹10 Crores in Coorg?</div><div class="domain">youtube.com &bull; September 21, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Up and Atom (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=uctpdCexlns"><li><div class="title">GIANT GRAVITY HOLE in Indian Ocean</div><div class="domain">youtube.com &bull; September 21, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Uncomfortable (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=OCIBJSxS9fY"><li><div class="title">Drawabox Lesson  1, Exercise 10: Organic Perspective</div><div class="domain">youtube.com &bull; September 21, 2024</div></li></a><a class="li" href="https://www.youtube.com/watch?v=evGWbjDI6xQ"><li><div class="title">Drawabox Lesson 1, Boxes: The Y Method</div><div class="domain">youtube.com &bull; September 21, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">UnchartedX (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=mWcAWJzQHFQ"><li><div class="title">Modern Metals in Ancient Egyptian Vase Fragments? #ancient #technology #UnchartedX</div><div class="domain">youtube.com &bull; September 21, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">theteachr (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=EItdcGhSLf4"><li><div class="title">Counting Sort</div><div class="domain">youtube.com &bull; September 21, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">The School of Life (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=rZbnFDWnmVU"><li><div class="title">On Feeling Painfully Different  #short  #individual  #different</div><div class="domain">youtube.com &bull; September 21, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Sideprojects (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=nNQkP9IHSOs"><li><div class="title">The Biggest Lies from "Historical" Movies</div><div class="domain">youtube.com &bull; September 21, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Rare Earth (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=YkgH3YhK63I"><li><div class="title">The Republican Official Caught Selling Babies</div><div class="domain">youtube.com &bull; September 21, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Programmers are also human (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=SQYNa7ZjuDQ"><li><div class="title">*Next-door 10x Software Engineer*</div><div class="domain">youtube.com &bull; September 21, 2024</div></li></a><a class="li" href="https://www.youtube.com/watch?v=8pD8BmvWAVg"><li><div class="title">*Every Product Manager in a Corporate*</div><div class="domain">youtube.com &bull; September 21, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Program With Erik (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=NjaJfQN_zZo"><li><div class="title">Vue Just Announced Vitepress 1.0! The Best Static Site Generator Ever?</div><div class="domain">youtube.com &bull; September 21, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Primer (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=TZfh8hpJIxo"><li><div class="title">Simulating the Evolution of Teamwork</div><div class="domain">youtube.com &bull; September 21, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Primal Space (youtube.com)</h2> (3)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=A502C5G86jM"><li><div class="title">The weirdest train ever 😱</div><div class="domain">youtube.com &bull; September 21, 2024</div></li></a><a class="li" href="https://www.youtube.com/watch?v=Lwckek844ug"><li><div class="title">These men were BRAVE 😱</div><div class="domain">youtube.com &bull; September 21, 2024</div></li></a><a class="li" href="https://www.youtube.com/watch?v=gnc7HsCaelk"><li><div class="title">Antarctica is CRAZY😱</div><div class="domain">youtube.com &bull; September 21, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Practical Engineering (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=7G4ipM2qjfw"><li><div class="title">Connecting Solar to the Grid is Harder Than You Think</div><div class="domain">youtube.com &bull; September 21, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">PomplamooseMusic (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=gcooLiZPHwM"><li><div class="title">This is Jack from the future.</div><div class="domain">youtube.com &bull; September 21, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">PolyMatter (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=F-_ffPsIcS0"><li><div class="title">Why Ethiopia is Creating a New Country Next Door</div><div class="domain">youtube.com &bull; September 21, 2024</div></li></a><a class="li" href="https://www.youtube.com/watch?v=FLAKcprc8NU"><li><div class="title">Kim Jong-Un’s New Strategy</div><div class="domain">youtube.com &bull; September 21, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Plip Plip (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=uJGQPOU2mfo"><li><div class="title">THE END ☢️ | Plip Plip</div><div class="domain">youtube.com &bull; September 21, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Physics Girl (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=_IAeZaBpJpw"><li><div class="title">It's been a year and a half...</div><div class="domain">youtube.com &bull; September 21, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">oliSUNvia (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=qjvARuTSjqE"><li><div class="title">finding purpose in our insignificant existence</div><div class="domain">youtube.com &bull; September 21, 2024</div></li></a><a class="li" href="https://www.youtube.com/watch?v=ess1HfZzxss"><li><div class="title">self-centredness is NOT "self-care": losing the human face online</div><div class="domain">youtube.com &bull; September 21, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Nirmal Pillai (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=uMcqwxbamtE"><li><div class="title">when you’re invited for Google for India, you can’t not vlog 👍 #googleforindia #ad @GoogleIndia</div><div class="domain">youtube.com &bull; September 21, 2024</div></li></a><a class="li" href="https://www.youtube.com/watch?v=RXbTpwrrpA8"><li><div class="title">Kids this is what happens if you don’t take care of your skin! Follow @GarnierIndia for more!</div><div class="domain">youtube.com &bull; September 21, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Newsthink (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=PC20RAErJqI"><li><div class="title">Einstein's Special Theory of Relativity explained!</div><div class="domain">youtube.com &bull; September 21, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Nerdwriter1 (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=xC-cyrIq-qI"><li><div class="title">How Bruegel Invented A New Genre Of Painting</div><div class="domain">youtube.com &bull; September 21, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">neo (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=VikegclJiDM"><li><div class="title">Why Are Soviet Medals on the Moon?</div><div class="domain">youtube.com &bull; September 21, 2024</div></li></a><a class="li" href="https://www.youtube.com/watch?v=mIiPt1YVkP8"><li><div class="title">The Worst Crash That Never Happened</div><div class="domain">youtube.com &bull; September 21, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">NASA Jet Propulsion Laboratory (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=f-4QZsLjc3g"><li><div class="title">Get Ready With NASA: #RunwayToJupiter Style Challenge #GRWM #Shorts</div><div class="domain">youtube.com &bull; September 21, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Mustard (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=JyZJY_iTevc"><li><div class="title">We Could Fly Faster In Planes Like This</div><div class="domain">youtube.com &bull; September 21, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">MinuteFood (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=k0kvViSlYfs"><li><div class="title">Sous vide: are you on team "LOVE IT" or "HATE IT"?</div><div class="domain">youtube.com &bull; September 21, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">MinuteEarth (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=LJoppGSbozQ"><li><div class="title">For some animals, poop is a regular part of the menu!</div><div class="domain">youtube.com &bull; September 21, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">melodysheep (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=jdKKLf8KLTA"><li><div class="title">Space Habitats are Sick</div><div class="domain">youtube.com &bull; September 21, 2024</div></li></a><a class="li" href="https://www.youtube.com/watch?v=YzQYdx30HYE"><li><div class="title">The Asteroid Strikes Back - Teaser Trailer</div><div class="domain">youtube.com &bull; September 21, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Megaprojects (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=naXcEOdtDGE"><li><div class="title">Forest City: China Built a $100bn City in Malaysia... and No One Lives There</div><div class="domain">youtube.com &bull; September 21, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">M M F A Mellisai Mannar Fans Association (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=m6q-azLlco4"><li><div class="title">KAZHAGAM NALLA KAZHAGAM  DMK PROBAGANDA SONG COMPOSED BY M M MSV SUNG BY TMS -ON STAGE BY CM STALIN</div><div class="domain">youtube.com &bull; September 21, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Living Big In A Tiny House (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=x5yRECZAwkc"><li><div class="title">From Bankruptcy to the TOP OF THE WORLD in a Stunning Treehouse Cabin</div><div class="domain">youtube.com &bull; September 21, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Let's Game It Out (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=jQJYHSlz4Ss"><li><div class="title">I Used Just 1 Item to Turn Palworld Into Ridiculous Chaos</div><div class="domain">youtube.com &bull; September 21, 2024</div></li></a><a class="li" href="https://www.youtube.com/watch?v=gS5zRfNZR8A"><li><div class="title">People Order Drinks, I Serve Them Captivity - Tavern Manager Simulator</div><div class="domain">youtube.com &bull; September 21, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Kurzgesagt – In a Nutshell (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=_kelDJFjhOo"><li><div class="title">The Perfect Sofa – According to Science #shorts</div><div class="domain">youtube.com &bull; September 21, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Kommune India (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=pTc4O8FFX6s"><li><div class="title">Billie Eilish would be good? Rabia's Idea of a Perfect Dinner Party #poetry #music #songs #shorts</div><div class="domain">youtube.com &bull; September 21, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">KabitasKitchen Quick Recipes (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=7DWWkoUXzEk"><li><div class="title">Bread Poha Recipe | ब्रेड का झटपट और आसान नाश्ता | Bread Nasta | Breakfast Recipe | Kabitaskitchen</div><div class="domain">youtube.com &bull; September 21, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">John Williams - Topic (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=qE2EHz0G70E"><li><div class="title">Theme From Schindler's List (Reprise) (From "Schindler's List" Soundtrack)</div><div class="domain">youtube.com &bull; September 21, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">India in Pixels by Ashris (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=RcgEeDb2ZyA"><li><div class="title">Listen to ancient languages of India - Maharashtri, Shauraseni, Gandhari, Magadhi</div><div class="domain">youtube.com &bull; September 21, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">History of the Universe (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=CFpTzgk5jk0"><li><div class="title">Why Shouldn't The Universe Exist?</div><div class="domain">youtube.com &bull; September 21, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Hassan & Roshaan (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=Q7d5x1WA1IM"><li><div class="title">Hassan & Roshaan - Tere Ishq Ke Naam (ft. Annural Khalid) | OST | ARY Digital</div><div class="domain">youtube.com &bull; September 21, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Hans Zimmer (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=816bfNF1xPQ"><li><div class="title">Top Gun: Maverick Performed Live | Hans Zimmer Live Album</div><div class="domain">youtube.com &bull; September 21, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">GreatScott! (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=LcN_8vVqMjc"><li><div class="title">Basic Electrical Components You Need #electronics #components #essential #science #guide</div><div class="domain">youtube.com &bull; September 21, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Francesco Parrino (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=lAn9ozv255I"><li><div class="title">There might be MULTIPLE right answers! 🤯 #shorts</div><div class="domain">youtube.com &bull; September 21, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">exurb1a (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=Fzhkwyoe5vI"><li><div class="title">Don't Hex the Water</div><div class="domain">youtube.com &bull; September 21, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Design Theory (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=p5InhRf2JrU"><li><div class="title">Minimalism is Getting Absurd: Updating Dieter Rams' 10 Principles</div><div class="domain">youtube.com &bull; September 21, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Cortex Podcast (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=jNUtoDVeE1U"><li><div class="title">The Magnetic Pull of September</div><div class="domain">youtube.com &bull; September 21, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Continuous Delivery (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=mtZHy_8bTNU"><li><div class="title">Software Estimations Are ALWAYS Wrong #noestimates #softwareengineering</div><div class="domain">youtube.com &bull; September 21, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Computerphile (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=VkIJbpdTujE"><li><div class="title">3D Gaussian Splatting! - Computerphile</div><div class="domain">youtube.com &bull; September 21, 2024</div></li></a><a class="li" href="https://www.youtube.com/watch?v=BVNx3wtJ9vs"><li><div class="title">CPU Pipeline - Computerphile</div><div class="domain">youtube.com &bull; September 21, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">clown energy (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=GIPi-9g-MZ4"><li><div class="title">captain jack sparrow and will turner sharing one brain cell for about seven minutes</div><div class="domain">youtube.com &bull; September 21, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Cini Mini Movies (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=bFu9kFW2aak"><li><div class="title">உன்னக்காக நான் நாய்யா கூட இருப்பேன் | Vaazhvey Maayam | Kamal | Sridevi | CMM #shorts</div><div class="domain">youtube.com &bull; September 21, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Cinemawali (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=dB_OCqSk7oI"><li><div class="title">Roasting Western Portrayals of India- Bridgerton, Never Have I Ever & many more!</div><div class="domain">youtube.com &bull; September 21, 2024</div></li></a><a class="li" href="https://www.youtube.com/watch?v=0HdnKj7tuJY"><li><div class="title">How Item Numbers Evolved in Hindi Cinema</div><div class="domain">youtube.com &bull; September 21, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Buildofy (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=kjdSdc7rzx0"><li><div class="title">5 Inspiring Pooja Room Ideas for South Indian Homes #architecture #design #poojaroom</div><div class="domain">youtube.com &bull; September 21, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Ben Eater (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=AHYNxpqKqwo"><li><div class="title">The RS-232 protocol</div><div class="domain">youtube.com &bull; September 21, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">AVM Productions - Movies (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=m7ylPeymC50"><li><div class="title">How 'Vazhkkai' changed my life- Vyjayanthimala</div><div class="domain">youtube.com &bull; September 21, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Adrian Bliss (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=R8kSrYyWtNk"><li><div class="title">My book is a Sunday Times bestseller!</div><div class="domain">youtube.com &bull; September 21, 2024</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>

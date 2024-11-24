@@ -1,0 +1,138 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = true;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2024-09-17</span>:</h1>
+  <p class="summary">There are 20 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Computer Things (buttondown.com)</h2> (1)</summary><ul><a class="li" href="https://buttondown.com/hillelwayne/archive/goodharts-law-in-software-engineering/"><li><div class="title">Goodhart's Law in Software Engineering</div><div class="domain">buttondown.com &bull; September 17, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Trevor I. Lasn Thoughts (trevorlasn.com)</h2> (2)</summary><ul><a class="li" href="https://www.trevorlasn.com/blog/the-real-cost-of-meetings"><li><div class="title">The Real Cost of Meetings: What FAANG Companies Do Differently</div><div class="domain">trevorlasn.com &bull; September 17, 2024</div></li></a><a class="li" href="https://www.trevorlasn.com/blog/amazons-no-weasel-words-rule"><li><div class="title">Amazon's 'No Weasel Words' Rule</div><div class="domain">trevorlasn.com &bull; September 17, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">XML.com Atom feed for articles and news items (xml.com)</h2> (1)</summary><ul><a class="li" href="https://www.xml.com/news/2024-09-xmlmind-word-to-xml-v112/"><li><div class="title">Release of XMLmind Word To XML v1.12</div><div class="domain">xml.com &bull; September 17, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">쿠킹하루 Cooking Haru :) (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=YWxPqKmnH9Q"><li><div class="title">팬케이크보다 더 맛있습니다! 초간단 아침식사!! 바삭바삭 맛있어요!</div><div class="domain">youtube.com &bull; September 17, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">매일맛나 delicious day (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=D2OnkV8YLPw"><li><div class="title">불지 않고 탱글한 잡채의 정석</div><div class="domain">youtube.com &bull; September 17, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">UnchartedX (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=YpSBWm33lBs"><li><div class="title">Insane Precision Granite Box on Elephantine Island!  #ancientcivilization #egypt</div><div class="domain">youtube.com &bull; September 17, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Tsoding Daily (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=H-GO_bVUzCQ"><li><div class="title">I Don't Need No Silly Frameworks You Can't Live Without</div><div class="domain">youtube.com &bull; September 17, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">TED-Ed (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=3uTmcG7CgdI"><li><div class="title">How do animals regrow their limbs? And why can't humans do it? - Jessica Whited</div><div class="domain">youtube.com &bull; September 17, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Sisyphus 55 (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=MGChzvrDBhM"><li><div class="title">The Philosopher Who Can Solve Your Existential Anxiety</div><div class="domain">youtube.com &bull; September 17, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Physics Girl (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=WDUNqYXWbMg"><li><div class="title">We did it! $150k to research Long COVID</div><div class="domain">youtube.com &bull; September 17, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">PBS Eons (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=B9B7kPJ1i0M"><li><div class="title">How The Elephant Got Its Trunk</div><div class="domain">youtube.com &bull; September 17, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">MinuteFood (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=xLJSjbR5z9s"><li><div class="title">The thing EVERYONE gets wrong about pineapple</div><div class="domain">youtube.com &bull; September 17, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">MadRasana Official (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=yQA_-8gmWr0"><li><div class="title">Sankhyaanubhavam | Featuring @VishruthiGirish @AnirudhSubramanian @sathvikaa</div><div class="domain">youtube.com &bull; September 17, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">lucaas (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=lVKqVBgQtUY"><li><div class="title">Plane Catches Fire</div><div class="domain">youtube.com &bull; September 17, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Laasya (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=DFBx9FeemZM"><li><div class="title">Sooseki | Pushpa 2 | full dance cover | Nivi & Ishanvi | Laasya</div><div class="domain">youtube.com &bull; September 17, 2024</div></li></a><a class="li" href="https://www.youtube.com/watch?v=_060bBRkbrw"><li><div class="title">Angaaron | angaaron ka ambar sa | Pushpa 2 | full dance cover | Nivi & Ishanvi | Laasya</div><div class="domain">youtube.com &bull; September 17, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">DIY Perks (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=XEspOD1NHr0"><li><div class="title">Building EXCEPTIONAL speakers using MODERN TECHNIQUES</div><div class="domain">youtube.com &bull; September 17, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Cini Mini Movies (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=n_tuT7JbIHQ"><li><div class="title">Sorry..! உங்கள தெரியாம பொண்ணு பக்க வந்துட்டேன்.. Vaazhvey Maayam Movie #shorts</div><div class="domain">youtube.com &bull; September 17, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">BBC Ideas (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=osF2RL8AR0U"><li><div class="title">Is gaming good for your mental health? | BBC Ideas</div><div class="domain">youtube.com &bull; September 17, 2024</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
