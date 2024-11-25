@@ -13,11 +13,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Step 1: Checkout the current repo
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # Step 2: Download the latest binary dynamically
       - name: Download rdigest
         run: |
           REPO_OWNER="chandru89new" # Replace with actual owner
@@ -33,19 +31,19 @@ jobs:
           curl -L $BINARY_URL -o ./rdigest
           chmod +x ./rdigest
 
-      # Step 3: Run the binary
       - name: Refresh feeds
         run: |
           export RDIGEST_FOLDER=.
           ./rdigest refresh
 
-      # Step 4: Configure Git
+      - name: Remove binary
+        run: rm rdigest
+
       - name: Configure Git
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
-      # Step 5: Commit and Push Changes
       - name: Commit and Push Changes
         run: |
           git add .

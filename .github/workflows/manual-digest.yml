@@ -50,7 +50,9 @@ jobs:
           export RDIGEST_FOLDER=.
           ./rdigest digest --from ${{ inputs.from }} --to ${{ inputs.to }}
 
-      # Step 4: Configure Git
+      - name: Remove binary
+        run: rm rdigest
+
       - name: Configure Git
         run: |
           git config --global user.name "github-actions[bot]"
