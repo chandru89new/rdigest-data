@@ -1,0 +1,138 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = true;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2024-11-25</span>:</h1>
+  <p class="summary">There are 10 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (2)</summary><ul><a class="li" href="https://go.dev/blog/ismmkeynote"><li><div class="title">Getting to Go: The Journey of Go's Garbage Collector</div><div class="domain">go.dev &bull; November 25, 2024</div></li></a><a class="li" href="https://herecomesthemoon.net/2024/11/two-factions-of-cpp/"><li><div class="title">The two factions of C++</div><div class="domain">herecomesthemoon.net &bull; November 25, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (1)</summary><ul><a class="li" href="https://www.5snb.club/posts/2023/do-not-stab/"><li><div class="title">RFC 35140: HTTP Do-Not-Stab (2023)</div><div class="domain">5snb.club &bull; November 25, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (1)</summary><ul><a class="li" href="https://yourstory.com/2024/11/jaipur-based-startup-helping-people-breathe-easy-iot-enabled-bladeless-fans"><li><div class="title">How this Jaipur-based startup is helping people breathe easy with IoT-enabled bladeless fans</div><div class="domain">yourstory.com &bull; November 25, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">매일맛나 delicious day (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=IgPNK1u5ZjI"><li><div class="title">❤️감자빵 공구오픈 #구황작물빵 4종</div><div class="domain">youtube.com &bull; November 25, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">The Dodo (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=EnK3vjSI2r8"><li><div class="title">Lawrence The Turkey Loves Getting Burped | The Dodo</div><div class="domain">youtube.com &bull; November 25, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Jay & Sharon (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=vM_OrYFBGd0"><li><div class="title">I just want him to be happy #dadlife</div><div class="domain">youtube.com &bull; November 25, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">ICM Indian Classical Music (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=wVkJqP28nJc"><li><div class="title">Bhajan By Kaushiki Chakraborty Ji 🙏✨#icmvocal #bhajan #semiclassical #music #icmtabla #shorts</div><div class="domain">youtube.com &bull; November 25, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">GOTO Conferences (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=O43Up9_bpxc"><li><div class="title">Caught in a Web of Functions • Charles O'Farrell • YOW! 2017</div><div class="domain">youtube.com &bull; November 25, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">BBC News (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=kwspGHR9ZM4"><li><div class="title">Ireland toughens response to mass migration as communities voice concerns | BBC News</div><div class="domain">youtube.com &bull; November 25, 2024</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
