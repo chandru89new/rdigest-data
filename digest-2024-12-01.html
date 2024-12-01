@@ -1,0 +1,138 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = true;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2024-12-01</span>:</h1>
+  <p class="summary">There are 12 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (1)</summary><ul><a class="li" href="https://buttondown.com/hillelwayne/archive/why-do-we-call-it-boilerplate-code"><li><div class="title">Why do we call it "boilerplate code?" (2022)</div><div class="domain">buttondown.com &bull; December 01, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (3)</summary><ul><a class="li" href="https://www.ycombinator.com/companies/sei/jobs/TYbKqi0-ai-ml-llm-engineer"><li><div class="title">Sei AI (YC W22) Is Hiring an AI/ML Engineer with LLM Exposure</div><div class="domain">ycombinator.com &bull; December 01, 2024</div></li></a><a class="li" href="https://twitter.com/JeffDean/status/1858540085794451906"><li><div class="title">Jeff Dean Responds to EDA Industry about AlphaChip</div><div class="domain">twitter.com &bull; December 01, 2024</div></li></a><a class="li" href="https://structuredlabs.substack.com/p/why-we-need-data-engineering-benchmarks"><li><div class="title">We need data engineering benchmarks for LLMs</div><div class="domain">structuredlabs.substack.com &bull; December 01, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (1)</summary><ul><a class="li" href="https://yourstory.com/2024/11/quick-commerce-zomato-qip-deepak-shenoy"><li><div class="title">Quick commerce profitability to be impacted once companies take inventory control: Capitalmind’s Deepak Shenoy</div><div class="domain">yourstory.com &bull; December 01, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=bW4NnAMUkP4"><li><div class="title">Naomi youtube insta tiktok Sequence 01</div><div class="domain">youtube.com &bull; December 01, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">ICM Indian Classical Music (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=rZ02O5598A4"><li><div class="title">Pt Nath Neralkar Ji Mesmerizing Performance🙏✨#icmvocal #classical #music #icmtabla #shorts</div><div class="domain">youtube.com &bull; December 01, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">GOTO Conferences (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=8zTN3rtcED4"><li><div class="title">A Crash Course in OCaml Modules • Tim McGilchrist • YOW! 2015</div><div class="domain">youtube.com &bull; December 01, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">DW Documentary (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=43zfVk7GBSA"><li><div class="title">Siberia: Gazprom, a pipeline and the last nomads | DW Documentary</div><div class="domain">youtube.com &bull; December 01, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">ChessBase India (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=WCnSlTCUK6M"><li><div class="title">Ding Liren vs Gukesh | Game 6 | FIDE World Championship 2024 | Ft. Sagar, Tania, Balraj, Sahil</div><div class="domain">youtube.com &bull; December 01, 2024</div></li></a><a class="li" href="https://www.youtube.com/watch?v=IeyfhR3MSgc"><li><div class="title">Bobby Fischer's Friend Eugene Torre Talks About His Favorite World Champion</div><div class="domain">youtube.com &bull; December 01, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Best Documentary (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=0bXL9BqxQAA"><li><div class="title">Where has Shirley Russell gone?</div><div class="domain">youtube.com &bull; December 01, 2024</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
