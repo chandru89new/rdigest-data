@@ -1,0 +1,138 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = true;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2024-12-02</span>:</h1>
+  <p class="summary">There are 12 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (1)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/sookiqxkzzLmPYB3r/axrp-episode-39-evan-hubinger-on-model-organisms-of-1"><li><div class="title">AXRP Episode 39 - Evan Hubinger on Model Organisms of Misalignment</div><div class="domain">lesswrong.com &bull; December 02, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (4)</summary><ul><a class="li" href="https://www.404media.co/tether-has-become-a-massive-money-laundering-tool-for-mexican-drug-traffickers-feds-say/"><li><div class="title">Feds: Tether Has Become a Money Laundering Tool for Mexican Drug Trafficker</div><div class="domain">404media.co &bull; December 02, 2024</div></li></a><a class="li" href="https://www.ac3.com.au/resources/discovery-of-CVE-2024-2550/"><li><div class="title">Discovery of CVE-2024-2550 (Palo Alto)</div><div class="domain">ac3.com.au &bull; December 02, 2024</div></li></a><a class="li" href="https://retrocomputing.stackexchange.com/questions/12521/when-was-the-famous-sudo-warning-introduced-under-what-background-by-whom"><li><div class="title">When was the famous "sudo warning" introduced? Under what background? By whom? (2019)</div><div class="domain">retrocomputing.stackexchange.com &bull; December 02, 2024</div></li></a><a class="li" href="https://corp.oup.com/news/brain-rot-named-oxford-word-of-the-year-2024/"><li><div class="title">'Brain rot' named Oxford Word of the Year 2024</div><div class="domain">corp.oup.com &bull; December 02, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (2)</summary><ul><a class="li" href="https://yourstory.com/2024/11/ai-jobs-market-artificial-intelligence-upskilling-creating-new-roles-lucrative-pay"><li><div class="title">AI is not here to steal your job; it’s creating new roles with lucrative pay</div><div class="domain">yourstory.com &bull; December 02, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/11/subtlebotic-sivasanthosh-motor-function-loss-robotic-technology"><li><div class="title">This 21-year-old from a small town in Tamil Nadu is addressing motor function loss with robotic technology</div><div class="domain">yourstory.com &bull; December 02, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">The Dodo (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=PWB8HP_XvEw"><li><div class="title">Guy Surprises Wife With A Tiny One-Eyed Kitten | The Dodo</div><div class="domain">youtube.com &bull; December 02, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=9OPYjCxymrc"><li><div class="title">Caroline (follow up)</div><div class="domain">youtube.com &bull; December 02, 2024</div></li></a><a class="li" href="https://www.youtube.com/watch?v=WLkPZ4GzSus"><li><div class="title">Caroline 2</div><div class="domain">youtube.com &bull; December 02, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">ICM Indian Classical Music (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=H6lYffrO3KM"><li><div class="title">Ustad Shahid Parvez And Pt Anindo Chatterjee Ji 🙏✨#sitar #classical #music #icmtabla #shorts</div><div class="domain">youtube.com &bull; December 02, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">GOTO Conferences (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=jWHZ5faA7gE"><li><div class="title">Immutable Data Infrastructure Behind The Firewall • Quinton Anderson • YOW! 2016</div><div class="domain">youtube.com &bull; December 02, 2024</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
