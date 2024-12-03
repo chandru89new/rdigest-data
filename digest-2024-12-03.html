@@ -1,0 +1,138 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = true;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2024-12-03</span>:</h1>
+  <p class="summary">There are 14 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (4)</summary><ul><a class="li" href="https://utcc.utoronto.ca/~cks/space/blog/programming/GoUnionTypesComplexities"><li><div class="title">Union types would be complicated in Go</div><div class="domain">utcc.utoronto.ca &bull; December 03, 2024</div></li></a><a class="li" href="https://www.freebsd.org/releases/14.2R/announce/"><li><div class="title">FreeBSD 14.2-RELEASE Announcement</div><div class="domain">freebsd.org &bull; December 03, 2024</div></li></a><a class="li" href="https://mtlynch.io/notes/simple-go-web-service-nixos/"><li><div class="title">Run a Simple Go Web Service on NixOS</div><div class="domain">mtlynch.io &bull; December 03, 2024</div></li></a><a class="li" href="https://blog.heroku.com/dotnet-support-on-heroku"><li><div class="title">.NET Support on Heroku</div><div class="domain">blog.heroku.com &bull; December 03, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (2)</summary><ul><a class="li" href="https://theconversation.com/tip-pressure-might-work-in-the-moment-but-customers-are-less-likely-to-return-242089"><li><div class="title">Tip pressure might work in the moment, but customers are less likely to return</div><div class="domain">theconversation.com &bull; December 03, 2024</div></li></a><a class="li" href="https://github.com/copper-project/copper-rs/wiki/Copper-Release-Log"><li><div class="title">Show HN: Copper – Open-Source Robotics in Rust with Deterministic Log Replay</div><div class="domain">github.com &bull; December 03, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (1)</summary><ul><a class="li" href="https://yourstory.com/2024/11/kiko-live-traditional-retailers-growing-ecommerce-market"><li><div class="title">Kiko Live is helping traditional retailers adapt to the growing ecommerce market</div><div class="domain">yourstory.com &bull; December 03, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">The Dodo (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=E93TIlduxMU"><li><div class="title">20 Year Old Rescue Cow Finds Her Soulmate | The Dodo</div><div class="domain">youtube.com &bull; December 03, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=dAzKUMG3YB4"><li><div class="title">War Veteran-Repeat</div><div class="domain">youtube.com &bull; December 03, 2024</div></li></a><a class="li" href="https://www.youtube.com/watch?v=r0AkM2NfqsI"><li><div class="title">War Veteran-Repeat</div><div class="domain">youtube.com &bull; December 03, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">SciShow (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=NyYjv8Hwvfw"><li><div class="title">Why Things Look That Way Under a Blacklight</div><div class="domain">youtube.com &bull; December 03, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Newsthink (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=LmmyAOkajVM"><li><div class="title">The Greatest Mathematician Who Ever Lived</div><div class="domain">youtube.com &bull; December 03, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Jay & Sharon (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=QhGPuN-yvxY"><li><div class="title">Why kids want stuffed animals</div><div class="domain">youtube.com &bull; December 03, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">ICM Indian Classical Music (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=OKyXon3jZqg"><li><div class="title">Ajinkya Joshi Tabla Solo Snippet ❣️✨#icmtabla #classical #music #shorts</div><div class="domain">youtube.com &bull; December 03, 2024</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
