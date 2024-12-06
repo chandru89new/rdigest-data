@@ -1,0 +1,138 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = true;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2024-12-06</span>:</h1>
+  <p class="summary">There are 19 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">kottke.org (feeds.kottke.org)</h2> (1)</summary><ul><a class="li" href="https://kottke.org/24/12/looney-tunes-backgrounds"><li><div class="title">Looney Tunes Backgrounds</div><div class="domain">kottke.org &bull; December 06, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (1)</summary><ul><a class="li" href="https://decomposition.al/blog/2024/12/05/communicating-chorrectly-with-a-choreography-is-out/"><li><div class="title">“Communicating Chorrectly with a Choreography” is out</div><div class="domain">decomposition.al &bull; December 06, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (6)</summary><ul><a class="li" href="https://dangerousthings.com/"><li><div class="title">Dangerous Things Sells "Cybernetic Microchip Biohacking" RFID and NFC Implants</div><div class="domain">dangerousthings.com &bull; December 06, 2024</div></li></a><a class="li" href="https://www.canoncitydailyrecord.com/2024/12/05/university-colorado-anschutz-blindness-cure-eye-transplant-medical-research/"><li><div class="title">Researchers launch "moonshot" to cure blindness through eye transplants</div><div class="domain">canoncitydailyrecord.com &bull; December 06, 2024</div></li></a><a class="li" href="https://www.fabricatedknowledge.com/p/the-death-of-intel-when-boards-fail"><li><div class="title">The Death of Intel: When Boards Fail</div><div class="domain">fabricatedknowledge.com &bull; December 06, 2024</div></li></a><a class="li" href="https://design-milk.com/portland-airport-grows-with-expansive-mass-timber-roof-canopy/"><li><div class="title">Portland Airport Grows with Expansive Mass Timber Roof Canopy</div><div class="domain">design-milk.com &bull; December 06, 2024</div></li></a><a class="li" href="https://litdb.dev/"><li><div class="title">Litdb – type safe SQL for JavaScript/TS</div><div class="domain">litdb.dev &bull; December 06, 2024</div></li></a><a class="li" href="https://loyaltylobby.com/2024/12/04/air-canada-to-remove-free-carry-on-from-basic-economy-fares-starting-january-2025/"><li><div class="title">Air Canada to Remove Free Carry-On from Basic Economy</div><div class="domain">loyaltylobby.com &bull; December 06, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (1)</summary><ul><a class="li" href="https://yourstory.com/2024/12/rainmatter-startup-climes-carbon-credit-exchange-climate-finance"><li><div class="title">Rainmatter-backed Climes' carbon credit exchange helps brands chase sustainability</div><div class="domain">yourstory.com &bull; December 06, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">V3Cars (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=ihawAbUzkdc"><li><div class="title">New Honda Amaze Petrol Variants Explained | V, VX, ZX | The Ultimate Analysis</div><div class="domain">youtube.com &bull; December 06, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">ThePrint (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=QJdW-26---A"><li><div class="title">Ex-Bangladesh PM Sheikh Hasina targets Yunus for 'mass killings' in her 1st speech since ouster</div><div class="domain">youtube.com &bull; December 06, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">The Wire (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=vsEKa5XHny4"><li><div class="title">Wire Wrap: Maharashtra Govt Formation, Sambhal Spotlight on Places of Worship Act, Assam Beef Ban</div><div class="domain">youtube.com &bull; December 06, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">The Dodo (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=X49Y5eCJ8H0"><li><div class="title">Guy Finds A Senior Dog Trapped Under A Log | The Dodo</div><div class="domain">youtube.com &bull; December 06, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=RAKzllkqB1U"><li><div class="title">Pot Smuggler-Lauren</div><div class="domain">youtube.com &bull; December 06, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">ICM Indian Classical Music (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=VuaeI1Bf90A"><li><div class="title">Sitar Recital By Rishabh Rikhiram Sharma ❣️✨#sitar #classical #music #icmtabla #shorts</div><div class="domain">youtube.com &bull; December 06, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Empty Hand (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=ObWy96REpus"><li><div class="title">Pushpa 2 Movie Review -மொத்தமா செஞ்சிட்டாங்க ! Allu Arjun, Sukumar, Rashmika, Fahadh Faasil | Tamil</div><div class="domain">youtube.com &bull; December 06, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Bob & Brad (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=tIuSvnSmlnc"><li><div class="title">Relax With Our 14 Days of Giving  #bobandbrad #14daysofgiving #giveaway  #holidaywithyoutube</div><div class="domain">youtube.com &bull; December 06, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">BBC News (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=LYVySjMZC6M"><li><div class="title">Tsunami warning issued after magnitude 7 earthquake strikes California | BBC News</div><div class="domain">youtube.com &bull; December 06, 2024</div></li></a><a class="li" href="https://www.youtube.com/watch?v=xzhEQk_orw0"><li><div class="title">New York police issue new photos in hunt for killer of insurance boss | BBC News</div><div class="domain">youtube.com &bull; December 06, 2024</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
