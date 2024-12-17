@@ -1,0 +1,138 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = true;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2024-12-17</span>:</h1>
+  <p class="summary">There are 11 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Nautilus (nautil.us)</h2> (1)</summary><ul><a class="li" href="https://nautil.us/this-ocean-wave-has-rights-1170303/"><li><div class="title">This Ocean Wave Has Rights</div><div class="domain">nautil.us &bull; December 17, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (1)</summary><ul><a class="li" href="http://www.lumifont.co.uk/omnitest.php"><li><div class="title">Kevin Langdon's 'Omni Magazine' unsupervised IQ test (1979)</div><div class="domain">lumifont.co.uk &bull; December 17, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (1)</summary><ul><a class="li" href="https://yourstory.com/2024/12/b2b-b2c-yin-and-yang-edtech-biz-upgrad-enterprise-ceo"><li><div class="title">B2B and B2C are the Yin and Yang of edtech biz: upGrad Enterprise CEO</div><div class="domain">yourstory.com &bull; December 17, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">VideoFromSpace (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=w4Xib7IdLZc"><li><div class="title">Blastoff! SpaceX launches mysterious RRT-1 mission, nails landing at sea</div><div class="domain">youtube.com &bull; December 17, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">ThePrint (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=1SJWM54hn9A"><li><div class="title">On Vijay Divas, IAF's understated role in 1971 War: how it dominated Western Sector & expert views</div><div class="domain">youtube.com &bull; December 17, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">The Wire (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=Cyl6V2tKk4o"><li><div class="title">Bangladesh Hindus और Indian Minorities की सुरक्षा की मांग, इकरा हसन का लोकसभा में जोरदार भाषण</div><div class="domain">youtube.com &bull; December 17, 2024</div></li></a><a class="li" href="https://www.youtube.com/watch?v=bgTpNdUNLy8"><li><div class="title">‘Secularism, Democracy Under Attack’: A. Raja Attacks BJP in Lok Sabha | Full Speech</div><div class="domain">youtube.com &bull; December 17, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">The Dodo (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=uDI3wZuflsU"><li><div class="title">Tiger Has Been Chained Up Her Whole Life | The Dodo</div><div class="domain">youtube.com &bull; December 17, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=PMIsk3cZcAI"><li><div class="title">Transgender Prostitute-Stephanie</div><div class="domain">youtube.com &bull; December 17, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">ICM Indian Classical Music (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=CMkjxTa3rvs"><li><div class="title">Pt. Shiv Kumar Sharma Ji & Ustad Zakir Hussain Ji 🙏✨#classical #music #icmtabla</div><div class="domain">youtube.com &bull; December 17, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Chess.com (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=SejeqQasH9w"><li><div class="title">Magnus JUMPED to the POOL and Gukesh Went BUNGEE JUMPING After Becoming WORLD CHAMPION</div><div class="domain">youtube.com &bull; December 17, 2024</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
