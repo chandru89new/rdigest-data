@@ -1,0 +1,138 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = true;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2024-12-18</span>:</h1>
+  <p class="summary">There are 19 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (2)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/j8tnrZdQcTL4yc4Hg/ai-safety-seed-funding-network-join-as-a-donor-or-investor"><li><div class="title">AI Safety Seed Funding Network - Join as a Donor or Investor</div><div class="domain">lesswrong.com &bull; December 18, 2024</div></li></a><a class="li" href="https://www.lesswrong.com/posts/DPr67dZRtbEDyPfds/trying-to-translate-when-people-talk-past-each-other"><li><div class="title">Trying to translate when people talk past each other</div><div class="domain">lesswrong.com &bull; December 18, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (1)</summary><ul><a class="li" href="https://wiki.alopex.li/SurveyOfSystemLanguages2024"><li><div class="title">A Survey Of System Languages (2024)</div><div class="domain">wiki.alopex.li &bull; December 18, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (5)</summary><ul><a class="li" href="https://semking.com/google-search-real-user-feedback/"><li><div class="title">Google, the search engine that's forgotten how to search</div><div class="domain">semking.com &bull; December 18, 2024</div></li></a><a class="li" href="https://github.com/sminez/ad"><li><div class="title">Ad: An Adaptable Text Editor</div><div class="domain">github.com &bull; December 18, 2024</div></li></a><a class="li" href="https://exbody2.github.io/"><li><div class="title">Advanced Expressive Humanoid Whole-Body Control</div><div class="domain">exbody2.github.io &bull; December 18, 2024</div></li></a><a class="li" href="https://www.smithsonianmag.com/air-space-magazine/we-built-saturn-v-180964759/"><li><div class="title">We Built the Saturn V (2017)</div><div class="domain">smithsonianmag.com &bull; December 18, 2024</div></li></a><a class="li" href="https://lodev.org/cgtutor/xortexture.html"><li><div class="title">The XOR Texture</div><div class="domain">lodev.org &bull; December 18, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (2)</summary><ul><a class="li" href="https://yourstory.com/2024/12/climate-sustainability-tech-startup-resilience-ai-seed-funding-kalaari-capital"><li><div class="title">Resilience AI bags $1M seed funding led by Kalaari Capital</div><div class="domain">yourstory.com &bull; December 18, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/12/bigbasket-10-min-food-delivery-bolt-bistro-quick-commerce-tata-bbnow"><li><div class="title">BigBasket wants a slice of the 10-min food delivery pie</div><div class="domain">yourstory.com &bull; December 18, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Wendover Productions (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=B2j-LgcA7Gk"><li><div class="title">The Battle Over NYC Congestion Pricing</div><div class="domain">youtube.com &bull; December 18, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">The Dodo (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=K--mPYldSJ4"><li><div class="title">Kitten Loves Her Shower Time, We Swear | The Dodo</div><div class="domain">youtube.com &bull; December 18, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (3)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=CM3shnDu9j4"><li><div class="title">Transgender Prostitute-Stephanie</div><div class="domain">youtube.com &bull; December 18, 2024</div></li></a><a class="li" href="https://www.youtube.com/watch?v=N0kzFYDIWDE"><li><div class="title">Transgender Prostitute-Stephanie</div><div class="domain">youtube.com &bull; December 18, 2024</div></li></a><a class="li" href="https://www.youtube.com/watch?v=hI-dk46JOJ0"><li><div class="title">Transgender Prostitute-Stephanie</div><div class="domain">youtube.com &bull; December 18, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Jay & Sharon (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=dqNWCjjdcu0"><li><div class="title">English Ain’t Easy #Acer #Swift14AI #IntelCoreUltra</div><div class="domain">youtube.com &bull; December 18, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">ICM Indian Classical Music (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=y_NYUsGy4TA"><li><div class="title">Maestros Together Ustad Nusara Fateh Ali Khan & Ustad Zakir Hussain Ji🙏✨#icmvocal #icmtabla #shorts</div><div class="domain">youtube.com &bull; December 18, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">FRONTLINE PBS | Official (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=RoLHExBL5qU"><li><div class="title">Maui's Deadly Firestorm (full documentary) | FRONTLINE</div><div class="domain">youtube.com &bull; December 18, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Chess.com (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=n5hYtA0fEPY"><li><div class="title">MAGNUS CAN'T KEEP GETTING AWAY WITH IT!!!!!!</div><div class="domain">youtube.com &bull; December 18, 2024</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
