@@ -1,0 +1,138 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = true;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2024-12-20</span>:</h1>
+  <p class="summary">There are 11 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (1)</summary><ul><a class="li" href="https://nipafx.dev/java-visitor-pattern-pointless/"><li><div class="title">Visitor Pattern Considered Pointless - Use Pattern Switches Instead (2021)</div><div class="domain">nipafx.dev &bull; December 20, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Longreads (longreads.com)</h2> (1)</summary><ul><a class="li" href="https://longreads.com/2024/12/19/casual-viewing/"><li><div class="title">Casual Viewing</div><div class="domain">longreads.com &bull; December 20, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (1)</summary><ul><a class="li" href="https://www.nytimes.com/2024/12/18/nyregion/bat-poop-cannabis-deaths-ny.html"><li><div class="title">Bat Feces Used to Fertilize Cannabis Is Linked to 2 Deaths</div><div class="domain">nytimes.com &bull; December 20, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">VideoFromSpace (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=u6uQwUCWA7s"><li><div class="title">Russian cosmonauts perform spacewalk to install new X-ray detector on ISS</div><div class="domain">youtube.com &bull; December 20, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">The Dodo (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=3d3eS6gOf50"><li><div class="title">Just Another Nosy Neighbor | The Dodo</div><div class="domain">youtube.com &bull; December 20, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (3)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=Tpx_6mYYW7k"><li><div class="title">Homeless Woman-Ruby</div><div class="domain">youtube.com &bull; December 20, 2024</div></li></a><a class="li" href="https://www.youtube.com/watch?v=ZktUzEYm8Uw"><li><div class="title">Homeless Woman-Ruby</div><div class="domain">youtube.com &bull; December 20, 2024</div></li></a><a class="li" href="https://www.youtube.com/watch?v=kvLdxZ2Gbqw"><li><div class="title">Homeless Woman-Ruby</div><div class="domain">youtube.com &bull; December 20, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Sheena Melwani (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=KCOqOpAASOk"><li><div class="title">I got my husband a vest for Christmas. Merry Vestmas? | #shorts #happyholidays</div><div class="domain">youtube.com &bull; December 20, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">ICM Indian Classical Music (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=YGoIiP98hk8"><li><div class="title">Ustad Zakir Hussain & Pt Hariprasad Chaurasia Ji 🙏✨#flute #icmtabla #classical #music #shorts</div><div class="domain">youtube.com &bull; December 20, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Dr Ben Miles (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=Pm3FBOwN8Ic"><li><div class="title">Scientists Just Discovered We Were Wrong About Dinosaurs</div><div class="domain">youtube.com &bull; December 20, 2024</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
