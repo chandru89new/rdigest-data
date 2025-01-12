@@ -1,0 +1,138 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = true;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-01-12</span>:</h1>
+  <p class="summary">There are 8 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (1)</summary><ul><a class="li" href="https://bsky.app/profile/matthewraifman.bsky.social/post/3lfaqbygva22j"><li><div class="title">Adobe Lightroom's AI Remove feature added a Bitcoin to bird in flight photo</div><div class="domain">bsky.app &bull; January 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (1)</summary><ul><a class="li" href="https://yourstory.com/2025/01/2024-rewind-ai-fintech-quick-commerce-startups-2025-predictions-prime-venture-partners"><li><div class="title">2024 startup rewind: AI, fintech, and quick commerce with all partners at Prime Venture Partners</div><div class="domain">yourstory.com &bull; January 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Wolfram (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=LLgi7IBKgpw"><li><div class="title">Projects from the Wolfram High School Summer Research Program</div><div class="domain">youtube.com &bull; January 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Dodo (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=HkuqoYYAcoU"><li><div class="title">Baby Girl Is Being Raised By Six German Shepherds | The Dodo</div><div class="domain">youtube.com &bull; January 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Action Lab (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=3qHh4cT-KoE"><li><div class="title">Poisson's Spot on The Darkest Ball In The World</div><div class="domain">youtube.com &bull; January 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Kannadhasan Productions by Annadurai Kannadhasan (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=PqpCklPjHiw"><li><div class="title">215) கண்ணதாசன், இளையராஜாவுக்கு மாற்றித் தந்த பாடல் வரி</div><div class="domain">youtube.com &bull; January 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ICM Indian Classical Music (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=IKTvra7yKg8"><li><div class="title">Ustad Ali Akbar Khan & Ustad Zakir Hussain Ji 🙏✨#sarod #icmtabla #classical #music #shorts</div><div class="domain">youtube.com &bull; January 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Einzelgänger (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=Sul-i5CxJks"><li><div class="title">When You Seek It, You Lose It | The Zen Secret to Letting Go</div><div class="domain">youtube.com &bull; January 12, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
