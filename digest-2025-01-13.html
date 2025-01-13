@@ -1,0 +1,138 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = true;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-01-13</span>:</h1>
+  <p class="summary">There are 10 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (3)</summary><ul><a class="li" href="https://nocoffei.com/?p=352"><li><div class="title">Running LLMs on the Nintendo Switch</div><div class="domain">nocoffei.com &bull; January 13, 2025</div></li></a><a class="li" href="https://www.enlightenment.org/news/2025-01-11-enlightenment-0.27.0"><li><div class="title">Enlightenment 0.27.0 Release</div><div class="domain">enlightenment.org &bull; January 13, 2025</div></li></a><a class="li" href="https://git-scm.com/book/en/v2/Git-Tools-Reset-Demystified"><li><div class="title">Git - Reset Demystified</div><div class="domain">git-scm.com &bull; January 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (3)</summary><ul><a class="li" href="https://arstechnica.com/gadgets/2021/08/a-decade-and-a-half-of-instability-the-history-of-google-messaging-apps/"><li><div class="title">A decade and a half of instability: The history of Google messaging apps (2021)</div><div class="domain">arstechnica.com &bull; January 13, 2025</div></li></a><a class="li" href="https://doompdf.pages.dev/doom.pdf"><li><div class="title">Show HN: Doom (1993) in a PDF</div><div class="domain">doompdf.pages.dev &bull; January 13, 2025</div></li></a><a class="li" href="https://heterogenoustasks.wordpress.com/2015/01/26/standard-patterns-in-choice-based-games/"><li><div class="title">Standard Patterns in Choice-Based Games (2015)</div><div class="domain">heterogenoustasks.wordpress.com &bull; January 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (1)</summary><ul><a class="li" href="https://yourstory.com/2025/01/great-indian-startup-showcase-marathon"><li><div class="title">YourStory presents The Great Indian Startup Showcase: A day-long live storytelling marathon to celebrate National Startup Day</div><div class="domain">yourstory.com &bull; January 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">VideoFromSpace (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=8C8fevCrKYw"><li><div class="title">Watch Live! Blue Origin to launch New Glenn rocket for first time</div><div class="domain">youtube.com &bull; January 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Dodo (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=sYEgd-sB818"><li><div class="title">Newborn Baby Horse Couldn't Stand Up At All, Until... | The Dodo</div><div class="domain">youtube.com &bull; January 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ICM Indian Classical Music (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=AyXbblCle7M"><li><div class="title">Om Namah Shivaya Bhajan By Kavita Krishnamurthy Ji❣️✨#icmvocal #classical #music #icmtabla #shorts</div><div class="domain">youtube.com &bull; January 13, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
