@@ -1,0 +1,138 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = true;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-01-18</span>:</h1>
+  <p class="summary">There are 10 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (1)</summary><ul><a class="li" href="https://graphite.rs/blog/year-in-review-2024-highlights-and-a-peek-at-2025/"><li><div class="title">Year in review: 2024 highlights and a peek at 2025</div><div class="domain">graphite.rs &bull; January 18, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (3)</summary><ul><a class="li" href="https://electrek.co/2025/01/17/byd-launches-worlds-largest-car-carrier-fuel-global-ev-takeover/"><li><div class="title">BYD just launched the largest car carrier to charge up its global EV ambitions</div><div class="domain">electrek.co &bull; January 18, 2025</div></li></a><a class="li" href="https://www.eff.org/deeplinks/2025/01/eff-statement-us-supreme-courts-decision-uphold-tiktok-ban"><li><div class="title">EFF Statement on U.S. Supreme Court's Decision to Uphold TikTok Ban</div><div class="domain">eff.org &bull; January 18, 2025</div></li></a><a class="li" href="https://news.ycombinator.com/item?id=42744820"><li><div class="title">Spellbrush (YC W18) Is Hiring Game Programmers (Anime SRPG/Tactics)</div><div class="domain">news.ycombinator.com &bull; January 18, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (2)</summary><ul><a class="li" href="https://yourstory.com/2025/01/grest-wants-to-show-refurbished-phones-can-be-as-good-as-new"><li><div class="title">Grest wants to show that refurbished phones can be as good as new</div><div class="domain">yourstory.com &bull; January 18, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/01/how-custom-analytics-solutions-can-drive-ecommerce"><li><div class="title">How custom analytics solutions can drive ecommerce success</div><div class="domain">yourstory.com &bull; January 18, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">UnchartedX (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=XRpZJdn5tCs"><li><div class="title">Huge Bedrock Shafts and Hidden Subterranean Chambers at the Giza Plateau? Walk n Talk with Yousef!</div><div class="domain">youtube.com &bull; January 18, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ThePrint (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=m0HV-Ro2qd8"><li><div class="title">Revisiting a forgotten Indian story as Trump creates controversy over Panama Canal</div><div class="domain">youtube.com &bull; January 18, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Dodo (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=QEN3gQckkp8"><li><div class="title">110 Pound "Aggressive" Dog Becomes A Duckling Dad | The Dodo</div><div class="domain">youtube.com &bull; January 18, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">BBC News (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=ZAQGoXIkTlw"><li><div class="title">Climate change: Carbon dioxide rises more than ever in 2024 | BBC News</div><div class="domain">youtube.com &bull; January 18, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
