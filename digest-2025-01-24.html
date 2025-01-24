@@ -1,0 +1,138 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-01-24</span>:</h1>
+  <p class="summary">There are 13 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details><summary><h2 class="summary">kottke.org (feeds.kottke.org)</h2> (2)</summary><ul><a class="li" href="https://kottke.org/25/01/rick-steves-always-on-the-go"><li><div class="title">Rick Steves, Always on the Go</div><div class="domain">kottke.org &bull; January 24, 2025</div></li></a><a class="li" href="https://kottke.org/25/01/0046037-how-daft-punk-made-the"><li><div class="title">How Daft Punk Made The Drums For &#8220;Starboy&#8221; By The Weeknd. They...</div><div class="domain">kottke.org &bull; January 24, 2025</div></li></a></ul></details><details><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (1)</summary><ul><a class="li" href="https://arxiv.org/abs/2501.13276"><li><div class="title">Extraction of Secrets from 40nm CMOS Gate Dielectric Breakdown Antifuses by FIB Passive Voltage Contrast</div><div class="domain">arxiv.org &bull; January 24, 2025</div></li></a></ul></details><details><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (1)</summary><ul><a class="li" href="https://www.ycombinator.com/companies/sei/jobs/LeAtLYf-full-stack-engineer-typescript-react-gen-ai"><li><div class="title">Sei (YC W22) Is Hiring</div><div class="domain">ycombinator.com &bull; January 24, 2025</div></li></a></ul></details><details><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (1)</summary><ul><a class="li" href="https://yourstory.com/2025/01/budget-2025-agritech-focus-infrastructure-sustainability"><li><div class="title">Budget 2025: Agritech sector calls for focus on infrastructure and sustainability</div><div class="domain">yourstory.com &bull; January 24, 2025</div></li></a></ul></details><details><summary><h2 class="summary">The Dodo (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=0KRmh7MxUEc"><li><div class="title">Roadrunner Brings His Rescuer Gifts Every Day | The Dodo</div><div class="domain">youtube.com &bull; January 24, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=YVa4gvwc_C8"><li><div class="title">Woman Takes In A Tiny Shelter Kitten After LA Wildfires | The Dodo</div><div class="domain">youtube.com &bull; January 24, 2025</div></li></a></ul></details><details><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=Pw6VI7gguds"><li><div class="title">Adrianne</div><div class="domain">youtube.com &bull; January 24, 2025</div></li></a></ul></details><details><summary><h2 class="summary">PBS Space Time (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=SXg6YVcdOcA"><li><div class="title">Does Timescapes DISPROVE Dark Energy?</div><div class="domain">youtube.com &bull; January 24, 2025</div></li></a></ul></details><details><summary><h2 class="summary">darbarfestival (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=nW2wh4op8NE"><li><div class="title">Raag Hindol | Uday Bhawalkar | Music of India</div><div class="domain">youtube.com &bull; January 24, 2025</div></li></a></ul></details><details><summary><h2 class="summary">Bob & Brad (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=kxRjwdz00g0"><li><div class="title">How to Eliminate Neck Hump or Hunchback with a Sock. Bob’s Secrets</div><div class="domain">youtube.com &bull; January 24, 2025</div></li></a></ul></details><details><summary><h2 class="summary">BBC News (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=K1cBCifoX9Y"><li><div class="title">World's largest iceberg heading for British territory | BBC News</div><div class="domain">youtube.com &bull; January 24, 2025</div></li></a></ul></details><details><summary><h2 class="summary">Academy of Ideas (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=G42xfVmngHY"><li><div class="title">The Great Rewiring of Childhood: A Smartphone-Social Media Dystopia</div><div class="domain">youtube.com &bull; January 24, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
