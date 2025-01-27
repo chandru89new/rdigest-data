@@ -2,6 +2,7 @@
 
 <head>
   <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     * {
       margin: 0;
@@ -75,6 +76,12 @@
       color: slategray;
     }
 
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
     a {
       color: cornflowerblue;
       text-decoration: none;
@@ -131,7 +138,7 @@
     <span onclick="toggle();">Expand/collapse all</span>
   </p>
   <article>
-    <details><summary><h2 class="summary">Kevin Martin Jose (kevinmartinjose.com)</h2> (1)</summary><ul><a class="li" href="https://kevinmartinjose.com/2020/11/22/vimcharm-approximating-pycharm-on-vim/"><li><div class="title">VimCharm: Approximating PyCharm on vim</div><div class="domain">kevinmartinjose.com &bull; November 22, 2020</div></li></a></ul></details>
+    <details open><summary><h2 class="summary">Kevin Martin Jose (kevinmartinjose.com)</h2> (1)</summary><ul><a class="li" href="https://kevinmartinjose.com/2020/11/22/vimcharm-approximating-pycharm-on-vim/"><li><div class="title">VimCharm: Approximating PyCharm on vim</div><div class="domain">kevinmartinjose.com &bull; November 22, 2020</div></li></a></ul></details>
   </article>
 </body>
 

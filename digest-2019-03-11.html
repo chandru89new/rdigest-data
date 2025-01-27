@@ -2,6 +2,7 @@
 
 <head>
   <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     * {
       margin: 0;
@@ -75,6 +76,12 @@
       color: slategray;
     }
 
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
     a {
       color: cornflowerblue;
       text-decoration: none;
@@ -131,7 +138,7 @@
     <span onclick="toggle();">Expand/collapse all</span>
   </p>
   <article>
-    <details><summary><h2 class="summary">👋 Hey there! I’m Ilija. on Ilija Eftimov 👨‍🚀 (ieftimov.com)</h2> (1)</summary><ul><a class="li" href="https://ieftimov.com/posts/spotify-recently-played-least-recently-used-cache-golang/"><li><div class="title">Barebones model of Spotify's 'Recently Played' screen using a Least Recently Used (LRU) cache in Golang</div><div class="domain">ieftimov.com &bull; March 11, 2019</div></li></a></ul></details>
+    <details open><summary><h2 class="summary">👋 Hey there! I’m Ilija. on Ilija Eftimov 👨‍🚀 (ieftimov.com)</h2> (1)</summary><ul><a class="li" href="https://ieftimov.com/posts/spotify-recently-played-least-recently-used-cache-golang/"><li><div class="title">Barebones model of Spotify's 'Recently Played' screen using a Least Recently Used (LRU) cache in Golang</div><div class="domain">ieftimov.com &bull; March 11, 2019</div></li></a></ul></details>
   </article>
 </body>
 

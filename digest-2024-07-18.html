@@ -2,6 +2,7 @@
 
 <head>
   <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     * {
       margin: 0;
@@ -75,6 +76,12 @@
       color: slategray;
     }
 
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
     a {
       color: cornflowerblue;
       text-decoration: none;
@@ -131,7 +138,7 @@
     <span onclick="toggle();">Expand/collapse all</span>
   </p>
   <article>
-    <details><summary><h2 class="summary">Collab Fund (collabfund.com)</h2> (1)</summary><ul><a class="li" href="https://collabfund.com/blog/makes-you-think/"><li><div class="title">Makes You Think</div><div class="domain">collabfund.com &bull; July 18, 2024</div></li></a></ul></details>
+    <details open><summary><h2 class="summary">Collab Fund (collabfund.com)</h2> (1)</summary><ul><a class="li" href="https://collabfund.com/blog/makes-you-think/"><li><div class="title">Makes You Think</div><div class="domain">collabfund.com &bull; July 18, 2024</div></li></a></ul></details>
   </article>
 </body>
 

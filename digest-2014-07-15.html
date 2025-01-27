@@ -2,6 +2,7 @@
 
 <head>
   <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     * {
       margin: 0;
@@ -75,6 +76,12 @@
       color: slategray;
     }
 
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
     a {
       color: cornflowerblue;
       text-decoration: none;
@@ -131,7 +138,7 @@
     <span onclick="toggle();">Expand/collapse all</span>
   </p>
   <article>
-    <details><summary><h2 class="summary">Stepan Parunashvili (stopa.io)</h2> (1)</summary><ul><a class="li" href="https://stopa.io/post/104"><li><div class="title">2 types of pride</div><div class="domain">stopa.io &bull; July 15, 2014</div></li></a></ul></details>
+    <details open><summary><h2 class="summary">Stepan Parunashvili (stopa.io)</h2> (1)</summary><ul><a class="li" href="https://stopa.io/post/104"><li><div class="title">2 types of pride</div><div class="domain">stopa.io &bull; July 15, 2014</div></li></a></ul></details>
   </article>
 </body>
 

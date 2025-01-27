@@ -2,6 +2,7 @@
 
 <head>
   <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     * {
       margin: 0;
@@ -75,6 +76,12 @@
       color: slategray;
     }
 
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
     a {
       color: cornflowerblue;
       text-decoration: none;
@@ -131,7 +138,7 @@
     <span onclick="toggle();">Expand/collapse all</span>
   </p>
   <article>
-    <details><summary><h2 class="summary">Scattered Thoughts (scattered-thoughts.net)</h2> (1)</summary><ul><a class="li" href="https://www.scattered-thoughts.net/writing/how-safe-is-zig/"><li><div class="title">How (memory) safe is zig?</div><div class="domain">scattered-thoughts.net &bull; September 21, 2022</div></li></a></ul></details>
+    <details open><summary><h2 class="summary">Scattered Thoughts (scattered-thoughts.net)</h2> (1)</summary><ul><a class="li" href="https://www.scattered-thoughts.net/writing/how-safe-is-zig/"><li><div class="title">How (memory) safe is zig?</div><div class="domain">scattered-thoughts.net &bull; September 21, 2022</div></li></a></ul></details>
   </article>
 </body>
 

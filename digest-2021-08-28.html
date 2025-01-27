@@ -2,6 +2,7 @@
 
 <head>
   <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     * {
       margin: 0;
@@ -75,6 +76,12 @@
       color: slategray;
     }
 
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
     a {
       color: cornflowerblue;
       text-decoration: none;
@@ -131,7 +138,7 @@
     <span onclick="toggle();">Expand/collapse all</span>
   </p>
   <article>
-    <details><summary><h2 class="summary">Fastidious Elegance (sacrideo.us)</h2> (1)</summary><ul><a class="li" href="https://www.sacrideo.us/lamy-2000-vs-lamy-aion/"><li><div class="title">Lamy 2000 vs. Lamy aion</div><div class="domain">sacrideo.us &bull; August 28, 2021</div></li></a></ul></details>
+    <details open><summary><h2 class="summary">Fastidious Elegance (sacrideo.us)</h2> (1)</summary><ul><a class="li" href="https://www.sacrideo.us/lamy-2000-vs-lamy-aion/"><li><div class="title">Lamy 2000 vs. Lamy aion</div><div class="domain">sacrideo.us &bull; August 28, 2021</div></li></a></ul></details>
   </article>
 </body>
 

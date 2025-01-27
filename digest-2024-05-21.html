@@ -2,6 +2,7 @@
 
 <head>
   <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     * {
       margin: 0;
@@ -75,6 +76,12 @@
       color: slategray;
     }
 
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
     a {
       color: cornflowerblue;
       text-decoration: none;
@@ -131,7 +138,7 @@
     <span onclick="toggle();">Expand/collapse all</span>
   </p>
   <article>
-    <details><summary><h2 class="summary">Computer Things (buttondown.com)</h2> (1)</summary><ul><a class="li" href="https://buttondown.com/hillelwayne/archive/nocode-will-not-bring-computing-to-the-masses/"><li><div class="title">NoCode Will Not Bring Computing to the Masses</div><div class="domain">buttondown.com &bull; May 21, 2024</div></li></a></ul></details>
+    <details open><summary><h2 class="summary">Computer Things (buttondown.com)</h2> (1)</summary><ul><a class="li" href="https://buttondown.com/hillelwayne/archive/nocode-will-not-bring-computing-to-the-masses/"><li><div class="title">NoCode Will Not Bring Computing to the Masses</div><div class="domain">buttondown.com &bull; May 21, 2024</div></li></a></ul></details>
   </article>
 </body>
 

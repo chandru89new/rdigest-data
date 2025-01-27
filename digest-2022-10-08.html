@@ -2,6 +2,7 @@
 
 <head>
   <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     * {
       margin: 0;
@@ -75,6 +76,12 @@
       color: slategray;
     }
 
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
     a {
       color: cornflowerblue;
       text-decoration: none;
@@ -131,7 +138,7 @@
     <span onclick="toggle();">Expand/collapse all</span>
   </p>
   <article>
-    <details><summary><h2 class="summary">fhur's blog (fhur.me)</h2> (2)</summary><ul><a class="li" href="/posts/how-to-setup-react-relay-with-vite"><li><div class="title">How to configure React Relay with Vite</div><div class="domain"> &bull; October 08, 2022</div></li></a><a class="li" href="/posts/always-use-closed-open-intervals"><li><div class="title">Always use [closed, open) intervals. A programmer's perspective</div><div class="domain"> &bull; October 08, 2022</div></li></a></ul></details>
+    <details open><summary><h2 class="summary">fhur's blog (fhur.me)</h2> (2)</summary><ul><a class="li" href="/posts/how-to-setup-react-relay-with-vite"><li><div class="title">How to configure React Relay with Vite</div><div class="domain"> &bull; October 08, 2022</div></li></a><a class="li" href="/posts/always-use-closed-open-intervals"><li><div class="title">Always use [closed, open) intervals. A programmer's perspective</div><div class="domain"> &bull; October 08, 2022</div></li></a></ul></details>
   </article>
 </body>
 
