@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-01-31</span>:</h1>
+  <p class="summary">There are 13 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">kottke.org (feeds.kottke.org)</h2> (2)</summary><ul><a class="li" href="https://kottke.org/25/01/0046106-if-im-being-real-honest"><li><div class="title">If I&#8217;m being real honest, which I try to be, I can&#8217;t...</div><div class="domain">kottke.org &bull; January 31, 2025</div></li></a><a class="li" href="https://kottke.org/25/01/0046110-joy-machine-is-a-new"><li><div class="title">Joy Machine is a new art gallery in Chicago from the team...</div><div class="domain">kottke.org &bull; January 31, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Longreads (longreads.com)</h2> (1)</summary><ul><a class="li" href="https://longreads.com/2025/01/30/the-future-is-too-easy/"><li><div class="title">The Future Is Too Easy</div><div class="domain">longreads.com &bull; January 31, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (1)</summary><ul><a class="li" href="https://www.nytimes.com/2025/01/30/health/fda-journavx-suzetrigine-vertex-opioids.html"><li><div class="title">FDA Approves drug to treat pain without opioid effects</div><div class="domain">nytimes.com &bull; January 31, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Y Combinator (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=2S1Z6YEKVoM"><li><div class="title">AI Personal Staff for Everyone</div><div class="domain">youtube.com &bull; January 31, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Dodo (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=2LMUk4alKM4"><li><div class="title">Dog With Two Legs Can't Stop Smiling When She Runs | The Dodo</div><div class="domain">youtube.com &bull; January 31, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=Qt4Rr8efVAQ"><li><div class="title">Fig Promo</div><div class="domain">youtube.com &bull; January 31, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Newsthink (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=YA51aZ8EXM0"><li><div class="title">Why Mark Zuckerberg Looks Like a Totally Different Person</div><div class="domain">youtube.com &bull; January 31, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Intelligence Squared (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=DnaQ_jF96yY"><li><div class="title">The Science of Racism with Dr Keon West</div><div class="domain">youtube.com &bull; January 31, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ICM Indian Classical Music (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=FuGp-D9lvJY"><li><div class="title">Pt Chhannu Lal Mishra Ji 🙏✨ #icmvocal #classical #music #icmtabla #shorts</div><div class="domain">youtube.com &bull; January 31, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Engineering Facts (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=SFlqDv0OriM"><li><div class="title">இப்படி ஒரு கார பாத்துருக்க மாட்டிங்க !!</div><div class="domain">youtube.com &bull; January 31, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">BBC News (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=P4T6bLISfFk"><li><div class="title">Washington air disaster was “preventable” says US government | BBC News</div><div class="domain">youtube.com &bull; January 31, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Bad Lip Reading (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=97Xh84iA6zw"><li><div class="title">Trump arrives at the White House</div><div class="domain">youtube.com &bull; January 31, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
