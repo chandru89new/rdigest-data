@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-02-04</span>:</h1>
+  <p class="summary">There are 13 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">kottke.org (feeds.kottke.org)</h2> (1)</summary><ul><a class="li" href="https://kottke.org/25/02/0046125-donald-trumps-executive-o"><li><div class="title">Donald Trump&#8217;s Executive Orders Aim to Create Jim Crow for Trans People....</div><div class="domain">kottke.org &bull; February 04, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Longreads (longreads.com)</h2> (1)</summary><ul><a class="li" href="https://longreads.com/2025/02/03/hearts-and-brains/"><li><div class="title">Hearts and Brains</div><div class="domain">longreads.com &bull; February 04, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (3)</summary><ul><a class="li" href="https://www.techdirt.com/2025/02/03/a-coup-is-in-progress-in-america/"><li><div class="title">A Coup Is in Progress in America</div><div class="domain">techdirt.com &bull; February 04, 2025</div></li></a><a class="li" href="https://www.govinfo.gov/content/pkg/FR-2025-01-31/pdf/2025-02116.pdf"><li><div class="title">Order Declassifying JFK and MLK Assassination Records [pdf]</div><div class="domain">govinfo.gov &bull; February 04, 2025</div></li></a><a class="li" href="https://ticotimes.net/2025/02/02/el-salvador-abandons-bitcoin-as-legal-tender-after-failed-experiment"><li><div class="title">El Salvador abandons Bitcoin as legal tender after failed experiment</div><div class="domain">ticotimes.net &bull; February 04, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (1)</summary><ul><a class="li" href="https://yourstory.com/2025/02/deepseek-threat-ai-india-gpu-chips-problem-ashwini-vaishnaw-indiaai"><li><div class="title">The DeepSeek threat: India may have a GPU problem and it needs to act fast</div><div class="domain">yourstory.com &bull; February 04, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ThePrimeTime (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=j_R2kk0cMRs"><li><div class="title">OpenAI "We Are On The Wrong Side Of History" (of Open Source)</div><div class="domain">youtube.com &bull; February 04, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Dodo (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=-pLV7t-Biqc"><li><div class="title">Baby Horse Moves Into Her Human Mom’s House And Causes Chaos | The Dodo</div><div class="domain">youtube.com &bull; February 04, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Daily Show (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=0kT5VEJRXUo"><li><div class="title">Great Moments in Meritocracy: Lara Marries Eric Trump #dailyshow #trump</div><div class="domain">youtube.com &bull; February 04, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=68P6nt1gTGs"><li><div class="title">How Human Trafficking Happens-Karla</div><div class="domain">youtube.com &bull; February 04, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=DWvnT_kdaKA"><li><div class="title">Fig Promo</div><div class="domain">youtube.com &bull; February 04, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Rick Beato (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=7_NUyBxsL4E"><li><div class="title">Pat Travers talks about meeting Van Halen #guitar #rockmusic #vanhalen #shorts ￼</div><div class="domain">youtube.com &bull; February 04, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Physics Girl (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=-4e__1PtOhE"><li><div class="title">World's most secret mystery EXPLAINED</div><div class="domain">youtube.com &bull; February 04, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
