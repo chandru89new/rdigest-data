@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-02-07</span>:</h1>
+  <p class="summary">There are 16 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">kottke.org (feeds.kottke.org)</h2> (1)</summary><ul><a class="li" href="https://kottke.org/25/02/0046157-the-world-has-probably-pa"><li><div class="title">The world has probably passed &#8216;peak air pollution&#8217;. &#8220;Global air pollution is...</div><div class="domain">kottke.org &bull; February 07, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Longreads (longreads.com)</h2> (1)</summary><ul><a class="li" href="https://longreads.com/2025/02/06/my-quest-to-find-the-owner-of-a-mysterious-wwii-japanese-sword/"><li><div class="title">My Quest to Find the Owner of a Mysterious WWII Japanese Sword</div><div class="domain">longreads.com &bull; February 07, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (1)</summary><ul><a class="li" href="https://www.veeto.app/bill/1955756"><li><div class="title">California bill would require bots to disclose that they are bots</div><div class="domain">veeto.app &bull; February 07, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (2)</summary><ul><a class="li" href="https://yourstory.com/2025/02/viral-instagram-page-ludhiana-streetwear-brand-shark-tank-backed-burger-bae"><li><div class="title">From a viral Instagram page to a streetwear brand, meet Shark Tank-backed Burger Bae</div><div class="domain">yourstory.com &bull; February 07, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/02/udemy-sees-surge-learners-indians-opt-genai-upskilling-ceo-greg-brown"><li><div class="title">Udemy sees surge in learners as Indians opt for GenAI upskilling: CEO Greg Brown</div><div class="domain">yourstory.com &bull; February 07, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ThePrint (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=bFkm7xfHIiw"><li><div class="title">Debunking myths about Savarkar, his legacy, where RSS is wrong: Arun Shourie on his new book & more</div><div class="domain">youtube.com &bull; February 07, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Dodo (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=j-xEMT95LqQ"><li><div class="title">Dog Keeps Sneaking Over From The Neighbor's Yard | The Dodo</div><div class="domain">youtube.com &bull; February 07, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=mpUWV-KYbqg"><li><div class="title">Story Time On How I Saved $$$ In Vet Bills | The Pack</div><div class="domain">youtube.com &bull; February 07, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Daily Show (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=MP1ru87kJBA"><li><div class="title">Low key banger from Amy Klobuchar #dailyshow #AmyKlobuchar #Greenland</div><div class="domain">youtube.com &bull; February 07, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">StarTalk (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=tRA2SfSk2Tc"><li><div class="title">How I Think About Climate Change</div><div class="domain">youtube.com &bull; February 07, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=HwaNlkK896Y"><li><div class="title">Fentanyl Addict-Terry</div><div class="domain">youtube.com &bull; February 07, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=vZO3UW-mf0s"><li><div class="title">Fentanyl Addict-Terry</div><div class="domain">youtube.com &bull; February 07, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Jist (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=YMLUHbo85sE"><li><div class="title">18 Year Old Indian Deported by Trump Relates His Ordeal | InFocus Episode -5 | Jist</div><div class="domain">youtube.com &bull; February 07, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ICM Indian Classical Music (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=Ijtn1ENqTfE"><li><div class="title">Garaj Garaj Bandish By Maithili Thakur ❣️✨ #icmvocal #classical #music #icmtabla #shorts</div><div class="domain">youtube.com &bull; February 07, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ChessBase India (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=3njoB7nm4Z8"><li><div class="title">Magnus vs World Champion Gukesh 💀🔥 #chess #gukesh #magnuscarlsen</div><div class="domain">youtube.com &bull; February 07, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">BBC News (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=kQPrKOFdIvI"><li><div class="title">Trump restates plan for US ‘takeover’ of Gaza, with Palestinians ‘resettled in region’ | BBC News</div><div class="domain">youtube.com &bull; February 07, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
