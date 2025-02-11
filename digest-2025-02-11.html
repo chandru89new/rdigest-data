@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-02-11</span>:</h1>
+  <p class="summary">There are 14 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (2)</summary><ul><a class="li" href="http://jackkelly.name/blog/archives/2025/02/06/how_copyover_mud_servers_worked/"><li><div class="title">How Copyover MUD Servers Worked</div><div class="domain">jackkelly.name &bull; February 11, 2025</div></li></a><a class="li" href="https://www.npmjs.com/package/anansi-tags"><li><div class="title">Anansi-tags (now in NodeJS!)</div><div class="domain">npmjs.com &bull; February 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Longreads (longreads.com)</h2> (1)</summary><ul><a class="li" href="https://longreads.com/2025/02/10/mike-whites-mischievious-vision-for-the-white-lotus/"><li><div class="title">Mike White’s Mischievious Vision for “The White Lotus”</div><div class="domain">longreads.com &bull; February 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (1)</summary><ul><a class="li" href="https://silent.org.pl/home/2022/06/13/the-floppotron-3-0/"><li><div class="title">The Floppotron 3.0 (2022)</div><div class="domain">silent.org.pl &bull; February 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (3)</summary><ul><a class="li" href="https://yourstory.com/2025/02/d2c-brands-putting-their-money-on-small-packs-with-big-hopes"><li><div class="title">Why D2C brands are putting their money on small packs with big hopes</div><div class="domain">yourstory.com &bull; February 11, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/02/ranveer-singh-sexual-wellness-bold-care-rainmatter-5m-series-a"><li><div class="title">Ranveer Singh-backed sexual wellness brand Bold Care raises $5M in Series A funding</div><div class="domain">yourstory.com &bull; February 11, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/02/chennai-based-startup-matching-startups-right-talent-ai-hiring"><li><div class="title">This Chennai-based startup is matching startups with the right talent using AI</div><div class="domain">yourstory.com &bull; February 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Veritasium (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=P_fHJIYENdI"><li><div class="title">What if all the world's biggest problems have the same solution?</div><div class="domain">youtube.com &bull; February 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ThePrint (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=e5l1L0fNoQY"><li><div class="title">Biren Singh’s exit & the Myanmar threat: Why turmoil in Manipur is far from over</div><div class="domain">youtube.com &bull; February 11, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=QpFNrPyypwo"><li><div class="title">'Standing up against Biren Singh is also a capacity to stand up against diktats from Amit Shah'</div><div class="domain">youtube.com &bull; February 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ThePrimeTime (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=ngjkJN9RKgA"><li><div class="title">The Greatest Software Engineers of All Time</div><div class="domain">youtube.com &bull; February 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Dodo (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=0y8h6a3w92E"><li><div class="title">Scared Cat Who Screamed at Pets Now Loves To Cuddle | The Dodo</div><div class="domain">youtube.com &bull; February 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=nID3-_txFl4"><li><div class="title">Pippi</div><div class="domain">youtube.com &bull; February 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ICM Indian Classical Music (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=fORuObpa_k4"><li><div class="title">Sitar Recital By Swayam Siddha Priyadarshi ❣️✨#sitar #icmtabla #classical #music #shorts</div><div class="domain">youtube.com &bull; February 11, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
