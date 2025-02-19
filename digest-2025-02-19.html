@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-02-19</span>:</h1>
+  <p class="summary">There are 9 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (1)</summary><ul><a class="li" href="https://perl.plover.com/classes/cftalk/INFO/gosper.txt"><li><div class="title">Continued Fraction Arithmetic (1978)</div><div class="domain">perl.plover.com &bull; February 19, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (2)</summary><ul><a class="li" href="https://arstechnica.com/space/2025/02/nasa-receives-11th-hour-reprieve-from-probationary-employee-cuts/"><li><div class="title">In a last-minute decision, White House decides not to terminate NASA employees</div><div class="domain">arstechnica.com &bull; February 19, 2025</div></li></a><a class="li" href="https://www.meta.com/blog/connect-2025-llamacon-save-the-date/"><li><div class="title">Meta announces LlamaCon, its first generative AI dev conference on April 29</div><div class="domain">meta.com &bull; February 19, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (1)</summary><ul><a class="li" href="https://yourstory.com/2025/02/data-sovereignty-cloud-computing-indian-businesses"><li><div class="title">Data sovereignty and cloud computing: A call to action for Indian businesses</div><div class="domain">yourstory.com &bull; February 19, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ThePrint (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=OAp9xpEaxHw"><li><div class="title">Why India's courting Qatar #cuttheclutter</div><div class="domain">youtube.com &bull; February 19, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Dodo (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=Zlw1kwFfZM4"><li><div class="title">The Most Cherished Piece of Art We Have 🥹 | The Pack</div><div class="domain">youtube.com &bull; February 19, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=U3t7uGYuj0U"><li><div class="title">Denny-The Dark Knight of the Soul</div><div class="domain">youtube.com &bull; February 19, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Kannadhasan Productions by Annadurai Kannadhasan (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=pS8mn6ruzMw"><li><div class="title">217 ) தமிழ் சினிமாவின் ஒரே ஓரு பாடல் இதுதான்</div><div class="domain">youtube.com &bull; February 19, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ICM Indian Classical Music (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=WsfKCUs6TOQ"><li><div class="title">Bhajan Begum Parveen Sultana Ji & On Pt Abhijit Banerjee Ji🙏✨#icmvocal #classical #bhajan #icmtabla</div><div class="domain">youtube.com &bull; February 19, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
