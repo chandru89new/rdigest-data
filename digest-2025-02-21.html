@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-02-21</span>:</h1>
+  <p class="summary">There are 13 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (1)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/gGAXSfQaiGBCwBJH5/timaeus-in-2024"><li><div class="title">Timaeus in 2024</div><div class="domain">lesswrong.com &bull; February 21, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (1)</summary><ul><a class="li" href="https://crustacean.optionalstudio.work"><li><div class="title">Crustacean for Lobste.rs</div><div class="domain">crustacean.optionalstudio.work &bull; February 21, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Longreads (longreads.com)</h2> (1)</summary><ul><a class="li" href="https://longreads.com/2025/02/20/this-is-what-happens-when-you-unleash-500-singles-on-an-irl-date/"><li><div class="title">This is What Happens When You Unleash 500 Singles on an IRL Date</div><div class="domain">longreads.com &bull; February 21, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (3)</summary><ul><a class="li" href="https://blog.pragmaticengineer.com/software-engineer-jobs-five-year-low/"><li><div class="title">Software engineering job openings hit five-year low?</div><div class="domain">blog.pragmaticengineer.com &bull; February 21, 2025</div></li></a><a class="li" href="https://github.com/DeclanChidlow/BritCSS"><li><div class="title">BritCSS: Fixes CSS to use non-American English</div><div class="domain">github.com &bull; February 21, 2025</div></li></a><a class="li" href="https://www.ycombinator.com/companies/exa-laboratories/jobs/9TXvyqt-founding-engineer"><li><div class="title">Exa Laboratories (YC S24) Is Hiring a Founding Engineer to Build AI Chips</div><div class="domain">ycombinator.com &bull; February 21, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ThePrimeTime (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=Ywbe1IVi8uY"><li><div class="title">🚨🚨 HARDCORE TYPESCRIPT PROGRAMMING 🚨🚨</div><div class="domain">youtube.com &bull; February 21, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">StarTalk (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=_-ZB2Z7VtmE"><li><div class="title">Will An Asteroid Hit Earth in 2032?</div><div class="domain">youtube.com &bull; February 21, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=4_KWuiGHnuU"><li><div class="title">Alice-When Family Fails</div><div class="domain">youtube.com &bull; February 21, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Quanta Magazine (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=xuLCPv6smwo"><li><div class="title">One Step Closer to a 'Grand Unified Theory of Math': Geometric Langlands</div><div class="domain">youtube.com &bull; February 21, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ICM Indian Classical Music (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=ehYhAusCjqM"><li><div class="title">Santoor Recital By Pt Bhajan Sapori Ji🙏✨ #santoor #icmtabla #classical #music #shorts</div><div class="domain">youtube.com &bull; February 21, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ChessNetwork (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=sdKTjoVBjdA"><li><div class="title">Mikhail Tal's Richter-Rauzer WRECKS Radulov</div><div class="domain">youtube.com &bull; February 21, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Chess.com (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=dJLVOOTScX4"><li><div class="title">MAGNUS vs. HIKARU! Who'll Win? | Chessable Masters 2025 Grand Final</div><div class="domain">youtube.com &bull; February 21, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
