@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-02-25</span>:</h1>
+  <p class="summary">There are 10 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (1)</summary><ul><a class="li" href="https://lukecyca.com/2025/canadian-vps-review.html"><li><div class="title">Canadian VPS Review</div><div class="domain">lukecyca.com &bull; February 25, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (3)</summary><ul><a class="li" href="https://nypost.com/2025/02/24/opinion/friendship-in-america-is-in-freefall-and-its-killing-us/"><li><div class="title">US friendship is in freefall – shredding bonds and cutting lives short</div><div class="domain">nypost.com &bull; February 25, 2025</div></li></a><a class="li" href="https://discuss.systems/@ricci/114059690609284323"><li><div class="title">Everyone at NSF overseeing the Platforms for Wireless Experimentation is gone</div><div class="domain">discuss.systems &bull; February 25, 2025</div></li></a><a class="li" href="https://www.gilesthomas.com/2025/02/blogging-in-the-age-of-ai"><li><div class="title">It's still worth blogging in the age of AI</div><div class="domain">gilesthomas.com &bull; February 25, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (2)</summary><ul><a class="li" href="https://yourstory.com/2025/02/epic-world-launches-115b-ehi-index-benchmark"><li><div class="title">EPIC World Unveils $115B EHI Index to benchmark companies empowering entrepreneurial households</div><div class="domain">yourstory.com &bull; February 25, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/02/flipkart-backed-supermoney-acquires-bharatx-bring-bnpl-upi"><li><div class="title">Flipkart-backed super.money acquires BharatX to bring BNPL to UPI</div><div class="domain">yourstory.com &bull; February 25, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">VideoFromSpace (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=vS73VmWdcao"><li><div class="title">SpaceX explains cause of Starship’s rapid unscheduled disassembly on flight 7</div><div class="domain">youtube.com &bull; February 25, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ThePrint (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=9SIQ9li1Q3A"><li><div class="title">Humans and robots can coexist in a very near future - Meet world's first robot citizen, Sophia</div><div class="domain">youtube.com &bull; February 25, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=AHHFWZT_7_o"><li><div class="title">Soft White Underbelly Subscription Channel</div><div class="domain">youtube.com &bull; February 25, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ICM Indian Classical Music (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=ol9Fi3pTrWI"><li><div class="title">Pt. Tarun Bhattacharya Ji's  Santoor Vadan & On Tabla Jyotirmoy Roy Choudhury❣️✨#santoor #icmtabla</div><div class="domain">youtube.com &bull; February 25, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
