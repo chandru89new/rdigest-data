@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-02-27</span>:</h1>
+  <p class="summary">There are 10 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">kottke.org (feeds.kottke.org)</h2> (2)</summary><ul><a class="li" href="https://kottke.org/25/02/0046323-pedro-pascal-responding-t"><li><div class="title">Pedro Pascal responding to transphobia on social media: &#8220;I can&#8217;t think of...</div><div class="domain">kottke.org &bull; February 27, 2025</div></li></a><a class="li" href="https://kottke.org/25/02/a-son-tries-to-rescue-his-dad-from-conspiracy-theories"><li><div class="title">A Son Tries to Rescue His Dad From Conspiracy Theories</div><div class="domain">kottke.org &bull; February 27, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (1)</summary><ul><a class="li" href="https://jcs.org/2025/02/26/imacg4k"><li><div class="title">iMac G4(K)</div><div class="domain">jcs.org &bull; February 27, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Longreads (longreads.com)</h2> (1)</summary><ul><a class="li" href="https://longreads.com/2025/02/26/day-1509-in-the-big-brother-house/"><li><div class="title">Day 1,509 in the Big Brother House</div><div class="domain">longreads.com &bull; February 27, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">VideoFromSpace (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=-iweOxisWeo"><li><div class="title">Blastoff! SpaceX launches IM-2 moon mission for NASA , nails booster landing</div><div class="domain">youtube.com &bull; February 27, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=N6t-ai9xz2Y"><li><div class="title">Replay! SpaceX launches IM-2 moon mission atop Falcon 9 rocket</div><div class="domain">youtube.com &bull; February 27, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ThePrint (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=PevA46yMd54"><li><div class="title">Russia, India, & China: Problems & Prospects of building Greater Eurasia</div><div class="domain">youtube.com &bull; February 27, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Dodo (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=B1NALPtcDFM"><li><div class="title">Dog Birthday Party Ideas | The Pack</div><div class="domain">youtube.com &bull; February 27, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=WfGv41DWtts"><li><div class="title">Crystal Meth Addict-Abby</div><div class="domain">youtube.com &bull; February 27, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ICM Indian Classical Music (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=hO-oVtpV-CQ"><li><div class="title">Amazing Singing By Disha Prakash & Shweta❣️✨ #icmvocal #classical #music #icmtabla #shorts</div><div class="domain">youtube.com &bull; February 27, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
