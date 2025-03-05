@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-03-05</span>:</h1>
+  <p class="summary">There are 12 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (2)</summary><ul><a class="li" href="https://www.graz.io/articles/bayleaf-wireless-keyboard"><li><div class="title">Bayleaf: Building a low-profile wireless split keyboard</div><div class="domain">graz.io &bull; March 05, 2025</div></li></a><a class="li" href="https://archive.org/details/CobaltOS-Proxmox"><li><div class="title">Cobalt Networks CobaltOS: Proxmox Port</div><div class="domain">archive.org &bull; March 05, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (1)</summary><ul><a class="li" href="https://www.abc.net.au/news/science/2025-03-05/cortical-labs-neuron-brain-chip/104996484"><li><div class="title">Melbourne startup launches 'biological computer' made of human brain cells</div><div class="domain">abc.net.au &bull; March 05, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (3)</summary><ul><a class="li" href="https://yourstory.com/2025/02/india-centre-of-excellence-ai-education-research-practical-applications-youth"><li><div class="title">India’s bet on AI is its youth</div><div class="domain">yourstory.com &bull; March 05, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/02/chennai-urban-farming-agritech-startup-croppico-homie-smart-hydroponics-system"><li><div class="title">Croppico’s Homie brings smart hydroponics to your living room</div><div class="domain">yourstory.com &bull; March 05, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/03/prime-venture-partners-raises-100-million-fund-early-stage-startups"><li><div class="title">Niyo-backer Prime Venture Partners secures $100M for its latest fund</div><div class="domain">yourstory.com &bull; March 05, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Dodo (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=sFFDIvjHF40"><li><div class="title">The Best Way To Get Those Hard To Reach Cat Toys | The Pack</div><div class="domain">youtube.com &bull; March 05, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=OoKpZwyr5CQ"><li><div class="title">People Are Throwing Puffins Off Cliffs To Save Them | The Dodo</div><div class="domain">youtube.com &bull; March 05, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=qzDialJWtTA"><li><div class="title">Eden</div><div class="domain">youtube.com &bull; March 05, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Khan Academy (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=H94vBouLSiE"><li><div class="title">How to use the Khan Academy Writing Coach</div><div class="domain">youtube.com &bull; March 05, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ICM Indian Classical Music (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=b6qratvNbtw"><li><div class="title">Vidushi Nirmala Devi Ji 🙏✨#icmvocal #gazal #icmtabla #semiclassical #music #shorts</div><div class="domain">youtube.com &bull; March 05, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">BBC News (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=PhB1IqLwroA"><li><div class="title">LIVE: President Trump addresses Congress after pausing Ukraine aid and imposing tariffs | BBC News</div><div class="domain">youtube.com &bull; March 05, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
