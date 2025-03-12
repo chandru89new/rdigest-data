@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-03-12</span>:</h1>
+  <p class="summary">There are 16 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (1)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/kBgySGcASWa4FWdD9/paths-and-waystations-in-ai-safety-1"><li><div class="title">Paths and waystations in AI safety</div><div class="domain">lesswrong.com &bull; March 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (2)</summary><ul><a class="li" href="https://mirawelner.com/posts/TUM_thoughts.html"><li><div class="title">Perspectives from the Technical University of Munich</div><div class="domain">mirawelner.com &bull; March 12, 2025</div></li></a><a class="li" href="https://ersei.net/en/blog/niri"><li><div class="title">The Future is Niri</div><div class="domain">ersei.net &bull; March 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Longreads (longreads.com)</h2> (1)</summary><ul><a class="li" href="https://longreads.com/2025/03/11/its-taylor-sheridans-world-were-just-watching-it/"><li><div class="title">It’s Taylor Sheridan’s World. We’re Just Watching It</div><div class="domain">longreads.com &bull; March 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (1)</summary><ul><a class="li" href="https://www.theguardian.com/australia-news/2025/mar/12/australian-man-survives-100-days-with-artificial-heart-in-world-first-success"><li><div class="title">Australian man survives 100 days with artificial heart in world-first success</div><div class="domain">theguardian.com &bull; March 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (2)</summary><ul><a class="li" href="https://yourstory.com/2025/03/microcosm-global-industry-zolve-bags-251m-boost"><li><div class="title">A microcosm of global industry; Zolve bags $251M boost</div><div class="domain">yourstory.com &bull; March 12, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/03/bessemer-venture-partners-350-million-second-india-focused-fund-ai-cybersecurity-startups"><li><div class="title">Bessemer Venture Partners raises $350M for second India-focused fund</div><div class="domain">yourstory.com &bull; March 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=rDuDHx6CpAE"><li><div class="title">Rock Band Tour Bus Driver-Jerry</div><div class="domain">youtube.com &bull; March 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Senthil kumar (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=P7DqcEAvO5E"><li><div class="title">Mudhalvan - #arrahman - #PhysicalMedia #Collection (#Cassette #Tapes - #ACD - #DVD - #VHS) 💿📼</div><div class="domain">youtube.com &bull; March 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Programmers are also human (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=4R4uTrA1vQ8"><li><div class="title">Hiring in 2025 vs 2021</div><div class="domain">youtube.com &bull; March 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">John Williams - Topic (youtube.com)</h2> (3)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=Oz7sSLpXiqg"><li><div class="title">Estudio</div><div class="domain">youtube.com &bull; March 12, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=JerxWMXOf-w"><li><div class="title">Gavotte</div><div class="domain">youtube.com &bull; March 12, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=J6F82bb4SU4"><li><div class="title">Barcarolle</div><div class="domain">youtube.com &bull; March 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">John Bartholomew (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=HwA-P3-7Jbk"><li><div class="title">You Must Never Relax</div><div class="domain">youtube.com &bull; March 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ICM Indian Classical Music (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=6lH2P101A1Y"><li><div class="title">Classical Vocal By Begum Parveen Sultana Ji 🙏✨ #icmvocal #icmtabla #classical #music #shorts</div><div class="domain">youtube.com &bull; March 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">BBC News (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=BGycrg3R6gY"><li><div class="title">Rodrigo Duterte, former Philippines president, arrested over drug killings | BBC News</div><div class="domain">youtube.com &bull; March 12, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
