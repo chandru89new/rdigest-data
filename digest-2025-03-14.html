@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-03-14</span>:</h1>
+  <p class="summary">There are 20 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (2)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/XFGTJz9vGwjJADeFB/ai-107-the-misplaced-hype-machine"><li><div class="title">AI #107: The Misplaced Hype Machine</div><div class="domain">lesswrong.com &bull; March 14, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/zteMisMhEjwhZbWez/vacuum-decay-expert-survey-results"><li><div class="title">Vacuum Decay: Expert Survey Results</div><div class="domain">lesswrong.com &bull; March 14, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (3)</summary><ul><a class="li" href="https://arstechnica.com/tech-policy/2025/03/openai-urges-trump-either-settle-ai-copyright-debate-or-lose-ai-race-to-china/"><li><div class="title">OpenAI declares AI race "over" if training on copyrighted works isn't fair use</div><div class="domain">arstechnica.com &bull; March 14, 2025</div></li></a><a class="li" href="https://oxfordamerican.org/oa-now/the-toxic-wave-that-swallowed-a-tennessee-town"><li><div class="title">The Toxic Wave That Swallowed a Tennessee Town</div><div class="domain">oxfordamerican.org &bull; March 14, 2025</div></li></a><a class="li" href="https://github.com/chenquan/arkflow"><li><div class="title">ArkFlow – High-performance Rust stream processing engine</div><div class="domain">github.com &bull; March 14, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (2)</summary><ul><a class="li" href="https://yourstory.com/2025/03/breaking-into-the-us-market-arise-ventures-super-money-upi-market"><li><div class="title">Breaking into the US market with some help; Super.money climbs UPI rankings</div><div class="domain">yourstory.com &bull; March 14, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/03/can-ai-be-your-personal-astrologer"><li><div class="title">Can AI be your personal astrologer?</div><div class="domain">yourstory.com &bull; March 14, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Vikkals (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=RZO0OQms64g"><li><div class="title">சம்சாரம் அது மின்சாரம்😂😂 #vikkals #shorts</div><div class="domain">youtube.com &bull; March 14, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ThePrint (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=628N8yfzj7w"><li><div class="title">‘Embarrassing circus’—Pakistan diverted $3 million grant for flood victims to Syria, Turkey</div><div class="domain">youtube.com &bull; March 14, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=o0S8WBH22Lw"><li><div class="title">Why & how the festival of Holi has been made a battleground for political polarisation</div><div class="domain">youtube.com &bull; March 14, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Dodo (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=xWPkArSrqxg"><li><div class="title">Millie Bobby Brown's Husband Crashes Her Date | The Dodo</div><div class="domain">youtube.com &bull; March 14, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=uogn6vosI-s"><li><div class="title">My Dogs Love To Use This Enrichment Toy | The Pack</div><div class="domain">youtube.com &bull; March 14, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=yYnVe74_6I4"><li><div class="title">Punk Rock Musician Merle Allin</div><div class="domain">youtube.com &bull; March 14, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">PBS Space Time (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=cfkU4CD91hk"><li><div class="title">How Astrophysics Can (LITERALLY) Save the World</div><div class="domain">youtube.com &bull; March 14, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">newslaundry (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=KzCvsxz4VSc"><li><div class="title">13 मार्च 2025: राष्ट्रपति भवन, संसद, PM आवास और India Gate क्षेत्र से 'आज का AQI' | Fight To Breathe</div><div class="domain">youtube.com &bull; March 14, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ICM Indian Classical Music (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=z7zIe2_kpSw"><li><div class="title">Arati Ankalikar & Ustad Tari Khan Marvelous🙏✨ #icmvocal #icmtabla #classical #music #shorts</div><div class="domain">youtube.com &bull; March 14, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Huberman Lab Clips (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=Dj5CqT9QvR0"><li><div class="title">How Nicotine Affects Focus & ADHD | Dr. John Kruse & Dr. Andrew Huberman</div><div class="domain">youtube.com &bull; March 14, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Empty Hand (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=egbygB1bVzo"><li><div class="title">இத சத்தியமா எதிர்பார்க்கலடா🤣  Instagram REELS Kodumaigal😂 | Tamil Troll | Dr.Diwagar, Kayadu Lohar</div><div class="domain">youtube.com &bull; March 14, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ChessBase India (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=H5xMgW-Lh74"><li><div class="title">Your chance to work with national coach of Indian team GM Srinath Narayanan</div><div class="domain">youtube.com &bull; March 14, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Aileen and Deven (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=Qr7c6c1UDko"><li><div class="title">Our BIGGEST CHANGES Through Pregnancy</div><div class="domain">youtube.com &bull; March 14, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
