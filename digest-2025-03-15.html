@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-03-15</span>:</h1>
+  <p class="summary">There are 10 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">The Marginalian (feeds.feedburner.com)</h2> (1)</summary><ul><a class="li" href="https://www.themarginalian.org/2025/03/14/any-common-desolation-ellen-bass/"><li><div class="title">Any Common Desolation</div><div class="domain">themarginalian.org &bull; March 15, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (1)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/gpZBWNFxymsqnPB92/2024-unofficial-lesswrong-survey-results"><li><div class="title">2024 Unofficial LessWrong Survey Results</div><div class="domain">lesswrong.com &bull; March 15, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (2)</summary><ul><a class="li" href="https://l-o-o-s-e-d.net/qed-neovim"><li><div class="title">From QED to Neovim</div><div class="domain">l-o-o-s-e-d.net &bull; March 15, 2025</div></li></a><a class="li" href="https://semgrep.dev/blog/2025/popular-github-action-tj-actionschanged-files-is-compromised/"><li><div class="title">Popular GitHub Action tj-actions/changed-files is compromised</div><div class="domain">semgrep.dev &bull; March 15, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Up and Atom (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=tXLoBs0ipsI"><li><div class="title">It took 20 years, but we finally found it</div><div class="domain">youtube.com &bull; March 15, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Senthil kumar (youtube.com)</h2> (3)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=TXEcY0PulG0"><li><div class="title">#Sangamam - #arrahman - #PhysicalMedia #Collection (#Cassette #Tapes - #ACD - #DVD - #VHS) 💿📼</div><div class="domain">youtube.com &bull; March 15, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=taIaapzzN9w"><li><div class="title">#Muthu - #arrahman - #PhysicalMedia #Collection (#Cassette #Tapes - #ACD - #DVD - #VHS) 💿📼</div><div class="domain">youtube.com &bull; March 15, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=YFhbiI3Y1nQ"><li><div class="title">#DoliSajaKeRakhna - #arrahman - #PhysicalMedia #Collection (#Cassette #Tapes - #ACD - #DVD - #VHS)</div><div class="domain">youtube.com &bull; March 15, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Megaprojects (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=RHP-_IrqWug"><li><div class="title">The Shahid Bagheri: Is Iran's New Aircraft Carrier a Joke...?</div><div class="domain">youtube.com &bull; March 15, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ICM Indian Classical Music (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=xg7Og1JmWI8"><li><div class="title">Rahul Deshpande & Musicians ❣️✨ #icmvocal #icmtabla #classical #music #shorts</div><div class="domain">youtube.com &bull; March 15, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
