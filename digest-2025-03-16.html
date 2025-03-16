@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-03-16</span>:</h1>
+  <p class="summary">There are 11 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (1)</summary><ul><a class="li" href="https://www.fast.ai/posts/2023-05-03-mojo-launch.html"><li><div class="title">Mojo may be the biggest programming language advance in decades (2023)</div><div class="domain">fast.ai &bull; March 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (3)</summary><ul><a class="li" href="https://yourstory.com/2025/03/ministry-of-beers-big-goa-bet-fine-dining-with-a-twist"><li><div class="title">Ministry of Beer’s big Goa bet; Fine dining with a twist</div><div class="domain">yourstory.com &bull; March 16, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/03/ai-payment-environment-business-creativity-entrepreneur-innovation-education-quiz"><li><div class="title">AI, payment, environment: test your business creativity with Edition 179 of our weekly quiz!</div><div class="domain">yourstory.com &bull; March 16, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/03/edtechs-comeback-story-innovation-shaping-stronger-future"><li><div class="title">Edtech’s comeback story: How innovation is shaping a stronger future</div><div class="domain">yourstory.com &bull; March 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Wire (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=jpaQaCM4Nes"><li><div class="title">Centre vs Tamil Nadu:  Clash over NEP and Delimitation</div><div class="domain">youtube.com &bull; March 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Dodo (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=y4ziyD1xqXY"><li><div class="title">Terrified Dog Stranded on Rocks Rescued in Intense Rescue Mission | The Dodo</div><div class="domain">youtube.com &bull; March 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Deshbhakt (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=0UXzLu13KSk"><li><div class="title">Hit & Chant Formula To Get Away With Murder? | Road Safety Crushed In Vadodara | Akash Banerjee</div><div class="domain">youtube.com &bull; March 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">oliSUNvia (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=qgBU3ch6T1s"><li><div class="title">why grief is good for us: finding value in harsh loss</div><div class="domain">youtube.com &bull; March 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Let's Game It Out (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=U3aH0_oh8Mg"><li><div class="title">I’m a Paramedic With a 100% Failure Rate on Saving Lives - Ambulance Life</div><div class="domain">youtube.com &bull; March 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ICM Indian Classical Music (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=NNlI2JcrMLg"><li><div class="title">Meera Bhajan By Pt Jasraj Ji 🙏✨ #icmvocal #icmtabla #classical #music #shorts</div><div class="domain">youtube.com &bull; March 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ChessBase India (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=eUoDjokQVMg"><li><div class="title">Arjun Erigaisi through the eyes of his parents and trainers</div><div class="domain">youtube.com &bull; March 16, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
