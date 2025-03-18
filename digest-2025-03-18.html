@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-03-18</span>:</h1>
+  <p class="summary">There are 18 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">The Marginalian (feeds.feedburner.com)</h2> (1)</summary><ul><a class="li" href="https://www.themarginalian.org/2025/03/17/thomas-merton-solitude/"><li><div class="title">How to Meet Your Mystery: Thomas Merton on Solitude and the Soul</div><div class="domain">themarginalian.org &bull; March 18, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (1)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/7p9WB5NsrQiqKEbPA/sentinel-s-global-risks-weekly-roundup-11-2025-trump-invokes"><li><div class="title">Sentinel's Global Risks Weekly Roundup #11/2025. Trump invokes Alien Enemies Act, Chinese invasion barges deployed in exercise.</div><div class="domain">lesswrong.com &bull; March 18, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (3)</summary><ul><a class="li" href="https://vincent.bernat.ch/en/blog/2025-offline-pki-yubikeys"><li><div class="title">Offline PKI using 3 YubiKeys and an ARM single board computer</div><div class="domain">vincent.bernat.ch &bull; March 18, 2025</div></li></a><a class="li" href="https://www.datagubbe.se/futui/"><li><div class="title">Past and Present Futures of User Interface Design</div><div class="domain">datagubbe.se &bull; March 18, 2025</div></li></a><a class="li" href="https://youtu.be/hFO9G0Va__0"><li><div class="title">Parser combinators under the hood</div><div class="domain">youtu.be &bull; March 18, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (1)</summary><ul><a class="li" href="https://www.ycombinator.com/companies/doctor-droid/jobs/2v9x6QW-ai-lead"><li><div class="title">Doctor Droid (YC W23) Is Hiring</div><div class="domain">ycombinator.com &bull; March 18, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (4)</summary><ul><a class="li" href="https://yourstory.com/2025/03/amazon-to-spin-off-india-unit-wazirx-appoints-new-custodian"><li><div class="title">Amazon to spin-off India unit; WazirX appoints new custodian</div><div class="domain">yourstory.com &bull; March 18, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/03/slikk-club-secures-32m-seed-funding-to-expand-60-minute-fashion-delivery"><li><div class="title">Slikk Club bags $3.2M seed funding to expand 60-minute fashion delivery</div><div class="domain">yourstory.com &bull; March 18, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/03/protecttai-secures-rs-76-cr-in-series-a-round-led-by-bessemer-venture-partners"><li><div class="title">Protectt.ai secures Rs 76 Cr in Series A funding led by Bessemer Venture Partners</div><div class="domain">yourstory.com &bull; March 18, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/03/social-stigma-startup-male-reproductive-health-erectile-dysfunction"><li><div class="title">Breaking social stigma, this startup is bringing male reproductive health to the forefront</div><div class="domain">yourstory.com &bull; March 18, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">VICE (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=HcjBuQw7t3g"><li><div class="title">Fight Fest: The Final Showdown | Spartan Bare Knuckle (Part 3)</div><div class="domain">youtube.com &bull; March 18, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ThePrint (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=qGrG6RjPMow"><li><div class="title">ThePrintAM: WHAT ARE THE TAKEAWAYS FROM MODI-NEW ZEALAND PM MEET?</div><div class="domain">youtube.com &bull; March 18, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=P9PF4GtZhFw"><li><div class="title">Alligator Wrestler-Gator</div><div class="domain">youtube.com &bull; March 18, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Sabine Hossenfelder (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=vDsjeKo3u3o"><li><div class="title">why I took down my climate science video</div><div class="domain">youtube.com &bull; March 18, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Law Chambers of Amish Aggarwala (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=g-JEafvq2b0"><li><div class="title">Why India has the highest taxes in the world- False case fund</div><div class="domain">youtube.com &bull; March 18, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ICM Indian Classical Music (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=EEvbEhlAnW8"><li><div class="title">Ustad Nusrat Fateh Ali Khan Ji & Rahat Fateh Ali Khan🙏✨#icmvocal #icmtabla #semiclassical #music</div><div class="domain">youtube.com &bull; March 18, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DD Movies (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=DIOrQWYL85A"><li><div class="title">ரஜினிகாந்த் சிவாஜி கணேசன் அருமையான படம் Tamil Movie | Vadivelu | Goundamani #ddmovies</div><div class="domain">youtube.com &bull; March 18, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Bar & Bench (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=_vsDXWvMmd8"><li><div class="title">Swearing-in-Ceremony of Justice Joymalya Bagchi</div><div class="domain">youtube.com &bull; March 18, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
