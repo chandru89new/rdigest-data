@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-03-19</span>:</h1>
+  <p class="summary">There are 20 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">The Marginalian (feeds.feedburner.com)</h2> (1)</summary><ul><a class="li" href="https://www.themarginalian.org/2025/03/18/berryman-advice/"><li><div class="title">How to Get Out of Your Own Way: John Berryman on Defeating the Three Demons of Creative Work</div><div class="domain">themarginalian.org &bull; March 19, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (3)</summary><ul><a class="li" href="https://www.gingerbill.org/article/2018/03/12/on-the-aesthetics-of-the-syntax-of-declarations/"><li><div class="title">On the Aesthetics of the Syntax of Declarations (2018)</div><div class="domain">gingerbill.org &bull; March 19, 2025</div></li></a><a class="li" href="https://franklantz.substack.com/p/why-i-love-set"><li><div class="title">Why I Love SET</div><div class="domain">franklantz.substack.com &bull; March 19, 2025</div></li></a><a class="li" href="https://greptime.com/blogs/2025-03-18-jsonbench-greptimedb-performance"><li><div class="title">GreptimeDB Leads in Cold Run Performance on ClickHouse’s billion JSON doc benchmark</div><div class="domain">greptime.com &bull; March 19, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">matklad (matklad.github.io)</h2> (1)</summary><ul><a class="li" href="https://matklad.github.io/2025/03/19/comptime-zig-orm.html"><li><div class="title">Comptime Zig ORM</div><div class="domain">matklad.github.io &bull; March 19, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (1)</summary><ul><a class="li" href="https://www.worldsexmap.com/"><li><div class="title">Show HN: I made a worldwide sexual life dashboard</div><div class="domain">worldsexmap.com &bull; March 19, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (2)</summary><ul><a class="li" href="https://yourstory.com/2025/03/an-ai-tool-to-monitor-newborn-health-mount-everest-youtube-ideos"><li><div class="title">An AI tool to monitor newborn health; Scaling Mt Everest with YouTube videos</div><div class="domain">yourstory.com &bull; March 19, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/03/building-a-scalable-and-sustainable-age-tech-business"><li><div class="title">Building a scalable and sustainable age-tech business in India</div><div class="domain">yourstory.com &bull; March 19, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">VideoFromSpace (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=upwGb39wArQ"><li><div class="title">Replay! NASA's SpaceX Crew-9 with Starliner astronauts return to Earth</div><div class="domain">youtube.com &bull; March 19, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Diplomat (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=t9-mqGKDLLU"><li><div class="title">Duterte in The Hague: The Philippines and the Geopolitics of International Law</div><div class="domain">youtube.com &bull; March 19, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Daily Show (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=W8OFrDQkfjM"><li><div class="title">Jon Stewart Knocks Dems' Lack of Vision In Countering The Trump Agenda | The Daily Show</div><div class="domain">youtube.com &bull; March 19, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=i1jukvzrUvk"><li><div class="title">Trump Defies Court Order, Deports Migrants, And Still Finds Time to Trash Biden | The Daily Show</div><div class="domain">youtube.com &bull; March 19, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">StarTalk (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=tQ-eTuNY_b4"><li><div class="title">Answering Questions About Infinity, The Multiverse, & Supercolliders</div><div class="domain">youtube.com &bull; March 19, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=10kuoD7xyAU"><li><div class="title">We COULD have had an American Super Duper Collider  😔🦅</div><div class="domain">youtube.com &bull; March 19, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Papa Mummy Kitchen - Specials (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=EUNwrECLbFI"><li><div class="title">भयंकर गर्मियों में, बाजार की icecream नहीं, बस 20min में बनाएं ये किफायती ठंडी-ठंडी मिठाई #summer</div><div class="domain">youtube.com &bull; March 19, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">newslaundry (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=5yykGQLKtiY"><li><div class="title">डंकापति-Aurangzeb संवाद और Twitter पर Grok का क़हर | NL Tippani 228</div><div class="domain">youtube.com &bull; March 19, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Kurzgesagt – In a Nutshell (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=wo_e0EvEZn8"><li><div class="title">Why Your Brain Blinds You For 2 Hours Every Day</div><div class="domain">youtube.com &bull; March 19, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ICM Indian Classical Music (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=aiRWscIyHlY"><li><div class="title">Tarana By Aniruddha Aithal ❣️✨ #icmvocal #icmtabla #classical #music #shorts</div><div class="domain">youtube.com &bull; March 19, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Cleo Abram (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=rwxRHtfGuUw"><li><div class="title">Why These Astronauts Got Rescued</div><div class="domain">youtube.com &bull; March 19, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Buildofy (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=OQNzZUFiIs0"><li><div class="title">This 2500 sq.ft. Courtyard Home Has a Unique Pooja Space! (House Tour)</div><div class="domain">youtube.com &bull; March 19, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
