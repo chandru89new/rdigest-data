@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-03-23</span>:</h1>
+  <p class="summary">There are 11 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (1)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/6qbpDuBuHPipRYrz6/they-took-my-job"><li><div class="title">They Took MY Job?</div><div class="domain">lesswrong.com &bull; March 23, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (2)</summary><ul><a class="li" href="https://hackmd.io/@rust-lang-team/rJvv36hq1e"><li><div class="title">Enabling seamless interop between Rust and other languages</div><div class="domain">hackmd.io &bull; March 23, 2025</div></li></a><a class="li" href="https://git.sr.ht/~runxiyu/powxy"><li><div class="title">Powxy: anti-scraper reverse proxy</div><div class="domain">git.sr.ht &bull; March 23, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (1)</summary><ul><a class="li" href="https://www.ycombinator.com/companies/domu-technology-inc/jobs/hwWsGdU-vibe-coder-ai-engineer"><li><div class="title">Domu Technology Inc. (YC S24) Is Hiring a Vibe Coder</div><div class="domain">ycombinator.com &bull; March 23, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (2)</summary><ul><a class="li" href="https://yourstory.com/2025/03/inside-bangkok-zero-carbon-footprint-restaurant-bolan-auto-price-hike"><li><div class="title">Inside Bangkok’s zero-carbon footprint restaurant</div><div class="domain">yourstory.com &bull; March 23, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/03/why-private-equity-paid-usd-84b-for-smartsheet"><li><div class="title">Why private equity paid $8.4B for Smartsheet</div><div class="domain">yourstory.com &bull; March 23, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ThePrint (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=DCl80kZL22A"><li><div class="title">Trump announces Pentagon’s decision to move forward with Sixth-Generation Fighter jet F-47</div><div class="domain">youtube.com &bull; March 23, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=zJV28zFjpCM"><li><div class="title">Modi Vs Gandhi’s Gujarat,‘otherisation of Muslims’,vegetarianism:In conversation with Salil Tripathi</div><div class="domain">youtube.com &bull; March 23, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ICM Indian Classical Music (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=CYrib9q_S3k"><li><div class="title">Classical Vocal aby Pt Ajay Pohankar Ji 🙏✨#icmvocal #icmtabla #classical #music #shorts</div><div class="domain">youtube.com &bull; March 23, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DD Movies (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=fCv3CX6iY1U"><li><div class="title">ரஜினிகாந்த் சிவாஜி கணேசன் அருமையான படம் Tamil Movie | Vadivelu | Goundamani #ddmovies</div><div class="domain">youtube.com &bull; March 23, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ChessBase India (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=9ON4CQbL2Dw"><li><div class="title">The Bogo Indian Prep | Sagar Shah vs the Grandmasters | Zakhartsov (2548) | Ep02</div><div class="domain">youtube.com &bull; March 23, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
