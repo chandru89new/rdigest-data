@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-03-26</span>:</h1>
+  <p class="summary">There are 25 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Bear Blog Trending Posts (bearblog.dev)</h2> (1)</summary><ul><a class="li" href="https://yuricunha.bearblog.dev/echoes-of-a-conflicted-impostor/"><li><div class="title">echoes of a conflicted impostor</div><div class="domain">yuricunha.bearblog.dev &bull; March 26, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (2)</summary><ul><a class="li" href="http://blog.whenhen.com/posts/opensmtpd-and-maildrop-working-in-concert.html"><li><div class="title">OpenSMTPD & Maildrop working in concert</div><div class="domain">blog.whenhen.com &bull; March 26, 2025</div></li></a><a class="li" href="https://rachelbythebay.com/w/2025/03/25/atop/"><li><div class="title">You might want to stop running atop</div><div class="domain">rachelbythebay.com &bull; March 26, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Letters of Note (news.lettersofnote.com)</h2> (1)</summary><ul><a class="li" href="https://news.lettersofnote.com/p/i-dont-know-so-well-what-i-think"><li><div class="title">I don’t know so well what I think until I see what I say</div><div class="domain">news.lettersofnote.com &bull; March 26, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (1)</summary><ul><a class="li" href="https://theintercept.com/2025/03/25/signal-chat-encryption-hegseth-cia/"><li><div class="title">CIA Director Reveals Signal Comes Installed on Agency Computers</div><div class="domain">theintercept.com &bull; March 26, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (2)</summary><ul><a class="li" href="https://yourstory.com/2025/03/building-workflows-ai-agents-revx-capitals-micro-fund-strategy"><li><div class="title">Building workflows for AI agents; RevX Capital’s micro fund strategy</div><div class="domain">yourstory.com &bull; March 26, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/03/financial-agility-in-d2c-why-brands-must-rethink-success"><li><div class="title">Financial agility in D2C: Why brands must rethink their capital strategy for long-term success</div><div class="domain">yourstory.com &bull; March 26, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ThePrint (youtube.com)</h2> (3)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=7kQ0pwS5_wM"><li><div class="title">Delhi CM Rekha Gupta presents her first Budget in Assembly</div><div class="domain">youtube.com &bull; March 26, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=KTQzXxRUKp8"><li><div class="title">'Modi govt's agenda is to create disturbance, doesn't want House to function': Priyanka Gandhi Vadra</div><div class="domain">youtube.com &bull; March 26, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=T1Bgr5B0jOg"><li><div class="title">‘Saffron-coloured uniform of NDRF gives peace to people that they have come and they will be saved,’</div><div class="domain">youtube.com &bull; March 26, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ThePrimeTime (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=I-0GhCXdvIQ"><li><div class="title">Day 4 - VIBE CODING A GAME IN 7 DAYS</div><div class="domain">youtube.com &bull; March 26, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Daily Show (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=sNMdRzK9Nj0"><li><div class="title">Jon Stewart on Which Speech Is Free and Which Will Cost You in Trump’s America | The Daily Show</div><div class="domain">youtube.com &bull; March 26, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=isNlC0RYOyE"><li><div class="title">Republicans Desperately Spin Yemen Group Chat Fumble | The Daily Show</div><div class="domain">youtube.com &bull; March 26, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=wUYJakjx70I"><li><div class="title">Anorexic Woman-Sophie</div><div class="domain">youtube.com &bull; March 26, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Rick Beato (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=VahNJ_EnH5w"><li><div class="title">I'm STILL Pissed About This</div><div class="domain">youtube.com &bull; March 26, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">newslaundry (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=6GdrwNCRRhg"><li><div class="title">Akshaye Khanna se kaisi dushmani?</div><div class="domain">youtube.com &bull; March 26, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">John Bartholomew (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=4ctH3OTfjzQ"><li><div class="title">Using the Clock as a Weapon #60</div><div class="domain">youtube.com &bull; March 26, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Jist (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=SjXFXraBSr4"><li><div class="title">How Buddha Nala is a major source of pollution in the Satluj River</div><div class="domain">youtube.com &bull; March 26, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ICM Indian Classical Music (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=rSlIuVUKP7c"><li><div class="title">Vidushi Girija Devi Ji 🙏✨ #icmvocal #icmtabla  #classical #music #shorts</div><div class="domain">youtube.com &bull; March 26, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Groww (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=hRhKaCsMsus"><li><div class="title">3 Pharma stocks worth researching in 2025 | Highest R&D expenditure</div><div class="domain">youtube.com &bull; March 26, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">FRONTLINE PBS | Official (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=l8nsgzwuc_o"><li><div class="title">The Rise and Fall of Terrorgram (full documentary) | FRONTLINE</div><div class="domain">youtube.com &bull; March 26, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Evo-Ed (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=DGr6ZdSWIGs"><li><div class="title">Insect Mating Ep3: Post-Copulation Shenanigans</div><div class="domain">youtube.com &bull; March 26, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DD Movies (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=c1z-SGlZTC8"><li><div class="title">ரஜினிகாந்த் சிவாஜி கணேசன் அருமையான படம் Tamil Movie | Vadivelu | Goundamani #ddmovies</div><div class="domain">youtube.com &bull; March 26, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Computerphile (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=G6R7UOFx1bw"><li><div class="title">Jensen Huang on GPUs - Computerphile</div><div class="domain">youtube.com &bull; March 26, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ChessBase India (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=2NIzlKKgMLM"><li><div class="title">I botched my debut game in Europe - Shahid v FM Gustas | Prague Chess Festival J Fischer Random</div><div class="domain">youtube.com &bull; March 26, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
