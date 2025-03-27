@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-03-27</span>:</h1>
+  <p class="summary">There are 16 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (1)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/niBXcbthcQRXG5M5Y/automated-researchers-can-subtly-sandbag"><li><div class="title">Automated Researchers Can Subtly Sandbag</div><div class="domain">lesswrong.com &bull; March 27, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (2)</summary><ul><a class="li" href="https://www.linuxjournal.com/content/eu-os-bold-step-toward-digital-sovereignty-europe"><li><div class="title">Europen Union creates Fedora-based Linux distribution for the public sector</div><div class="domain">linuxjournal.com &bull; March 27, 2025</div></li></a><a class="li" href="https://aneksteind.github.io/posts/2025-03-26.html"><li><div class="title">Matrix Profiles</div><div class="domain">aneksteind.github.io &bull; March 27, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (3)</summary><ul><a class="li" href="https://www.quantamagazine.org/the-mysterious-flow-of-fluid-in-the-brain-20250326/"><li><div class="title">The mysterious flow of fluid in the brain</div><div class="domain">quantamagazine.org &bull; March 27, 2025</div></li></a><a class="li" href="https://www.musicweek.com/digital/read/dj-with-apple-music-launches-to-enable-subscribers-to-mix-their-own-sets/091655"><li><div class="title">DJ With Apple Music launches to enable subscribers to mix their own sets</div><div class="domain">musicweek.com &bull; March 27, 2025</div></li></a><a class="li" href="https://www.blender.org/download/releases/4-4/"><li><div class="title">Blender releases their Oscar winning version tool</div><div class="domain">blender.org &bull; March 27, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (5)</summary><ul><a class="li" href="https://yourstory.com/2025/03/hyderabad-based-startup-equal-is-simplifying-financial-data-sharing"><li><div class="title">Hyderabad-based Equal is simplifying financial data sharing with consent-based solutions</div><div class="domain">yourstory.com &bull; March 27, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/03/meeshos-inhouse-logistics-boost-firstcry-eyes-global-expansion"><li><div class="title">Meesho’s in-house logistics boost; FirstCry eyes global expansion</div><div class="domain">yourstory.com &bull; March 27, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/03/online-retail-quick-commerce-flipkart-bain-e-commerce-consumption"><li><div class="title">Online retail to grow on the back of quick commerce, hyper-value commerce: Bain & Co report</div><div class="domain">yourstory.com &bull; March 27, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/03/world-banks-ifc-backs-alteria-capitals-short-term-venture-debt-fund"><li><div class="title">World Bank's IFC backs Alteria Capital’s short-term Venture Debt fund</div><div class="domain">yourstory.com &bull; March 27, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/03/nuventures-unveils-75m-fund-to-back-ai-startups-wi"><li><div class="title">NuVentures unveils $75M fund to back AI startups with India connect</div><div class="domain">yourstory.com &bull; March 27, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Daily Show (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=dkK_F9wxyr8"><li><div class="title">Republicans Play "War Plan" Semantics As More Damning Texts Released | The Daily Show</div><div class="domain">youtube.com &bull; March 27, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=Ohx8xvzMv5g"><li><div class="title">Cuckold Couple Sarai and Dakota (follow up)</div><div class="domain">youtube.com &bull; March 27, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Origami World (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=iSgyuNj8rtw"><li><div class="title">ORIGAMI FOX FOR BEGINNERS EASY ORIGAMI WORLD TUTORIAL | HOW TO FOLD ORIGAMI FOX EASY</div><div class="domain">youtube.com &bull; March 27, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ICM Indian Classical Music (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=YE7OxYLH16A"><li><div class="title">Beutifull Classical Singing By Anjali Gayakwad & Nandini Gaikwad❣️✨ #icmvocal #classical #icmtabla</div><div class="domain">youtube.com &bull; March 27, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Best Documentary (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=LzARVU3_1jQ"><li><div class="title">1965 : The Year Marines Went to Hell and Back</div><div class="domain">youtube.com &bull; March 27, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
