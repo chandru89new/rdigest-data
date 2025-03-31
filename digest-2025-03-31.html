@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-03-31</span>:</h1>
+  <p class="summary">There are 10 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (1)</summary><ul><a class="li" href="https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-226.pdf"><li><div class="title">Guidelines for Evaluating Differential Privacy Guarantees</div><div class="domain">nvlpubs.nist.gov &bull; March 31, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (4)</summary><ul><a class="li" href="https://github.com/Pyrdacor/Ambermoon-Advanced"><li><div class="title">Ambermoon Advanced</div><div class="domain">github.com &bull; March 31, 2025</div></li></a><a class="li" href="https://breezewiki.com/"><li><div class="title">BreezeWiki makes wiki pages on Fandom readable</div><div class="domain">breezewiki.com &bull; March 31, 2025</div></li></a><a class="li" href="https://www.vox.com/2020/1/8/21051869/indoor-air-pollution-student-achievement"><li><div class="title">Installing air filters in classrooms has surprisingly large educational benefits</div><div class="domain">vox.com &bull; March 31, 2025</div></li></a><a class="li" href="https://krebsonsecurity.com/2025/03/how-each-pillar-of-the-1st-amendment-is-under-attack/"><li><div class="title">How Each Pillar of the First Amendment Is Under Attack</div><div class="domain">krebsonsecurity.com &bull; March 31, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (1)</summary><ul><a class="li" href="https://yourstory.com/2025/03/overcoming-barriers-in-healthcare-quizizzs-game-changing-growth-strategy"><li><div class="title">Overcoming barriers in healthcare; Quizizz’s game-changing growth strategy</div><div class="domain">yourstory.com &bull; March 31, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Newsthink (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=e4ZNYzYwZAw"><li><div class="title">The Spy Who Prevented WWIII</div><div class="domain">youtube.com &bull; March 31, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ICM Indian Classical Music (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=nJ5STzdjHNU"><li><div class="title">Classical Vocal By Pt. Venkatesh Kumar Ji 🙏✨ #icmvocal #icmtabla #classical #music #shorts</div><div class="domain">youtube.com &bull; March 31, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=bOew7B6NJRU"><li><div class="title">An Evil Force is Guarding the Treasure?! | Mystery at Blind Frog Ranch | Discovery Channel</div><div class="domain">youtube.com &bull; March 31, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DD Movies (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=hQ2hUSMgAvI"><li><div class="title">சினிமா பாவங்கள் Tamil Full Movie | கோடம்பாக்கம் Tamil Movie |  DD Movies</div><div class="domain">youtube.com &bull; March 31, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
