@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-04-03</span>:</h1>
+  <p class="summary">There are 18 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (1)</summary><ul><a class="li" href="https://s2.dev/blog/dst"><li><div class="title">DST for async Rust</div><div class="domain">s2.dev &bull; April 03, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (5)</summary><ul><a class="li" href="https://opentariffs.fyi/"><li><div class="title">Show HN: OpenTariffs – Tariff Percentages by Country</div><div class="domain">opentariffs.fyi &bull; April 03, 2025</div></li></a><a class="li" href="https://arxiv.org/abs/2503.09516"><li><div class="title">Search-R1: Training LLMs to Reason and Leverage Search Engines with RL</div><div class="domain">arxiv.org &bull; April 03, 2025</div></li></a><a class="li" href="https://www.washingtonpost.com/technology/2025/03/31/immigration-h1b-fear-siliconvalley/"><li><div class="title">Tech companies are telling immigrant employees on visas not to leave the U.S.</div><div class="domain">washingtonpost.com &bull; April 03, 2025</div></li></a><a class="li" href="https://idiallo.com/blog/code-for-hire"><li><div class="title">The Reality of Working in Tech: We're Not Hired to Write Code</div><div class="domain">idiallo.com &bull; April 03, 2025</div></li></a><a class="li" href="https://github.com/juanfont/headscale"><li><div class="title">An open source, self-hosted implementation of the Tailscale control server</div><div class="domain">github.com &bull; April 03, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Diplomat (thediplomat.com)</h2> (1)</summary><ul><a class="li" href="https://thediplomat.com/2025/04/southeast-asian-slammed-by-president-trumps-liberation-day-tariffs/"><li><div class="title">Southeast Asia Slammed By President Trump’s ‘Liberation Day’ Tariffs</div><div class="domain">thediplomat.com &bull; April 03, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (4)</summary><ul><a class="li" href="https://yourstory.com/2025/04/easy-peasy-apps-enterprises-tablesprint"><li><div class="title">Easy-peasy apps for enterprises; Building your entrepreneurial brand</div><div class="domain">yourstory.com &bull; April 03, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/03/bengaluru-startup-businesses-build-apps-no-code-ai-based"><li><div class="title">This startup's AI-powered no-code platform lets businesses build enterprise apps quickly</div><div class="domain">yourstory.com &bull; April 03, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/04/pratilipi-bags-20-million-series-e-funding-jungle-ventures"><li><div class="title">Storytelling app Pratilipi bags $20M in Series E funding led by Jungle Ventures</div><div class="domain">yourstory.com &bull; April 03, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/04/we-need-to-build-our-own-ai-solutions-zoho-corp-ceo-shailesh-davey"><li><div class="title">We need to build our own AI solutions: Shailesh Davey, CEO, Zoho Corp</div><div class="domain">yourstory.com &bull; April 03, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Veritasium (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=_cr46G2K5Fo"><li><div class="title">The Man Who Almost Broke Math (And Himself...)</div><div class="domain">youtube.com &bull; April 03, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Daily Show (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=kUOExxJs_N4"><li><div class="title">Trump Launches "Liberation Day" Tariffs & Cory Booker's Speech Breaks Senate Record | The Daily Show</div><div class="domain">youtube.com &bull; April 03, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Senthil kumar (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=n2ZC13XmuR8"><li><div class="title">#MinsaaraKanavu - #arrahman - #PhysicalMedia #Collection (#Cassette #Tapes - #ACD - #DVD - #VHS) 💿</div><div class="domain">youtube.com &bull; April 03, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Kurzgesagt – In a Nutshell (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=Ufmu1WD2TSk"><li><div class="title">SOUTH KOREA IS OVER</div><div class="domain">youtube.com &bull; April 03, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ICM Indian Classical Music (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=xNDRMJsEGqs"><li><div class="title">Durga Bhajan By Vidushi Prabha Aatre Ji 🙏✨#icmvocal #bhajan #icmtabla #classical #music #shorts</div><div class="domain">youtube.com &bull; April 03, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Empty Hand (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=rr7HQZCag_A"><li><div class="title">ஏன் இப்படி அசிங்கமா பண்றீங்க⁉️😤 MEMES REACTION - Irfan's View, Potato Face, TTF Vasan | Tamil Troll</div><div class="domain">youtube.com &bull; April 03, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Computerphile (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=AqJnK9Dh-eQ"><li><div class="title">Ai Will Try to Cheat & Escape (aka Rob Miles was Right!) - Computerphile</div><div class="domain">youtube.com &bull; April 03, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
