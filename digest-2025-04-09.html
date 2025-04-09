@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-04-09</span>:</h1>
+  <p class="summary">There are 23 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (2)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/EEv4w57wMcrpn4vvX/the-first-ai-war-will-be-in-your-computer"><li><div class="title">The first AI war will be in your computer</div><div class="domain">lesswrong.com &bull; April 09, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/Z2FfGJh2gAA6EXezp/birds-and-mammals-independently-evolved-intelligence"><li><div class="title">birds and mammals independently evolved intelligence</div><div class="domain">lesswrong.com &bull; April 09, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (2)</summary><ul><a class="li" href="https://www2.eecs.berkeley.edu/Pubs/TechRpts/2003/6359.html"><li><div class="title">Global Value Numbering Using Random Interpretation</div><div class="domain">www2.eecs.berkeley.edu &bull; April 09, 2025</div></li></a><a class="li" href="https://tomscii.sig7.se/2025/04/The-Barium-Experiment"><li><div class="title">The Barium Experiment</div><div class="domain">tomscii.sig7.se &bull; April 09, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (3)</summary><ul><a class="li" href="https://www.drawdb.app/"><li><div class="title">Show HN: DrawDB – open-source online database diagram editor (a retro)</div><div class="domain">drawdb.app &bull; April 09, 2025</div></li></a><a class="li" href="https://github.com/reteps/dockerfmt"><li><div class="title">Dockerfmt: A Dockerfile Formatter</div><div class="domain">github.com &bull; April 09, 2025</div></li></a><a class="li" href="https://blog.vectorchord.ai/postgresql-full-text-search-fast-when-done-right-debunking-the-slow-myth"><li><div class="title">PostgreSQL Full-Text Search: Fast When Done Right (Debunking the Slow Myth)</div><div class="domain">blog.vectorchord.ai &bull; April 09, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Diplomat (thediplomat.com)</h2> (1)</summary><ul><a class="li" href="https://thediplomat.com/2025/04/karakalpak-refugees-find-asylum-in-the-us/"><li><div class="title">Karakalpak Refugees Find Asylum in the US</div><div class="domain">thediplomat.com &bull; April 09, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (2)</summary><ul><a class="li" href="https://yourstory.com/2025/04/construction-tech-company-inframarket-gears-up-for-ipo"><li><div class="title">Construction-tech company Infra.Market gears up for $700M IPO as private labels drive growth</div><div class="domain">yourstory.com &bull; April 09, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/04/evolution-entry-level-jobs-inframarket-700m-ipo"><li><div class="title">The evolution of entry-level jobs; Infra.Market gears up for $700M IPO</div><div class="domain">yourstory.com &bull; April 09, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Wendover Productions (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=a5126u88E7E"><li><div class="title">La Paz's Surprisingly Successful Gondola System</div><div class="domain">youtube.com &bull; April 09, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ThePrint (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=JcBD8FqXPJI"><li><div class="title">Israel PM Benjamin Netanyahu meets US President Trump at White House,tariffs,Iran & Hamas discussed</div><div class="domain">youtube.com &bull; April 09, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=600sa8VkyHU"><li><div class="title">TRUMP, TRADE & 'TARIFF KING' INDIA CTC reel 1</div><div class="domain">youtube.com &bull; April 09, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Dodo (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=bHGrPF7wASk"><li><div class="title">Sweetest Foster Pittie Needs A Forever Home | The Dodo</div><div class="domain">youtube.com &bull; April 09, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Daily Show (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=zBflZLStKQg"><li><div class="title">Jon Stewart on Trump's Botched Tariff Rollout & The Stock Market's Meltdown  | The Daily Show</div><div class="domain">youtube.com &bull; April 09, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=0NZNUb7lGIA"><li><div class="title">Trump Threatens 104% China Tariffs, Fox News Ignores Market, Musk & Navarro Spar | The Daily Show</div><div class="domain">youtube.com &bull; April 09, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Senthil kumar (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=TAQKg8QVSqs"><li><div class="title">Indian - #arrahman - #PhysicalMedia #Collection (#Cassette #Tapes - #ACD - #DVD - #VHS) 💿📼</div><div class="domain">youtube.com &bull; April 09, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Rick Beato (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=zXZac-J7AeY"><li><div class="title">Gregg Bissonette on John Bonham #drums #johnbonham #drummer #shorts</div><div class="domain">youtube.com &bull; April 09, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Papa Mummy Kitchen - Specials (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=BfFAwoUzrq4"><li><div class="title">भयंकर गर्मियों में सिफ 2 गिलास दूध से ढेर सारी ठंडी-ठंडी लच्छेदार रबडी बनाने का सीक्रेट तरीकाsummer</div><div class="domain">youtube.com &bull; April 09, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">newslaundry (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=C2-sVWfM-eY"><li><div class="title">Why not just name it ‘UMEEDIEN’ bill?</div><div class="domain">youtube.com &bull; April 09, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Khan Academy (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=IaEcrHxjoCM"><li><div class="title">Lists | Intro to CS - Python | Khan Academy</div><div class="domain">youtube.com &bull; April 09, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ICM Indian Classical Music (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=g_j9k3Q00pQ"><li><div class="title">Kaushiki Chakraborty Ji & Pt Yogesh Samsi Ji 🙏✨#icmvocal #icmtabla #classical #music #shorts</div><div class="domain">youtube.com &bull; April 09, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DD Movies (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=lVKNQJ0ggJw"><li><div class="title">சந்தோசம் சோகம் ரெண்டும் இருக்கும் படம் | Murali Vadivelu Super Hit Comedy Full Movie</div><div class="domain">youtube.com &bull; April 09, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
