@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-04-10</span>:</h1>
+  <p class="summary">There are 21 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">kottke.org (feeds.kottke.org)</h2> (2)</summary><ul><a class="li" href="https://kottke.org/25/04/0046612-clean-energy-powered-40-o"><li><div class="title">Clean energy powered 40% of global electricity in 2024, report finds. &#8220;The...</div><div class="domain">kottke.org &bull; April 10, 2025</div></li></a><a class="li" href="https://kottke.org/25/04/0046614-all-the-headlines-are-fol"><li><div class="title">All the headlines are following Trump&#8217;s messaging of a &#8220;pause&#8221;, but the...</div><div class="domain">kottke.org &bull; April 10, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (1)</summary><ul><a class="li" href="https://spiral-one.vercel.app/post/alp-rust-is-faster-than-c"><li><div class="title">Adaptive Lossless Floating Point compression in Rust is faster than C++</div><div class="domain">spiral-one.vercel.app &bull; April 10, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (2)</summary><ul><a class="li" href="https://www.plugsocketmuseum.nl/British1.html"><li><div class="title">BS 1363 British Plugs and Sockets</div><div class="domain">plugsocketmuseum.nl &bull; April 10, 2025</div></li></a><a class="li" href="https://www.neh.gov/article/columbian-orator-taught-nineteenth-century-americans-how-speak"><li><div class="title">The Columbian Orator taught nineteenth-century Americans how to speak</div><div class="domain">neh.gov &bull; April 10, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (2)</summary><ul><a class="li" href="https://yourstory.com/2025/04/whose-music-anyway-open-ai-v-top-music-labels-sparks-talks-fair-use-licensing-rights"><li><div class="title">Whose music is it anyway? OpenAI v top music labels sparks talks on fair use, licensing rights</div><div class="domain">yourstory.com &bull; April 10, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/04/decoding-openai-vs-indian-music-labels-fight-india-ai-pf-withdrawals"><li><div class="title">Decoding OpenAI vs Indian music labels fight; Perfecting India’s AI story</div><div class="domain">yourstory.com &bull; April 10, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">VICE (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=zcI-o4D0Et0"><li><div class="title">"I crawled into this cupboard with Brian the cat, and we went to the center of the Earth..."</div><div class="domain">youtube.com &bull; April 10, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">V3Cars (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=-6tECJFyY9A"><li><div class="title">#Carens proved why #MPVs still make the most sense for families. What do you think? #V3Cars #Kia</div><div class="domain">youtube.com &bull; April 10, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Deshbhakt (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=t10ygt9k9T8"><li><div class="title">China Punches Back At Trump With 84% Tariffs | Inside Xi's Plan To Overtake America | Akash Banerjee</div><div class="domain">youtube.com &bull; April 10, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Daily Show (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=xSm4pLJjZMM"><li><div class="title">Trump Puts 90-Day Pause on Reciprocal Tariffs But Doubles Down on China | The Daily Show</div><div class="domain">youtube.com &bull; April 10, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">TED (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=TZOoT8AbkNE"><li><div class="title">This Is What a Digital Coup Looks Like | Carole Cadwalladr | TED</div><div class="domain">youtube.com &bull; April 10, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Jist (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=N0TYF8HQhAI"><li><div class="title">Tahawwur Rana's Extradition 16 Years After Mumbai Attacks | Jist</div><div class="domain">youtube.com &bull; April 10, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ICM Indian Classical Music (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=SsGzXWeSfGk"><li><div class="title">Pt Sajan Mishra & Swaransh Mishra Ji ❣️✨#icmvocal #classical #bhajan #icmtabla #shorts</div><div class="domain">youtube.com &bull; April 10, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DD Movies (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=PWvcU76m_RU"><li><div class="title">சந்தோசம் சோகம் ரெண்டும் இருக்கும் படம் | Murali Vadivelu Super Hit Comedy Full Movie</div><div class="domain">youtube.com &bull; April 10, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ChessBase India (youtube.com)</h2> (4)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=XgbmCmFepBk"><li><div class="title">What Does Magnus Carlsen Do After Playing The GOATED Chess Game?</div><div class="domain">youtube.com &bull; April 10, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=4gvLiSbIrSU"><li><div class="title">The Kings of The Chess World Arrive With Their Queens In Paris ft. Magnus, Hikaru and Nepo</div><div class="domain">youtube.com &bull; April 10, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=C83e0CX-HlQ"><li><div class="title">Magnus, Hikaru Get This Chess Piece | Will This Unique Chess Piece Change The Game Of Chess?</div><div class="domain">youtube.com &bull; April 10, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=zj2Nb2dY2zc"><li><div class="title">Paris Freestyle Grand Slam Tour 2025 Quarter Finals Day 1: Naka vs Arjun Erigaisi, Pragg vs Vidit</div><div class="domain">youtube.com &bull; April 10, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Chess.com (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=TDzzgmoHbEY"><li><div class="title">Freestyle Chess Grand Slam Paris: QFs - Day 2</div><div class="domain">youtube.com &bull; April 10, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">BBC News (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=lLSIklQSMro"><li><div class="title">China imposes 84% tariffs on the US | BBC News</div><div class="domain">youtube.com &bull; April 10, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
