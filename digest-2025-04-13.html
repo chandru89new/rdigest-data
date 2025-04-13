@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-04-13</span>:</h1>
+  <p class="summary">There are 40 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (3)</summary><ul><a class="li" href="https://doc.cat-v.org/bell_labs/why_pascal/why_pascal_is_not_my_favorite_language.pdf"><li><div class="title">Why Pascal is Not My Favourite Language (1981)</div><div class="domain">doc.cat-v.org &bull; April 13, 2025</div></li></a><a class="li" href="https://lantian.pub/en/article/modify-computer/nix-trigonometric-math-library-from-zero.lantian/"><li><div class="title">Nix Trigonometric Math Library from Ground Zero</div><div class="domain">lantian.pub &bull; April 13, 2025</div></li></a><a class="li" href="https://unnamed.website/posts/rng-cosine-nix/"><li><div class="title">RNG and Cosine in Nix</div><div class="domain">unnamed.website &bull; April 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (3)</summary><ul><a class="li" href="https://www.livescience.com/technology/engineering/new-urinal-designs-could-prevent-up-to-265-000-gallons-of-urine-from-spilling-onto-the-floor-each-day"><li><div class="title">New urinal designs prevent 265,000 gallons of urine splashing onto the floor</div><div class="domain">livescience.com &bull; April 13, 2025</div></li></a><a class="li" href="https://medicalxpress.com/news/2025-03-hunger-shifts-attention-healthy-food.html"><li><div class="title">Hunger shifts attention towards less healthy food options, study finds</div><div class="domain">medicalxpress.com &bull; April 13, 2025</div></li></a><a class="li" href="https://grapheneos.social/@GrapheneOS/114327666433966529"><li><div class="title">Experimental release of GrapheneOS for Pixel 9a</div><div class="domain">grapheneos.social &bull; April 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (5)</summary><ul><a class="li" href="https://yourstory.com/2025/04/casa-pasta-bar-indian-accents-new-tasting-menu-us-bond-market-fall"><li><div class="title">Learn your pasta before you eat; Indian Accent’s new tasting menu</div><div class="domain">yourstory.com &bull; April 13, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/04/ai-energy-fashion-business-creativity-innovation-entrepreneur-education-quiz"><li><div class="title">AI, energy, fashion: test your business creativity with Edition 183 of our weekly quiz!</div><div class="domain">yourstory.com &bull; April 13, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/04/india-art-festival-creativity-inspiration-photography-nehru-centre-mumbai"><li><div class="title">30 exhibitions and 4 cities: How this art festival spreads creativity far and wide</div><div class="domain">yourstory.com &bull; April 13, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/04/how-zoho-cracked-global-markets-with-3-iconic-marketing-campaigns"><li><div class="title">How Zoho cracked global markets with 3 iconic marketing campaigns</div><div class="domain">yourstory.com &bull; April 13, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/04/navigating-ai-privacy-debate-hyper-personalisation-chatgpt-ghibli-trend"><li><div class="title">How much is too much? Navigating the AI privacy debate on personalisation</div><div class="domain">yourstory.com &bull; April 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Zendria 🕊 (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=iekgYPLEapo"><li><div class="title">Banjaara | Ek Villain | Mohammed Irfan | Zendria</div><div class="domain">youtube.com &bull; April 13, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=pCi5ojiyqRo"><li><div class="title">Banjaara | Ek Villain | Mohammed Irfan | Zendria</div><div class="domain">youtube.com &bull; April 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Vikkals (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=emhTOqclIbQ"><li><div class="title">Aiyoooo...pinadi erithu di maala! - Mi vs Csk Fan War | Vikkals Not a vlog | VIkkals</div><div class="domain">youtube.com &bull; April 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">VICE (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=ktSS0Jn3qww"><li><div class="title">Max the Forger claims he was addicted to forging famous pieces of art</div><div class="domain">youtube.com &bull; April 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Trevor Noah (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=bMGoMu-CxMY"><li><div class="title">How NOT To Order At An Indian Restaurant! - Trevor Noah (From 'I Wish You Would' on Netflix)</div><div class="domain">youtube.com &bull; April 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ThePrint (youtube.com)</h2> (5)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=Vf6TBP5m05I"><li><div class="title">Keynote Address | Artificial Intelligence and responsible innovation | Global Technology Summit 2025</div><div class="domain">youtube.com &bull; April 13, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=LwGX0sxPYsg"><li><div class="title">Murder, mystery & Delhi’s 'dark side'—Author Rudraneil Sengupta on 'The Beast Within'</div><div class="domain">youtube.com &bull; April 13, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=-HYjanR_jfE"><li><div class="title">BJP-AIADMK tie-up, Annamalai’s future, and reforms under Modi 3.0</div><div class="domain">youtube.com &bull; April 13, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=lxqFezOggh4"><li><div class="title">ORS for dehydration: How to make the right pick</div><div class="domain">youtube.com &bull; April 13, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=SZVXWN4rWgM"><li><div class="title">Dharavi survey in final stages, but resistance persists in 3 neighbourhoods. Here's why</div><div class="domain">youtube.com &bull; April 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ThePrimeTime (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=sjeie9Y7AZk"><li><div class="title">The Insanity of Being a Software Engineer - Prime Reacts</div><div class="domain">youtube.com &bull; April 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Daily Show (youtube.com)</h2> (3)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=kCEcJe_cF3o"><li><div class="title">Jon Stewart on Trump's Botched Tariff Rollout & Desi on China Trade War Escalation | The Daily Show</div><div class="domain">youtube.com &bull; April 13, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=uBmeZyO61UY"><li><div class="title">Jon struggles to understand what Trump hopes to achieve with his tariffs #DailyShow #JonStewart</div><div class="domain">youtube.com &bull; April 13, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=Jf6-t9n5oww"><li><div class="title">Trump's 104% tariff on China has iPhones flying first class ahead of price spikes #DailyShow #Trump</div><div class="domain">youtube.com &bull; April 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">StarTalk (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=52wAuVJmSMo"><li><div class="title">The Plant Intelligence Show with Simon Gilroy</div><div class="domain">youtube.com &bull; April 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">newslaundry (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=VclZdOHKAVk"><li><div class="title">Modi’s Note Ban = Trump’s Tariffs?! Wait Till You Hear Who Advised Them! TV Newsance 294</div><div class="domain">youtube.com &bull; April 13, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=mn6E4CXVGK4"><li><div class="title">Adani’s use of UP forest road, activists ‘targeted’ in 2020 Delhi riots | RWO 364</div><div class="domain">youtube.com &bull; April 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Jay & Sharon (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=fOuL63nLekA"><li><div class="title">Rough Housing w/ my Son #dadlife</div><div class="domain">youtube.com &bull; April 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ICM Indian Classical Music (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=9gcdcBj1xdA"><li><div class="title">Classical Gayan By Aniruddha Aithal 🔥✨#icmvocal #icmtabla #classical #music #shorts</div><div class="domain">youtube.com &bull; April 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=N91I1YpdiQ4"><li><div class="title">Gold Found, But at What Cost? | Mystery at Blind Frog Ranch | Discovery Channel</div><div class="domain">youtube.com &bull; April 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DD Movies (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=3BTkID3TKMY"><li><div class="title">சந்தோசம் சோகம் ரெண்டும் இருக்கும் படம் | Murali Vadivelu Super Hit Comedy Full Movie</div><div class="domain">youtube.com &bull; April 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ChessBase India (youtube.com)</h2> (4)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=SNznviQcf74"><li><div class="title">The genius of Ian Nepomniachtchi | Nepo vs Arjun | Paris Freestyle 2025</div><div class="domain">youtube.com &bull; April 13, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=TDdyD7xLl1Y"><li><div class="title">16-year-old Paras Dilip Bhoir beats two IMs in-a-row, scores a hat-trick in his debut GM tournament</div><div class="domain">youtube.com &bull; April 13, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=t-Cbaw2eR4U"><li><div class="title">Tricky Stany gets tricked in the Bishop Endgame | 2nd Namma Bengaluru GM 2025</div><div class="domain">youtube.com &bull; April 13, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=zzUW6tRCn_M"><li><div class="title">Hikaru Nakamura reacts to his cute childhood photos</div><div class="domain">youtube.com &bull; April 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Chess.com (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=Lds6FkRe678"><li><div class="title">Chess Players WRITE THEIR MOVES and Look at Their Handwriting 😳</div><div class="domain">youtube.com &bull; April 13, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=bCDQpVvCpY8"><li><div class="title">Freestyle Chess Grand Slam Paris | Magnus vs. Fabiano & Hikaru vs. Vincent | Semifinal Game 2</div><div class="domain">youtube.com &bull; April 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Chef Ranveer Brar (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=rWsqF-tra6U"><li><div class="title">How Coffee came to India #podcast #coffeehistory #ranveerbrar</div><div class="domain">youtube.com &bull; April 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">BBC Earth (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=vK61q8WOlIw"><li><div class="title">Nature's Most Violent Mating Ritual | Natural Born Rebels | BBC Earth</div><div class="domain">youtube.com &bull; April 13, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
