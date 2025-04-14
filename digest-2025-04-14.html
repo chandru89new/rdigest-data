@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-04-14</span>:</h1>
+  <p class="summary">There are 15 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (1)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/6AxCwm334ab9kDsQ5/vestigial-reasoning-in-rl"><li><div class="title">Vestigial reasoning in RL</div><div class="domain">lesswrong.com &bull; April 14, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (1)</summary><ul><a class="li" href="https://loganius.org/2025/04/i-bought-a-mac/"><li><div class="title">I bought a Mac</div><div class="domain">loganius.org &bull; April 14, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (2)</summary><ul><a class="li" href="https://andrewhead.info/assets/pdf/calypso.pdf"><li><div class="title">Calypso: LLMs as Dungeon Masters' Assistants [pdf]</div><div class="domain">andrewhead.info &bull; April 14, 2025</div></li></a><a class="li" href="https://arxiv.org/abs/2503.24322"><li><div class="title">NoProp: Training Neural Networks without Back-propagation or Forward-propagation</div><div class="domain">arxiv.org &bull; April 14, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Diplomat (thediplomat.com)</h2> (1)</summary><ul><a class="li" href="https://thediplomat.com/2025/04/trumps-impact-on-japan-and-asean/"><li><div class="title">Trump’s Impact on Japan and ASEAN</div><div class="domain">thediplomat.com &bull; April 14, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (2)</summary><ul><a class="li" href="https://yourstory.com/2025/04/pune-fintech-startup-deciml-helps-gen-z-use-spare-change-mutual-fund-investments-navi"><li><div class="title">How Pune-based Deciml helps Gen Z use their spare change for mutual fund investments</div><div class="domain">yourstory.com &bull; April 14, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/04/savings-via-micro-investments-healing-caste-discrimination-trauma"><li><div class="title">Savings via micro-investments; Healing caste discrimination trauma</div><div class="domain">yourstory.com &bull; April 14, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Knowledge Project Podcast (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=hS-xso4Nmo4"><li><div class="title">Two Weeks to Decide: An Interview with Pierre Poilievre</div><div class="domain">youtube.com &bull; April 14, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Plip Plip (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=O_hxuCF6bVw"><li><div class="title">Good Bad Ugly Roast | Plip Plip</div><div class="domain">youtube.com &bull; April 14, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Mustard (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=EDVO7wuMoO4"><li><div class="title">Why Everyone Fears the F-15 Eagle</div><div class="domain">youtube.com &bull; April 14, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ICM Indian Classical Music (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=gTQG-qk9IZY"><li><div class="title">Classical Gayan By Sniti Mishra Ji ❣️✨#icmvocal #icmtabla #classical #music #shorts</div><div class="domain">youtube.com &bull; April 14, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DD Movies (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=SJbUWYAKVqU"><li><div class="title">சந்தோசம் சோகம் ரெண்டும் இருக்கும் படம் | Murali Vadivelu Super Hit Comedy Full Movie</div><div class="domain">youtube.com &bull; April 14, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Chess.com (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=MZZURxl0r1Y"><li><div class="title">UNEXPECTED BLUNDER IN ENDGAME OF MAGNUS VS. HIKARU FINALE</div><div class="domain">youtube.com &bull; April 14, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">CGP Grey (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=58SrtQNt4YE"><li><div class="title">Death to Nickels</div><div class="domain">youtube.com &bull; April 14, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Bar & Bench (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=8lIFuFEN7nY"><li><div class="title">The Basic Structure Doctrine by Rohinton Nariman | 14th April 2025 5 pm onwards</div><div class="domain">youtube.com &bull; April 14, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
