@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-04-16</span>:</h1>
+  <p class="summary">There are 25 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (1)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/YeQe36XiY4BhrtRh5/asi-existential-risk-reconsidering-alignment-as-a-goal-1"><li><div class="title">ASI existential risk: Reconsidering Alignment as a Goal</div><div class="domain">lesswrong.com &bull; April 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (2)</summary><ul><a class="li" href="https://mcyoung.xyz/2023/03/29/rseq-checkout/"><li><div class="title">Atomicless Concurrency (2023)</div><div class="domain">mcyoung.xyz &bull; April 16, 2025</div></li></a><a class="li" href="https://blog.jetbrains.com/idea/2025/04/the-story-behind-k2-mode-and-how-it-works/"><li><div class="title">The Story Behind K2 Mode and How It Works | The IntelliJ IDEA Blog</div><div class="domain">blog.jetbrains.com &bull; April 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (4)</summary><ul><a class="li" href="https://marctenbosch.com/quaternions/"><li><div class="title">An Interactive Introduction to Rotors from Geometric Algebra</div><div class="domain">marctenbosch.com &bull; April 16, 2025</div></li></a><a class="li" href="https://www.theregister.com/2025/04/16/homeland_security_funding_for_cve/"><li><div class="title">US abruptly turns off funding for CVE program</div><div class="domain">theregister.com &bull; April 16, 2025</div></li></a><a class="li" href="https://www.jeremykun.com/2015/04/06/markov-chain-monte-carlo-without-all-the-bullshit/"><li><div class="title">Markov Chain Monte Carlo Without All the Bullshit</div><div class="domain">jeremykun.com &bull; April 16, 2025</div></li></a><a class="li" href="https://flexport.com"><li><div class="title">Flexport Is Hiring Software Engineers</div><div class="domain">flexport.com &bull; April 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Diplomat (thediplomat.com)</h2> (2)</summary><ul><a class="li" href="https://thediplomat.com/2025/04/singapore-announces-general-election-to-take-place-on-may-3/"><li><div class="title">Singapore Announces General Election to Take Place on May 3</div><div class="domain">thediplomat.com &bull; April 16, 2025</div></li></a><a class="li" href="https://thediplomat.com/2025/04/mh370-the-devil-is-in-the-data/"><li><div class="title">MH370: The Devil Is In the Data</div><div class="domain">thediplomat.com &bull; April 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (5)</summary><ul><a class="li" href="https://yourstory.com/2025/04/venture-capitalists-deeptech-funding-acer-phone-india-manufacturing"><li><div class="title">VCs move pieces in the deeptech game; Making smartphones in India</div><div class="domain">yourstory.com &bull; April 16, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/04/indkal-technologies-ceo-manufacturing-acer-zx-pro-phones-devices"><li><div class="title">‘Our DNA is heavily product-centric’: Indkal Technologies CEO on developing Acer devices in-house</div><div class="domain">yourstory.com &bull; April 16, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/04/indian-vc-firms-mastering-art-making-deep-tech-bets-investor-playbook"><li><div class="title">From spray-and-pray to precision: VCs shift gears in deeptech playbook</div><div class="domain">yourstory.com &bull; April 16, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/04/jewelbox-32-million-funding-retail-expansion-lab-grown-diamond-v3-ventures"><li><div class="title">Lab-grown diamond maker Jewelbox bags $3.2M to fuel retail expansion</div><div class="domain">yourstory.com &bull; April 16, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/04/dukaan-dost-startup-streamlining-textile-sourcing-financing-msme"><li><div class="title">This startup is streamlining textile sourcing and financing for small businesses</div><div class="domain">yourstory.com &bull; April 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Vikkals (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=1DMes8rmrfU"><li><div class="title">Happy Journey ❤️ #vikkals</div><div class="domain">youtube.com &bull; April 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ThePrint (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=UvIUwRwDVWs"><li><div class="title">ThePrintAM: What’s the Gurugram land deal case in which ED questioned Robert Vadra?</div><div class="domain">youtube.com &bull; April 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Daily Show (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=OZbCyBMfy2c"><li><div class="title">Jon Stewart on Kilmar Abrego Garcia’s Deportation and How Trump Fails to Deliver | The Daily Show</div><div class="domain">youtube.com &bull; April 16, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=C1UgGbiUTTo"><li><div class="title">Harvard Rejects Trump Order, SCOTUS Gets Left on Read & Md. Sen. Takes Rescue Vacay | The Daily Show</div><div class="domain">youtube.com &bull; April 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Action Lab (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=azIhKVkLk7U"><li><div class="title">Can You Control Lightning with Sound?</div><div class="domain">youtube.com &bull; April 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Rick Beato (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=wZ2O_LPcPu8"><li><div class="title">Beato and Fantano Square Off</div><div class="domain">youtube.com &bull; April 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">MIT OpenCourseWare (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=8kFFg5jAoQc"><li><div class="title">MIT Economist on Finance, AI, and Human Behavior</div><div class="domain">youtube.com &bull; April 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Khan Academy (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=jNjRP0tVY5s"><li><div class="title">List iteration | Intro to CS - Python | Khan Academy</div><div class="domain">youtube.com &bull; April 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ICM Indian Classical Music (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=TqIgt3GRj4Q"><li><div class="title">Sarod Recital By Ustad Amjad Ali Khan & On Tabla Gulam Sarwar 🙏✨#classical #music #icmtabla #shorts</div><div class="domain">youtube.com &bull; April 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DD Movies (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=GVl_QEcxQlQ"><li><div class="title">சந்தோசம் சோகம் ரெண்டும் இருக்கும் படம் | Murali Vadivelu Super Hit Comedy Full Movie</div><div class="domain">youtube.com &bull; April 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Best Documentary (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=igfG7GQuSng"><li><div class="title">The Hidden Side of Animal Transport</div><div class="domain">youtube.com &bull; April 16, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
