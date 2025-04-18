@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-04-18</span>:</h1>
+  <p class="summary">There are 17 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (2)</summary><ul><a class="li" href="https://www.potaroo.net/ispcol/2024-10/packet-sizes.html"><li><div class="title">The Size of Packets</div><div class="domain">potaroo.net &bull; April 18, 2025</div></li></a><a class="li" href="https://blog.glyph.im/2025/04/stop-writing-init-methods.html"><li><div class="title">Stop Writing `__init__` Methods</div><div class="domain">blog.glyph.im &bull; April 18, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (1)</summary><ul><a class="li" href="https://www.dhl.com/au-en/home/important-information/2025/shipments-to-the-united-states-with-a-customs-value-exceeding-usd-800.html"><li><div class="title">DHL suspends B2C shipments over 800 USD until further notice</div><div class="domain">dhl.com &bull; April 18, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Sympolymathesy, by Chris Krycho (v5.chriskrycho.com)</h2> (1)</summary><ul><a class="li" href="https://v5.chriskrycho.com/notes/your-real-assumed-audience/"><li><div class="title">[notes] Your Real Assumed Audience</div><div class="domain">v5.chriskrycho.com &bull; April 18, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (1)</summary><ul><a class="li" href="https://yourstory.com/2025/04/infosys-records-poor-q4-performance-toasts-billion-dollar-india-rd-plans"><li><div class="title">Infosys records poor Q4 performance; Toast’s billion-dollar India R&D plans</div><div class="domain">yourstory.com &bull; April 18, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ThePrint (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=7R-fbK_NFgE"><li><div class="title">‘Trump’s tariffs will hit global growth, raise prices & play havoc with financial markets’:IMF Chief</div><div class="domain">youtube.com &bull; April 18, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Senthil kumar (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=Vv4np-UjQIA"><li><div class="title">#AYM - #arrahman - #PhysicalMedia #Collection (#Cassette #Tapes - #ACD - #DVD - #VHS) 💿📼</div><div class="domain">youtube.com &bull; April 18, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=D2h75w8we9w"><li><div class="title">#Highway - #arrahman - #PhysicalMedia #Collection (#Cassette #Tapes - #ACD - #DVD - #VHS) 💿📼</div><div class="domain">youtube.com &bull; April 18, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Parithabangal (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=owz_gSGm0MY"><li><div class="title">Husband and Wife Paavangal | Parithabangal</div><div class="domain">youtube.com &bull; April 18, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Krishnamurti Foundation Trust (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=JmrCGijBwMA"><li><div class="title">Learning is flowing, never static | Krishnamurti</div><div class="domain">youtube.com &bull; April 18, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DD Movies (youtube.com)</h2> (5)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=EBviJ5-rDS4"><li><div class="title">சந்தோசம் சோகம் ரெண்டும் இருக்கும் படம் | Murali Vadivelu Super Hit Comedy Full Movie</div><div class="domain">youtube.com &bull; April 18, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=IanlytnRhGI"><li><div class="title">சந்தோசம் சோகம் ரெண்டும் இருக்கும் படம் | Murali Vadivelu Super Hit Comedy Full Movie</div><div class="domain">youtube.com &bull; April 18, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=_943nUoiuIg"><li><div class="title">சந்தோசம் சோகம் ரெண்டும் இருக்கும் படம் | Murali Vadivelu Super Hit Comedy Full Movie</div><div class="domain">youtube.com &bull; April 18, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=kC1xnX26Ubs"><li><div class="title">சந்தோசம் சோகம் ரெண்டும் இருக்கும் படம் | Murali Vadivelu Super Hit Comedy Full Movie</div><div class="domain">youtube.com &bull; April 18, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=a74tDW3glVI"><li><div class="title">சந்தோசம் சோகம் ரெண்டும் இருக்கும் படம் | Murali Vadivelu Super Hit Comedy Full Movie</div><div class="domain">youtube.com &bull; April 18, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ChessBase India (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=YyWJ6dLAZng"><li><div class="title">GM Iniyan totally outplays IM Ethan Vaz to join the lead | 2nd Namma Bengaluru GM</div><div class="domain">youtube.com &bull; April 18, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=sOrWWgF0qBs"><li><div class="title">She won in just EIGHT MOVES!! IM Dinara Wagner | Grenke Freestyle</div><div class="domain">youtube.com &bull; April 18, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
