@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-04-26</span>:</h1>
+  <p class="summary">There are 16 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (1)</summary><ul><a class="li" href="https://wanix.sh/"><li><div class="title">Wanix :: Virtual environment kit for the local-first web, inspired by Plan 9</div><div class="domain">wanix.sh &bull; April 26, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (6)</summary><ul><a class="li" href="https://www.scientificamerican.com/article/lofty-math-problem-called-hilberts-sixth-closer-to-being-solved/"><li><div class="title">Mathematicians just solved a 125-year-old problem, uniting 3 theories in physics</div><div class="domain">scientificamerican.com &bull; April 26, 2025</div></li></a><a class="li" href="https://newatlas.com/computers/smartphone-listening-conversations-ads-facebook/"><li><div class="title">Your phone isn't secretly listening to you, but the truth is more disturbing</div><div class="domain">newatlas.com &bull; April 26, 2025</div></li></a><a class="li" href="https://pubs.aeaweb.org/doi/pdfplus/10.1257/aer.20131408"><li><div class="title">Bankruptcy as Implicit Health Insurance</div><div class="domain">pubs.aeaweb.org &bull; April 26, 2025</div></li></a><a class="li" href="https://www.doliver.org/articles/rss-as-a-skill"><li><div class="title">Reading RSS content is a skilled activity</div><div class="domain">doliver.org &bull; April 26, 2025</div></li></a><a class="li" href="https://lite.berkeley-humanoid.org/"><li><div class="title">Berkeley Humanoid Lite – open-source robot</div><div class="domain">lite.berkeley-humanoid.org &bull; April 26, 2025</div></li></a><a class="li" href="https://samj.substack.com/p/that-joke-isnt-funny-any-more"><li><div class="title">I wrote a book called "Crap Towns". It seemed funny at the time</div><div class="domain">samj.substack.com &bull; April 26, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (2)</summary><ul><a class="li" href="https://yourstory.com/2025/04/powering-indias-deeptech-ecosystem-"><li><div class="title">Powering India’s deeptech ecosystem; Menstrual equity in India</div><div class="domain">yourstory.com &bull; April 26, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/04/art-creativity-artist-failure-lessons-chitra-santhe-photography"><li><div class="title">How artists learn from failure–perspectives and tips from five creators</div><div class="domain">yourstory.com &bull; April 26, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Vikkals (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=aH4X98x0i6U"><li><div class="title">When Tea is more important than anything.. #vikkals #shorts #tealover</div><div class="domain">youtube.com &bull; April 26, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Deshbhakt (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=3VzyY0njYPM"><li><div class="title">Pt.3 Post Pahalgam | Making Pak Govt. Pay A Heavy Price - Without Firing A Bullet | Akash Banerjee</div><div class="domain">youtube.com &bull; April 26, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=zD7bLzW2ECg"><li><div class="title">Fentanyl Addict-Angel</div><div class="domain">youtube.com &bull; April 26, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">newslaundry (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=aGvz-4B9Cv8"><li><div class="title">On BJP’s missteps in Bengal and Mamata Banerjee’s political grip over the state</div><div class="domain">youtube.com &bull; April 26, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Law Chambers of Amish Aggarwala (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=0DgT_hN-eZ8"><li><div class="title">Can you hide your income from the Court?</div><div class="domain">youtube.com &bull; April 26, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DD Movies (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=uUJ2FWHIDxs"><li><div class="title">சந்தோசம் சோகம் ரெண்டும் இருக்கும் படம் | Murali Vadivelu Super Hit Comedy Full Movie</div><div class="domain">youtube.com &bull; April 26, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ChessBase India (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=SVuXafD4ciw"><li><div class="title">The reason why Arjun Erigaisi is the best Freestyle player of India | Jorden vs Arjun | Grenke 2025</div><div class="domain">youtube.com &bull; April 26, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
