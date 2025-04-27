@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-04-27</span>:</h1>
+  <p class="summary">There are 18 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (1)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/t46PYSvHHtJLxmrxn/what-are-important-ui-shaped-problems-that-lightcone-could"><li><div class="title">What are important UI-shaped problems that Lightcone could tackle?</div><div class="domain">lesswrong.com &bull; April 27, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (2)</summary><ul><a class="li" href="https://www.reddit.com/r/changemyview/comments/1k8b2hj/meta_unauthorized_experiment_on_cmv_involving/"><li><div class="title">Unauthorized Experiment on CMV Involving AI-generated Comments</div><div class="domain">reddit.com &bull; April 27, 2025</div></li></a><a class="li" href="https://diveintosystems.org/"><li><div class="title">Dive into Systems (2020)</div><div class="domain">diveintosystems.org &bull; April 27, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (3)</summary><ul><a class="li" href="https://sigbovik.org/2025/proceedings.pdf"><li><div class="title">Sigbovik Conference Proceedings 2025 [pdf]</div><div class="domain">sigbovik.org &bull; April 27, 2025</div></li></a><a class="li" href="https://gizmodo.com/amazon-just-happens-to-hold-book-sale-during-independent-bookstore-day-2000594958"><li><div class="title">Amazon Just Happens to Hold Book Sale During Independent Bookstore Day</div><div class="domain">gizmodo.com &bull; April 27, 2025</div></li></a><a class="li" href="https://gitlab.com/SpyrjaGaldr/path"><li><div class="title">Path is a utility for working with paths</div><div class="domain">gitlab.com &bull; April 27, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (3)</summary><ul><a class="li" href="https://yourstory.com/2025/04/ather-energy-ipo-sarvam-ai-llm-navya-naveli-nanda-pope-francis"><li><div class="title">Ather Energy zooms to IPO; A tête-à-tête with Navya Naveli Nanda</div><div class="domain">yourstory.com &bull; April 27, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/04/fintech-making-healthcare-treatments-affordable"><li><div class="title">How fintech is making healthcare treatments more affordable</div><div class="domain">yourstory.com &bull; April 27, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/04/india-us-sheel-mohnot-fintech-225m-vc-fund-prime-ventures"><li><div class="title">From India to the US: Sheel Mohnot on building a $225M VC fund and the future of fintech</div><div class="domain">yourstory.com &bull; April 27, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Vikkals (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=85aIfOdhPJQ"><li><div class="title">Help panlam nu nenachathu oru thappa 😢 #vikkals #shorts</div><div class="domain">youtube.com &bull; April 27, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Veritasium (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=Q56PMJbCFXQ"><li><div class="title">The Most Dangerous Building in Manhattan</div><div class="domain">youtube.com &bull; April 27, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ThePrint (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=vaLX-eOfJsQ"><li><div class="title">Why Jain Temple demolition caused a political stir in Mumbai</div><div class="domain">youtube.com &bull; April 27, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Deshbhakt (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=o4nynacgFp0"><li><div class="title">Trump U-Turn On Visa Ban For Real? - Or More Pain In Store For Indian Students? | Akash Banerjee</div><div class="domain">youtube.com &bull; April 27, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ICM Indian Classical Music (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=dTMebn9Rc8A"><li><div class="title">Thumari By Bireshwar Gautam & Tabla By Pt Arvind Azad Ji 🙏✨#icmvocal #icmtabla #classical #music</div><div class="domain">youtube.com &bull; April 27, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DD Movies (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=RHi7sAR4_7Y"><li><div class="title">சந்தோசம் சோகம் ரெண்டும் இருக்கும் படம் | Murali Vadivelu Super Hit Comedy Full Movie</div><div class="domain">youtube.com &bull; April 27, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ChessBase India (youtube.com)</h2> (3)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=wY_KP6FWBCo"><li><div class="title">Praggnanandhaa and Aravindh Chithambaram in Warsaw | Day 2 | Superbet Rapid and Blitz 2025</div><div class="domain">youtube.com &bull; April 27, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=jmEB9ebmpPA"><li><div class="title">Can Akshay Borgaonkar thwart GM Deep Sengupta's knight sac?</div><div class="domain">youtube.com &bull; April 27, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=EZfB0r5v_mY"><li><div class="title">When Divya Deshmukh attacked like Paul Morphy | Divya vs Mongolia no.1 | FIDE Women's GP 2025</div><div class="domain">youtube.com &bull; April 27, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
