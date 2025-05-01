@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-05-01</span>:</h1>
+  <p class="summary">There are 22 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (1)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/xtcpEceyEjGqBCHyK/obstacles-in-arc-s-agenda-finding-explanations"><li><div class="title">Obstacles in ARC's agenda: Finding explanations</div><div class="domain">lesswrong.com &bull; May 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (1)</summary><ul><a class="li" href="https://simonwillison.net/2025/Apr/30/criticism-of-the-chatbot-arena/"><li><div class="title">Understanding the recent criticism of the Chatbot Arena</div><div class="domain">simonwillison.net &bull; May 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (7)</summary><ul><a class="li" href="https://azure.microsoft.com/en-us/blog/one-year-of-phi-small-language-models-making-big-leaps-in-ai/"><li><div class="title">Phi-4 Reasoning Models</div><div class="domain">azure.microsoft.com &bull; May 01, 2025</div></li></a><a class="li" href="https://www.hirox-europe.com/gigapixel/girl-with-a-pearl-earring/"><li><div class="title">108B Pixel Scan of Johannes Vermeer's Girl with a Pearl Earring</div><div class="domain">hirox-europe.com &bull; May 01, 2025</div></li></a><a class="li" href="https://www.fastcompany.com/91324241/this-company-built-an-entire-rail-terminal-in-queens-to-avoid-relying-on-trucks"><li><div class="title">Company built its own rail terminal in NYC to avoid relying on trucks</div><div class="domain">fastcompany.com &bull; May 01, 2025</div></li></a><a class="li" href="https://www.nytimes.com/2025/04/30/world/julia-parsons-dead.html"><li><div class="title">Julia Parsons, U.S. Navy Code Breaker During World War II, Dies at 104</div><div class="domain">nytimes.com &bull; May 01, 2025</div></li></a><a class="li" href="https://www.ycombinator.com/companies/gromo/jobs/aP4JS9K-product-tech-business-ai-enthusiasts"><li><div class="title">GroMo (YC W21) Is Hiring</div><div class="domain">ycombinator.com &bull; May 01, 2025</div></li></a><a class="li" href="https://stockhausenspace.blogspot.com/"><li><div class="title">Stockhausen: Sounds in Space</div><div class="domain">stockhausenspace.blogspot.com &bull; May 01, 2025</div></li></a><a class="li" href="https://www.wsj.com/tech/apple-violated-antitrust-ruling-federal-judge-finds-66b85957"><li><div class="title">Apple Violated Antitrust Ruling, Judge Finds</div><div class="domain">wsj.com &bull; May 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (2)</summary><ul><a class="li" href="https://yourstory.com/2025/04/how-univest-is-rewriting-the-rules-of-retail-investors-india"><li><div class="title">How Univest is helping retail traders make smart decisions</div><div class="domain">yourstory.com &bull; May 01, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/04/sports-tournaments-startup-ecosystem-evjoints-pain-points-ev-adoption"><li><div class="title">Sports tournaments for startup ecosystem; EVJoints solving pain points in EV adoption</div><div class="domain">yourstory.com &bull; May 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Dodo (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=N80cgdmNQ7c"><li><div class="title">Dog Dumped by Road Becomes Best Friends with Her New Baby Sister | The Dodo</div><div class="domain">youtube.com &bull; May 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Daily Show (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=0J24ZOiaTvw"><li><div class="title">Stephen Miller: Sucking the Blood Out of American Democracy | The Daily Show</div><div class="domain">youtube.com &bull; May 01, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=g_LyYN-5YLk"><li><div class="title">Trump Fights ABC Interviewer Over Photoshopped Image | The Daily Show</div><div class="domain">youtube.com &bull; May 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=lZzE5yblc84"><li><div class="title">Face Transplant Patient and Wife-Joe and Jessica Dimeo</div><div class="domain">youtube.com &bull; May 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ICM Indian Classical Music (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=Puj2L4RkVJ8"><li><div class="title">Pt Shiv Kumar Sharma & Legends 🙏✨ #icmvocal #icmtabla #classical #music</div><div class="domain">youtube.com &bull; May 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=hql2cUkCOxQ"><li><div class="title">One Bite Away From Death |  Naked and Afraid XL | Discovery Channel</div><div class="domain">youtube.com &bull; May 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DD Movies (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=jl5gKPqSuqM"><li><div class="title">சந்தோசம் சோகம் ரெண்டும் இருக்கும் படம் | Murali Vadivelu Super Hit Comedy Full Movie</div><div class="domain">youtube.com &bull; May 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ChessBase India (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=R2-67Gyvrdw"><li><div class="title">Praggnanandhaa's phenomenal understanding of Nimzo Indian | Pragg vs Firouzja | Superbet Blitz 2025</div><div class="domain">youtube.com &bull; May 01, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=TH8Uu1VY6_Y"><li><div class="title">Former World Champion has to prove if he can mate with a bishop and knight | Aravindh vs Topalov</div><div class="domain">youtube.com &bull; May 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Chess.com (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=rYbvLnpy4iM"><li><div class="title">Sapnap CHECKMATES Hungrybox in 9 MOVES!</div><div class="domain">youtube.com &bull; May 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">3Blue1Brown (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=RQWpF2Gb-gU"><li><div class="title">But what is quantum computing?  (Grover's Algorithm)</div><div class="domain">youtube.com &bull; May 01, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
