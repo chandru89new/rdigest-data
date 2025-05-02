@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-05-02</span>:</h1>
+  <p class="summary">There are 21 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (3)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/ZFxow7G6zDs3hAYx2/don-t-accuse-your-interlocutor-of-being-insufficiently-truth"><li><div class="title">Don't accuse your interlocutor of being insufficiently truth-seeking</div><div class="domain">lesswrong.com &bull; May 02, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/JfgME2Kdo5tuWkP59/anthropomorphizing-ai-might-be-good-actually"><li><div class="title">Anthropomorphizing AI might be good, actually</div><div class="domain">lesswrong.com &bull; May 02, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/WkCfvqyjCzvRrwkaQ/ai-governance-to-avoid-extinction-the-strategic-landscape"><li><div class="title">AI Governance to Avoid Extinction: The Strategic Landscape and Actionable Research Questions</div><div class="domain">lesswrong.com &bull; May 02, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (3)</summary><ul><a class="li" href="https://fabulous.systems/posts/2025/05/anubis-saved-our-websites-from-a-ddos-attack/"><li><div class="title">The Day Anubis Saved Our Websites From a DDoS Attack</div><div class="domain">fabulous.systems &bull; May 02, 2025</div></li></a><a class="li" href="https://w3ctag.github.io/web-without-3p-cookies/"><li><div class="title">Third Party Cookies Must Be Removed</div><div class="domain">w3ctag.github.io &bull; May 02, 2025</div></li></a><a class="li" href="https://github.com/changesets/changesets"><li><div class="title">A way to manage your versioning and changelogs with a focus on monorepos</div><div class="domain">github.com &bull; May 02, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (5)</summary><ul><a class="li" href="https://zenodo.org/communities/xtothepowerofinfinity/records"><li><div class="title">Show HN: CapOS – A responsibility-gated OS stack with signed process execution</div><div class="domain">zenodo.org &bull; May 02, 2025</div></li></a><a class="li" href="https://thereader.mitpress.mit.edu/the-anti-capitalist-case-for-standards/"><li><div class="title">The Anti-Capitalist Case for Standards</div><div class="domain">thereader.mitpress.mit.edu &bull; May 02, 2025</div></li></a><a class="li" href="https://felix86.com/"><li><div class="title">Felix86: Run x86-64 programs on RISC-V Linux</div><div class="domain">felix86.com &bull; May 02, 2025</div></li></a><a class="li" href="https://www.404media.co/mike-waltz-accidentally-reveals-obscure-app-the-government-is-using-to-archive-signal-messages/"><li><div class="title">Mike Waltz Accidentally Reveals App Govt Uses to Archive Signal Messages</div><div class="domain">404media.co &bull; May 02, 2025</div></li></a><a class="li" href="https://developer.chrome.com/blog/dbsc-origin-trial"><li><div class="title">Chrome Origin Trial: Device Bound Session Credentials</div><div class="domain">developer.chrome.com &bull; May 02, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (1)</summary><ul><a class="li" href="https://yourstory.com/2025/05/eternal-feels-the-heat-from-competition-univest-startup-shefali-shah"><li><div class="title">Eternal feels the heat from competition; Helping retail traders make smart decisions</div><div class="domain">yourstory.com &bull; May 02, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Wendover Productions (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=sY7cQNx4Hg4"><li><div class="title">The Design of Airline Route Networks</div><div class="domain">youtube.com &bull; May 02, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Dodo (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=-gW75AxPbO8"><li><div class="title">Best Way To Remember If You Fed The Dog | The Pack</div><div class="domain">youtube.com &bull; May 02, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Daily Show (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=pLwbO8Ix9Gc"><li><div class="title">Mike Waltz Leaves the Group Chat for a U.N. One & Trump’s Town Hall Gets Racist | The Daily Show</div><div class="domain">youtube.com &bull; May 02, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">TED (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=6kPHnl-RsVI"><li><div class="title">Why AI Is Our Ultimate Test and Greatest Invitation | Tristan Harris | TED</div><div class="domain">youtube.com &bull; May 02, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=8a0Asfoq2Ak"><li><div class="title">Atheist ICU Nurse - Sarihn</div><div class="domain">youtube.com &bull; May 02, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">National Geographic (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=bbLjL08m-mY"><li><div class="title">🔴 LIVE: Hot Drugs | To Catch a Smuggler (S5 FULL EPISODES) | National Geographic</div><div class="domain">youtube.com &bull; May 02, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DD Movies (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=-pSgr_taGQE"><li><div class="title">சந்தோசம் சோகம் ரெண்டும் இருக்கும் படம் | Murali Vadivelu Super Hit Comedy Full Movie</div><div class="domain">youtube.com &bull; May 02, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ChessBase India (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=KqZldZpc-w0"><li><div class="title">How this mental chess coach helped Christopher Yoo | Ebru Ceylan</div><div class="domain">youtube.com &bull; May 02, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Chef Ranveer Brar (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=7B7UxYX5l0s"><li><div class="title">Remember this when cooking Palak! #cookingtips #ranveerbrar #palakpaneer</div><div class="domain">youtube.com &bull; May 02, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
