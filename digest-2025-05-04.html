@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-05-04</span>:</h1>
+  <p class="summary">There are 25 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (4)</summary><ul><a class="li" href="https://choly.ca/post/refactor-rhythm/"><li><div class="title">Refactoring Rhythm</div><div class="domain">choly.ca &bull; May 04, 2025</div></li></a><a class="li" href="https://island94.org/2025/04/wide-models-and-active-record-custom-validation-contexts"><li><div class="title">Wide Models and Active Record custom validation contexts</div><div class="domain">island94.org &bull; May 04, 2025</div></li></a><a class="li" href="https://hackerfactor.com/blog/index.php?/archives/1066-Hello-my-perverted-friend.html"><li><div class="title">Hello my perverted friend</div><div class="domain">hackerfactor.com &bull; May 04, 2025</div></li></a><a class="li" href="http://oldvcr.blogspot.com/2025/05/what-went-wrong-with-wireless-usb.html"><li><div class="title">What went wrong with wireless USB</div><div class="domain">oldvcr.blogspot.com &bull; May 04, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (4)</summary><ul><a class="li" href="https://www.simplypsychology.org/zone-of-proximal-development.html"><li><div class="title">Vygotsky's Zone of Proximal Development</div><div class="domain">simplypsychology.org &bull; May 04, 2025</div></li></a><a class="li" href="https://www.shayon.dev/post/2025/119/a-postgresql-planner-gotcha-with-ctes-delete-and-limit/"><li><div class="title">A PostgreSQL planner semi-join gotcha with CTE, LIMIT, and RETURNING</div><div class="domain">shayon.dev &bull; May 04, 2025</div></li></a><a class="li" href="http://bitsavers.org/pdf/americanMegatrends/Programmers_Guide_to_the_AMIBIOS_1993.pdf"><li><div class="title">Programmers Guide to the AMIBIOS (1993) [pdf]</div><div class="domain">bitsavers.org &bull; May 04, 2025</div></li></a><a class="li" href="http://pascal.hansotten.com/"><li><div class="title">Pascal for Small Machines</div><div class="domain">pascal.hansotten.com &bull; May 04, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (1)</summary><ul><a class="li" href="https://yourstory.com/2025/05/reviving-lost-indian-recipes-radiant-manufacturers-vicky-ratnani-sindhi"><li><div class="title">Reviving lost Indian recipes; A chef with a ‘Sindhi heart and soul’</div><div class="domain">yourstory.com &bull; May 04, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">V3Cars (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=6JK6Geem3ZY"><li><div class="title">Used Car Loan vs Personal Loan vs Loan Against Mutual Fund/FD — Used Car Buying Guide — Financing</div><div class="domain">youtube.com &bull; May 04, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ThePrint (youtube.com)</h2> (5)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=EepnwfmbpXI"><li><div class="title">Bilawal on Pahalgam & storied Bhutto-Zardari clan</div><div class="domain">youtube.com &bull; May 04, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=Nqg8zQUNgs4"><li><div class="title">LIVE: MEA briefing on Angola President Joao Manuel Goncalves Lourenco’s India Visit</div><div class="domain">youtube.com &bull; May 04, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=H1XlMeOpmj4"><li><div class="title">Worship, wuzu & washrooms: How Delhi mosques are now more than than just places of worship for women</div><div class="domain">youtube.com &bull; May 04, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=2t5tQBgoOZU"><li><div class="title">Parle Marie biscuits ad fails to be witty, misses the mark by a huge margin</div><div class="domain">youtube.com &bull; May 04, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=EUrpmvtK-80"><li><div class="title">India’s rising stroke burden, risk factors and new interventions</div><div class="domain">youtube.com &bull; May 04, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Dodo (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=xrrNuGyfNgE"><li><div class="title">Shaking Beagle Rescued From Lab Becomes So Playful | The Dodo</div><div class="domain">youtube.com &bull; May 04, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Sheena Melwani (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=PgzSG3KB8ao"><li><div class="title">Can you help me choose an outfit for the Derby party?  #shorts</div><div class="domain">youtube.com &bull; May 04, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Rick Beato (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=CPk8EtUj9V4"><li><div class="title">Why CAGED is Holding Your Playing Back (Do THIS Instead)</div><div class="domain">youtube.com &bull; May 04, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Primal Space (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=wyTOYEk_Z2Y"><li><div class="title">Why Are Cities Built on Top of Each Other?</div><div class="domain">youtube.com &bull; May 04, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Plip Plip (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=Wleby2uqYDE"><li><div class="title">Retro Roast | Plip Plip</div><div class="domain">youtube.com &bull; May 04, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Let's Game It Out (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=LnwdjHpZzqU"><li><div class="title">I Ruined Everything I Touched In RuneScape: Dragonwilds</div><div class="domain">youtube.com &bull; May 04, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ICM Indian Classical Music (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=10toGEl2P4k"><li><div class="title">Vilambit Khayal Gayan By Smt Ashwini Bhide Ji 🙏✨#icmvocal #icmtabla #classical #music #shorts</div><div class="domain">youtube.com &bull; May 04, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=mGNqrtt5EiA"><li><div class="title">The Pirates Who Hunted Parker! | Gold Rush: Parker’s Trail | Full Episode | Discovery Channel</div><div class="domain">youtube.com &bull; May 04, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DD Movies (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=-NnrxO44A-w"><li><div class="title">Kamarasu 158</div><div class="domain">youtube.com &bull; May 04, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">CinemaStix (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=JkuS-JkHd8s"><li><div class="title">well, they don’t want you to watch Star Wars this way, but it’s better</div><div class="domain">youtube.com &bull; May 04, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
