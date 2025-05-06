@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-05-06</span>:</h1>
+  <p class="summary">There are 15 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (1)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/KyndnEA7NMFrDKtJG/gpt-4o-sycophancy-post-mortem"><li><div class="title">GPT-4o Sycophancy Post Mortem</div><div class="domain">lesswrong.com &bull; May 06, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (4)</summary><ul><a class="li" href="https://blog.ttulka.com/how-cohesion-and-coupling-correlate/"><li><div class="title">How Cohesion and Coupling Correlate by Tomas Tulka</div><div class="domain">blog.ttulka.com &bull; May 06, 2025</div></li></a><a class="li" href="http://perette.barella.org/Science/collatz.html"><li><div class="title">How prime factorizations govern the Collatz conjecture</div><div class="domain">perette.barella.org &bull; May 06, 2025</div></li></a><a class="li" href="https://www.softinio.com/post/the-data-surrender-trap/"><li><div class="title">The Data Surrender Trap: How Enterprises Are Losing Control in the AI Gold Rush—and the Simple Fix</div><div class="domain">softinio.com &bull; May 06, 2025</div></li></a><a class="li" href="https://brevzin.github.io/c++/2025/05/02/soa/"><li><div class="title">Implementing a Struct of Arrays</div><div class="domain">brevzin.github.io &bull; May 06, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (1)</summary><ul><a class="li" href="https://mako.cc/copyrighteous/google-has-most-of-my-email-because-it-has-all-of-yours"><li><div class="title">Google Has Most of My Email Because It Has All of Yours (2014)</div><div class="domain">mako.cc &bull; May 06, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (1)</summary><ul><a class="li" href="https://yourstory.com/2025/05/investors-exercise-caution-vc-funding-indian-spice-global-palates"><li><div class="title">Investors exercise caution in VC funding; Indian spice for global palates</div><div class="domain">yourstory.com &bull; May 06, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Y Combinator (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=31vkkVQdUa8"><li><div class="title">Irrational optimism and uncompromising realism.</div><div class="domain">youtube.com &bull; May 06, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">LastWeekTonight (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=F2hN3JKZ-Go"><li><div class="title">Trump & Deportations: Last Week Tonight with John Oliver (HBO)</div><div class="domain">youtube.com &bull; May 06, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=vVlebEKPbd4"><li><div class="title">Buried Truths of Serra Pelada! | Gold Rush: Parker’s Trail | Full Episode | Discovery Channel</div><div class="domain">youtube.com &bull; May 06, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DD Movies (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=fcM6-G-SzBE"><li><div class="title">சந்தோசம் சோகம் ரெண்டும் இருக்கும் படம் | Murali Vadivelu Super Hit Comedy Full Movie</div><div class="domain">youtube.com &bull; May 06, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ChessBase India (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=3wkAz02QS2U"><li><div class="title">Sensei Danya vs Pragmatic Pragg</div><div class="domain">youtube.com &bull; May 06, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">BBC News (youtube.com)</h2> (3)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=8m01nkV2ddw"><li><div class="title">Zendaya, Coleman Domingo, Diana Ross arrive at Met Gala 2025 | BBC News</div><div class="domain">youtube.com &bull; May 06, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=TiNDsQkMcaU"><li><div class="title">Colman Domingo: 'Met Gala theme means everything to me' #MetGala2025 #BBCNews</div><div class="domain">youtube.com &bull; May 06, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=JRDNjprnlZU"><li><div class="title">Shah Rukh Khan attends Met Gala for first time. #SRK #Bollywood #BBCNews</div><div class="domain">youtube.com &bull; May 06, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
