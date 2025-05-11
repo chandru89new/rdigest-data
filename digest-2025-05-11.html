@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-05-11</span>:</h1>
+  <p class="summary">There are 16 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (2)</summary><ul><a class="li" href="https://www.alexedwards.net/blog/organize-your-go-middleware-without-dependencies"><li><div class="title">Organize your Go middleware without dependencies - Alex Edwards</div><div class="domain">alexedwards.net &bull; May 11, 2025</div></li></a><a class="li" href="https://mezzantrop.wordpress.com/2025/02/04/netbsd-10-x-kernel-math_emulation/"><li><div class="title">NetBSD 10.x kernel MATH_EMULATION</div><div class="domain">mezzantrop.wordpress.com &bull; May 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (3)</summary><ul><a class="li" href="https://www.thejournal.ie/ireland-given-two-months-to-start-implementing-hate-speech-laws-6697853-May2025/"><li><div class="title">Ireland given two months to implement hate speech laws or face action from EU</div><div class="domain">thejournal.ie &bull; May 11, 2025</div></li></a><a class="li" href="https://about.fandom.com/news/fandom-sells-giant-bomb-to-independent-creators"><li><div class="title">Fandom Sells Giant Bomb to Independent Creators</div><div class="domain">about.fandom.com &bull; May 11, 2025</div></li></a><a class="li" href="https://lab.avl.la/dotless/"><li><div class="title">Dotless Domains</div><div class="domain">lab.avl.la &bull; May 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (3)</summary><ul><a class="li" href="https://yourstory.com/2025/05/meet-the-ceo-moms-of-india-priyanka-ghose-presents-the-royals"><li><div class="title">Meet the CEO moms of India; Priyanka Ghose presents The Royals</div><div class="domain">yourstory.com &bull; May 11, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/05/how-can-indian-parents-future-proof-education-expenses"><li><div class="title">How can Indian parents future-proof education expenses</div><div class="domain">yourstory.com &bull; May 11, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/05/ai-artificial-intelligence-saas-next-wave-enterprise-innovation-prime-venture-partners"><li><div class="title">AI x SaaS: The next wave of enterprise innovation</div><div class="domain">yourstory.com &bull; May 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">VICE (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=sVr-PcrjhgQ"><li><div class="title">Weeds IRL: The Real Nancy Botwin</div><div class="domain">youtube.com &bull; May 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ThePrint (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=yXBLKd_3LR8"><li><div class="title">Amritsar #GroundTruth: Aftermath & horror of Pakistan's drone attack</div><div class="domain">youtube.com &bull; May 11, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=ehAgJKI3waM"><li><div class="title">Pahalgam massacre, Maxar & Pakistan ‘connection’</div><div class="domain">youtube.com &bull; May 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Dodo (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=kc6z0NlVxuk"><li><div class="title">75-Pound Dog Is Terrified Of 10-Ounce Foster Puppy | The Dodo</div><div class="domain">youtube.com &bull; May 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Deshbhakt (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=RljGEIvOUjM"><li><div class="title">India Vs Pakistan Face-Off - Who Wants a Ceasefire?  | Operation Sindoor A Success? | Akash Banerjee</div><div class="domain">youtube.com &bull; May 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=bzAKSIQQDAM"><li><div class="title">Top Treasure Hunts of the Bering Sea! | Bering Sea Gold | Discovery Channel</div><div class="domain">youtube.com &bull; May 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ChessBase India (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=88cv6IUBkIs"><li><div class="title">The idea and the concept behind the Big Chess Camp</div><div class="domain">youtube.com &bull; May 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">BBC News (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=cbYsHrU47rM"><li><div class="title">India and Pakistan accuse each other of firing missiles at airbases | BBC News</div><div class="domain">youtube.com &bull; May 11, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
