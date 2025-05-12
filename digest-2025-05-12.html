@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-05-12</span>:</h1>
+  <p class="summary">There are 20 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (2)</summary><ul><a class="li" href="https://guix.gnu.org/blog/2025/migrating-to-codeberg/"><li><div class="title">Migrating to Codeberg</div><div class="domain">guix.gnu.org &bull; May 12, 2025</div></li></a><a class="li" href="https://github.com/Efeckc17/simple-todo-c"><li><div class="title">Windows Todo application built with pure C and the Win32 API</div><div class="domain">github.com &bull; May 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (3)</summary><ul><a class="li" href="https://theconversation.com/avoiding-ai-is-hard-but-our-freedom-to-opt-out-must-be-protected-255873"><li><div class="title">Avoiding AI is hard – but our freedom to opt out must be protected</div><div class="domain">theconversation.com &bull; May 12, 2025</div></li></a><a class="li" href="https://www.primeintellect.ai/blog/intellect-2-release"><li><div class="title">Intellect-2 Release: The First 32B Model Trained Through Globally Distributed RL</div><div class="domain">primeintellect.ai &bull; May 12, 2025</div></li></a><a class="li" href="https://olegkutkov.me/2025/05/12/custom-sim-card-in-tesla-model-3-2024-tesla-model-y-2025-and-cybertruck/"><li><div class="title">Custom SIM card in Tesla Model 3 2024, Tesla Model Y 2025 and Cybertruck</div><div class="domain">olegkutkov.me &bull; May 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Psyche | on the human condition (psyche.co)</h2> (4)</summary><ul><a class="li" href="https://psyche.co/ideas/there-are-three-lenses-through-which-to-weigh-any-decision?utm_source=rss-feed"><li><div class="title">There are three lenses through which to weigh any decision</div><div class="domain">psyche.co &bull; May 12, 2025</div></li></a><a class="li" href="https://psyche.co/notes-to-self/is-forgetfulness-something-to-be-feared-or-to-be-celebrated?utm_source=rss-feed"><li><div class="title">Forgetting in ancient Greece and China</div><div class="domain">psyche.co &bull; May 12, 2025</div></li></a><a class="li" href="https://psyche.co/notes-to-self/the-peter-principle-promotion-to-the-point-of-peak-incompetence?utm_source=rss-feed"><li><div class="title">Don’t fall victim to the Peter Principle</div><div class="domain">psyche.co &bull; May 12, 2025</div></li></a><a class="li" href="https://psyche.co/notes-to-self/what-you-can-learn-from-the-runners-pain-cave?utm_source=rss-feed"><li><div class="title">What runners call the ‘pain cave’</div><div class="domain">psyche.co &bull; May 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (3)</summary><ul><a class="li" href="https://yourstory.com/2025/05/startup-building-smart-amrs-solve-warehouse-automation-challenges"><li><div class="title">This startup is building smart AMRs to solve warehouse automation challenges</div><div class="domain">yourstory.com &bull; May 12, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/05/spacefields-spacetech-odyssey-startup-solid-rocket-propulsion-tech"><li><div class="title">A spacetech odyssey: This startup is taking on big boys with solid rocket propulsion tech</div><div class="domain">yourstory.com &bull; May 12, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/05/spacefields-iisc-incubated-startups-space-dreams-solving-warehousing"><li><div class="title">An IISc-incubated startup’s space dreams; Solving warehousing automation</div><div class="domain">yourstory.com &bull; May 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Y Combinator (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=hJ4L9SseAuE"><li><div class="title">Healthcare AI</div><div class="domain">youtube.com &bull; May 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Dodo (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=vIiDNRbmGLo"><li><div class="title">Giant Mastiff Who Wouldn't Look At Anyone Takes Care Of Kitties Now | The Dodo</div><div class="domain">youtube.com &bull; May 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">National Geographic (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=fczLOAb5HvM"><li><div class="title">Vancouver Drug Empire (Full Episode) | Drugs, Inc: The Fix | National Geographic</div><div class="domain">youtube.com &bull; May 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">M M F A Mellisai Mannar Fans Association (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=Tu4qapCCgvM"><li><div class="title">MELLISAI MANNARGAL TUNED SONGS BOOK MARUMAGAL  14.04.1953 மெ ம  இசைஅமைத்தப் படப் பாடல் புத்தகங்கள் .</div><div class="domain">youtube.com &bull; May 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">John Bartholomew (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=7Gi4rOvO694"><li><div class="title">Striking with the Scandinavian | Using the Clock as a Weapon #61</div><div class="domain">youtube.com &bull; May 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=F1YFVZMaqyQ"><li><div class="title">Unearthed Secrets of a Lost Civilization! | Mystery at Blind Frog Ranch | Discovery Channel</div><div class="domain">youtube.com &bull; May 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ChessBase India (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=Wbw-R-NVMp4"><li><div class="title">SCOTCHED! Maxime Vachier Lagrave vs Gukesh | Superbet Classic 2025</div><div class="domain">youtube.com &bull; May 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Chef Ranveer Brar (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=Ro3sIt3LTOs"><li><div class="title">Happy Mother's day ❤️ #mothersday #ranveerbrar</div><div class="domain">youtube.com &bull; May 12, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
