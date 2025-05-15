@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-05-15</span>:</h1>
+  <p class="summary">There are 24 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (2)</summary><ul><a class="li" href="https://multi-swe-bench.github.io/"><li><div class="title">Multi-SWE-bench</div><div class="domain">multi-swe-bench.github.io &bull; May 15, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=no0CkQk7id0"><li><div class="title">Doom on the oldest digital computer in America</div><div class="domain">youtube.com &bull; May 15, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (2)</summary><ul><a class="li" href="https://github.com/micropython/micropython/releases/tag/v1.25.0"><li><div class="title">MicroPython v1.25.0</div><div class="domain">github.com &bull; May 15, 2025</div></li></a><a class="li" href="https://news.ycombinator.com/item?id=43990868"><li><div class="title">Show HN: YapCards (iOS) – Voice-driven flashcards with AI feedback</div><div class="domain">news.ycombinator.com &bull; May 15, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">XML.com Atom feed for articles and news items (xml.com)</h2> (1)</summary><ul><a class="li" href="https://www.xml.com/news/2025-05-declarative-amsterdam-2025-cfp/"><li><div class="title">Declarative Amsterdam 2025 - Call for presentations</div><div class="domain">xml.com &bull; May 15, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (4)</summary><ul><a class="li" href="https://yourstory.com/2025/05/astroyogi-ai-ecommerce-spiritual-services-astrotech-startup"><li><div class="title">How Astroyogi is blending AI, ecommerce, and spiritual services</div><div class="domain">yourstory.com &bull; May 15, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/05/inside-lightboxs-investment-blueprints"><li><div class="title">Inside Lightbox’s investment blueprints; Real-time insights for road repairs</div><div class="domain">yourstory.com &bull; May 15, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/05/product-profit-returns-lightbox-sandeep-murthy"><li><div class="title">Product, profit, returns: How Lightbox is looking to hand-pick its future portfolio companies</div><div class="domain">yourstory.com &bull; May 15, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/05/financial-goal-setting-in-the-digital-age"><li><div class="title">Financial goal-setting in the digital age</div><div class="domain">yourstory.com &bull; May 15, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Veritasium (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=SC2eSujzrUY"><li><div class="title">How One Company Secretly Poisoned The Planet</div><div class="domain">youtube.com &bull; May 15, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ThePrint (youtube.com)</h2> (3)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=0beDIhVaZrg"><li><div class="title">J&K CM Omar Abdullah shelling-affected areas in Uri’s Salamabad</div><div class="domain">youtube.com &bull; May 15, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=zJWsL1K9qxU"><li><div class="title">'Trump's repeated statements still not been questioned at high level': Sachin Pilot on ceasefire</div><div class="domain">youtube.com &bull; May 15, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=126FretC7yM"><li><div class="title">Strategic overview of the wonder weapon of modern warfare— Drones & India’s Op Sindoor</div><div class="domain">youtube.com &bull; May 15, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The School of Life (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=2_hGmSg4LHo"><li><div class="title">Can Our Partners Change?</div><div class="domain">youtube.com &bull; May 15, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Dodo (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=9xWgCbhsIeA"><li><div class="title">Pregnant Rescue Cow Becomes A Mom For The First Time | The Dodo</div><div class="domain">youtube.com &bull; May 15, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Deshbhakt (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=0TVGXqou4es"><li><div class="title">Did Foreign Minister Jaishankar Fail India During Operation Sindoor? | Akash Banerjee</div><div class="domain">youtube.com &bull; May 15, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Daily Show (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=08ZFFzIv6O0"><li><div class="title">Trump Greeted By Sword Dancers in Qatar & RFK Jr. Swims Up S**t Creek | The Daily Show</div><div class="domain">youtube.com &bull; May 15, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">newslaundry (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=X4PU_CkDCUY"><li><div class="title">Poonch: ‘जो social media पर जंग लड़ रहे हैं, एक बार border पर आकर लड़ें’| NL Interview</div><div class="domain">youtube.com &bull; May 15, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">M M F A Mellisai Mannar Fans Association (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=o7TDzaqjeOU"><li><div class="title">MELLISAI MANNARGAL TUNED SONGS BOOK AMMALAKKALU 12-03-53 மெ ம  இசைஅமைத்தப் படப் பாடல் புத்தக வரிசை</div><div class="domain">youtube.com &bull; May 15, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Kannadhasan Productions by Annadurai Kannadhasan (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=NJaorlRQaWg"><li><div class="title">220 - இளையராஜாவின் தாய் பாடிய கண்ணதாசனின் ஆறுதல் பாட்டு..</div><div class="domain">youtube.com &bull; May 15, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=muz1jHn8RRo"><li><div class="title">Hidden Gold of Serra Pelada Revealed! | Gold Rush: Parker’s Trail | Discovery Channel</div><div class="domain">youtube.com &bull; May 15, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DD Movies (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=kVQyJCboDSY"><li><div class="title">Vaai Kozhuppu (1989) | Tamil Full Movie HD | Pandiarajan, Gautami | Comedy Thriller | DD Movies</div><div class="domain">youtube.com &bull; May 15, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ChessBase India (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=4_k53DiJjtU"><li><div class="title">Gukesh's expression when he had only 4 seconds left! | Gukesh vs Wesley So | Superbet Classic 2025</div><div class="domain">youtube.com &bull; May 15, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">agadmator's Chess Channel (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=U6strIi8MHs"><li><div class="title">Colle System is The New London System! : Abdusattorov vs Duda || Superbet Chess 2025</div><div class="domain">youtube.com &bull; May 15, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
