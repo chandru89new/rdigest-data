@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-05-16</span>:</h1>
+  <p class="summary">There are 17 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (1)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/CjrbJmtStW4o2ieYN/ai-116-if-anyone-builds-it-everyone-dies"><li><div class="title">AI #116: If Anyone Builds It, Everyone Dies</div><div class="domain">lesswrong.com &bull; May 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (1)</summary><ul><a class="li" href="https://dynomight.net/numpy/"><li><div class="title">I don’t like NumPy</div><div class="domain">dynomight.net &bull; May 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (4)</summary><ul><a class="li" href="https://www.forensicfocus.com/articles/you-knew-what-you-were-signing-up-for-a-harmful-narrative-in-dfir/"><li><div class="title">"You Knew What You Were Signing Up For" – A Harmful Narrative in DFIR?</div><div class="domain">forensicfocus.com &bull; May 16, 2025</div></li></a><a class="li" href="https://alz-journals.onlinelibrary.wiley.com/doi/full/10.1002/alz.70157"><li><div class="title">Sitting for a long time shrinks your brain even if you exercise</div><div class="domain">alz-journals.onlinelibrary.wiley.com &bull; May 16, 2025</div></li></a><a class="li" href="https://www.theregister.com/2025/05/15/voyager_1_survives_with_thruster_fix/"><li><div class="title">NASA keeps ancient Voyager 1 spacecraft alive with Hail Mary thruster fix</div><div class="domain">theregister.com &bull; May 16, 2025</div></li></a><a class="li" href="https://teal-language.org/"><li><div class="title">Teal – A statically-typed dialect of Lua</div><div class="domain">teal-language.org &bull; May 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (4)</summary><ul><a class="li" href="https://yourstory.com/2025/05/toothlens-tackles-dental-diagnostics-insurance-ai-artificial-intelligence"><li><div class="title">Toothlens tackles dental diagnostics and insurance with AI</div><div class="domain">yourstory.com &bull; May 16, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/05/indian-buyers-decision-electric-vehicles-reliability-battery-life-range"><li><div class="title">EV dilemma: Pragmatic Indian buyers fight between reliability and novelty</div><div class="domain">yourstory.com &bull; May 16, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/05/ai-toothache-startup-ey-india-gcc-india-filmmaker-writer"><li><div class="title">Can AI help with your toothache?; Inside EY’s India GCC</div><div class="domain">yourstory.com &bull; May 16, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/05/gaming-neuroscience-zeuron-ai-startup-improve-brain-function-health"><li><div class="title">Gaming meets neuroscience: Inside Zeuron.ai’s bid to reprogramme the brain</div><div class="domain">yourstory.com &bull; May 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Dodo (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=SZY_zCOnqEI"><li><div class="title">Husky Begs His Mom To Visit His Dog BFF Every Single Day | The Dodo</div><div class="domain">youtube.com &bull; May 16, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=dBPokrE-bFA"><li><div class="title">20-Year-Old Chihuahua Has No Plans To Stop Being A Boss | The Dodo</div><div class="domain">youtube.com &bull; May 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Daily Show (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=U7X1kZZnD8c"><li><div class="title">Trump Bores UAE Businessmen About Sean Duffy & Lee Greenwood Cameos in Qatar | The Daily Show</div><div class="domain">youtube.com &bull; May 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Khan Academy (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=hj2sa6xxq2A"><li><div class="title">How Paradise Valley USD Built a Culture of Confidence around AI</div><div class="domain">youtube.com &bull; May 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=u6IAYNXyHlE"><li><div class="title">The Wild Isn’t Waiting for Them to Fail! | Naked and Afraid XL | Full Episode | Discovery Channel</div><div class="domain">youtube.com &bull; May 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DD Movies (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=NGXnJV9kfRE"><li><div class="title">குள்ளன் ரொம்ப சேட்டைக்காரன் Pandiarajan, Gautami | Comedy Thriller | DD Movies</div><div class="domain">youtube.com &bull; May 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Chess.com (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=HMc3kQaH6nk"><li><div class="title">Chess.com King of the Hill Championship - Final (Community Championships)</div><div class="domain">youtube.com &bull; May 16, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
