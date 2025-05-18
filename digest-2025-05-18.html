@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-05-18</span>:</h1>
+  <p class="summary">There are 19 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (3)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/PuSD6entRFBbnru9P/book-review-the-art-of-happiness"><li><div class="title">Book Review: The Art of Happiness</div><div class="domain">lesswrong.com &bull; May 18, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/hoFLMjgjkLGtGfiay/d-and-d-sci-the-choosing-ones"><li><div class="title">D&D.Sci: The Choosing Ones</div><div class="domain">lesswrong.com &bull; May 18, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/mtgbgepheaQsAyXmG/what-openai-told-california-s-attorney-general"><li><div class="title">What OpenAI Told California's Attorney General</div><div class="domain">lesswrong.com &bull; May 18, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (2)</summary><ul><a class="li" href="https://blog.cloudflare.com/quic-restarts-slow-problems-udpgrm-to-the-rescue/"><li><div class="title">QUIC restarts, slow problems: udpgrm to the rescue</div><div class="domain">blog.cloudflare.com &bull; May 18, 2025</div></li></a><a class="li" href="https://v8.dev/features/explicit-resource-management"><li><div class="title">JavaScript's New Superpower: Explicit Resource Management</div><div class="domain">v8.dev &bull; May 18, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (2)</summary><ul><a class="li" href="https://www.wsj.com/business/autos/california-ev-mandate-auto-industry-64708033"><li><div class="title">GM Is Pushing Hard to Tank California's EV Mandate</div><div class="domain">wsj.com &bull; May 18, 2025</div></li></a><a class="li" href="https://letsencrypt.org/2025/05/14/ending-tls-client-authentication/"><li><div class="title">Lets Encrypt Ending TLS Client Authentication Certificate Support in 2026</div><div class="domain">letsencrypt.org &bull; May 18, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (2)</summary><ul><a class="li" href="https://yourstory.com/2025/05/yourstory-launches-builders-guild-"><li><div class="title">YourStory launches Builders’ Guild; Financial revolution in rural India</div><div class="domain">yourstory.com &bull; May 18, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/05/blended-finance-the-missing-link-in-scaling-climate-innovation"><li><div class="title">Blended finance: The missing link in scaling climate innovation</div><div class="domain">yourstory.com &bull; May 18, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Dodo (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=NnohTNIQmfo"><li><div class="title">Horse's Hooves Were Basically Flippers Until They Got Trimmed | The Dodo</div><div class="domain">youtube.com &bull; May 18, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=7_oeD9-WQCo"><li><div class="title">The Best Gold Extraction Moments in History! | Gold Rush | Discovery Channel</div><div class="domain">youtube.com &bull; May 18, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DD Movies (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=MkSPxxDAPu0"><li><div class="title">குள்ளன் ரொம்ப சேட்டைக்காரன் Pandiarajan, Gautami | Comedy Thriller | DD Movies</div><div class="domain">youtube.com &bull; May 18, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Cleo Abram (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=0OXaanDHENI"><li><div class="title">You Can Fix Your DNA... Starting Now</div><div class="domain">youtube.com &bull; May 18, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ChessBase India (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=b7VyXyWXUWQ"><li><div class="title">Even Grandmasters miss Easy Wins - IM Manish Anto v GM Levan Pantsulaia</div><div class="domain">youtube.com &bull; May 18, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">BBC News (youtube.com)</h2> (5)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=NqubLYXXy5w"><li><div class="title">Pro-Palestinian demonstrators gathered in Basel ahead of Eurovision. #BBCNews</div><div class="domain">youtube.com &bull; May 18, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=McQ2K4yGAIQ"><li><div class="title">Israel's Eurovision performance got 'mixed reviews' in Basel. #BBCNews</div><div class="domain">youtube.com &bull; May 18, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=JBOFU5UVGxM"><li><div class="title">The moment the Eurovision 2025 winner was announced. #Eurovision #BBCNews</div><div class="domain">youtube.com &bull; May 18, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=DZKx0Z3bWzw"><li><div class="title">An Italian mouse awards the UK 12 Eurovision points. #Eurovision #BBCNews</div><div class="domain">youtube.com &bull; May 18, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=K9tvWfimJ_o"><li><div class="title">Estonia brew a caffeinated Eurovision banger. #Estonia #Eurovision #BBCNews</div><div class="domain">youtube.com &bull; May 18, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
