@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-05-24</span>:</h1>
+  <p class="summary">There are 14 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (1)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/JqCx7Eeb9gv9Ke5gv/ai-117-openai-buys-device-maker-io"><li><div class="title">AI #117: OpenAI Buys Device Maker IO</div><div class="domain">lesswrong.com &bull; May 24, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (1)</summary><ul><a class="li" href="https://blog.alexbeals.com/posts/reverse-engineering-ios-deeplinking-for-shortcuts"><li><div class="title">Reverse Engineering iOS Shortcuts Deeplinks</div><div class="domain">blog.alexbeals.com &bull; May 24, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (3)</summary><ul><a class="li" href="https://www.thewayofcode.com/"><li><div class="title">The Way of Code: The Timeless Art of Vibe Coding</div><div class="domain">thewayofcode.com &bull; May 24, 2025</div></li></a><a class="li" href="https://github.com/imdj/HNRelevant"><li><div class="title">Show HN: HNRelevant – Add a "related" section to Hacker News</div><div class="domain">github.com &bull; May 24, 2025</div></li></a><a class="li" href="https://www.societyforscience.org/regeneron-sts/2025-student-finalists/chloe-lee/"><li><div class="title">Modification of acetaminophen to reduce liver toxicity and enhance drug efficacy</div><div class="domain">societyforscience.org &bull; May 24, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (2)</summary><ul><a class="li" href="https://yourstory.com/2025/05/inside-flipkarts-quick-commerce-playbook-rewiring-"><li><div class="title">Inside Flipkart’s quick commerce playbook; Rewiring the campus recruitment system</div><div class="domain">yourstory.com &bull; May 24, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/05/nvidia-looking-power-ai-evolution-tokens-agentic-ai-jigal-halani"><li><div class="title">NVIDIA is looking to power the AI evolution—from tokens to agentic AI, says Jigar Halani</div><div class="domain">yourstory.com &bull; May 24, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">VICE (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=2jfcemzS628"><li><div class="title">Can you be a functioning drug user?</div><div class="domain">youtube.com &bull; May 24, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ThePrimeTime (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=CUknkajygOU"><li><div class="title">New Design Meta? URLs are dead? - Standup #8</div><div class="domain">youtube.com &bull; May 24, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=heBt-DRhqXs"><li><div class="title">The Secret Fueling Tech 💊</div><div class="domain">youtube.com &bull; May 24, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Dodo (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=93DqDXnkyXg"><li><div class="title">Mama Squirrel Adopts Orphaned Baby | The Dodo</div><div class="domain">youtube.com &bull; May 24, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Empty Hand (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=ksJq3NhtHhU"><li><div class="title">பேய் படம்❌சாமி படம்❌காஜி படம்✅ Odela 2 Movie Roast🔥 Tamil | Tamannaah | No Logic Scenes</div><div class="domain">youtube.com &bull; May 24, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DD Movies (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=qeIMkOVTGZw"><li><div class="title">குள்ளன் ரொம்ப சேட்டைக்காரன் Pandiarajan, Gautami | Comedy Thriller | DD Movies</div><div class="domain">youtube.com &bull; May 24, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Chef Ranveer Brar (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=FdSkCMh4ASs"><li><div class="title">DHABA KEEMA MASALA | ढाबे वाला लिपटा कीमा मसाला | quick Keema curry recipe w/पाव | Chef Ranveer Brar</div><div class="domain">youtube.com &bull; May 24, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
