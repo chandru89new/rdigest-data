@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-05-29</span>:</h1>
+  <p class="summary">There are 21 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (2)</summary><ul><a class="li" href="https://www.handover.ai/"><li><div class="title">Show HN: Handover.ai – Knowledge transfer made easy</div><div class="domain">handover.ai &bull; May 29, 2025</div></li></a><a class="li" href="https://www.bloomberg.com/news/articles/2025-05-28/trump-s-global-tariffs-blocked-by-us-trade-court"><li><div class="title">US Trade Court Finds Trump Tariffs Illegal</div><div class="domain">bloomberg.com &bull; May 29, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (4)</summary><ul><a class="li" href="https://yourstory.com/2025/05/inside-unacademys-leadership-changes-flextrons-10-minute-ev-charging"><li><div class="title">Inside Unacademy’s leadership changes; Flextron’s 10-minute EV charging</div><div class="domain">yourstory.com &bull; May 29, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/05/how-retrod-is-empowering-small-hotels-across-india"><li><div class="title">How Retrod is empowering small hotels across india</div><div class="domain">yourstory.com &bull; May 29, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/05/snabbit-funding-lightspeed-quick-home-services-mumbai-expansion"><li><div class="title">Snabbit raises fresh $19M from Lightspeed, existing investors to accelerate expansion</div><div class="domain">yourstory.com &bull; May 29, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/05/role-of-fintech-in-enabling-school-financing-in-smaller-cities"><li><div class="title">The role of fintech in enabling school financing in smaller cities</div><div class="domain">yourstory.com &bull; May 29, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ThePrint (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=fBePJjyD5eg"><li><div class="title">All-party parliamentary delegation, led by JD(U) MP Sanjay Jha, arrives in Jakarta</div><div class="domain">youtube.com &bull; May 29, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=xTFTTwAjEAk"><li><div class="title">ThePrintAM: WHY HAS THAROOR'S PRAISE FOR OP SINDOOR DRAWN CRITICISM FROM CONGRESS?</div><div class="domain">youtube.com &bull; May 29, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Wire (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=ln4tzblT0k4"><li><div class="title">"पाकिस्तान की गोली का जवाब गोला से दिया जाएगा" - क्या मोदी ऐसे आतंकवाद को खत्म कर पाएंगे?</div><div class="domain">youtube.com &bull; May 29, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=pT-Xdhy_fxo"><li><div class="title">कैसे आधार ने भारत को आँसुओं, कतारों और Kagaz में डुबो दिया | From the Trenches of Aadhaar Distress</div><div class="domain">youtube.com &bull; May 29, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=O42_gYSL7Vs"><li><div class="title">Princess</div><div class="domain">youtube.com &bull; May 29, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">SciFri (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=Xz_eKOASDyM"><li><div class="title">The NIH's New "Universal Vaccine" Plan</div><div class="domain">youtube.com &bull; May 29, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Let's Game It Out (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=e6IO3Yuzkl4"><li><div class="title">I Made Millions by Openly Ripping Off Every Person Who Hired Me - Cash Cleaner Simulator</div><div class="domain">youtube.com &bull; May 29, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Intelligence Squared (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=5fWihwifqTM"><li><div class="title">How To Cure Your Algorithm, with Jamie Bartlett</div><div class="domain">youtube.com &bull; May 29, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Empty Hand (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=1noF6SUIFcM"><li><div class="title">I Found The Funniest Songs🤣 Tamil Remake Songs Troll</div><div class="domain">youtube.com &bull; May 29, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DW Documentary (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=eMOtxitE5HI"><li><div class="title">Hitler's Reich - Diaries of Nazi supporters, opponents and victims (4/4) | DW Documentary</div><div class="domain">youtube.com &bull; May 29, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DD Movies (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=O2-Nu5XFsxs"><li><div class="title">சந்தோசம் சோகம் ரெண்டும் இருக்கும் படம் | Murali Vadivelu Super Hit Comedy Full Movie</div><div class="domain">youtube.com &bull; May 29, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ChessBase India (youtube.com)</h2> (3)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=rS34eNc26W8"><li><div class="title">Why is Magnus Carlsen running? Norway Chess 2025 Venue Tour</div><div class="domain">youtube.com &bull; May 29, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=_Y6Baqcd7b4"><li><div class="title">Stepan Avagyan Memorial 2025 | Round 1 | ft. Pragg, Aravindh |</div><div class="domain">youtube.com &bull; May 29, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=N5kt7JXmfZ8"><li><div class="title">China no 1 Wei Yi beats World no 1 Magnus Carlsen | Norway Chess 2025</div><div class="domain">youtube.com &bull; May 29, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">BBC News (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=HgnPfPQRJ2U"><li><div class="title">Dozens injured by Israeli gunfire as crowds overwhelmed Gaza aid site, UN says | BBC News</div><div class="domain">youtube.com &bull; May 29, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
