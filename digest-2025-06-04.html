@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-06-04</span>:</h1>
+  <p class="summary">There are 22 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (1)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/4rmveLEuARYKapHq2/broad-spectrum-cancer-treatments"><li><div class="title">Broad-Spectrum Cancer Treatments</div><div class="domain">lesswrong.com &bull; June 04, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (2)</summary><ul><a class="li" href="https://corecursive.com/coding-through-chaos-with-john-walker/"><li><div class="title">Coding Through Chaos: Addiction, Recovery and Acceptance</div><div class="domain">corecursive.com &bull; June 04, 2025</div></li></a><a class="li" href="https://diffx.org/"><li><div class="title">DiffX - Next-Generation Extensible Diff Format</div><div class="domain">diffx.org &bull; June 04, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (2)</summary><ul><a class="li" href="https://staysaasy.com/management/2025/06/02/your-manager-is-not-your-best-friend.html"><li><div class="title">Your Manager Is Not Your Best Friend</div><div class="domain">staysaasy.com &bull; June 04, 2025</div></li></a><a class="li" href="https://www.ycombinator.com/companies/patched/jobs/hgDeMBr-software-engineer"><li><div class="title">Patched (YC S24) Is Hiring SWEs in Singapore</div><div class="domain">ycombinator.com &bull; June 04, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (5)</summary><ul><a class="li" href="https://yourstory.com/2025/06/inside-myntras-fashion-playbook-genz-marico-d2c-plan"><li><div class="title">Inside Myntra’s fashion playbook; Marico’s D2C gameplan</div><div class="domain">yourstory.com &bull; June 04, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/06/grocery-startup-kiranapro-cyberattack-halts-operations"><li><div class="title">Grocery startup KiranaPro hit by cyberattack ahead of fundraise; halts operations</div><div class="domain">yourstory.com &bull; June 04, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/06/marico-ceo-saugata-gupta-fmcg-d2c-brands-acquisition-growth-strategy"><li><div class="title">Marico CEO on why the FMCG giant won’t bet blind—on D2C buyouts or quick commerce hype</div><div class="domain">yourstory.com &bull; June 04, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/06/homebound-this-spacetech-startup-is-making-reusabl"><li><div class="title">This spacetech startup is making reusable launch vehicles</div><div class="domain">yourstory.com &bull; June 04, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/06/data-driven-procurement-advanced-analytics-sourcing-decisions"><li><div class="title">Data-driven procurement: How advanced analytics are guiding sourcing in volatile markets</div><div class="domain">yourstory.com &bull; June 04, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">VICE (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=VWM_h7SLQnE"><li><div class="title">Smoking weed in the name of God</div><div class="domain">youtube.com &bull; June 04, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ThePrint (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=NgWxH2aAp6U"><li><div class="title">'There were certain things that India did which rubbed the US wrong way': Howard Lutnick</div><div class="domain">youtube.com &bull; June 04, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=n1qbB6aaWzU"><li><div class="title">More than 200 inmates escape from overcrowded Malir Jail in Pakistan's Karachi during earthquake</div><div class="domain">youtube.com &bull; June 04, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Daily Show (youtube.com)</h2> (3)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=WIhlC3L99x8"><li><div class="title">Jon Stewart on Elon Musk's Black-Eyed Exit & Trump's Insane New Biden Conspiracy | The Daily Show</div><div class="domain">youtube.com &bull; June 04, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=22aTP5mdtms"><li><div class="title">When Elon Musk is worried about something getting too high, you know it's too high #dailyshow #elon</div><div class="domain">youtube.com &bull; June 04, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=zWuoi1N7ZiE"><li><div class="title">Elon Calls Trump's BBB "Disgusting Abomination" & FEMA Head Learns About Hurricanes | The Daily Show</div><div class="domain">youtube.com &bull; June 04, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=s7KHdpJPFr4"><li><div class="title">Fefe</div><div class="domain">youtube.com &bull; June 04, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Kurzgesagt – In a Nutshell (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=zxq60I5RSW8"><li><div class="title">Why Is The US Dropping Billions Of Mutant Flies From The Sky?</div><div class="domain">youtube.com &bull; June 04, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Evo-Ed (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=n-B8r9ZFzac"><li><div class="title">The Hummingbird Moth</div><div class="domain">youtube.com &bull; June 04, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DIY Perks (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=EyR2-C9ggi0"><li><div class="title">True Wireless Power is FINALLY here (building a TRULY wire-free setup)</div><div class="domain">youtube.com &bull; June 04, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Deep Look (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=QezzlDcaBmY"><li><div class="title">Why Mosquitoes Buzz in Your Ear | Deep Look</div><div class="domain">youtube.com &bull; June 04, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ChessBase India (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=7XA9X9DLiWQ"><li><div class="title">The biggest blunder of Carlsen's career | Wei Yi vs Magnus Carlsen | Norway Chess 2025</div><div class="domain">youtube.com &bull; June 04, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
