@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-06-10</span>:</h1>
+  <p class="summary">There are 17 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (3)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/HKCKinBgsKKvjQyWK/read-the-pricing-first"><li><div class="title">Read the Pricing First</div><div class="domain">lesswrong.com &bull; June 10, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/oc2EZhsYLWLKdyMia/ghiblification-for-privacy"><li><div class="title">Ghiblification for Privacy</div><div class="domain">lesswrong.com &bull; June 10, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/spZyuEGPzqPhnehyk/a-quick-list-of-reward-hacking-interventions"><li><div class="title">A quick list of reward hacking interventions</div><div class="domain">lesswrong.com &bull; June 10, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (1)</summary><ul><a class="li" href="https://boston.conman.org/2025/06/09.1"><li><div class="title">Implementing DOES> in Forth, the entire reason I started this mess</div><div class="domain">boston.conman.org &bull; June 10, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (2)</summary><ul><a class="li" href="https://discrete.openmathbooks.org/pdfs/dmoi4.pdf"><li><div class="title">Discrete Mathematics: An Open Introduction [pdf]</div><div class="domain">discrete.openmathbooks.org &bull; June 10, 2025</div></li></a><a class="li" href="https://www.npr.org/2025/06/09/nx-s1-5340363/las-vegas-climate-change-solution-trees"><li><div class="title">Las Vegas is embracing a simple climate solution: More trees</div><div class="domain">npr.org &bull; June 10, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (3)</summary><ul><a class="li" href="https://yourstory.com/2025/06/salon-makeover-but-with-ai-chennais-first-disabled-friendly-gym"><li><div class="title">Salon makeover, but with AI; Chennai’s first disabled-friendly gym</div><div class="domain">yourstory.com &bull; June 10, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/06/tech-hair-ahmedabad-based-goodlii-giving-salons-makeover"><li><div class="title">Tech in the hair: Ahmedabad-based Goodlii is giving India’s salon industry a makeover with AI</div><div class="domain">yourstory.com &bull; June 10, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/06/india-economic-inflection-point-a-call-to-build-the-next-generation-of-businesses"><li><div class="title">India’s economic inflection point: A call to build the next generation of businesses</div><div class="domain">yourstory.com &bull; June 10, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Wire (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=X3UYQryQxCo"><li><div class="title">One Year, Five U-Turns: How Modi 3.0 Was Forced to Bend to Coalition Pulls & Opposition Pressures</div><div class="domain">youtube.com &bull; June 10, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=vTgI_ZTDeuQ"><li><div class="title">Kat</div><div class="domain">youtube.com &bull; June 10, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">LastWeekTonight (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=pzggl8C2fvs"><li><div class="title">Med Spas: Last Week Tonight with John Oliver (HBO)</div><div class="domain">youtube.com &bull; June 10, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Krishnamurti Foundation Trust (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=gxUt-rDNHiA"><li><div class="title">Observation means complete attention | Krishnamurti</div><div class="domain">youtube.com &bull; June 10, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DD Movies (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=HaPiDiTk2cc"><li><div class="title">பிரபு நெப்போலியன் வடிவேலு சிறந்த படம் | Prabhu Vadivelu Super Hit  Full Movie</div><div class="domain">youtube.com &bull; June 10, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">BBC News (youtube.com)</h2> (3)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=FKICX65Lkss"><li><div class="title">BREAKING: US military confirms 700 Marines deployed to Los Angeles as protests grow | BBC News</div><div class="domain">youtube.com &bull; June 10, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=Yns1_hAIQlQ"><li><div class="title">Why have the UK government U-turned on winter fuel payments? | BBC Newscast</div><div class="domain">youtube.com &bull; June 10, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=ngWEEvaMurw"><li><div class="title">Steve Bannon says President Trump should "double down" on ICE raids after LA protests | BBC News</div><div class="domain">youtube.com &bull; June 10, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
