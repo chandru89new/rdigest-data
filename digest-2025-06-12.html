@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-06-12</span>:</h1>
+  <p class="summary">There are 16 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Big Think (bigthink.com)</h2> (1)</summary><ul><a class="li" href="https://bigthink.com/mini-philosophy/the-repugnant-conclusion-that-an-oxford-philosopher-couldnt-escape/"><li><div class="title">The “repugnant conclusion” that an Oxford philosopher couldn’t escape</div><div class="domain">bigthink.com &bull; June 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (1)</summary><ul><a class="li" href="https://pyjarrett.github.io/2025/06/10/postfix-calculator.html"><li><div class="title">Writing a Verified Postfix Calculator in Ada/SPARK</div><div class="domain">pyjarrett.github.io &bull; June 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Ludicity (ludic.mataroa.blog)</h2> (1)</summary><ul><a class="li" href="https://ludic.mataroa.blog/blog/the-narrative-fallacy/"><li><div class="title">The Narrative Fallacy</div><div class="domain">ludic.mataroa.blog &bull; June 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (2)</summary><ul><a class="li" href="https://blog.andykhau.com/blog/eyesite"><li><div class="title">Show HN: Eyesite - experimental website combining computer vision and web design</div><div class="domain">blog.andykhau.com &bull; June 12, 2025</div></li></a><a class="li" href="https://danielsada.tech/blog/carreer-part-7-how-office-moved-to-git-and-i-loved-devex/"><li><div class="title">How Microsoft Office Moved from Source Depot to Git</div><div class="domain">danielsada.tech &bull; June 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (3)</summary><ul><a class="li" href="https://yourstory.com/2025/06/lenskart-next-in-line-for-ipo-d2c-brand-bold-care-quick-commerce"><li><div class="title">Lenskart next in line for IPO; Bold Care’s quick commerce led growth</div><div class="domain">yourstory.com &bull; June 12, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/06/from-silent-watchers-to-smart-eyes-enalytix"><li><div class="title">From silent watchers to smart eyes: How Enalytix is giving CCTV cameras a voice</div><div class="domain">yourstory.com &bull; June 12, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/06/ranveer-singh-bold-care-sexual-health-wellness-quick-commerce-growth"><li><div class="title">Luck by D2C: How Bold Care sailed on quick commerce tailwind to reach Rs 100 Cr sales</div><div class="domain">yourstory.com &bull; June 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Daily Show (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=Z8GTCATET_I"><li><div class="title">Trump Whips Up Troops Into a MAGA Frenzy & Plans $45 Million Military Parade | The Daily Show</div><div class="domain">youtube.com &bull; June 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/shorts/gIsPk-Ji518"><li><div class="title">Cassi</div><div class="domain">youtube.com &bull; June 12, 2025</div></li></a><a class="li" href="https://www.youtube.com/shorts/yVmcPXpH0n0"><li><div class="title">Johnny Cash</div><div class="domain">youtube.com &bull; June 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Jackson Galaxy (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/HvdB6V4JFmc"><li><div class="title">Sharing my top 3 favorite cat toys! #cats #cattoys #catdad</div><div class="domain">youtube.com &bull; June 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=M8RPrmgtdqY"><li><div class="title">The Tasmanian Survival Experiment! | Man, Woman, Wild S1 E4 | Full Episode | Discovery Channel</div><div class="domain">youtube.com &bull; June 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DD Movies (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/r8fh0vQxK1Q"><li><div class="title">பிரபு நெப்போலியன் வடிவேலு சிறந்த படம் | Prabhu Vadivelu Super Hit  Full Movie</div><div class="domain">youtube.com &bull; June 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Cleo Abram (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/_IqL7e_4gUc"><li><div class="title">What Would Happen To Your Body In The Deep Ocean?</div><div class="domain">youtube.com &bull; June 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ChessBase India (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/utaTG7m-R-g"><li><div class="title">9 year prodigy takes BLESSINGS from Vishy Anand 🥹🫂 #chess #vishyanand</div><div class="domain">youtube.com &bull; June 12, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
