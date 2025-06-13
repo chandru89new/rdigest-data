@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-06-13</span>:</h1>
+  <p class="summary">There are 25 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (3)</summary><ul><a class="li" href="https://bernsteinbear.com/blog/irs/"><li><div class="title">What I talk about when I talk about IRs</div><div class="domain">bernsteinbear.com &bull; June 13, 2025</div></li></a><a class="li" href="https://codeberg.org/oils/oils.vim/src/branch/main/doc/algorithms.md"><li><div class="title">Three Algorithms for YSH Syntax Highlighting</div><div class="domain">codeberg.org &bull; June 13, 2025</div></li></a><a class="li" href="https://jasone.github.io/2025/06/12/jemalloc-postmortem/"><li><div class="title">jemalloc Postmortem</div><div class="domain">jasone.github.io &bull; June 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (2)</summary><ul><a class="li" href="https://www.governance.fyi/p/adaptive-reuse-across-asia-singapores"><li><div class="title">Urban Design and Adaptive Reuse in North Korea, Japan, and Singapore</div><div class="domain">governance.fyi &bull; June 13, 2025</div></li></a><a class="li" href="https://osor.io/text"><li><div class="title">Rendering Crispy Text on the GPU</div><div class="domain">osor.io &bull; June 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (5)</summary><ul><a class="li" href="https://yourstory.com/2025/06/sunfox-dehradun-startup-portable-ecg-device-cardiac-issues-risk-alerts"><li><div class="title">This Dehradun startup’s portable ECG device can detect cardiac issues and give risk alerts in minutes</div><div class="domain">yourstory.com &bull; June 13, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/06/how-fanusta-global-is-challenging-the-minimalist-v"><li><div class="title">How Fanusta Global is challenging the minimalist vision of interior design</div><div class="domain">yourstory.com &bull; June 13, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/06/rare-earth-magnets-crunch-explained-artha-india-ventures-growth-fund"><li><div class="title">Rare earth magnets crunch, explained; Artha India Ventures’ growth fund</div><div class="domain">yourstory.com &bull; June 13, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/06/yourstory-gcc-summit-2025-thought-leaders-speakers-india-tech-talent"><li><div class="title">YourStory GCC Summit 2025 hosts thought leaders as Indian talent, tech attract GCC hubs</div><div class="domain">yourstory.com &bull; June 13, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/06/artha-india-ventures-growth-fund-crosses-rs-400-cr-anirudh-damani"><li><div class="title">Artha India Ventures to make final close for growth fund as commitments cross Rs 400 Cr</div><div class="domain">yourstory.com &bull; June 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Think School (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=J7eRGL5uvaE"><li><div class="title">TRUMP vs ELON: The ‘One BIG Beautiful Bill’ Explained : Geopolitical case study</div><div class="domain">youtube.com &bull; June 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Deshbhakt (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=ZEWBIaWZjE4"><li><div class="title">Crash Of Flight AI-171 | Worst Air Disaster In India? | Akash Banerjee</div><div class="domain">youtube.com &bull; June 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Daily Show (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=COUhDGWoRH8"><li><div class="title">Stephen A. Smith: Greatest of All Take-Havers - Narrated by Craig Kilborn | The Daily Showography</div><div class="domain">youtube.com &bull; June 13, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=iCCipJDnTiw"><li><div class="title">Trump Hits Les Miz, Elon Repents & RFK Jr. Infects CDC’s Vaccine Committee | The Daily Show</div><div class="domain">youtube.com &bull; June 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/GY16sm5wo0o"><li><div class="title">Shawn</div><div class="domain">youtube.com &bull; June 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Rick Beato (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/F49PuK7Rqdw"><li><div class="title">“Stairway to Heaven” breakdown ￼#ledzeppelin #jimmypage #robertplant #shorts</div><div class="domain">youtube.com &bull; June 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">newline (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/3DdGfHlZk4c"><li><div class="title">Why “You Are a Bird-Watching Poet” Actually Works in Prompts with Nick, QA Engineer</div><div class="domain">youtube.com &bull; June 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Lex Fridman (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=b268x2kzefY"><li><div class="title">Lex Fridman tests Google XR glasses</div><div class="domain">youtube.com &bull; June 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Krishnamurti Foundation Trust (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=hIf5rut2JnU"><li><div class="title">An observation without the past | Krishnamurti</div><div class="domain">youtube.com &bull; June 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=HjTqSByOY5s"><li><div class="title">Surviving Africa’s Deadliest Safari! | Man, Woman, Wild S1 E5 | Full Episode | Discovery Channel</div><div class="domain">youtube.com &bull; June 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DD Movies (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/jbF5huiKfr8"><li><div class="title">பிரபு நெப்போலியன் வடிவேலு சிறந்த படம் | Prabhu Vadivelu Super Hit  Full Movie</div><div class="domain">youtube.com &bull; June 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ChessBase India (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=--niFGUBCGw"><li><div class="title">Can this Untitled teenager manages to defeat a Grandmaster? | Delhi GM Open  2025</div><div class="domain">youtube.com &bull; June 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Chess.com (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=5C92GW3AD9g"><li><div class="title">Meta, PWC. Lyft, E&Y & More Fight For Chess Glory! North American Corporate Chess League 2025</div><div class="domain">youtube.com &bull; June 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">BBC News (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=9p4mx2CRzQw"><li><div class="title">Air India confirms 241 on board plane killed with one survivor in Ahmedabad crash | BBC News</div><div class="domain">youtube.com &bull; June 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">agadmator's Chess Channel (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=FBYaAtiniQ4"><li><div class="title">A Game So Complicated It Needed a Sorcerer || Rapport vs Mamedyarov || FIDE World Rapid 2025</div><div class="domain">youtube.com &bull; June 13, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
