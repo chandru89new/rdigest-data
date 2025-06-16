@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-06-16</span>:</h1>
+  <p class="summary">There are 18 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (1)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/i4CZ57JyqqpPryoxg/some-reprogenetics-related-projects-you-could-help-with"><li><div class="title">Some reprogenetics-related projects you could help with</div><div class="domain">lesswrong.com &bull; June 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (2)</summary><ul><a class="li" href="https://voxelmanip.se/2025/06/14/jokes-and-humour-in-the-public-android-api/"><li><div class="title">Jokes and Humour in the public Android API</div><div class="domain">voxelmanip.se &bull; June 16, 2025</div></li></a><a class="li" href="https://devtui.com"><li><div class="title">DevTUI - A Swiss-army app for developers</div><div class="domain">devtui.com &bull; June 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (1)</summary><ul><a class="li" href="https://www.understandingai.org/p/metas-llama-31-can-recall-42-percent"><li><div class="title">Meta's Llama 3.1 can recall 42 percent of the first Harry Potter book</div><div class="domain">understandingai.org &bull; June 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (4)</summary><ul><a class="li" href="https://yourstory.com/2025/06/new-generation-wearables-smartwatches-slowdown-boult-ultrahuman"><li><div class="title">Beyond the wrist: From rings to AI pendants, next-gen wearables signal a rebirth for the segment</div><div class="domain">yourstory.com &bull; June 16, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/06/zoff-modernising-indian-spice-industry-through-innovation-automation"><li><div class="title">How ZOFF is modernising Indian spice industry through innovation and automation</div><div class="domain">yourstory.com &bull; June 16, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/06/next-gen-wearables-modernising-indian-spices-gmail-password-change"><li><div class="title">The birth of next-gen wearables; Modernising Indian spices</div><div class="domain">yourstory.com &bull; June 16, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/06/thane-startup-jackit-transform-vehicle-servicing"><li><div class="title">One for the road: How Jackit aims to transform vehicle servicing</div><div class="domain">yourstory.com &bull; June 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ThePrint (youtube.com)</h2> (3)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=ljPe41K_ne8"><li><div class="title">General Insurance Council uses a talking dog to appeal to viewers. It works</div><div class="domain">youtube.com &bull; June 16, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=lhK12oWsJb0"><li><div class="title">'America’s enemies have learned, if you threaten Americans, our soldiers are coming for you'—Trump</div><div class="domain">youtube.com &bull; June 16, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=VGCWITt4nFU"><li><div class="title">Anything that weakens Iran’s proxies is a win for India. Even Israel’s Operation Rising Lion</div><div class="domain">youtube.com &bull; June 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/x7ncFYh_O08"><li><div class="title">Alycen</div><div class="domain">youtube.com &bull; June 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Parithabangal (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=4e70sJcBJVo"><li><div class="title">பெண் பார்க்கும் பாவங்கள் | Parithabangal</div><div class="domain">youtube.com &bull; June 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">newline (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=1llV7THRRoc"><li><div class="title">Why Knowing Code Still Matters When Using Bolt by GC, Independent SaaS Builder</div><div class="domain">youtube.com &bull; June 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=9m7_O6DD3IU"><li><div class="title">Survival Challenge: Against Nature’s Wrath! | Man, Woman, Wild S1 E8 | Discovery Channel</div><div class="domain">youtube.com &bull; June 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DD Movies (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/waZoJkPDE_E"><li><div class="title">பிரபு நெப்போலியன் வடிவேலு சிறந்த படம் | Prabhu Vadivelu Super Hit  Full Movie</div><div class="domain">youtube.com &bull; June 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">BBC News (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=2zbYrjCCXNE"><li><div class="title">Fighting intensifies - Trump vetoed plan to kill Iran’s Supreme Leader say US officials | BBC News</div><div class="domain">youtube.com &bull; June 16, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=AvAT7lQSWzI"><li><div class="title">Britain's youngest killers: The Wolverhampton machete murder | BBC Documentary full episode</div><div class="domain">youtube.com &bull; June 16, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
