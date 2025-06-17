@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-06-17</span>:</h1>
+  <p class="summary">There are 16 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (3)</summary><ul><a class="li" href="https://arxiv.org/pdf/2506.09250"><li><div class="title">Comment on The Illusion of Thinking: Understanding the Strengths and Limitations of Reasoning Models via the Lens of Problem Complexity</div><div class="domain">arxiv.org &bull; June 17, 2025</div></li></a><a class="li" href="https://cocoaphony.micro.blog/2025/06/16/tilai-thoughts-on-ai.html"><li><div class="title">TIL:AI. Thoughts on AI</div><div class="domain">cocoaphony.micro.blog &bull; June 17, 2025</div></li></a><a class="li" href="https://phk.freebsd.dk/sagas/phkmalloc/"><li><div class="title">phkmalloc</div><div class="domain">phk.freebsd.dk &bull; June 17, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (2)</summary><ul><a class="li" href="https://techcrunch.com/2025/06/16/finland-warms-up-the-worlds-largest-sand-battery-and-the-economics-look-appealing/"><li><div class="title">Finland warms up the world's largest sand battery, the economics look appealing</div><div class="domain">techcrunch.com &bull; June 17, 2025</div></li></a><a class="li" href="https://news.ycombinator.com/item?id=44294776"><li><div class="title">Ask HN: How to Deal with a Bad Manager?</div><div class="domain">news.ycombinator.com &bull; June 17, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">VideoFromSpace (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=HOt0rh1jQg0"><li><div class="title">Amazing auroras time-lapse captured from ISS by NASA astronaut</div><div class="domain">youtube.com &bull; June 17, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=QDi9TdimAdI"><li><div class="title">Watch live! 1st images from the Rubin Observatory -- World's most powerful survey telescope!</div><div class="domain">youtube.com &bull; June 17, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Deshbhakt (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=TJ9IM4sxa1I"><li><div class="title">Iran Hits Back | Israel's Actions Exposing Western Hypocrisy Like Never Before? | Akash Banerjee</div><div class="domain">youtube.com &bull; June 17, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Daily Show (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=kK9mVN6xDdY"><li><div class="title">This Pride Month, Trump is scaring corporations back into the closet #DailyShow #DesiLydic #Pride</div><div class="domain">youtube.com &bull; June 17, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Sheena Melwani (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=PvDm6nHsXj0"><li><div class="title">Trying to figure out what “game” we’re talking about #shorts #funny</div><div class="domain">youtube.com &bull; June 17, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Sabine Hossenfelder (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=fRssqttO9Hg"><li><div class="title">This changed my life</div><div class="domain">youtube.com &bull; June 17, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">newline (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=y7sDTB_TPKg"><li><div class="title">Bolt Built Me a Full POS System in One Tab by George-Chris, Independent SaaS Builder</div><div class="domain">youtube.com &bull; June 17, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Krishnamurti Foundation Trust (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=hw4BspcYlSE"><li><div class="title">Are emotions rooted in thought? | Krishnamurti</div><div class="domain">youtube.com &bull; June 17, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Khan Academy (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=TkRfRsmCquw"><li><div class="title">Program design: bakery inventory | Intro to CS - Python | Khan Academy</div><div class="domain">youtube.com &bull; June 17, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DD Movies (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/SIwD2vb1tOo"><li><div class="title">பிரபு நெப்போலியன் வடிவேலு சிறந்த படம் | Prabhu Vadivelu Super Hit  Full Movie</div><div class="domain">youtube.com &bull; June 17, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Chess.com (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=mxDsu-JXCic"><li><div class="title">BLITZCHAMPS IV: NFL Stars Bring Their A-Game To 64 Squares!! ft. Kyler Murray, Hollins. Reid & More</div><div class="domain">youtube.com &bull; June 17, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
