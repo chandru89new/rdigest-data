@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-06-18</span>:</h1>
+  <p class="summary">There are 25 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (1)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/FxceJeR88j5NAn7Q3/i-made-a-card-game-to-reduce-cognitive-biases-and-logical"><li><div class="title">I made a card game to reduce cognitive biases and logical fallacies but I'm not sure what DV to test in a study on its effectiveness.</div><div class="domain">lesswrong.com &bull; June 18, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (3)</summary><ul><a class="li" href="https://blog.singleton.io/posts/2021-01-31-i-wrote-a-compiler/"><li><div class="title">I wrote a compiler</div><div class="domain">blog.singleton.io &bull; June 18, 2025</div></li></a><a class="li" href="https://qsantos.fr/2025/03/03/indexeddb-is-weird/"><li><div class="title">IndexedDB is Weird</div><div class="domain">qsantos.fr &bull; June 18, 2025</div></li></a><a class="li" href="https://blog.stulta.dev/posts/annoying_json/"><li><div class="title">Building JSON on the Command Line is Obnoxious</div><div class="domain">blog.stulta.dev &bull; June 18, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (1)</summary><ul><a class="li" href="https://github.com/bgreenwell/lstr"><li><div class="title">Show HN: Lstr – A modern, interactive tree command written in Rust</div><div class="domain">github.com &bull; June 18, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (4)</summary><ul><a class="li" href="https://yourstory.com/2025/06/how-bounce-plans-to-bounce-back-extreme-poverty-tech-recycled-clothes"><li><div class="title">How Bounce plans to bounce back; Ending extreme poverty in 300 days</div><div class="domain">yourstory.com &bull; June 18, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/06/new-delhi-startup-tooused-recycle-old-clothes-earn-credits-fast-fashion"><li><div class="title">With Tooused, you can recycle old clothes and earn credits</div><div class="domain">yourstory.com &bull; June 18, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/06/bounce-daily-scooter-rentals-vivekananda-hallekere"><li><div class="title">Wiser and stronger: Bounce hopes for a bounceback in scooter rentals, targets gig segment</div><div class="domain">yourstory.com &bull; June 18, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/06/electric-fleets-as-enablers-of-carbon-credit-monetisation"><li><div class="title">Electric fleets as enablers of carbon credit monetisation</div><div class="domain">yourstory.com &bull; June 18, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Wolfram (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=kJ4ni_DG2ts"><li><div class="title">Quick Overview of Wolfram Notebook Assistant and LLM Kit</div><div class="domain">youtube.com &bull; June 18, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ThePrint (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=c8Vc4Yww9nc"><li><div class="title">Punjab influencers in fear after extremists kill Kamal Kaur.Akal Takht Head Granthi justifies murder</div><div class="domain">youtube.com &bull; June 18, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=0TohpFDw8Ew"><li><div class="title">How China’s rare earth export restrictions is impacting Indian carmakers</div><div class="domain">youtube.com &bull; June 18, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ThePrimeTime (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/p3T4S0Gdm3s"><li><div class="title">THINK WITH YOUR HANDS</div><div class="domain">youtube.com &bull; June 18, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Wire (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=N1u4y2o85gE"><li><div class="title">Boeing 787 Dreamliner के खिलाफ सालों से कई शिकायतें। Plane Crash। Boing Controversy। Air India</div><div class="domain">youtube.com &bull; June 18, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Daily Show (youtube.com)</h2> (3)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=3Q08a7BI9XI"><li><div class="title">Jon Stewart on Israel’s "Urgent" Iran Strike, Minnesota Murders & MAGA’s Blame Game | The Daily Show</div><div class="domain">youtube.com &bull; June 18, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=JsRpHlOxYE4"><li><div class="title">Jordan Klepper Crashes Trump’s Military-Birthday Parade | The Daily Show</div><div class="domain">youtube.com &bull; June 18, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=Wz0aQkQB46k"><li><div class="title">Trump Ignores GOP Advice Against War With Iran: "Not in the Mood for Negotiating" | The Daily Show</div><div class="domain">youtube.com &bull; June 18, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=boKqarJbymQ"><li><div class="title">Mike and Stephanie</div><div class="domain">youtube.com &bull; June 18, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">SciShow (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=Ts9gL1hvR4w"><li><div class="title">A Video About Digging A Hole | Compilation</div><div class="domain">youtube.com &bull; June 18, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">newline (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=ZeLjfLxLSuY"><li><div class="title">How I Built a Full Order System in Minutes with Bolt by GC, Independent SaaS Builder</div><div class="domain">youtube.com &bull; June 18, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DD Movies (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/OiKZpKfA-uc"><li><div class="title">பிரபு நெப்போலியன் வடிவேலு சிறந்த படம் | Prabhu Vadivelu Super Hit  Full Movie</div><div class="domain">youtube.com &bull; June 18, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ChessBase India (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=thP5g2pZvjE"><li><div class="title">The clash of titans | Alexander Grischuk vs Vishy Anand | World Blitz Teams 2025</div><div class="domain">youtube.com &bull; June 18, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">BBC News (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=1SIkX8EnFlQ"><li><div class="title">Donald Trump signs order confirming parts of US-UK tariff deal | BBC News</div><div class="domain">youtube.com &bull; June 18, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=LD6rVGKpazw"><li><div class="title">Trump threatens to kill Iran's leader Ali Khamenei and demands "unconditional surrender” | BBC News</div><div class="domain">youtube.com &bull; June 18, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Academy of Ideas (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=-F01nhzTbzA"><li><div class="title">Rapid Personality Transformation – The Psychology of Quantum Change</div><div class="domain">youtube.com &bull; June 18, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
