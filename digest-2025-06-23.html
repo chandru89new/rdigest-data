@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-06-23</span>:</h1>
+  <p class="summary">There are 20 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (4)</summary><ul><a class="li" href="https://legacy.cs.indiana.edu/~dyb/pubs/letrec-reloaded.pdf"><li><div class="title">Fixing Letrec (Reloaded)</div><div class="domain">legacy.cs.indiana.edu &bull; June 23, 2025</div></li></a><a class="li" href="https://tgmatos.github.io/allocators-are-for-monkeys-with-typewriters/"><li><div class="title">Allocators are Monkeys With Typewriters</div><div class="domain">tgmatos.github.io &bull; June 23, 2025</div></li></a><a class="li" href="https://github.com/EbodShojaei/bake"><li><div class="title">Makefile formatter and linter</div><div class="domain">github.com &bull; June 23, 2025</div></li></a><a class="li" href="https://lwn.net/SubscriberLink/1022920/ad60263cd13c8a13/"><li><div class="title">Asterinas: a new Linux-compatible kernel project</div><div class="domain">lwn.net &bull; June 23, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (5)</summary><ul><a class="li" href="https://github.com/Sakura-sx/cf-shield"><li><div class="title">CF-Shield – An open source tool to protect any website with Cloudflare</div><div class="domain">github.com &bull; June 23, 2025</div></li></a><a class="li" href="https://www.theguardian.com/us-news/2025/jun/22/kat-cammack-republican-florida-abortion-law-ectopic-pregnancy"><li><div class="title">Republican representative's ectopic pregnancy clashes with Florida abortion law</div><div class="domain">theguardian.com &bull; June 23, 2025</div></li></a><a class="li" href="https://github.com/sdzx-1/polystate"><li><div class="title">Polystate: Composable Finite State Machines</div><div class="domain">github.com &bull; June 23, 2025</div></li></a><a class="li" href="https://news.ycombinator.com/item?id=44351580"><li><div class="title">Optifye.ai (YC W25) – Founding Back End Engineer</div><div class="domain">news.ycombinator.com &bull; June 23, 2025</div></li></a><a class="li" href="https://sublevelgames.github.io/blogs/2025-06-22-nurikabe-map-gen-with-wfc/"><li><div class="title">Using Wave Function Collapse to solve puzzle map generation at scale</div><div class="domain">sublevelgames.github.io &bull; June 23, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (2)</summary><ul><a class="li" href="https://yourstory.com/2025/06/next-unicorn-solo-entrepreneur-ai-llm-fertility-treatment-accessible"><li><div class="title">Could the next unicorn be a team of one?; Making fertility treatments smarter</div><div class="domain">yourstory.com &bull; June 23, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/06/why-real-time-feedback-is-crucial-for-employee-retention-ai-impact"><li><div class="title">Why real-time feedback is crucial for employee retention, and how AI delivers it</div><div class="domain">yourstory.com &bull; June 23, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ThePrint (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=mhWL14Yy8WQ"><li><div class="title">Trump calls US trikes on Iran’s nuclear sites ‘a spectacular military success’</div><div class="domain">youtube.com &bull; June 23, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Dodo (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=XY-inbI-q54"><li><div class="title">Kitten Caught On Baby Cam Sneaking Into Sister's Crib For A Snuggle | The Dodo</div><div class="domain">youtube.com &bull; June 23, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Deshbhakt (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=HsBDTHGW6Yc"><li><div class="title">Trump Drops Massive GBU-57 Bomb On Iran (& His Political Legacy) | Akash Banerjee</div><div class="domain">youtube.com &bull; June 23, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">TED (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=GvG40fNtd2E"><li><div class="title">The US Bombed Iran. Now What? | TED Explains the World with Ian Bremmer</div><div class="domain">youtube.com &bull; June 23, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=DSx0XMR_njA"><li><div class="title">Boomer, Millennial, and Bears. Who Will Win? | Man vs Bear S1 E1 | Discovery Channel</div><div class="domain">youtube.com &bull; June 23, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DD Movies (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/J0xc903QunA"><li><div class="title">பிரபு நெப்போலியன் வடிவேலு சிறந்த படம் | Prabhu Vadivelu Super Hit  Full Movie</div><div class="domain">youtube.com &bull; June 23, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">BBC News (youtube.com)</h2> (3)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=sP5Ccs097XI"><li><div class="title">US bombs Iran nuclear sites and Tehran warns of 'everlasting consequences' | BBC News</div><div class="domain">youtube.com &bull; June 23, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=RQJUa_KDe_I"><li><div class="title">Iran threatens oil supplies and warns US bases “vulnerable” after strike on nuclear sites | BBC News</div><div class="domain">youtube.com &bull; June 23, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=_naxef77uNQ"><li><div class="title">Neighbour, friend, killer: The murder of Wendy Buckney | BBC News</div><div class="domain">youtube.com &bull; June 23, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
