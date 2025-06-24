@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-06-24</span>:</h1>
+  <p class="summary">There are 17 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (1)</summary><ul><a class="li" href="https://steve.dignam.xyz/2025/06/20/interesting-bits-of-postgres-grammar/"><li><div class="title">Interesting Bits of Postgres Grammar</div><div class="domain">steve.dignam.xyz &bull; June 24, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (4)</summary><ul><a class="li" href="https://www.telegraph.co.uk/news/2025/06/23/cancer-test-predicts-whether-chemotherapy-will-work/"><li><div class="title">Breakthrough cancer test predicts whether chemotherapy will work</div><div class="domain">telegraph.co.uk &bull; June 24, 2025</div></li></a><a class="li" href="https://comparator-one.vercel.app/"><li><div class="title">Show HN: Comparator - I built a free, open-source app to compare job offers</div><div class="domain">comparator-one.vercel.app &bull; June 24, 2025</div></li></a><a class="li" href="https://marbleblast.vaniverse.io/"><li><div class="title">Marble Blast</div><div class="domain">marbleblast.vaniverse.io &bull; June 24, 2025</div></li></a><a class="li" href="https://plus.excalidraw.com/blog/excalidraw-soc2"><li><div class="title">Excalidraw+ Is Now SoC 2 Certified</div><div class="domain">plus.excalidraw.com &bull; June 24, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Sympolymathesy, by Chris Krycho (v5.chriskrycho.com)</h2> (1)</summary><ul><a class="li" href="https://v5.chriskrycho.com/notes/using-light-dark-instead-of-a-sass-mixin/"><li><div class="title">[notes] Using light-dark() Instead of a Sass Mixin for Color Schemes</div><div class="domain">v5.chriskrycho.com &bull; June 24, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (3)</summary><ul><a class="li" href="https://yourstory.com/2025/06/prosus-bets-earnings-payu-india-swiggy-3d-concrete-printing"><li><div class="title">Are Prosus’ bets paying off?; Inside PayU India’s mixed results</div><div class="domain">yourstory.com &bull; June 24, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/06/startup-reimagining-financial-access-blue-collar-workforce"><li><div class="title">This startup is reimagining financial access for India’s blue-collar workforce</div><div class="domain">yourstory.com &bull; June 24, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/06/culturemonkey-startup-helping-businesses-build-enhance-company-culture"><li><div class="title">How CultureMonkey is helping businesses build and enhance company culture</div><div class="domain">yourstory.com &bull; June 24, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ThePrint (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/shorts/K4bcuL5cW-w"><li><div class="title">Unpredictable Trump, Iran & Madman Theory</div><div class="domain">youtube.com &bull; June 24, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=umMCAfaxygA"><li><div class="title">Italian scientists develop the first flying humanoid robot</div><div class="domain">youtube.com &bull; June 24, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Sideprojects (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=B0XBeD7doBE"><li><div class="title">The Astonishing Discovery Under the Pyramids.</div><div class="domain">youtube.com &bull; June 24, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">LastWeekTonight (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=EDi78Q7ocNs"><li><div class="title">S12 E16: Israel, Iran, the US & AI Slop: 6/22/25: Last Week Tonight with John Oliver</div><div class="domain">youtube.com &bull; June 24, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=TWpg1RmzAbc"><li><div class="title">AI Slop: Last Week Tonight with John Oliver (HBO)</div><div class="domain">youtube.com &bull; June 24, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=yvtU6cIH_LM"><li><div class="title">Surviving the Wrath of Bear Mountain! | Man Vs Bear S1 E2 | Full Episode | Discovery Channel</div><div class="domain">youtube.com &bull; June 24, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DD Movies (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/vVEI2I5FkiA"><li><div class="title">பிரபு நெப்போலியன் வடிவேலு சிறந்த படம் | Prabhu Vadivelu Super Hit  Full Movie</div><div class="domain">youtube.com &bull; June 24, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">BBC News (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=fc23hxQFMdQ"><li><div class="title">Iran launches missiles at US bases in Qatar and Iraq, state media reports | BBC News</div><div class="domain">youtube.com &bull; June 24, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
