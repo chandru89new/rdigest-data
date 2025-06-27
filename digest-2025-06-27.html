@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-06-27</span>:</h1>
+  <p class="summary">There are 13 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (1)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/CYTwRZtrhHuYf7QYu/a-case-for-courage-when-speaking-of-ai-danger"><li><div class="title">A case for courage, when speaking of AI danger</div><div class="domain">lesswrong.com &bull; June 27, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (1)</summary><ul><a class="li" href="https://www.ryanliptak.com/blog/better-named-character-reference-tokenization/"><li><div class="title">Slightly better named character reference tokenization than Chrome, Safari, and Firefox</div><div class="domain">ryanliptak.com &bull; June 27, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (1)</summary><ul><a class="li" href="https://www.smithsonianmag.com/travel/when-a-lumberjacks-imagination-ran-wild-he-created-more-than-200-sculptures-in-wisconsins-northwoods-180986840/"><li><div class="title">A lumberjack created more than 200 sculptures in Wisconsin's Northwoods</div><div class="domain">smithsonianmag.com &bull; June 27, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (3)</summary><ul><a class="li" href="https://yourstory.com/2025/06/adda-education-skilling-startups-shaping-indias-ai-agenda"><li><div class="title">Adda Education forays into skilling; The startups shaping India’s AI agenda</div><div class="domain">yourstory.com &bull; June 27, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/06/neer-shakti-systems-startup-nanobubble-technology-water-farming"><li><div class="title">Neer Shakti Systems' nanobubble technology is a promising solution to India's water woes</div><div class="domain">yourstory.com &bull; June 27, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/06/flipkart-new-programme-support-first-time-sellers"><li><div class="title">Flipkart rolls out new programmes to support first-time sellers</div><div class="domain">yourstory.com &bull; June 27, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ThePrint (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=C4f88CWyBP0"><li><div class="title">ThePrintAM: WHAT IS THE BRICS STATEMENT ON MILITARY STRIKES IN IRAN?</div><div class="domain">youtube.com &bull; June 27, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ThePrimeTime (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/D3WJ806PvCY"><li><div class="title">This Is Why Your Stuck</div><div class="domain">youtube.com &bull; June 27, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Wire (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=FhYKo6d-7Yk"><li><div class="title">NYC Mayor Election : डेमोक्रेटिक पार्टी में 'इंकलाब': क्या Zohran Mamdani नई उम्मीद हैं ?</div><div class="domain">youtube.com &bull; June 27, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">newline (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=geSggoH25P8"><li><div class="title">What do all the N8N tabs mean with Maksym, Fullstack AI Engineer</div><div class="domain">youtube.com &bull; June 27, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Lex Fridman (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=gtmJi8LbAts"><li><div class="title">Iran War Debate: Nuclear Weapons, Trump, Peace, Power & the Middle East | Lex Fridman Podcast #473</div><div class="domain">youtube.com &bull; June 27, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=iuq3PH4l3LI"><li><div class="title">Manpower Tested by Predators | Man Vs Bear S1 E5 | Discovery Channel</div><div class="domain">youtube.com &bull; June 27, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DD Movies (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/RUU6kFbtkD4"><li><div class="title">பிரபு நெப்போலியன் வடிவேலு சிறந்த படம் | Prabhu Vadivelu Super Hit  Full Movie</div><div class="domain">youtube.com &bull; June 27, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
