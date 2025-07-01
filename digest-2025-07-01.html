@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-07-01</span>:</h1>
+  <p class="summary">There are 19 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (1)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/XPNJSa3BxMAN4ZXc7/sae-on-activation-differences"><li><div class="title">SAE on activation differences</div><div class="domain">lesswrong.com &bull; July 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (2)</summary><ul><a class="li" href="https://docs.anthropic.com/en/docs/claude-code/hooks"><li><div class="title">Claude Code now supports Hooks</div><div class="domain">docs.anthropic.com &bull; July 01, 2025</div></li></a><a class="li" href="https://tucson-josh.com/posts/rust-clap-cli/"><li><div class="title">Rust CLIs with Clap</div><div class="domain">tucson-josh.com &bull; July 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (6)</summary><ul><a class="li" href="https://yourstory.com/2025/06/meet-the-latest-unicorn-jumbotail-bengaluru-startup-college-students"><li><div class="title">Meet the latest unicorn, Jumbotail; Timbuckdo helps students earn, save</div><div class="domain">yourstory.com &bull; July 01, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/06/electrifying-food-deliveries-eternal-chief-sustainability-officer-zomato-ev-goal"><li><div class="title">Electrifying food deliveries: Eternal’s sustainability chief on meeting Zomato's EV goal</div><div class="domain">yourstory.com &bull; July 01, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/06/hydroponics-for-cattle-shunya-agritech-farmers-greater-milk-yield"><li><div class="title">Hydroponics for cattle: Shunya Agritech promises dairy farmers greater milk yields</div><div class="domain">yourstory.com &bull; July 01, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/06/why-spacetech-startup-satleo-labs-is-betting-big-o"><li><div class="title">Why spacetech startup SatLeo Labs is betting big on thermal intelligence</div><div class="domain">yourstory.com &bull; July 01, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/06/future-of-campus-engineering-placements-ai-skilling-startups"><li><div class="title">Beyond the Big 5: What is the future of campus placements?</div><div class="domain">yourstory.com &bull; July 01, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/06/rural-india-how-fintech-is-unlocking-youth-potential"><li><div class="title">Rural India's digital pioneers: How fintech is unlocking youth potential in the hinterlands</div><div class="domain">yourstory.com &bull; July 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Veritasium (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=-QTkPfq7w1A"><li><div class="title">This mechanism shrinks when pulled</div><div class="domain">youtube.com &bull; July 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Wire (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=TWUTNt0Zems"><li><div class="title">What is the impact of the 12-day war on Iran – its leadership and its people?</div><div class="domain">youtube.com &bull; July 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Steve Mould (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=rf-efIZI_Dg"><li><div class="title">Gaming on a medical device</div><div class="domain">youtube.com &bull; July 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Rick Beato (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=3Nlb-m_vKYM"><li><div class="title">So It Begins...Is This A Real Band Or AI?</div><div class="domain">youtube.com &bull; July 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Parithabangal (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=YgMYqxhvO7I"><li><div class="title">C Mart Paavangal | Parithabangal</div><div class="domain">youtube.com &bull; July 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">LastWeekTonight (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=vjFL-cBcjKc"><li><div class="title">Trump’s One Big Beautiful Bill: Last Week Tonight with John Oliver (HBO)</div><div class="domain">youtube.com &bull; July 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=4KrJbpxXp4E"><li><div class="title">Is the Lost Ship of Contempt Finally Found? | Unexplained and Unexplored S1 E1 | Discovery Channel</div><div class="domain">youtube.com &bull; July 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DD Movies (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/hwZ4cS70YW4"><li><div class="title">ரீமா உனக்கு வேற வேலை இல்லையா Psychological Thriller | Gayatri Rema, Prasanth Srinivasan | DD Movies</div><div class="domain">youtube.com &bull; July 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ChessBase India (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=AFAtLygNxCM"><li><div class="title">The GM who won six tournaments in a month in Australia - Mitrabha Guha</div><div class="domain">youtube.com &bull; July 01, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=BZB9h6czjc4"><li><div class="title">When Nihal Sarin went all out against Ian Nepomniachtchi | World Blitz Teams 2025</div><div class="domain">youtube.com &bull; July 01, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
