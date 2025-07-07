@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-07-07</span>:</h1>
+  <p class="summary">There are 13 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">kottke.org (feeds.kottke.org)</h2> (1)</summary><ul><a class="li" href="https://kottke.org/25/07/0047085-conscientious-suv-shopper"><li><div class="title">Conscientious SUV Shopper Just Wants Something That Will Kill Family In Other...</div><div class="domain">kottke.org &bull; July 07, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (1)</summary><ul><a class="li" href="https://www.dedoimedo.com/computers/plasma-6-4-performance-wayland-x11-power-cpu-kernel.html"><li><div class="title">Plasma 6.4 Wayland vs X11, processor and power benchmarks</div><div class="domain">dedoimedo.com &bull; July 07, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=uq0pJmd7GAA"><li><div class="title">There's a COMPUTER inside my DS flashcart [video]</div><div class="domain">youtube.com &bull; July 07, 2025</div></li></a><a class="li" href="https://github.com/jackjackbits/bitchat"><li><div class="title">Bitchat – A decentralized messaging app that works over Bluetooth mesh networks</div><div class="domain">github.com &bull; July 07, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Sympolymathesy, by Chris Krycho (v5.chriskrycho.com)</h2> (2)</summary><ul><a class="li" href="https://v5.chriskrycho.com/notes/no-really-that-lens-is-huge/"><li><div class="title">[notes] No Really, That Lens Is Huge</div><div class="domain">v5.chriskrycho.com &bull; July 07, 2025</div></li></a><a class="li" href="https://v5.chriskrycho.com/notes/five-is-the-floor/"><li><div class="title">[notes] Five is the Floor</div><div class="domain">v5.chriskrycho.com &bull; July 07, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (4)</summary><ul><a class="li" href="https://yourstory.com/2025/07/5-things-gen-z-is-doing-differently-with-their-money"><li><div class="title">5 things Gen Z is doing differently with their money</div><div class="domain">yourstory.com &bull; July 07, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/startup-helping-esl-learners-find-voice-ai-iit-bhu"><li><div class="title">This startup is helping ESL learners find their voice with AI</div><div class="domain">yourstory.com &bull; July 07, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/ai-harness-true-artistic-creativity-new-frontiers-indigenous-ai-development"><li><div class="title">Can AI harness true artistic creativity; New frontiers in indigenous AI development</div><div class="domain">yourstory.com &bull; July 07, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/khetika-raises-18m-in-series-b-eyes-10x-revenue-over-3-years"><li><div class="title">Khetika raises $18M in Series B funding, eyes 10X revenue jump over three years</div><div class="domain">yourstory.com &bull; July 07, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=XtO3Izf_KLw"><li><div class="title">Tracking the Ark’s Final Trail | Unexplained and Unexplored S1 E5 | Discovery Channel</div><div class="domain">youtube.com &bull; July 07, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DD Movies (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/Ul2ig7g6810"><li><div class="title">ரீமா உனக்கு வேற வேலை இல்லையா Psychological Thriller | Gayatri Rema, Prasanth Srinivasan | DD Movies</div><div class="domain">youtube.com &bull; July 07, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">BBC News (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=eWQ4ZncSc7M"><li><div class="title">On the front line: Inside Britain's prison crisis | BBC Documentary</div><div class="domain">youtube.com &bull; July 07, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
