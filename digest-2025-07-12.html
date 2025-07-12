@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-07-12</span>:</h1>
+  <p class="summary">There are 25 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">The Marginalian (feeds.feedburner.com)</h2> (1)</summary><ul><a class="li" href="https://www.themarginalian.org/2025/07/11/bats/"><li><div class="title">Why Bats Shouldn’t Exist: The Limits of Knowledge, the Pitfalls of Prediction, and the Triumph of the Possible Over the Probable</div><div class="domain">themarginalian.org &bull; July 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (2)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/3xjgM7hcNznACRzBi/the-jackpot-age"><li><div class="title">the jackpot age</div><div class="domain">lesswrong.com &bull; July 12, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/zuuQwueBpv9ZCpNuX/vitalik-s-response-to-ai-2027"><li><div class="title">Vitalik's Response to AI 2027</div><div class="domain">lesswrong.com &bull; July 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (1)</summary><ul><a class="li" href="https://hanamirb.org/blog/2025/07/11/hanami-and-the-elephant-in-the-room/"><li><div class="title">Hanami and the elephant in the room</div><div class="domain">hanamirb.org &bull; July 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (3)</summary><ul><a class="li" href="https://twitter.com/sama/status/1943837550369812814"><li><div class="title">Sam Altman delays open weights model release</div><div class="domain">twitter.com &bull; July 12, 2025</div></li></a><a class="li" href="https://www.serdashop.com/HDDClicker"><li><div class="title">HDD Clicker generates HDD clicking sounds, based on HDD Led activity</div><div class="domain">serdashop.com &bull; July 12, 2025</div></li></a><a class="li" href="https://eprint.iacr.org/2025/1237.pdf"><li><div class="title">Cheeky Computer Scientist replicates Quantum Factoring record with a dog [pdf]</div><div class="domain">eprint.iacr.org &bull; July 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Diplomat (thediplomat.com)</h2> (1)</summary><ul><a class="li" href="https://thediplomat.com/2025/07/the-biggest-misconception-about-the-philippines-south-china-sea-case-against-china/"><li><div class="title">The Biggest Misconception About the Philippines’ South China Sea Case Against China</div><div class="domain">thediplomat.com &bull; July 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (3)</summary><ul><a class="li" href="https://yourstory.com/2025/07/building-diagnostics-network-aarthi-scans"><li><div class="title">Building a diagnostics network; Giving brands control over data</div><div class="domain">yourstory.com &bull; July 12, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/sparring-player-junior-athletes-spar-with-senior-pros-to-get-match-ready"><li><div class="title">Game, set, match: Sparring Player helps junior athletes spar with senior pros to get match-ready</div><div class="domain">yourstory.com &bull; July 12, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/navigating-compliance-how-emerging-beauty-startups-regulations"><li><div class="title">Navigating compliance: How emerging beauty startups tackle regulatory challenges in India</div><div class="domain">yourstory.com &bull; July 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ThePrint (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=oN-Swj1JjcA"><li><div class="title">Air India engine fuel switches cut off, revived seconds before crash: What prelim probe report says</div><div class="domain">youtube.com &bull; July 12, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=1q3Wntry6O4"><li><div class="title">Dalai Lama decides to reincarnate. His successor may only get an imagined homeland to rule</div><div class="domain">youtube.com &bull; July 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Daily Show (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=_E6TgtiQrWQ"><li><div class="title">Youngmi Mayer - Weaving Trauma With Comedy in "I'm Laughing Because I'm Crying" | The Daily Show</div><div class="domain">youtube.com &bull; July 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">TED (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/LkKOmzdaoH8"><li><div class="title">Now that's what I call a built-in drum kit! #TEDTalks</div><div class="domain">youtube.com &bull; July 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">SciFri (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=_RjVApcF9PQ"><li><div class="title">In ‘Jurassic World Rebirth,’ Paleontology Is Still The Star</div><div class="domain">youtube.com &bull; July 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Living Big In A Tiny House (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=CiECeXVUZ0Y"><li><div class="title">This is WILD! 🤪 They Built a Tiny House on a Dump Truck!?</div><div class="domain">youtube.com &bull; July 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Khan Academy (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=R0XFqHBZfHc"><li><div class="title">Gravitational force | Middle school physics | Khan Academy</div><div class="domain">youtube.com &bull; July 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Jackson Galaxy (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/kJ15JwEbaQI"><li><div class="title">Adopt. Foster. Save a life. 🐾 #NationalKittenDay #AdoptDontShop #Kittens</div><div class="domain">youtube.com &bull; July 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Dr. Plants (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=I6lANHo2WPY"><li><div class="title">Raising 10,000 Bees (in my home)</div><div class="domain">youtube.com &bull; July 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=I4lMkffnEjo"><li><div class="title">The Rookie Gamble | Bering Sea Gold S12 E2 | Discovery Channel</div><div class="domain">youtube.com &bull; July 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DD Movies (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/hy9JJVz7QtI"><li><div class="title">ரீமா உனக்கு வேற வேலை இல்லையா Psychological Thriller | Gayatri Rema, Prasanth Srinivasan | DD Movies</div><div class="domain">youtube.com &bull; July 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ChessBase India (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=Bd7ZcE7XR_Q"><li><div class="title">He just HUNG his QUEEN 😲 | Fabiano Caruana vs D Gukesh | Superunited Blitz 2025</div><div class="domain">youtube.com &bull; July 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Best Documentary (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=h7oxtFtQAqs"><li><div class="title">Sweden Facing the Gangs</div><div class="domain">youtube.com &bull; July 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">BBC Ideas (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/xYb1GnICb0U"><li><div class="title">How to stay cool without turning on the AC | BBC Ideas #climatechange #adaptation #howto</div><div class="domain">youtube.com &bull; July 12, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
