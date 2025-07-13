@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-07-13</span>:</h1>
+  <p class="summary">There are 17 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (1)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/vFfwBYDRYtWpyRbZK/surprises-and-learnings-from-almost-two-months-of-leo"><li><div class="title">Surprises and learnings from almost two months of Leo Panickssery</div><div class="domain">lesswrong.com &bull; July 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (4)</summary><ul><a class="li" href="https://jyn.dev/constrained-languages-are-easier-to-optimize/"><li><div class="title">constrained languages are easier to optimize</div><div class="domain">jyn.dev &bull; July 13, 2025</div></li></a><a class="li" href="https://wiomoc.de/misc/posts/hacking_coroutines_into_c.html"><li><div class="title">Hacking coroutines into C</div><div class="domain">wiomoc.de &bull; July 13, 2025</div></li></a><a class="li" href="https://0x44.xyz/blog/web-request-blocking/"><li><div class="title">How I found a bypass in Google's big anti-adblock update</div><div class="domain">0x44.xyz &bull; July 13, 2025</div></li></a><a class="li" href="https://kristoff.it/blog/zig-new-async-io/"><li><div class="title">Zig's New Async I/O</div><div class="domain">kristoff.it &bull; July 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (2)</summary><ul><a class="li" href="https://www.theblock.co/post/362339/moonpay-executives-may-have-sent-250000-to-nigerian-scammer-doj-filing-suggests"><li><div class="title">MoonPay executives may have sent $250k to Nigerian scammer</div><div class="domain">theblock.co &bull; July 13, 2025</div></li></a><a class="li" href="https://www.nytimes.com/2025/07/09/travel/rental-car-ai-scanner-hertz.html"><li><div class="title">A.I. Is Making Sure You Pay for That Ding on Your Rental Car</div><div class="domain">nytimes.com &bull; July 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (1)</summary><ul><a class="li" href="https://yourstory.com/2025/07/the-calm-prescription-luke-coutinho-ikk-punjab-gurugram"><li><div class="title">Take a calm prescription; Relishing a forgotten Punjab</div><div class="domain">yourstory.com &bull; July 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ThePrint (youtube.com)</h2> (3)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=uXRnFRS2RiY"><li><div class="title">Earth might exist in a 'void' inside universe, researchers use 'sounds of the Big Bang' to find out</div><div class="domain">youtube.com &bull; July 13, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=1NisgR6h1dw"><li><div class="title">Indian Army rescues a Pangolin in Akhnoor at the Gigrial Battalion LOC post</div><div class="domain">youtube.com &bull; July 13, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=gagnmG8ocqQ"><li><div class="title">Paradox of India’s S-400 deal—key asset delayed when country needs it most</div><div class="domain">youtube.com &bull; July 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Deshbhakt (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=prSVUL_KCVE"><li><div class="title">Shocking Air India Crash Report | Pilot Error Or A 737-Max Style Coverup Operation? | Akash Banerjee</div><div class="domain">youtube.com &bull; July 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Empty Hand (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=e2RlRX-e6v8"><li><div class="title">Thug Life Roast❌ குமுறல்கள்✅ Kamal Haasan |  STR | Mani Ratnam | AR Rahman | Tamil Troll</div><div class="domain">youtube.com &bull; July 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=YZp9CMy9F5o"><li><div class="title">The Fastest Takeover | Street Outlaws S5 E2 | Discovery Channel</div><div class="domain">youtube.com &bull; July 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DD Movies (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/_3gr-81iJIQ"><li><div class="title">ரீமா உனக்கு வேற வேலை இல்லையா Psychological Thriller | Gayatri Rema, Prasanth Srinivasan | DD Movies</div><div class="domain">youtube.com &bull; July 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">CinemaStix (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=110-zXTzXmM"><li><div class="title">oh, so that’s why they cast him in the movie</div><div class="domain">youtube.com &bull; July 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ChessBase India (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=3Y7ILdD2D4k"><li><div class="title">This is how PEAK GUKESH plays in BLITZ | Gukesh vs Caruana | Superunited Blitz 2025</div><div class="domain">youtube.com &bull; July 13, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
