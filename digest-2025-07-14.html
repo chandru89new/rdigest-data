@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-07-14</span>:</h1>
+  <p class="summary">There are 15 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (2)</summary><ul><a class="li" href="https://gpfault.net/posts/asm-tut-0.txt.html"><li><div class="title">Let's Learn x86-64 Assembly! Part 0 - Setup and First Steps</div><div class="domain">gpfault.net &bull; July 14, 2025</div></li></a><a class="li" href="https://www.scattered-thoughts.net/writing/store-tags-after-payloads/"><li><div class="title">Store tags after payloads</div><div class="domain">scattered-thoughts.net &bull; July 14, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (2)</summary><ul><a class="li" href="https://www.astronomy.com/science/james-webb-hubble-space-telescopes-face-reduction-in-operations-over-funding-shortfalls/"><li><div class="title">James Webb, Hubble space telescopes face reduction in operations</div><div class="domain">astronomy.com &bull; July 14, 2025</div></li></a><a class="li" href="https://www.marksimonson.com/notebook/view/the-scourge-of-arial/"><li><div class="title">The Scourge of Arial (2001)</div><div class="domain">marksimonson.com &bull; July 14, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (4)</summary><ul><a class="li" href="https://yourstory.com/2025/07/indian-climate-tech-cos-many-problems-reimagining-pain"><li><div class="title">Indian climate tech cos’ many problems; Reimagining pain management</div><div class="domain">yourstory.com &bull; July 14, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/the-real-cost-of-cross-border-payments-for-indian-"><li><div class="title">The real cost of cross-border payments for Indian exporters</div><div class="domain">yourstory.com &bull; July 14, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/how-curapod-is-challenging-status-quo-in-musculoskeletal-care"><li><div class="title">Reimagining pain relief: How Curapod is challenging the status quo in musculoskeletal care</div><div class="domain">yourstory.com &bull; July 14, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/missing-growth-capital-subpar-demand-free-rider-problem-climate-tech"><li><div class="title">Missing growth capital, subpar demand: The free-rider problem clouding India’s climate-tech segment</div><div class="domain">yourstory.com &bull; July 14, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Laasya (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=bbw73fui9dM"><li><div class="title">Sapphire | Indian mix | Dance cover | Ed Sheeran, Arijit Singh| Nivi and Ishanvi | Laasya</div><div class="domain">youtube.com &bull; July 14, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ICM Indian Classical Music (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/nXOL2OFg38M"><li><div class="title">Mansoon Raag By Nandini Shankar Part-2 ❣️✨#violin #icmtabla #classical #music #shorts</div><div class="domain">youtube.com &bull; July 14, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Huberman Lab Clips (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=-yp3g7EeDqo"><li><div class="title">Does Fasted Training Burn More Body Fat? | Alan Aragon & Dr. Andrew Huberman</div><div class="domain">youtube.com &bull; July 14, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=_r5MVjiXvKE"><li><div class="title">Who’s Really to Blame? | Gold Rush: The Dirt S6 EP3 | Discovery Channel</div><div class="domain">youtube.com &bull; July 14, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DD Movies (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/XJK12LjhCOU"><li><div class="title">ரீமா உனக்கு வேற வேலை இல்லையா Psychological Thriller | Gayatri Rema, Prasanth Srinivasan | DD Movies</div><div class="domain">youtube.com &bull; July 14, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ChessBase India (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=0loiHCg_n7s"><li><div class="title">Freestyle Chesstival: Top Chess players vs NBA stars! | Ft. Magnus, Hikaru, Vidit, Tania</div><div class="domain">youtube.com &bull; July 14, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Chess.com (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=vYGZf1QhSFY"><li><div class="title">CHESSTIVAL Las Vegas!! Derrick Rose & Magnus Take On NBA & Chess Masters In Head & Hand!</div><div class="domain">youtube.com &bull; July 14, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
