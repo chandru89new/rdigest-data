@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-07-16</span>:</h1>
+  <p class="summary">There are 36 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (2)</summary><ul><a class="li" href="https://go.dev/blog/fips140"><li><div class="title">The FIPS 140-3 Go Cryptographic Module</div><div class="domain">go.dev &bull; July 16, 2025</div></li></a><a class="li" href="https://flak.tedunangst.com/post/OpenZFS-Bug-Ported-to-C"><li><div class="title">OpenZFS Bug Ported to C</div><div class="domain">flak.tedunangst.com &bull; July 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (1)</summary><ul><a class="li" href="https://gpuhammer.com/"><li><div class="title">GPUHammer: Rowhammer attacks on GPU memories are practical</div><div class="domain">gpuhammer.com &bull; July 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (4)</summary><ul><a class="li" href="https://yourstory.com/2025/07/how-agentic-ai-can-shoot-up-sales-zigment-payu-prosus-equity"><li><div class="title">How agentic AI can shoot up sales; PayU gets more fresh equity</div><div class="domain">yourstory.com &bull; July 16, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/entrepreneur-as-ecosystem-rethinking-scale-in-the-"><li><div class="title">Entrepreneur as ecosystem: Rethinking scale in the age of talent, capital and code</div><div class="domain">yourstory.com &bull; July 16, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/reelo-helps-restaurants-to-stop-relying-on-aggregators"><li><div class="title">Reelo helps restaurants to stop relying on aggregators, build a loyal customer base</div><div class="domain">yourstory.com &bull; July 16, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/zigment-is-using-agentic-ai-to-help-businesses-turn-leads-into-sales"><li><div class="title">Zigment is using agentic AI to help businesses turn leads into sales</div><div class="domain">yourstory.com &bull; July 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Wendover Productions (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=Om3IQ5HEQ8g"><li><div class="title">The Logistics of Music Festivals</div><div class="domain">youtube.com &bull; July 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">VICE (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/UBhrrLTGLZg"><li><div class="title">Delusion, or real coordinated harassment?</div><div class="domain">youtube.com &bull; July 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ThePrint (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=2drKjMLtG4A"><li><div class="title">Prometheus & Hyperion: How Zuckerberg is building entire ‘towns’ for AI dominance</div><div class="domain">youtube.com &bull; July 16, 2025</div></li></a><a class="li" href="https://www.youtube.com/shorts/tBTN0w3kzDA"><li><div class="title">Assam’s bloody war against ULFAReel 1</div><div class="domain">youtube.com &bull; July 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Dodo (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/shorts/-0tBLRoFctw"><li><div class="title">Beagle Wouldn't Stop Shaking Until She Met This Family Member | The Dodo</div><div class="domain">youtube.com &bull; July 16, 2025</div></li></a><a class="li" href="https://www.youtube.com/shorts/Yomvrxs5EtM"><li><div class="title">Cat Surprised Everyone With Her Love Of Water | The Dodo</div><div class="domain">youtube.com &bull; July 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Daily Show (youtube.com)</h2> (4)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=Rbk7leQdxbo"><li><div class="title">Jon on Trump’s Epstein Meltdown, MAGA's Mutiny & Elmo’s Antisemitic Tweets | The Daily Show</div><div class="domain">youtube.com &bull; July 16, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=7jopMwHa4Uk"><li><div class="title">Kyla Scanlon – “In This Economy? How Money and Markets Really Work” | The Daily Show</div><div class="domain">youtube.com &bull; July 16, 2025</div></li></a><a class="li" href="https://www.youtube.com/shorts/Ro8eA18Hfh0"><li><div class="title">All of Trump's hype surrounding the Epstein files is finally blowing up in his face</div><div class="domain">youtube.com &bull; July 16, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=lPGBi6_G6i4"><li><div class="title">Jordan Klepper Charts Trump's Long History with Epstein & Ghislaine Maxwell | The Daily Show</div><div class="domain">youtube.com &bull; July 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Rick Beato (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=eKxNGFjyRv0"><li><div class="title">I'm Sorry...This New Artist Completely Sucks</div><div class="domain">youtube.com &bull; July 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Principles by Ray Dalio (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/oxQOQPTrY3s"><li><div class="title">My New Book How Countries Go Broke: The Big Cycle</div><div class="domain">youtube.com &bull; July 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Parithabangal (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/N_Q5jGP-dvQ"><li><div class="title">எந்த College-ல சேர்ந்தாலும் நல்லாருக்காது அதானே | Parithabangal #shorts</div><div class="domain">youtube.com &bull; July 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Khan Academy (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=M7vYtN7SZSE"><li><div class="title">Program design: emergency response | Intro to CS - Python | Khan Academy</div><div class="domain">youtube.com &bull; July 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Jist (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=J-IU6BaRCjY"><li><div class="title">Samosa, Jalebi & Other Indian Snacks To Be Sold with ‘Cigarette-like Warning’ | Jist</div><div class="domain">youtube.com &bull; July 16, 2025</div></li></a><a class="li" href="https://www.youtube.com/shorts/BPGOyCyacXc"><li><div class="title">Toxic Leachate Is Turning Their Water Yellow And Deadly | Jist</div><div class="domain">youtube.com &bull; July 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Groww (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=RLBPDEepFhA"><li><div class="title">2 Market leader stocks down 25% from all time high</div><div class="domain">youtube.com &bull; July 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">FRONTLINE PBS | Official (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=28sQyweAPRs"><li><div class="title">Trump’s Power & the Rule of Law (full documentary) | FRONTLINE</div><div class="domain">youtube.com &bull; July 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Fermilab (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=RLHdFspXcHk"><li><div class="title">DUNE: Seeing the invisible</div><div class="domain">youtube.com &bull; July 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Down To Earth (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=cptgtPG1Md0"><li><div class="title">Banning problematic plastics may save the world up to $8 trillion by 2040</div><div class="domain">youtube.com &bull; July 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=XKB9jnJzEa0"><li><div class="title">Street Racing’s Most Dangerous Race! | Street Outlaws S5 E4 | Discovery Channel</div><div class="domain">youtube.com &bull; July 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DD Movies (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/shorts/n26ezveNCAE"><li><div class="title">ரீமா உனக்கு வேற வேலை இல்லையா Psychological Thriller | Gayatri Rema, Prasanth Srinivasan | DD Movies</div><div class="domain">youtube.com &bull; July 16, 2025</div></li></a><a class="li" href="https://www.youtube.com/shorts/ly9UCcpx_gU"><li><div class="title">ரீமா உனக்கு வேற வேலை இல்லையா Psychological Thriller | Gayatri Rema, Prasanth Srinivasan | DD Movies</div><div class="domain">youtube.com &bull; July 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Cookd (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/w1WuGfdHgrE"><li><div class="title">Episode 2 of Who Made What out now with English Subtitles 😆🤣</div><div class="domain">youtube.com &bull; July 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ChessBase India (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=YJ78zz14A24"><li><div class="title">Who's stronger? Hans Niemann + Caruana or Vidit + Aronian?</div><div class="domain">youtube.com &bull; July 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Chess.com (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=UBKbg8KeQFM"><li><div class="title">You'll Never Believe Nemo's Answer.. | Lie Detector Chess</div><div class="domain">youtube.com &bull; July 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">BBC News (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=sc3t9BSP3Zk"><li><div class="title">What Went Wrong With The BBC Gaza Documentary? | BBC Newscast</div><div class="domain">youtube.com &bull; July 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Bar & Bench (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=txBOhPg3t1I"><li><div class="title">Decisions of collegium should be subject to judical review: Sr. Adv. Asim Pandya</div><div class="domain">youtube.com &bull; July 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Angela Collier (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=xTLfzX0yNVM"><li><div class="title">backyard radio telescope: part I</div><div class="domain">youtube.com &bull; July 16, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
