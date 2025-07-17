@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-07-17</span>:</h1>
+  <p class="summary">There are 25 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (2)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/FtxrC2xtTF7wu5k6E/bodydouble-thinking-assistant-matchmaking"><li><div class="title">Bodydouble / Thinking Assistant matchmaking</div><div class="domain">lesswrong.com &bull; July 17, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/ZXxY2tccLapdjLbKm/selective-generalization-improving-capabilities-while"><li><div class="title">Selective Generalization: Improving Capabilities While Maintaining Alignment</div><div class="domain">lesswrong.com &bull; July 17, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (2)</summary><ul><a class="li" href="https://arxiv.org/abs/2503.04761"><li><div class="title">Which Economic Tasks are Performed with AI? Evidence from Millions of Claude Conversations</div><div class="domain">arxiv.org &bull; July 17, 2025</div></li></a><a class="li" href="https://blog.sebastianwick.net/posts/blender-hdr-reference-white/"><li><div class="title">Blender HDR and the reference white issue</div><div class="domain">blog.sebastianwick.net &bull; July 17, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (6)</summary><ul><a class="li" href="https://wilf.live/cobble/"><li><div class="title">Show HN: Cobble – A hard daily word game</div><div class="domain">wilf.live &bull; July 17, 2025</div></li></a><a class="li" href="https://tonsky.me/blog/gaslight-driven-development/"><li><div class="title">Gaslight-driven development</div><div class="domain">tonsky.me &bull; July 17, 2025</div></li></a><a class="li" href="https://onlycats.gg/"><li><div class="title">Onlycats</div><div class="domain">onlycats.gg &bull; July 17, 2025</div></li></a><a class="li" href="https://xboxdevwiki.net/17_Mistakes_Microsoft_Made_in_the_Xbox_Security_System"><li><div class="title">Mistakes Microsoft made in the Xbox security system</div><div class="domain">xboxdevwiki.net &bull; July 17, 2025</div></li></a><a class="li" href="https://evgeniipendragon.com/posts/i-was-wrong-about-robots-txt/"><li><div class="title">I was wrong about robots.txt</div><div class="domain">evgeniipendragon.com &bull; July 17, 2025</div></li></a><a class="li" href="https://www.smithsonianmag.com/smithsonian-institution/to-combat-summer-reading-slumps-this-timeless-childrens-television-show-tried-to-bridge-the-literacy-gap-with-the-magic-of-stories-180986984/"><li><div class="title">“Reading Rainbow” was created to combat summer reading slumps</div><div class="domain">smithsonianmag.com &bull; July 17, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (3)</summary><ul><a class="li" href="https://yourstory.com/2025/07/ixigos-revenue-soars-73-marketing-engine-for-restaurants"><li><div class="title">ixigo’s revenue soars 73%; Marketing engine for restaurants</div><div class="domain">yourstory.com &bull; July 17, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/b2b-startup-fantail-surat-textile-mills-organised-retail-man-made-fibre"><li><div class="title">B2B startup Fantail is tapping into Surat’s rich textile ecosystem</div><div class="domain">yourstory.com &bull; July 17, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/lo-foods-nears-rs-100-cr-arr-3m-funding-protein-chef"><li><div class="title">Lo! Foods nears Rs 100 Cr ARR, fuels next phase with $3.5M funding to drive Protein Chef</div><div class="domain">yourstory.com &bull; July 17, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ThePrint (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=BO8Pye-MTmg"><li><div class="title">India’s ‘triple anxiety’—What Chinese media sees in Jaishankar’s Beijing visit</div><div class="domain">youtube.com &bull; July 17, 2025</div></li></a><a class="li" href="https://www.youtube.com/shorts/CqWEQLcCeuM"><li><div class="title">AAP govt's anti-sacrilege bill & Punjab politics</div><div class="domain">youtube.com &bull; July 17, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Daily Show (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/shorts/NZZIqFH8e9Y"><li><div class="title">Trump claims the Epstein files are a hoax created by Democrats, and Jordan Klepper works it out</div><div class="domain">youtube.com &bull; July 17, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=QVG2GxIaFsM"><li><div class="title">Trump Breaks Up With MAGA Over “Boring” Epstein Files: “I Don’t Want Their Support” | The Daily Show</div><div class="domain">youtube.com &bull; July 17, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Sabine Hossenfelder (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=KiFYcuoK490"><li><div class="title">Physicists are afraid of Eric Weinstein -- and they should be</div><div class="domain">youtube.com &bull; July 17, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">newslaundry (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=Zu9l7JJ39gY"><li><div class="title">Smriti Irani, Kangana Ranaut, कांवड़िए और शर्माजी की बटर चिकन पत्रकारिता | NL Tippani 244</div><div class="domain">youtube.com &bull; July 17, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=jmPvN4GZQ7Y"><li><div class="title">The Silent Wars Behind the Gold Rush! | Gold Rush: The Dirt S6 E5 | Discovery Channel</div><div class="domain">youtube.com &bull; July 17, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DD Movies (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/shorts/z1remBF9qPo"><li><div class="title">ரீமா உனக்கு வேற வேலை இல்லையா Psychological Thriller | Gayatri Rema, Prasanth Srinivasan | DD Movies</div><div class="domain">youtube.com &bull; July 17, 2025</div></li></a><a class="li" href="https://www.youtube.com/shorts/Rn5LrUUHEiE"><li><div class="title">ரீமா உனக்கு வேற வேலை இல்லையா Psychological Thriller | Gayatri Rema, Prasanth Srinivasan | DD Movies</div><div class="domain">youtube.com &bull; July 17, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ChessBase India (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=YOHD6KKEyeo"><li><div class="title">Freestyle Chess Las Vegas | Day 1 |  Ft. Magnus, Hans, Hikaru, Vidit, Pragg, Arjun</div><div class="domain">youtube.com &bull; July 17, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=S7XdOAq4FI4"><li><div class="title">The Grand Jacket Ceremony and Drawing of Colors of the FreeStyle Chess in Las Vegas</div><div class="domain">youtube.com &bull; July 17, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Chess.com (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=wPcDE-mzSlU"><li><div class="title">Freestyle Chess Grand Slam Las Vegas: ft. Magnus, Hikaru, Fabi, Hans & More | Group Stage</div><div class="domain">youtube.com &bull; July 17, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
