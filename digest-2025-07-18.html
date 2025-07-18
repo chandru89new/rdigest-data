@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-07-18</span>:</h1>
+  <p class="summary">There are 22 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">kottke.org (feeds.kottke.org)</h2> (1)</summary><ul><a class="li" href="https://kottke.org/25/07/contemplative-landscapes-by-noah-kalina"><li><div class="title">Contemplative Landscapes by Noah Kalina</div><div class="domain">kottke.org &bull; July 18, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (1)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/Zpqhds4dmLaBwTcnp/trying-the-obvious-thing"><li><div class="title">Trying the Obvious Thing</div><div class="domain">lesswrong.com &bull; July 18, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (3)</summary><ul><a class="li" href="https://lewiscampbell.tech/blog/250718.html"><li><div class="title">NIH Is Far Cheaper Than The Wrong Dependency</div><div class="domain">lewiscampbell.tech &bull; July 18, 2025</div></li></a><a class="li" href="https://www.figma.com/blog/supporting-faster-file-load-times-with-memory-optimizations-in-rust/"><li><div class="title">Supporting Faster File Load Times with Memory Optimizations in Rust</div><div class="domain">figma.com &bull; July 18, 2025</div></li></a><a class="li" href="https://forgejo.org/2025-07-release-v12-0/"><li><div class="title">Forgejo v12</div><div class="domain">forgejo.org &bull; July 18, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (5)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=WZzTp3vSC0g"><li><div class="title">Out Run: Amiga Edition – Launch Trailer [video]</div><div class="domain">youtube.com &bull; July 18, 2025</div></li></a><a class="li" href="https://apnews.com/article/louisiana-coastal-restoration-gulf-oil-spill-affaae2877bf250f636a633a14fbd0c7"><li><div class="title">Louisiana cancels $3B coastal repair funded by oil spill settlement</div><div class="domain">apnews.com &bull; July 18, 2025</div></li></a><a class="li" href="https://pweb.cfa.harvard.edu/news/astronomers-discover-rare-distant-object-sync-neptune"><li><div class="title">Astronomers Discover Rare Distant Object in Sync with Neptune</div><div class="domain">pweb.cfa.harvard.edu &bull; July 18, 2025</div></li></a><a class="li" href="https://www.nytimes.com/2025/07/17/business/stephen-colbert-late-show-ending.html"><li><div class="title">CBS Canceling 'Late Show with Stephen Colbert' After Next Season</div><div class="domain">nytimes.com &bull; July 18, 2025</div></li></a><a class="li" href="https://overengineer.dev/blog/2021/04/25/usb-c-hub-madness/"><li><div class="title">USB-C hubs and my slow descent into madness (2021)</div><div class="domain">overengineer.dev &bull; July 18, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (2)</summary><ul><a class="li" href="https://yourstory.com/2025/07/no-dark-stores-no-fleets-shiprockets-decentralised-quick-commerce-play"><li><div class="title">No dark stores, no fleets: Shiprocket’s decentralised quick commerce play</div><div class="domain">yourstory.com &bull; July 18, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/zoho-zia-llm-healthcare-dealmaking-slows-byjus-lawsuit"><li><div class="title">Zoho trots out its Zia LLM; Healthcare dealmaking slows</div><div class="domain">yourstory.com &bull; July 18, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ThePrint (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=wVBPswIcEQo"><li><div class="title">'Shooting is my childhood passion'-Meet IPS officer Ingit Pratap Singh who is chasing olympic dream</div><div class="domain">youtube.com &bull; July 18, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Daily Show (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=FkgsXhArVww"><li><div class="title">Desi Lydic Foxsplains the Epstein Files | The Daily Show</div><div class="domain">youtube.com &bull; July 18, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=S7amKKE8h4c"><li><div class="title">Trump Targets Fed Reserve Chair Jerome Powell, Who Says, “Come at Me, B*tch!” | The Daily Show</div><div class="domain">youtube.com &bull; July 18, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">newline (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=rATzXLIM9ac"><li><div class="title">Loading Multiple Images From JSON to Deep Zoom Like a Pro by Ian, Creator  of OpenSeadragon</div><div class="domain">youtube.com &bull; July 18, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">NEVER TOO SMALL (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=CWt3fQNgvqE"><li><div class="title">Calm Compact Paris Apartment with Unexpected Storage, 40sqm/430sqft</div><div class="domain">youtube.com &bull; July 18, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=6igoP8k2f3I"><li><div class="title">When the Waves Hide the Gold! | Bering Sea Gold S12 E6 | Full Episode | Discovery Channel</div><div class="domain">youtube.com &bull; July 18, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DD Movies (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/hNZSvDGMBEE"><li><div class="title">ரீமா உனக்கு வேற வேலை இல்லையா Psychological Thriller | Gayatri Rema, Prasanth Srinivasan | DD Movies</div><div class="domain">youtube.com &bull; July 18, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ChessBase India (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/shorts/3X-5U5nisGA"><li><div class="title">Hans Niemann HAPPY after Magnus LOSES the Game 😅😅 #chess #magnuscarlsen #hansniemann</div><div class="domain">youtube.com &bull; July 18, 2025</div></li></a><a class="li" href="https://www.youtube.com/shorts/bAiN9Un8FDA"><li><div class="title">Wholesome WIFE & DAUGHTER Moment in Chess 😭♥️ #chess #magnuscarlsen #freestylechess</div><div class="domain">youtube.com &bull; July 18, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">BBC News (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=SbTCwUNXQ0Y"><li><div class="title">Personal details of UK special forces and spies were included in Afghan data breach | BBC News</div><div class="domain">youtube.com &bull; July 18, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
