@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-07-23</span>:</h1>
+  <p class="summary">There are 39 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (1)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/vPAFPpRDEg3vjhNFi/unfaithful-chain-of-thought-as-nudged-reasoning"><li><div class="title">Unfaithful chain-of-thought as nudged reasoning</div><div class="domain">lesswrong.com &bull; July 23, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (3)</summary><ul><a class="li" href="https://www.gsma.com/solutions-and-impact/technologies/networks/operator-platform-hp/camara-2/"><li><div class="title">CAMARA: Open-source API for telecom and 5G networks</div><div class="domain">gsma.com &bull; July 23, 2025</div></li></a><a class="li" href="https://alistairshepherd.uk/writing/open-graph-licensing/"><li><div class="title">A media company demanded a license fee for an Open Graph image I used</div><div class="domain">alistairshepherd.uk &bull; July 23, 2025</div></li></a><a class="li" href="https://maurycyz.com/misc/cc/"><li><div class="title">Why you can't color calibrate deep space photos</div><div class="domain">maurycyz.com &bull; July 23, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Sympolymathesy, by Chris Krycho (v5.chriskrycho.com)</h2> (1)</summary><ul><a class="li" href="https://v5.chriskrycho.com/notes/cleanshotx-another-example-of-a-good-subscription-model/"><li><div class="title">[notes] CleanShotX: Another Example of a Good ‘Subscription’ Model</div><div class="domain">v5.chriskrycho.com &bull; July 23, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (4)</summary><ul><a class="li" href="https://yourstory.com/2025/07/startup-powering-homes-rooftop-turbine-electricity-wind-energy"><li><div class="title">Winds of change: This startup is powering homes with rooftop turbine-powered electricity</div><div class="domain">yourstory.com &bull; July 23, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/showroom-b2b-is-using-ai-experience-centres-fashion-supply-chain"><li><div class="title">Showroom B2B is using AI and experience centres to fix India’s broken fashion supply chain</div><div class="domain">yourstory.com &bull; July 23, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/paytm-earns-a-profit-finally-fintech-milky-mist-dairy-company-ipo"><li><div class="title">Paytm earns a profit, finally; What lies ahead for Milky Mist</div><div class="domain">yourstory.com &bull; July 23, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/priyanka-gill-coluxe-friends-family-funding-round-digital-store-august"><li><div class="title">Priyanka Gill's lab-grown diamond startup Coluxe closes friends and family funding round</div><div class="domain">yourstory.com &bull; July 23, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Vikkals (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/oo5LUwjilDY"><li><div class="title">என்னடா நீங்களே அடிச்சிக்கிறீங்க 😂😂 #vikkals #comedy</div><div class="domain">youtube.com &bull; July 23, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ThePrint (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=p6CMW5XiNkc"><li><div class="title">A Muslim woman is telling Ramayana, Mahabharata in Urdu. ‘Stories belong to all’</div><div class="domain">youtube.com &bull; July 23, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ThePrimeTime (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=Pgb6CJgXlN4"><li><div class="title">Giving in to the AI Hype</div><div class="domain">youtube.com &bull; July 23, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Wire (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=q4kVY3VB8WM"><li><div class="title">Supreme Court Has Let Down the Constitution in J&K Case, Says Former Home Secretary</div><div class="domain">youtube.com &bull; July 23, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Economist (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=hIujGLfKcuU"><li><div class="title">Has the MAGA movement arrived in Japan?</div><div class="domain">youtube.com &bull; July 23, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Dodo (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=DDrafDeFuhI"><li><div class="title">Skinny Mama Dog Chained Up With Her Puppies Gets A New Life | The Dodo</div><div class="domain">youtube.com &bull; July 23, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Daily Show (youtube.com)</h2> (3)</summary><ul><a class="li" href="https://www.youtube.com/shorts/0pu5BkfsCf8"><li><div class="title">What drew Anthony Carrigan to playing Metamorpho in the new "Superman" movie? Pathos and an accent</div><div class="domain">youtube.com &bull; July 23, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=TwOLo_U6bTw"><li><div class="title">Jon Stewart Reacts to Colbert's Cancellation & Trump's "Bawdy" Epstein Doodles | The Daily Show</div><div class="domain">youtube.com &bull; July 23, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=TIFjafya_eQ"><li><div class="title">Trump Dodges Epstein by Attacking Obama, Dropping MLK Files & Trying to Change Coke | The Daily Show</div><div class="domain">youtube.com &bull; July 23, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Sisyphus 55 (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/paQOU8SqiUc"><li><div class="title">stendhal syndrome pt  6 #crush #film #philosophy #love #podcast #arthistory</div><div class="domain">youtube.com &bull; July 23, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">SciFri (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=CXX4ABMF59k"><li><div class="title">The Leap: And Then The Sub Went Silent</div><div class="domain">youtube.com &bull; July 23, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Rick Beato (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/cyCvYP3Zqvk"><li><div class="title">Brad Paisley on Vox Amps #guitar #guitarist #bradpaisley #shorts ￼</div><div class="domain">youtube.com &bull; July 23, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Principles by Ray Dalio (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/p3UxMdTTPJc"><li><div class="title">The Invention of Capitalism in Building Powerful Empires</div><div class="domain">youtube.com &bull; July 23, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Megaprojects (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=tF36bVn0C44"><li><div class="title">Moscow's Immense Secret Subway</div><div class="domain">youtube.com &bull; July 23, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Loose Talk (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=PpWfsR0OClU"><li><div class="title">Apni Had Mein Raho Pagal Aadmi! 🤣😭 | Moin Akhtar | Anwar Maqsood | Loose Talk</div><div class="domain">youtube.com &bull; July 23, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Law Chambers of Amish Aggarwala (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=D023bClnEGk"><li><div class="title">Is filing anticipatory bail after an FIR a mistake?</div><div class="domain">youtube.com &bull; July 23, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Krishnamurti Foundation Trust (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/4LqE5fZmN44"><li><div class="title">Action | Krishnamurti</div><div class="domain">youtube.com &bull; July 23, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Khan Academy (youtube.com)</h2> (5)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=YbE6SDnZrB4"><li><div class="title">Digital payment methods | Consumer credit | Financial Literacy | Khan Academy</div><div class="domain">youtube.com &bull; July 23, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=Ri0arQOegsc"><li><div class="title">Debt management | Loans and debt | Financial Literacy | Khan Academy</div><div class="domain">youtube.com &bull; July 23, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=Q9_mSUqYZxs"><li><div class="title">Banking unit overview | Teacher resources | Financial Literacy | Khan Academy</div><div class="domain">youtube.com &bull; July 23, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=QEdQw9pZV14"><li><div class="title">Amortization schedules and time to pay off | Loans and debt | Financial Literacy | Khan Academy</div><div class="domain">youtube.com &bull; July 23, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=NwWiRoD_jYY"><li><div class="title">Real world: SMART goals</div><div class="domain">youtube.com &bull; July 23, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ICM Indian Classical Music (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/shorts/QXUbNjhKEQ0"><li><div class="title">Ustad Zakir Hussain Tabla Solo Snippet #icmtabla #classical #music #shorts</div><div class="domain">youtube.com &bull; July 23, 2025</div></li></a><a class="li" href="https://www.youtube.com/shorts/R2WQGJ6lJCA"><li><div class="title">Raheshri Tillana By Abby V & Sukanya Varadharajan #icmvocal #classical #music #icmtabla #shorts</div><div class="domain">youtube.com &bull; July 23, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Huberman Lab Clips (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=s6cozqL2TF8"><li><div class="title">The Most Tested, Safe, & Effective Sports Supplement | Dr. Layne Norton & Dr. Andrew Huberman</div><div class="domain">youtube.com &bull; July 23, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Down To Earth (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/ggXzxrixc1k"><li><div class="title">#pune #urbanheat due to #building materials #architecture #climatechange #globalwarming #heatwave</div><div class="domain">youtube.com &bull; July 23, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=CbpTkfAUHi4"><li><div class="title">Hunter's Sudden Stand Against Todd Reaches Boiling Point | Gold Rush S6 E4 | Discovery Channel</div><div class="domain">youtube.com &bull; July 23, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DD Movies (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/o3FPm1l342E"><li><div class="title">தளபதி முதலமைச்சர் ஆனா எப்படி இருக்கும் | Thalapathy Vijay Political Movie</div><div class="domain">youtube.com &bull; July 23, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ChessBase India (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/Hn2HFa8S080"><li><div class="title">Praggnanandhaa CHILLING in Las Vegas 😎♥️🤝 #praggnanandhaa #chess #lasvegas</div><div class="domain">youtube.com &bull; July 23, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Chess.com (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/aPXY3GyC8pc"><li><div class="title">Levon Aronian is the CHAMP</div><div class="domain">youtube.com &bull; July 23, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
