@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-07-24</span>:</h1>
+  <p class="summary">There are 22 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (1)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/FNJF3SoNiwceAQ69W/behaviorist-rl-reward-functions-lead-to-scheming"><li><div class="title">“Behaviorist” RL reward functions lead to scheming</div><div class="domain">lesswrong.com &bull; July 24, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (1)</summary><ul><a class="li" href="https://hackaday.com/2025/07/23/the-death-of-industrial-design-and-the-era-of-dull-electronics/"><li><div class="title">The Death Of Industrial Design And The Era Of Dull Electronics</div><div class="domain">hackaday.com &bull; July 24, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (2)</summary><ul><a class="li" href="https://smallcypress.bearblog.dev/a-small-web-july/"><li><div class="title">A small web July</div><div class="domain">smallcypress.bearblog.dev &bull; July 24, 2025</div></li></a><a class="li" href="https://bgp.tools/"><li><div class="title">BGP.Tools: Browse the Internet Ecosystem</div><div class="domain">bgp.tools &bull; July 24, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Diplomat (thediplomat.com)</h2> (1)</summary><ul><a class="li" href="https://thediplomat.com/2025/07/erasing-confucian-cosmology-how-harmony-lost-its-soul/"><li><div class="title">Erasing Confucian Cosmology: How Harmony Lost Its Soul</div><div class="domain">thediplomat.com &bull; July 24, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (6)</summary><ul><a class="li" href="https://yourstory.com/2025/07/spacetech-startup-orbitaid-aerospace-satellites-back-to-life"><li><div class="title">Spacetech startup OrbitAID Aerospace is bringing defunct satellites back to life</div><div class="domain">yourstory.com &bull; July 24, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/ahmedabad-space-tech-startup-piersight-satellite-oceanic-surveillance"><li><div class="title">In a league of its own: This Ahmedabad space tech startup is working on persistent oceanic surveillance</div><div class="domain">yourstory.com &bull; July 24, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/doorstep-care-furry-friends-building-indias-defence-backbone"><li><div class="title">Doorstep care for our furry friends; Building India’s defence backbone</div><div class="domain">yourstory.com &bull; July 24, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/staying-the-course-how-to-build-portfolios-withstand-volatility"><li><div class="title">Staying the course: How to build portfolios that withstand volatility</div><div class="domain">yourstory.com &bull; July 24, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/pawspace-structure-india-fragmented-pet-care-industry"><li><div class="title">How PawSpace is bringing structure to India’s fragmented pet care industry</div><div class="domain">yourstory.com &bull; July 24, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/d2c-brands-and-marketplace-see-strong-mid-year-sal"><li><div class="title">Ecommerce order volumes up 19% during mid-year sales, driven by demand in Tier II cities</div><div class="domain">yourstory.com &bull; July 24, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ThePrint (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=tTXrFjCS55o"><li><div class="title">LIVE: Lok Sabha</div><div class="domain">youtube.com &bull; July 24, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=AVtrzXO5UEE"><li><div class="title">Pakistan wants to revive jirgas—council of elders who ordered honour killing of Baloch couple</div><div class="domain">youtube.com &bull; July 24, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Daily Show (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=-3DhBa_65I4"><li><div class="title">Rob Franklin - Race, Class & Privilege in “Great Black Hope” | The Daily Show</div><div class="domain">youtube.com &bull; July 24, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=EToRAdejpHs"><li><div class="title">Trump Knew He Was in the Epstein Files, Launches Attack on Obama | The Daily Show</div><div class="domain">youtube.com &bull; July 24, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">newline (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/jw7Z_EjbdEQ"><li><div class="title">Zoom Into Exactly What You Click in OpenSeadragon by Ian, Creator  of OpenSeadragon</div><div class="domain">youtube.com &bull; July 24, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">MIT OpenCourseWare (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=GOgA8JGUiwI"><li><div class="title">Lecture 3: Casework and Strong Induction</div><div class="domain">youtube.com &bull; July 24, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=gVdrFsnOo_s"><li><div class="title">Lecture 4: State Machines</div><div class="domain">youtube.com &bull; July 24, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Jordindian (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=pUREzKCW6Wk"><li><div class="title">Types Of Waiters | Restaurants | Ft @NiharikaNm  | Jordindian</div><div class="domain">youtube.com &bull; July 24, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=hf88pbNahnU"><li><div class="title">The Gold That Got Away! | Bering Sea Gold S12 E10 | Full Episode | Discovery Channel</div><div class="domain">youtube.com &bull; July 24, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DD Movies (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/ZGAUPKvhKPA"><li><div class="title">தளபதி முதலமைச்சர் ஆனா எப்படி இருக்கும் | Thalapathy Vijay Political Movie</div><div class="domain">youtube.com &bull; July 24, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ChessBase India (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=9jYM5uU5C-w"><li><div class="title">Can a 2305 rated FM hold a draw against a 2675 rated super GM | FM Raghav v GM Eljanov</div><div class="domain">youtube.com &bull; July 24, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
