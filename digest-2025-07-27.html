@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-07-27</span>:</h1>
+  <p class="summary">There are 21 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (3)</summary><ul><a class="li" href="https://eugene-andrienko.com/en/it/2025/07/24/x11-configuration-simple.html"><li><div class="title">How to configure X11 in a simple way</div><div class="domain">eugene-andrienko.com &bull; July 27, 2025</div></li></a><a class="li" href="https://github.com/mrdaemon/exosphere"><li><div class="title">exosphere: A simple centralized patch management and reporting tool for unix systems</div><div class="domain">github.com &bull; July 27, 2025</div></li></a><a class="li" href="https://utcc.utoronto.ca/~cks/space/blog/programming/BashGoodSetEReports"><li><div class="title">Getting decent error reports in Bash when you're using 'set -e'</div><div class="domain">utcc.utoronto.ca &bull; July 27, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (2)</summary><ul><a class="li" href="https://yourstory.com/2025/07/india-master-of-wine-makaibari-tea-meta-openai-china-ai-plans-amagi-media-labs-ipo"><li><div class="title">Meet India’s Master of Wine; The tea traditions of Makaibari</div><div class="domain">yourstory.com &bull; July 27, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/preventive-healthcare-non-invasive-technology-devices-future"><li><div class="title">Preventive healthcare: Why non-invasive tech is the future</div><div class="domain">yourstory.com &bull; July 27, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Trevor Noah (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=OQ4ZMg7RsXg"><li><div class="title">Don't Disrespect The Flag! Trevor Noah (from 'Where Was I' on Netflix!)</div><div class="domain">youtube.com &bull; July 27, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ThePrint (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=mMfDB2j_fdo"><li><div class="title">Kabul to Canada & Oxford: Afghan Tech CEO Sara Wahedi is on a mission to defy Taliban,empower women</div><div class="domain">youtube.com &bull; July 27, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=lCtMIYpjtBc"><li><div class="title">American Airlines passengers evacuated from smoky plane on Denver tarmac after landing gear issue</div><div class="domain">youtube.com &bull; July 27, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Dodo (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=WkvhDWPbKps"><li><div class="title">Woman Wakes Up To A Pit Bull Curled Up On Her Outdoor Couch | The Dodo</div><div class="domain">youtube.com &bull; July 27, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/YIRaY-cgq9Y"><li><div class="title">Ella</div><div class="domain">youtube.com &bull; July 27, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">newslaundry (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=dMpxoN5JNkE"><li><div class="title">Jagdeep Dhankhar's exit, Modiji’s monologue & the murder no one covered | TV Newsance 307</div><div class="domain">youtube.com &bull; July 27, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Kommune India (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=-Gob_9v42O8"><li><div class="title">#Aalas | #Hindi Musical #Poetry on #Laziness | #ParthVasani & #TanyaMathur | #SpokenFest Mumbai 2024</div><div class="domain">youtube.com &bull; July 27, 2025</div></li></a><a class="li" href="https://www.youtube.com/shorts/AxAnggzduck"><li><div class="title">#Aalas | #Hindi Musical #Poetry on #Laziness | #ParthVasani & #TanyaMathur | #SpokenFest Mumbai 2024</div><div class="domain">youtube.com &bull; July 27, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=nMR6vL3G5_Q"><li><div class="title">Gold Mining Among Brutal Storm | Bering Sea Gold S12 E12 | Discovery Channel</div><div class="domain">youtube.com &bull; July 27, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DD Movies (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/qY7Ab0YWLfk"><li><div class="title">தளபதி முதலமைச்சர் ஆனா எப்படி இருக்கும் | Thalapathy Vijay Political Movie</div><div class="domain">youtube.com &bull; July 27, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Cleo Abram (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=znWFsB0f0EA"><li><div class="title">This Experiment Only Works in a Falling Plane</div><div class="domain">youtube.com &bull; July 27, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ChessBase India (youtube.com)</h2> (4)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=a8p_QsHCnbw"><li><div class="title">You miss a beat and he is all over you | Arjun Erigaisi vs Magnus Carlsen | Freestyle Chess 2025</div><div class="domain">youtube.com &bull; July 27, 2025</div></li></a><a class="li" href="https://www.youtube.com/shorts/4AuAFe5pNAQ"><li><div class="title">Their friendship❤️ #praggnanandhaa #nihalsarin #shorts</div><div class="domain">youtube.com &bull; July 27, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=o9BoCrpFLnQ"><li><div class="title">Nihal Sarin on joining @S8ULGG and qualifying for the grand finals | Esports World Cup</div><div class="domain">youtube.com &bull; July 27, 2025</div></li></a><a class="li" href="https://www.youtube.com/shorts/80EwOsX6j0A"><li><div class="title">Magnus Carlsen in Riyadh🔥 #shorts</div><div class="domain">youtube.com &bull; July 27, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Chess.com (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=p9lPyeKYzOE"><li><div class="title">ESPORTS WORLD CUP: Hans, Anish, Levon, Pragg Compete In KO Stage! LCQ Playoffs</div><div class="domain">youtube.com &bull; July 27, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
