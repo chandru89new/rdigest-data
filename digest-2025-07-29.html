@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-07-29</span>:</h1>
+  <p class="summary">There are 22 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">kottke.org (feeds.kottke.org)</h2> (1)</summary><ul><a class="li" href="https://kottke.org/25/07/0047227-season-4-of-star-trek"><li><div class="title">Season 4 of Star Trek: Strange New Worlds is going to feature...</div><div class="domain">kottke.org &bull; July 29, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (1)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/GpwH2hvKdn9LBuz9A/recursions-on-lessonline-2025"><li><div class="title">Recursions on LessOnline 2025</div><div class="domain">lesswrong.com &bull; July 29, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (3)</summary><ul><a class="li" href="https://ismaelcelis.com/posts/2025-07-identity-and-behaviour/"><li><div class="title">Identity and behaviour</div><div class="domain">ismaelcelis.com &bull; July 29, 2025</div></li></a><a class="li" href="https://blog.appliedcomputing.io/p/contraction-hierarchies-hmc-clinic"><li><div class="title">Contraction Hierarchies: HMC Clinic Project Recap</div><div class="domain">blog.appliedcomputing.io &bull; July 29, 2025</div></li></a><a class="li" href="https://blog.whenhen.com/posts/no-more-erlang-manuals.html"><li><div class="title">No more Erlang manuals</div><div class="domain">blog.whenhen.com &bull; July 29, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (2)</summary><ul><a class="li" href="https://www.wsj.com/lifestyle/careers/ai-entry-level-jobs-graduates-b224d624"><li><div class="title">AI Is Wrecking a Fragile Job Market for College Graduates</div><div class="domain">wsj.com &bull; July 29, 2025</div></li></a><a class="li" href="https://fintechdystopia.com/"><li><div class="title">FinTech Dystopia</div><div class="domain">fintechdystopia.com &bull; July 29, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Diplomat (thediplomat.com)</h2> (1)</summary><ul><a class="li" href="https://thediplomat.com/2025/07/the-curious-congruence-of-indias-voter-list-revision-with-the-anti-migrant-drive/"><li><div class="title">The Curious Congruence of India’s Voter List Revision With the ‘Anti-migrant Drive’</div><div class="domain">thediplomat.com &bull; July 29, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (4)</summary><ul><a class="li" href="https://yourstory.com/2025/07/ostara-advisors-blueprint-crack-climate-tech-funding"><li><div class="title">Ostara Advisors’ blueprint on how to crack climate tech funding</div><div class="domain">yourstory.com &bull; July 29, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/climate-tech-investments-ostara-advisors-go-digit-general-insurance"><li><div class="title">Climate tech investments 101; What led to Go Digit’s Q1 profit soaring</div><div class="domain">yourstory.com &bull; July 29, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/int2cruises-is-simplifying-cruise-planning-for-indian-travellers"><li><div class="title">Charting new waters: Int2Cruises is simplifying cruise planning for Indian travellers</div><div class="domain">yourstory.com &bull; July 29, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/the-role-of-cloud-in-achieving-sustainability-goals"><li><div class="title">The role of cloud infrastructure in achieving sustainability goals</div><div class="domain">yourstory.com &bull; July 29, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ThePrint (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=ldjRSlQGz-Y"><li><div class="title">Maharashtra’s language war reaches West Bengal. Actor Prosenjit Chatterjee is the first victim</div><div class="domain">youtube.com &bull; July 29, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=lbZU9ml88r0"><li><div class="title">Jagdeep Dhankhar's resignation as V-P is another strong message to RSS from 'saksham' BJP</div><div class="domain">youtube.com &bull; July 29, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/4WBHYZ4aThI"><li><div class="title">Andria</div><div class="domain">youtube.com &bull; July 29, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">National Geographic (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/fw2eYJt5YQs"><li><div class="title">The stories of those who lived through Katrina, only to face the manmade disasters that followed.</div><div class="domain">youtube.com &bull; July 29, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">LastWeekTonight (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=xKju7fqjE6Q"><li><div class="title">S12 E18: Epstein, Gang Databases & Moon Mammoths: 7/27/25: Last Week Tonight with John Oliver</div><div class="domain">youtube.com &bull; July 29, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=rlR8d9JVWtQ"><li><div class="title">Gang Databases: Last Week Tonight with John Oliver (HBO)</div><div class="domain">youtube.com &bull; July 29, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Khan Academy (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=IFoUH74Cv0E"><li><div class="title">Functions in Python (FULL UNIT) | Intro to CS - Python | Khan Academy</div><div class="domain">youtube.com &bull; July 29, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=uBAmmxHMdjA"><li><div class="title">The Ultimate Test of Brotherhood | Street Outlaw S5 E13 | Discovery Channel</div><div class="domain">youtube.com &bull; July 29, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DD Movies (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/7FEwox9ftNU"><li><div class="title">தளபதி முதலமைச்சர் ஆனா எப்படி இருக்கும் | Thalapathy Vijay Political Movie</div><div class="domain">youtube.com &bull; July 29, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Cleo Abram (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/XtTvXFwttqE"><li><div class="title">Huge New Iceland Volcano Eruption</div><div class="domain">youtube.com &bull; July 29, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
