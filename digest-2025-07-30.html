@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-07-30</span>:</h1>
+  <p class="summary">There are 19 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">kottke.org (feeds.kottke.org)</h2> (1)</summary><ul><a class="li" href="https://kottke.org/25/07/0047248-substack-sent-a-push-aler"><li><div class="title">Substack sent a push alert promoting a Nazi blog. &#8220;Substack is primarily...</div><div class="domain">kottke.org &bull; July 30, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (1)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/eDX3rtquExT3ECxn2/the-many-paths-to-permanent-disempowerment-even-with"><li><div class="title">The many paths to permanent disempowerment even with shutdownable AIs (MATS project summary for feedback)</div><div class="domain">lesswrong.com &bull; July 30, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (1)</summary><ul><a class="li" href="https://earthquake.usgs.gov/earthquakes/eventpage/us6000qw60/executive"><li><div class="title">M8.7 earthquake in Western Pacific, tsunami warning issued</div><div class="domain">earthquake.usgs.gov &bull; July 30, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (4)</summary><ul><a class="li" href="https://yourstory.com/2025/07/ai-talent-acquisition-human-element-daryl-pinto-microsoft-india"><li><div class="title">AI is changing the game, but the human element still matters: Microsoft India Talent Acquisition Head</div><div class="domain">yourstory.com &bull; July 30, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/lenskart-eyes-rs-8-000-cr-ipo-swiggy-annual-report-card"><li><div class="title">Lenskart eyes Rs 8,000 Cr IPO; Swiggy delivers annual report card</div><div class="domain">yourstory.com &bull; July 30, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/mumbai-startup-india-pickleball-craze-tournament-platform"><li><div class="title">From finding courts to tournaments: The startup bringing order to India’s pickleball craze</div><div class="domain">yourstory.com &bull; July 30, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/feeding-focus-how-ai-driven-cafeterias-are-boosting-productivity"><li><div class="title">Feeding focus: How AI-driven cafeterias are boosting productivity at work</div><div class="domain">yourstory.com &bull; July 30, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ThePrint (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=MOdMKLeSlQw"><li><div class="title">A high-profile brawl in Karnataka Bhavan & Yogi-Brij Bhushan meet fuels talks of ‘re-union’</div><div class="domain">youtube.com &bull; July 30, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Daily Show (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=5Y-LofzaMRE"><li><div class="title">Trump Bombarded by Epstein Q's in Scotland, MAGA “Caddies” Provide Cover Back Home | The Daily Show</div><div class="domain">youtube.com &bull; July 30, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=xrcAU8iWlqc"><li><div class="title">Trump Invites Jesus to the Workplace & GOP Prays for a Tariff Rebate | The Daily Show</div><div class="domain">youtube.com &bull; July 30, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/q2UnURV4IjY"><li><div class="title">Jodie</div><div class="domain">youtube.com &bull; July 30, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Rick Beato (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/o54bE5X4nVE"><li><div class="title">Rick Beato Live Show Nashville 9/11 & San Francisco 9/25 #vanderbiltuniversity</div><div class="domain">youtube.com &bull; July 30, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Kurzgesagt – In a Nutshell (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=7wK4peez9zE"><li><div class="title">Let's Kill You a Billion Times to Make You Immortal</div><div class="domain">youtube.com &bull; July 30, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=Fsf_jsRY9XE"><li><div class="title">Midwest Heat Meets West Coast! | Street Outlaws S5 E14 | Discovery Channel</div><div class="domain">youtube.com &bull; July 30, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DD Movies (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/-WYOvER4lOs"><li><div class="title">தளபதி முதலமைச்சர் ஆனா எப்படி இருக்கும் | Thalapathy Vijay Political Movie</div><div class="domain">youtube.com &bull; July 30, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ChessNetwork (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=ChshH8mlaxQ"><li><div class="title">Chess Prodigy Erdogmus Hits 2823 Performance at 14!!</div><div class="domain">youtube.com &bull; July 30, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Chess.com (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=qsr7rvPEkOw"><li><div class="title">ESPORTS WORLD CUP 2025: Magnus v. Nodirbek, Hikaru v. Sindarov & More Clash In Finals Day 1</div><div class="domain">youtube.com &bull; July 30, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">BBC News (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=Or97Mo97NAI"><li><div class="title">India says it killed militants who shot dead tourists in Kashmir | BBC News</div><div class="domain">youtube.com &bull; July 30, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=hTToVixFy0o"><li><div class="title">Widespread tsunami warnings after magnitude 8.8 quake off Russia's east coast | BBC News</div><div class="domain">youtube.com &bull; July 30, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
