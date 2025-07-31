@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-07-31</span>:</h1>
+  <p class="summary">There are 22 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">kottke.org (feeds.kottke.org)</h2> (2)</summary><ul><a class="li" href="https://kottke.org/25/07/0047251-how-to-leave-substack-unf"><li><div class="title">How to Leave Substack. &#8220;Unfortunately, Substack willingly platforms, and allows bad actors...</div><div class="domain">kottke.org &bull; July 31, 2025</div></li></a><a class="li" href="https://kottke.org/25/07/0047253-the-wirecutters-list-of-t"><li><div class="title">The Wirecutter&#8217;s list of the best canned cocktails. Very interested to hear...</div><div class="domain">kottke.org &bull; July 31, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (2)</summary><ul><a class="li" href="https://alexandermigdal.com/paradise-lost/"><li><div class="title">Paradise Lost</div><div class="domain">alexandermigdal.com &bull; July 31, 2025</div></li></a><a class="li" href="https://undeadly.org/cgi?action=article;sid=20250730080301"><li><div class="title">Classic Common Desktop Environment coming to OpenBSD</div><div class="domain">undeadly.org &bull; July 31, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (5)</summary><ul><a class="li" href="https://yourstory.com/2025/07/india-projected-grow-64-2025-2026-imf"><li><div class="title">India projected to grow 6.4% in 2025 & 2026, reform momentum driving stable growth: IMF</div><div class="domain">yourstory.com &bull; July 31, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/ai-changing-hiring-game-swiggys-q1-fy26-results"><li><div class="title">AI is changing the hiring game; Swiggy’s Q1 FY26 results in focus</div><div class="domain">yourstory.com &bull; July 31, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/guwahati-based-quintinno-labs-powering-clean-energy"><li><div class="title">Towards a gridless future: How Quintinno Labs is powering the clean energy revolution from a car trunk</div><div class="domain">yourstory.com &bull; July 31, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/swiggy-q1-preview-all-eyes-on-quick-commerce-and-profitability"><li><div class="title">Swiggy Q1 preview: All eyes on quick commerce and profitability</div><div class="domain">yourstory.com &bull; July 31, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/startups-lawsuits-and-liability-why-insurance-is-no-longer-optional"><li><div class="title">Startups, lawsuits, and liability: Why insurance is no longer optional in 2025</div><div class="domain">yourstory.com &bull; July 31, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Y Combinator (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/tJ2C9a5GBOs"><li><div class="title">Video Generation as a Primitive</div><div class="domain">youtube.com &bull; July 31, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Think School (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/QMP7KPKjgh4"><li><div class="title">Tools Amplify You, Not Change You</div><div class="domain">youtube.com &bull; July 31, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Dodo (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/gtol8wYkLzQ"><li><div class="title">Woman Brings Home A Stray Dog Who Stole Her Food | The Dodo</div><div class="domain">youtube.com &bull; July 31, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Daily Show (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=-RmBZTR_SnU"><li><div class="title">Joe Rogan: The Path to Roganlightenment | The Daily Show</div><div class="domain">youtube.com &bull; July 31, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=TVhOOpQlP9U"><li><div class="title">Trump Asks Hegseth to Cool It With the Polygraphs & Kristi Noem Goes Horse Girl | The Daily Show</div><div class="domain">youtube.com &bull; July 31, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/DmujLWCsJd0"><li><div class="title">Shawn</div><div class="domain">youtube.com &bull; July 31, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Parithabangal (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=X8kcX-D16q0"><li><div class="title">Trending Reels Paavangal | Parithabangal</div><div class="domain">youtube.com &bull; July 31, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=qbYmg6eBRds"><li><div class="title">Raw Horsepower & Underground Racing Drama | Street Outlaws S5 E15 | Discovery Channel</div><div class="domain">youtube.com &bull; July 31, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DD Movies (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/gZH0fEgOtRQ"><li><div class="title">தளபதி முதலமைச்சர் ஆனா எப்படி இருக்கும் | Thalapathy Vijay Political Movie</div><div class="domain">youtube.com &bull; July 31, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ChessBase India (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=BpbLLEfUGtQ"><li><div class="title">Esports World Cup 2025 Day 2 | Can Nihal Sarin reach top 8? | Hindi commentary</div><div class="domain">youtube.com &bull; July 31, 2025</div></li></a><a class="li" href="https://www.youtube.com/shorts/wFUfe0nVcM0"><li><div class="title">Beautiful Gesture by Divya Deshmukh 🥹♥️ #chess #divyadeshmukh</div><div class="domain">youtube.com &bull; July 31, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Chess.com (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=5E4hpzlrlKA"><li><div class="title">ESPORTS WORLD CUP 2025: Hikaru, Fabiano, Nodirbek & Ian Fight For Playoffs | Groups A,C&D Day 2</div><div class="domain">youtube.com &bull; July 31, 2025</div></li></a><a class="li" href="https://www.youtube.com/shorts/u4m1XBOkb50"><li><div class="title">Hikaru Calculates with his FINGERS</div><div class="domain">youtube.com &bull; July 31, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
