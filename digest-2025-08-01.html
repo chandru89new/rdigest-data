@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-08-01</span>:</h1>
+  <p class="summary">There are 23 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (1)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/Gvtv6W7odDb9TqX2k/do-not-render-your-counterfactuals"><li><div class="title">Do Not Render Your Counterfactuals</div><div class="domain">lesswrong.com &bull; August 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (3)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=NxiKlnUtyio"><li><div class="title">Parsing without ASTs and Optimizing with Sea of Nodes</div><div class="domain">youtube.com &bull; August 01, 2025</div></li></a><a class="li" href="https://stephango.com/ramblings"><li><div class="title">Ramblings</div><div class="domain">stephango.com &bull; August 01, 2025</div></li></a><a class="li" href="https://www.veracode.com/blog/genai-code-security-report/"><li><div class="title">We Asked 100+ AI Models to Write Code. Here’s How Many Failed Security Tests</div><div class="domain">veracode.com &bull; August 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (3)</summary><ul><a class="li" href="https://www.lihaoyi.com/post/GoldenLiteralTestinginuTest090.html"><li><div class="title">Golden Literal Testing in UTest</div><div class="domain">lihaoyi.com &bull; August 01, 2025</div></li></a><a class="li" href="https://github.com/kubenote/KubeForge"><li><div class="title">Show HN: KubeForge – A GUI for Kubernetes YAMLs</div><div class="domain">github.com &bull; August 01, 2025</div></li></a><a class="li" href="https://usips.org/blog/2025/07/fair-access-to-banking/"><li><div class="title">Fair Access to Banking</div><div class="domain">usips.org &bull; August 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Diplomat (thediplomat.com)</h2> (2)</summary><ul><a class="li" href="https://thediplomat.com/2025/07/the-evolution-of-made-in-china-2025/"><li><div class="title">The Evolution of ‘Made in China 2025’</div><div class="domain">thediplomat.com &bull; August 01, 2025</div></li></a><a class="li" href="https://thediplomat.com/2025/07/how-is-vietnam-navigating-the-new-trade-war-era/"><li><div class="title">How Is Vietnam Navigating the New Trade War Era?</div><div class="domain">thediplomat.com &bull; August 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (3)</summary><ul><a class="li" href="https://yourstory.com/2025/07/swiggy-dishes-losses-in-q1-ola-electric-july-sales-stumble"><li><div class="title">Swiggy dishes losses in Q1; Ola Electric July sales fumble</div><div class="domain">yourstory.com &bull; August 01, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/ola-electric-struggles-momentum-july-sales-ather-bajaj-tvs"><li><div class="title">Ola Electric struggles to maintain 2024 momentum as rivals speed ahead</div><div class="domain">yourstory.com &bull; August 01, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/ai-data-trust-revolution-indias-used-car-market"><li><div class="title">AI, data, and the trust revolution in India’s used car market</div><div class="domain">yourstory.com &bull; August 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Daily Show (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=bMmco1wwq2U"><li><div class="title">Jordan Klepper Hears MAGA’s Epstein Conspiracies Over the Years | The Daily Show</div><div class="domain">youtube.com &bull; August 01, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=LWnHWbeeFxA"><li><div class="title">Horny, Anti-Woke GOP Defends Sydney Sweeney Amid Denim Ad Backlash | The Daily Show</div><div class="domain">youtube.com &bull; August 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=GdHJk8WWo8g"><li><div class="title">Hardcore Punk Musician-John Joseph</div><div class="domain">youtube.com &bull; August 01, 2025</div></li></a><a class="li" href="https://www.youtube.com/shorts/ApoKejRKoiY"><li><div class="title">Jae</div><div class="domain">youtube.com &bull; August 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Rick Beato (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/i27rS_3LHwI"><li><div class="title">Danny Carey talks about Maynard’s voice #dannycarey #maynardjameskeenan #tool #shorts</div><div class="domain">youtube.com &bull; August 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">PBS Space Time (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=HX1EfW3euY4"><li><div class="title">Why The Multiverse Could Be Real</div><div class="domain">youtube.com &bull; August 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Lex Fridman (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=U1H1Ob7jk8Q"><li><div class="title">Jack Weatherford: Genghis Khan and the Mongol Empire | Lex Fridman Podcast #476</div><div class="domain">youtube.com &bull; August 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=3XGgfWw0HQA"><li><div class="title">The Gold Dredging Season Is on the Edge! | Gold Rush S6 E11 | Full Episode | Discovery Channel</div><div class="domain">youtube.com &bull; August 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DD Movies (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/OlnwkBSFoTE"><li><div class="title">தளபதி முதலமைச்சர் ஆனா எப்படி இருக்கும் | Thalapathy Vijay Political Movie</div><div class="domain">youtube.com &bull; August 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ChessBase India (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=Ke_WqJUnR34"><li><div class="title">Nihal Sarin's (@S8ULGG) magical mouse skills | Makes 8 moves in 1 second!! | Anish Giri vs Nihal</div><div class="domain">youtube.com &bull; August 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Chess.com (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=LdAPnvdIV0c"><li><div class="title">ESPORTS WORLD CUP 2025: Magnus v. Hikaru Fight For The Finals Spot! Semifinals Day 3</div><div class="domain">youtube.com &bull; August 01, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
