@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-08-02</span>:</h1>
+  <p class="summary">There are 23 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (2)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/5sZz2qTEJDZwTdZwQ/podcast-lincoln-quirk-from-wave"><li><div class="title">Podcast: Lincoln Quirk from Wave</div><div class="domain">lesswrong.com &bull; August 02, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/id8HHPNqoMQbmkWay/sb-1047-documentary-the-post-mortem"><li><div class="title">SB-1047 Documentary: The Post-Mortem</div><div class="domain">lesswrong.com &bull; August 02, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (1)</summary><ul><a class="li" href="https://git.hella.cheap/bob/candyfloss"><li><div class="title">candyfloss: an ergonomic python library for running video pipelines</div><div class="domain">git.hella.cheap &bull; August 02, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (5)</summary><ul><a class="li" href="https://www.cnn.com/2025/08/01/politics/video/inv-musk-unpaid-bills"><li><div class="title">Tesla owes small businesses millions in unpaid bills [video]</div><div class="domain">cnn.com &bull; August 02, 2025</div></li></a><a class="li" href="https://electrek.co/2025/07/30/peak-energy-us-first-grid-scale-sodium-ion-battery/"><li><div class="title">Peak Energy just shipped the US's first grid-scale sodium-ion battery</div><div class="domain">electrek.co &bull; August 02, 2025</div></li></a><a class="li" href="https://www.courthousenews.com/meta-violated-privacy-law-jury-says-in-menstrual-data-fight/"><li><div class="title">Meta violated privacy law, jury says in menstrual data fight</div><div class="domain">courthousenews.com &bull; August 02, 2025</div></li></a><a class="li" href="https://discourse.llvm.org/t/rfc-hardening-mode-for-the-compiler/87660"><li><div class="title">Hardening Mode for the Compiler</div><div class="domain">discourse.llvm.org &bull; August 02, 2025</div></li></a><a class="li" href="https://rickovercorpus.org/"><li><div class="title">The Rickover Corpus: A digital archive of Admiral Rickover's speeches and memos</div><div class="domain">rickovercorpus.org &bull; August 02, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (3)</summary><ul><a class="li" href="https://yourstory.com/2025/08/delhivery-delivers-profits-in-q1-fy26-netrasemi-india-chip-manufacture"><li><div class="title">Delhivery delivers profits in Q1 FY26; Netrasemi’s edge AI chips</div><div class="domain">yourstory.com &bull; August 02, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/08/stop-chasing-promotions-here-what-works-career-growth"><li><div class="title">Stop chasing promotions: Here's what works for career growth</div><div class="domain">yourstory.com &bull; August 02, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/08/pre-school-chain-footprints-childcare-daycare-facilities"><li><div class="title">188 centres and counting: How Footprints Childcare is expanding across India</div><div class="domain">yourstory.com &bull; August 02, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">VideoFromSpace (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=gKs5sODsRAg"><li><div class="title">Blastoff! NASA's SpaceX Crew-11 launches to space station, booster lands in Florida</div><div class="domain">youtube.com &bull; August 02, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Royal Institution (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=1Wcf91RMp9U"><li><div class="title">What are chickens made of? - David Phillips' 1980 Christmas Lectures 1/6</div><div class="domain">youtube.com &bull; August 02, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Deshbhakt (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=2z6L1xg5wfU"><li><div class="title">Trump Openly Insults India | Is Our Economy Really ‘Dead’? | Why Is PM Modi Silent? | Akash Banerjee</div><div class="domain">youtube.com &bull; August 02, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/shorts/816H_plUtY8"><li><div class="title">Jack SWU Book 2 Promo</div><div class="domain">youtube.com &bull; August 02, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=S2PncuOJoWE"><li><div class="title">SWU Book 2 Promo-Rebecca and Lauren</div><div class="domain">youtube.com &bull; August 02, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Sabine Hossenfelder (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=iPc60LUtzqk"><li><div class="title">Africa Is Getting a New Ocean, And We Finally Know Why</div><div class="domain">youtube.com &bull; August 02, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Rick Beato (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/9bVNmLZAKKA"><li><div class="title">Les Claypool talks about South Park! #primus #bass #southpark  ￼</div><div class="domain">youtube.com &bull; August 02, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=W6FjcfFUwj8"><li><div class="title">Desert Survival Under 120 Degrees! | Dual Survival S2 E2 | Full Episode | Discovery Channel</div><div class="domain">youtube.com &bull; August 02, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DD Movies (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/iL2xxXiA8GI"><li><div class="title">தளபதி முதலமைச்சர் ஆனா எப்படி இருக்கும் | Thalapathy Vijay Political Movie</div><div class="domain">youtube.com &bull; August 02, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Chess.com (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=sm6SUZENN40"><li><div class="title">ESPORTS WORLD CUP FINAL 2025: Magnus vs. Alireza For The Crown Of EWC!! Hikaru vs. Arjun For Third!</div><div class="domain">youtube.com &bull; August 02, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=EAAwtDVmwzc"><li><div class="title">THIS GAME MADE MAGNUS CARLSEN CHAMPION IN THE ESPORTS WORLD CUP</div><div class="domain">youtube.com &bull; August 02, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">BBC News (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=jWDL0iP_wnA"><li><div class="title">Trump deploys nuclear submarines after “provocative comments” by former Russian President | BBC News</div><div class="domain">youtube.com &bull; August 02, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
