@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-08-05</span>:</h1>
+  <p class="summary">There are 17 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (1)</summary><ul><a class="li" href="https://boston.conman.org/2025/08/04.1"><li><div class="title">When vibe coding, isn't the source code the prompt?</div><div class="domain">boston.conman.org &bull; August 05, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (1)</summary><ul><a class="li" href="https://news.ycombinator.com/item?id=44793446"><li><div class="title">Anthropic expires your paid credits after a year</div><div class="domain">news.ycombinator.com &bull; August 05, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (6)</summary><ul><a class="li" href="https://yourstory.com/2025/08/jeh-aerospace-manufacturing-startup-series-a-funding-elevation-capital"><li><div class="title">Jeh Aerospace secures $11M in Series A funding led by Elevation Capital</div><div class="domain">yourstory.com &bull; August 05, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/08/ather-energys-q1-report-card"><li><div class="title">Ather Energy’s Q1 report card; Fixing life sciences’ workflow crisis</div><div class="domain">yourstory.com &bull; August 05, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/08/medscore-helps-pharma-distributors-reduce-bad-debts-manage-credit"><li><div class="title">MedScore helps pharma distributors reduce bad debts and manage credit better</div><div class="domain">yourstory.com &bull; August 05, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/08/how-zelo-electric-is-building-affordable-evs-small-town-india"><li><div class="title">How Zelo Electric is building affordable EVs for small-town India</div><div class="domain">yourstory.com &bull; August 05, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/08/why-every-student-should-experience-building-something-from-scratch"><li><div class="title">Why every student should experience building something from scratch</div><div class="domain">yourstory.com &bull; August 05, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/08/streamlining-procurement-how-end-to-end-marketplace-sourcing"><li><div class="title">Streamlining procurement: How end-to-end marketplaces are redefining raw material sourcing</div><div class="domain">yourstory.com &bull; August 05, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ThePrint (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=0aBgn8ZMcpM"><li><div class="title">India sees the value of US defence ties, but MAGA-style tariffs threaten long-term stability</div><div class="domain">youtube.com &bull; August 05, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Dodo (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=qCoNKT09RFc"><li><div class="title">Mama And Her Puppies Get Rescued In 122-Degree Desert Heat | The Dodo</div><div class="domain">youtube.com &bull; August 05, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/g3REuXZjlDA"><li><div class="title">Jim</div><div class="domain">youtube.com &bull; August 05, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Parithabangal (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=e61ahdBvIk4"><li><div class="title">Society Paavangal | Parithabangal</div><div class="domain">youtube.com &bull; August 05, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">LastWeekTonight (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=TMk28nV9nkI"><li><div class="title">S12 E19: Gaza & Deferred Prosecution Agreements: 8/3/25: Last Week Tonight with John Oliver</div><div class="domain">youtube.com &bull; August 05, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=xNo8Ve-Ej6U"><li><div class="title">Deferred Prosecution Agreements: Last Week Tonight with John Oliver (HBO)</div><div class="domain">youtube.com &bull; August 05, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DD Movies (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/XE6ruri6fOI"><li><div class="title">தளபதி முதலமைச்சர் ஆனா எப்படி இருக்கும் | Thalapathy Vijay Political Movie</div><div class="domain">youtube.com &bull; August 05, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ChessBase India (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=yGuTJZBEBi4"><li><div class="title">World Champion Gukesh vs Polish no.1 Jan Krzysztof Duda | Katowice 2025 | ChessBase India</div><div class="domain">youtube.com &bull; August 05, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=XW9ylYxSp-I"><li><div class="title">When Gukesh's play gets too hot to handle | Duda vs Gukesh | Zagreb GCT 2025</div><div class="domain">youtube.com &bull; August 05, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
