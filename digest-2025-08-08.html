@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-08-08</span>:</h1>
+  <p class="summary">There are 23 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (1)</summary><ul><a class="li" href="https://jordangoodman.bearblog.dev/fundamentals-still-matter/"><li><div class="title">The Fundamentals Still Matter</div><div class="domain">jordangoodman.bearblog.dev &bull; August 08, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Diplomat (thediplomat.com)</h2> (1)</summary><ul><a class="li" href="https://thediplomat.com/2025/08/will-taiwan-regain-a-diplomatic-ally/"><li><div class="title">Will Taiwan Regain a Diplomatic Ally?</div><div class="domain">thediplomat.com &bull; August 08, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (5)</summary><ul><a class="li" href="https://yourstory.com/2025/08/softbanks-plans-vision-fund-building-investment-ecosystem"><li><div class="title">SoftBank’s plans for Vision Fund; Building an investment ecosystem</div><div class="domain">yourstory.com &bull; August 08, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/08/softbank-investment-gains-q1-swiggy-firstcry-ola-electric"><li><div class="title">Swiggy, FirstCry add $160M to SoftBank's notional gains in Q1; Ola Electric drags</div><div class="domain">yourstory.com &bull; August 08, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/08/reliance-writes-off-investment-dunzo"><li><div class="title">Reliance writes off its $200M investment in Dunzo</div><div class="domain">yourstory.com &bull; August 08, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/08/inside-indias-push-for-building-indigenous-ai-models"><li><div class="title">Inside India’s push for building indigenous AI models</div><div class="domain">yourstory.com &bull; August 08, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/08/smart-warehousing-automation-india-next-competitive-edge"><li><div class="title">The rise of smart warehousing: Automation as India’s next competitive edge</div><div class="domain">yourstory.com &bull; August 08, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Veritasium (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=AGglJehON5g"><li><div class="title">This Battery Was Almost Too Dangerous to Exist</div><div class="domain">youtube.com &bull; August 08, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Vaak (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=tHzdBspZJ9M"><li><div class="title">T Brinda & T Muktha | Madras All India Radio, March 1964 | Akashvani | 29th Remembrance day tribute</div><div class="domain">youtube.com &bull; August 08, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Deshbhakt (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=kwptBr9jS04"><li><div class="title">Trump’s Dirty Game Against India | Can Modi Govt. Hit Back? | Tariff Wars Pt.2 | Akash Banerjee</div><div class="domain">youtube.com &bull; August 08, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">TED (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=ZdhSeoqPJ1g"><li><div class="title">How to Nurture Long-Distance Friendships (W/ Aminatou Sow) | How to Be a Better Human | TED</div><div class="domain">youtube.com &bull; August 08, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">StarTalk (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=Mqzs5VSjObE"><li><div class="title">The Link Between Milankovitch Cycles & Climate Change</div><div class="domain">youtube.com &bull; August 08, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/i2zI_Std-KA"><li><div class="title">Baby Dollaz</div><div class="domain">youtube.com &bull; August 08, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Parithabangal (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/cTG-adSvhaQ"><li><div class="title">List-ல வந்துட்டா சோலி முடிஞ்சிரும் பாத்து இருங்க டா | Parithabangal #shorts</div><div class="domain">youtube.com &bull; August 08, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">National Geographic (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/9jZe0FuMlDY"><li><div class="title">Paid content for @TravelTexas</div><div class="domain">youtube.com &bull; August 08, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Living Big In A Tiny House (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/qqREWfQQ6_w"><li><div class="title">A Stunning Tiny House in a Subtropical Paradise! ❤️ #tinyhome</div><div class="domain">youtube.com &bull; August 08, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Law Chambers of Amish Aggarwala (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/dj3nBRrbBRY"><li><div class="title">Don’t ignore jurisdiction, your case might not stay local</div><div class="domain">youtube.com &bull; August 08, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=FMV4_ev4zY0"><li><div class="title">Frozen Mountains Hold No Mercy! | Dual Survival S2 E6 | Full Episode | Discovery Channel</div><div class="domain">youtube.com &bull; August 08, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DD Movies (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/q6EPxJER9pU"><li><div class="title">தளபதி முதலமைச்சர் ஆனா எப்படி இருக்கும் | Thalapathy Vijay Political Movie</div><div class="domain">youtube.com &bull; August 08, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Cleo Abram (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=hmtuvNfytjM"><li><div class="title">Sam Altman Shows Me GPT 5... And What's Next</div><div class="domain">youtube.com &bull; August 08, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ChessBase India (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=9gO951eVEPo"><li><div class="title">Vidit Gujrathi faces the creative genius of Jorden van Foreest | Chennai GM 2025</div><div class="domain">youtube.com &bull; August 08, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=KzDKu0P5FNA"><li><div class="title">Gukesh takes a Helicopter ride in Poland</div><div class="domain">youtube.com &bull; August 08, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">agadmator's Chess Channel (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=wKPjmpoFUa0"><li><div class="title">One of the Deepest Sacrifices Since The Evergreen Game || Spassky's Immortal Game</div><div class="domain">youtube.com &bull; August 08, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
