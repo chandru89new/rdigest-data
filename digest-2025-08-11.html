@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-08-11</span>:</h1>
+  <p class="summary">There are 21 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (2)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/WRr6A2xopbAhjauMz/breaking-the-cycle-of-trauma-and-tyranny-how-psychological"><li><div class="title">Breaking the Cycle of Trauma and Tyranny: How Psychological Wounds Shape History</div><div class="domain">lesswrong.com &bull; August 11, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/sf9QQesLi8DhqLj8o/my-least-libertarian-opinion-ban-exclusivity-deals"><li><div class="title">My Least Libertarian Opinion: Ban Exclusivity Deals*</div><div class="domain">lesswrong.com &bull; August 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (4)</summary><ul><a class="li" href="https://mrwint.github.io/winter/writeup/writeup2.html"><li><div class="title">Creating the longest possible Ski Jump in The Games: Winter Challenge</div><div class="domain">mrwint.github.io &bull; August 11, 2025</div></li></a><a class="li" href="https://robey.lag.net/2025/08/10/forgejo-ci.html"><li><div class="title">Setting up a CI server for Forgejo</div><div class="domain">robey.lag.net &bull; August 11, 2025</div></li></a><a class="li" href="https://sgros.blogspot.com/2013/08/tcp-client-self-connect.html"><li><div class="title">TCP Client Self-Connect (2013)</div><div class="domain">sgros.blogspot.com &bull; August 11, 2025</div></li></a><a class="li" href="https://kerkour.com/chacha12-blake3"><li><div class="title">ChaCha12-BLAKE3: Secure, Simple and Fast authenticated and committing encryption</div><div class="domain">kerkour.com &bull; August 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (4)</summary><ul><a class="li" href="https://news.ycombinator.com/item?id=44859761"><li><div class="title">Show HN: A Sinclair ZX81 retro web assembler+simulator</div><div class="domain">news.ycombinator.com &bull; August 11, 2025</div></li></a><a class="li" href="https://github.com/cloudstreet-dev/React-is-Awful"><li><div class="title">Show HN: Reactive: A React Book for the Reluctant (written by Claude)</div><div class="domain">github.com &bull; August 11, 2025</div></li></a><a class="li" href="http://techno-fandom.org/~hobbit/cars/ev/offnet.html"><li><div class="title">Vanishing from Hyundai’s data network</div><div class="domain">techno-fandom.org &bull; August 11, 2025</div></li></a><a class="li" href="https://mattwie.se/no-sleep-till-agi"><li><div class="title">Optimizing My Sleep Around Claude Usage Limits</div><div class="domain">mattwie.se &bull; August 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (3)</summary><ul><a class="li" href="https://yourstory.com/2025/08/upsparks-capitals-early-stage-niche-dhruva-spaces-sky-high-ambitions"><li><div class="title">Upsparks Capital’s early-stage niche; Dhruva Space’s sky-high ambitions</div><div class="domain">yourstory.com &bull; August 11, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/08/dhruva-space-building-india-satellite-mass-production-facility"><li><div class="title">From ambitions to orbit: Dhruva Space is building one of India’s largest satellite mass production facilities</div><div class="domain">yourstory.com &bull; August 11, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/08/upsparks-capital-carved-out-niche-in-indias-pre-seed-investments"><li><div class="title">How Upsparks Capital carved out a niche in India’s pre-seed investments</div><div class="domain">yourstory.com &bull; August 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ThePrint (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=nB9g7T_pXu8"><li><div class="title">Hormonal therapy for menopause: Controversy finally settling?</div><div class="domain">youtube.com &bull; August 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/A1gbEIVh0-c"><li><div class="title">Sonny Von Cleveland</div><div class="domain">youtube.com &bull; August 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Newsthink (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=a6vQeszsnnw"><li><div class="title">The Spy Who Thought He’d Never Get Caught</div><div class="domain">youtube.com &bull; August 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Krishnamurti Foundation Trust (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=0OteG0ax22c"><li><div class="title">What shall I do about fear? | Krishnamurti</div><div class="domain">youtube.com &bull; August 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Jay & Sharon (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/hb5TUkfds8U"><li><div class="title">Female Toilet Aim #couplecomedy</div><div class="domain">youtube.com &bull; August 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Home & Garden (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=fQ-YGzbzjbM"><li><div class="title">Trồng tắc chua trong vườn nhà quê | Growing sour kumquat in the country garden</div><div class="domain">youtube.com &bull; August 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DD Movies (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/evxq8_9g_Z8"><li><div class="title">தளபதி முதலமைச்சர் ஆனா எப்படி இருக்கும் | Thalapathy Vijay Political Movie</div><div class="domain">youtube.com &bull; August 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ChessBase India (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/32_AlHb5zhg"><li><div class="title">Nihal the giant slayer 🔥🚀 #chess #nihalsarin #chessbaseindia</div><div class="domain">youtube.com &bull; August 11, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
