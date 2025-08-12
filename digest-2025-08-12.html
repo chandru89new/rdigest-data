@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-08-12</span>:</h1>
+  <p class="summary">There are 24 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">kottke.org (feeds.kottke.org)</h2> (2)</summary><ul><a class="li" href="https://kottke.org/25/08/0047311-welcome-to-the-era-of"><li><div class="title">Welcome to the Era of Big Stupid in America. &#8220;When you make...</div><div class="domain">kottke.org &bull; August 12, 2025</div></li></a><a class="li" href="https://kottke.org/25/08/roll-on-you-crazy-tire"><li><div class="title">Roll On, You Crazy Tire!</div><div class="domain">kottke.org &bull; August 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (1)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/GAJbegsvnd85hX3eS/thoughts-on-extrapolating-time-horizons"><li><div class="title">Thoughts on extrapolating time horizons</div><div class="domain">lesswrong.com &bull; August 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (2)</summary><ul><a class="li" href="https://100r.co/site/uxn.html"><li><div class="title">uxn</div><div class="domain">100r.co &bull; August 12, 2025</div></li></a><a class="li" href="https://github.com/PatNei/GITHUB2FORGEJO"><li><div class="title">Script to migrate GitHub repositories to a Forgejo instance</div><div class="domain">github.com &bull; August 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (2)</summary><ul><a class="li" href="https://www.niemanlab.org/2025/08/japans-largest-newspaper-yomiuri-shimbun-sues-perplexity-for-copyright-violations/"><li><div class="title">Japan's largest paper, Yomiuri Shimbun, sues Perplexity for copyright violations</div><div class="domain">niemanlab.org &bull; August 12, 2025</div></li></a><a class="li" href="https://www.arxiv.org/pdf/2508.06471"><li><div class="title">GLM-4.5: Agentic, Reasoning, and Coding (Arc) Foundation Models [pdf]</div><div class="domain">arxiv.org &bull; August 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (5)</summary><ul><a class="li" href="https://yourstory.com/2025/08/bluestone-backers-reap-hefty-rewards-nykaa-strong-q1-momentum"><li><div class="title">Bluestone backers reap hefty rewards; Nykaa set for strong Q1 momentum</div><div class="domain">yourstory.com &bull; August 12, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/08/elivaas-raises-series-b-round-vertex-ventures-rs-87-cr"><li><div class="title">ELIVAAS raises Rs 87 Cr in Series B round led by Vertex Ventures Southeast Asia & India</div><div class="domain">yourstory.com &bull; August 12, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/08/nykaa-q1-preview-beauty-growth-fashion-shows-signs-recovery"><li><div class="title">Nykaa Q1 preview: Beauty segment to drive growth, fashion expected to improve</div><div class="domain">yourstory.com &bull; August 12, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/08/pronto-raises-11m-series-a-general-catalyst-glade-brook-capital"><li><div class="title">Pronto raises $11M in Series A funding from General Catalyst and Glade Brook Capital</div><div class="domain">yourstory.com &bull; August 12, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/08/deeptech-chennai-vc-speciale-invest-fund-3-agnikul-cosmos"><li><div class="title">Speciale Invest announces close of Fund III with a target corpus of Rs 600 Cr</div><div class="domain">yourstory.com &bull; August 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ThePrint (youtube.com)</h2> (3)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=n3-KJnwUfUI"><li><div class="title">Dharali village in Uttarakhand wiped out, victims lose their livelihoods in flashfloods</div><div class="domain">youtube.com &bull; August 12, 2025</div></li></a><a class="li" href="https://www.youtube.com/shorts/d-PJkZtDHjY"><li><div class="title">BEHIND MUNIR'S NUKE THREAT FROM US, & WARNING FOR INDIA</div><div class="domain">youtube.com &bull; August 12, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=qlR-n5h-jRw"><li><div class="title">In Mohammed Siraj, the Pasmanda Muslims have a hero</div><div class="domain">youtube.com &bull; August 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Deshbhakt (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=3KSdsJlUZPU"><li><div class="title">Is Ethanol Blended Petrol Safe For Your Car Engine? | Nitin Gadkari Misleading Us? | Akash Banerjee</div><div class="domain">youtube.com &bull; August 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Daily Show (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=TuLKpvQQWvc"><li><div class="title">A Deep Dive Into Trump's History With Epstein Pt. 3 | The Daily Show</div><div class="domain">youtube.com &bull; August 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=3KdnfbHEksk"><li><div class="title">Raised For the End of the World-Kate</div><div class="domain">youtube.com &bull; August 12, 2025</div></li></a><a class="li" href="https://www.youtube.com/shorts/HopUwgRh1xE"><li><div class="title">Kimberly</div><div class="domain">youtube.com &bull; August 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Rick Beato (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=2cpJS0bjRMA"><li><div class="title">In the Room with Aerosmith's Joe Perry & Brad Whitford</div><div class="domain">youtube.com &bull; August 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">LastWeekTonight (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=DfTBhrkae74"><li><div class="title">Immigration Enforcement: Last Week Tonight with John Oliver (HBO)</div><div class="domain">youtube.com &bull; August 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">John Bartholomew (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=_vzx7AQeAao"><li><div class="title">LoneWolf League: GAME 11 (THE FINALE!)</div><div class="domain">youtube.com &bull; August 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=y5MIfkSO7s0"><li><div class="title">Race Car Rivalry Reaches Boiling Point! | Street Outlaws S5 E23 | Discovery Channel</div><div class="domain">youtube.com &bull; August 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DD Movies (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/hXh_2zvnnoY"><li><div class="title">தளபதி முதலமைச்சர் ஆனா எப்படி இருக்கும் | Thalapathy Vijay Political Movie</div><div class="domain">youtube.com &bull; August 12, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
