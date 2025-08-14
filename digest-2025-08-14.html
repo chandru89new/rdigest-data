@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-08-14</span>:</h1>
+  <p class="summary">There are 15 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (3)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/rkxKQeTvDa5CzqW8q/doing-a-thing-puts-you-in-the-top-10-and-that-sucks-1"><li><div class="title">Doing A Thing Puts You in The Top 10% (And That Sucks)</div><div class="domain">lesswrong.com &bull; August 14, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/25JGNnT9Kg4aN5N5s/metr-research-update-algorithmic-vs-holistic-evaluation"><li><div class="title">METR Research Update: Algorithmic vs. Holistic Evaluation</div><div class="domain">lesswrong.com &bull; August 14, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/bkjqfhKd8ZWHK9XqF/should-you-make-stone-tools"><li><div class="title">Should you make stone tools?</div><div class="domain">lesswrong.com &bull; August 14, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (2)</summary><ul><a class="li" href="https://www.imperva.com/blog/madeyoureset-turning-http-2-server-against-itself/"><li><div class="title">MadeYouReset: Turning HTTP/2 Server Against Itself</div><div class="domain">imperva.com &bull; August 14, 2025</div></li></a><a class="li" href="https://blogs.loc.gov/thesignal/2021/07/all-hyped-up-for-hypercard-further-adventures-with-an-apple-legacy-format/"><li><div class="title">All Hyped Up for HyperCard: Further Adventures with an Apple Legacy Format</div><div class="domain">blogs.loc.gov &bull; August 14, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (1)</summary><ul><a class="li" href="https://www.scotthyoung.com/blog/2019/06/07/apprenticeships/"><li><div class="title">What Medieval People Got Right About Learning (2019)</div><div class="domain">scotthyoung.com &bull; August 14, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (3)</summary><ul><a class="li" href="https://yourstory.com/2025/08/firstcry-parent-cuts-quarterly-loss-studiobackdrops-creator-economy"><li><div class="title">FirstCry parent cuts quarterly loss; Pro gear for India’s content creators</div><div class="domain">yourstory.com &bull; August 14, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/08/burn-to-breakthrough-how-treebo-hospitality-ventures-profitability"><li><div class="title">From burn to breakthrough: How Treebo Hospitality Ventures found profitability, tech muscle, and a mid-market play</div><div class="domain">yourstory.com &bull; August 14, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/08/beyond-metros-how-regional-brands-are-tapping-into-bharat-tier-ii"><li><div class="title">Beyond metros: How regional brands are tapping into aspirational Bharat</div><div class="domain">yourstory.com &bull; August 14, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ThePrint (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/G0Tv3HRKGes"><li><div class="title">TRUMP CORRIDOR IN SOUTH CAUCASUS & AZERBAIJAN-ARMENIA 'PEACE'</div><div class="domain">youtube.com &bull; August 14, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Wire (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=w5dYuZFSDUI"><li><div class="title">RTI Replies Show the ECI Doesn’t Want You to Know the Full Story of SIR 'Fake Voters' | Lok Sabha</div><div class="domain">youtube.com &bull; August 14, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=SFlblMQPKwM"><li><div class="title">Fentanyl Addict interview-Kayo</div><div class="domain">youtube.com &bull; August 14, 2025</div></li></a><a class="li" href="https://www.youtube.com/shorts/d7GEdJY8JPQ"><li><div class="title">Jamie</div><div class="domain">youtube.com &bull; August 14, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=AUB4uxvq9qI"><li><div class="title">Risk It All for Gold Extraction! | Gold Rush S6 E19 | Full Episode | Discovery Channel</div><div class="domain">youtube.com &bull; August 14, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DD Movies (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/hLqF85hWFz0"><li><div class="title">தளபதி முதலமைச்சர் ஆனா எப்படி இருக்கும் | Thalapathy Vijay Political Movie</div><div class="domain">youtube.com &bull; August 14, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
