@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-08-15</span>:</h1>
+  <p class="summary">There are 28 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">kottke.org (feeds.kottke.org)</h2> (1)</summary><ul><a class="li" href="https://kottke.org/25/08/max-cooper-repetition"><li><div class="title">Max Cooper, Repetition</div><div class="domain">kottke.org &bull; August 15, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (1)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/dbYEoG7jNZbeWX39o/training-a-reward-hacker-despite-perfect-labels"><li><div class="title">Training a Reward Hacker Despite Perfect Labels</div><div class="domain">lesswrong.com &bull; August 15, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (4)</summary><ul><a class="li" href="https://www.wsj.com/economy/american-job-housing-economic-dynamism-d56ef8fc"><li><div class="title">Nobody’s buying homes, nobody’s switching jobs, America’s mobility is stalling</div><div class="domain">wsj.com &bull; August 15, 2025</div></li></a><a class="li" href="https://www.cfr.org/blog/time-end-roundtripping-big-pharma"><li><div class="title">Time to End Roundtripping by Big Pharma</div><div class="domain">cfr.org &bull; August 15, 2025</div></li></a><a class="li" href="https://aethermug.com/posts/i-used-to-know-how-to-write-in-japanese"><li><div class="title">I used to know how to write in Japanese</div><div class="domain">aethermug.com &bull; August 15, 2025</div></li></a><a class="li" href="https://news.artnet.com/art-world/cia-kryptos-sculpture-code-auction-2677451"><li><div class="title">The secret code behind the CIA's Kryptos puzzle is up for sale</div><div class="domain">news.artnet.com &bull; August 15, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (2)</summary><ul><a class="li" href="https://yourstory.com/2025/08/how-finedge-is-helping-people-attain-financial-freedom"><li><div class="title">How FinEdge is helping people attain financial freedom</div><div class="domain">yourstory.com &bull; August 15, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/08/defence-startups-india-indiamarts-msme-playbook"><li><div class="title">Defence startups putting India on the map; IndiaMART’s MSME playbook</div><div class="domain">yourstory.com &bull; August 15, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">V3Cars (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/mmsxb9zzccA"><li><div class="title">Happy 79th Independence Day</div><div class="domain">youtube.com &bull; August 15, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ThePrint (youtube.com)</h2> (9)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=zIA1GwPE-s4"><li><div class="title">LIVE: MEA official spokesperson holds weekly media briefing</div><div class="domain">youtube.com &bull; August 15, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=dDAtSvLEjGw"><li><div class="title">LIVE: President Droupadi Murmu addresses the nation on eve of 79th Independence Day</div><div class="domain">youtube.com &bull; August 15, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=n72Ce5_G0rc"><li><div class="title">Union Minister Shivraj Singh Chouhan hoists the National Flag at his residence</div><div class="domain">youtube.com &bull; August 15, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=OfP82WjikwQ"><li><div class="title">Visuals from Lal Chowk in Srinagar on 79th Independence day</div><div class="domain">youtube.com &bull; August 15, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=hAHe-Be4hIg"><li><div class="title">Indian Army showcases air defence system that shot down Pakistani drones during Op Sindoor</div><div class="domain">youtube.com &bull; August 15, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=QraQmZ5QboY"><li><div class="title">PM Modi pays tribute to Mahatma Gandhi on 79th Independence Day at Rajghat</div><div class="domain">youtube.com &bull; August 15, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=KtLhW-pR0uE"><li><div class="title">'Our resolution of Viksit Bharart will be fulfilled on 100th independence day,' Manohar Lal Khattar</div><div class="domain">youtube.com &bull; August 15, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=LFDVEOnrHgc"><li><div class="title">Prime Minister Narendra Modi hoists the national flag at the Red Fort on 79th Independence Day</div><div class="domain">youtube.com &bull; August 15, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=V-VzVYf_vb4"><li><div class="title">LIVE: Prime Minister Narendra Modi's address to the nation on Independence Day</div><div class="domain">youtube.com &bull; August 15, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Daily Show (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=yIG6HjBtH64"><li><div class="title">Trump Brings His Unwanted Presence Into Gazan, Russian, and French Affairs | The Daily Show</div><div class="domain">youtube.com &bull; August 15, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/QlpM8u1iwJc"><li><div class="title">Foreign</div><div class="domain">youtube.com &bull; August 15, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Sabine Hossenfelder (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=9yPy3DeMUyI"><li><div class="title">Scientific research has big problems, and it's getting worse</div><div class="domain">youtube.com &bull; August 15, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Parithabangal (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=8BZ-3bNIJGI"><li><div class="title">Stress Paavangal | Parithabangal</div><div class="domain">youtube.com &bull; August 15, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Jay Hind! (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/DlcbBkAmvDY"><li><div class="title">Jai Hind 🇮🇳 — Feel the pride. #IndependenceDay #15August#shorts</div><div class="domain">youtube.com &bull; August 15, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Empty Hand (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=aMAIMgBdFjY"><li><div class="title">Coolie Movie Review - இத எதிர்பார்க்கல😱 Superstar Rajinikanth | Lokesh | Anirudh | Nagarjuna | Tamil</div><div class="domain">youtube.com &bull; August 15, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=cJLP7RMrRn4"><li><div class="title">Botswana: The Ultimate Test! | Dual Survival S2 E10 | Full Episode | Discovery Channel</div><div class="domain">youtube.com &bull; August 15, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DD Movies (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/j2l30k8Gjt4"><li><div class="title">தளபதி முதலமைச்சர் ஆனா எப்படி இருக்கும் | Thalapathy Vijay Political Movie</div><div class="domain">youtube.com &bull; August 15, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ChessBase India (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/shorts/R3Je1C8yj7k"><li><div class="title">"Win"cent Keymer is the Champion 🔥 😍 #chess #chessbaseindia #vincentkeymer</div><div class="domain">youtube.com &bull; August 15, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=ocftepwerec"><li><div class="title">The love for Vincent Keymer in Chennai | The Champion of Chennai Grand Masters 2025</div><div class="domain">youtube.com &bull; August 15, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
