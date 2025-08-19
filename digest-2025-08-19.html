@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-08-19</span>:</h1>
+  <p class="summary">There are 16 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (1)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/2TA7HqBYdhLdJBcZz/on-closed-door-ai-safety-research"><li><div class="title">On closed-door AI safety research</div><div class="domain">lesswrong.com &bull; August 19, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (2)</summary><ul><a class="li" href="https://www.theatlantic.com/technology/archive/2025/08/ai-mass-delusion-event/683909/"><li><div class="title">AI is a mass-delusion event</div><div class="domain">theatlantic.com &bull; August 19, 2025</div></li></a><a class="li" href="https://www.binarly.io/blog/persistent-risk-xz-utils-backdoor-still-lurking-in-docker-images"><li><div class="title">Persistent Risk: XZ Utils Backdoor Still Lurking in Docker Images</div><div class="domain">binarly.io &bull; August 19, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (4)</summary><ul><a class="li" href="https://jonathanadams.pro/blog-articles/Nasa-Fortran-Code-1963.pdf"><li><div class="title">A general Fortran code for solutions of problems in space mechanics [pdf]</div><div class="domain">jonathanadams.pro &bull; August 19, 2025</div></li></a><a class="li" href="https://github.com/ClemensElflein/OpenMower"><li><div class="title">OpenMower – An Open Source Lawn Mower</div><div class="domain">github.com &bull; August 19, 2025</div></li></a><a class="li" href="https://divernet.com/scuba-news/freediving/how-croatian-freediver-held-breath-for-29-minutes/"><li><div class="title">Croatian freediver held breath for 29 minutes</div><div class="domain">divernet.com &bull; August 19, 2025</div></li></a><a class="li" href="https://jslegenddev.substack.com/p/how-to-start-making-games-in-javascript"><li><div class="title">Starting game development in JavaScript with no experience</div><div class="domain">jslegenddev.substack.com &bull; August 19, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (5)</summary><ul><a class="li" href="https://yourstory.com/2025/07/dirty-business-behind-caffeine"><li><div class="title">The dirty business behind caffeine!</div><div class="domain">yourstory.com &bull; August 19, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/08/devdutt-pattanaik-on-taming-corporate-bakasur-cashfree-ai-payment"><li><div class="title">Devdutt Pattanaik on taming corporate Bakasur; Cashfree’s AI payment system</div><div class="domain">yourstory.com &bull; August 19, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/08/everything-know-3i-atlas-new-visitor-interstellar-space"><li><div class="title">Everything We Know About 3I/ATLAS: The New Visitor from Interstellar Space</div><div class="domain">yourstory.com &bull; August 19, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/08/automated-success-how-grexa-is-driving-up-revenue-msmes-ai"><li><div class="title">Automated success: How Grexa is driving up revenue for MSMEs with AI</div><div class="domain">yourstory.com &bull; August 19, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/08/ev-batteries-for-drones-unlocking-possibilities-logistics-agriculture"><li><div class="title">EV batteries for drones: Unlocking possibilities in agriculture, surveillance</div><div class="domain">yourstory.com &bull; August 19, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Deshbhakt (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=SEF2tKPOgnA"><li><div class="title">Pt.3 - Watchdog Or Lapdog? | INDIA Bloc Goes Ballistic Against CEC Gyanesh Kumar | Akash Banerjee</div><div class="domain">youtube.com &bull; August 19, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/wrFhsD1J0Xg"><li><div class="title">Jaime</div><div class="domain">youtube.com &bull; August 19, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">M M F A Mellisai Mannar Fans Association (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=LdqO_qZ7FWA"><li><div class="title">MELLISAI MANNARGAL ISAI PAYANAM 22 -ANBU MANAM -AALUKORU AASAI 1960- PATTULOTTAIAYAR PBS P SUSHEELA</div><div class="domain">youtube.com &bull; August 19, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">LastWeekTonight (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=3lzfH86avIc"><li><div class="title">Make America Healthy Again: Last Week Tonight with John Oliver (HBO)</div><div class="domain">youtube.com &bull; August 19, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
