@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-08-23</span>:</h1>
+  <p class="summary">There are 14 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (1)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/4mBaixwf4k8jk7fG4/yudkowsky-on-don-t-use-p-doom"><li><div class="title">Yudkowsky on "Don't use p(doom)"</div><div class="domain">lesswrong.com &bull; August 23, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (1)</summary><ul><a class="li" href="https://www.alexedwards.net/blog/the-9-go-test-assertions-i-use"><li><div class="title">The 9 Go test assertions I use (and why)</div><div class="domain">alexedwards.net &bull; August 23, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (2)</summary><ul><a class="li" href="https://www.scmp.com/week-asia/lifestyle-culture/article/3322654/south-korea-deploys-hologram-police-officer-fight-crime-and-its-working"><li><div class="title">South Korea deploys hologram police officer</div><div class="domain">scmp.com &bull; August 23, 2025</div></li></a><a class="li" href="https://www.techdirt.com/2025/08/22/investigators-used-terrible-computer-fraud-laws-to-ensure-people-were-punished-for-leaking-air-crash-footage-to-cnn/"><li><div class="title">Computer Fraud Laws Used to Prosecute Leaking Air Crash Footage to CNN</div><div class="domain">techdirt.com &bull; August 23, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Varun Barad - Curious Developer (varunbarad.com)</h2> (1)</summary><ul><a class="li" href="https://varunbarad.com/blog/low-stakes-hot-takes.html"><li><div class="title">Low Stakes Hot Take</div><div class="domain">varunbarad.com &bull; August 23, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (5)</summary><ul><a class="li" href="https://yourstory.com/2025/08/online-gaming-acts-many-casualties-ai-startup-hiring-talent-smarter"><li><div class="title">Online Gaming Act’s many casualties; AI-powered startup making hiring smarter</div><div class="domain">yourstory.com &bull; August 23, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/08/idfy-from-kyc-provider-to-verification-fraud-prevention-firm"><li><div class="title">How IDfy has grown from a KYC provider to a complete verification and fraud prevention firm</div><div class="domain">yourstory.com &bull; August 23, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/08/meet-the-biotech-startups-charting-the-future-of-lab-grown-meat-and-dairy-proteins"><li><div class="title">Meet the biotech startups charting the future of lab-grown meat and dairy proteins</div><div class="domain">yourstory.com &bull; August 23, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/08/devsparks-hyderabad-2025-agenda-speakers-developer-summit"><li><div class="title">500+ devs, 10+ AI sessions: What’s in store today at DevSparks Hyderabad 2025</div><div class="domain">yourstory.com &bull; August 23, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/08/next-gen-jewellery-true-diamond-lab-grown-diamonds-custom-design"><li><div class="title">Next-gen jewellery: True Diamond bets on lab-grown diamonds, custom design to woo young customers</div><div class="domain">yourstory.com &bull; August 23, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Veritasium (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=AFXLZ7FEJc4"><li><div class="title">This material gets tougher as you break it</div><div class="domain">youtube.com &bull; August 23, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/TqRxG0ol4mE"><li><div class="title">Puppy and Rachel</div><div class="domain">youtube.com &bull; August 23, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Rick Beato (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/ZAfIIIO54Yw"><li><div class="title">Rick Beato on Joe Rogan…kind of #ai #song #sadiewinters #shorts</div><div class="domain">youtube.com &bull; August 23, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=Saw4fb1V7Yk"><li><div class="title">Survival Situation in the Untamed Jungle! | Dual Survival S3 E5 | Full Episode | Discovery Channel</div><div class="domain">youtube.com &bull; August 23, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
