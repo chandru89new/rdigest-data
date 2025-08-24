@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-08-24</span>:</h1>
+  <p class="summary">There are 13 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (1)</summary><ul><a class="li" href="http://oldvcr.blogspot.com/2025/08/make-your-apple-ii-or-commodore-64.html"><li><div class="title">Reverse-engineering Roadsearch Plus, or, roadgeeking with an 8-bit CPU</div><div class="domain">oldvcr.blogspot.com &bull; August 24, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (2)</summary><ul><a class="li" href="https://www.vincirufus.com/posts/agi-is-engineering-problem/"><li><div class="title">AGI is an engineering problem, not a model training problem</div><div class="domain">vincirufus.com &bull; August 24, 2025</div></li></a><a class="li" href="https://www.gojiberries.io/not-so-prompt-prompt-optimization-as-model-selection/"><li><div class="title">Not so prompt: Prompt optimization as model selection (2024)</div><div class="domain">gojiberries.io &bull; August 24, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Trevor I. Lasn Thoughts (trevorlasn.com)</h2> (1)</summary><ul><a class="li" href="https://www.trevorlasn.com/blog/courses-reviews-facelift"><li><div class="title">courses.reviews gets a facelift + now AI-powered</div><div class="domain">trevorlasn.com &bull; August 24, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (2)</summary><ul><a class="li" href="https://yourstory.com/2025/08/devsparks2025-hyderabad-charts-ai-roadmap-lab-grown-diamonds"><li><div class="title">DevSparks2025 Hyderabad charts AI roadmap; Diamonds for next-gen buyers</div><div class="domain">yourstory.com &bull; August 24, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/08/khadim-batti-whatfix-global-saas-leader"><li><div class="title">How Khadim Batti scaled Whatfix into a $900M global SaaS powerhouse</div><div class="domain">yourstory.com &bull; August 24, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/o2rogAKQ9hs"><li><div class="title">John Joseph</div><div class="domain">youtube.com &bull; August 24, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Socrates Studio (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=5EeoHgc1-tk"><li><div class="title">G.Balachandran IAS ll இந்திய ஜனநாயகம் எதிர்கொள்ளும் சவால்கள் llகோ.பாலச் சந்திரன் ஐ.ஏ.எஸ்- நேர்முகம்</div><div class="domain">youtube.com &bull; August 24, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">M M F A Mellisai Mannar Fans Association (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=B0fT5eKPb6I"><li><div class="title">MELLISAI MANNARGALIN INNISAI PAYANANGAL 40-  ENNAI THOTTU  PAAR MAGALEY PAAR 1961 KAVIGNAR PBS PS</div><div class="domain">youtube.com &bull; August 24, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Lex Fridman (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=jdCKiEJpwf4"><li><div class="title">Scott Horton: The Case Against War and the Military Industrial Complex | Lex Fridman Podcast #478</div><div class="domain">youtube.com &bull; August 24, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=zZbioorqHSU"><li><div class="title">Treasures and Tensions in Klondike Mines! | Gold Rush S7 E9 | Full Episode | Discovery Channel</div><div class="domain">youtube.com &bull; August 24, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ChessBase India (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/shorts/jKcQQ0qq4kQ"><li><div class="title">Gukesh & Duda play like ENGINE 😱#chess #gukesh</div><div class="domain">youtube.com &bull; August 24, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=JagtgRfbxC0"><li><div class="title">The World Champion Who Refused to Play: Fischer vs Spassky 1972 | Untold Story</div><div class="domain">youtube.com &bull; August 24, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
