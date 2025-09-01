@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-09-01</span>:</h1>
+  <p class="summary">There are 12 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (3)</summary><ul><a class="li" href="https://mcyoung.xyz/2025/08/25/go-default-methods/"><li><div class="title">Default Methods in Go</div><div class="domain">mcyoung.xyz &bull; September 01, 2025</div></li></a><a class="li" href="https://graydon2.dreamwidth.org/218040.html"><li><div class="title">things rust shipped without (2015)</div><div class="domain">graydon2.dreamwidth.org &bull; September 01, 2025</div></li></a><a class="li" href="https://nolanlawson.com/2025/08/31/why-do-browsers-throttle-javascript-timers/"><li><div class="title">Why do browsers throttle JavaScript timers?</div><div class="domain">nolanlawson.com &bull; September 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (4)</summary><ul><a class="li" href="https://yourstory.com/2025/08/india-inc-unknowingly-pushing-talent-away-skill-hiring-jobs"><li><div class="title">Is India Inc. unknowingly pushing talent away?</div><div class="domain">yourstory.com &bull; September 01, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/08/anand-sweets-timeless-legacy-mysore-pak"><li><div class="title">Anand Sweets’ timeless legacy; AI voice agents for BFSI sector</div><div class="domain">yourstory.com &bull; September 01, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/08/mfilterits-decade-long-journey-to-securing-digital-ecosystem"><li><div class="title">mFilterIT’s decade-long journey to securing the digital ecosystem</div><div class="domain">yourstory.com &bull; September 01, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/08/bengaluru-startup-posibl-ai-bfsi-sector-ai-voice-agents"><li><div class="title">Making it ‘Posibl’: The Bengaluru startup helping India’s BFSI sector with AI voice agents</div><div class="domain">yourstory.com &bull; September 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Veritasium (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=CxVXvFOPIyQ"><li><div class="title">Exposing the Monsanto Conspiracy</div><div class="domain">youtube.com &bull; September 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/l6QyHsauuHs"><li><div class="title">Paul</div><div class="domain">youtube.com &bull; September 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Newsthink (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=-RvQ269D_0o"><li><div class="title">The Most Tragic Scientist in History</div><div class="domain">youtube.com &bull; September 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=JE_UPPEA8wA"><li><div class="title">The Gold Nuggets Men Die For! | Gold Rush S7, E17, E14, E3, E6 | Full Episode | Discovery Channel</div><div class="domain">youtube.com &bull; September 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DD Movies (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/VOUNmHkDSvU"><li><div class="title">பெண் போலீஸ்க்கு கஷ்டமான யார்டா போறாது | வடிவேலு குஷ்பூ Movie</div><div class="domain">youtube.com &bull; September 01, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
