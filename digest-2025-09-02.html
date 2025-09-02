@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-09-02</span>:</h1>
+  <p class="summary">There are 16 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (1)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/FLJ9B4pHzjKmPPxd5/which-top-authors-did-said-achmiz-drive-away"><li><div class="title">Which top authors did Said Achmiz drive away?</div><div class="domain">lesswrong.com &bull; September 02, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (1)</summary><ul><a class="li" href="https://notes.hella.cheap/saturation-and-the-triumph-of-history.html"><li><div class="title">Saturation and the Triumph of History: How most of the behavior of Tech Leaders since 2016 can be explained by smartphone market saturation</div><div class="domain">notes.hella.cheap &bull; September 02, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (1)</summary><ul><a class="li" href="https://bassi.li/articles/i-miss-using-em-dashes"><li><div class="title">I Miss Using Em Dashes</div><div class="domain">bassi.li &bull; September 02, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (5)</summary><ul><a class="li" href="https://yourstory.com/2025/08/startup-qwr-indigenous-xr-hardware-india-dependence-imports"><li><div class="title">Pune startup QWR bets on indigenous XR hardware to cut India’s dependence on imports</div><div class="domain">yourstory.com &bull; September 02, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/09/august-report-card-funding-and-ev-sales-vc-funding-ola-electric"><li><div class="title">August report card: Funding and EV sales</div><div class="domain">yourstory.com &bull; September 02, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/09/offgrid-energy-labs-raises-15m-series-funding"><li><div class="title">Offgrid Energy Labs raises $15M in Series A funding round</div><div class="domain">yourstory.com &bull; September 02, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/09/pune-startup-rian-world-of-linguistics-ai-human-translation-tools"><li><div class="title">How Rian is traversing the world of linguistics with AI-human synergy</div><div class="domain">yourstory.com &bull; September 02, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/08/how-modern-hostels-are-changing-the-way-india-travel"><li><div class="title">How modern hostels are changing the way India travels</div><div class="domain">yourstory.com &bull; September 02, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ThePrint (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=SAASH6UEOGg"><li><div class="title">‘Double standard on terrorism won’t be tolerated’- PM Modi’s message during SCO Summit in China</div><div class="domain">youtube.com &bull; September 02, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Daily Show (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=TGdVorJzLPM"><li><div class="title">Everything Trump Has Banned Since Stepping Back Into Office | The Daily Show</div><div class="domain">youtube.com &bull; September 02, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/LuNBwQSLa_s"><li><div class="title">Cassi</div><div class="domain">youtube.com &bull; September 02, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">National Geographic (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=COtW-y631JA"><li><div class="title">🔴 LIVE: Never Forget | 9/11: One Day in America Season 1 Episodes | National Geographic</div><div class="domain">youtube.com &bull; September 02, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ICM Indian Classical Music (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/EXdW0N73UE4"><li><div class="title">Flute Recital By Akash Satish & Vivek Pandya On Tabla #flute #icmtabla #classical #music #shorts</div><div class="domain">youtube.com &bull; September 02, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=hLtuHU6ErOM"><li><div class="title">Gold Beneath the Rage of McKinley Creek! | Gold Rush S1 E4 | Full Episode | Discovery Channel</div><div class="domain">youtube.com &bull; September 02, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ChessNetwork (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=vKWguAdLVxU"><li><div class="title">Daily SuperBlitz Arena [272]</div><div class="domain">youtube.com &bull; September 02, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ChessBase India (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=VTSlJbBf_gE"><li><div class="title">How Well Do These GMs Know Bobby Fischer? | Fun Quiz with Ray & Sevian</div><div class="domain">youtube.com &bull; September 02, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
