@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-09-04</span>:</h1>
+  <p class="summary">There are 14 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (1)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/Qdgo2jYAuFRMeMRJT/natural-latents-latent-variables-stable-across-ontologies"><li><div class="title">Natural Latents: Latent Variables Stable Across Ontologies</div><div class="domain">lesswrong.com &bull; September 04, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (1)</summary><ul><a class="li" href="https://www.upwind.io/feed/linux-kernel-smb-0-day-vulnerability-cve-2025-37899-uncovered-using-chatgpt-o3"><li><div class="title">Linux Kernel SMB 0-Day Vulnerability CVE-2025-37899 Uncovered Using ChatGPT o3</div><div class="domain">upwind.io &bull; September 04, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (2)</summary><ul><a class="li" href="https://rubenerd.com/not-paying-with-cash/"><li><div class="title">Not paying with cash</div><div class="domain">rubenerd.com &bull; September 04, 2025</div></li></a><a class="li" href="https://neovim.io/doc/user/pack.html#vim.pack"><li><div class="title">Neovim Pack</div><div class="domain">neovim.io &bull; September 04, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (3)</summary><ul><a class="li" href="https://yourstory.com/2025/09/conversational-ai-for-all-how-navanaai-is-bringing"><li><div class="title">Conversational AI for all: How Navana.ai is bringing India online, one voice at a time</div><div class="domain">yourstory.com &bull; September 04, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/09/urban-company-prepares-for-public-debut-semiconductor-chip-revolution"><li><div class="title">Urban Company prepares for public debut; India’s semiconductor chip revolution</div><div class="domain">yourstory.com &bull; September 04, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/09/firstclub-raises-23-mn-to-push-quality-first-quick-commerce-startup"><li><div class="title">FirstClub secures $23M to push quality-first quick commerce platform</div><div class="domain">yourstory.com &bull; September 04, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ThePrint (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=VHknN4WEc5w"><li><div class="title">Rajeev Shukla's rise — From Kanpur reporter to frontrunner to become the BCCI President</div><div class="domain">youtube.com &bull; September 04, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/RqufvxyawZI"><li><div class="title">Frank</div><div class="domain">youtube.com &bull; September 04, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Parithabangal (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=Ye0XO6l0XkA"><li><div class="title">மனைவி பாவங்கள் | Parithabangal</div><div class="domain">youtube.com &bull; September 04, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=qVO1-iO1pqE"><li><div class="title">In Mangroves and the Arabian Desert | Dual Survival S4 E5 | Discovery Channel</div><div class="domain">youtube.com &bull; September 04, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=sA9M_Tq8WD0"><li><div class="title">The Dark Side of Gold Panning! | Gold Rush S7 E3, E9, E10, E19 | Discovery Channel</div><div class="domain">youtube.com &bull; September 04, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">BBC News (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=F4chKtIh1oA"><li><div class="title">Donald Trump says China, North Korea and Russia ‘conspiring against’ US | BBC News</div><div class="domain">youtube.com &bull; September 04, 2025</div></li></a><a class="li" href="https://www.youtube.com/shorts/fNBojVn1tDA"><li><div class="title">Epstein survivors say they're creating their own list. #BBCNews</div><div class="domain">youtube.com &bull; September 04, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
