@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-09-05</span>:</h1>
+  <p class="summary">There are 18 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (1)</summary><ul><a class="li" href="https://arxiv.org/pdf/2504.17473"><li><div class="title">Wolves in the Repository: A Software Engineering Analysis of the XZ Utils Supply Chain Attack</div><div class="domain">arxiv.org &bull; September 05, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (4)</summary><ul><a class="li" href="https://coalitionformetabolichealth.org/news/coalition-for-metabolic-health-launches-as-part-of-50-million-investment-to-tackle-americas-health-crisis/"><li><div class="title">Coalition for Metabolic Health Launches with $50M</div><div class="domain">coalitionformetabolichealth.org &bull; September 05, 2025</div></li></a><a class="li" href="https://fathy.fr/carbonyl"><li><div class="title">Forking Chrome to render in a terminal (2023)</div><div class="domain">fathy.fr &bull; September 05, 2025</div></li></a><a class="li" href="https://kcsrk.info/slides/Evolution_Ashoka_2025.pdf"><li><div class="title">Evolving the OCaml Programming Language (2025) [pdf]</div><div class="domain">kcsrk.info &bull; September 05, 2025</div></li></a><a class="li" href="https://fil-c.org/fugc"><li><div class="title">Fil's Unbelievable Garbage Collector</div><div class="domain">fil-c.org &bull; September 05, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (6)</summary><ul><a class="li" href="https://yourstory.com/2025/09/gst-cuts-and-healthcare-bridging-language-gaps-with-ai"><li><div class="title">GST cuts and healthcare; Bridging language gaps with AI</div><div class="domain">yourstory.com &bull; September 05, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/09/galaxeye-wants-make-earth-observation-reliable-gps"><li><div class="title">GalaxEye wants to make Earth observation as reliable as GPS</div><div class="domain">yourstory.com &bull; September 05, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/09/utho-cloud-bets-on-sovereignty-cost-savings-to-win"><li><div class="title">Utho Cloud bets on sovereignty, cost savings to win India’s cloud market</div><div class="domain">yourstory.com &bull; September 05, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/09/soaps-refrigerators-gst-cuts-consumer-goods-fmcg-d2c-startups-impact"><li><div class="title">From soaps to refrigerators, GST cuts promise to supercharge India’s consumption story</div><div class="domain">yourstory.com &bull; September 05, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/09/building-with-no-code-how-acies-consulting-startup-enterprise-tech"><li><div class="title">Building with no code: How Acies Consulting is redefining enterprise tech</div><div class="domain">yourstory.com &bull; September 05, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/09/ai-investment-management-game-changer-india-real-estate"><li><div class="title">AI in investment management: The game-changer for navigating India’s real estate sector</div><div class="domain">yourstory.com &bull; September 05, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Thought Emporium (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=xSCl_FBbq_E"><li><div class="title">Is your steak really dead?</div><div class="domain">youtube.com &bull; September 05, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Daily Show (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=I4Yj-7ArBvU"><li><div class="title">Commander-In-Beef: Trump Faces Off Against the Media, Zelenskyy, Harvard & More | The Daily Show</div><div class="domain">youtube.com &bull; September 05, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/jP3ZJ0r7VMM"><li><div class="title">Katrina</div><div class="domain">youtube.com &bull; September 05, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=6YGjvbg2WKQ"><li><div class="title">Into the Wild for Alaskan Gold! | Gold Rush S1 E6 | Full Episode | Discovery Channel</div><div class="domain">youtube.com &bull; September 05, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Deep Look (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/qmKXLizlwqI"><li><div class="title">Why Are Kittens Born So Helpless? | #DeepLook #Shorts #kittens</div><div class="domain">youtube.com &bull; September 05, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ChessBase India (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=1Kf8OcaaWFs"><li><div class="title">Praggnanandhaa gets black pieces for game one | FIDE Grand Swiss Opening Ceremony</div><div class="domain">youtube.com &bull; September 05, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Chess.com (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=vqV-ThnBnFg"><li><div class="title">Can Hikaru And GothamChess BEAT Our AI or REAL?!</div><div class="domain">youtube.com &bull; September 05, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
