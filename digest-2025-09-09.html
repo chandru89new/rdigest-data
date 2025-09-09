@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-09-09</span>:</h1>
+  <p class="summary">There are 12 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">kottke.org (feeds.kottke.org)</h2> (1)</summary><ul><a class="li" href="https://kottke.org/25/09/0047470-zohran-mamdanis-social-me"><li><div class="title">Zohran Mamdani&#8217;s social media team is operating on all cylinders: A Dramatic...</div><div class="domain">kottke.org &bull; September 09, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (2)</summary><ul><a class="li" href="https://www.ft.com/content/31feb335-4945-475e-baaa-3b880d9cf8ce"><li><div class="title">Geoffrey Hinton: 'AI will make a few people much richer and most people poorer'</div><div class="domain">ft.com &bull; September 09, 2025</div></li></a><a class="li" href="https://github.com/MaxBondABE/attempt"><li><div class="title">Show HN: Attempt – A CLI for retrying fallible commands</div><div class="domain">github.com &bull; September 09, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (2)</summary><ul><a class="li" href="https://yourstory.com/2025/09/bamboobox-turns-marketing-intent-into-measurable-impact-b2b-businesses"><li><div class="title">BambooBox turns marketing intent into measurable impact for B2B businesses</div><div class="domain">yourstory.com &bull; September 09, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/09/reliance-jio-accops-rewriting-indias-cybersecurity-playbook"><li><div class="title">With Reliance Jio by its side, Accops is rewriting India’s cybersecurity playbook</div><div class="domain">yourstory.com &bull; September 09, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ThePrint (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=9CG-FdgAjBs"><li><div class="title">A missing Jinnah picture from Pakistan President's office outrages people.'State erasing his legacy'</div><div class="domain">youtube.com &bull; September 09, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/X_AWX9TDCdU"><li><div class="title">Keysha</div><div class="domain">youtube.com &bull; September 09, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Senthil kumar (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=NfGitpiMnEw"><li><div class="title">#MunbeVa (#Saddest Version - Compilation) | Sillunu Oru Kaadhal | BGM | A.R.Rahman | Remastered | 4K</div><div class="domain">youtube.com &bull; September 09, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Parithabangal (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=FXhWoJ4WS4M"><li><div class="title">Street Dog Paavangal | Parithabangal</div><div class="domain">youtube.com &bull; September 09, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">newslaundry (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/EdqIBnXpaDE"><li><div class="title">How did Palki (not) take on China?</div><div class="domain">youtube.com &bull; September 09, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">LastWeekTonight (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=xk94il8L820"><li><div class="title">Trump vs. Higher Education: Last Week Tonight with John Oliver (HBO)</div><div class="domain">youtube.com &bull; September 09, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Jay & Sharon (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/7xr-D8-mh-E"><li><div class="title">Lessons from a Toddler</div><div class="domain">youtube.com &bull; September 09, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
