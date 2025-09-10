@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-09-10</span>:</h1>
+  <p class="summary">There are 14 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (2)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/uRdJio8pnTqHpWa4t/ais-will-greatly-change-engineering-in-ai-companies-well"><li><div class="title">AIs will greatly change engineering in AI companies well before AGI</div><div class="domain">lesswrong.com &bull; September 10, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/8jkB8ezncWD6ai86e/obligated-to-respond"><li><div class="title">Obligated to Respond</div><div class="domain">lesswrong.com &bull; September 10, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (2)</summary><ul><a class="li" href="https://www.sciencedaily.com/releases/2025/08/250831112449.htm"><li><div class="title">NASA finds Titan's alien lakes may be creating primitive cells</div><div class="domain">sciencedaily.com &bull; September 10, 2025</div></li></a><a class="li" href="https://www.agweb.com/markets/outraged-farmers-blame-ag-monopolies-catastrophic-collapse-looms"><li><div class="title">Outraged Farmers Blame Ag Monopolies as Catastrophic Collapse Looms</div><div class="domain">agweb.com &bull; September 10, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (3)</summary><ul><a class="li" href="https://yourstory.com/2025/09/edtechs-eye-credibility-with-physicswallah-ipo-global-capability-centres"><li><div class="title">Edtechs eye credibility with PhysicsWallah IPO; Building $100M GCC-focused company</div><div class="domain">yourstory.com &bull; September 10, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/09/how-a-bengaluru-startup-is-reimagining-customer-co"><li><div class="title">How a Bengaluru startup is reimagining customer conversations with AI</div><div class="domain">yourstory.com &bull; September 10, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/09/gk-studio-startup-transparency-and-affordardability-salon-market"><li><div class="title">How GK Studio is bringing transparency and affordability to India’s salon market</div><div class="domain">yourstory.com &bull; September 10, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Deshbhakt (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=MTk2xH2mOq8"><li><div class="title">Nepal’s PM Oli Booted Out! | Attempt To Crush Anti-Corruption Protest Backfires | Akash Banerjee</div><div class="domain">youtube.com &bull; September 10, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Daily Show (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=5qxWKVIflyo"><li><div class="title">If Trump Isn’t Dying, Why Is He Being Treated Like a Make-A-Wish Kid? | The Daily Show</div><div class="domain">youtube.com &bull; September 10, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">TED-Ed (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=7ZCTazqNYMo"><li><div class="title">What are truffles, and why are they so expensive? - Carolyn Beans</div><div class="domain">youtube.com &bull; September 10, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/Pbpwl84tbPU"><li><div class="title">Shawn</div><div class="domain">youtube.com &bull; September 10, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=RRaHNEVIxUI"><li><div class="title">The Deadly Gamble of River Mining! | Gold Rush: White Water S2 E1 | Discovery Channel</div><div class="domain">youtube.com &bull; September 10, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ChessBase India (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=8xCPMA95_90"><li><div class="title">Nihal Sarin beats a 2590 GM in just 22 moves | Gumularz vs Nihal | FIDE Grand Swiss 2025</div><div class="domain">youtube.com &bull; September 10, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">BBC News (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=NnOzbOgnbAE"><li><div class="title">Israel carries out strike on senior Hamas leaders in Qatar | BBC News</div><div class="domain">youtube.com &bull; September 10, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
