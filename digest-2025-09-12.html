@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-09-12</span>:</h1>
+  <p class="summary">There are 19 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (1)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/XyPgcNFRa6sxG3Mxz/my-talk-on-ai-risks-at-the-national-conservatism-conference"><li><div class="title">My talk on AI risks at the National Conservatism conference last week</div><div class="domain">lesswrong.com &bull; September 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (1)</summary><ul><a class="li" href="https://substack.com/inbox/post/173391778"><li><div class="title">Architecture by Fashion, Not Fundamentals</div><div class="domain">substack.com &bull; September 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (4)</summary><ul><a class="li" href="https://toddlerbot.github.io/"><li><div class="title">Toddlerbot: Open-Source Humanoid Robot</div><div class="domain">toddlerbot.github.io &bull; September 12, 2025</div></li></a><a class="li" href="https://float.exposed/"><li><div class="title">Float Exposed</div><div class="domain">float.exposed &bull; September 12, 2025</div></li></a><a class="li" href="https://arxiv.org/abs/2508.18384"><li><div class="title">Backprompting: Leveraging synthetic production data for health advice guardrails</div><div class="domain">arxiv.org &bull; September 12, 2025</div></li></a><a class="li" href="https://tekhne.dev/internet-resist/"><li><div class="title">We traded blogs for black boxes, now we're paying for it</div><div class="domain">tekhne.dev &bull; September 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (5)</summary><ul><a class="li" href="https://yourstory.com/2025/09/indian-venture-capital-firms-stack-up-dry-powder-empire-restaurant"><li><div class="title">Indian VCs stack up dry powder; The story of Bengaluru’s Empire restaurant</div><div class="domain">yourstory.com &bull; September 12, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/09/techsparks-2025-join-movement-india-lead-ai-techade"><li><div class="title">TechSparks 2025: Why you need to join the movement to lead India’s AI-powered decade</div><div class="domain">yourstory.com &bull; September 12, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/09/solving-indias-ev-energy-bottleneck-emo-energy-powering-last-mile-logistics"><li><div class="title">Solving India’s EV energy bottleneck: How EMO Energy is powering last-mile logistics</div><div class="domain">yourstory.com &bull; September 12, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/09/the-making-of-an-agrologistics-powerhouse-deeptech-patent"><li><div class="title">Deeptech, patents, and growth: The making of an agrologistics powerhouse</div><div class="domain">yourstory.com &bull; September 12, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/09/indias-ai-advantage-prosus-betting-portfolio-arivihan-codekarma"><li><div class="title">Why Prosus is betting on AI startups in India to broaden its portfolio</div><div class="domain">yourstory.com &bull; September 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Veritasium (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=tZ8ehplVFp4"><li><div class="title">Why does an escalator handrail move faster than the stairs?</div><div class="domain">youtube.com &bull; September 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ThePrint (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=vK8hR-48GMM"><li><div class="title">What Israel’s Qatar strike targeting Hamas leaders means for Middle East & how it puts US in a spot</div><div class="domain">youtube.com &bull; September 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Daily Show (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=4a_2bmJOQ2g"><li><div class="title">Michael Grunwald - Fixing Agriculture’s Climate Impact in "We Are Eating the Earth” | The Daily Show</div><div class="domain">youtube.com &bull; September 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/uCiASAw8f7I"><li><div class="title">Foreign</div><div class="domain">youtube.com &bull; September 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=R9S-EITlgaA"><li><div class="title">Lost Gold Returns? | Gold Rush S8 E3 | Discovery Channel</div><div class="domain">youtube.com &bull; September 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Cleo Abram (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/Q3qX2bTm5Mg"><li><div class="title">New Sign of Life On Mars (Really)</div><div class="domain">youtube.com &bull; September 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ChessBase India (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=qKiaegtX8ek"><li><div class="title">Nihal Sarin takes the lead 🚀 | Beats Parham Maghsoodloo | Full Post-game Analysis and Interview!</div><div class="domain">youtube.com &bull; September 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">BBC News (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=u9wx3FwQzt4"><li><div class="title">FBI releases images of 'person of interest' in Charlie Kirk shooting | BBC News</div><div class="domain">youtube.com &bull; September 12, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
