@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-09-17</span>:</h1>
+  <p class="summary">There are 16 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (1)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/5zMH3sFikvGK7AKi2/should-ais-have-a-right-to-their-ancestral-humanity"><li><div class="title">Should AIs have a right to their ancestral humanity?</div><div class="domain">lesswrong.com &bull; September 17, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (2)</summary><ul><a class="li" href="https://asibahi.github.io/thoughts/a-gentle-introduction-to-z3/"><li><div class="title">A Dumb Introduction to z3</div><div class="domain">asibahi.github.io &bull; September 17, 2025</div></li></a><a class="li" href="https://blog.zdsmith.com/posts/brzozowski-derivatives-an-exercise-in-combinatory-style.html"><li><div class="title">Brzozowski Derivatives: Exercise in Combinatory Style</div><div class="domain">blog.zdsmith.com &bull; September 17, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (2)</summary><ul><a class="li" href="https://hub.docker.com/_/irssi"><li><div class="title">Irssi: IRC Client in a Docker Image</div><div class="domain">hub.docker.com &bull; September 17, 2025</div></li></a><a class="li" href="https://support.apple.com/en-us/125142"><li><div class="title">Apple releases iOS 15.8.5 security update for 10-year old iPhone 6s</div><div class="domain">support.apple.com &bull; September 17, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (4)</summary><ul><a class="li" href="https://yourstory.com/2025/09/a-13b-valuation-for-nothing-on-the-lookout-for-fresh-pastures"><li><div class="title">A $1.3B valuation for Nothing; On the lookout for fresh pastures</div><div class="domain">yourstory.com &bull; September 17, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/09/hiring-freshers-big-ambitions-small-firms-reshaping-entry-level-jobs"><li><div class="title">Hiring freshers: Big ambitions of small firms are reshaping entry-level jobs</div><div class="domain">yourstory.com &bull; September 17, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/09/marbles-health-reimagining-brain-care-india-neuromodulation"><li><div class="title">Marbles Health is reimagining brain care with India’s first licensed neuromodulation device</div><div class="domain">yourstory.com &bull; September 17, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/09/chennai-d2c-healthy-snacks-brand-natural-ingredients-wild-date-india"><li><div class="title">This Chennai snack brand is chasing the sweet spot between health and taste</div><div class="domain">yourstory.com &bull; September 17, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Daily Show (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=pSWF7iOP9Ww"><li><div class="title">Charlie Kirk Criticism Ignites MAGA Cancel Culture Spree | The Daily Show</div><div class="domain">youtube.com &bull; September 17, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/k31YZ-zZEXw"><li><div class="title">Kate</div><div class="domain">youtube.com &bull; September 17, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">SciFri (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=xkD-bPgEIdE"><li><div class="title">DINNER WITH KING TUT: Author Livestream and Q&A with Same Kean #SciFriBookClub</div><div class="domain">youtube.com &bull; September 17, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Newsthink (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=do3-oLiTBTY"><li><div class="title">The Mysterious Disappearance of Amelia Earhart</div><div class="domain">youtube.com &bull; September 17, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">neo (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=T4b57E7oHYc"><li><div class="title">How One Man Fooled the Art World</div><div class="domain">youtube.com &bull; September 17, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=dUwXR3wD_BM"><li><div class="title">The Last Voyage Through the Alaskan Storm! | Deadliest Catch S3 E1 | Discovery Channel</div><div class="domain">youtube.com &bull; September 17, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Chess.com (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=Oaix_4KirUM"><li><div class="title">TITLED TUESDAY Gameweek 3: Hikaru Seeks First TT Win Of The Season! ft. Magnus, Alireza & More</div><div class="domain">youtube.com &bull; September 17, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
