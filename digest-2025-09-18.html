@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-09-18</span>:</h1>
+  <p class="summary">There are 12 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (1)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/EH5CSkJQG4aTvfJAJ/software-engineering-leadership-in-flux"><li><div class="title">Software Engineering Leadership in Flux</div><div class="domain">lesswrong.com &bull; September 18, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (1)</summary><ul><a class="li" href="https://release.gnome.org/49/"><li><div class="title">Introducing GNOME 49, “Brescia”</div><div class="domain">release.gnome.org &bull; September 18, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (3)</summary><ul><a class="li" href="https://tandasat.github.io/Hypervisor-101-in-Rust/"><li><div class="title">Hypervisor 101 in Rust</div><div class="domain">tandasat.github.io &bull; September 18, 2025</div></li></a><a class="li" href="https://www.meta.com/blog/meta-ray-ban-display-ai-glasses-connect-2025/"><li><div class="title">Meta Ray-Ban Display</div><div class="domain">meta.com &bull; September 18, 2025</div></li></a><a class="li" href="https://skyfall.dev/posts/slack"><li><div class="title">Slack is extorting us with a $195k/yr bill increase</div><div class="domain">skyfall.dev &bull; September 18, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (4)</summary><ul><a class="li" href="https://yourstory.com/2025/09/india-poised-to-become-global-ai-data-centre-hub"><li><div class="title">India is poised to become a global AI data centre hub</div><div class="domain">yourstory.com &bull; September 18, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/09/a-tribute-to-indias-odop-artisans-amazon-india-fy25-guilt-free-snacks"><li><div class="title">A tribute to India’s artisans; Amazon India cuts FY25 loss</div><div class="domain">yourstory.com &bull; September 18, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/09/how-ai-is-improving-field-operations-in-telecom"><li><div class="title">How AI is improving field operations in the telecom industry</div><div class="domain">yourstory.com &bull; September 18, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/09/this-investment-platform-fractional-ownership"><li><div class="title">This investment platform is enabling fractional ownership in the F&B industry</div><div class="domain">yourstory.com &bull; September 18, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Daily Show (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=JXRl68nDUKM"><li><div class="title">Kash Patel Gets Grilled on Epstein & Trump Lives Out His King Fantasies in the U.K. | The Daily Show</div><div class="domain">youtube.com &bull; September 18, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/9vqB3SVV_Zw"><li><div class="title">Eric</div><div class="domain">youtube.com &bull; September 18, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=Ea9PvbeU0B8"><li><div class="title">Race To Find The Elusive Underwater Gold | Gold Rush: White Water S2 E6 | Discovery Channel</div><div class="domain">youtube.com &bull; September 18, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
