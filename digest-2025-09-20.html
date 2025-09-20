@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-09-20</span>:</h1>
+  <p class="summary">There are 16 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (3)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=3bZSCb644_M"><li><div class="title">The History of a Science Hidden in Astronomy Code</div><div class="domain">youtube.com &bull; September 20, 2025</div></li></a><a class="li" href="https://github.com/piqoni/vogte"><li><div class="title">The Agentic TUI for Go codebases ;)</div><div class="domain">github.com &bull; September 20, 2025</div></li></a><a class="li" href="https://www.openmymind.net/Is-Zigs-New-Io-Unsafe/"><li><div class="title">Is Zig's New Writer Unsafe?</div><div class="domain">openmymind.net &bull; September 20, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (2)</summary><ul><a class="li" href="https://creators.yahoo.com/lifestyle/story/disney-cancellation-page-crashes-as-customers-rush-to-quit-after-kimmel-suspension-033512277.html"><li><div class="title">Disney+ cancellation page crashes as customers rush to quit</div><div class="domain">creators.yahoo.com &bull; September 20, 2025</div></li></a><a class="li" href="https://mastodon.mit.edu/@Eggfreckles/114825126857396420"><li><div class="title">Did you read the quarter-million-line license for your Slack app?</div><div class="domain">mastodon.mit.edu &bull; September 20, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (3)</summary><ul><a class="li" href="https://yourstory.com/2025/09/why-dmart-founders-eternal-investment-is-big-deal-india-e-bus"><li><div class="title">Why DMart founder’s Eternal investment is big deal; India’s e-bus push has a delivery problem</div><div class="domain">yourstory.com &bull; September 20, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/09/chennai-startup-zuppa-homegrown-drones-operation-sindoor"><li><div class="title">How this Chennai startup is crafting India’s homegrown drone technology</div><div class="domain">yourstory.com &bull; September 20, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/09/mithila-foods-dumka-bihar-jharkhand-regional-food-d2c-startup"><li><div class="title">From Dumka to Delhi: Mithila Foods is bringing Bihar’s flavours to India’s metros</div><div class="domain">yourstory.com &bull; September 20, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Deshbhakt (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=irF85MzlQ0A"><li><div class="title">Birth Of An Islamic NATO? | Why Pakistan-Saudi Defence Pact Is Bad News For India | Akash Banerjee</div><div class="domain">youtube.com &bull; September 20, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Daily Show (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=_GXNJ3V9lzg"><li><div class="title">Jon Stewart's Post-Kimmel Primer on Free Speech in the Glorious Trump Era | The Daily Show</div><div class="domain">youtube.com &bull; September 20, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=Tsb1I7hqaJ4"><li><div class="title">Maria Ressa - Fighting Back Against Trump’s Authoritarian Algorithm With Truth | The Daily Show</div><div class="domain">youtube.com &bull; September 20, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">TED (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=sb34MfJjurc"><li><div class="title">How Nearly Dying Helped Me Discover My Own Cure (and Many More) | David Fajgenbaum | TED</div><div class="domain">youtube.com &bull; September 20, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/bIluofewF3A"><li><div class="title">Alexandria</div><div class="domain">youtube.com &bull; September 20, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Down To Earth (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/swYqeDP7IC4"><li><div class="title">#coal and #energysecurity for the #globalsouth #climatechange #negotiation #developedcountries</div><div class="domain">youtube.com &bull; September 20, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=9rQPpoQFAgs"><li><div class="title">The Most Thrilling Gold Mining Operation | Gold Rush S8 E8 | Discovery Channel</div><div class="domain">youtube.com &bull; September 20, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">BBC News (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=t4O02FLwt8Q"><li><div class="title">Nato intercepts Russian warplanes violating Estonian airspace | BBC News</div><div class="domain">youtube.com &bull; September 20, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
