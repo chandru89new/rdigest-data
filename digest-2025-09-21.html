@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-09-21</span>:</h1>
+  <p class="summary">There are 10 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (1)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/a89eTXZPy6kuuKchN/book-review-if-anyone-builds-it-everyone-dies-2"><li><div class="title">Book Review: If Anyone Builds It, Everyone Dies</div><div class="domain">lesswrong.com &bull; September 21, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (1)</summary><ul><a class="li" href="https://thebulletin.org/2025/08/how-ai-and-surveillance-capitalism-are-undermining-democracy/"><li><div class="title">AI and surveillance capitalism are undermining democracy</div><div class="domain">thebulletin.org &bull; September 21, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (2)</summary><ul><a class="li" href="https://yourstory.com/2025/09/how-ai-is-reshaping-indias-industries-coorg-estate-escape-resort"><li><div class="title">How AI is reshaping India’s industries; A journey through Poomaale Estate in Coorg</div><div class="domain">yourstory.com &bull; September 21, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/09/environment-food-ai-business-creativity-entrepreneur-education-quiz"><li><div class="title">Environment, food, AI: Test your business creativity with Edition 206 of our weekly quiz!</div><div class="domain">yourstory.com &bull; September 21, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ThePrint (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/shorts/EJkxyPoeeA4"><li><div class="title">US strikes on Venezuelan ‘drug boats’ & Trump’s war games</div><div class="domain">youtube.com &bull; September 21, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=AjJTdAcsTNA"><li><div class="title">How Middle East's new anarchy is pushing new arragements like Saudi Arabia-Pakistan pact</div><div class="domain">youtube.com &bull; September 21, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Deshbhakt (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=u9-0Nl2a32w"><li><div class="title">Why Trump Went Nuclear On H1B Visas | Indians Hardest Hit - Or Long Term Benefit?? | Akash Banerjee</div><div class="domain">youtube.com &bull; September 21, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Daily Show (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=Sm-Pw22c3iE"><li><div class="title">Jon's State-Approved Free Speech Primer, Desi on Kirk Backlash & Trump in the U.K. | The Daily Show</div><div class="domain">youtube.com &bull; September 21, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/AKsEDJCM-H8"><li><div class="title">David</div><div class="domain">youtube.com &bull; September 21, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=Ij0j0MPAN2Q"><li><div class="title">Chasing the Legendary Gold Nugget in Alaska! | Gold Rush: White Water S2 E8 | Discovery Channel</div><div class="domain">youtube.com &bull; September 21, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
