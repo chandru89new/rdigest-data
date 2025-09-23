@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-09-23</span>:</h1>
+  <p class="summary">There are 17 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (2)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/inFW6hMG3QEx8tTfA/rejecting-violence-as-an-ai-safety-strategy"><li><div class="title">Rejecting Violence as an AI Safety Strategy</div><div class="domain">lesswrong.com &bull; September 23, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/LngR93YwiEpJ3kiWh/research-agenda-synthesizing-standalone-world-models"><li><div class="title">Research Agenda: Synthesizing Standalone World-Models (+ Bounties, + Seeking Funding)</div><div class="domain">lesswrong.com &bull; September 23, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (2)</summary><ul><a class="li" href="https://www.synacktiv.com/en/publications/exploring-grapheneos-secure-allocator-hardened-malloc"><li><div class="title">Exploring GrapheneOS secure allocator: Hardened Malloc</div><div class="domain">synacktiv.com &bull; September 23, 2025</div></li></a><a class="li" href="https://hbr.org/2025/09/ai-generated-workslop-is-destroying-productivity"><li><div class="title">AI-Generated “Workslop” Is Destroying Productivity</div><div class="domain">hbr.org &bull; September 23, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (1)</summary><ul><a class="li" href="https://www.explorefall.com/fall-foliage-map"><li><div class="title">US fall foliage map 2025</div><div class="domain">explorefall.com &bull; September 23, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (3)</summary><ul><a class="li" href="https://yourstory.com/2025/09/how-eveez-is-making-electric-mobility-accessible-gig-workers"><li><div class="title">How EVeez is making electric mobility accessible to India's gig workers</div><div class="domain">yourstory.com &bull; September 23, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/09/h-1b-visa-fees-impact-on-students"><li><div class="title">H-1B visa fees’ impact on students; PhonePe sees sharp rise in revenue</div><div class="domain">yourstory.com &bull; September 23, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/09/how-h1b-visa-fee-hike-will-impact-students-american-dream"><li><div class="title">A new price on the great American dream: How the H-1B visa fee hike will impact students</div><div class="domain">yourstory.com &bull; September 23, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">vewn (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/_Dnoi3-tLcY"><li><div class="title">Pope Francis is dead</div><div class="domain">youtube.com &bull; September 23, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ThePrimeTime (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=6V_NrgpPU_c"><li><div class="title">🚨🚨 DAY 1 - VIBE CODING A Game In 7 Days Using Cursor -- #ad🚨🚨</div><div class="domain">youtube.com &bull; September 23, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/ZcH5crawlPc"><li><div class="title">Lynanda, Nikki, and Trinity</div><div class="domain">youtube.com &bull; September 23, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">National Geographic (youtube.com)</h2> (3)</summary><ul><a class="li" href="https://www.youtube.com/shorts/mbfNfXER03w"><li><div class="title">Where are you going first: Miami Design District or paddleboarding? 🤔 #Miami #Travel</div><div class="domain">youtube.com &bull; September 23, 2025</div></li></a><a class="li" href="https://www.youtube.com/shorts/AMRCWwFnin4"><li><div class="title">Who was Cleopatra? #CleopatrasFinalSecret</div><div class="domain">youtube.com &bull; September 23, 2025</div></li></a><a class="li" href="https://www.youtube.com/shorts/sZVMZnUxoiA"><li><div class="title">The path to living better is long, but Chris Hemsworth knows it's worth the effort. #Limitless</div><div class="domain">youtube.com &bull; September 23, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">LastWeekTonight (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=gZlw0gKXQAI"><li><div class="title">S12 E23: Jimmy Kimmel & Bernd: 9/21/25: Last Week Tonight with John Oliver</div><div class="domain">youtube.com &bull; September 23, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=ohPToBog_-g"><li><div class="title">Jimmy Kimmel & the FCC: Last Week Tonight with John Oliver (HBO)</div><div class="domain">youtube.com &bull; September 23, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=kC93FB4xfZc"><li><div class="title">Jungle Survival Under Extreme Conditions! | Dual Survival S5 E7 | Discovery Channel</div><div class="domain">youtube.com &bull; September 23, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
