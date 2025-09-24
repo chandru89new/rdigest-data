@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-09-24</span>:</h1>
+  <p class="summary">There are 15 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (2)</summary><ul><a class="li" href="https://kk.org/thetechnium/the-periodic-table-of-cognition/"><li><div class="title">Periodic Table of Cognition</div><div class="domain">kk.org &bull; September 24, 2025</div></li></a><a class="li" href="https://larian.com/support/faqs/steam-deck-native-version_121"><li><div class="title">Baldur's Gate 3 Steam Deck – Native Version</div><div class="domain">larian.com &bull; September 24, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (3)</summary><ul><a class="li" href="https://yourstory.com/2025/09/agritech-startup-visron-bets-on-hydrogen-powered-drones-agriculture"><li><div class="title">This agritech startup bets on hydrogen-powered lightweight drones to boost Indian agriculture</div><div class="domain">yourstory.com &bull; September 24, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/09/porter-loads-up-a-profit-computer-science-palo-alto-networks"><li><div class="title">Porter loads up a profit; Building a 25-year career in tech</div><div class="domain">yourstory.com &bull; September 24, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/09/y-combinator-backed-gullak-raises-75m-series-a-led-by-chiratae-ventures"><li><div class="title">Y Combinator-backed Gullak raises $7.5M funding led by Chiratae Ventures</div><div class="domain">yourstory.com &bull; September 24, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Daily Show (youtube.com)</h2> (3)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=DK9TkLPJY6w"><li><div class="title">Jimmy Kimmel's Suspension Was Always About Censorship (Just Ask Trump) | The Daily Show</div><div class="domain">youtube.com &bull; September 24, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=xJg1McSvgo8"><li><div class="title">Jacinda Ardern - “A Different Kind of Power” | The Daily Show</div><div class="domain">youtube.com &bull; September 24, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=RTf2MdntsF0"><li><div class="title">Trump Blames Autism on Tylenol While Americans Prep for the Rapture on TikTok | The Daily Show</div><div class="domain">youtube.com &bull; September 24, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/bFmpS1_f31E"><li><div class="title">Sammy</div><div class="domain">youtube.com &bull; September 24, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Parithabangal (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=9Kxngq0sbts"><li><div class="title">Dad's little princess Paavangal | Parithabangal</div><div class="domain">youtube.com &bull; September 24, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=J8TsWbxV_Jk"><li><div class="title">The Ultimate Crab Fishing Showdown! | Deadliest Catch S3 E3 | Discovery Channel</div><div class="domain">youtube.com &bull; September 24, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DD Movies (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/rc32GSnmfvY"><li><div class="title">பெண் போலீஸ்க்கு கஷ்டமான யார்டா போறாது | வடிவேலு குஷ்பூ Movie</div><div class="domain">youtube.com &bull; September 24, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Chess.com (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=1_IdGIxS5UU"><li><div class="title">Are Chess Geniuses Secretly Climbing Prodigies?</div><div class="domain">youtube.com &bull; September 24, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Buildofy (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=UjujfBvA98U"><li><div class="title">This Luxury Bengaluru Home Reimagines Traditional Art with a Modern Twist! (House Tour)</div><div class="domain">youtube.com &bull; September 24, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Bob & Brad (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/FqPdfuF403w"><li><div class="title">Live Recap on Neck Pain and Headaches</div><div class="domain">youtube.com &bull; September 24, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
