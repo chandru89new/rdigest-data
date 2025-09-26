@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-09-26</span>:</h1>
+  <p class="summary">There are 12 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (1)</summary><ul><a class="li" href="https://blog.google/around-the-globe/google-europe/the-digital-markets-act-time-for-a-reset/"><li><div class="title">The Digital Markets Act: time for a reset</div><div class="domain">blog.google &bull; September 26, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Sympolymathesy, by Chris Krycho (v5.chriskrycho.com)</h2> (1)</summary><ul><a class="li" href="https://v5.chriskrycho.com/notes/write-good-commit-messages/"><li><div class="title">[notes] Write Good Commit Messages</div><div class="domain">v5.chriskrycho.com &bull; September 26, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">XML.com Atom feed for articles and news items (xml.com)</h2> (1)</summary><ul><a class="li" href="https://www.xml.com/news/2025-09-xspec-v332/"><li><div class="title">XSpec v3.3.2 Released</div><div class="domain">xml.com &bull; September 26, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (3)</summary><ul><a class="li" href="https://yourstory.com/2025/09/entrepreneurs-rewriting-bihars-business-story-gcc-leasing"><li><div class="title">Entrepreneurs rewriting Bihar’s business story; GCC leasing turns broad-based</div><div class="domain">yourstory.com &bull; September 26, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/09/ai-translator-facilitator-product-development-kissflow-cpo"><li><div class="title">AI is a translator and facilitator in product development, says Kissflow CPO</div><div class="domain">yourstory.com &bull; September 26, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/09/when-everything-rallies-nothing-feels-safe-paradox-market"><li><div class="title">When everything rallies, nothing feels safe: The paradox of a too-good market</div><div class="domain">yourstory.com &bull; September 26, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ThePrint (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=I3jAGlrsshs"><li><div class="title">Why Pakistan’s bid to curb its soaring poverty rate came to ‘troubling halt’ after early gains</div><div class="domain">youtube.com &bull; September 26, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Daily Show (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=ePEGU0oR48A"><li><div class="title">Trump Trolls Biden with Autopen Portrait in WH & Sics His DOJ on James Comey | The Daily Show</div><div class="domain">youtube.com &bull; September 26, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/dg5Zhy9Nhzo"><li><div class="title">Owen Hanson</div><div class="domain">youtube.com &bull; September 26, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">SciFri (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=fnVz7NbrS9w"><li><div class="title">#DownToEarth Mission Control Live: Ladybug Launch</div><div class="domain">youtube.com &bull; September 26, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=Ky2knNdOLFA"><li><div class="title">Chasing Hidden Treasures in Alaska’s Wilds! | Gold Rush: White Water S4 E1 | Discovery Channel</div><div class="domain">youtube.com &bull; September 26, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">BBC News (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=mb6jr16VtLE"><li><div class="title">Digital ID to be compulsory for all UK adults under government plans | BBC News</div><div class="domain">youtube.com &bull; September 26, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
