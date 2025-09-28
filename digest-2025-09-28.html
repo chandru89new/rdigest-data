@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-09-28</span>:</h1>
+  <p class="summary">There are 13 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (1)</summary><ul><a class="li" href="https://discourse.nixos.org/t/a-statement-from-members-of-the-moderation-team/69828"><li><div class="title">A statement from members of the NixOS moderation team</div><div class="domain">discourse.nixos.org &bull; September 28, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (3)</summary><ul><a class="li" href="https://www.theguardian.com/business/2025/sep/27/jaguar-land-rover-plans-to-restart-engine-manufacturing-in-early-october-report-says"><li><div class="title">UK government underwriting £1.5B loan to Jaguar Land Rover after cyber-attack</div><div class="domain">theguardian.com &bull; September 28, 2025</div></li></a><a class="li" href="https://arstechnica.com/gaming/2025/09/reports-ea-set-to-be-sold-to-private-investors-for-up-to-50-billion/"><li><div class="title">Reports: EA set to be sold to private investors for up to $50B</div><div class="domain">arstechnica.com &bull; September 28, 2025</div></li></a><a class="li" href="https://www.tomshardware.com/networking/enthusiasts-bond-twelve-56k-dial-up-modems-together-to-set-dial-up-broadband-records-a-dozen-screeching-boxes-achieve-record-668-kbps-download-speeds"><li><div class="title">Enthusiasts bond twelve 56K modems together to set dial-up record: 668kbps</div><div class="domain">tomshardware.com &bull; September 28, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (5)</summary><ul><a class="li" href="https://yourstory.com/2025/09/ai-health-workflow-business-creativity-entrepreneur-education-quiz"><li><div class="title">AI, health, workflow: Test your business creativity with Edition 207 of our weekly quiz!</div><div class="domain">yourstory.com &bull; September 28, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/09/kalakriti-gallery-miniature-art-exhibition-hyderabad-creativity-photography"><li><div class="title">Preserve, reinterpret, promote: Kalakriti Gallery pushes new frontiers of miniature art</div><div class="domain">yourstory.com &bull; September 28, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/09/decoding-the-virat-kohli-brand-appeal-vc-inflows-take-macro-hit"><li><div class="title">Decoding the Virat Kohli brand appeal; VC inflows take a macro hit</div><div class="domain">yourstory.com &bull; September 28, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/09/why-india-must-lead-in-deep-ai-research-google-deepmind-director"><li><div class="title">Why India must lead in deep AI research | Insights from Google DeepMind Director</div><div class="domain">yourstory.com &bull; September 28, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/09/how-to-make-india-a-global-hub-for-clinical-research"><li><div class="title">How to make India a global hub for clinical research</div><div class="domain">yourstory.com &bull; September 28, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Daily Show (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=hGj1P1tMoHI"><li><div class="title">Jon on Kimmel’s Return as Trump Attacks Free Speech & Klepper on Tylenol & Comey | The Daily Show</div><div class="domain">youtube.com &bull; September 28, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/fI3wIbGHTC0"><li><div class="title">Rebecca</div><div class="domain">youtube.com &bull; September 28, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=gNqZPP0GcK8"><li><div class="title">The Dangerous Island Survival Test! | Dual Survival S5 E10 | Discovery Channel</div><div class="domain">youtube.com &bull; September 28, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ChessBase India (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=0A7NKFoknSw"><li><div class="title">The difficulty of beating a Grandmaster | Sethuraman vs Ameya Audi | Nationals 2025</div><div class="domain">youtube.com &bull; September 28, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
