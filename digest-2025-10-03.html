@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-10-03</span>:</h1>
+  <p class="summary">There are 22 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (3)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/sAJ9sYbewjT3L3vBp/how-to-feel-more-alive"><li><div class="title">How to Feel More Alive</div><div class="domain">lesswrong.com &bull; October 03, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/Mv3yg7wMXfns3NPaz/eliciting-secret-knowledge-from-language-models-1"><li><div class="title">Eliciting secret knowledge from language models</div><div class="domain">lesswrong.com &bull; October 03, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/n83HssLfFicx3JnKT/omelas-is-perfectly-misread"><li><div class="title">Omelas Is Perfectly Misread</div><div class="domain">lesswrong.com &bull; October 03, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (2)</summary><ul><a class="li" href="https://signal.org/blog/spqr/"><li><div class="title">Signal Protocol and Post-Quantum Ratchets</div><div class="domain">signal.org &bull; October 03, 2025</div></li></a><a class="li" href="https://determinate.systems/blog/installer-dropping-upstream/"><li><div class="title">Dropping upstream Nix from Determinate Nix Installer</div><div class="domain">determinate.systems &bull; October 03, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (5)</summary><ul><a class="li" href="https://harper.blog/2025/09/30/ai-agents-social-media-performance-lambo-doomscrolling/"><li><div class="title">We Gave Our AI Agents Twitter and Now They're Demanding Lambos</div><div class="domain">harper.blog &bull; October 03, 2025</div></li></a><a class="li" href="https://www.foxbusiness.com/politics/apple-takes-down-ice-tracking-app-after-pressure-from-ag-bondi"><li><div class="title">Apple takes down ICE tracking apps after pressure from DOJ</div><div class="domain">foxbusiness.com &bull; October 03, 2025</div></li></a><a class="li" href="https://technicshistory.com/2025/10/03/microcomputers-the-second-wave-towards-a-mass-market/"><li><div class="title">Microcomputers – The Second Wave: Toward a Mass Market</div><div class="domain">technicshistory.com &bull; October 03, 2025</div></li></a><a class="li" href="https://chicagoquantum.org/news/researchers-develop-molecular-qubits-communicate-telecom-frequencies"><li><div class="title">Researchers develop molecular qubits that communicate at telecom frequencies</div><div class="domain">chicagoquantum.org &bull; October 03, 2025</div></li></a><a class="li" href="https://forums.macrumors.com/threads/i-spent-the-day-trying-to-teach-seniors-how-to-use-an-iphone-and-it-was-a-nightmare.2468117/"><li><div class="title">I spent the day teaching seniors how to use an iPhone and it was a nightmare</div><div class="domain">forums.macrumors.com &bull; October 03, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (1)</summary><ul><a class="li" href="https://yourstory.com/2025/10/d2c-brands-get-on-the-high-street-wework-india"><li><div class="title">D2C brands get on the high street; WeWork﻿ India raises capital from anchor investors</div><div class="domain">yourstory.com &bull; October 03, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Dodo (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/vETV91FRvw0"><li><div class="title">A Meaningful Way to Honor Pets We Love | The Pack</div><div class="domain">youtube.com &bull; October 03, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/qjZF_O8Mk3E"><li><div class="title">Paul H</div><div class="domain">youtube.com &bull; October 03, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">PBS Space Time (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=PuHrtlJPk3o"><li><div class="title">Why Life on Mars Will DOOM Humanity</div><div class="domain">youtube.com &bull; October 03, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Parithabangal (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=e9BZOWk7__c"><li><div class="title">ஆயுத பூஜை பாவங்கள் 2025 | Parithabangal</div><div class="domain">youtube.com &bull; October 03, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Law Chambers of Amish Aggarwala (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/puLeMPKhNbU"><li><div class="title">The biggest mistake husbands make in court</div><div class="domain">youtube.com &bull; October 03, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Jay & Sharon (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/GvDipgH8Ves"><li><div class="title">Pre-Prime</div><div class="domain">youtube.com &bull; October 03, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">freeCodeCamp.org (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=jaDi29eRYps"><li><div class="title">From manufacturing worker to first developer job at age 43 with Thomas Gooch [Podcast #191]</div><div class="domain">youtube.com &bull; October 03, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Empty Hand (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=ZcgikPzgI4Q"><li><div class="title">Kantara Chapter 1 Movie Review - உண்மையா Worth -ஆ ? Rishab Shetty, Rukmini Vasanth | Tamil Review</div><div class="domain">youtube.com &bull; October 03, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=WAKmePJ5i98"><li><div class="title">UFO Sightings That Changed Everything! | UFO’s Over Earth S1 E2 | Discovery Channel</div><div class="domain">youtube.com &bull; October 03, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">BBC News (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=QJHG7rRLShk"><li><div class="title">Two members of Manchester's Jewish community die in synagogue attack | BBC News</div><div class="domain">youtube.com &bull; October 03, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Aileen and Deven (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/h87ExxuKS_M"><li><div class="title">SHORT girlies who drive</div><div class="domain">youtube.com &bull; October 03, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
