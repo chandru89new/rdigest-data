@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-10-04</span>:</h1>
+  <p class="summary">There are 16 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (3)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=vpSkBV5vydg"><li><div class="title">UTF-8, explained simply - Nic Barker</div><div class="domain">youtube.com &bull; October 04, 2025</div></li></a><a class="li" href="https://youtu.be/QYM3TWf_G38"><li><div class="title">How We're Redesigning Audacity For The Future</div><div class="domain">youtu.be &bull; October 04, 2025</div></li></a><a class="li" href="https://timkellogg.me/blog/2025/10/03/functions"><li><div class="title">Don't Parse, Call</div><div class="domain">timkellogg.me &bull; October 04, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (5)</summary><ul><a class="li" href="https://www.theverge.com/news/792032/discord-customer-service-data-breach-hack"><li><div class="title">Discord customer service data breach leaks user info and scanned photo IDs</div><div class="domain">theverge.com &bull; October 04, 2025</div></li></a><a class="li" href="https://healthsci.mcmaster.ca/new-antibiotic-targets-ibd-and-ai-predicted-how-it-would-work-before-scientists-could-prove-it/"><li><div class="title">AI predicts antibiotic's IBD mechanism–scientists later confirm</div><div class="domain">healthsci.mcmaster.ca &bull; October 04, 2025</div></li></a><a class="li" href="https://avarayr.github.io/shamelectron/"><li><div class="title">Track which Electron apps slow down macOS 26 Tahoe</div><div class="domain">avarayr.github.io &bull; October 04, 2025</div></li></a><a class="li" href="https://formats.kaitai.io/"><li><div class="title">Binary Formats Gallery</div><div class="domain">formats.kaitai.io &bull; October 04, 2025</div></li></a><a class="li" href="https://blog.samaltman.com/sora-update-number-1"><li><div class="title">Sora Update #1</div><div class="domain">blog.samaltman.com &bull; October 04, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (1)</summary><ul><a class="li" href="https://yourstory.com/2025/10/kalakriti-art-gallery-exhibition-creativity-perspective-photography"><li><div class="title">The beauty is in the details—How Kalakriti Gallery curators inspire people to dig deeper</div><div class="domain">yourstory.com &bull; October 04, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Graham Norton Show (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=qmjXHXuvnLA"><li><div class="title">Taylor Swift Shows Off Her Engagement Ring | The Graham Norton Show</div><div class="domain">youtube.com &bull; October 04, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Daily Show (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=SoZwKjQ0c18"><li><div class="title">Shutdown Sparks Cringey Meme War & Trump Punishes Blue Cities | The Daily Show</div><div class="domain">youtube.com &bull; October 04, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/xPZAruddpgI"><li><div class="title">Tom</div><div class="domain">youtube.com &bull; October 04, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">minutephysics (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=yY7ZUIbWTyc"><li><div class="title">Common Moon Mistakes</div><div class="domain">youtube.com &bull; October 04, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=Hy1zQ91L96M"><li><div class="title">Secrets Buried in the Klondike Mines! | Gold Rush S9 E1 | Discovery Channel</div><div class="domain">youtube.com &bull; October 04, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ChessBase India (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=0YM0oiROJRc"><li><div class="title">Sagar Shah on facing Levy Rozman, road to grandmaster and getting thrashed by Divya Deshmukh</div><div class="domain">youtube.com &bull; October 04, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">BBC News (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=7B8qi9jdyEw"><li><div class="title">Why are concerns about immigration branded far right? | BBC News</div><div class="domain">youtube.com &bull; October 04, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
