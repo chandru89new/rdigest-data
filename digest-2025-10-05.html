@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-10-05</span>:</h1>
+  <p class="summary">There are 12 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (2)</summary><ul><a class="li" href="https://github.com/chrispsn/mesh-spreadsheet"><li><div class="title">mesh-spreadsheet: data & code editor</div><div class="domain">github.com &bull; October 05, 2025</div></li></a><a class="li" href="https://inessential.com/2025/10/04/why-netnewswire-is-not-web-app.html"><li><div class="title">Why NetNewsWire Is Not a Web App</div><div class="domain">inessential.com &bull; October 05, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (1)</summary><ul><a class="li" href="https://richardsapperdesign.com/products/mod-5140/"><li><div class="title">Mod. 5140 - IBM's First Laptop Computer</div><div class="domain">richardsapperdesign.com &bull; October 05, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (2)</summary><ul><a class="li" href="https://yourstory.com/2025/10/msme-green-financing-mumbai-housing-war-openai-sora-ai-video-app-taylor-swift"><li><div class="title">What’s ‘green’ in green financing?; Inside Mumbai’s housing war</div><div class="domain">yourstory.com &bull; October 05, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/09/personalised-journeys-vs-programmed-filters-the-real-test-of-ai-in-finance"><li><div class="title">Personalised Journeys vs Programmed Filters: The real test of AI in finance</div><div class="domain">yourstory.com &bull; October 05, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Graham Norton Show (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=dlEw0e2XJJU"><li><div class="title">Taylor Swift Invites Graham To Her Wedding | The Graham Norton Show</div><div class="domain">youtube.com &bull; October 05, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=XvhcDyV8zvA"><li><div class="title">Taylor Swift Should Have Invested In Friendship Bracelet Beads | The Graham Norton Show</div><div class="domain">youtube.com &bull; October 05, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Daily Show (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=7HqRKxUVwmc"><li><div class="title">Jon on the Shooter Blame Game, Ronny on Trump's War on U.S. Cities & Gov't Shutdown | The Daily Show</div><div class="domain">youtube.com &bull; October 05, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/AmCqFjrIxmY"><li><div class="title">Jimmy</div><div class="domain">youtube.com &bull; October 05, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=RWCecD-hzXY"><li><div class="title">Mysteries Beneath the Caribbean Waves! | Dual Survival S5 E5, E6, E7, E8 | Discovery Channel</div><div class="domain">youtube.com &bull; October 05, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Chess.com (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/shorts/PSZrCJoDWqU"><li><div class="title">WAIT FOR THE CROWD SHOT 🤩🔥 FABI VS. ARJUN!</div><div class="domain">youtube.com &bull; October 05, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=5MaO_fLVflY"><li><div class="title">CHECKMATE: USA vs. INDIA!! Two Strongest Chess Nations Collide! ft. Hikaru, Gukesh, Arjun, Divya</div><div class="domain">youtube.com &bull; October 05, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
