@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-10-07</span>:</h1>
+  <p class="summary">There are 15 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (1)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/QfTqfGfvNw7LbAJD4/do-things-for-as-many-reasons-as-possible"><li><div class="title">Do Things for as Many Reasons as Possible</div><div class="domain">lesswrong.com &bull; October 07, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (1)</summary><ul><a class="li" href="https://www.psychiatrist.com/jcp/analytical-review-depression-suicidality-finasteride/"><li><div class="title">Analytical review of depression and suicidality from finasteride</div><div class="domain">psychiatrist.com &bull; October 07, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (2)</summary><ul><a class="li" href="https://yourstory.com/2025/10/boats-back-in-the-green-wellness-co-healthcare-diagnostics"><li><div class="title">boAt’s back in the green; The healthcare 2.0 revolution</div><div class="domain">yourstory.com &bull; October 07, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/09/wellness-co-bringing-science-backed-preventive-healthcare-india"><li><div class="title">The Wellness Co. is bringing science-backed preventive healthcare to India</div><div class="domain">yourstory.com &bull; October 07, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Dodo (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/ORlUfJpAPV4"><li><div class="title">Golden Retriever Steals The Most Random Items And Brings Them To His Bed | The Dodo</div><div class="domain">youtube.com &bull; October 07, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/21ElwJKsCOg"><li><div class="title">Mr  Johnson</div><div class="domain">youtube.com &bull; October 07, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Senthil kumar (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/v3SBYaMwVMQ"><li><div class="title">#127hours - #arrahman -#PhysicalMedia #Collection (#Cassette #Tapes- #ACD - #DVD - #VHS)</div><div class="domain">youtube.com &bull; October 07, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Rick Beato (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=5N7D4JXpLRc"><li><div class="title">My Thoughts on Rush's NEW Drummer</div><div class="domain">youtube.com &bull; October 07, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">LastWeekTonight (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=NtHZ7IR88dg"><li><div class="title">S12 E25: US Military, ICE & Presidential Libraries: 10/5/25: Last Week Tonight with John Oliver</div><div class="domain">youtube.com &bull; October 07, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=dB1-lg-xZWc"><li><div class="title">Presidential Libraries: Last Week Tonight with John Oliver (HBO)</div><div class="domain">youtube.com &bull; October 07, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Empty Hand (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=P-Xh9lKKgNw"><li><div class="title">BIGG BOSS ரொம்ப Worst ah இருக்கு😱 Bigg Boss Tamil Season 9 Contestants Reaction | Vijay Tv | Troll</div><div class="domain">youtube.com &bull; October 07, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=AjUpXcFsJO0"><li><div class="title">Mining Operations With Persistent Setbacks | Gold Rush S9 E3 | Discovery Channel</div><div class="domain">youtube.com &bull; October 07, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Cookd (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/vFkBcNmo_mA"><li><div class="title">Creamy eggs on toast, pure comfort on a plate 🤤🥪</div><div class="domain">youtube.com &bull; October 07, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ChessBase India (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=8T0aIoNuVTo"><li><div class="title">Why did Hikaru Nakamura actually throw Gukesh's king? | An in-depth analysis by Sagar Shah</div><div class="domain">youtube.com &bull; October 07, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Chess.com (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=QUGWlVYPxTc"><li><div class="title">Kids v. Stars Ep. 6: Anna Cramling Takes On Kids Of The World In A Simul!!</div><div class="domain">youtube.com &bull; October 07, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
