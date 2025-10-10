@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-10-10</span>:</h1>
+  <p class="summary">There are 15 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (1)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/AgkuN8wLNevBkHusf/at-odds-with-the-unavoidable-meta-message"><li><div class="title">At odds with the unavoidable meta-message</div><div class="domain">lesswrong.com &bull; October 10, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (3)</summary><ul><a class="li" href="https://yourstory.com/2025/10/branded-credit-cards-for-big-spends-cycle-pure-agarbathi"><li><div class="title">Branded credit cards for big spends; Reimagining scents for modern lifestyles</div><div class="domain">yourstory.com &bull; October 10, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/10/indian-ai-founders-want-move-silicon-valley-arjun-gandhi-wants-them-move-faster"><li><div class="title">Indian AI founders want to move to Silicon Valley. Nexus' Arjun Gandhi says don't wait</div><div class="domain">yourstory.com &bull; October 10, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/10/indias-answer-to-cloudflare-verge-cloud-bets-speed-security"><li><div class="title">India’s answer to Cloudflare? Verge Cloud Bets on speed, security, and scale</div><div class="domain">yourstory.com &bull; October 10, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Y Combinator (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=ENG_DQF5E60"><li><div class="title">This Startup Is Deleting 29% Of All CO2 Emissions</div><div class="domain">youtube.com &bull; October 10, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Daily Show (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=ocvp7pxT-SE"><li><div class="title">Desi Lydic Foxsplains Bad Bunny's Super Bowl Halftime Show | The Daily Show</div><div class="domain">youtube.com &bull; October 10, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=anhbTLG4A-o"><li><div class="title">Trump Brokers Peace in the Middle East & Declares War Against Antifa in Portland? | The Daily Show</div><div class="domain">youtube.com &bull; October 10, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/shorts/jdA4VmFrlfw"><li><div class="title">Robert</div><div class="domain">youtube.com &bull; October 10, 2025</div></li></a><a class="li" href="https://www.youtube.com/shorts/lQ-GjXbk1x0"><li><div class="title">Nicole</div><div class="domain">youtube.com &bull; October 10, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Newsthink (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/dQw_S5xwbTI"><li><div class="title">How Carl Gauss Summed 1 to 100 Instantly</div><div class="domain">youtube.com &bull; October 10, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">NEVER TOO SMALL (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=zRuJwlWbUVA"><li><div class="title">Tokyo Architect Couple’s Small Apartment, 35sqm/376sqft</div><div class="domain">youtube.com &bull; October 10, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">freeCodeCamp.org (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=xH9ZKsTY73Y"><li><div class="title">Evan You – From Art School Kid to Open Source Legend [Podcast #192]</div><div class="domain">youtube.com &bull; October 10, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Empty Hand (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=WKlYQ6VDvpo"><li><div class="title">பிக்பாஸ் வீடு❌ மாமா வீடு✅ Bigg Boss Tamil Season 9 TROLL | Diwagar Vs VJ Parvathy | Vijay Tv | Tamil</div><div class="domain">youtube.com &bull; October 10, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=Jqq91nNQTeQ"><li><div class="title">The Secret Mission To Moon | NASA's Unexplained Files S3 E3 | Discovery Channel</div><div class="domain">youtube.com &bull; October 10, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ChessBase India (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=c2aTMf0M2UM"><li><div class="title">"I feel guilty for game one, Sorry!" - Garry Kasparov | Day 2 of Clutch Chess 2025</div><div class="domain">youtube.com &bull; October 10, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
