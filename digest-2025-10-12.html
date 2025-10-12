@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-10-12</span>:</h1>
+  <p class="summary">There are 28 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (5)</summary><ul><a class="li" href="https://www.csis.org/analysis/chinas-new-rare-earth-and-magnet-restrictions-threaten-us-defense-supply-chains"><li><div class="title">China's New Rare Earth and Magnet Restrictions Threaten US Defense Supply Chains</div><div class="domain">csis.org &bull; October 12, 2025</div></li></a><a class="li" href="https://localmind.ai/"><li><div class="title">Major security breach at Austrian AI startup localmind.ai</div><div class="domain">localmind.ai &bull; October 12, 2025</div></li></a><a class="li" href="https://arxiv.org/abs/2505.00749"><li><div class="title">Coral Protocol Open Infrastructure Connecting the Internet of Agents</div><div class="domain">arxiv.org &bull; October 12, 2025</div></li></a><a class="li" href="https://techcrunch.com/2025/10/10/spyware-maker-nso-group-confirms-acquisition-by-us-investors/"><li><div class="title">Spyware maker NSO Group confirms acquisition by US investors</div><div class="domain">techcrunch.com &bull; October 12, 2025</div></li></a><a class="li" href="https://github.com/acsandmann/rift"><li><div class="title">Show HN: Rift – A tiling window manager for macOS</div><div class="domain">github.com &bull; October 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (3)</summary><ul><a class="li" href="https://yourstory.com/2025/10/bira-91s-many-woes-smb-construction-tech-arisinfra"><li><div class="title">Bira 91’s many woes; Tech for SMBs in construction</div><div class="domain">yourstory.com &bull; October 12, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/10/physical-branches-the-future-of-lending-platforms-borrowers-credit"><li><div class="title">From physical branches to just a click: Why the future of lending is platform-led</div><div class="domain">yourstory.com &bull; October 12, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/10/inside-vc-mind-prime-fundraising-masterclass-founders"><li><div class="title">Inside the VC Mind: Prime’s fundraising masterclass for founders</div><div class="domain">yourstory.com &bull; October 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ThePrint (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=H_0iQMUrGPE"><li><div class="title">Field-Marshal Asim Munir’s been riding the jihadi tiger. He’s now realising he’s the nearest meal</div><div class="domain">youtube.com &bull; October 12, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=rA1CMZPH11k"><li><div class="title">What impact will Prashant Kishor’s Jan Suraaj have on Bihar elections</div><div class="domain">youtube.com &bull; October 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Wire (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=7BO34mNiQtk"><li><div class="title">All of Us Need to Worry About Ladakh | Central Hall</div><div class="domain">youtube.com &bull; October 12, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=XUU2Zbxrp20"><li><div class="title">Rhythms of Democracy– National People’s Conclave on 5 Years of the Pandemic: Lest We Forget</div><div class="domain">youtube.com &bull; October 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Daily Show (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=ni-nBlZgBY0"><li><div class="title">Jon & Josh on Trump's Shutdown Steamroll, Mideast Peace Deal & Antifa Bogeymen | The Daily Show</div><div class="domain">youtube.com &bull; October 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/p-uqEa12huc"><li><div class="title">Ian</div><div class="domain">youtube.com &bull; October 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Parithabangal (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=xHCtnEOwDTo"><li><div class="title">Diwali Shopping 2025 Paavangal | Parithabangal</div><div class="domain">youtube.com &bull; October 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">newslaundry (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=adtcRkjpX6M"><li><div class="title">Right-wing attack against CJI Gavai | The power of cults in Indian politics | South Central Ep 46</div><div class="domain">youtube.com &bull; October 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">M M F A Mellisai Mannar Fans Association (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=PHn_55zJUus"><li><div class="title">M P M 3 MELLISAI MANNAR'S NON TAMIL SONGS - MALAYALAM JEEVIKKA  MARANNU POYA STHREE  1974 BRAHMMA</div><div class="domain">youtube.com &bull; October 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Law Chambers of Amish Aggarwala (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/3FM-BGyxv1k"><li><div class="title">If I am not earning or resigned before the divorce, Do I still have to pay maintenance?</div><div class="domain">youtube.com &bull; October 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Krishnamurti Foundation Trust (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=pcCLKCsDIBU"><li><div class="title">Giving complete attention | Krishnamurti</div><div class="domain">youtube.com &bull; October 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ICM Indian Classical Music (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/v-7ioF925q8"><li><div class="title">Kanha Re Bandish By Ustad Rashid Khan & Tabla By Pt Sudhir Pandey #icmvocal  #icmtabla #classical</div><div class="domain">youtube.com &bull; October 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hasgeek TV (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=MyS4eN-5RXM"><li><div class="title">Content moderation systems at scale at Google</div><div class="domain">youtube.com &bull; October 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Empty Hand (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=sudzlSWotYM"><li><div class="title">VJ Parvathy செய்தது தப்பா - Nandhini Evicted⁉️ Bigg Boss Tamil Season 9 TROLL |  | Vijay Tv | Tamil</div><div class="domain">youtube.com &bull; October 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=N5LlIg-Gs7A"><li><div class="title">Race For The First Space Walk | NASA's Unexplained Files S3 E4 | Discovery Channel</div><div class="domain">youtube.com &bull; October 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DD Movies (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/shorts/wK2G3TI7Gxw"><li><div class="title">இந்த மாதிரி காதல் இப்போ எங்க இருக்கு அஜித் காதல்  Movie | DD Movies</div><div class="domain">youtube.com &bull; October 12, 2025</div></li></a><a class="li" href="https://www.youtube.com/shorts/47Wf1Vlw1kU"><li><div class="title">இந்த மாதிரி காதல் இப்போ எங்க இருக்கு அஜித் காதல்  Movie | DD Movies</div><div class="domain">youtube.com &bull; October 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">CinemaStix (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=AaEFVQMAmK0"><li><div class="title">the moment you realize it's actually three different shots</div><div class="domain">youtube.com &bull; October 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ChessBase India (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=xSXHqKcaigA"><li><div class="title">When Vishy Anand's chaos tricked Garry Kasparov | Clutch Chess Legends Final Game</div><div class="domain">youtube.com &bull; October 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Chef Ranveer Brar (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/ElItH_sPHu4"><li><div class="title">Sugarfree Anjeer-Khajoor rolls 😍 #Diwalirecipes #ranveerbrar</div><div class="domain">youtube.com &bull; October 12, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
