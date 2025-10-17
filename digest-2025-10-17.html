@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-10-17</span>:</h1>
+  <p class="summary">There are 15 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">kottke.org (feeds.kottke.org)</h2> (2)</summary><ul><a class="li" href="https://kottke.org/25/10/0047720-my-first-adventure-of-the"><li><div class="title">My first adventure of the day is going to the Shunkaen Bonsai...</div><div class="domain">kottke.org &bull; October 17, 2025</div></li></a><a class="li" href="https://kottke.org/25/10/0047723-luis-mendo-is-self-publis"><li><div class="title">Luis Mendo is self-publishing a book about his life as a writer/artist...</div><div class="domain">kottke.org &bull; October 17, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (1)</summary><ul><a class="li" href="https://blog.pixelmelt.dev/kindle-web-drm/"><li><div class="title">How I Reversed Amazon's Kindle Web Obfuscation Because Their App Sucked</div><div class="domain">blog.pixelmelt.dev &bull; October 17, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (3)</summary><ul><a class="li" href="https://yourstory.com/2025/10/blinkit-scales-but-drags-parents-profits-zeptos-raises-funding"><li><div class="title">Blinkit scales but drags parent’s profits; Zepto’s massive haul</div><div class="domain">yourstory.com &bull; October 17, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/10/ugro-doubles-disbursals-as-it-shifts-to-fast-loans"><li><div class="title">UGRO doubles disbursals as it shifts to fast loans for festive season rush</div><div class="domain">yourstory.com &bull; October 17, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/10/logistics-20-why-every-d2c-brand-needs-an-ai-powered-backend"><li><div class="title">Logistics 2.0: Why every D2C brand needs an AI-powered backend</div><div class="domain">yourstory.com &bull; October 17, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Dodo (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/RVU9W2KMlhk"><li><div class="title">Best Churu Treat Hack | The Pack</div><div class="domain">youtube.com &bull; October 17, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Daily Show (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=eR5x7CArfT4"><li><div class="title">The Threat and Promise of AI | The Daily Show</div><div class="domain">youtube.com &bull; October 17, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/jbgzxoiWgZY"><li><div class="title">Gabor Mate</div><div class="domain">youtube.com &bull; October 17, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Parithabangal (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/looxqMvRzIg"><li><div class="title">எதுக்கு மா இந்த வேலை- லாம் பண்ற | Parithabangal #shorts</div><div class="domain">youtube.com &bull; October 17, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Megaprojects (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=oSGpbebUIf8"><li><div class="title">ECHELON: How the Five Eyes Spied on the USSR</div><div class="domain">youtube.com &bull; October 17, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">freeCodeCamp.org (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=hM2T45qbIPI"><li><div class="title">From injured athlete to software engineer with Kaleb Garner [Podcast #193]</div><div class="domain">youtube.com &bull; October 17, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=52af0lLDGQM"><li><div class="title">The Ultimate Team Survival In Nicaragua | Dual Survival S6A E3 | Discovery Channel</div><div class="domain">youtube.com &bull; October 17, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ChessBase India (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=9a1IT6n8S-A"><li><div class="title">Hans Niemann - "You should not ask for opportunities, you should create them" | Clutch Chess</div><div class="domain">youtube.com &bull; October 17, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=rtXSQkAOm3A"><li><div class="title">Venue Tour + Players' Group Captures - 62nd National Championship 2025</div><div class="domain">youtube.com &bull; October 17, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
