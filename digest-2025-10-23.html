@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-10-23</span>:</h1>
+  <p class="summary">There are 14 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">kottke.org (feeds.kottke.org)</h2> (1)</summary><ul><a class="li" href="https://kottke.org/25/10/welcome-to-union-glacier-1"><li><div class="title">Welcome to Union Glacier</div><div class="domain">kottke.org &bull; October 23, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (3)</summary><ul><a class="li" href="https://www.reddit.com/r/linux/comments/1odq7ti/fixing_my_broken_system_while_breaking_my_fixed/"><li><div class="title">My 2 month beef with my own Linux environment. (Developer cautionary tale)</div><div class="domain">reddit.com &bull; October 23, 2025</div></li></a><a class="li" href="http://www.cpu-ns32k.net/TRIPUTER.html"><li><div class="title">TRIPUTER: NS32000-family systems on an FPGA</div><div class="domain">cpu-ns32k.net &bull; October 23, 2025</div></li></a><a class="li" href="https://boajs.dev/blog/2025/10/22/boa-release-21"><li><div class="title">Boa release v0.21 - a new release of Boa, a JavaScript engine written in Rust</div><div class="domain">boajs.dev &bull; October 23, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Nautilus (nautil.us)</h2> (1)</summary><ul><a class="li" href="https://nautil.us/what-poop-reveals-about-ancient-humans-1243775/"><li><div class="title">What Poop Reveals About Ancient Humans</div><div class="domain">nautil.us &bull; October 23, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (3)</summary><ul><a class="li" href="https://www.theguardian.com/technology/2025/oct/22/tesla-earnings-report-latest-drop-profits"><li><div class="title">Tesla reports steep drop in profits despite US rush to buy electric vehicles</div><div class="domain">theguardian.com &bull; October 23, 2025</div></li></a><a class="li" href="https://hyperdev.matsuoka.com/p/is-ai-a-bubble-i-didnt-think-so-until"><li><div class="title">Is AI a Bubble? I Didn't Think So Until I Heard of SDD</div><div class="domain">hyperdev.matsuoka.com &bull; October 23, 2025</div></li></a><a class="li" href="https://arxiv.org/abs/2510.17829"><li><div class="title">A Homological Proof of P != NP: Computational Topology via Categorical Framework</div><div class="domain">arxiv.org &bull; October 23, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (2)</summary><ul><a class="li" href="https://yourstory.com/2025/10/charging-restrictions-add-ev-roadblocks-tata-1mgs-pet-care-play"><li><div class="title">Charging restrictions add EV roadblocks; Tata 1mg’s pet care play</div><div class="domain">yourstory.com &bull; October 23, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/10/bluehill-vc-invest-helex-investment-etherealx-deep-tech"><li><div class="title">BlueHill VC to invest in Helex, top up investment in EtherealX as it looks to sharpen its deep-tech portfolio</div><div class="domain">yourstory.com &bull; October 23, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Daily Show (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=RtSVBbf_khE"><li><div class="title">Trump Extorts DOJ for $230M While Gov’t Workers Scramble to Make Ends Meet | The Daily Show</div><div class="domain">youtube.com &bull; October 23, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/zEeR5COb60E"><li><div class="title">Michelle</div><div class="domain">youtube.com &bull; October 23, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Parithabangal (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=AGFekBQZI-E"><li><div class="title">Diwali 2025 Paavangal | Parithabangal</div><div class="domain">youtube.com &bull; October 23, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=1NIMVH8u9JE"><li><div class="title">From Beale's Treasure to a Legendary Magic Sword | Expedition Unknown S1E11,4,7,9| Discovery Channel</div><div class="domain">youtube.com &bull; October 23, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
