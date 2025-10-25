@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-10-25</span>:</h1>
+  <p class="summary">There are 13 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (2)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/eq2gYhZvuDrMpuhSc/lw-reacts-pack-for-discord-slack-etc"><li><div class="title">LW Reacts pack for Discord/Slack/etc</div><div class="domain">lesswrong.com &bull; October 25, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/oPWB7SBn5j6Nw8RSX/musings-on-reported-cost-of-compute-oct-2025"><li><div class="title">Musings on Reported Cost of Compute (Oct 2025)</div><div class="domain">lesswrong.com &bull; October 25, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (2)</summary><ul><a class="li" href="https://antelang.org/blog/vision/"><li><div class="title">A Vision for Future Low-Level Languages</div><div class="domain">antelang.org &bull; October 25, 2025</div></li></a><a class="li" href="https://prog21.dadgum.com/210.html"><li><div class="title">Computer Science Courses that Don't Exist, But Should</div><div class="domain">prog21.dadgum.com &bull; October 25, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (2)</summary><ul><a class="li" href="https://virtual-try-on.app/"><li><div class="title">Virtual Try on Free Online – AI Clothes Changer – I-TryOn</div><div class="domain">virtual-try-on.app &bull; October 25, 2025</div></li></a><a class="li" href="https://rmitz.org/carmack.on.operating.systems.html"><li><div class="title">Carmack on Operating Systems (1997)</div><div class="domain">rmitz.org &bull; October 25, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (2)</summary><ul><a class="li" href="https://yourstory.com/2025/10/keep-learning-upgrads-ronnie-screwvala-kerala-extreme-poverty"><li><div class="title">Keep learning: upGrad’s Ronnie Screwvala; Kerala is free from extreme poverty</div><div class="domain">yourstory.com &bull; October 25, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/10/from-gst-to-e-invoicing-how-india-is-setting-global-benchmarks"><li><div class="title">From GST to e-invoicing: How India is setting the global benchmark for digital taxation</div><div class="domain">yourstory.com &bull; October 25, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Thought Emporium (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=HW-aygjNU1Q"><li><div class="title">How hard is making a clone, really?</div><div class="domain">youtube.com &bull; October 25, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Dodo (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/BQd4EXAKd3w"><li><div class="title">Easy DIY Halloween Art For Dog Parents | The Pack</div><div class="domain">youtube.com &bull; October 25, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/YWvowhxWudE"><li><div class="title">Nick</div><div class="domain">youtube.com &bull; October 25, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">freeCodeCamp.org (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/baYjd4pFjlw"><li><div class="title">Learn how to make any div resizable</div><div class="domain">youtube.com &bull; October 25, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=CIpu0iLzvx0"><li><div class="title">Searching For Gold Goes Extreme | Gold Rush S9E13 | Discovery Channel</div><div class="domain">youtube.com &bull; October 25, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
