@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-10-27</span>:</h1>
+  <p class="summary">There are 15 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (1)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/dHLdf8SB8oW5L27gg/on-fleshling-safety-a-debate-by-klurl-and-trapaucius"><li><div class="title">On Fleshling Safety: A Debate by Klurl and Trapaucius.</div><div class="domain">lesswrong.com &bull; October 27, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (3)</summary><ul><a class="li" href="https://github.com/johannschopplich/toon"><li><div class="title">Token-Oriented Object Notation – JSON for LLMs at half the token cost</div><div class="domain">github.com &bull; October 27, 2025</div></li></a><a class="li" href="https://justoffbyone.com/posts/interactive-hiring-pipeline-calculator/"><li><div class="title">Interactive Hiring Pipeline Calculator</div><div class="domain">justoffbyone.com &bull; October 27, 2025</div></li></a><a class="li" href="https://lgug2z.com/articles/using-homebrew-to-distribute-early-access-binaries-from-private-github-repositories/"><li><div class="title">Using Homebrew to Distribute Early Access Binaries from Private Github Repositories</div><div class="domain">lgug2z.com &bull; October 27, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (1)</summary><ul><a class="li" href="https://lalinsky.com/2025/10/26/zio-async-io-for-zig.html"><li><div class="title">How I turned Zig into my favorite language to write network programs in</div><div class="domain">lalinsky.com &bull; October 27, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (3)</summary><ul><a class="li" href="https://yourstory.com/2025/10/building-affordable-durable-cooling-systems-bridging-sports-tech-india"><li><div class="title">Building affordable, durable cooling systems; Bridging India’s youth sports gap</div><div class="domain">yourstory.com &bull; October 27, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/10/boltearth-charging-ev-revolution-airbnb-ceo-raghav-bharadwaj"><li><div class="title">How Bolt.Earth is driving India’s EV revolution with an Airbnb-style model</div><div class="domain">yourstory.com &bull; October 27, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/10/screen-recordings-studio-quality-videos-trupeerai-software-creation"><li><div class="title">From screen recordings to studio-quality videos: How Trupeer.ai is democratising software content creation</div><div class="domain">yourstory.com &bull; October 27, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Tsoding Daily (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=3YXxsEWMldo"><li><div class="title">This C library powers Node.js</div><div class="domain">youtube.com &bull; October 27, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Wire (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=9lxa9wf87i8"><li><div class="title">New Revelations: How India’s People Helped Assemble our Constitution | Book Shook</div><div class="domain">youtube.com &bull; October 27, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/98rX8lh-yNs"><li><div class="title">Torie</div><div class="domain">youtube.com &bull; October 27, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=HQh-zvsWbvo"><li><div class="title">Life on the Edge in the Bulgarian Mountains! | Dual Survival S6a E2, E4, E6 | Discovery Channel</div><div class="domain">youtube.com &bull; October 27, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DD Movies (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/yfGWYLsjRfg"><li><div class="title">இந்த மாதிரி காதல் இப்போ எங்க இருக்கு அஜித் காதல்  Movie | DD Movies</div><div class="domain">youtube.com &bull; October 27, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ChessBase India (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/shorts/8JCr0l2ay-g"><li><div class="title">Gukesh vs Magnus vs Hikaru vs Caruana ☠️🔥 #chess #magnuscarlsen #gukesh #hikarunakamura</div><div class="domain">youtube.com &bull; October 27, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=zxGOX4pszEM"><li><div class="title">Magnus Carlsen's first interview on ChessBase India after becoming a Dad!</div><div class="domain">youtube.com &bull; October 27, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
