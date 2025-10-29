@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-10-29</span>:</h1>
+  <p class="summary">There are 23 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (3)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/NW63G8DKJG5JyCG3M/llm-robots-can-t-pass-butter-and-they-are-having-an"><li><div class="title">LLM robots can't pass butter (and they are having an existential crisis about it)</div><div class="domain">lesswrong.com &bull; October 29, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/wdWY5nbqwBjNByJuq/mottes-and-baileys-in-ai-discourse"><li><div class="title">Mottes and Baileys in AI discourse</div><div class="domain">lesswrong.com &bull; October 29, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/2RtuThoZwP4o8aEpS/introducing-the-epoch-capabilities-index-eci"><li><div class="title">Introducing the Epoch Capabilities Index (ECI)</div><div class="domain">lesswrong.com &bull; October 29, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (1)</summary><ul><a class="li" href="https://shadowglassgame.com"><li><div class="title">Project Shadowglass</div><div class="domain">shadowglassgame.com &bull; October 29, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (3)</summary><ul><a class="li" href="https://yourstory.com/2025/10/madras-hc-cryptocurrency-property-ghar-khana-indian-students"><li><div class="title">Madras HC: Cryptocurrency is now property; ‘Ghar ka khana’ for Indian students abroad</div><div class="domain">yourstory.com &bull; October 29, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/10/inside-karan-johars-dating-startup-elevn-where-women-search-love"><li><div class="title">Inside Karan Johar’s dating startup Elevn where women lead the search for love</div><div class="domain">yourstory.com &bull; October 29, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/10/tripgain-startup-automating-hidden-complexities-corporate-travel"><li><div class="title">How TripGain is automating the hidden complexities of corporate travel</div><div class="domain">yourstory.com &bull; October 29, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Daily Show (youtube.com)</h2> (3)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=h-viL46GdoY"><li><div class="title">Trump Whines He’s “Unappreciated” & Self-Soothes with Ballroom and Third-Term Talk | The Daily Show</div><div class="domain">youtube.com &bull; October 29, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=p2_cRrKScvE"><li><div class="title">Zohran Mamdani - Reimagining NYC Through Safety and Affordability | The Daily Show</div><div class="domain">youtube.com &bull; October 29, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=S25WKHrzY6w"><li><div class="title">Trump Puppy-Dogs Japan’s New PM and Rants About Magnets to U.S. Troops | The Daily Show</div><div class="domain">youtube.com &bull; October 29, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/afEiCVm7xic"><li><div class="title">Rebecca & Olivia October 2025</div><div class="domain">youtube.com &bull; October 29, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Jay Hind! (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/ImBaxvB2xzQ"><li><div class="title">The empire didn’t “grant”freedom it realised it could no longer control the victorious Indianforces.</div><div class="domain">youtube.com &bull; October 29, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=0Gv0TEpspI4"><li><div class="title">Inside the Wildest Jungle | Expedition Unknown S1 EP 4,7,12,1 | Discovery Channel</div><div class="domain">youtube.com &bull; October 29, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=32bsjiGLvaw"><li><div class="title">The Dangerous World of Treasure Hunting! | Gold Rush S9 E17 | Discovery Channel</div><div class="domain">youtube.com &bull; October 29, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DD Movies (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/UurafTKGDfY"><li><div class="title">இந்த மாதிரி காதல் இப்போ எங்க இருக்கு அஜித் காதல்  Movie | DD Movies</div><div class="domain">youtube.com &bull; October 29, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ChessNetwork (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=Vm0zynUvCFs"><li><div class="title">Nakamura Is Too Cool for Carlsen’s Jobava London</div><div class="domain">youtube.com &bull; October 29, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ChessBase India (youtube.com)</h2> (3)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=7cTkHaYXuWU"><li><div class="title">High class chess by Carlsen and Caruana in Champions Showdown | Day 2 Recap</div><div class="domain">youtube.com &bull; October 29, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=k79q7Xm8ptU"><li><div class="title">Only Magnus Carlsen can make an entry like this | Behind the scenes | Clutch Chess</div><div class="domain">youtube.com &bull; October 29, 2025</div></li></a><a class="li" href="https://www.youtube.com/shorts/Qa7L47_A7CI"><li><div class="title">Fans love Gukesh #shorts</div><div class="domain">youtube.com &bull; October 29, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">BBC News (youtube.com)</h2> (4)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=TSHqZirGfBU"><li><div class="title">President Donald Trump begins new US-Japan alliance | BBC News</div><div class="domain">youtube.com &bull; October 29, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=cXB158gZ5ck"><li><div class="title">Hurricane Melissa closes in on Jamaica | BBC News</div><div class="domain">youtube.com &bull; October 29, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=lKu48FazQ2k"><li><div class="title">Hurricane Melissa makes landfall in Jamaica with violent 185 mph winds | BBC News</div><div class="domain">youtube.com &bull; October 29, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=88SRZ8zd9YQ"><li><div class="title">Can the UK government stop using migrant hotels? | BBC Newscast</div><div class="domain">youtube.com &bull; October 29, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
