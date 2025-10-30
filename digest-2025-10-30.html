@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-10-30</span>:</h1>
+  <p class="summary">There are 16 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">kottke.org (feeds.kottke.org)</h2> (1)</summary><ul><a class="li" href="https://kottke.org/25/10/0047759-proof-of-life-im-writing"><li><div class="title">Proof of life! I&#8217;m writing a longer post about my time in...</div><div class="domain">kottke.org &bull; October 30, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Nautilus (nautil.us)</h2> (1)</summary><ul><a class="li" href="https://nautil.us/no-more-tears-scientists-take-a-keen-eye-to-onion-slicing-1245058/"><li><div class="title">No More Tears? Scientists Take a Keen Eye to Onion Slicing</div><div class="domain">nautil.us &bull; October 30, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (3)</summary><ul><a class="li" href="https://yourstory.com/2025/10/one-year-after-ipo-unicommerce-doubles-down-on-profitability-global-scale"><li><div class="title">One year after IPO, Unicommerce doubles down on profitability and global scale</div><div class="domain">yourstory.com &bull; October 30, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/10/lenskart-building-a-global-eyewear-brand-inside-karan-johars-dating-startup"><li><div class="title">Lenskart building a global eyewear brand; Inside Karan Johar’s dating startup</div><div class="domain">yourstory.com &bull; October 30, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/10/inside-indias-emerging-electric-tractor-market"><li><div class="title">Inside India’s emerging electric tractor market</div><div class="domain">yourstory.com &bull; October 30, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Tsoding Daily (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=AwWEeLf4bvU"><li><div class="title">Parsing 3D files</div><div class="domain">youtube.com &bull; October 30, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Daily Show (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=1KdW6wjfTCY"><li><div class="title">Trump Gets a Golden Crown in South Korea While SNAP Cutoff Causes Panic in U.S. | The Daily Show</div><div class="domain">youtube.com &bull; October 30, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/2Yrb1PUVVKw"><li><div class="title">Shawn</div><div class="domain">youtube.com &bull; October 30, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Senthil kumar (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=CaCtnz9ZIKY"><li><div class="title">Wind Instrument Separation - Ep 1: Oboe | Khwaja - Jodhaa Akbar | An A.R.Rahman Musical</div><div class="domain">youtube.com &bull; October 30, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Rick Beato (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/XnpwufizPwA"><li><div class="title">Wolf Van Halen on “Right?” #guitar #guitarist #vanhalen #shorts</div><div class="domain">youtube.com &bull; October 30, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Empty Hand (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=2yyyl6aBF5E"><li><div class="title">VJ Parvathy -யிடம் தவறாக பேசிய Kamurudin⁉️Bigg Boss Tamil Season 9 TROLL | Wildcard Entry | Vijay Tv</div><div class="domain">youtube.com &bull; October 30, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=qh9hETtLA5Y"><li><div class="title">Parker Schnabel Faces Frozen Gold Fields | Gold Rush Season 9 Ep 18 | Discovery Channel</div><div class="domain">youtube.com &bull; October 30, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DD Movies (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/Fn5Zf1kkruM"><li><div class="title">இந்த மாதிரி காதல் இப்போ எங்க இருக்கு அஜித் காதல்  Movie | DD Movies</div><div class="domain">youtube.com &bull; October 30, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ChessBase India (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=p50ol8icJuo"><li><div class="title">This is the reason why Fabiano Caruana is an absolute calculation monster | Gukesh vs Caruana</div><div class="domain">youtube.com &bull; October 30, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=t69-OYPIRSY"><li><div class="title">Magnus Carlsen - The undisputed king of the chess world | Behind the scenes | Clutch Chess Final day</div><div class="domain">youtube.com &bull; October 30, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Chess.com (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=vXeFetg4KfM"><li><div class="title">SCC 2025: Ian Nepomniachtchi v. Anish Giri! Will Anish Carry His Grand Swiss Form To SCC?</div><div class="domain">youtube.com &bull; October 30, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
