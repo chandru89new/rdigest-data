@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-10-31</span>:</h1>
+  <p class="summary">There are 20 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">kottke.org (feeds.kottke.org)</h2> (1)</summary><ul><a class="li" href="https://kottke.org/25/10/0047761-ive-got-this-queued-up"><li><div class="title">I&#8217;ve got this queued up to listen to on the Shinkansen later:...</div><div class="domain">kottke.org &bull; October 31, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (2)</summary><ul><a class="li" href="https://forums.swift.org/t/roadmap-for-improving-the-type-checker/82952"><li><div class="title">Roadmap for improving the Swift type checker</div><div class="domain">forums.swift.org &bull; October 31, 2025</div></li></a><a class="li" href="https://wingolog.org/archives/2025/10/30/wastrel-a-profligate-implementation-of-webassembly"><li><div class="title">wastrel, a profligate implementation of webassembly</div><div class="domain">wingolog.org &bull; October 31, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Nautilus (nautil.us)</h2> (1)</summary><ul><a class="li" href="https://nautil.us/longevity-secrets-of-the-animal-kingdom-1245215/"><li><div class="title">Longevity Secrets of the Animal Kingdom</div><div class="domain">nautil.us &bull; October 31, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (2)</summary><ul><a class="li" href="https://www.newyorker.com/culture/infinite-scroll/ice-and-the-smartphone-panopticon"><li><div class="title">ICE and the Smartphone Panopticon</div><div class="domain">newyorker.com &bull; October 31, 2025</div></li></a><a class="li" href="https://github.com/MoonshotAI/Kimi-Linear"><li><div class="title">Kimi Linear: An Expressive, Efficient Attention Architecture</div><div class="domain">github.com &bull; October 31, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (2)</summary><ul><a class="li" href="https://yourstory.com/2025/10/instamart-weighs-heavy-on-swiggys-bottomline-unicommerce-profit"><li><div class="title">Instamart weighs heavy on Swiggy’s bottomline; Unicommerce doubles down on profitability</div><div class="domain">yourstory.com &bull; October 31, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/10/fertility-startup-pluro-raises-rs-125-cr-series-a-funding-bessemer"><li><div class="title">Fertility startup Pluro raises Rs 125 Cr Series A funding from Bessemer Venture Partners</div><div class="domain">yourstory.com &bull; October 31, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Economist (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=Bkb2_WLB42Y"><li><div class="title">Former IMF chief economist Gita Gopinath’s warning for rich world economies | Money Talks podcast</div><div class="domain">youtube.com &bull; October 31, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Dodo (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/MCFW5DvyDKk"><li><div class="title">Pittie Needs To Greet Fifteen To Twenty Neighbors Per Day | The Dodo</div><div class="domain">youtube.com &bull; October 31, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Daily Show (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=I2BjRIIchbg"><li><div class="title">Trump Forces a Playdate with Xi Jinping & MTG Makes Too Much Sense for Desi Lydic | The Daily Show</div><div class="domain">youtube.com &bull; October 31, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/hENzId7RjQk"><li><div class="title">Jim Cole</div><div class="domain">youtube.com &bull; October 31, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Sheena Melwani (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/yurj_ZrOz4U"><li><div class="title">Doesn’t everyone have a “condiment drawer”? #shorts #funny #prank #dadjokes</div><div class="domain">youtube.com &bull; October 31, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Nerdwriter1 (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=-L6OGruW9i4"><li><div class="title">How Marlon Brando Changed Acting</div><div class="domain">youtube.com &bull; October 31, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Jay & Sharon (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/WpDTm-e3ReU"><li><div class="title">Bathroom Controversy</div><div class="domain">youtube.com &bull; October 31, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=HYKjP6ijZqk"><li><div class="title">Parker Schnabel Faces His Biggest Pay Cut | Gold Rush Season 9 Ep 19 | Discovery Channel</div><div class="domain">youtube.com &bull; October 31, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ChessBase India (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/gTUje3W1Oj0"><li><div class="title">Just #magnuscarlsen things☠️ #shorts</div><div class="domain">youtube.com &bull; October 31, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Chess.com (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=KowiU5VL5eE"><li><div class="title">SCC 2025: Fabiano Caruana vs. Pragg Clash For The Last QF Spot! Ro16</div><div class="domain">youtube.com &bull; October 31, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">BBC News (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/shorts/YCC20wzPZMM"><li><div class="title">A chatbot site is banning teenagers from having conversations with its virtual characters. #BBCNews</div><div class="domain">youtube.com &bull; October 31, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=VB2eRwOp_Ck"><li><div class="title">Andrew stripped of 'prince' title and will move out of Royal Lodge | BBC News</div><div class="domain">youtube.com &bull; October 31, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
