@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-11-01</span>:</h1>
+  <p class="summary">There are 22 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (1)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/omRf5fNyQdvRuMDqQ/anthropic-s-pilot-sabotage-risk-report-2"><li><div class="title">Anthropic's Pilot Sabotage Risk Report</div><div class="domain">lesswrong.com &bull; November 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (1)</summary><ul><a class="li" href="https://render.com/blog/how-we-found-7-tib-of-memory-just-sitting-around"><li><div class="title">How We Found 7 TiB of Memory Just Sitting Around</div><div class="domain">render.com &bull; November 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Nautilus (nautil.us)</h2> (1)</summary><ul><a class="li" href="https://nautil.us/why-do-spiders-decorate-their-webs-a-new-piece-of-the-puzzle-1245450/"><li><div class="title">Why Do Spiders Decorate Their Webs? A New Piece of the Puzzle</div><div class="domain">nautil.us &bull; November 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (2)</summary><ul><a class="li" href="https://www.bingqiangao.com/poetry/i-love-my-wife-my-wife-is-dead"><li><div class="title">I Love My Wife, My Wife Is Dead</div><div class="domain">bingqiangao.com &bull; November 01, 2025</div></li></a><a class="li" href="https://www.bedroomlan.org/hardware/fungus/"><li><div class="title">Fungus: The Befunge CPU(2015)</div><div class="domain">bedroomlan.org &bull; November 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (3)</summary><ul><a class="li" href="https://yourstory.com/2025/10/festive-spirit-drives-ev-sales-lenskart-ipo-day-1-sujal-sahelis"><li><div class="title">Festive spirit drives EV sales; Lenskart IPO off to a speedy start</div><div class="domain">yourstory.com &bull; November 01, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/10/bajaj-auto-tvs-motor-october-festive-ev-sales-ather-energy-ola-electric"><li><div class="title">Bajaj Auto ends TVS Motor’s six-month lead with festive surge in October EV sales</div><div class="domain">yourstory.com &bull; November 01, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/10/each-unfinished-dream-is-a-step-towards-the-truth-kala-for-vidya"><li><div class="title">Each unfinished dream is a step towards the truth: Artist insights on creativity from Kala for Vidya exhibition</div><div class="domain">yourstory.com &bull; November 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Veritasium (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=XX7PdJIGiCw"><li><div class="title">Simulating The History Of Life</div><div class="domain">youtube.com &bull; November 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Wire (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=5wcv2MOTXlw"><li><div class="title">Religion is a No-Go Area in Stand Up Comedy and Now Even the Law Says So the wire talks</div><div class="domain">youtube.com &bull; November 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/Te8FUG6o4XA"><li><div class="title">Jason</div><div class="domain">youtube.com &bull; November 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Huberman Lab Clips (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=JRQBOFK7t0A"><li><div class="title">Treating Depression & PTSD with Ibogaine & DMT | DJ Shipley & Dr. Andrew Huberman</div><div class="domain">youtube.com &bull; November 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hasgeek TV (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=di0pbCtudms"><li><div class="title">Graph neural networks & causality: a new frontier in mental health AI</div><div class="domain">youtube.com &bull; November 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Francesco Parrino (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=xsCdvci0i5E"><li><div class="title">La Sagrada Familia - Francesco Parrino</div><div class="domain">youtube.com &bull; November 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Empty Hand (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=5to6iVrhuXg"><li><div class="title">இது தேவையா உங்களுக்கு⁉️Bigg Boss Tamil Season 9 TROLL | VJ Parvathy VS Kamurudin Vs Diwakar</div><div class="domain">youtube.com &bull; November 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Einzelgänger (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=ugRqlesJFIY"><li><div class="title">Why You Need to Be Bored</div><div class="domain">youtube.com &bull; November 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=3aEjmBaVfjM"><li><div class="title">Cody and Joe Pushed to the Breaking Point! | Dual Survival S3 E1, E2, E3, E4 | Discovery Channel</div><div class="domain">youtube.com &bull; November 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DD Movies (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/eOaoQt4tEFM"><li><div class="title">இந்த மாதிரி காதல் இப்போ எங்க இருக்கு அஜித் காதல்  Movie | DD Movies</div><div class="domain">youtube.com &bull; November 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ChessBase India (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=oDWV-SdktK8"><li><div class="title">The amazing venue of the FIDE World Cup 2025 - Resorts Rio | Vlog</div><div class="domain">youtube.com &bull; November 01, 2025</div></li></a><a class="li" href="https://www.youtube.com/shorts/2mdeSW9F_4c"><li><div class="title">Divya represents India in World Cup 😍🇮🇳 #chess #divyadeshmukh</div><div class="domain">youtube.com &bull; November 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Big Think (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/gfIsH5F0JSM"><li><div class="title">How your brain changes memories while you sleep | Marvin Liyanage</div><div class="domain">youtube.com &bull; November 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Best Documentary (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=fZqCY9cECdY"><li><div class="title">This Haunted House: Real Paranormal Stories</div><div class="domain">youtube.com &bull; November 01, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
