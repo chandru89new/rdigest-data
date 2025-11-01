@@ -38,6 +38,7 @@ jobs:
           ./rdigest refresh
 
       - name: Notify on TG
+        if: false
         run: |
           export RDIGEST_FOLDER=.
           export TG_TOKEN=${{ secrets.TG_TOKEN }}
