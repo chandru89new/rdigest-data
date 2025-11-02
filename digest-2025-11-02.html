@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-11-02</span>:</h1>
+  <p class="summary">There are 14 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (2)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/6p4kv8uxYvLcimGGi/you-re-always-stressed-your-mind-is-always-busy-you-never"><li><div class="title">You’re always stressed, your mind is always busy, you never have enough time</div><div class="domain">lesswrong.com &bull; November 02, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/gEETjfjm3eCkJKesz/why-i-transitioned-a-case-study"><li><div class="title">Why I Transitioned: A Case Study</div><div class="domain">lesswrong.com &bull; November 02, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (1)</summary><ul><a class="li" href="https://tonygo.tech/blog/2025/how-to-attack-macos-application-xpc-helpers"><li><div class="title">Attacking macOS XPC helpers: Protocol reverse engineering and interface analysis</div><div class="domain">tonygo.tech &bull; November 02, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (3)</summary><ul><a class="li" href="https://bengoertzel.substack.com/p/why-everyone-dies-gets-agi-all-wrong"><li><div class="title">Why "everyone dies" gets AGI all wrong</div><div class="domain">bengoertzel.substack.com &bull; November 02, 2025</div></li></a><a class="li" href="https://blog.cloudflare.com/private-rate-limiting/"><li><div class="title">Policy, privacy and post-quantum: anonymous credentials for everyone</div><div class="domain">blog.cloudflare.com &bull; November 02, 2025</div></li></a><a class="li" href="https://blog.sshh.io/p/how-i-use-every-claude-code-feature"><li><div class="title">How I Use Every Claude Code Feature</div><div class="domain">blog.sshh.io &bull; November 02, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (1)</summary><ul><a class="li" href="https://yourstory.com/2025/11/vc-funding-in-october-reaches-16b-urban-company-goes-abroad-shadowfax-pine-labs-ipo"><li><div class="title">VC funding in October reaches $1.6B; Urban Company goes abroad</div><div class="domain">yourstory.com &bull; November 02, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Hindu (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=wVANRYgKfzg"><li><div class="title">Teaching Maths for competency-based assessment</div><div class="domain">youtube.com &bull; November 02, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/-IDzxjD7JIA"><li><div class="title">Glynis</div><div class="domain">youtube.com &bull; November 02, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=-tTjfPAy66o"><li><div class="title">Jungle Survival: No Room for Mistakes! | Dual Survival S3 E5, E6, E7, E8 | Discovery Channel</div><div class="domain">youtube.com &bull; November 02, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DD Movies (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/fb1MfkMsc_k"><li><div class="title">இந்த மாதிரி காதல் இப்போ எங்க இருக்கு அஜித் காதல்  Movie | DD Movies</div><div class="domain">youtube.com &bull; November 02, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ChessBase India (youtube.com)</h2> (3)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=RqKqNVUKtY4"><li><div class="title">Why Did He Call the Arbiter? A Rare Case of Losing on Time | FIDE World Cup 2025</div><div class="domain">youtube.com &bull; November 02, 2025</div></li></a><a class="li" href="https://www.youtube.com/shorts/EXvtVhvkjl8"><li><div class="title">Vishy Anand Watches Divya’s Game #chess</div><div class="domain">youtube.com &bull; November 02, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=OpdKynEZ7eM"><li><div class="title">An instructive Nimzo Indian | Divya Deshmukh vs Kourkoulos Stamatis | FIDE World Cup 2025</div><div class="domain">youtube.com &bull; November 02, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
