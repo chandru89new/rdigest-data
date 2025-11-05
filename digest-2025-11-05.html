@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-11-05</span>:</h1>
+  <p class="summary">There are 12 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (1)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/i3TjwwuEwkrXb9Ts6/heroic-responsibility"><li><div class="title">Heroic Responsibility</div><div class="domain">lesswrong.com &bull; November 05, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (3)</summary><ul><a class="li" href="https://www.wlky.com/article/plane-crash-explosion-louisville-airport/69255042"><li><div class="title">At least 3 dead after UPS plane crashes at Louisville airport; fire spreading</div><div class="domain">wlky.com &bull; November 05, 2025</div></li></a><a class="li" href="https://www.theguardian.com/world/2025/nov/04/munichs-surfers-left-stunned-after-famed-river-wave-vanishes"><li><div class="title">Munich's surfers left stunned after famed river wave vanishes</div><div class="domain">theguardian.com &bull; November 05, 2025</div></li></a><a class="li" href="https://www.bbc.com/news/live/c201kgq59qgt"><li><div class="title">At least 3 dead after cargo plane crashes at Kentucky airport</div><div class="domain">bbc.com &bull; November 05, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (1)</summary><ul><a class="li" href="https://yourstory.com/2025/11/groww-ipo-draws-heavy-retail-demand-inside-scapias-full-stack-offerings"><li><div class="title">Groww IPO draws heavy retail demand; Inside Scapia’s full-stack offerings</div><div class="domain">yourstory.com &bull; November 05, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ThePrint (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=VFNTzN9VeLk"><li><div class="title">ThePrintAM: What on agenda for PM Modi’s visit to Bhutan?</div><div class="domain">youtube.com &bull; November 05, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Dodo (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/fgnZ7MvbmNo"><li><div class="title">Dog Follows Woman on a Hike and Ends Up Being Her Soul Dog | The Dodo</div><div class="domain">youtube.com &bull; November 05, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/ZY4dhNUWfLs"><li><div class="title">Jack SWU Book 2</div><div class="domain">youtube.com &bull; November 05, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">John Bartholomew (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=kclevjiPK5I"><li><div class="title">Daniel Naroditsky: A Friend of Mine, a Friend to All</div><div class="domain">youtube.com &bull; November 05, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=YBAo4EggaxU"><li><div class="title">The Monster Truck Nobody Saw Coming! | Diesel Brothers S2 E2 | Discovery Channel</div><div class="domain">youtube.com &bull; November 05, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">darbarfestival (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=vGbK61g4QnQ"><li><div class="title">Guru Nanak’s Aarti | Anantvir Singh, Aruna Sairam, Amrita Kaur, Zeeshan Ali</div><div class="domain">youtube.com &bull; November 05, 2025</div></li></a><a class="li" href="https://www.youtube.com/shorts/rJvPhL0c-ag"><li><div class="title">Guru Nanak’s Aarti | Anantvir Singh, Aruna Sairam, Amrita Kaur, Zeeshan Ali</div><div class="domain">youtube.com &bull; November 05, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
