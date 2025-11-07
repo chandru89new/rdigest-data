@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-11-07</span>:</h1>
+  <p class="summary">There are 16 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (1)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/uDcueiGywfqBMWrEh/ai-141-give-us-the-money"><li><div class="title">AI #141: Give Us The Money</div><div class="domain">lesswrong.com &bull; November 07, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (1)</summary><ul><a class="li" href="https://github.com/dzervas/dotfiles/blob/main/home/fish-functions/qq.fish"><li><div class="title">qq.fish: A tiny, local, LLM assistant to propose commands using LMStudio that (almost) everyone can run</div><div class="domain">github.com &bull; November 07, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Nautilus (nautil.us)</h2> (1)</summary><ul><a class="li" href="https://nautil.us/is-there-such-a-thing-as-too-many-houseplants-1246634/"><li><div class="title">Is There Such a Thing as Too Many Houseplants?</div><div class="domain">nautil.us &bull; November 07, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (2)</summary><ul><a class="li" href="https://www.wsj.com/politics/policy/irs-direct-file-tax-program-ended-00172148"><li><div class="title">IRS Ends Direct File</div><div class="domain">wsj.com &bull; November 07, 2025</div></li></a><a class="li" href="https://news.vt.edu/articles/2025/10/cals-jarome-improving-memory.html"><li><div class="title">Scientists find ways to boost memory in aging brains</div><div class="domain">news.vt.edu &bull; November 07, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (2)</summary><ul><a class="li" href="https://yourstory.com/2025/11/techsparks-2025-day-two-agenda"><li><div class="title">TechSparks 2025: India’s startup story accelerates on day 2</div><div class="domain">yourstory.com &bull; November 07, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/11/priyank-kharges-ai-capital-ambitions-rebuilding-indias-deeptech-ecosystem"><li><div class="title">Priyank Kharge’s AI capital ambitions; Rebuilding India’s deeptech ecosystem</div><div class="domain">yourstory.com &bull; November 07, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Y Combinator (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/NDHvK8yKar8"><li><div class="title">Founder Stories: Priya Khandelwal</div><div class="domain">youtube.com &bull; November 07, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Hindu (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=SyaS83UWRLQ"><li><div class="title">Live | MEA Special Briefing on President Droupadi Murmu’s Visit to Botswana and Angola</div><div class="domain">youtube.com &bull; November 07, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=cE-uK1Jyh-I"><li><div class="title">LIVE: Delhi air quality hits 299, remains in ‘severe’ category in national capital</div><div class="domain">youtube.com &bull; November 07, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Dodo (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/N61Jgz636F0"><li><div class="title">This 9-Foot Lemon Shark Acts Just Like a Golden Retriever | The Dodo</div><div class="domain">youtube.com &bull; November 07, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/iE0aKerv_s0"><li><div class="title">Jay Katz</div><div class="domain">youtube.com &bull; November 07, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Socrates Studio (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=noRgUpro21g"><li><div class="title">LENIN ll November Revolution ll ரஷ்யப் புரட்சிக்கு வித்திட்ட தோழர் லெனின் ll பேரா. இரா.முரளி</div><div class="domain">youtube.com &bull; November 07, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=Uhn0ghjxetw"><li><div class="title">The Rebirth of a Classic Ford! | Diesel Brothers S2 E3 | Discovery Channel</div><div class="domain">youtube.com &bull; November 07, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">darbarfestival (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=GnKh61qqGMc"><li><div class="title">Waheguru Simran | Anantvir Singh, Amrita Kaur, Aruna Sairam & Zeeshan Ali</div><div class="domain">youtube.com &bull; November 07, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ChessBase India (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=7bKhQzwzVAM"><li><div class="title">When Praggnanandhaa Almost Got Eliminated from FIDE World Cup 2025 | Insane Tiebreaks vs Kuybokarov</div><div class="domain">youtube.com &bull; November 07, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
