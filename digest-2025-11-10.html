@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-11-10</span>:</h1>
+  <p class="summary">There are 15 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (1)</summary><ul><a class="li" href="https://matklad.github.io/2025/11/09/error-ABI.html"><li><div class="title">Error ABI</div><div class="domain">matklad.github.io &bull; November 10, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (7)</summary><ul><a class="li" href="https://www.suedbynintendo.com/"><li><div class="title">Sued by Nintendo</div><div class="domain">suedbynintendo.com &bull; November 10, 2025</div></li></a><a class="li" href="https://ssathe.substack.com/p/vision-in-the-digital-age"><li><div class="title">How to maintain good vision amidst the myopia epidemic</div><div class="domain">ssathe.substack.com &bull; November 10, 2025</div></li></a><a class="li" href="https://urlahmed.com/2025/11/05/work-after-work-notes-from-an-unemployed-new-grad-watching-the-job-market-break/"><li><div class="title">Work after work: Notes from an unemployed new grad watching the job market break</div><div class="domain">urlahmed.com &bull; November 10, 2025</div></li></a><a class="li" href="https://www.bbc.com/news/articles/cy4p2yzmem0o"><li><div class="title">Iran faces unprecedented drought as water crisis hits Tehran</div><div class="domain">bbc.com &bull; November 10, 2025</div></li></a><a class="li" href="https://rajivm1991.github.io/DroidDock/"><li><div class="title">Show HN: DroidDock – A sleek macOS app for browsing Android device files via ADB</div><div class="domain">rajivm1991.github.io &bull; November 10, 2025</div></li></a><a class="li" href="https://github.com/f/git-rewrite-commits"><li><div class="title">My Git history was a mess of 'update' and 'fix' – so I made AI clean it up</div><div class="domain">github.com &bull; November 10, 2025</div></li></a><a class="li" href="https://www.construction-physics.com/p/how-the-uk-lost-its-shipbuilding"><li><div class="title">How the UK lost its shipbuilding industry</div><div class="domain">construction-physics.com &bull; November 10, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (1)</summary><ul><a class="li" href="https://yourstory.com/2025/11/ai-models-for-public-good-mapping-indias-online-abuse-crisis"><li><div class="title">AI models for public good; Mapping India’s online abuse crisis</div><div class="domain">yourstory.com &bull; November 10, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Hindu (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=oI9Ra-1eTwg"><li><div class="title">LIVE | Delhi | Delhi's air quality slips into 'severe' category; several areas record AQI above 400</div><div class="domain">youtube.com &bull; November 10, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Dodo (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/cTey8TLfpYk"><li><div class="title">Rottweiler Is The Best Momma To Her Guinea Pig Babies | The Dodo</div><div class="domain">youtube.com &bull; November 10, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/0YQk4QwDgA4"><li><div class="title">Chris</div><div class="domain">youtube.com &bull; November 10, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=X8H6UkO-XA0"><li><div class="title">The Rise and Fall of Shawn Pomrenke! | Bering Sea Gold S13 E4 | Discovery Channel</div><div class="domain">youtube.com &bull; November 10, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DD Movies (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/LbJsAKFKj1Q"><li><div class="title">இந்த மாதிரி காதல் இப்போ எங்க இருக்கு அஜித் காதல்  Movie | DD Movies</div><div class="domain">youtube.com &bull; November 10, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ChessBase India (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=C1i2I0rmva4"><li><div class="title">And then there were 5 Indians left | Round 3 Tiebreaks Recap | FIDE World Cup 2025</div><div class="domain">youtube.com &bull; November 10, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
