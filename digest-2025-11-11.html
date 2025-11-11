@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-11-11</span>:</h1>
+  <p class="summary">There are 25 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (1)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/qBsj6HswdmP6ahaGB/andrej-karpathy-on-llm-cognitive-deficits"><li><div class="title">Andrej Karpathy on LLM cognitive deficits</div><div class="domain">lesswrong.com &bull; November 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (1)</summary><ul><a class="li" href="https://usetrmnl.com/"><li><div class="title">TRMNL | E-ink dashboard to stay focused</div><div class="domain">usetrmnl.com &bull; November 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Nautilus (nautil.us)</h2> (1)</summary><ul><a class="li" href="https://nautil.us/unique-puke-fossil-reveals-new-pterosaur-species-1247199/"><li><div class="title">Unique Puke Fossil Reveals New Pterosaur Species</div><div class="domain">nautil.us &bull; November 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (7)</summary><ul><a class="li" href="https://www.symmetrybroken.com/group-selection/"><li><div class="title">Rademacher Complexity and Models of Group Competition</div><div class="domain">symmetrybroken.com &bull; November 11, 2025</div></li></a><a class="li" href="https://rootventures.coffee/"><li><div class="title">The most nerdiest VC website that I have ever seen</div><div class="domain">rootventures.coffee &bull; November 11, 2025</div></li></a><a class="li" href="https://berkshirehathaway.com/news/nov1025.pdf"><li><div class="title">Warren Buffett's final shareholder letter [pdf]</div><div class="domain">berkshirehathaway.com &bull; November 11, 2025</div></li></a><a class="li" href="https://instagram-story-viewer.org"><li><div class="title">Show HN: A free Instagram story viewer that lets you watch anonymously</div><div class="domain">instagram-story-viewer.org &bull; November 11, 2025</div></li></a><a class="li" href="https://shop.beekeeb.com/products/toucan-wireless-piantor-wireless-split-keyboard-with-touchpad"><li><div class="title">Toucan Wireless Split Keyboard with Touchpad</div><div class="domain">shop.beekeeb.com &bull; November 11, 2025</div></li></a><a class="li" href="https://www.nytimes.com/2025/11/10/business/neros-military-drones.html"><li><div class="title">The 20-Somethings Who Raised $121M to Build Military Drones</div><div class="domain">nytimes.com &bull; November 11, 2025</div></li></a><a class="li" href="https://parkscomputing.com/page/i-hate-screenshots-of-text"><li><div class="title">I hate screenshots of text</div><div class="domain">parkscomputing.com &bull; November 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Trevor I. Lasn Thoughts (trevorlasn.com)</h2> (1)</summary><ul><a class="li" href="https://www.trevorlasn.com/blog/details-content-pseudo-element"><li><div class="title">::details-content: style expandable content without wrapper divs</div><div class="domain">trevorlasn.com &bull; November 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (2)</summary><ul><a class="li" href="https://yourstory.com/2025/11/zepto-cafe-struggles-with-muted-demand-ather-energy-results-lenskart-ipo"><li><div class="title">Zepto Cafe struggles with muted demand; A 21st-century perfumer</div><div class="domain">yourstory.com &bull; November 11, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/11/simulation-is-the-new-core-of-enterprise-agility"><li><div class="title">Simulation is the new core of enterprise agility</div><div class="domain">yourstory.com &bull; November 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Y Combinator (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/Iks_mTAYE6U"><li><div class="title">Founder Stories: Cathy Di</div><div class="domain">youtube.com &bull; November 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Hindu (youtube.com)</h2> (3)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=z2pFqBDYHZQ"><li><div class="title">LIVE| President Droupadi Murmu addresses Angola's National Assembly</div><div class="domain">youtube.com &bull; November 11, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=uTEgxqOaOO4"><li><div class="title">Explosion near Red Fort LIVE: At least 10 dead, several injured; probing all angles, says Amit Shah</div><div class="domain">youtube.com &bull; November 11, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=GXm6-BIr26o"><li><div class="title">LIVE | Red Fort Blast: Delhi Police Invoke UAPA & Explosives Act | Amit Shah Briefs PM Modi</div><div class="domain">youtube.com &bull; November 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Dodo (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/g0XuoejswGs"><li><div class="title">Dog Rescued From the Streets Blossoms Into the Happiest Boy | The Dodo</div><div class="domain">youtube.com &bull; November 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/otGpKs8rNCs"><li><div class="title">Clarisse</div><div class="domain">youtube.com &bull; November 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">John Bartholomew (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=UtFIdlmYPfM"><li><div class="title">Just Released: My Scandinavian Course!</div><div class="domain">youtube.com &bull; November 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Global Cycling Network (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/ZxmtUtFTEDE"><li><div class="title">Mute Or Dance, What Do You Do? 👌⁠</div><div class="domain">youtube.com &bull; November 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=JisDC6yPDPI"><li><div class="title">The Ultimate Truck Transformation Begins! | Diesel Brothers S2 E5 | Discovery Channel</div><div class="domain">youtube.com &bull; November 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DD Movies (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/F-_ZsAvg64I"><li><div class="title">இந்த மாதிரி காதல் இப்போ எங்க இருக்கு அஜித் காதல்  Movie | DD Movies</div><div class="domain">youtube.com &bull; November 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">darbarfestival (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=I_leHcYbOow"><li><div class="title">Madho | Anantvir Singh, Patri Satish, Surdarshan Chana, Giridhar Udupa, Gurdain Rayatt & Momin Khan</div><div class="domain">youtube.com &bull; November 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Bob & Brad (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/TrZi4YmV2vE"><li><div class="title">How to Get Off the Floor After a Fall</div><div class="domain">youtube.com &bull; November 11, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
