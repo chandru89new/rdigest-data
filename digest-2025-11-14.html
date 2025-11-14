@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-11-14</span>:</h1>
+  <p class="summary">There are 17 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (1)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/SiTwkSAsFpauvtkgW/fantasy-greater-than-planning-a-core-mental-move-for-agentic"><li><div class="title">(Fantasy) -> (Planning): A Core Mental Move For Agentic Humans?</div><div class="domain">lesswrong.com &bull; November 14, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (2)</summary><ul><a class="li" href="https://www.crunchydata.com/blog/postgres-internals-hiding-in-plain-sight"><li><div class="title">Postgres Internals Hiding in Plain Sight</div><div class="domain">crunchydata.com &bull; November 14, 2025</div></li></a><a class="li" href="https://natkr.com/2025-11-14-kubernetes-contexts/"><li><div class="title">Wrangling Kubernetes contexts</div><div class="domain">natkr.com &bull; November 14, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Nautilus (nautil.us)</h2> (1)</summary><ul><a class="li" href="https://nautil.us/this-huge-lizard-stalked-the-earth-before-dinos-1247728/"><li><div class="title">This Huge Lizard Stalked the Earth Before Dinos</div><div class="domain">nautil.us &bull; November 14, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (1)</summary><ul><a class="li" href="https://developer.apple.com/programs/mini-apps-partner/"><li><div class="title">Apple Mini Apps Partner Program</div><div class="domain">developer.apple.com &bull; November 14, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (2)</summary><ul><a class="li" href="https://yourstory.com/2025/11/groww-crosses-10b-valuation-india-kho-kho-women-champions"><li><div class="title">Groww crosses $10B valuation; Meet India’s women Kho Kho champions</div><div class="domain">yourstory.com &bull; November 14, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/11/oakter-powering-india-shift-importing-to-inventing-smart-electronics"><li><div class="title">How Oakter is powering India’s shift from importing to inventing smart electronics</div><div class="domain">yourstory.com &bull; November 14, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Hindu (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=Qwi07Juw-os"><li><div class="title">Bihar Assembly election 2025 results LIVE updates: Counting of votes to begins</div><div class="domain">youtube.com &bull; November 14, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Dodo (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/shorts/aYBxk8KH088"><li><div class="title">Sea Lion Visited This Dog Every Day For Two Years | The Dodo</div><div class="domain">youtube.com &bull; November 14, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=F2LOdbocZ9w"><li><div class="title">Terrified Puppy Completely Transforms When She Meets Another Dog | The Dodo</div><div class="domain">youtube.com &bull; November 14, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/H0Wgbzq9BRs"><li><div class="title">Chris</div><div class="domain">youtube.com &bull; November 14, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Sheena Melwani (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/9qT_XT7Y-WE"><li><div class="title">Help me pick out a dress!! | #shorts</div><div class="domain">youtube.com &bull; November 14, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">newslaundry (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/PzESb73lRKA"><li><div class="title">"जिनके पास दो या दो से ज्यादा वोटर कार्ड हैं और जिसमें फोटो गलत लगी हैं, ये एक गंभीर मुद्दा है"</div><div class="domain">youtube.com &bull; November 14, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Global Cycling Network (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/8rsM-rxX2Ws"><li><div class="title">Heat Training, Just Give it A GO! 😎</div><div class="domain">youtube.com &bull; November 14, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Every Frame a Painting (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=ZXUBoI9eHfQ"><li><div class="title">Every Frame x Lackadaisy - Interview with Tracy J. Butler & Fable Siegel</div><div class="domain">youtube.com &bull; November 14, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=xgXYZl7HsRQ"><li><div class="title">Custom-Built Vehicles You've Never Seen Before | Diesel Brothers S2 E6 | Discovery Channel</div><div class="domain">youtube.com &bull; November 14, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DD Movies (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/KRoqgusgQ0I"><li><div class="title">இந்த மாதிரி காதல் இப்போ எங்க இருக்கு அஜித் காதல்  Movie | DD Movies</div><div class="domain">youtube.com &bull; November 14, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
