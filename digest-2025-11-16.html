@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-11-16</span>:</h1>
+  <p class="summary">There are 18 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (1)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/bXG79EsEmjR3agQtd/your-clone-wants-to-kill-you-because-you-assumed-too-much"><li><div class="title">Your Clone Wants to Kill You Because You Assumed Too Much</div><div class="domain">lesswrong.com &bull; November 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (2)</summary><ul><a class="li" href="https://www.sicpers.info/2025/11/when-did-people-favor-composition-over-inheritance/"><li><div class="title">When did people favor composition over inheritance?</div><div class="domain">sicpers.info &bull; November 16, 2025</div></li></a><a class="li" href="https://randomascii.wordpress.com/2018/01/07/finding-a-cpu-design-bug-in-the-xbox-360/"><li><div class="title">Finding a CPU Design Bug in the Xbox 360 (2018)</div><div class="domain">randomascii.wordpress.com &bull; November 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (2)</summary><ul><a class="li" href="https://codeberg.org/IDEmacs/IDEmacs"><li><div class="title">IDEmacs: A Visual Studio Code clone for Emacs</div><div class="domain">codeberg.org &bull; November 16, 2025</div></li></a><a class="li" href="https://github.com/kavishdevar/librepods"><li><div class="title">AirPods libreated from Apple's ecosystem</div><div class="domain">github.com &bull; November 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (3)</summary><ul><a class="li" href="https://yourstory.com/2025/11/drones-for-indias-defence-nvidia-ai-needs"><li><div class="title">Drones for India’s defence; NVIDIA exec on India’s distinctive AI needs</div><div class="domain">yourstory.com &bull; November 16, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/11/knight-fintech-digital-lending-co-lending-infrastructure-india"><li><div class="title">How Knight Fintech is connecting banks with underserved borrowers</div><div class="domain">yourstory.com &bull; November 16, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/11/drones-aerospace-systems-indian-startups-taking-flight"><li><div class="title">From Drones to Aerospace Systems: How Indian startups are taking flight</div><div class="domain">yourstory.com &bull; November 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ThePrint (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=786sdJJSPjE"><li><div class="title">Russia’s super-missile test shows a new, expensive technological race—with dire outcomes</div><div class="domain">youtube.com &bull; November 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Hindu (youtube.com)</h2> (3)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=xQUjg8EN2uc"><li><div class="title">How teachers can adapt to the competency-based assessment framework</div><div class="domain">youtube.com &bull; November 16, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=n_UN4ALAYGU"><li><div class="title">PM Modi speaks at Surat Airport</div><div class="domain">youtube.com &bull; November 16, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=naZY0ANgdL8"><li><div class="title">LIVE | Samrat Rana wins gold in men’s 10 m air pistol at Cairo World Championship</div><div class="domain">youtube.com &bull; November 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Dodo (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/shorts/sByFLLP8mww"><li><div class="title">Pittie Becomes Guard Dog To Tons Of Rescue Kittens | The Dodo</div><div class="domain">youtube.com &bull; November 16, 2025</div></li></a><a class="li" href="https://www.youtube.com/shorts/1p9FbORfpwg"><li><div class="title">Labradors Fetching Skills Landed Him a Job in Pro Baseball | The Dodo</div><div class="domain">youtube.com &bull; November 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Global Cycling Network (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/FL_sp6TWSVM"><li><div class="title">We All Have Different Riding Styles And Positions 🤝</div><div class="domain">youtube.com &bull; November 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=hrwkW7zbJEA"><li><div class="title">The Hidden Cost of Gold Production! | Gold Rush: White Water S6 E6 | Discovery Channel</div><div class="domain">youtube.com &bull; November 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DD Movies (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/tbStmgTVQzM"><li><div class="title">இந்த மாதிரி காதல் இப்போ எங்க இருக்கு அஜித் காதல்  Movie | DD Movies</div><div class="domain">youtube.com &bull; November 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ChessBase India (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=nRj9EapMILM"><li><div class="title">The stunning final move | Levon Aronian vs Arjun Erigaisi | FIDE World Cup 2025</div><div class="domain">youtube.com &bull; November 16, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
