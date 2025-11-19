@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-11-19</span>:</h1>
+  <p class="summary">There are 9 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (2)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/9aJLvMxthWJCNx8Q4/considerations-for-setting-the-flop-thresholds-in-our"><li><div class="title">Considerations for setting the FLOP thresholds in our example international AI agreement</div><div class="domain">lesswrong.com &bull; November 19, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/zumPKp3zPDGsppFcF/anthropic-is-probably-not-meeting-its-rsp-security"><li><div class="title">Anthropic is (probably) not meeting its RSP security commitments</div><div class="domain">lesswrong.com &bull; November 19, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Nautilus (nautil.us)</h2> (2)</summary><ul><a class="li" href="https://nautil.us/did-a-violent-land-grab-give-these-chimps-a-leg-up-1248511/"><li><div class="title">Did a Violent Land Grab Give These Chimps a Leg Up?</div><div class="domain">nautil.us &bull; November 19, 2025</div></li></a><a class="li" href="https://nautil.us/wolves-caught-on-camera-fishing-for-the-first-time-1248516/"><li><div class="title">Wolves Caught on Camera Fishing for the First Time</div><div class="domain">nautil.us &bull; November 19, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (1)</summary><ul><a class="li" href="https://yourstory.com/2025/11/physicswallah-makes-market-debut-polka-tots-brings-ethnic-wear-for-kids"><li><div class="title">PhysicsWallah makes market debut; Polka Tots brings ethnic wear for kids</div><div class="domain">yourstory.com &bull; November 19, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">VideoFromSpace (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=JyZs0iuqwfQ"><li><div class="title">Blastoff! SpaceX launches 29 Starlink satellites from Florida, nails landing</div><div class="domain">youtube.com &bull; November 19, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/8_e25AW6Fm0"><li><div class="title">Terry</div><div class="domain">youtube.com &bull; November 19, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">FRONTLINE PBS | Official (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=LzJS7VRQ30k"><li><div class="title">How an Execution in Texas Sparked a National Debate | Death by Fire (full documentary) | FRONTLINE</div><div class="domain">youtube.com &bull; November 19, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=2om3sSwVWDg"><li><div class="title">The Hidden Fortune of Creek Mining! | Gold Rush S10 E13 | Discovery Channel</div><div class="domain">youtube.com &bull; November 19, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
