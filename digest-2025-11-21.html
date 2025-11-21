@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-11-21</span>:</h1>
+  <p class="summary">There are 14 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Nautilus (nautil.us)</h2> (1)</summary><ul><a class="li" href="https://nautil.us/lions-have-been-keeping-one-of-their-roars-secret-1249141/"><li><div class="title">Lions Have Been Keeping One of Their Roars Secret</div><div class="domain">nautil.us &bull; November 21, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (2)</summary><ul><a class="li" href="https://www.theguardian.com/society/2025/nov/20/prozac-no-better-than-placebo-for-treating-children-with-depression-experts-say"><li><div class="title">Prozac 'no better than placebo' for treating children with depression, experts</div><div class="domain">theguardian.com &bull; November 21, 2025</div></li></a><a class="li" href="https://bravenewgeek.com/everything-you-know-about-latency-is-wrong/"><li><div class="title">Measuring Latency (2015)</div><div class="domain">bravenewgeek.com &bull; November 21, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (4)</summary><ul><a class="li" href="https://yourstory.com/2025/11/bitcoin-volatility-shakes-cryptosphere-a-10x-return-on-diagnostics-bets"><li><div class="title">Bitcoin volatility shakes cryptosphere; A 10X return on diagnostics bets</div><div class="domain">yourstory.com &bull; November 21, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/11/healthtech-startup-eka-care-ai-standardise-medical-records-doctor-patient"><li><div class="title">This healthtech startup is using AI to standardise India’s chaotic medical records</div><div class="domain">yourstory.com &bull; November 21, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/11/myntras-m-now-scales-to-80-dark-stores"><li><div class="title">Myntra's M-Now scales to 80 dark stores within a year of launch</div><div class="domain">yourstory.com &bull; November 21, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/11/bengaluru-climate-tech-startup-waste-is-gold-processing-urban-waste-zero-emissions"><li><div class="title">Waste is Gold: The climate tech startup processing urban waste with zero emissions</div><div class="domain">yourstory.com &bull; November 21, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">This Guy Edits (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=h4MpbUb5IYk"><li><div class="title">EditRave: Online Summit for Film, TV, & Video Editors - Free Editing Challenge</div><div class="domain">youtube.com &bull; November 21, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Hindu (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=wFoJZqma8LM"><li><div class="title">LIVE | MEA: South African G20 presidency focuses on key Global South issues</div><div class="domain">youtube.com &bull; November 21, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=wYPOlBhCGf0"><li><div class="title">LIVE | PM Narendra Modi emplanes for Johannesburg, South Africa</div><div class="domain">youtube.com &bull; November 21, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Dodo (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/Nx7yB4YhvtE"><li><div class="title">Dog Who 'Turned Into Stone' Is Unrecognizable Now | The Dodo</div><div class="domain">youtube.com &bull; November 21, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/eJTlTzrsX9s"><li><div class="title">Torie</div><div class="domain">youtube.com &bull; November 21, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=qwKikDf50Tw"><li><div class="title">Treasures from the Deep Sea Mining! | Bering Sea Gold S13 E1, E2, E3, E4 | Discovery Channel</div><div class="domain">youtube.com &bull; November 21, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ChessBase India (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=SKss5xSB5AQ"><li><div class="title">Goa through the eyes of Peter Leko | FIDE World Cup 2025 Rest day with Angelika Valkova and Leko</div><div class="domain">youtube.com &bull; November 21, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
