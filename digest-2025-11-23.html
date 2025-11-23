@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-11-23</span>:</h1>
+  <p class="summary">There are 22 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (3)</summary><ul><a class="li" href="https://twdev.blog/2025/11/robin_hood/"><li><div class="title">Experimenting with Robin Hood hashing</div><div class="domain">twdev.blog &bull; November 23, 2025</div></li></a><a class="li" href="https://fluxkeyboard.com/"><li><div class="title">Flux Keyboard</div><div class="domain">fluxkeyboard.com &bull; November 23, 2025</div></li></a><a class="li" href="https://github.com/MadAppGang/dingo"><li><div class="title">dingo: A meta-language for Go</div><div class="domain">github.com &bull; November 23, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (7)</summary><ul><a class="li" href="https://www.theguardian.com/society/2025/nov/21/germany-to-classify-date-drugs-as-weapons-in-attempt-to-ensure-justice-for-survivors"><li><div class="title">Germany to classify date rape drugs as weapons to ensure justice for survivors</div><div class="domain">theguardian.com &bull; November 23, 2025</div></li></a><a class="li" href="https://bryanalexander.org/personal/a-year-without-caffeine/"><li><div class="title">A Year Without Caffeine (2013)</div><div class="domain">bryanalexander.org &bull; November 23, 2025</div></li></a><a class="li" href="https://sacbear.com/xfinity-wont-fix-internet/"><li><div class="title">A monopoly ISP refuses to fix upstream infrastructure</div><div class="domain">sacbear.com &bull; November 23, 2025</div></li></a><a class="li" href="https://arxiv.org/abs/2509.01063"><li><div class="title">An Economy of AI Agents</div><div class="domain">arxiv.org &bull; November 23, 2025</div></li></a><a class="li" href="https://www.reuters.com/sustainability/boards-policy-regulation/meta-buried-causal-evidence-social-media-harm-us-court-filings-allege-2025-11-23/"><li><div class="title">Meta buried 'causal' evidence of social media harm, US court filings allege</div><div class="domain">reuters.com &bull; November 23, 2025</div></li></a><a class="li" href="https://data.ntsb.gov/Docket/Document/docBLOB?ID=18741602&FileExtension=pdf&FileName=Underwater%20Camera%20-%20Specialist%27s%20Factual%20Report-Rel.pdf"><li><div class="title">NTSB report: Decryption of images from the Titan submersible camera [pdf]</div><div class="domain">data.ntsb.gov &bull; November 23, 2025</div></li></a><a class="li" href="https://gcc.gnu.org/pipermail/gcc/2025-November/247020.html"><li><div class="title">GCC SC approves inclusion of Algol 68 Front End</div><div class="domain">gcc.gnu.org &bull; November 23, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (4)</summary><ul><a class="li" href="https://yourstory.com/2025/11/byju-raveendrans-legal-troubles"><li><div class="title">Byju Raveendran’s legal troubles; Making sustainable diamonds</div><div class="domain">yourstory.com &bull; November 23, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/11/art-bengaluru-collective-creativity-photography"><li><div class="title">30 artists, 300 artworks: Art Bengaluru Collective launches exhibition at Rangoli Metro Art Centre</div><div class="domain">yourstory.com &bull; November 23, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/11/inclusion-ai-sustainability-quiz-entrepreneur-education"><li><div class="title">Inclusion, AI, sustainability: Test your business creativity with Edition 214 of our weekly quiz</div><div class="domain">yourstory.com &bull; November 23, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/11/how-stories-shape-decisions-trust-startup-outcomes-masterclass-ameen-haque"><li><div class="title">How stories shape decisions, trust & startup outcomes: A masterclass with Ameen Haque</div><div class="domain">yourstory.com &bull; November 23, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ThePrint (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=yX2X_vlT3TI"><li><div class="title">American investigators lured Pannun plot accused Nikhil Gupta into a trap in Prague</div><div class="domain">youtube.com &bull; November 23, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Hindu (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=-CSFkMdzD74"><li><div class="title">MEA special briefing: PM Modi to push food security and disaster resilience in Johannesburg</div><div class="domain">youtube.com &bull; November 23, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=mUs-kDfjHPw"><li><div class="title">LIVE | MEA highlights food security, disaster risk as PM Modi visits Johannesburg</div><div class="domain">youtube.com &bull; November 23, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/WGLx4JCtz-s"><li><div class="title">Drew</div><div class="domain">youtube.com &bull; November 23, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">John Bartholomew (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=kVqBU0vxBDo"><li><div class="title">The Joy and Challenge of Facing Daniel Naroditsky in Blitz (Game 1)</div><div class="domain">youtube.com &bull; November 23, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=QVDazNOaaiU"><li><div class="title">Customization That Could Make or Break the Street Race! | Street Outlaws S4 E4 | Discovery Channel</div><div class="domain">youtube.com &bull; November 23, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DD Movies (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/plbHfaX8tMM"><li><div class="title">இந்த மாதிரி காதல் இப்போ எங்க இருக்கு அஜித் காதல்  Movie | DD Movies</div><div class="domain">youtube.com &bull; November 23, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">darbarfestival (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=saLW71FCpRM"><li><div class="title">Updesh Chau Varna Kau Sanjha | Guru Arjan Dev Ji | Anantvir Singh</div><div class="domain">youtube.com &bull; November 23, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
