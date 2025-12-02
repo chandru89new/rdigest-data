@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-12-02</span>:</h1>
+  <p class="summary">There are 15 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (1)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/z4jtxKw8xSHRqQbqw/miri-s-2025-fundraiser"><li><div class="title">MIRI’s 2025 Fundraiser</div><div class="domain">lesswrong.com &bull; December 02, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (1)</summary><ul><a class="li" href="https://www.freebsd.org/releases/15.0R/announce/"><li><div class="title">FreeBSD 15.0-RELEASE Announcement</div><div class="domain">freebsd.org &bull; December 02, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Nautilus (nautil.us)</h2> (1)</summary><ul><a class="li" href="https://nautil.us/tiny-volcano-dwelling-creature-breaks-heat-record-1251773/"><li><div class="title">Tiny Volcano-Dwelling Creature Breaks Heat Record</div><div class="domain">nautil.us &bull; December 02, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (2)</summary><ul><a class="li" href="https://frozenfractal.com/blog/2025/11/28/around-the-world-27-planting-trees/"><li><div class="title">Around The World, Part 27: Planting trees</div><div class="domain">frozenfractal.com &bull; December 02, 2025</div></li></a><a class="li" href="https://www.arcee.ai/blog/the-trinity-manifesto?src=hn"><li><div class="title">Arcee Trinity Mini: US-Trained Moe Model</div><div class="domain">arcee.ai &bull; December 02, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (2)</summary><ul><a class="li" href="https://yourstory.com/2025/12/strong-tier-ii-demand-drives-lenskart-accessible-mental-healthcare-for-all"><li><div class="title">Strong Tier II demand drives Lenskart; Accessible mental healthcare for all</div><div class="domain">yourstory.com &bull; December 02, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/12/a-busy-november-ends-with-gains-for-groww-pine-labs-and-lenskart-losses-for-physicswallah"><li><div class="title">A busy November ends with gains for Groww, Pine Labs, and Lenskart; losses for PhysicsWallah</div><div class="domain">yourstory.com &bull; December 02, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ThePrint (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/xfNGML6ouJk"><li><div class="title">Siddaramaiah Vs DK Shivakumar: CM tussle & Karnataka’s complex politics</div><div class="domain">youtube.com &bull; December 02, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Hindu (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=g9NlI6zOn9k"><li><div class="title">CBI DIG Atul Kumar Thakur conducts detailed inspection at Karur stampede site</div><div class="domain">youtube.com &bull; December 02, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=hjTNUbaaB6E"><li><div class="title">LIVE | Delhi’s air quality remains in ‘poor’ category</div><div class="domain">youtube.com &bull; December 02, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">StarTalk (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/zRKLIqlFvvM"><li><div class="title">The Flash's Superpower Explained!</div><div class="domain">youtube.com &bull; December 02, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/7SN6SuRpzFU"><li><div class="title">Danielle</div><div class="domain">youtube.com &bull; December 02, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Rick Beato (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/Kb_mK6IfjSI"><li><div class="title">Flea demonstrates the hardest Red Hot Chili Peppers bass parts. #bass #bassplayer #funk #shorts</div><div class="domain">youtube.com &bull; December 02, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=eTbC-Ym_qCM"><li><div class="title">Nature Survival: The Earth Strikes Back! | Dual Survival S2 E1, E6, E9 | Discovery Channel</div><div class="domain">youtube.com &bull; December 02, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ChessBase India (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=ZsyBO0BwNbc"><li><div class="title">Oh My God! How does he do it? | Vishy Anand vs Vladimir Fedoseev | Jerusalem Masters 2025</div><div class="domain">youtube.com &bull; December 02, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
