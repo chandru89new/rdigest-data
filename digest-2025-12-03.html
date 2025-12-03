@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-12-03</span>:</h1>
+  <p class="summary">There are 15 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (1)</summary><ul><a class="li" href="https://mirawelner.com/posts/peer_review.html"><li><div class="title">How should we peer review software?</div><div class="domain">mirawelner.com &bull; December 03, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Nautilus (nautil.us)</h2> (1)</summary><ul><a class="li" href="https://nautil.us/vampire-squid-genome-offers-glimpse-into-octopus-evolution-1252110/"><li><div class="title">Vampire Squid Genome Offers Glimpse Into Octopus Evolution</div><div class="domain">nautil.us &bull; December 03, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (1)</summary><ul><a class="li" href="https://varlogsimon.leaflet.pub/3m6zrw6k2bs2p?interactionDrawer=quotes"><li><div class="title">Kohler Can Access Pictures from "End-to-End Encrypted" Toilet Camera</div><div class="domain">varlogsimon.leaflet.pub &bull; December 03, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (4)</summary><ul><a class="li" href="https://yourstory.com/2025/12/a-patent-for-the-pitch-deck-maharashtra-leads-startup-india"><li><div class="title">A patent for the pitch deck; Maharashtra leads Startup India</div><div class="domain">yourstory.com &bull; December 03, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/12/6m-series-funding-moonrider-india-agricultural-ev-transition"><li><div class="title">With $6M in Series A funding, Moonrider aims to drive India’s agricultural EV transition</div><div class="domain">yourstory.com &bull; December 03, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/12/contrails-ai-raises-1-million-deepfake-detection-startup-bengaluru"><li><div class="title">Can AI save us from AI? This startup is building digital tools to detect deepfakes</div><div class="domain">yourstory.com &bull; December 03, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/12/why-every-vendor-agreement-needs-a-dispute-resolution-clause"><li><div class="title">Why every vendor agreement needs a dispute resolution clause</div><div class="domain">yourstory.com &bull; December 03, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ThePrint (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=vEVUUXV3ap0"><li><div class="title">'PM Modi can persuade Russian President Putin, help us towards peace in Ukraine', Polish Deputy FM</div><div class="domain">youtube.com &bull; December 03, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=SO3CvOIR460"><li><div class="title">Delhi air pollution & the 40-year judicial battle: Interventions by court & failed attempts by govts</div><div class="domain">youtube.com &bull; December 03, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/57WpvoLldtI"><li><div class="title">Dutch</div><div class="domain">youtube.com &bull; December 03, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Intelligence Squared (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=C_SWE4EFW10"><li><div class="title">The Specialist | The Collector & the Ceramicist: Sydney Denton & Magdalene Odundo with Julia Fischel</div><div class="domain">youtube.com &bull; December 03, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">FRONTLINE PBS | Official (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=mTFtBju5PFc"><li><div class="title">Inside the Politics of America’s Gun Debate | Gunned Down (full documentary) | FRONTLINE</div><div class="domain">youtube.com &bull; December 03, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=dGx4RYT7QKI"><li><div class="title">Josh Gates Dives Into the Mystery! | Expedition Unknown S3 E5, E6, E9, E10 | Discovery Channel</div><div class="domain">youtube.com &bull; December 03, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ChessBase India (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=ohQOhmenuT4"><li><div class="title">Jerusalem Masters 2025 | Arjun vs Svidler & Vishy vs Nepo | Samay playing in Pogchamps later</div><div class="domain">youtube.com &bull; December 03, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Chess.com (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=Ph570tnttHc"><li><div class="title">SUPERPOGCHAMPS: Andrea Botez v. Voyboy, SonicFox v. Masi Oka, Sparg0 v. Linda Diaz! Group A Rds 1-5</div><div class="domain">youtube.com &bull; December 03, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
