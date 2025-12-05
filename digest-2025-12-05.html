@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-12-05</span>:</h1>
+  <p class="summary">There are 19 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">kottke.org (feeds.kottke.org)</h2> (1)</summary><ul><a class="li" href="https://kottke.org/25/12/0047959-pantone-choosing-a-shade-"><li><div class="title">Pantone choosing a shade of white for its color of the year...</div><div class="domain">kottke.org &bull; December 05, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (2)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/bCkijKnuEpjnZtX84/ai-145-you-ve-got-soul"><li><div class="title">AI #145: You’ve Got Soul</div><div class="domain">lesswrong.com &bull; December 05, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/jiLKJhkvcznxbzMPa/center-on-long-term-risk-annual-review-and-fundraiser-2025"><li><div class="title">Center on Long-Term Risk: Annual Review & Fundraiser 2025</div><div class="domain">lesswrong.com &bull; December 05, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Nautilus (nautil.us)</h2> (1)</summary><ul><a class="li" href="https://nautil.us/an-ancient-earthquake-might-have-unleashed-a-sea-turtle-stampede-1252680/"><li><div class="title">An Ancient Earthquake Might Have Unleashed a Sea Turtle Stampede</div><div class="domain">nautil.us &bull; December 05, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (6)</summary><ul><a class="li" href="https://app.trevally.io/login.html"><li><div class="title">You may loose your company email, but never lose your emails and contacts again</div><div class="domain">app.trevally.io &bull; December 05, 2025</div></li></a><a class="li" href="https://blog.neurips.cc/2025/11/26/announcing-the-neurips-2025-best-paper-awards/"><li><div class="title">NeurIPS best paper awards 2025</div><div class="domain">blog.neurips.cc &bull; December 05, 2025</div></li></a><a class="li" href="https://www.siliconcontinent.com/p/how-brussels-writes-so-many-laws"><li><div class="title">Brussels writes so many laws</div><div class="domain">siliconcontinent.com &bull; December 05, 2025</div></li></a><a class="li" href="https://prestonbyrne.com/2025/12/04/the-ofcom-files-part-4-ofcom-rides-again/"><li><div class="title">The Ofcom Files, Part 4: Ofcom Rides Again</div><div class="domain">prestonbyrne.com &bull; December 05, 2025</div></li></a><a class="li" href="https://evclinic.eu/2025/12/04/2021-phev-bmw-ibmucp-21f37e-post-crash-recovery-when-eu-engineering-becomes-a-synonym-for-unrepairable-generating-waste/"><li><div class="title">BMW PHEV: When EU engineering becomes a synonym for "unrepairable" (EV Clinic)</div><div class="domain">evclinic.eu &bull; December 05, 2025</div></li></a><a class="li" href="https://netflixtechblog.com/av1-now-powering-30-of-netflix-streaming-02f592242d80"><li><div class="title">AV1: A Modern, Open Codec</div><div class="domain">netflixtechblog.com &bull; December 05, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (2)</summary><ul><a class="li" href="https://yourstory.com/2025/12/bengaluru-powers-indias-innovation-engine-dream11-pivots-to-sports-entertainment"><li><div class="title">Bengaluru powers India’s innovation engine; Dream11 pivots to sports entertainment</div><div class="domain">yourstory.com &bull; December 05, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/12/the-funding-reset-why-early-stage-investors-are-betting-on-profit-before-valuation"><li><div class="title">The funding reset: Why early-stage investors are betting on profit before valuation</div><div class="domain">yourstory.com &bull; December 05, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ThePrint (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/NMAb00QkPeM"><li><div class="title">Putin’s 10th visit: Opportunities & challenges for India-Russia ties</div><div class="domain">youtube.com &bull; December 05, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Hindu (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=VflBYGE1imE"><li><div class="title">LIVE | Delhi's AQI improves slightly, enters 'poor' category with AQI 299; cold wave forecast</div><div class="domain">youtube.com &bull; December 05, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Dodo (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/wPDOSNwiY_Y"><li><div class="title">Cat Stuck On 50ft Tree For TWO DAYS Finally Goes Home | The Dodo</div><div class="domain">youtube.com &bull; December 05, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/QeWtNYuHRM0"><li><div class="title">Candi</div><div class="domain">youtube.com &bull; December 05, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=D_xA8xbuTP8"><li><div class="title">Chasing the Unknown in Exotic Wildlife! | Dual Survival S2 E2, E8, E12 | Discovery Channel</div><div class="domain">youtube.com &bull; December 05, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=zO7MPqYsUoQ"><li><div class="title">Gold Extraction to Search Fortune! | Gold Rush: White Water S2 E9, E10 | Discovery Channel</div><div class="domain">youtube.com &bull; December 05, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Bob & Brad (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/3ctIwvT823s"><li><div class="title">How to Do A Chin Tuck</div><div class="domain">youtube.com &bull; December 05, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
