@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-12-06</span>:</h1>
+  <p class="summary">There are 15 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Nautilus (nautil.us)</h2> (1)</summary><ul><a class="li" href="https://nautil.us/are-we-finally-over-the-jaws-effect-1253001/"><li><div class="title">Are We Finally Over the “Jaws Effect?”</div><div class="domain">nautil.us &bull; December 06, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (4)</summary><ul><a class="li" href="https://www.heatpumped.org/p/from-rockets-to-heat-pumps"><li><div class="title">From Rockets to Heat Pumps</div><div class="domain">heatpumped.org &bull; December 06, 2025</div></li></a><a class="li" href="https://www.mooreslawisdead.com/post/sam-altman-s-dirty-dram-deal"><li><div class="title">Sam Altman's Dirty DRAM Deal</div><div class="domain">mooreslawisdead.com &bull; December 06, 2025</div></li></a><a class="li" href="http://www.ffd2.com/fridge/docs/6502-NMOS.extra.opcodes"><li><div class="title">Extra Instructions of the 65XX Series CPU</div><div class="domain">ffd2.com &bull; December 06, 2025</div></li></a><a class="li" href="https://social.growyourown.services/@FediTips/115668457530054406"><li><div class="title">YouTube caught making AI-edits to videos and adding misleading AI summaries</div><div class="domain">social.growyourown.services &bull; December 06, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (1)</summary><ul><a class="li" href="https://yourstory.com/2025/12/binance-apac-chief-on-crypto-regulation"><li><div class="title">Binance APAC Chief on crypto regulation; Inside Pitney Bowes’ India GCC</div><div class="domain">yourstory.com &bull; December 06, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Thought Emporium (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=D0PjLvlBsWw"><li><div class="title">Making giant insects to spite evolution</div><div class="domain">youtube.com &bull; December 06, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Hindu (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=ciOB4e_YPVs"><li><div class="title">PM Narendra Modi participates in India–Russia Business Forum with President Vladimir Putin</div><div class="domain">youtube.com &bull; December 06, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Dodo (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/KpHXriKFux8"><li><div class="title">87-Year Old Man Pampers His Dog Like A Princess | The Dodo</div><div class="domain">youtube.com &bull; December 06, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/IRGhp1EcKP0"><li><div class="title">Cam</div><div class="domain">youtube.com &bull; December 06, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=sEZor4O8GZE"><li><div class="title">The Perils and Promise of Sea Mining! | Bering Sea Gold S12 E5, E6 | Discovery Channel</div><div class="domain">youtube.com &bull; December 06, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ChessBase India (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=MrnzQwb1bqI"><li><div class="title">Super Pogchamps | Semis vs Andrea Botez and Finals vs Sardoche</div><div class="domain">youtube.com &bull; December 06, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=Aq0eHoESlf0"><li><div class="title">Nodirbek Abdusattorov on destruction mode in London | Wins Elite Group with round to spare!</div><div class="domain">youtube.com &bull; December 06, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Chess.com (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=uzUyXmK_u-w"><li><div class="title">SUPERPOGCHAMPS Finale: Samay v. Andrea Botez & Sardoche v. Masi Oka In Semis & Finals To Follow!!</div><div class="domain">youtube.com &bull; December 06, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Bob & Brad (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/3_5KaWBuc-M"><li><div class="title">Great Balance and Core Exercise with a Ball</div><div class="domain">youtube.com &bull; December 06, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
