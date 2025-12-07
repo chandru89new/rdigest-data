@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-12-07</span>:</h1>
+  <p class="summary">There are 19 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (5)</summary><ul><a class="li" href="https://wadetregaskis.com/how-to-make-a-macos-screen-saver/"><li><div class="title">How to make a macOS screen saver</div><div class="domain">wadetregaskis.com &bull; December 07, 2025</div></li></a><a class="li" href="http://jonathan.protzenko.fr/2025/10/28/eurydice.html"><li><div class="title">Eurydice: a Rust to C compiler (yes)</div><div class="domain">jonathan.protzenko.fr &bull; December 07, 2025</div></li></a><a class="li" href="http://oldvcr.blogspot.com/2025/12/oblast-better-blasto-game-for-commodore.html"><li><div class="title">Oblast: a better Blasto game for the Commodore 64</div><div class="domain">oldvcr.blogspot.com &bull; December 07, 2025</div></li></a><a class="li" href="https://reasonablypolymorphic.com/blog/algebraic-music/index.html"><li><div class="title">Struggling Towards an Algebraic Theory of Music</div><div class="domain">reasonablypolymorphic.com &bull; December 07, 2025</div></li></a><a class="li" href="https://rfd.shared.oxide.computer/rfd/0576"><li><div class="title">Using LLMs at Oxide</div><div class="domain">rfd.shared.oxide.computer &bull; December 07, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (2)</summary><ul><a class="li" href="https://jonathan.protzenko.fr/2025/10/28/eurydice.html"><li><div class="title">Eurydice: a Rust to C compiler (yes)</div><div class="domain">jonathan.protzenko.fr &bull; December 07, 2025</div></li></a><a class="li" href="https://www.bbc.com/news/articles/cwygqqll9k2o"><li><div class="title">Trains cancelled over fake bridge collapse image</div><div class="domain">bbc.com &bull; December 07, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (3)</summary><ul><a class="li" href="https://yourstory.com/2025/12/inside-iit-madras-incubation-cell"><li><div class="title">Inside IIT Madras’ Incubation Cell; How WAE is trying to cut plastic bottle use</div><div class="domain">yourstory.com &bull; December 07, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/12/lucknow-startup-ai-to-deliver-quality-diagnostics-across-india"><li><div class="title">This Lucknow-based startup is using AI to deliver quality diagnostics across India</div><div class="domain">yourstory.com &bull; December 07, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/12/venkatappa-art-gallery-culture-photography"><li><div class="title">Preservation and partnerships: Renovated Venkatappa Art Gallery presents contemporary face to Indian art</div><div class="domain">yourstory.com &bull; December 07, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ThePrint (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/shorts/nkkA6z9tTqw"><li><div class="title">Munir’s dictatorial ‘innovation’ & Subontiment’s rejection #NationalInterest</div><div class="domain">youtube.com &bull; December 07, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=7RSFqF0mDno"><li><div class="title">Russia's brain-chipped pigeons: The rise of bio-drones & how they work</div><div class="domain">youtube.com &bull; December 07, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Hindu (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=6OzV5kju5Uk"><li><div class="title">Should the early education business be regulated?</div><div class="domain">youtube.com &bull; December 07, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=1jURJtINMIw"><li><div class="title">LIVE | CM Rekha Gupta, Astronaut Shubhanshu Shukla Launch Delhi’s First AI Innovation Movement</div><div class="domain">youtube.com &bull; December 07, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Dodo (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/SlSSf7smCIM"><li><div class="title">Toddler Brings His Very Own Kitten Home From The Shelter | The Dodo</div><div class="domain">youtube.com &bull; December 07, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/bpFY5Q7D1Hk"><li><div class="title">Catherine</div><div class="domain">youtube.com &bull; December 07, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=GjQFFBygv3o"><li><div class="title">Gold Hunters Take on Treacherous Rivers! | Gold Rush S11 E4 | Discovery Channel</div><div class="domain">youtube.com &bull; December 07, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=NLCaDpQYSjs"><li><div class="title">The Mystery Surrounding Dwarka! | Expedition Unknown S3 E13, E14. E15, E16 | Discovery Channel</div><div class="domain">youtube.com &bull; December 07, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Bob & Brad (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/MwFFAcRumDM"><li><div class="title">Fix Tennis Elbow With a Butter Knife</div><div class="domain">youtube.com &bull; December 07, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
