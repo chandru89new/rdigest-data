@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-12-12</span>:</h1>
+  <p class="summary">There are 18 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">kottke.org (feeds.kottke.org)</h2> (1)</summary><ul><a class="li" href="https://kottke.org/25/12/0048003-what-is-happening-orcas-s"><li><div class="title">What is happening? Orcas started wearing dead salmon as hats again and...</div><div class="domain">kottke.org &bull; December 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (3)</summary><ul><a class="li" href="https://xania.org/202512/11-pop-goes-the-weasel-er-count"><li><div class="title">Pop goes the...population count?</div><div class="domain">xania.org &bull; December 12, 2025</div></li></a><a class="li" href="https://poniesandlight.co.uk/reflect/gamma/"><li><div class="title">Notes on Gamma</div><div class="domain">poniesandlight.co.uk &bull; December 12, 2025</div></li></a><a class="li" href="https://github.com/lucasew/orvalho/blob/main/SPEC.md"><li><div class="title">Orvalho Spec</div><div class="domain">github.com &bull; December 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Nautilus (nautil.us)</h2> (2)</summary><ul><a class="li" href="https://nautil.us/rabies-virus-helps-map-psilocybins-brain-altering-effects-1254177/"><li><div class="title">Rabies Virus Helps Map Psilocybin’s Brain Altering Effects</div><div class="domain">nautil.us &bull; December 12, 2025</div></li></a><a class="li" href="https://nautil.us/how-we-changed-cat-sounds-forever-1254172/"><li><div class="title">How We Changed Cat Sounds Forever</div><div class="domain">nautil.us &bull; December 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (3)</summary><ul><a class="li" href="https://github.com/stoolap/stoolap"><li><div class="title">Stoolap: High-performance embedded SQL database in pure Rust</div><div class="domain">github.com &bull; December 12, 2025</div></li></a><a class="li" href="https://tedium.co/2025/12/10/404-media-zine-linux-affinity/?"><li><div class="title">The Weird Way the 404 Media Zine Was Built</div><div class="domain">tedium.co &bull; December 12, 2025</div></li></a><a class="li" href="https://yaky.dev/2025-12-11-nokia-n900-necromancy/"><li><div class="title">Nokia N900 Necromancy</div><div class="domain">yaky.dev &bull; December 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (2)</summary><ul><a class="li" href="https://yourstory.com/2025/12/half-of-your-digital-advertisement-budget-may-be-buying-ghosts"><li><div class="title">Half of your digital advertisement budget may be buying ghosts</div><div class="domain">yourstory.com &bull; December 12, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/12/new-age-twist-to-traditional-mithai-india-quotients-time-tested-strategies"><li><div class="title">New-age twist to traditional mithai; India Quotient’s time-tested strategies</div><div class="domain">yourstory.com &bull; December 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Hindu (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=dKGifCOB0Uc"><li><div class="title">Kolkata Gears Up for Lionel Messi’s Grand Arrival</div><div class="domain">youtube.com &bull; December 12, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=PS1f7iGnZmU"><li><div class="title">LIVE | Delhi Braces for Toxic Air Spell as AQI Poised to Worsen</div><div class="domain">youtube.com &bull; December 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Dodo (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/k_I7I_s4tQY"><li><div class="title">VERY Matted Dog Is Unrecognizable After Five Hour Haircut | The Dodo</div><div class="domain">youtube.com &bull; December 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/bzYPLVeIf1U"><li><div class="title">Andreaxx</div><div class="domain">youtube.com &bull; December 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">newslaundry (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/hidsqXiNvq4"><li><div class="title">न्यूज़लॉन्ड्री की विज्ञापन मुक्त और जनहित के प्रति समर्पित पत्रकारिता सब्सक्राइब करें.</div><div class="domain">youtube.com &bull; December 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Law Chambers of Amish Aggarwala (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/NN7fmG-wBCI"><li><div class="title">Supreme Court's moral preaching in marital disputes</div><div class="domain">youtube.com &bull; December 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=U18IwXVW5kQ"><li><div class="title">The Most Dangerous Ice Scuba Diving! | Bering Sea Gold S12, E9, 10 | Discovery Channel</div><div class="domain">youtube.com &bull; December 12, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
