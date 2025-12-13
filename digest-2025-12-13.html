@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-12-13</span>:</h1>
+  <p class="summary">There are 16 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (1)</summary><ul><a class="li" href="https://boringsql.com/posts/vacuum-is-lie/"><li><div class="title">VACUUM Is a Lie: About Your Indexes</div><div class="domain">boringsql.com &bull; December 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Nautilus (nautil.us)</h2> (1)</summary><ul><a class="li" href="https://nautil.us/a-warming-arctic-may-be-changing-polar-bears-dna-1254348/"><li><div class="title">A Warming Arctic May Be Changing Polar Bears’ DNA</div><div class="domain">nautil.us &bull; December 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (1)</summary><ul><a class="li" href="https://99percentinvisible.org/episode/650-the-checkerboard/"><li><div class="title">The Checkerboard</div><div class="domain">99percentinvisible.org &bull; December 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (3)</summary><ul><a class="li" href="https://yourstory.com/2025/12/nita-mukesh-ambani-cultural-centre-doug-aitken-photography"><li><div class="title">Nita Mukesh Ambani Cultural Centre presents Doug Aitken’s spectacular art exhibition, ‘Under the Sun’</div><div class="domain">yourstory.com &bull; December 13, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/12/mens-grooming-comes-of-age-bots-eating-ad-budgets"><li><div class="title">Men’s grooming comes of age; Bots eating ad budgets</div><div class="domain">yourstory.com &bull; December 13, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/12/meet-eternz-the-startup-fixing-indias-fragmented-jewelry-market"><li><div class="title">Meet Eternz, the startup fixing India's fragmented jewellery market</div><div class="domain">yourstory.com &bull; December 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ThePrint (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=83VoGHOs-9w"><li><div class="title">'It's proven that beef was eaten in the Vedic era', says food critic Prof Pushpesh Pant.</div><div class="domain">youtube.com &bull; December 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Hindu (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=zy_iiMTX668"><li><div class="title">Civil Aviation Minister defends airfare caps, DGCA tariff monitoring and aircraft availability</div><div class="domain">youtube.com &bull; December 13, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=DCUqcHU8hzE"><li><div class="title">LIVE | Delhi’s AQI remains ‘very poor’, likely to turn ‘severe’ over weekend</div><div class="domain">youtube.com &bull; December 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Dodo (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/XuseDt9XJAE"><li><div class="title">Tortoise Shares Her Wellness Tips And Tricks With Us | The Dodo</div><div class="domain">youtube.com &bull; December 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Soul Boom w/ Rainn Wilson (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/J8iA1R6T-40"><li><div class="title">Trisha Paytas Explains BPD</div><div class="domain">youtube.com &bull; December 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/lSDpshuKkZ0"><li><div class="title">Nicole and Matt</div><div class="domain">youtube.com &bull; December 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">FRONTLINE PBS | Official (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=Lku5h9xjrqc"><li><div class="title">Surviving CECOT (full documentary) | Deported to a Maximum-Security Prison | FRONTLINE + ProPublica</div><div class="domain">youtube.com &bull; December 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Empty Hand (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=loueJJ2KsPM"><li><div class="title">எல்லை மீறிய Parvathy & Kamarudin😱 Bigg Boss Tamil Season 9 TROLL | Vijay Sethupathi | Vijay Tv</div><div class="domain">youtube.com &bull; December 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=8ouGqWa1lKs"><li><div class="title">Josh Gates Chasing History’s Greatest Secrets! | Expedition Unknown S3, E2, 4, 6, 13 |</div><div class="domain">youtube.com &bull; December 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ChessBase India (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=wsQWMHlM-jg"><li><div class="title">Magnus tried everything he got, but....</div><div class="domain">youtube.com &bull; December 13, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
