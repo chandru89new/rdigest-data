@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-12-14</span>:</h1>
+  <p class="summary">There are 17 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (3)</summary><ul><a class="li" href="https://keymaterial.net/2025/12/13/a-very-unscientific-guide-to-the-security-of-various-pqc-algorithms/"><li><div class="title">A very unscientific guide to the security of various PQC algorithms</div><div class="domain">keymaterial.net &bull; December 14, 2025</div></li></a><a class="li" href="https://thundergolfer.com/startups/support/2025/12/13/support-eng-stage-1/"><li><div class="title">Larval stage support engineering: great at what doesn’t scale</div><div class="domain">thundergolfer.com &bull; December 14, 2025</div></li></a><a class="li" href="https://github.com/atgreen/icl"><li><div class="title">icl: Interactive Common Lisp: an enhanced REPL</div><div class="domain">github.com &bull; December 14, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (3)</summary><ul><a class="li" href="https://www.fsf.org/news/2024-free-software-awards-winners"><li><div class="title">Free Software Awards Winners Announced: Andy Wingo, Alx Sa, Govdirectory</div><div class="domain">fsf.org &bull; December 14, 2025</div></li></a><a class="li" href="https://github.com/Necior/awesome-jj"><li><div class="title">Awesome-Jj: Jujutsu Things</div><div class="domain">github.com &bull; December 14, 2025</div></li></a><a class="li" href="https://www.jsoftware.com/ioj/ioj.htm"><li><div class="title">An Implementation of J</div><div class="domain">jsoftware.com &bull; December 14, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (2)</summary><ul><a class="li" href="https://yourstory.com/2025/12/blueprint-for-building-enterprise-ai-eternzs-fix-for-jewellery-shopping"><li><div class="title">Blueprint for building enterprise AI; Eternz’s fix for jewellery shopping</div><div class="domain">yourstory.com &bull; December 14, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/12/holy-grail-of-business-ai-uniphore-playbook-umesh-sachdev"><li><div class="title">The Holy Grail of Business AI: Uniphore’s $2.5B playbook with Umesh Sachdev</div><div class="domain">yourstory.com &bull; December 14, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Hindu (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=zrl9AlGP5a0"><li><div class="title">Careers in sports beyond the field: scope and future</div><div class="domain">youtube.com &bull; December 14, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=vOzoj7U0usc"><li><div class="title">LIVE | Centre invokes toughest anti-pollution measures in Delhi as air quality hits season’s worst</div><div class="domain">youtube.com &bull; December 14, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Dodo (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=-YlNzsV0w3w"><li><div class="title">This Cat Won’t Let Her Mom Do Pottery Alone | The Dodo</div><div class="domain">youtube.com &bull; December 14, 2025</div></li></a><a class="li" href="https://www.youtube.com/shorts/YqSNPJusJz8"><li><div class="title">Woman Rescues Tiny Baby Sparrow Smaller Than AirPods Case | The Dodo</div><div class="domain">youtube.com &bull; December 14, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/MOz_u6_2IXw"><li><div class="title">Mercedes</div><div class="domain">youtube.com &bull; December 14, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Jay & Sharon (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/Co1SrJspvUI"><li><div class="title">The Household of Unnecessary Secrets</div><div class="domain">youtube.com &bull; December 14, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=Bfdisvxa31I"><li><div class="title">Gold Hunting in the Harshest Lands! | Bering Sea Gold S12, E11, 12 | Discovery Channel</div><div class="domain">youtube.com &bull; December 14, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ChessBase India (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=qCiRbTeJNzI"><li><div class="title">Samay and Sagar's emotional speech! | Global Chess League Season 3 in Mumbai</div><div class="domain">youtube.com &bull; December 14, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Bob & Brad (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/ljPp1Z6cBno"><li><div class="title">4 Simple Standing Exercises for Seniors to Stay Strong & Balanced</div><div class="domain">youtube.com &bull; December 14, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
