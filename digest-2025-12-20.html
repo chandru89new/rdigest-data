@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-12-20</span>:</h1>
+  <p class="summary">There are 17 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (3)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/yZ5Aq3iJYMvpZjrqb/ai-147-flash-forward"><li><div class="title">AI #147: Flash Forward</div><div class="domain">lesswrong.com &bull; December 20, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/K3rzQJh3RhaDkREMA/when-were-things-the-best"><li><div class="title">When Were Things The Best?</div><div class="domain">lesswrong.com &bull; December 20, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/DMswzhPQqkqx2XAma/a-full-epistemic-stack-knowledge-commons-for-the-21st-1"><li><div class="title">A Full Epistemic Stack: Knowledge Commons for the 21st Century</div><div class="domain">lesswrong.com &bull; December 20, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (3)</summary><ul><a class="li" href="https://parentheticallyspeaking.org/articles/pedagogy-recommendations/"><li><div class="title">Pedagogy Recommendations</div><div class="domain">parentheticallyspeaking.org &bull; December 20, 2025</div></li></a><a class="li" href="https://chameth.com/exposing-game-servers-over-tailscale/"><li><div class="title">Exposing game servers over Tailscale</div><div class="domain">chameth.com &bull; December 20, 2025</div></li></a><a class="li" href="https://archive.org/details/utah_unix_v4_raw"><li><div class="title">UNIX V4 tape from University of Utah</div><div class="domain">archive.org &bull; December 20, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Nautilus (nautil.us)</h2> (1)</summary><ul><a class="li" href="https://nautil.us/these-living-rocks-are-living-it-up-1255698/"><li><div class="title">These “Living Rocks” Are Living It Up</div><div class="domain">nautil.us &bull; December 20, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (1)</summary><ul><a class="li" href="https://yourstory.com/2025/12/decathlon-indias-growth-slows-down-inside-the-workings-of-sawariya-group"><li><div class="title">Decathlon India's growth slows down; Inside the workings of Sawariya Group</div><div class="domain">yourstory.com &bull; December 20, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Hindu (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=qwmQyzbSmqo"><li><div class="title">Winter Celebrations Kick Off with Ooty Chocolates, Chillai Kalan and Shimla Carnival</div><div class="domain">youtube.com &bull; December 20, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=gGhMHuWxgjU"><li><div class="title">LIVE | Dense fog blankets Indo-Gangetic plains; IMD issues red alert for Delhi</div><div class="domain">youtube.com &bull; December 20, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Dodo (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/Biq7kw_6UBs"><li><div class="title">Weak One-Eyed-Eagle Barely Has The Strength To Make It To Shore | The Dodo</div><div class="domain">youtube.com &bull; December 20, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/irmnUX43fZo"><li><div class="title">Caroline</div><div class="domain">youtube.com &bull; December 20, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=9dtryH0GdF4"><li><div class="title">The Mining Crew That Dares the Ground! | Gold Rush S11 E11 | Discovery Channel</div><div class="domain">youtube.com &bull; December 20, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ChessNetwork (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=R0KnrxqykSM"><li><div class="title">LeelaKnightOdds’s King’s Indian Dethrones a Grandmaster in 21 Moves</div><div class="domain">youtube.com &bull; December 20, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ChessBase India (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=YJhz-SCHL60"><li><div class="title">The Royal venue of the Global Chess League 2025 - Royal Opera House in Mumbai</div><div class="domain">youtube.com &bull; December 20, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=U8F5XK90hKQ"><li><div class="title">Unstoppable force Alireza Firouzja meets Immovable Object Gukesh | Global Chess League 2025</div><div class="domain">youtube.com &bull; December 20, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">BBC News (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=1LflA6xdfFU"><li><div class="title">What happened in British politics in 2025? | BBC Newscast</div><div class="domain">youtube.com &bull; December 20, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
