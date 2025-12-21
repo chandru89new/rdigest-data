@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-12-21</span>:</h1>
+  <p class="summary">There are 13 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (1)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/TcfyGD2aKdZ7Rt3hk/alignment-pretraining-ai-discourse-causes-self-fulfilling"><li><div class="title">Alignment Pretraining: AI Discourse Causes Self-Fulfilling (Mis)alignment</div><div class="domain">lesswrong.com &bull; December 21, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (2)</summary><ul><a class="li" href="https://www.grobinson.net/2023/09/30/how-capacity-hints-work-in-go/"><li><div class="title">How capacity hints work in Go</div><div class="domain">grobinson.net &bull; December 21, 2025</div></li></a><a class="li" href="https://antonz.org/accepted/modernized-go-fix/"><li><div class="title">Go feature: Modernized go fix</div><div class="domain">antonz.org &bull; December 21, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (1)</summary><ul><a class="li" href="https://haveibeenflocked.com/news/cyble-downtime"><li><div class="title">Flock and Cyble Inc. Weaponize "Cybercrime" Takedowns to Silence Critics</div><div class="domain">haveibeenflocked.com &bull; December 21, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (4)</summary><ul><a class="li" href="https://yourstory.com/2025/12/raghav-chadha-fair-use-copyright-digital-creators-india"><li><div class="title">Why Raghav Chadha Wants India’s Copyright Law Fixed for Digital Creators</div><div class="domain">yourstory.com &bull; December 21, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/12/brewing-for-profitability-ai-models-with-impact-based-pricing"><li><div class="title">Brewing for profitability; AI models with impact-based pricing</div><div class="domain">yourstory.com &bull; December 21, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/12/how-women-entrepreneurs-are-redefining-indias-luxury-industry"><li><div class="title">How women entrepreneurs are redefining India's luxury industry</div><div class="domain">yourstory.com &bull; December 21, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/12/a-time-machine-roundtable-looking-back-at-indias-startup-journey"><li><div class="title">A time machine roundtable: Looking back at India’s startup journey</div><div class="domain">yourstory.com &bull; December 21, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Hindu (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=pWYtTK3I3qQ"><li><div class="title">HECI bill 2025: Pros, cons, and future of higher education</div><div class="domain">youtube.com &bull; December 21, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=oNw0HF1wueE"><li><div class="title">LIVE | Dense fog and cold wave disrupt normal life across Shravasti district in UP</div><div class="domain">youtube.com &bull; December 21, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Dodo (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/EEtgV7lsyhY"><li><div class="title">This Cat Won’t Let Her Mom Do Pottery Alone | The Dodo</div><div class="domain">youtube.com &bull; December 21, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/AFk3u5jp-lg"><li><div class="title">Cosmo</div><div class="domain">youtube.com &bull; December 21, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Jay & Sharon (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/K0uaZVBUU5U"><li><div class="title">Timer hack #dadlife</div><div class="domain">youtube.com &bull; December 21, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
