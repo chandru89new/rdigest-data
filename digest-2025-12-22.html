@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-12-22</span>:</h1>
+  <p class="summary">There are 14 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (2)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/RDqRTwz5Qnum4LtNT/what-s-the-current-stock-market-bubble"><li><div class="title">What's the Current Stock Market Bubble?</div><div class="domain">lesswrong.com &bull; December 22, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/zD4McY4NwAsWkcmCH/small-models-can-introspect-too"><li><div class="title">Small Models Can Introspect, Too</div><div class="domain">lesswrong.com &bull; December 22, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (1)</summary><ul><a class="li" href="https://diziet.dreamwidth.org/20436.html"><li><div class="title">Debian’s git transition</div><div class="domain">diziet.dreamwidth.org &bull; December 22, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (3)</summary><ul><a class="li" href="https://www.theguardian.com/world/2025/dec/21/denmark-postnord-postal-delivery-letters-society"><li><div class="title">Danish postal service to stop delivering letters after 400 years</div><div class="domain">theguardian.com &bull; December 22, 2025</div></li></a><a class="li" href="https://86box.net/2025/12/21/86box-v5-3.html"><li><div class="title">86Box v5.3</div><div class="domain">86box.net &bull; December 22, 2025</div></li></a><a class="li" href="https://ym2132.github.io/ONNX_MLProgram_NN_exploration"><li><div class="title">ONNX Runtime and CoreML May Silently Convert Your Model to FP16</div><div class="domain">ym2132.github.io &bull; December 22, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (3)</summary><ul><a class="li" href="https://yourstory.com/2025/12/ai-agents-making-up-a-finance-team-meet-the-auto-queens"><li><div class="title">AI agents making up a finance team; Meet the Auto Queens</div><div class="domain">yourstory.com &bull; December 22, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/12/new-york-bengaluru-startup-hyperbots-agentic-ai-native-co-pilots-automate-core-finance-workflows"><li><div class="title">This startup is building AI agents that think like finance teams</div><div class="domain">yourstory.com &bull; December 22, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/12/smarter-sourcing-navigating-import-complexity-in-a-volatile-world"><li><div class="title">Smarter sourcing: Navigating import complexity in a volatile world</div><div class="domain">yourstory.com &bull; December 22, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Hindu (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=T4pjArQm-Dc"><li><div class="title">The Hindu this week | Bangladesh Violence | Thiruparankundram issue | Tribal kids of Maharashtra</div><div class="domain">youtube.com &bull; December 22, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=yNGOvv-YFYc"><li><div class="title">Delhi AQI: Air quality worsens in Delhi, AQI recorded at 438 | LIVE</div><div class="domain">youtube.com &bull; December 22, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Dodo (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/0F8TuSD4R9M"><li><div class="title">Cat Who Hates Animals Falls For One Special Labrador | The Dodo</div><div class="domain">youtube.com &bull; December 22, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/SD8-W0vzTjw"><li><div class="title">Q</div><div class="domain">youtube.com &bull; December 22, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=hWr0YqMvTpc"><li><div class="title">Extreme Driving Built for the Bold! | Street Outlaws S3b E12 | Discovery Channel</div><div class="domain">youtube.com &bull; December 22, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
