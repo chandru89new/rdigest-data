@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-12-24</span>:</h1>
+  <p class="summary">There are 15 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (1)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/pkiv7ehH4HZ4kwfHW/the-benefits-of-meditation-come-from-telling-people-that-you"><li><div class="title">The Benefits of Meditation Come From Telling People That You Meditate</div><div class="domain">lesswrong.com &bull; December 24, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Nautilus (nautil.us)</h2> (1)</summary><ul><a class="li" href="https://nautil.us/saturns-rings-are-thicker-than-we-thought-1256800/"><li><div class="title">Saturn’s Rings Are Thicker Than We Thought</div><div class="domain">nautil.us &bull; December 24, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (3)</summary><ul><a class="li" href="https://news.ycombinator.com/item?id=46371139"><li><div class="title">Stronk.app – open-source gym lifts journal</div><div class="domain">news.ycombinator.com &bull; December 24, 2025</div></li></a><a class="li" href="https://twitter.com/haravayin_hogh/status/2003299405907247502"><li><div class="title">Nabokov's guide to foreigners learning Russian</div><div class="domain">twitter.com &bull; December 24, 2025</div></li></a><a class="li" href="https://blog.ui.com/article/travel-in-style-unifi-style-unifi-travel-router"><li><div class="title">Unifi Travel Router</div><div class="domain">blog.ui.com &bull; December 24, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (2)</summary><ul><a class="li" href="https://yourstory.com/2025/12/the-best-and-worst-performing-startup-stocks-of-2025-taking-madhubani-art-to-the-world"><li><div class="title">The best and worst performing startup stocks of 2025; Taking Madhubani art to the world</div><div class="domain">yourstory.com &bull; December 24, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/12/auxano-capital-exits-lets-game-now-with-single-digit-returns"><li><div class="title">Auxano Capital exits Lets Game Now with single-digit returns</div><div class="domain">yourstory.com &bull; December 24, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ThePrint (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/1NBlmycccug"><li><div class="title">Libya's complexities & arms deal with Pakistan #cuttheclutter</div><div class="domain">youtube.com &bull; December 24, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Hindu (youtube.com)</h2> (3)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=LXDwFRm0sTc"><li><div class="title">Fresh snowfall turns Gulmarg in Baramulla into winter wonderland drawing tourists</div><div class="domain">youtube.com &bull; December 24, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=5poZeIoTnEY"><li><div class="title">ISro launches LVM3-M6 carrying BlueBird Block-2 from Sriharikota in Andhra Pradesh</div><div class="domain">youtube.com &bull; December 24, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=XaGDVzEpa0Y"><li><div class="title">Cold wave grips Delhi as dense fog and hazardous air quality disrupt daily life | LIVE</div><div class="domain">youtube.com &bull; December 24, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/sY31M6RZdqM"><li><div class="title">Maggie</div><div class="domain">youtube.com &bull; December 24, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Jay & Sharon (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/rnOFFL8qWYc"><li><div class="title">Merry-Go-Round Addict</div><div class="domain">youtube.com &bull; December 24, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Intelligence Squared (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=D8bj2W8iMaE"><li><div class="title">The Specialist | Collecting Time: The Market Life of a Patek Philippe, with Sam Hines</div><div class="domain">youtube.com &bull; December 24, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=qAHWZo64APk"><li><div class="title">Racing Cars That Refuse to Lose! | Street Outlaws S3b E14 | Discovery Channel</div><div class="domain">youtube.com &bull; December 24, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
