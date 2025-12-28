@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-12-28</span>:</h1>
+  <p class="summary">There are 18 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (2)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/9sQXG6yC9p9W3mKci/enhance-funding-applications-share-utility-function-over"><li><div class="title">Enhance Funding Applications: Share Utility Function Over Money (+Tool)</div><div class="domain">lesswrong.com &bull; December 28, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/edeZsjzM9B6d278GA/shared-houses-illegal"><li><div class="title">Shared Houses Illegal?</div><div class="domain">lesswrong.com &bull; December 28, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (1)</summary><ul><a class="li" href="https://bobdahacker.com/blog/petlibro"><li><div class="title">Petlibro: Your Pet Feeder Is Feeding Data To Anyone Who Asks</div><div class="domain">bobdahacker.com &bull; December 28, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (3)</summary><ul><a class="li" href="https://hn-ph.vercel.app"><li><div class="title">Show HN: Viral Potential Predictor</div><div class="domain">hn-ph.vercel.app &bull; December 28, 2025</div></li></a><a class="li" href="https://blog.rastrian.dev/post/why-reliability-demands-functional-programming-adts-safety-and-critical-infrastructure"><li><div class="title">Functional programming and reliability: ADTs, safety, critical infrastructure</div><div class="domain">blog.rastrian.dev &bull; December 28, 2025</div></li></a><a class="li" href="https://www.htmhell.dev/adventcalendar/2025/27/"><li><div class="title">Replacing JavaScript with Just HTML</div><div class="domain">htmhell.dev &bull; December 28, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (2)</summary><ul><a class="li" href="https://yourstory.com/2025/12/reshaping-the-future-of-work-real-time-geospatial-intelligence"><li><div class="title">Reshaping the future of work; Real-time geospatial intelligence</div><div class="domain">yourstory.com &bull; December 28, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/12/outlook-2026-skills-shape-indias-next-phase-work"><li><div class="title">Outlook 2026: The skills to shape India’s next phase of work</div><div class="domain">yourstory.com &bull; December 28, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ThePrint (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=ygcX3jhLVgw"><li><div class="title">Goa’s new favourite bar isn’t chasing tourists. It’s fiercely local</div><div class="domain">youtube.com &bull; December 28, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Royal Institution (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=gkr2km7OChM"><li><div class="title">To the Stars and Beyond - Christmas Lectures 2025 with Maggie Aderin-Pocock 3/3</div><div class="domain">youtube.com &bull; December 28, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Hindu (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=WO95WAmtBk8"><li><div class="title">How should MBAs be taught to manage other professionals</div><div class="domain">youtube.com &bull; December 28, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=S4wtSP1NZjs"><li><div class="title">Live |Dense Fog Blankets North India; Airlines Issue Advisories as Flight Delays Loom</div><div class="domain">youtube.com &bull; December 28, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Dodo (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/s5Nli6aHSo0"><li><div class="title">Cat Is So Tolerant Of Five Menacing Ferret Siblings | The Dodo</div><div class="domain">youtube.com &bull; December 28, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/Ma0TOkjavaM"><li><div class="title">Daisy and Lorenzo</div><div class="domain">youtube.com &bull; December 28, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=LZBFXMpRZp4"><li><div class="title">Gold Production Forged in Extreme Conditions! | Gold Rush: White Water S6 E7, 8, 9, 10 | Discovery</div><div class="domain">youtube.com &bull; December 28, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ChessBase India (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=-FqntAsohQ4"><li><div class="title">Magnus Carlsen handles Rook endgames masterfully | Magnus vs Shant | World Rapid 2025</div><div class="domain">youtube.com &bull; December 28, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Chess.com (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/shorts/dOI9q05Myng"><li><div class="title">Brilliant sacrifice by Gukesh</div><div class="domain">youtube.com &bull; December 28, 2025</div></li></a><a class="li" href="https://www.youtube.com/shorts/vq6eZjQnw08"><li><div class="title">Vishy and Gukesh keep analyzing!</div><div class="domain">youtube.com &bull; December 28, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
