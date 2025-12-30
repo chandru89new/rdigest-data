@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-12-30</span>:</h1>
+  <p class="summary">There are 18 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (2)</summary><ul><a class="li" href="https://github.com/velox-apps/velox"><li><div class="title">Velox is a port of Tauri to Swift</div><div class="domain">github.com &bull; December 30, 2025</div></li></a><a class="li" href="https://hugodaniel.com/posts/miniray/"><li><div class="title">Introducing miniray — a WGSL minifier</div><div class="domain">hugodaniel.com &bull; December 30, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Nautilus (nautil.us)</h2> (1)</summary><ul><a class="li" href="https://nautil.us/you-might-be-misreading-your-dog-1258276/"><li><div class="title">You Might Be Misreading Your Dog</div><div class="domain">nautil.us &bull; December 30, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (5)</summary><ul><a class="li" href="https://www.coverlettermaker.co"><li><div class="title">Show HN: Cover letter generator with Ollama/local LLMs (Open source)</div><div class="domain">coverlettermaker.co &bull; December 30, 2025</div></li></a><a class="li" href="https://news.ycombinator.com/item?id=46428206"><li><div class="title">100x (YC S22) Is Hiring a Front End Engineer</div><div class="domain">news.ycombinator.com &bull; December 30, 2025</div></li></a><a class="li" href="https://keithburgun.net/outside-dungeon-town-integrating-the-three-places-in-videogames/"><li><div class="title">Outside, Dungeon, Town: Integrating the Three Places in Videogames (2024)</div><div class="domain">keithburgun.net &bull; December 30, 2025</div></li></a><a class="li" href="https://www.mongodb.com/company/blog/news/mongodb-server-security-update-december-2025"><li><div class="title">MongoDB Server Security Update, December 2025</div><div class="domain">mongodb.com &bull; December 30, 2025</div></li></a><a class="li" href="https://media.ccc.de/v/39c3-hacking-washing-machines"><li><div class="title">Hacking Washing Machines (39C3) [video]</div><div class="domain">media.ccc.de &bull; December 30, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Diplomat (thediplomat.com)</h2> (1)</summary><ul><a class="li" href="https://thediplomat.com/2025/12/the-japan-china-joint-communique-and-the-question-of-taiwan/"><li><div class="title">The Japan-China Joint Communiqué and the Question of Taiwan</div><div class="domain">thediplomat.com &bull; December 30, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (1)</summary><ul><a class="li" href="https://yourstory.com/2025/12/early-intervention-systems-for-youth-inside-tamil-nadus-climate-playbook"><li><div class="title">Early intervention systems for youth; Inside Tamil Nadu’s climate playbook</div><div class="domain">yourstory.com &bull; December 30, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Hindu (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=L3jPVGH4YIg"><li><div class="title">Gaurav Gogoi holds press briefing at Congress office, New Delhi</div><div class="domain">youtube.com &bull; December 30, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=GNf6McuJvLM"><li><div class="title">LIVE | Dense fog disrupts flights and trains in Delhi as air quality slips to ‘severe’</div><div class="domain">youtube.com &bull; December 30, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/lOblpduKeco"><li><div class="title">Vivian</div><div class="domain">youtube.com &bull; December 30, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Rick Beato (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=FgJK-cwzfmk"><li><div class="title">When To Call It Quits</div><div class="domain">youtube.com &bull; December 30, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Intelligence Squared (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=nwCGMldoYWc"><li><div class="title">Trump, Markets and The Greatest Crash in U.S. History, with Andrew Ross Sorkin (Part 1)</div><div class="domain">youtube.com &bull; December 30, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hank Green (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/7mm3y7xE9yg"><li><div class="title">We should make radiation sound cooler</div><div class="domain">youtube.com &bull; December 30, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=Xj1XZyK58QM"><li><div class="title">Inside the Pressure of High-Stakes Gold Processing! | Gold Rush S11 E15 | Discovery Channel</div><div class="domain">youtube.com &bull; December 30, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ChessBase India (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=wvZoE3gXuuU"><li><div class="title">Magnus Carlsen JUMPS after INSANE Rook blunder 💀 🔥</div><div class="domain">youtube.com &bull; December 30, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
