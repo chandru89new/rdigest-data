@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2026-01-01</span>:</h1>
+  <p class="summary">There are 26 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (2)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/PneJmhC769dygaM8D/chromosome-identification-methods"><li><div class="title">Chromosome identification methods</div><div class="domain">lesswrong.com &bull; January 01, 2026</div></li></a><a class="li" href="https://www.lesswrong.com/posts/2hFiaDmYr3KuuWNDS/2025-year-in-review"><li><div class="title">2025 Year in Review</div><div class="domain">lesswrong.com &bull; January 01, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (4)</summary><ul><a class="li" href="https://lobste.rs/s/rmenr4/how_do_you_secure_access_your_self_hosted"><li><div class="title">How do you secure access to your self-hosted/homelab services?</div><div class="domain">lobste.rs &bull; January 01, 2026</div></li></a><a class="li" href="https://lisyarus.github.io/blog/posts/a-silly-diffuse-shading-model.html"><li><div class="title">A silly diffuse shading model</div><div class="domain">lisyarus.github.io &bull; January 01, 2026</div></li></a><a class="li" href="https://simonwillison.net/2025/Dec/31/the-year-in-llms/"><li><div class="title">2025: The year in LLMs</div><div class="domain">simonwillison.net &bull; January 01, 2026</div></li></a><a class="li" href="https://austinhenley.com/blog/canceledbookdeal.html"><li><div class="title">I canceled my programming book deal</div><div class="domain">austinhenley.com &bull; January 01, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (4)</summary><ul><a class="li" href="https://privacy.ca.gov/drop/about-drop-and-the-delete-act/"><li><div class="title">The Delete Act</div><div class="domain">privacy.ca.gov &bull; January 01, 2026</div></li></a><a class="li" href="https://www.nerd-lang.org/about"><li><div class="title">Nerd: A language for LLMs, not humans</div><div class="domain">nerd-lang.org &bull; January 01, 2026</div></li></a><a class="li" href="https://www.ycombinator.com/companies/gogograndparent/jobs/w2jGKM7-gogograndparent-yc-s16-is-hiring-tech-leads"><li><div class="title">GoGoGrandparent (YC S16) Is Hiring Tech Leads</div><div class="domain">ycombinator.com &bull; January 01, 2026</div></li></a><a class="li" href="https://bustermq.sh/"><li><div class="title">Show HN: BusterMQ, Thread-per-core NATS server in Zig with io_uring</div><div class="domain">bustermq.sh &bull; January 01, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">The Diplomat (thediplomat.com)</h2> (1)</summary><ul><a class="li" href="https://thediplomat.com/2026/01/central-asias-mounting-debt-burden-risks-and-policy-implications/"><li><div class="title">Central Asia’s Mounting Debt Burden: Risks and Policy Implications</div><div class="domain">thediplomat.com &bull; January 01, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">Sympolymathesy, by Chris Krycho (v5.chriskrycho.com)</h2> (1)</summary><ul><a class="li" href="https://v5.chriskrycho.com/journal/2025-in-review/writing/"><li><div class="title">[journal] 2025 in Review: Writing</div><div class="domain">v5.chriskrycho.com &bull; January 01, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (4)</summary><ul><a class="li" href="https://yourstory.com/2025/12/startup-prana-air-citizens-air-with-data-and-devices"><li><div class="title">Prana Air is helping citizens understand the air they are breathing with data and devices</div><div class="domain">yourstory.com &bull; January 01, 2026</div></li></a><a class="li" href="https://yourstory.com/2026/01/startups-likely-to-go-public-in-2026-helping-citizens-understand-the-air-they-breathe"><li><div class="title">Startups likely to go public in 2026; Helping citizens understand the air they breathe</div><div class="domain">yourstory.com &bull; January 01, 2026</div></li></a><a class="li" href="https://yourstory.com/2025/12/outlook-2026-indias-oldest-youngest-biggest-unicorns-likely-to-go-public"><li><div class="title">Outlook 2026: India’s oldest, youngest, biggest unicorns likely to go public</div><div class="domain">yourstory.com &bull; January 01, 2026</div></li></a><a class="li" href="https://yourstory.com/2025/12/ai-is-not-just-for-oems-how-startups-are-democratising-auto-intelligence"><li><div class="title">AI is not just for OEMs: How startups are democratising auto intelligence</div><div class="domain">yourstory.com &bull; January 01, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">ThePrint (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=XFNFpS1Sxhk"><li><div class="title">Winners’ remorse in Indian litigation—2 ways to resolve execution delays</div><div class="domain">youtube.com &bull; January 01, 2026</div></li></a><a class="li" href="https://www.youtube.com/watch?v=yve_QslVHA0"><li><div class="title">Inside Delhi’s Atal Canteens — long queues, hygiene issues, confusion</div><div class="domain">youtube.com &bull; January 01, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">The Hindu (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=FZFJiZ6NItc"><li><div class="title">LIVE |  India Welcomes  2026</div><div class="domain">youtube.com &bull; January 01, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">The Graham Norton Show (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=OXwlQ67x97g"><li><div class="title">Laura Dern Is A Swiftie Icon | The Graham Norton Show</div><div class="domain">youtube.com &bull; January 01, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/eMD6eRCBH2s"><li><div class="title">Hazel and Eric</div><div class="domain">youtube.com &bull; January 01, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (3)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=TrSq2Pxqi30"><li><div class="title">Finding Gold Nuggets In The Most Perilious Quest | Gold Rush White Water S6 E1, 8, 12, 16| Discovery</div><div class="domain">youtube.com &bull; January 01, 2026</div></li></a><a class="li" href="https://www.youtube.com/watch?v=TJOewNyO548"><li><div class="title">Using Ancient Techniques To Find Ancient Treasure | Expedition Unknown</div><div class="domain">youtube.com &bull; January 01, 2026</div></li></a><a class="li" href="https://www.youtube.com/watch?v=IouBOL7GC2g"><li><div class="title">Witness The Unbelievable Gold Mining Techniques | Bering Sea Gold S8 E1 | Discovery Channel</div><div class="domain">youtube.com &bull; January 01, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">BBC News (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/shorts/34qNVI112Ng"><li><div class="title">UK welcomes in 2026 with London fireworks. #UK #NewYear #BBCNews</div><div class="domain">youtube.com &bull; January 01, 2026</div></li></a><a class="li" href="https://www.youtube.com/shorts/9PhAy3FKuOQ"><li><div class="title">Hogmanay lights up Edinburgh Castle. #Scotland #NewYear #BBCNews</div><div class="domain">youtube.com &bull; January 01, 2026</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
