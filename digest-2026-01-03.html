@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2026-01-03</span>:</h1>
+  <p class="summary">There are 19 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (2)</summary><ul><a class="li" href="https://blog.jez.io/tree-sitter-limitations/"><li><div class="title">Is tree-sitter good enough?</div><div class="domain">blog.jez.io &bull; January 03, 2026</div></li></a><a class="li" href="https://www.rubyevents.org/wrapped"><li><div class="title">RubyEvents.org 2025 Wrapped - a look back at the Ruby community's year</div><div class="domain">rubyevents.org &bull; January 03, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (5)</summary><ul><a class="li" href="https://mmastrac.github.io/blaze/"><li><div class="title">Blaze: A Dec VT420 (and More) Emulator</div><div class="domain">mmastrac.github.io &bull; January 03, 2026</div></li></a><a class="li" href="https://www.neowin.net/news/report-microsoft-quietly-kills-official-way-to-activate-windows-1110-without-internet/"><li><div class="title">Microsoft kills official way to activate Windows 11/10 without internet</div><div class="domain">neowin.net &bull; January 03, 2026</div></li></a><a class="li" href="https://lotteryeverysecond.lffl.me/"><li><div class="title">Show HN: Website that plays the lottery every second</div><div class="domain">lotteryeverysecond.lffl.me &bull; January 03, 2026</div></li></a><a class="li" href="https://nullprogram.com/blog/2015/03/19/"><li><div class="title">A Basic Just-In-Time Compiler (2015)</div><div class="domain">nullprogram.com &bull; January 03, 2026</div></li></a><a class="li" href="https://xeiaso.net/notes/2026/year-linux-desktop/"><li><div class="title">2026 will be my year of the Linux desktop</div><div class="domain">xeiaso.net &bull; January 03, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (2)</summary><ul><a class="li" href="https://yourstory.com/2026/01/india-nye-2026-upi-transactions-spending-knight-fintech-arya-ag-funding-tesla-byd-sales"><li><div class="title">India spent Rs 1.1 lakh Cr on NYE; Knight FinTech raises $23.6M</div><div class="domain">yourstory.com &bull; January 03, 2026</div></li></a><a class="li" href="https://yourstory.com/2026/01/semiconductors-becoming-the-next-big-fortune-indian-it-firms"><li><div class="title">How semiconductors are becoming the next big fortune for Indian IT firms</div><div class="domain">yourstory.com &bull; January 03, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">ThePrint (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=9wQWObm8iQk"><li><div class="title">Pakistan's ISPR censoring media coverage of UAE-Saudi Arabia tensions in Yemen, says US news outlet</div><div class="domain">youtube.com &bull; January 03, 2026</div></li></a><a class="li" href="https://www.youtube.com/watch?v=bIQvhh5t5EM"><li><div class="title">How will 2026 shape out for the Indian car buyer? New launches and fascinating new trends.</div><div class="domain">youtube.com &bull; January 03, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">The Hindu (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=-r-sipk6G98"><li><div class="title">LIVE | Rehearsals for Republic Day parade in full swing at Kartavya Path in Delhi amid fog</div><div class="domain">youtube.com &bull; January 03, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">The Dodo (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/0T5jBDKBExA"><li><div class="title">Abandoned Big Dogs Surprise Everyone By Being Huge Babies | The Dodo</div><div class="domain">youtube.com &bull; January 03, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/r1pocTLrBbY"><li><div class="title">Hutch</div><div class="domain">youtube.com &bull; January 03, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">Jist (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=OnQtwuZO8vQ"><li><div class="title">Why India Is Becoming a Sick Nation ft. Karan Sarin | Jist</div><div class="domain">youtube.com &bull; January 03, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">FRONTLINE PBS | Official (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=Yh2VAPJExXM"><li><div class="title">The VP Choice: Vance vs. Walz: Dan Driscoll (interview) | FRONTLINE</div><div class="domain">youtube.com &bull; January 03, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (3)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=t3erbdWeQ-M"><li><div class="title">Grandpa’s Words Push Parker Back to Gold | Gold Rush S6 E4,5,6 | Discovery Channel</div><div class="domain">youtube.com &bull; January 03, 2026</div></li></a><a class="li" href="https://www.youtube.com/watch?v=fSJMr0qdQA0"><li><div class="title">Racing Rivals to Uncover Nome’s Hidden Gold | Bering Sea Gold S8 E3 | Discovery Channel</div><div class="domain">youtube.com &bull; January 03, 2026</div></li></a><a class="li" href="https://www.youtube.com/watch?v=sjqgIAKXP5Y"><li><div class="title">Drag Cars Push Boundaries in Street Competition | Street Outlaw S3bE19 | Discovery Channel</div><div class="domain">youtube.com &bull; January 03, 2026</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
