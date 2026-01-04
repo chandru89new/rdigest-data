@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2026-01-04</span>:</h1>
+  <p class="summary">There are 22 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (1)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/qp7kEfd2MnGRR8evZ/ai-149-3"><li><div class="title">AI #149: 3</div><div class="domain">lesswrong.com &bull; January 04, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (5)</summary><ul><a class="li" href="https://finnvolkel.com/wcoj-graph-join-correspondence"><li><div class="title">Worst Case Optimal Joins: Graph-Join correspondence</div><div class="domain">finnvolkel.com &bull; January 04, 2026</div></li></a><a class="li" href="https://fabiensanglard.net/sf2_warrier/"><li><div class="title">Street Fighter II, The World Warrier</div><div class="domain">fabiensanglard.net &bull; January 04, 2026</div></li></a><a class="li" href="https://github.com/alpha-convert/minikv"><li><div class="title">minikv: A little KV store implementation in OCaml to practice DB systems things</div><div class="domain">github.com &bull; January 04, 2026</div></li></a><a class="li" href="https://thephd.dev/the-cost-of-a-closure-in-c-c2y-followup"><li><div class="title">The Cost of a Closure in C, The Rest</div><div class="domain">thephd.dev &bull; January 04, 2026</div></li></a><a class="li" href="https://rabbitictranslator.com/kde-onboarding/"><li><div class="title">KDE onboarding is good now</div><div class="domain">rabbitictranslator.com &bull; January 04, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (6)</summary><ul><a class="li" href="https://www.neowin.net/news/good-news-for-gamers-kde-plasma-will-no-longer-sleep-when-your-controller-is-plugged-in"><li><div class="title">KDE Plasma will no longer sleep when your controller is plugged in</div><div class="domain">neowin.net &bull; January 04, 2026</div></li></a><a class="li" href="https://github.com/buyukakyuz/corroded"><li><div class="title">Corroded: Illegal Rust</div><div class="domain">github.com &bull; January 04, 2026</div></li></a><a class="li" href="https://www.theguardian.com/books/2025/dec/31/the-master-of-contradictions-by-morten-hi-jensen-review-how-thomas-mann-wrote-the-magic-mountain"><li><div class="title">How Thomas Mann Wrote the Magic Mountain</div><div class="domain">theguardian.com &bull; January 04, 2026</div></li></a><a class="li" href="https://uni.tlaan.nl/thesis/msc_thesis_tristan_laan_aieblas.pdf"><li><div class="title">Developing a BLAS Library for the AMD AI Engine [pdf]</div><div class="domain">uni.tlaan.nl &bull; January 04, 2026</div></li></a><a class="li" href="https://www.bbc.com/culture/article/20210209-the-worlds-most-misunderstood-novel"><li><div class="title">The Great Gatsby is the most misunderstood novel</div><div class="domain">bbc.com &bull; January 04, 2026</div></li></a><a class="li" href="https://github.com/obround/mytorch"><li><div class="title">MyTorch – Minimalist autograd in 450 lines of Python</div><div class="domain">github.com &bull; January 04, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (2)</summary><ul><a class="li" href="https://yourstory.com/2026/01/xoriant-ceo-on-real-ai-application-women-redefining-whats-possible"><li><div class="title">Xoriant CEO on real AI application; Women redefining what’s possible</div><div class="domain">yourstory.com &bull; January 04, 2026</div></li></a><a class="li" href="https://yourstory.com/2026/01/can-ai-predict-the-next-fuel-crisis-before-it-happens"><li><div class="title">Can AI predict the next fuel crisis before it happens?</div><div class="domain">yourstory.com &bull; January 04, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">The Hindu (youtube.com)</h2> (4)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=TFh0MLDTZKI"><li><div class="title">Rejigging CAT: Can't humanities grads make good managers?</div><div class="domain">youtube.com &bull; January 04, 2026</div></li></a><a class="li" href="https://www.youtube.com/watch?v=Uy1i2y_-n9k"><li><div class="title">US forces capture Nicolás Maduro in Caracas, Trump announces at Palm Beach press meet</div><div class="domain">youtube.com &bull; January 04, 2026</div></li></a><a class="li" href="https://www.youtube.com/watch?v=s9gFZTzzbyM"><li><div class="title">LIVE | NY Mayor Zohran Mamdani announces McGuinness Boulevard safety redesign</div><div class="domain">youtube.com &bull; January 04, 2026</div></li></a><a class="li" href="https://www.youtube.com/watch?v=yZPDm53g10w"><li><div class="title">Asaduddin Owaisi targets Modi, highlights Deonar issue and regional issues at Mumbai public rally</div><div class="domain">youtube.com &bull; January 04, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/8Nxxm5wsPkc"><li><div class="title">Sharay</div><div class="domain">youtube.com &bull; January 04, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (3)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=Z6SPkYfWtJE"><li><div class="title">Deep Sea Gold Mining Battles | Bering Sea Gold S8 E4 | Discovery Channel</div><div class="domain">youtube.com &bull; January 04, 2026</div></li></a><a class="li" href="https://www.youtube.com/watch?v=ewY01ouFJMc"><li><div class="title">Street Racing Goes Extreme | Street Outlaws S3b E20| Discovery Channel</div><div class="domain">youtube.com &bull; January 04, 2026</div></li></a><a class="li" href="https://www.youtube.com/watch?v=ntsMa6ugEXU"><li><div class="title">Gold Hunting Beneath Alaska Waters | Gold Rush White Water S4 E6 | Discovery Channel</div><div class="domain">youtube.com &bull; January 04, 2026</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
