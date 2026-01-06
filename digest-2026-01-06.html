@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2026-01-06</span>:</h1>
+  <p class="summary">There are 18 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (3)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/bBmaDRG8XkoHpkrwx/the-economy-is-a-graph-not-a-pipeline"><li><div class="title">The economy is a graph, not a pipeline</div><div class="domain">lesswrong.com &bull; January 06, 2026</div></li></a><a class="li" href="https://www.lesswrong.com/posts/pQwNgB7ytwqTxxYue/dos-capital"><li><div class="title">Dos Capital</div><div class="domain">lesswrong.com &bull; January 06, 2026</div></li></a><a class="li" href="https://www.lesswrong.com/posts/aSPsmH9YBoZRQTWD6/continual-learning-achieved"><li><div class="title">Continual Learning Achieved?</div><div class="domain">lesswrong.com &bull; January 06, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (1)</summary><ul><a class="li" href="https://youtu.be/YLZgNHEEnSE"><li><div class="title">The Story of the Ribbon (2008)</div><div class="domain">youtu.be &bull; January 06, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">Nautilus (nautil.us)</h2> (1)</summary><ul><a class="li" href="https://nautil.us/milky-ways-twin-causes-rethink-of-galactic-evolution-1259771/"><li><div class="title">Milky Way’s Twin Causes Rethink of Galactic Evolution</div><div class="domain">nautil.us &bull; January 06, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (1)</summary><ul><a class="li" href="https://stoppels.ch/2022/11/27/io-is-no-longer-the-bottleneck.html"><li><div class="title">I/O is no longer the bottleneck? (2022)</div><div class="domain">stoppels.ch &bull; January 06, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (3)</summary><ul><a class="li" href="https://yourstory.com/2026/01/how-tredence-is-redefining-enterprise-ai-with-last-mile-execution"><li><div class="title">How Tredence is redefining enterprise AI with last-mile execution</div><div class="domain">yourstory.com &bull; January 06, 2026</div></li></a><a class="li" href="https://yourstory.com/2026/01/gig-workers-strike-former-irs-officer-neena-singh"><li><div class="title">Gig workers’ strike; Former IRS officer-turned-artist</div><div class="domain">yourstory.com &bull; January 06, 2026</div></li></a><a class="li" href="https://yourstory.com/2026/01/funding-even-healthcare-20-m-early-break-even-bengaluru-hospital"><li><div class="title">Even Healthcare raises $20M, claims early break-even at first Bengaluru hospital</div><div class="domain">yourstory.com &bull; January 06, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">The Hindu (youtube.com)</h2> (4)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=5dkuAepnKuM"><li><div class="title">Cuban ambassador Juan Carlos Marsán Aguilera flags Cuba’s grave concerns over US action in Venezuela</div><div class="domain">youtube.com &bull; January 06, 2026</div></li></a><a class="li" href="https://www.youtube.com/watch?v=op3-73mwn8w"><li><div class="title">US-Venezuela: Protesters outside Manhattan court against U.S. intervention during Maduro hearing</div><div class="domain">youtube.com &bull; January 06, 2026</div></li></a><a class="li" href="https://www.youtube.com/watch?v=r5Zu0W0pGlU"><li><div class="title">Maduro's V-P Delcy Rodriguez sworn in as interim President of Venezuela</div><div class="domain">youtube.com &bull; January 06, 2026</div></li></a><a class="li" href="https://www.youtube.com/watch?v=z1hMcobncmU"><li><div class="title">LIVE | António Guterres flags ‘dangerous precedent’ at UNSC meet in NY on US action in Venezuela</div><div class="domain">youtube.com &bull; January 06, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">The Daily Show (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=VYmVxp8meNg"><li><div class="title">Sen. Mark Kelly Fires Back at Pete Hegseth's Move to Punish Him | The Daily Show</div><div class="domain">youtube.com &bull; January 06, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">Senthil kumar (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=qx16W5YYfNs"><li><div class="title">I am King - A.R.Rahman - Ayalaan - Unreleased Song (Full Version) ft. Shuba - #HappyBirthdayKingARR</div><div class="domain">youtube.com &bull; January 06, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">Hank Green (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/lOetcA2qTbw"><li><div class="title">Hair is gross</div><div class="domain">youtube.com &bull; January 06, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=QujVjRuGBAY"><li><div class="title">Diving For Gold in the Deadliest Waters! | Bering Sea Gold S8 E5 | Discovery Channel</div><div class="domain">youtube.com &bull; January 06, 2026</div></li></a><a class="li" href="https://www.youtube.com/watch?v=dw3AxkzZRhs"><li><div class="title">Gold Mines That Refuse to Give Up Their Secrets! | Gold Rush S6 E13, 14, 15 | Discovery Channel</div><div class="domain">youtube.com &bull; January 06, 2026</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
