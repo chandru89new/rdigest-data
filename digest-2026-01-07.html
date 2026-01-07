@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2026-01-07</span>:</h1>
+  <p class="summary">There are 24 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">kottke.org (feeds.kottke.org)</h2> (1)</summary><ul><a class="li" href="https://kottke.org/26/01/0048142-the-lost-episodes-of-star"><li><div class="title">Lost episodes of Star Trek from the 70s. They were going to...</div><div class="domain">kottke.org &bull; January 07, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (1)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/G4YXXbKt5cNSQbjXM/how-hard-is-it-to-inoculate-against-misalignment"><li><div class="title">How hard is it to inoculate against misalignment generalization?</div><div class="domain">lesswrong.com &bull; January 07, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (1)</summary><ul><a class="li" href="https://hecate.pink/blog/2026/trans-flag-emoji/"><li><div class="title">why the trans flag emoji is the 5-codepoint sequence it is</div><div class="domain">hecate.pink &bull; January 07, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">Longreads (longreads.com)</h2> (1)</summary><ul><a class="li" href="https://longreads.com/2026/01/06/a-bluff-city-blues/"><li><div class="title">A Bluff City Blues</div><div class="domain">longreads.com &bull; January 07, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">Nautilus (nautil.us)</h2> (1)</summary><ul><a class="li" href="https://nautil.us/these-women-giggle-cry-and-sneeze-when-they-orgasm-1260010/"><li><div class="title">These Women Giggle, Cry, and Sneeze When They Orgasm</div><div class="domain">nautil.us &bull; January 07, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (6)</summary><ul><a class="li" href="https://www.nytimes.com/2026/01/06/us/politics/trump-white-house-jan-6-website.html"><li><div class="title">White House Posts False Jan. 6 Narrative on Riot's 5th Anniversary</div><div class="domain">nytimes.com &bull; January 07, 2026</div></li></a><a class="li" href="https://priyatham.in/en/post/hosting-dmca/"><li><div class="title">Website with a DMCA Takedown</div><div class="domain">priyatham.in &bull; January 07, 2026</div></li></a><a class="li" href="https://block81.com/blog/why-most-websites-dont-actually-need-cookie-consent-banners"><li><div class="title">Most websites don't need cookie consent banners</div><div class="domain">block81.com &bull; January 07, 2026</div></li></a><a class="li" href="https://backalleycoder.com/posts/passseeds-an-experiment-in-hijacking-passkeys-to-unlock-cryptographic-use-cases/"><li><div class="title">PassSeeds – hijacking Passkeys to unlock new cryptographic use cases</div><div class="domain">backalleycoder.com &bull; January 07, 2026</div></li></a><a class="li" href="https://advanced.onlinelibrary.wiley.com/doi/10.1002/adsr.202500124"><li><div class="title">Electronic nose for indoor mold detection and identification</div><div class="domain">advanced.onlinelibrary.wiley.com &bull; January 07, 2026</div></li></a><a class="li" href="https://jasoneckert.github.io/myblog/how-microsoft-killed-my-snapdragon-devkit/"><li><div class="title">Microsoft probably killed my Snapdragon Dev Kit</div><div class="domain">jasoneckert.github.io &bull; January 07, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (4)</summary><ul><a class="li" href="https://yourstory.com/2026/01/inside-nykaas-valuation-debate-girl-centred-entrepreneurship-launchpad"><li><div class="title">Inside Nykaa’s valuation debate; Girl-centred entrepreneurship launchpad</div><div class="domain">yourstory.com &bull; January 07, 2026</div></li></a><a class="li" href="https://yourstory.com/2026/01/where-india-will-spend-next-consumer-trends-that-will-define-2026"><li><div class="title">Where India will spend next: Consumer trends that will define 2026</div><div class="domain">yourstory.com &bull; January 07, 2026</div></li></a><a class="li" href="https://yourstory.com/2026/01/starbucks-everest-spices-labelblind-automating-food-labelling"><li><div class="title">From Starbucks to Everest Spices: How LabelBlind is automating food labelling across India</div><div class="domain">yourstory.com &bull; January 07, 2026</div></li></a><a class="li" href="https://yourstory.com/2026/01/can-factories-operate-solely-renewable-energy-solar-wind"><li><div class="title">Can factories operate solely on renewable energy?</div><div class="domain">yourstory.com &bull; January 07, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">The Hindu (youtube.com)</h2> (3)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=qoF6pEV9u1Y"><li><div class="title">U.S. President Donald Trump says PM Modi not that happy with him over tariffs in Washington DC</div><div class="domain">youtube.com &bull; January 07, 2026</div></li></a><a class="li" href="https://www.youtube.com/watch?v=cvg9rS-HiFk"><li><div class="title">LIVE | Asaduddin Owaisi criticised Maharashtra leaders at public rally in Solapur</div><div class="domain">youtube.com &bull; January 07, 2026</div></li></a><a class="li" href="https://www.youtube.com/watch?v=imT72_d65Wc"><li><div class="title">MCD carries out demolition drive near Faiz-e-Elahi Masjid in Turkman Gate</div><div class="domain">youtube.com &bull; January 07, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">FRONTLINE PBS | Official (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=03XyXFHCMQM"><li><div class="title">Massacre in El Salvador (full documentary) | FRONTLINE + ProPublica + RetroReport (Aired 2021)</div><div class="domain">youtube.com &bull; January 07, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=LOqqanrJwc0"><li><div class="title">Gold Nuggets Hidden in White-Water Hell! | Gold Rush: White Water S4 E8 | Discovery Channel</div><div class="domain">youtube.com &bull; January 07, 2026</div></li></a><a class="li" href="https://www.youtube.com/watch?v=llxQM143rdY"><li><div class="title">The Lost Mummy That Could Rewrite History! | S2 E16, 17, 18 | Discovery Channel</div><div class="domain">youtube.com &bull; January 07, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">ChessBase India (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=P9snQNtdanM"><li><div class="title">Who knows more about Magnus' table slam - Arjun or Gukesh?</div><div class="domain">youtube.com &bull; January 07, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">Chess.com (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/shorts/P3X50mQncCQ"><li><div class="title">Magnus vs. Hans, for the TOURNAMENT WIN!!</div><div class="domain">youtube.com &bull; January 07, 2026</div></li></a><a class="li" href="https://www.youtube.com/shorts/cPEgVIq3IK4"><li><div class="title">Magnus Plays... the BONGCLOUD?!</div><div class="domain">youtube.com &bull; January 07, 2026</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
