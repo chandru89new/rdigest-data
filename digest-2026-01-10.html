@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2026-01-10</span>:</h1>
+  <p class="summary">There are 19 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (1)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/X8KGHstcJa4qZznfH/linkpost-on-the-origins-of-algorithmic-progress-in-ai"><li><div class="title">[Linkpost] On the Origins of Algorithmic Progress in AI</div><div class="domain">lesswrong.com &bull; January 10, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (1)</summary><ul><a class="li" href="https://anildash.com/2026/01/09/how-markdown-took-over-the-world/"><li><div class="title">How Markdown took over the world</div><div class="domain">anildash.com &bull; January 10, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">Nautilus (nautil.us)</h2> (1)</summary><ul><a class="li" href="https://nautil.us/why-finding-motivation-is-often-such-a-struggle-1260605/"><li><div class="title">Why Finding Motivation Is Often Such a Struggle</div><div class="domain">nautil.us &bull; January 10, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (1)</summary><ul><a class="li" href="https://lcamtuf.substack.com/p/see-it-with-your-lying-ears"><li><div class="title">See it with your lying ears</div><div class="domain">lcamtuf.substack.com &bull; January 10, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (3)</summary><ul><a class="li" href="https://yourstory.com/2026/01/eternal-and-its-gst-shortfalls"><li><div class="title">Eternal and its GST shortfalls; Inside edtech startup Instrucko</div><div class="domain">yourstory.com &bull; January 10, 2026</div></li></a><a class="li" href="https://yourstory.com/2026/01/gurugram-startup-instrucko-sustainable-edtech-business-kareena-kapoor-khan"><li><div class="title">How Instrucko is building a sustainable edtech business, with praise from Kareena Kapoor Khan</div><div class="domain">yourstory.com &bull; January 10, 2026</div></li></a><a class="li" href="https://yourstory.com/2026/01/diligence-is-not-one-size-fits-all-tailoring-your-approach-by-sector"><li><div class="title">Diligence is not one-size-fits-all: Tailoring your approach by sector</div><div class="domain">yourstory.com &bull; January 10, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">ThePrint (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=zGoNUUMhJwQ"><li><div class="title">CNG, Petrol, Diesel and Electric. How Tata Motors aims to cover all bases</div><div class="domain">youtube.com &bull; January 10, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">The Hindu (youtube.com)</h2> (5)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=4xkSfeyxmuI"><li><div class="title">Stalin launches ‘Ungal Kanava Sollunga’ scheme to hear people’s dreams in Chennai</div><div class="domain">youtube.com &bull; January 10, 2026</div></li></a><a class="li" href="https://www.youtube.com/watch?v=_iHtQsVMedA"><li><div class="title">Minneapolis shooting: Woman killed by ICE agent in Minneapolis was mother of 3, Vance defends</div><div class="domain">youtube.com &bull; January 10, 2026</div></li></a><a class="li" href="https://www.youtube.com/shorts/bC12Av5c4v0"><li><div class="title">INSV Kaundinya: Indian Navy’s stitched sailing vessel sets sail on historic voyage</div><div class="domain">youtube.com &bull; January 10, 2026</div></li></a><a class="li" href="https://www.youtube.com/watch?v=cbRYg2Vf6No"><li><div class="title">Trump says US will act on Greenland to block Russia, China at White House meeting</div><div class="domain">youtube.com &bull; January 10, 2026</div></li></a><a class="li" href="https://www.youtube.com/watch?v=zBwbPoA6neM"><li><div class="title">LIVE | Uddhav Thackeray attacks BJP at Mumbai rally, says Sena delivers what Modi promises</div><div class="domain">youtube.com &bull; January 10, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">The Dodo (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/IdKAtOEbbMk"><li><div class="title">Skinny Pittie Transforms With a Little Girl’s Help | The Dodo</div><div class="domain">youtube.com &bull; January 10, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">Sheena Melwani (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/vlzJ5bgOaRM"><li><div class="title">What do you think of my magic trick? #magic #badmagic #funny #shorts</div><div class="domain">youtube.com &bull; January 10, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">Krishnamurti Foundation Trust (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/xETYXjSRfUM"><li><div class="title">Two images looking at each other | Krishnamurti</div><div class="domain">youtube.com &bull; January 10, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (3)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=6KyzRhyTPm4"><li><div class="title">Mining Challenges Forged in Dirt and Grit! | Gold Rush S6 E2, 5, 7 | Discovery Channel</div><div class="domain">youtube.com &bull; January 10, 2026</div></li></a><a class="li" href="https://www.youtube.com/watch?v=jQpigd4XKY4"><li><div class="title">Alaskan Gold at the Mercy of Nature! | Gold Rush: White Water S4 E11 | Discovery Channel</div><div class="domain">youtube.com &bull; January 10, 2026</div></li></a><a class="li" href="https://www.youtube.com/watch?v=qtwc8EJc-xw"><li><div class="title">Big Chief Drops Down to Dominate Street Racing | Street Outlaw S4b E20 | Discovery Channel</div><div class="domain">youtube.com &bull; January 10, 2026</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
