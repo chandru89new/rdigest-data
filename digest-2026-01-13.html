@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2026-01-13</span>:</h1>
+  <p class="summary">There are 14 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (2)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/k6HKzwqCY4wKncRkM/brief-explorations-in-llm-value-rankings"><li><div class="title">Brief Explorations in LLM Value Rankings</div><div class="domain">lesswrong.com &bull; January 13, 2026</div></li></a><a class="li" href="https://www.lesswrong.com/posts/rhAPh3YzhPoBNpgHg/lies-damned-lies-and-proofs-formal-methods-are-not-slopless"><li><div class="title">Lies, Damned Lies, and Proofs: Formal Methods are not Slopless</div><div class="domain">lesswrong.com &bull; January 13, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (2)</summary><ul><a class="li" href="https://maskray.me/blog/2025-09-28-remarks-on-sframe"><li><div class="title">Remarks on SFrame</div><div class="domain">maskray.me &bull; January 13, 2026</div></li></a><a class="li" href="https://yogthos.net/posts/2026-01-12-recursive-language-model.html"><li><div class="title">Grounding LLMs with Recursive Code Execution</div><div class="domain">yogthos.net &bull; January 13, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">Nautilus (nautil.us)</h2> (1)</summary><ul><a class="li" href="https://nautil.us/a-billion-year-old-piece-of-sky-locked-within-ancient-salt-crystals-1261168/"><li><div class="title">A Billion-Year-Old Piece of Sky Locked Within Ancient Salt Crystals</div><div class="domain">nautil.us &bull; January 13, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (1)</summary><ul><a class="li" href="https://news.ycombinator.com/item?id=46596075"><li><div class="title">Tell HN: DigitalOcean's managed services broke each other after update</div><div class="domain">news.ycombinator.com &bull; January 13, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (2)</summary><ul><a class="li" href="https://yourstory.com/2026/01/aws-olivier-klein-talks-ai-tdv-partners-us-fed-chairman-jerome-powell"><li><div class="title">AWS’ Olivier Klein talks AI; Betting on India’s next consumer giants</div><div class="domain">yourstory.com &bull; January 13, 2026</div></li></a><a class="li" href="https://yourstory.com/2026/01/deeptech-in-energy-how-ai-is-extending-battery-life-and-financial-trust"><li><div class="title">Deeptech in energy: How AI is extending battery life and financial trust</div><div class="domain">yourstory.com &bull; January 13, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">ThePrint (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=UTRrxekhTKM"><li><div class="title">BJP moves to rein in ‘vigilante’ councillors & an unlikely alliance forces LDF govt on a backfoot</div><div class="domain">youtube.com &bull; January 13, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">The Hindu (youtube.com)</h2> (3)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=MonvLr90aCA"><li><div class="title">Foreign Secretary Vikram Misri briefs media on German Chancellor’s India visit</div><div class="domain">youtube.com &bull; January 13, 2026</div></li></a><a class="li" href="https://www.youtube.com/watch?v=7VE-_jLsnRI"><li><div class="title">PM Narendra Modi visits exhibition at Viksit Bharat Young Leaders Dialogue 2026</div><div class="domain">youtube.com &bull; January 13, 2026</div></li></a><a class="li" href="https://www.youtube.com/watch?v=jmRRso57Xhw"><li><div class="title">CM Devendra Fadnavis, Dy CM Eknath Shinde address public meeting | BMC Elections | BJP</div><div class="domain">youtube.com &bull; January 13, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=oe5j-kpNOCM"><li><div class="title">High-Stakes Gold Mining Operations | Gold Rush S6 Ep 14,16,18 | Discovery Channel</div><div class="domain">youtube.com &bull; January 13, 2026</div></li></a><a class="li" href="https://www.youtube.com/watch?v=BPPb6TPiJkI"><li><div class="title">Extreme Gold Mining In Alaska | Bering Sea Gold S8 E7,8,9 | Discovery Channel</div><div class="domain">youtube.com &bull; January 13, 2026</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
