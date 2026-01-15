@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2026-01-15</span>:</h1>
+  <p class="summary">There are 19 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (1)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/PsQJxHDjHKFcFrPLD/deeper-reviews-for-the-top-15-of-the-2024-review"><li><div class="title">Deeper Reviews for the top 15 (of the 2024 Review)</div><div class="domain">lesswrong.com &bull; January 15, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (2)</summary><ul><a class="li" href="https://pyjarrett.github.io/2026/01/13/anteforth.html"><li><div class="title">Writing Anteforth, a Forth-like in SPARK</div><div class="domain">pyjarrett.github.io &bull; January 15, 2026</div></li></a><a class="li" href="https://cursor.com/blog/scaling-agents"><li><div class="title">Scaling long-running autonomous coding</div><div class="domain">cursor.com &bull; January 15, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">Nautilus (nautil.us)</h2> (1)</summary><ul><a class="li" href="https://nautil.us/the-accidental-discovery-of-aristotles-paradigm-shifting-school-1261603/"><li><div class="title">The Accidental Discovery of Aristotle’s Paradigm-Shifting School</div><div class="domain">nautil.us &bull; January 15, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (3)</summary><ul><a class="li" href="https://gist.github.com/R44VC0RP/bd391f6a23185c0fed6c6b5fb2bac50e"><li><div class="title">Anthropic Explicitly Blocking OpenCode</div><div class="domain">gist.github.com &bull; January 15, 2026</div></li></a><a class="li" href="https://patrickmccanna.net/a-better-way-to-limit-claude-code-and-other-coding-agents-access-to-secrets/"><li><div class="title">Bubblewrap: A nimble way to prevent agents from accessing your .env files</div><div class="domain">patrickmccanna.net &bull; January 15, 2026</div></li></a><a class="li" href="https://furiosa.ai/blog/introducing-rngd-server-efficient-ai-inference-at-data-center-scale"><li><div class="title">Furiosa: 3.5x efficiency over H100s</div><div class="domain">furiosa.ai &bull; January 15, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (3)</summary><ul><a class="li" href="https://yourstory.com/2026/01/emversity-raises-30m-in-series-a-round-led-by-premji-invest"><li><div class="title">Emversity raises $30M in Series A funding round led by Premji Invest</div><div class="domain">yourstory.com &bull; January 15, 2026</div></li></a><a class="li" href="https://yourstory.com/2026/01/unacademy-to-transition-to-franchise-model-groww-reports-q3-profit-of-rs-547-crore"><li><div class="title">Unacademy to transition to franchise model; Groww reports Q3 profit of Rs 547 Cr</div><div class="domain">yourstory.com &bull; January 15, 2026</div></li></a><a class="li" href="https://yourstory.com/2026/01/truva-raises-9m-fresh-funding-stellaris-orios-ventures"><li><div class="title">Truva raises $9M in fresh capital from Stellaris, Orios Ventures</div><div class="domain">yourstory.com &bull; January 15, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">ThePrint (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=EKR1yGu0ya4"><li><div class="title">Shifting the AI Narrative to Impact: India’s Vision | Global Technology Summit by Carnegie India</div><div class="domain">youtube.com &bull; January 15, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">The Hindu (youtube.com)</h2> (4)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=WY2IDfoASf8"><li><div class="title">Army Investiture Ceremony 2026 | Presided over by COAS Gen Upendra Dwivedi</div><div class="domain">youtube.com &bull; January 15, 2026</div></li></a><a class="li" href="https://www.youtube.com/watch?v=dUGky5WAE4U"><li><div class="title">Makar Sankranti 2026: Kite Festivals Paint Skies Across India</div><div class="domain">youtube.com &bull; January 15, 2026</div></li></a><a class="li" href="https://www.youtube.com/watch?v=NiRFNnJvv2c"><li><div class="title">Donald Trump says Iran has halted executions, claims leaker found in Venezuela case in Washington</div><div class="domain">youtube.com &bull; January 15, 2026</div></li></a><a class="li" href="https://www.youtube.com/watch?v=qrc97QJiDq8"><li><div class="title">Pongal 2026 | Avaniyapuram Jallikattu flags off by Minister Murthy, Collector Praveen in Madurai</div><div class="domain">youtube.com &bull; January 15, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">Idhu Namma Stories - Vini & Anandh (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/K-e4K4F8c44"><li><div class="title">You read that right 🫣😂 Now I’m guilty #words #puzzle #game</div><div class="domain">youtube.com &bull; January 15, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (3)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=dB3UAXRKhbk"><li><div class="title">Fighting For The Dredge For Gold | Gold Rush S8 E16 | Discovery Channel</div><div class="domain">youtube.com &bull; January 15, 2026</div></li></a><a class="li" href="https://www.youtube.com/watch?v=ssMo6COmz1w"><li><div class="title">Josh Gates Explores Shangri La and Lost Treasures | Expedition Unknown S2 E14,16,18 | Discovery</div><div class="domain">youtube.com &bull; January 15, 2026</div></li></a><a class="li" href="https://www.youtube.com/watch?v=mUjWBEON468"><li><div class="title">Alaska Gold Under the Ice Line! | Bering Sea Gold S8 E10, 2, 4 | Discovery Channel</div><div class="domain">youtube.com &bull; January 15, 2026</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
