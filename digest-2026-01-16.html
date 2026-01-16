@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2026-01-16</span>:</h1>
+  <p class="summary">There are 13 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (1)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/KAjhtrJggPtaophy7/when-will-they-take-our-jobs"><li><div class="title">When Will They Take Our Jobs?</div><div class="domain">lesswrong.com &bull; January 16, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (2)</summary><ul><a class="li" href="https://quint-visualizer.noghartt.dev/"><li><div class="title">Quint Visualizer: a GraphViz-like visualizer for Quint traces</div><div class="domain">quint-visualizer.noghartt.dev &bull; January 16, 2026</div></li></a><a class="li" href="https://dotat.at/@/2026-01-13-http-ratelimit.html"><li><div class="title">HTTP RateLimit headers</div><div class="domain">dotat.at &bull; January 16, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (2)</summary><ul><a class="li" href="https://priyavr.at/blog/reversing-most-replayed/"><li><div class="title">Show HN: Reversing YouTube’s “Most Replayed” Graph</div><div class="domain">priyavr.at &bull; January 16, 2026</div></li></a><a class="li" href="https://github.com/bolt-foundry/gambit"><li><div class="title">Show HN: Gambit, an open-source agent harness for building reliable AI agents</div><div class="domain">github.com &bull; January 16, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (3)</summary><ul><a class="li" href="https://yourstory.com/2026/01/dosa-with-a-side-of-ai-startups-fast-tracked-their-ipos-in-2025"><li><div class="title">Dosa with a side of AI; Startups fast-tracked their IPOs in 2025</div><div class="domain">yourstory.com &bull; January 16, 2026</div></li></a><a class="li" href="https://yourstory.com/2026/01/bengaluru-qsr-chain-the-filter-coffee-premium-darshini-ai-revolution"><li><div class="title">Dosa with a side of AI: The Filter Coffee is brewing a Rs 100 Cr premium ‘darshini’ revolution</div><div class="domain">yourstory.com &bull; January 16, 2026</div></li></a><a class="li" href="https://yourstory.com/2026/01/startup-day-2026-india-startup-ecosystem-technology-ai-deeptech"><li><div class="title">Startup Day 2026: India’s startup ecosystem enters disciplined phase amid rapid technological change</div><div class="domain">yourstory.com &bull; January 16, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">ThePrint (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=tBiRVKGROg0"><li><div class="title">'AI solutions are only 30% of the answer':Sunil Wadhwani at GlobalTechnologySummit by Carnegie India</div><div class="domain">youtube.com &bull; January 16, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">The Hindu (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=SSwBaMJTFAM"><li><div class="title">White House Briefing by Karoline Leavitt | Trump’s meeting with Machado</div><div class="domain">youtube.com &bull; January 16, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">The Dodo (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/wCE5EsrSAbc"><li><div class="title">Woman Goes On Vacation — But The Street Dogs Had Other Plans | The Dodo</div><div class="domain">youtube.com &bull; January 16, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">meghnerd (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=vV7I-qPvnFA"><li><div class="title">Maharashtra Local Body polls MEGA FRAUD</div><div class="domain">youtube.com &bull; January 16, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=_SKKiPldQn0"><li><div class="title">Gold Dredges That Rule the River! | Gold Rush S8 E17 | Discovery Channel</div><div class="domain">youtube.com &bull; January 16, 2026</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
