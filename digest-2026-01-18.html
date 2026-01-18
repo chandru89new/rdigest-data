@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2026-01-18</span>:</h1>
+  <p class="summary">There are 12 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (2)</summary><ul><a class="li" href="https://arxiv.org/pdf/2510.15001"><li><div class="title">VaultGemma: A differentially private LLM</div><div class="domain">arxiv.org &bull; January 18, 2026</div></li></a><a class="li" href="https://daniel.haxx.se/blog/2026/01/17/more-http-3-focus-one-backend-less/"><li><div class="title">More HTTP/3 focus, one backend less</div><div class="domain">daniel.haxx.se &bull; January 18, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (2)</summary><ul><a class="li" href="https://polysoftit.co.uk/irisc-web/"><li><div class="title">IRISC: An ARMv7 assembly interpreter and computer architecture simulator</div><div class="domain">polysoftit.co.uk &bull; January 18, 2026</div></li></a><a class="li" href="https://css.csail.mit.edu/6.858/2024/"><li><div class="title">MIT's Computer Systems Security (2024)</div><div class="domain">css.csail.mit.edu &bull; January 18, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (2)</summary><ul><a class="li" href="https://yourstory.com/2026/01/karnataka-startup-policy-reliance-quick-commerce-run"><li><div class="title">Karnataka’s startup policy; Reliance’s quick commerce run</div><div class="domain">yourstory.com &bull; January 18, 2026</div></li></a><a class="li" href="https://yourstory.com/2026/01/how-age-tech-can-solve-digital-fraud-targeting-seniors"><li><div class="title">How age-tech can solve digital fraud targeting seniors</div><div class="domain">yourstory.com &bull; January 18, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">Tsoding (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=QGm-d5Ch5JM"><li><div class="title">Self-Reproducing Programs</div><div class="domain">youtube.com &bull; January 18, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">The Hindu (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=DZhhH6YeLco"><li><div class="title">Addressing gender bias in engineering</div><div class="domain">youtube.com &bull; January 18, 2026</div></li></a><a class="li" href="https://www.youtube.com/watch?v=vVJB5k7ykMI"><li><div class="title">TMC turning infiltrators to voters | PM Modi in Malda, West Bengal</div><div class="domain">youtube.com &bull; January 18, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">The Dodo (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/Cf3xGAMzm8I"><li><div class="title">Wild Crow Flies Into This Family’s Life — And Never Really Leaves | The Dodo</div><div class="domain">youtube.com &bull; January 18, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=Sz8JhafUvBQ"><li><div class="title">405 Crew Battles for Top Street Racer Spot | Street Outlaw S4b E25 | Discovery Channel</div><div class="domain">youtube.com &bull; January 18, 2026</div></li></a><a class="li" href="https://www.youtube.com/watch?v=sY1wJAq2Hu4"><li><div class="title">Josh Gates Explores Robin Hood and Japan’s Atlantis | Expedition Unknown S2 E2,7,15 | Discovery</div><div class="domain">youtube.com &bull; January 18, 2026</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
