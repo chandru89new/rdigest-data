@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2026-01-19</span>:</h1>
+  <p class="summary">There are 13 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (2)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/H8uoAmbeqjD2PG2jm/irrationality-as-a-defense-mechanism-for-reward-hacking"><li><div class="title">Irrationality as a Defense Mechanism for Reward-hacking</div><div class="domain">lesswrong.com &bull; January 19, 2026</div></li></a><a class="li" href="https://www.lesswrong.com/posts/Cd8tRgpWnKPuNhZ2r/when-the-llm-isn-t-the-one-who-s-wrong"><li><div class="title">When the LLM isn't the one who's wrong</div><div class="domain">lesswrong.com &bull; January 19, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (1)</summary><ul><a class="li" href="https://utcc.utoronto.ca/~cks/space/blog/tech/PeopleCannotPayAttention"><li><div class="title">People cannot "just pay attention" to (boring, routine) things</div><div class="domain">utcc.utoronto.ca &bull; January 19, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">Varun Barad - Curious Developer (varunbarad.com)</h2> (1)</summary><ul><a class="li" href="https://varunbarad.com/blog/pointless-facts-2026.html"><li><div class="title">Ten pointless facts about me</div><div class="domain">varunbarad.com &bull; January 19, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (3)</summary><ul><a class="li" href="https://yourstory.com/2026/01/who-will-win-the-quick-commerce-crown"><li><div class="title">Who will win the quick commerce crown; Solving India’s hospital shortage</div><div class="domain">yourstory.com &bull; January 19, 2026</div></li></a><a class="li" href="https://yourstory.com/2026/01/quick-commerce-giants-split-strategies-as-new-rivals-close-in"><li><div class="title">Quick commerce giants split strategies as new rivals close in</div><div class="domain">yourstory.com &bull; January 19, 2026</div></li></a><a class="li" href="https://yourstory.com/2026/01/namdev-finvest-bags-37m-from-fmo-iix-franklin-templeton-expand-msme-lending"><li><div class="title">Namdev Finvest bags $37M from FMO, IIX and Franklin Templeton to expand MSME lending</div><div class="domain">yourstory.com &bull; January 19, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">The Hindu (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=zFGSDwsf4To"><li><div class="title">Rehearsals for 77th Republic Day parade at Kartavya Path in New Delhi</div><div class="domain">youtube.com &bull; January 19, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">The Dodo (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/mdCvdKtDEVs"><li><div class="title">What It’s Really Like Fostering 16 Puppies | The Dodo</div><div class="domain">youtube.com &bull; January 19, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=vt8ywTYa-i4"><li><div class="title">Mining Crew Chasing the Impossible! | Gold Rush S8 E19 | Discovery Channel</div><div class="domain">youtube.com &bull; January 19, 2026</div></li></a><a class="li" href="https://www.youtube.com/watch?v=On73J9lMALQ"><li><div class="title">Driving Skills That Own the Asphalt! | Street Outlaws S4b E26 | Discovery Channel</div><div class="domain">youtube.com &bull; January 19, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">ChessBase India (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=bQ36IOcq5Gg"><li><div class="title">Tata Steel Chess Masters 2026 | Day 3 | Ft. Gukesh, Arjun, Pragg, Aravindh, Anish</div><div class="domain">youtube.com &bull; January 19, 2026</div></li></a><a class="li" href="https://www.youtube.com/watch?v=AAyPfKlBCtM"><li><div class="title">Tata Steel Chess Masters 2026 | Day 3 | Vertical stream</div><div class="domain">youtube.com &bull; January 19, 2026</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
