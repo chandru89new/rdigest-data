@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2026-01-21</span>:</h1>
+  <p class="summary">There are 14 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (2)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/gCdNKX8Y4YmqQyxrX/no-instrumental-convergence-without-ai-psychology-1"><li><div class="title">No instrumental convergence without AI psychology</div><div class="domain">lesswrong.com &bull; January 21, 2026</div></li></a><a class="li" href="https://www.lesswrong.com/posts/gKdnTcqQfpasfyZjP/money-can-t-buy-the-smile-on-a-child-s-face-as-they-look-at"><li><div class="title">Money Can't Buy the Smile on a Child's Face As They Look at A Beautiful Sunset... but it also can't buy a malaria free world: my current understanding of how Effective Altruism has failed</div><div class="domain">lesswrong.com &bull; January 21, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (1)</summary><ul><a class="li" href="https://s.tail.so/js-in-one-month"><li><div class="title">Building a javascript runtime in one month</div><div class="domain">s.tail.so &bull; January 21, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">Nautilus (nautil.us)</h2> (1)</summary><ul><a class="li" href="https://nautil.us/heartworms-might-be-much-more-ancient-than-we-thought-1262526/"><li><div class="title">Heartworms Might Be Much More Ancient Than We Thought</div><div class="domain">nautil.us &bull; January 21, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (3)</summary><ul><a class="li" href="https://globalnews.ca/news/11620877/carney-davos-wef-speech-transcript/"><li><div class="title">Full Transcript of Carney's Speech to World Economic Forum</div><div class="domain">globalnews.ca &bull; January 21, 2026</div></li></a><a class="li" href="https://www.scratchtrackaudio.com"><li><div class="title">Show HN: macOS native DAW with Git branching model</div><div class="domain">scratchtrackaudio.com &bull; January 21, 2026</div></li></a><a class="li" href="https://creativelawcenter.com/copyright-rudolph-reindeer/"><li><div class="title">Who owns Rudolph's nose?</div><div class="domain">creativelawcenter.com &bull; January 21, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (4)</summary><ul><a class="li" href="https://yourstory.com/2026/01/voice-ai-startup-ringgai-seriesa-arkam-ventures"><li><div class="title">Voice AI startup Ringg AI raises $5.5M in Series A round led by Arkam Ventures</div><div class="domain">yourstory.com &bull; January 21, 2026</div></li></a><a class="li" href="https://yourstory.com/2026/01/how-this-deeptech-startup-is-driving-seaweed-cultivation-along-the-western-coast-of-india"><li><div class="title">How this deeptech startup is driving seaweed cultivation along the western coast of India</div><div class="domain">yourstory.com &bull; January 21, 2026</div></li></a><a class="li" href="https://yourstory.com/2026/01/fintech-zet-bags-tpap-license-to-enable-upi-credit-card-payments"><li><div class="title">Fintech ZET bags TPAP licence to enable UPI credit card payments</div><div class="domain">yourstory.com &bull; January 21, 2026</div></li></a><a class="li" href="https://yourstory.com/2026/01/phonepe-charts-road-to-ipo-openais-compute-to-revenue-flywheel"><li><div class="title">PhonePe charts road to IPO; OpenAI’s compute-to-revenue flywheel</div><div class="domain">yourstory.com &bull; January 21, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">V3Cars (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/P6nLVSJhOqc"><li><div class="title">Toyota’s First Electric SUV Revealed #Shorts</div><div class="domain">youtube.com &bull; January 21, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">The Hindu (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=G3B5bT3JUxQ"><li><div class="title">NASA Astronaut Sunita Williams Interacts with Audience at American Center, New Delhi</div><div class="domain">youtube.com &bull; January 21, 2026</div></li></a><a class="li" href="https://www.youtube.com/watch?v=U9-pm0_DzjQ"><li><div class="title">Trump’s Gaza peace plan falters amid Greenland threat and allied pushback</div><div class="domain">youtube.com &bull; January 21, 2026</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
