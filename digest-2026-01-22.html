@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2026-01-22</span>:</h1>
+  <p class="summary">There are 21 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">The Marginalian (feeds.feedburner.com)</h2> (1)</summary><ul><a class="li" href="https://www.themarginalian.org/2026/01/21/mother/"><li><div class="title">The Most Important Thing to Remember About Your Mother</div><div class="domain">themarginalian.org &bull; January 22, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (1)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/u3FcpdmDZekXxgN7L/how-and-why-to-read-drexler-on-ai"><li><div class="title">How (and why) to read Drexler on AI</div><div class="domain">lesswrong.com &bull; January 22, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">Nautilus (nautil.us)</h2> (2)</summary><ul><a class="li" href="https://nautil.us/the-brain-might-not-function-like-we-thought-it-did-1262696/"><li><div class="title">The Brain Might Not Function Like We Thought It Did</div><div class="domain">nautil.us &bull; January 22, 2026</div></li></a><a class="li" href="https://nautil.us/when-passenger-planes-surpassed-the-speed-of-sound-1262703/"><li><div class="title">When Passenger Planes Surpassed the Speed of Sound</div><div class="domain">nautil.us &bull; January 22, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (4)</summary><ul><a class="li" href="https://operand.online/chronicle/pass.zoom"><li><div class="title">I'll pass on your zoom call.</div><div class="domain">operand.online &bull; January 22, 2026</div></li></a><a class="li" href="https://www.jamf.com/blog/threat-actors-expand-abuse-of-visual-studio-code/"><li><div class="title">Threat Actors Expand Abuse of Microsoft Visual Studio Code</div><div class="domain">jamf.com &bull; January 22, 2026</div></li></a><a class="li" href="https://www.fb.org/market-intel/significant-farm-losses-persist-despite-federal-assistance"><li><div class="title">Significant US Farm Losses Persist, Despite Federal Assistance</div><div class="domain">fb.org &bull; January 22, 2026</div></li></a><a class="li" href="https://blog.citp.princeton.edu/2026/01/16/internet-voting-is-insecure-and-should-not-be-used-in-public-elections/"><li><div class="title">Internet voting is insecure and should not be used in public elections</div><div class="domain">blog.citp.princeton.edu &bull; January 22, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (4)</summary><ul><a class="li" href="https://yourstory.com/2026/01/deepinder-goyal-steps-down-as-eternal-ceo-ev-sector-pens-down-its-wishlist"><li><div class="title">Deepinder Goyal steps down as Eternal CEO; EV sector pens down its wishlist</div><div class="domain">yourstory.com &bull; January 22, 2026</div></li></a><a class="li" href="https://yourstory.com/2026/01/explainer-why-rbi-wants-to-link-brics-digital-currencies"><li><div class="title">Explainer: Why RBI wants to link BRICS digital-currencies</div><div class="domain">yourstory.com &bull; January 22, 2026</div></li></a><a class="li" href="https://yourstory.com/2026/01/funding-escape-plan-25-milliomn-series-a-expand-offline-footprint"><li><div class="title">Escape Plan raises $25M Series A to expand offline footprint</div><div class="domain">yourstory.com &bull; January 22, 2026</div></li></a><a class="li" href="https://yourstory.com/2026/01/budget-2026-experiments-to-scale-space-industry-wishlist"><li><div class="title">Budget 2026: From experiments to scale, space industry wishlist</div><div class="domain">yourstory.com &bull; January 22, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">The Hindu (youtube.com)</h2> (3)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=h2iHVmZUVFE"><li><div class="title">Unpacking PM Carney's speech: Official obituary of the rules-based order or launch of a new one?</div><div class="domain">youtube.com &bull; January 22, 2026</div></li></a><a class="li" href="https://www.youtube.com/watch?v=kt5brFP9slw"><li><div class="title">Russia’s Kamchatka Peninsula reels under heaviest snowfall in 60 years</div><div class="domain">youtube.com &bull; January 22, 2026</div></li></a><a class="li" href="https://www.youtube.com/watch?v=lgzlSxVaNFc"><li><div class="title">Trump defends Greenland pitch, says it is about “safety and security” | Davos</div><div class="domain">youtube.com &bull; January 22, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">newline (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=hTK7yTGcm8E"><li><div class="title">I Don't Hire AI Consultants Anymore - Ray's Review</div><div class="domain">youtube.com &bull; January 22, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">Jay & Sharon (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/RkHiz7asIao"><li><div class="title">Someone seriously explain the point</div><div class="domain">youtube.com &bull; January 22, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">Jackson Galaxy (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/iFuhDwmlezU"><li><div class="title">Your cat isn't just athletic; they're a biological marvel.</div><div class="domain">youtube.com &bull; January 22, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=-zVyfYuhCMg"><li><div class="title">One Dive Away from Disaster | Bering Sea Gold S13 Ep 7, 9, 2 | Discovery Channel</div><div class="domain">youtube.com &bull; January 22, 2026</div></li></a><a class="li" href="https://www.youtube.com/watch?v=3m7bxzX9rKg"><li><div class="title">Cold Weather Turns Deadly | Dual Survival S5C E19 | Discovery Channel</div><div class="domain">youtube.com &bull; January 22, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">ChessBase India (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=ui3iRVLa9rs"><li><div class="title">First win of 2026 | Nguyen Thai Dai Van vs World Champion Gukesh | Tata Steel Masters 2026</div><div class="domain">youtube.com &bull; January 22, 2026</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
