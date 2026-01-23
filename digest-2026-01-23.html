@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2026-01-23</span>:</h1>
+  <p class="summary">There are 24 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (1)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/Li3Aw7sDLXTCcQHZM/does-pentagon-pizza-theory-work"><li><div class="title">Does Pentagon Pizza Theory Work?</div><div class="domain">lesswrong.com &bull; January 23, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (3)</summary><ul><a class="li" href="https://eli.thegreenplace.net/2026/compiling-scheme-to-webassembly/"><li><div class="title">Compiling Scheme to WebAssembly</div><div class="domain">eli.thegreenplace.net &bull; January 23, 2026</div></li></a><a class="li" href="https://ike.io/open-a-folder-all-your-agents-are-mine/"><li><div class="title">Open a folder; All your agents are mine</div><div class="domain">ike.io &bull; January 23, 2026</div></li></a><a class="li" href="https://arstechnica.com/security/2026/01/overrun-with-ai-slop-curl-scraps-bug-bounties-to-ensure-intact-mental-health/"><li><div class="title">Overrun with AI slop, cURL scraps bug bounties to ensure "intact mental health"</div><div class="domain">arstechnica.com &bull; January 23, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">Nautilus (nautil.us)</h2> (1)</summary><ul><a class="li" href="https://nautil.us/tiny-evidence-upends-a-controversial-stonehenge-theory-1262971/"><li><div class="title">Tiny Evidence Upends a Controversial Stonehenge Theory</div><div class="domain">nautil.us &bull; January 23, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (5)</summary><ul><a class="li" href="https://www.nytimes.com/2026/01/22/us/politics/united-states-withdraws-world-health-organization.html"><li><div class="title">U.S. Formally Withdraws from World Health Organization</div><div class="domain">nytimes.com &bull; January 23, 2026</div></li></a><a class="li" href="https://arkansasadvocate.com/2025/12/19/arkansas-inmates-restricted-from-receiving-physical-books-other-media-directly-under-new-policy/"><li><div class="title">Arkansas inmates restricted from receiving physical books, other media directly</div><div class="domain">arkansasadvocate.com &bull; January 23, 2026</div></li></a><a class="li" href="https://www.stunnel.org/"><li><div class="title">Stunnel</div><div class="domain">stunnel.org &bull; January 23, 2026</div></li></a><a class="li" href="https://www.leidenmedievalistsblog.nl/articles/why-medieval-city-builder-video-games-are-historically-inaccurate"><li><div class="title">Why medieval city-builder video games are historically inaccurate (2020)</div><div class="domain">leidenmedievalistsblog.nl &bull; January 23, 2026</div></li></a><a class="li" href="https://www.bugsappleloves.com"><li><div class="title">Bugs Apple Loves</div><div class="domain">bugsappleloves.com &bull; January 23, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (3)</summary><ul><a class="li" href="https://yourstory.com/2026/01/indian-venture-capital-vc-policies-domestic-capital-union-budget"><li><div class="title">Indian VCs call for policies to encourage deeper pools of domestic capital ahead of Union Budget</div><div class="domain">yourstory.com &bull; January 23, 2026</div></li></a><a class="li" href="https://yourstory.com/2026/01/2026-predictions-ai-robots-biotech-unicorns-and-the-next-5-years"><li><div class="title">2026 Outlook: AI, robotics, biotech, unicorns and the road ahead</div><div class="domain">yourstory.com &bull; January 23, 2026</div></li></a><a class="li" href="https://yourstory.com/2026/01/trends-that-will-rev-up-indias-ev-landscape-in-2026"><li><div class="title">Trends that will rev up India’s EV landscape in 2026</div><div class="domain">yourstory.com &bull; January 23, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">ThePrint (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=658KDjtB_AI"><li><div class="title">Musk makes an appearance at Davos, says ‘may have an AI smarter than humans before end of the year’</div><div class="domain">youtube.com &bull; January 23, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">The Hindu (youtube.com)</h2> (4)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=yB201OTxTaQ"><li><div class="title">US President Trump announces Board of Peace charter at Davos amid global response</div><div class="domain">youtube.com &bull; January 23, 2026</div></li></a><a class="li" href="https://www.youtube.com/watch?v=4VMMrgyT-F8"><li><div class="title">Mamata Banerjee inaugurates 49th International Kolkata Book Fair</div><div class="domain">youtube.com &bull; January 23, 2026</div></li></a><a class="li" href="https://www.youtube.com/watch?v=ShpGF52YCv0"><li><div class="title">Oscars Nominations 2026: Ryan Coogler’s Sinners tops Oscars 2026 nominations</div><div class="domain">youtube.com &bull; January 23, 2026</div></li></a><a class="li" href="https://www.youtube.com/watch?v=FvZRbJ3_nKM"><li><div class="title">Volodymyr Zelenskyy urges Europe to act decisively on Russia and security at Davos</div><div class="domain">youtube.com &bull; January 23, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">Senthil kumar (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=hJdNGzoy_4Y"><li><div class="title">Jigar Thanda BGM | Tere Ishk Mein | Background Score | A.R.Rahman</div><div class="domain">youtube.com &bull; January 23, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">Rick Beato (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/5XOWy-P7TaM"><li><div class="title">Kurt Rosenwinkel talking about lines and chords #guitar #guitarist #jazz</div><div class="domain">youtube.com &bull; January 23, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">newline (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=B9Ex5pYGC0o"><li><div class="title">This Is Beyond a University Program - Sachin's Review</div><div class="domain">youtube.com &bull; January 23, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=fVUU2ay3h_A"><li><div class="title">The Missing Gold of South Africa | Expedition Unknown S2 Ep 11,18, 6 | Discovery Channel</div><div class="domain">youtube.com &bull; January 23, 2026</div></li></a><a class="li" href="https://www.youtube.com/watch?v=F5-Vx110R0k"><li><div class="title">Trapped Beneath Alaska’s Deadliest Rapids | Gold Rush White Water S4 Ep 7, 9, 11 | Discovery Channel</div><div class="domain">youtube.com &bull; January 23, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">BBC News (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=1_yYwzF2uoA"><li><div class="title">TikTok closes deal with White House to split US app from global business | BBC News</div><div class="domain">youtube.com &bull; January 23, 2026</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
