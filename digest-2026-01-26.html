@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2026-01-26</span>:</h1>
+  <p class="summary">There are 17 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (1)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/ppBHrfY4bA6J7pkpS/the-possessed-machines-summary"><li><div class="title">The Possessed Machines (summary)</div><div class="domain">lesswrong.com &bull; January 26, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (3)</summary><ul><a class="li" href="https://nedbatchelder.com/blog/202601/testing_exceptions_and_caches"><li><div class="title">Testing: exceptions and caches</div><div class="domain">nedbatchelder.com &bull; January 26, 2026</div></li></a><a class="li" href="https://github.com/karans4/sysp"><li><div class="title">sysp: Systems Lisp compiling to C with homoiconic macros, refcounted memory, Hindley-Milner type inference</div><div class="domain">github.com &bull; January 26, 2026</div></li></a><a class="li" href="https://github.com/lucasgelfond/zerobrew"><li><div class="title">zerobrew is a Rust-based, 5-20x faster drop-in Homebrew alternative</div><div class="domain">github.com &bull; January 26, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (3)</summary><ul><a class="li" href="https://reason.com/2026/01/23/ice-tells-legal-observer-we-have-a-nice-little-database-and-now-youre-considered-a-domestic-terrorist/"><li><div class="title">ICE tells legal observer, 'We have a database, now you're a domestic terrorist'</div><div class="domain">reason.com &bull; January 26, 2026</div></li></a><a class="li" href="https://github.com/clawdbot/clawdbot"><li><div class="title">Clawdbot - open source personal AI assistant</div><div class="domain">github.com &bull; January 26, 2026</div></li></a><a class="li" href="https://www.sciencealert.com/scientists-identify-brain-waves-that-define-the-limits-of-you"><li><div class="title">Scientists identify brain waves that define the limits of 'you'</div><div class="domain">sciencealert.com &bull; January 26, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (3)</summary><ul><a class="li" href="https://yourstory.com/2026/01/indianising-foreign-cuisine-unnecessary-california-burrito-gold-prices-republic-day"><li><div class="title">Why Indianising foreign cuisine is unnecessary</div><div class="domain">yourstory.com &bull; January 26, 2026</div></li></a><a class="li" href="https://yourstory.com/2026/01/republic-day-2026-the-indian-startups-building-strategic-tech-for-the-world"><li><div class="title">Republic Day 2026: The Indian startups building strategic tech for the world</div><div class="domain">yourstory.com &bull; January 26, 2026</div></li></a><a class="li" href="https://yourstory.com/2026/01/california-burrito-bert-mueller-growth-american-marwadi-overcharging-by-food-delivery-platforms"><li><div class="title">California Burrito’s Mueller on growth, being an ‘American Marwadi’, and overcharging by food delivery platforms</div><div class="domain">yourstory.com &bull; January 26, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">The Hindu (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=Kp62FGl9cyw"><li><div class="title">European Council President Costa & EU Chief Ursula Von Der Leyen receive guard of honour</div><div class="domain">youtube.com &bull; January 26, 2026</div></li></a><a class="li" href="https://www.youtube.com/watch?v=K4PaaFQe6RU"><li><div class="title">LIVE | 77th Republic Day parade at Kartavya Path, New Delhi</div><div class="domain">youtube.com &bull; January 26, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">The Dodo (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/vc8rF2Lwglw"><li><div class="title">Senior Rescue Cat Demands The Full Baby Treatment | The Dodo</div><div class="domain">youtube.com &bull; January 26, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">PONDY PODCAST (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=1m2IeKLB0Rg"><li><div class="title">🔴LIVE: குடியரசு தின விழா -2026 - புதுச்சேரி | Puducherry Republic Day</div><div class="domain">youtube.com &bull; January 26, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (3)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=8LRg7OMnGiE"><li><div class="title">Gold Hunters Face Nature’s Fury | Gold Rush White Water | S4 E8,10,12 | Discovery Channel</div><div class="domain">youtube.com &bull; January 26, 2026</div></li></a><a class="li" href="https://www.youtube.com/watch?v=OU6nwEb6w8E"><li><div class="title">When the River Dries, Survival Turns Brutal | Dual Survival S5C E21 | Discovery Channel</div><div class="domain">youtube.com &bull; January 26, 2026</div></li></a><a class="li" href="https://www.youtube.com/watch?v=59BZzrr4BGI"><li><div class="title">Moai Stone Statues & Ancient Alien | Expedition Unknown: Hunt For Extraterrestrials S1E2 | Discovery</div><div class="domain">youtube.com &bull; January 26, 2026</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
