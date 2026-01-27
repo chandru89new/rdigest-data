@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2026-01-27</span>:</h1>
+  <p class="summary">There are 14 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">The Marginalian (feeds.feedburner.com)</h2> (3)</summary><ul><a class="li" href="https://www.themarginalian.org/2026/01/26/stephen-hawking-brief-answers-to-the-big-questions/"><li><div class="title">Is There a God? Stephen Hawking Gives the Definitive Answer to the Eternal Question</div><div class="domain">themarginalian.org &bull; January 27, 2026</div></li></a><a class="li" href="https://www.themarginalian.org/2026/01/26/beethoven-ode-to-joy/"><li><div class="title">Trial, Triumph, and the Art of the Possible: The Remarkable Story Behind Beethoven’s “Ode to Joy”</div><div class="domain">themarginalian.org &bull; January 27, 2026</div></li></a><a class="li" href="https://www.themarginalian.org/2026/01/26/albert-camus-world/"><li><div class="title">Albert Camus on How to Live Whole in a Broken World</div><div class="domain">themarginalian.org &bull; January 27, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (1)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/M5s6WgScRfmeWsLD4/dialogue-is-there-a-natural-abstraction-of-good"><li><div class="title">Dialogue: Is there a Natural Abstraction of Good?</div><div class="domain">lesswrong.com &bull; January 27, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (1)</summary><ul><a class="li" href="https://github.com/sorvi-platform/sra-archive"><li><div class="title">sra-archive: Very simple random access archive format</div><div class="domain">github.com &bull; January 27, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (1)</summary><ul><a class="li" href="https://www.macrumors.com/2026/01/26/iphone-5s-software-update/"><li><div class="title">iPhone 5s Gets New Software Update 13 Years After Launch</div><div class="domain">macrumors.com &bull; January 27, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (3)</summary><ul><a class="li" href="https://yourstory.com/2026/01/nietzsche-quote-obey-self-discipline-freedom"><li><div class="title">Discipline isn’t optional: Nietzsche’s line that hits hard today</div><div class="domain">yourstory.com &bull; January 27, 2026</div></li></a><a class="li" href="https://yourstory.com/2026/01/ai-ecosystem-msmes-budget-wishlist-msmes-want-faster-payments"><li><div class="title">AI ecosystem’s Budget wishlist; MSMEs want faster payments</div><div class="domain">yourstory.com &bull; January 27, 2026</div></li></a><a class="li" href="https://yourstory.com/2026/01/it-industry-seeks-big-push-to-ai-in-budget-2026"><li><div class="title">IT industry seeks big push to AI in Budget 2026</div><div class="domain">yourstory.com &bull; January 27, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">The Hindu (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=FfjOArvZrXQ"><li><div class="title">President Droupadi Murmu hosts ‘At Home’ reception at Rashtrapati Bhavan in New Delhi</div><div class="domain">youtube.com &bull; January 27, 2026</div></li></a><a class="li" href="https://www.youtube.com/watch?v=V0hvCRYeNR8"><li><div class="title">White House blames Minnesota Democrats after second killing during ICE operation in Minneapolis</div><div class="domain">youtube.com &bull; January 27, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">Rick Beato (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/6kvLdNnNOEg"><li><div class="title">Andy Wallace talks about mixing Nirvana #nirvana #kurtcobain #musicproduction #shorts￼</div><div class="domain">youtube.com &bull; January 27, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=u4v6rSzXPjU"><li><div class="title">Ariel School's UFO Incident That Refuses to Fade! | Expedition Unknown S1 E3 | Discovery Channel</div><div class="domain">youtube.com &bull; January 27, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">BBC News (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=ZZqP2qfrxuc"><li><div class="title">US Border Patrol chief and some agents to leave Minneapolis after shooting | BBC News</div><div class="domain">youtube.com &bull; January 27, 2026</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
