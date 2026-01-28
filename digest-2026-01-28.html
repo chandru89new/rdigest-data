@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2026-01-28</span>:</h1>
+  <p class="summary">There are 20 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">The Marginalian (feeds.feedburner.com)</h2> (3)</summary><ul><a class="li" href="https://www.themarginalian.org/2026/01/27/wislawa-szymborska-fairy-tales-fear/"><li><div class="title">The Importance of Being Scared: Polish Nobel Laureate Wisława Szymborska on Fairy Tales and the Necessity of Fear</div><div class="domain">themarginalian.org &bull; January 28, 2026</div></li></a><a class="li" href="https://www.themarginalian.org/2026/01/27/love-after-love-derek-walcott/"><li><div class="title">Love After Love: Derek Walcott’s Poetic Ode to Relearning to Be at Home in Ourselves After Heartbreak</div><div class="domain">themarginalian.org &bull; January 28, 2026</div></li></a><a class="li" href="https://www.themarginalian.org/2026/01/27/james-baldwin-nothing-personal-love/"><li><div class="title">The Light Between Us</div><div class="domain">themarginalian.org &bull; January 28, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (2)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/7aJwgbMEiKq5egQbd/ai-found-12-of-12-openssl-zero-days-while-curl-cancelled-its"><li><div class="title">AI found 12 of 12 OpenSSL zero-days (while curl cancelled its bug bounty)</div><div class="domain">lesswrong.com &bull; January 28, 2026</div></li></a><a class="li" href="https://www.lesswrong.com/posts/nBEBCtgGGKrhuGmxb/thoughts-on-claude-s-constitution"><li><div class="title">Thoughts on Claude's Constitution</div><div class="domain">lesswrong.com &bull; January 28, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (3)</summary><ul><a class="li" href="https://www.apple.com/shop/buy-mac/macbook-pro/16-inch-space-black-standard-display-apple-m4-max-with-16-core-cpu-and-40-core-gpu-48gb-memory-1tb"><li><div class="title">Apple MacBook Pro order deliveries delayed until mid March</div><div class="domain">apple.com &bull; January 28, 2026</div></li></a><a class="li" href="https://aisle.com/blog/aisle-discovered-12-out-of-12-openssl-vulnerabilities"><li><div class="title">AI found 12 vulnerabilities in OpenSSL</div><div class="domain">aisle.com &bull; January 28, 2026</div></li></a><a class="li" href="https://monkeyball-online.pages.dev/"><li><div class="title">Super Monkey Ball ported to a website</div><div class="domain">monkeyball-online.pages.dev &bull; January 28, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (6)</summary><ul><a class="li" href="https://yourstory.com/2026/01/smooth-sea-skilled-sailor-truth-growth"><li><div class="title">Hard times make you stronger: The truth about growth</div><div class="domain">yourstory.com &bull; January 28, 2026</div></li></a><a class="li" href="https://yourstory.com/2026/01/union-budget-likely-unlikely-offer-gig-workers-economy-welfare-schemes"><li><div class="title">What the Union Budget is likely and unlikely to offer gig workers</div><div class="domain">yourstory.com &bull; January 28, 2026</div></li></a><a class="li" href="https://yourstory.com/2026/01/crypto-industry-looks-to-budget-2026-for-tax-relief-and-regulatory-clarity"><li><div class="title">Crypto industry asks for tax relief and regulatory clarity in Union Budget 2026</div><div class="domain">yourstory.com &bull; January 28, 2026</div></li></a><a class="li" href="https://yourstory.com/2026/01/why-data-privacy--business-risk-issue-not-just-a-technology-one"><li><div class="title">Why data privacy is now a business risk issue, not just a technology one</div><div class="domain">yourstory.com &bull; January 28, 2026</div></li></a><a class="li" href="https://yourstory.com/2026/01/big-tech-seeks-tax-regulatory-measures-payoneers-local-currency-bet"><li><div class="title">Big Tech seeks tax, regulatory measures; Payoneer’s local currency bet</div><div class="domain">yourstory.com &bull; January 28, 2026</div></li></a><a class="li" href="https://yourstory.com/2026/01/budget-2026-india-inc-seeks-structural-reforms-to-spur-consumption"><li><div class="title">Budget 2026: Beyond stimulus, India Inc seeks structural reforms to spur consumption</div><div class="domain">yourstory.com &bull; January 28, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">ThePrint (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=kj9VF-yhYnA"><li><div class="title">Palak paneer prejudice and the food racism Indians face abroad</div><div class="domain">youtube.com &bull; January 28, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">The Hindu (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=1AYxy94IyRs"><li><div class="title">PM Modi says India–EU partnership enters new era with landmark free trade agreement in New Delhi</div><div class="domain">youtube.com &bull; January 28, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">John Bartholomew (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=5gI2yyRj0Vg"><li><div class="title">Outplayed | Climbing the Rating Ladder vs. 1706</div><div class="domain">youtube.com &bull; January 28, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">Jay & Sharon (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/4W7JOm0PCgU"><li><div class="title">Rest In Peace</div><div class="domain">youtube.com &bull; January 28, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=bkxBJ_KsYbQ"><li><div class="title">Alone in the African Desert With Nothing Left | Dual Survival S5C E22 | Discovery Channel</div><div class="domain">youtube.com &bull; January 28, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">Bob & Brad (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/-mPF0mbRexQ"><li><div class="title">Let this be your posture reminder for the week 😃</div><div class="domain">youtube.com &bull; January 28, 2026</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
