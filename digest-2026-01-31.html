@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2026-01-31</span>:</h1>
+  <p class="summary">There are 19 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (3)</summary><ul><a class="li" href="https://blog.r0rt1z2.com/posts/exploiting-mediatek-datwo/"><li><div class="title">Exploiting MediaTek's Download Agent</div><div class="domain">blog.r0rt1z2.com &bull; January 31, 2026</div></li></a><a class="li" href="https://borretti.me/article/some-data-should-be-code"><li><div class="title">Some Data Should Be Code</div><div class="domain">borretti.me &bull; January 31, 2026</div></li></a><a class="li" href="https://wiki.alopex.li/TheStateOfGarnet2026"><li><div class="title">The State Of Garnet, 2026</div><div class="domain">wiki.alopex.li &bull; January 31, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">Nautilus (nautil.us)</h2> (1)</summary><ul><a class="li" href="https://nautil.us/how-dissociation-blunts-trauma-1264718/"><li><div class="title">How Dissociation Blunts Trauma</div><div class="domain">nautil.us &bull; January 31, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (6)</summary><ul><a class="li" href="https://www.nytimes.com/2026/01/30/us/politics/ice-expands-power-agents-warrants.html"><li><div class="title">ICE Expands Power of Agents to Arrest People Without Warrants</div><div class="domain">nytimes.com &bull; January 31, 2026</div></li></a><a class="li" href="https://www.techradar.com/pro/security/over-175-000-publicly-exposed-ollama-ai-servers-discovered-worldwide-so-fix-now"><li><div class="title">175K+ publicly-exposed Ollama AI instances discovered</div><div class="domain">techradar.com &bull; January 31, 2026</div></li></a><a class="li" href="https://github.com/lekt9/openclaw-foundry"><li><div class="title">Show HN: Foundry – Turns your repeated workflows into one-click commands</div><div class="domain">github.com &bull; January 31, 2026</div></li></a><a class="li" href="https://viewfromthewing.com/court-filings-ice-uses-mobile-fortify-to-identify-protesters-global-entry-and-precheck-get-revoked/"><li><div class="title">Court Filings: ICE App Identifies Protesters; Global Entry, PreCheck Get Revoked</div><div class="domain">viewfromthewing.com &bull; January 31, 2026</div></li></a><a class="li" href="https://www.wsj.com/tech/ai/the-100-billion-megadeal-between-openai-and-nvidia-is-on-ice-aa3025e3"><li><div class="title">The $100B megadeal between OpenAI and Nvidia is on ice</div><div class="domain">wsj.com &bull; January 31, 2026</div></li></a><a class="li" href="https://simedw.com/2026/01/31/ear-pronunication-via-ctc/"><li><div class="title">Show HN: I trained a 9M speech model to fix my Mandarin tones</div><div class="domain">simedw.com &bull; January 31, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">Sympolymathesy, by Chris Krycho (v5.chriskrycho.com)</h2> (1)</summary><ul><a class="li" href="https://v5.chriskrycho.com/notes/three-theses-and-their-implications-about-software-engineering/"><li><div class="title">[notes] Three Theses and Their Implications About Software Engineering</div><div class="domain">v5.chriskrycho.com &bull; January 31, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (2)</summary><ul><a class="li" href="https://yourstory.com/2026/01/meeshos-losses-surge-amid-topline-growth-overseas-investment-made-simple"><li><div class="title">Meesho’s losses surge amid topline growth; Overseas investment made simple</div><div class="domain">yourstory.com &bull; January 31, 2026</div></li></a><a class="li" href="https://yourstory.com/2026/01/how-nutrify-today-is-using-ai-in-nutraceuticals-to-build-transparent-supply-chains-"><li><div class="title">How Nutrify Today is using AI in nutraceuticals to build transparent supply chains</div><div class="domain">yourstory.com &bull; January 31, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">Trevor Noah (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/wSlgb8JLV1c"><li><div class="title">Thank you, South Africa 🇿🇦</div><div class="domain">youtube.com &bull; January 31, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">The Hindu (youtube.com)</h2> (3)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=AWTda8iTdjE"><li><div class="title">Ashwini Vaishnaw underscores AI deployment, investment and talent build-up at AI Impact Summit</div><div class="domain">youtube.com &bull; January 31, 2026</div></li></a><a class="li" href="https://www.youtube.com/watch?v=hO2_C8K_Z5M"><li><div class="title">Across States and Sectors, India Pins Hopes on Union Budget 2026-2027</div><div class="domain">youtube.com &bull; January 31, 2026</div></li></a><a class="li" href="https://www.youtube.com/watch?v=C6Ezkw0v9uc"><li><div class="title">US President Donald Trump signs Executive Orders at Oval Office, The White House</div><div class="domain">youtube.com &bull; January 31, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">The Dodo (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/0rmGNIZz4ck"><li><div class="title">Crying Kitten Converts Boyfriend Into Cat Person | The Dodo</div><div class="domain">youtube.com &bull; January 31, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">newslaundry (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=vShR1i-cCl4"><li><div class="title">UGC Equity Rules 2026: Allahabad University के छात्रों में फैली नाराज़गी और उलझन की Ground Reality</div><div class="domain">youtube.com &bull; January 31, 2026</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
