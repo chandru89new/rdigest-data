@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2026-02-01</span>:</h1>
+  <p class="summary">There are 19 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">The Marginalian (feeds.feedburner.com)</h2> (1)</summary><ul><a class="li" href="https://www.themarginalian.org/2026/01/31/telling-is-listening-ursula-k-le-guin-communication/"><li><div class="title">Telling Is Listening: Ursula K. Le Guin on the Magic of Real Human Conversation</div><div class="domain">themarginalian.org &bull; February 01, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (1)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/RmsaYnHPBeagg8Giw/an-explication-of-alignment-optimism"><li><div class="title">An Explication of Alignment Optimism</div><div class="domain">lesswrong.com &bull; February 01, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=SuQGQ1vh9k0"><li><div class="title">How Apple Hooks Fifty Thousand Methods</div><div class="domain">youtube.com &bull; February 01, 2026</div></li></a><a class="li" href="https://henrikwarne.com/2026/01/31/in-praise-of-dry-run/"><li><div class="title">In Praise of –dry-run</div><div class="domain">henrikwarne.com &bull; February 01, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (4)</summary><ul><a class="li" href="https://github.com/bootlin/simplest-yocto-setup"><li><div class="title">Working example of a Yocto setup without unnecessary complications</div><div class="domain">github.com &bull; February 01, 2026</div></li></a><a class="li" href="https://www.scientificamerican.com/article/u-s-life-expectancy-hits-all-time-high/"><li><div class="title">U.S. life expectancy hits all-time high</div><div class="domain">scientificamerican.com &bull; February 01, 2026</div></li></a><a class="li" href="https://www.rrauction.com/auctions/lot-detail/350902407346003-apple-1-computer-prototype-board-0-the-celebration-board-representing-the-earliest-known-fiberglass-apple-1-prototype/"><li><div class="title">Apple-1 Computer Prototype Board #0 sold for $2.75M</div><div class="domain">rrauction.com &bull; February 01, 2026</div></li></a><a class="li" href="https://zeroleaks.ai/reports/openclaw-analysis.pdf"><li><div class="title">OpenClaw Security Assessment by ZeroLeaks [pdf]</div><div class="domain">zeroleaks.ai &bull; February 01, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (2)</summary><ul><a class="li" href="https://yourstory.com/2026/01/fixing-nutraceutical-industry-with-ai"><li><div class="title">Fixing nutraceutical industry with AI; JJG Aero raises $30M in Series B</div><div class="domain">yourstory.com &bull; February 01, 2026</div></li></a><a class="li" href="https://yourstory.com/2026/01/art-sculptor-rohan-sonavane-photography"><li><div class="title">Meanings in metal: the creative works of sculptor Rohan Sonavane</div><div class="domain">yourstory.com &bull; February 01, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">Trevor Noah (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/vUIqn5BSlpw"><li><div class="title">South Africans on the internet are undefeated</div><div class="domain">youtube.com &bull; February 01, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">ThePrint (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=tGjNFtlztAo"><li><div class="title">Budget 2026: MoS Finance Pankaj Chaudhary arrives at Finance Ministry</div><div class="domain">youtube.com &bull; February 01, 2026</div></li></a><a class="li" href="https://www.youtube.com/watch?v=thf0Fyk3__Y"><li><div class="title">Budget 2026: Union Finance Minister Nirmala Sitharaman arrives at Kartavya Bhawan</div><div class="domain">youtube.com &bull; February 01, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">The Hindu (youtube.com)</h2> (3)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=KikapSapGTQ"><li><div class="title">Sunetra Pawar to take oath as Deputy CM of Maharashtra</div><div class="domain">youtube.com &bull; February 01, 2026</div></li></a><a class="li" href="https://www.youtube.com/watch?v=g0xoYl9YOe0"><li><div class="title">How we can bring our scientists back home'</div><div class="domain">youtube.com &bull; February 01, 2026</div></li></a><a class="li" href="https://www.youtube.com/watch?v=8lbU_wkFrqs"><li><div class="title">Sunetra Pawar: From social work to Maharashtra Deputy CM</div><div class="domain">youtube.com &bull; February 01, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">The Dodo (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/kZHLeP_hbJI"><li><div class="title">This Dog Is Proof That Love Can Make Miracles Happen | The Dodo</div><div class="domain">youtube.com &bull; February 01, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">ICM Indian Classical Music (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/9bZkJvDWc1M"><li><div class="title">Pt Nikhil Banerjee And Pt Anindo Chatterjee Ji #sitar #icmtabla #classical #music #shorts</div><div class="domain">youtube.com &bull; February 01, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">ChessBase India (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=Ufpf-HWLcv4"><li><div class="title">When two crazy guys meet for a game of chess | Gukesh vs Hans Niemann | Tata Steel Masters 2026</div><div class="domain">youtube.com &bull; February 01, 2026</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
