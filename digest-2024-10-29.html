@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2024-10-29</span>:</h1>
+  <p class="summary">There are 56 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Bear Blog Trending Posts (bearblog.dev)</h2> (2)</summary><ul><a class="li" href="https://notes.jeddacp.com/first-impressions-lamy-safari-and-midori-notebook/"><li><div class="title">First Impressions: Lamy Safari and Midori Notebook</div><div class="domain">notes.jeddacp.com &bull; October 29, 2024</div></li></a><a class="li" href="https://louplummer.lol/a-meditation-on-nice-people/"><li><div class="title">A Meditation on Nice People</div><div class="domain">louplummer.lol &bull; October 29, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Big Think (bigthink.com)</h2> (4)</summary><ul><a class="li" href="https://bigthink.com/starts-with-a-bang/biggest-holes-nasa-observatories/"><li><div class="title">The biggest holes in NASA’s suite of observatories</div><div class="domain">bigthink.com &bull; October 29, 2024</div></li></a><a class="li" href="https://bigthink.com/business/why-digital-wellbeing-is-crucial-to-our-work-life-transformation/"><li><div class="title">Why “digital wellbeing” is crucial to our work-life transformation</div><div class="domain">bigthink.com &bull; October 29, 2024</div></li></a><a class="li" href="https://bigthink.com/neuropsych/the-magic-third-rule-how-just-one-voice-can-transform-a-group/"><li><div class="title">The “magic third” rule: How just one voice can transform a group</div><div class="domain">bigthink.com &bull; October 29, 2024</div></li></a><a class="li" href="https://bigthink.com/the-present/more-natural-disasters/"><li><div class="title">Is the number of natural disasters increasing?</div><div class="domain">bigthink.com &bull; October 29, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">The Marginalian (feeds.feedburner.com)</h2> (1)</summary><ul><a class="li" href="https://www.themarginalian.org/2024/10/29/beautiful-bacteria/"><li><div class="title">Beautiful Bacteria: Mesmerizing Photomicroscopy of Earth’s Oldest Life-forms</div><div class="domain">themarginalian.org &bull; October 29, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">kottke.org (feeds.kottke.org)</h2> (9)</summary><ul><a class="li" href="https://kottke.org/24/10/a-vote-for-donald-trump-is-a-vote-for-school-shootings-and-measles"><li><div class="title">&#8220;A Vote for Donald Trump Is a Vote for School Shootings and Measles&#8221;</div><div class="domain">kottke.org &bull; October 29, 2024</div></li></a><a class="li" href="https://kottke.org/24/10/0045535-what-its-like-being-a"><li><div class="title">What It&#8217;s Like Being a Billionaire&#8217;s Personal Assistant. &#8220;You have to have...</div><div class="domain">kottke.org &bull; October 29, 2024</div></li></a><a class="li" href="https://kottke.org/24/10/0045542-delimar-vera-was-kidnappe"><li><div class="title">Delimar Vera was kidnapped when she was 10 days old and presumed...</div><div class="domain">kottke.org &bull; October 29, 2024</div></li></a><a class="li" href="https://kottke.org/24/10/0045546-bernie-sanders-answers-th"><li><div class="title">If you are thinking of protesting by not voting, Bernie Sanders answers...</div><div class="domain">kottke.org &bull; October 29, 2024</div></li></a><a class="li" href="https://kottke.org/24/10/retro-80s-versions-of-tech-company-logos"><li><div class="title">Retro 80s Versions of Tech Company Logos</div><div class="domain">kottke.org &bull; October 29, 2024</div></li></a><a class="li" href="https://kottke.org/24/10/0045541-as-a-middle-aged-man-i"><li><div class="title">As a middle-aged man, I would&#8217;ve saved loads on therapy if I&#8217;d...</div><div class="domain">kottke.org &bull; October 29, 2024</div></li></a><a class="li" href="https://kottke.org/24/10/0045550-from-2017-i-dont-know"><li><div class="title">From 2017: I Don&#8217;t Know How To Explain To You That You...</div><div class="domain">kottke.org &bull; October 29, 2024</div></li></a><a class="li" href="https://kottke.org/24/10/household-surrealism-clothesline-animals"><li><div class="title">Household Surrealism: Clothesline Animals</div><div class="domain">kottke.org &bull; October 29, 2024</div></li></a><a class="li" href="https://kottke.org/24/10/hyperlinks-the-open-web-and-a-membership-appeal"><li><div class="title">Hyperlinks, the Open Web, and a Membership Appeal</div><div class="domain">kottke.org &bull; October 29, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (6)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/iDRxuJyte6xvppCa3/how-might-we-solve-the-alignment-problem-part-1-intro"><li><div class="title">How might we solve the alignment problem? (Part 1: Intro, summary, ontology)</div><div class="domain">lesswrong.com &bull; October 29, 2024</div></li></a><a class="li" href="https://www.lesswrong.com/posts/nAgciBjxDh5MSeoGs/5-homegrown-ea-projects-seeking-small-donors"><li><div class="title">5 homegrown EA projects, seeking small donors</div><div class="domain">lesswrong.com &bull; October 29, 2024</div></li></a><a class="li" href="https://www.lesswrong.com/posts/qMKvGDCXCBpbtwojc/gwern-why-so-few-matt-levines"><li><div class="title">Gwern: Why So Few Matt Levines?</div><div class="domain">lesswrong.com &bull; October 29, 2024</div></li></a><a class="li" href="https://www.lesswrong.com/posts/MwYLnBzn4YpyJZ7Z6/d-and-d-sci-coliseum-arena-of-data-evaluation-and-ruleset"><li><div class="title">D&D.Sci Coliseum: Arena of Data Evaluation and Ruleset</div><div class="domain">lesswrong.com &bull; October 29, 2024</div></li></a><a class="li" href="https://www.lesswrong.com/posts/3AcK7Pcp9D2LPoyR2/ai-87-staying-in-character"><li><div class="title">AI #87: Staying in Character</div><div class="domain">lesswrong.com &bull; October 29, 2024</div></li></a><a class="li" href="https://www.lesswrong.com/posts/zWJTcaJCkYiJwCmgx/the-alignment-trap-ai-safety-as-path-to-power"><li><div class="title">The Alignment Trap: AI Safety as Path to Power</div><div class="domain">lesswrong.com &bull; October 29, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (13)</summary><ul><a class="li" href="https://blog.pspaul.de/posts/ancient-monkey-pwning-a-17-year-old-version-of-spidermonkey/"><li><div class="title">Ancient Monkey: Pwning a 17-Year-Old Version of SpiderMonkey</div><div class="domain">blog.pspaul.de &bull; October 29, 2024</div></li></a><a class="li" href="https://blog.bemyak.net/dev/security/"><li><div class="title">Avoiding accidental downgrade of 2FA</div><div class="domain">blog.bemyak.net &bull; October 29, 2024</div></li></a><a class="li" href="https://discuss.haiku-os.org/t/ransomware-for-haiku/15766"><li><div class="title">Ransomware for Haiku</div><div class="domain">discuss.haiku-os.org &bull; October 29, 2024</div></li></a><a class="li" href="https://paper.wf/binarycat/un-deprecate-big"><li><div class="title">Un-Deprecate <big>: my plea to the w3c</div><div class="domain">paper.wf &bull; October 29, 2024</div></li></a><a class="li" href="https://pretalx.fosdem.org/fosdem-2025/cfp"><li><div class="title">FOSDEM 2025 - Presentations - Call for Participation</div><div class="domain">pretalx.fosdem.org &bull; October 29, 2024</div></li></a><a class="li" href="https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2024-9632"><li><div class="title">CVE-2024-9632 xorg-x11-server: heap-based buffer overflow privilege escalation vulnerability</div><div class="domain">bugzilla.redhat.com &bull; October 29, 2024</div></li></a><a class="li" href="https://simonwillison.net/2024/Oct/29/llm-multi-modal/"><li><div class="title">You can now run prompts against images, audio and video in your terminal using LLM</div><div class="domain">simonwillison.net &bull; October 29, 2024</div></li></a><a class="li" href="https://www.facebook.com/help/contact/2503286619871400"><li><div class="title">Object to Your Information Being Used for AI at Meta (WhatsApp)</div><div class="domain">facebook.com &bull; October 29, 2024</div></li></a><a class="li" href="https://muffinlabs.com/posts/2024/10/29/10-29-rip-botsin-space/"><li><div class="title">RIP botsin.space</div><div class="domain">muffinlabs.com &bull; October 29, 2024</div></li></a><a class="li" href="https://utcc.utoronto.ca/~cks/space/blog/web/HTTP10BlockQuestion"><li><div class="title">The question of whether to still allow HTTP/1.0 requests or block them</div><div class="domain">utcc.utoronto.ca &bull; October 29, 2024</div></li></a><a class="li" href="https://saltproject.io/blog/salt-project-package-repo-migration-and-guidance/"><li><div class="title">Saltproject.io moving all public repos to broadcom.com by end of month</div><div class="domain">saltproject.io &bull; October 29, 2024</div></li></a><a class="li" href="https://delroth.net/posts/spoofed-mass-scan-abuse/"><li><div class="title">One weird trick to get the whole planet to send abuse complaints to your best friend(s)</div><div class="domain">delroth.net &bull; October 29, 2024</div></li></a><a class="li" href="https://matrix.org/blog/2024/10/29/matrix-2.0-is-here/"><li><div class="title">Matrix 2.0 is here</div><div class="domain">matrix.org &bull; October 29, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Longreads (longreads.com)</h2> (2)</summary><ul><a class="li" href="https://longreads.com/2024/10/29/lydia-ghost-story-folklore-north-carolina/"><li><div class="title">The Lessons of Lore</div><div class="domain">longreads.com &bull; October 29, 2024</div></li></a><a class="li" href="https://longreads.com/2024/10/29/inside-israels-fight-to-make-fathers-of-its-dead-soldiers/"><li><div class="title">Inside Israel’s Fight to Make Fathers of Its Dead Soldiers</div><div class="domain">longreads.com &bull; October 29, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (13)</summary><ul><a class="li" href="https://github.com/williambl/blockblockdevice"><li><div class="title">Create block devices on your computer backed by Redstone Memory</div><div class="domain">github.com &bull; October 29, 2024</div></li></a><a class="li" href="https://github.com/ryohey/signal"><li><div class="title">Signal: Online MIDI Editor</div><div class="domain">github.com &bull; October 29, 2024</div></li></a><a class="li" href="https://nkinternet.wordpress.com/2024/10/28/inspecting-north-koreas-digital-map-app-licensing-api-insights/"><li><div class="title">Inspecting North Korea's Digital Map App: Licensing and API Insights</div><div class="domain">nkinternet.wordpress.com &bull; October 29, 2024</div></li></a><a class="li" href="https://www.prisma.io/blog/announcing-prisma-postgres-early-access"><li><div class="title">Prisma Postgres – Runs on bare metal and unikernels</div><div class="domain">prisma.io &bull; October 29, 2024</div></li></a><a class="li" href="https://pketh.org/plantstudio.html"><li><div class="title">Digging into PlantStudio, a bit late</div><div class="domain">pketh.org &bull; October 29, 2024</div></li></a><a class="li" href="https://publicdomainreview.org/collection/the-book-of-were-wolves/"><li><div class="title">Sabine Baring-Gould's Book of Were-Wolves (1865)</div><div class="domain">publicdomainreview.org &bull; October 29, 2024</div></li></a><a class="li" href="https://spectrum.ieee.org/the-off-the-shelf-stellarator"><li><div class="title">Nuclear Fusion's New Idea: An Off-the-Shelf Stellarator</div><div class="domain">spectrum.ieee.org &bull; October 29, 2024</div></li></a><a class="li" href="https://lcamtuf.coredump.cx/gcnc/full/"><li><div class="title">Hobby CAD, CNC machining, and resin casting (2015)</div><div class="domain">lcamtuf.coredump.cx &bull; October 29, 2024</div></li></a><a class="li" href="https://github.com/Integuru-AI/Integuru"><li><div class="title">Launch HN: Integuru (YC W24) – Reverse-engineer internal APIs using LLMs</div><div class="domain">github.com &bull; October 29, 2024</div></li></a><a class="li" href="https://yalereview.org/article/chris-ware-richard-scarry"><li><div class="title">Writing in Pictures: Richard Scarry and the art of children's literature</div><div class="domain">yalereview.org &bull; October 29, 2024</div></li></a><a class="li" href="https://www.timescale.com/blog/vector-databases-are-the-wrong-abstraction/"><li><div class="title">Vector databases are the wrong abstraction</div><div class="domain">timescale.com &bull; October 29, 2024</div></li></a><a class="li" href="https://www.reuters.com/technology/artificial-intelligence/openai-builds-first-chip-with-broadcom-tsmc-scales-back-foundry-ambition-2024-10-29/"><li><div class="title">OpenAI builds first chip with Broadcom and TSMC, scales back foundry ambition</div><div class="domain">reuters.com &bull; October 29, 2024</div></li></a><a class="li" href="https://www.bloomberg.com/news/articles/2024-10-29/microsoft-s-github-unit-cuts-ai-deals-with-google-anthropic"><li><div class="title">GitHub cuts AI deals with Google, Anthropic</div><div class="domain">bloomberg.com &bull; October 29, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Reasons to be Cheerful (reasonstobecheerful.world)</h2> (1)</summary><ul><a class="li" href="https://reasonstobecheerful.world/hurricane-helene-solar-powered-generators/"><li><div class="title">Solar-Powered Generators Are Fueling Hurricane Relief in North Carolina</div><div class="domain">reasonstobecheerful.world &bull; October 29, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Seth's Blog (seths.blog)</h2> (1)</summary><ul><a class="li" href="https://seths.blog/2024/10/what-do-we-owe-the-future/"><li><div class="title">What do we owe the future?</div><div class="domain">seths.blog &bull; October 29, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Trevor I. Lasn Thoughts (trevorlasn.com)</h2> (1)</summary><ul><a class="li" href="https://www.trevorlasn.com/blog/javascript-pipeline-operator"><li><div class="title">What is the JavaScript Pipeline Operator |></div><div class="domain">trevorlasn.com &bull; October 29, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Official PeeingHuman (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/w6Pn39o54UM"><li><div class="title">Podcasts 👎🏽 Fraudcasts 👍🏽</div><div class="domain">youtube.com &bull; October 29, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Fun Fun Function (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=kIn1AarU-4I"><li><div class="title">Post premiere hangout live steam</div><div class="domain">youtube.com &bull; October 29, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">CGP Grey (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=xfPKwJ7Qukc"><li><div class="title">BREAKING NEWS! The Election's Most Difficult Decision…</div><div class="domain">youtube.com &bull; October 29, 2024</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>

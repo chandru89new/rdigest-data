@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-05-24</span>:</h1>
+  <p class="summary">There are 66 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Bear Blog Trending Posts (bearblog.dev)</h2> (3)</summary><ul><a class="li" href="https://blog.curiousquail.com/the-rabbit-report/"><li><div class="title">The Rabbit Report</div><div class="domain">blog.curiousquail.com &bull; May 24, 2025</div></li></a><a class="li" href="https://valentine.bearblog.dev/a-year-of-blogging/"><li><div class="title">a year of blogging</div><div class="domain">valentine.bearblog.dev &bull; May 24, 2025</div></li></a><a class="li" href="https://bajanbuzz.com/bajan-complains-after-being-asked-politely-to-stop-vending-from-a-front-yard-owned-by-a-foreigner/"><li><div class="title">Bajan complains after being asked politely to stop vending from a front yard owned by a foreigner</div><div class="domain">bajanbuzz.com &bull; May 24, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DOC (doc.cc)</h2> (6)</summary><ul><a class="li" href="https://www.doc.cc/syntax/process"><li><div class="title">Process</div><div class="domain">doc.cc &bull; May 24, 2025</div></li></a><a class="li" href="https://www.doc.cc/syntax/concept"><li><div class="title">Concept</div><div class="domain">doc.cc &bull; May 24, 2025</div></li></a><a class="li" href="https://www.doc.cc/syntax/consistency"><li><div class="title">Consistency</div><div class="domain">doc.cc &bull; May 24, 2025</div></li></a><a class="li" href="https://www.doc.cc/syntax/simplicity"><li><div class="title">Simplicity</div><div class="domain">doc.cc &bull; May 24, 2025</div></li></a><a class="li" href="https://www.doc.cc/syntax/craft"><li><div class="title">Craft</div><div class="domain">doc.cc &bull; May 24, 2025</div></li></a><a class="li" href="https://www.doc.cc/syntax/taste"><li><div class="title">Taste</div><div class="domain">doc.cc &bull; May 24, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (2)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/wzkK9kxaZmmXGi6ZP/that-s-not-how-epigenetic-modifications-work"><li><div class="title">That's Not How Epigenetic Modifications Work</div><div class="domain">lesswrong.com &bull; May 24, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/JqCx7Eeb9gv9Ke5gv/ai-117-openai-buys-device-maker-io"><li><div class="title">AI #117: OpenAI Buys Device Maker IO</div><div class="domain">lesswrong.com &bull; May 24, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (15)</summary><ul><a class="li" href="https://www.linusakesson.net/scene/kaleidoscopico/index.php"><li><div class="title">Kaleidoscopico</div><div class="domain">linusakesson.net &bull; May 24, 2025</div></li></a><a class="li" href="https://geo-ant.github.io/blog/2025/rust-testability-and-non-send-types/"><li><div class="title">A Tale of Testability and Sending Non-Send Types in Rust</div><div class="domain">geo-ant.github.io &bull; May 24, 2025</div></li></a><a class="li" href="https://github.com/aartaka/lamber"><li><div class="title">lamber: functional scripting language compiling to Lambda Calculus</div><div class="domain">github.com &bull; May 24, 2025</div></li></a><a class="li" href="https://philipotoole.com/rqlite-turns-10-lessons-from-a-decade-of-building-distributed-systems/"><li><div class="title">rqlite turns 10: Observations from a decade building Distributed Systems</div><div class="domain">philipotoole.com &bull; May 24, 2025</div></li></a><a class="li" href="https://matthew-brett.github.io/pydagogue/pain_in_dots.html"><li><div class="title">Pain in the dots</div><div class="domain">matthew-brett.github.io &bull; May 24, 2025</div></li></a><a class="li" href="https://www.legitsecurity.com/blog/remote-prompt-injection-in-gitlab-duo"><li><div class="title">Remote Prompt Injection in GitLab Duo Leads to Source Code Theft</div><div class="domain">legitsecurity.com &bull; May 24, 2025</div></li></a><a class="li" href="https://blog.siguza.net/tachy0n/"><li><div class="title">tachy0n: The last 0day jailbreak</div><div class="domain">blog.siguza.net &bull; May 24, 2025</div></li></a><a class="li" href="https://keymaterial.net/2025/05/23/there-is-no-diffie-hellman-but-elliptic-curve-diffie-hellman/"><li><div class="title">There is no Diffie-Hellman but Elliptic Curve Diffie-Hellman</div><div class="domain">keymaterial.net &bull; May 24, 2025</div></li></a><a class="li" href="https://spritely.institute/news/building-interactive-web-pages-with-guile-hoot.html"><li><div class="title">Building interactive web pages with Guile Hoot</div><div class="domain">spritely.institute &bull; May 24, 2025</div></li></a><a class="li" href="https://behind.pretix.eu/2025/05/23/captchas-are-over/"><li><div class="title">CAPTCHAs don't work any more for ticket sellers</div><div class="domain">behind.pretix.eu &bull; May 24, 2025</div></li></a><a class="li" href="https://sean.heelan.io/2025/05/22/how-i-used-o3-to-find-cve-2025-37899-a-remote-zeroday-vulnerability-in-the-linux-kernels-smb-implementation/"><li><div class="title">How I used o3 to find CVE-2025-37899, a remote zeroday vulnerability in the Linux kernel’s SMB implementation</div><div class="domain">sean.heelan.io &bull; May 24, 2025</div></li></a><a class="li" href="https://github.com/atgreen/gail"><li><div class="title">gail: An AI-powered GitHub Issue Labeler</div><div class="domain">github.com &bull; May 24, 2025</div></li></a><a class="li" href="https://0x44.xyz/blog/comptime-1"><li><div class="title">Having your compile-time cake and eating it too</div><div class="domain">0x44.xyz &bull; May 24, 2025</div></li></a><a class="li" href="https://200ok.ch/posts/2025-05-23_sandboxing_ai_tools:_how_guix_containers_keep_your_host_safe_while_empowering_llms.html"><li><div class="title">Sandboxing AI Tools with Guix Containers</div><div class="domain">200ok.ch &bull; May 24, 2025</div></li></a><a class="li" href="https://blog.alexbeals.com/posts/reverse-engineering-ios-deeplinking-for-shortcuts"><li><div class="title">Reverse Engineering iOS Shortcuts Deeplinks</div><div class="domain">blog.alexbeals.com &bull; May 24, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (24)</summary><ul><a class="li" href="https://technicshistory.com/2025/05/24/the-hobby-computer-culture/"><li><div class="title">The Hobby Computer Culture</div><div class="domain">technicshistory.com &bull; May 24, 2025</div></li></a><a class="li" href="https://www.ft.com/content/80c39c74-8753-44bf-aeb0-cf6701a64f02"><li><div class="title">Semicolons bring the drama; that's why I love them</div><div class="domain">ft.com &bull; May 24, 2025</div></li></a><a class="li" href="https://code.videolan.org/videolan/dav1d/-/merge_requests/1788"><li><div class="title">Improving performance of original dav1d video decoder</div><div class="domain">code.videolan.org &bull; May 24, 2025</div></li></a><a class="li" href="https://css-tricks.com/svg-favicons-in-action/"><li><div class="title">SVG Favicons in Action</div><div class="domain">css-tricks.com &bull; May 24, 2025</div></li></a><a class="li" href="https://imprimis.hillsdale.edu/tariffs-in-american-history/"><li><div class="title">Tariffs in American History</div><div class="domain">imprimis.hillsdale.edu &bull; May 24, 2025</div></li></a><a class="li" href="https://www.designboom.com/architecture/moma-nakagin-capsule-tower-exhibition-many-lives-museum-modern-art-new-york-05-23-2025/"><li><div class="title">The legacy of the iconic Nakagin capsule tower</div><div class="domain">designboom.com &bull; May 24, 2025</div></li></a><a class="li" href="https://github.com/ayoisaiah/f2"><li><div class="title">Show HN: F2 – Cross-Platform CLI Batch Renaming Tool</div><div class="domain">github.com &bull; May 24, 2025</div></li></a><a class="li" href="https://www.ycombinator.com/companies/trellis/jobs/7Ru1X1P-founding-sdr"><li><div class="title">Trellis (YC W24) Is Hiring founding SDR to help automate healthcare paperwork</div><div class="domain">ycombinator.com &bull; May 24, 2025</div></li></a><a class="li" href="https://pmbanugo.me/blog/peer-programming-with-llms"><li><div class="title">Peer Programming with LLMs, for Senior+ Engineers</div><div class="domain">pmbanugo.me &bull; May 24, 2025</div></li></a><a class="li" href="https://gsmaragd.github.io/publications/EuroSP2025-ICS/EuroSP2025-ICS.pdf"><li><div class="title">Exposed Industrial Control Systems and Honeypots in the Wild [pdf]</div><div class="domain">gsmaragd.github.io &bull; May 24, 2025</div></li></a><a class="li" href="https://simon.peytonjones.org/assets/pdfs/verse-March23.pdf"><li><div class="title">The Verse Calculus: A Core Calculus for Functional Logic Programming [pdf]</div><div class="domain">simon.peytonjones.org &bull; May 24, 2025</div></li></a><a class="li" href="https://www.nature.com/articles/d41586-025-01636-5"><li><div class="title">Scientific conferences are leaving the US amid border fears</div><div class="domain">nature.com &bull; May 24, 2025</div></li></a><a class="li" href="https://www.nytimes.com/2025/05/24/world/asia/hongkong-bamboo-scaffolding.html"><li><div class="title">Hong Kong's Famous Bamboo Scaffolding Hangs on (For Now)</div><div class="domain">nytimes.com &bull; May 24, 2025</div></li></a><a class="li" href="https://stickerfacet.com"><li><div class="title">Show HN: I built StickerFacet to turn photos into high quality vinyl stickers</div><div class="domain">stickerfacet.com &bull; May 24, 2025</div></li></a><a class="li" href="https://magnus919.com/2025/05/the-xenon-death-flash-how-a-camera-nearly-killed-the-raspberry-pi-2/"><li><div class="title">The Xenon Death Flash: How a Camera Nearly Killed the Raspberry Pi 2</div><div class="domain">magnus919.com &bull; May 24, 2025</div></li></a><a class="li" href="https://www.ft.com/content/0ab64ced-1ed1-466d-acd3-78510d10c3a1"><li><div class="title">Lone coder cracks 50-year puzzle to find Boggle's top-scoring board</div><div class="domain">ft.com &bull; May 24, 2025</div></li></a><a class="li" href="https://gitlab.com/sephalon/rotary_dial_kmod"><li><div class="title">Show HN: Rotary Phone Dial Linux Kernel Driver</div><div class="domain">gitlab.com &bull; May 24, 2025</div></li></a><a class="li" href="https://paulgraham.com/goodwriting.html"><li><div class="title">Good Writing</div><div class="domain">paulgraham.com &bull; May 24, 2025</div></li></a><a class="li" href="https://acoup.blog/2025/05/23/collections-the-logistics-of-road-war-in-the-wasteland/"><li><div class="title">The Logistics of Road War in the Wasteland</div><div class="domain">acoup.blog &bull; May 24, 2025</div></li></a><a class="li" href="https://nicole.express/2025/apple-ii-more-like-apple-5x.html"><li><div class="title">Using the Apple ][+ with the RetroTink-5X</div><div class="domain">nicole.express &bull; May 24, 2025</div></li></a><a class="li" href="https://endler.dev/2025/reinvent-the-wheel/"><li><div class="title">Reinvent the Wheel</div><div class="domain">endler.dev &bull; May 24, 2025</div></li></a><a class="li" href="https://www.thewayofcode.com/"><li><div class="title">The Way of Code: The Timeless Art of Vibe Coding</div><div class="domain">thewayofcode.com &bull; May 24, 2025</div></li></a><a class="li" href="https://github.com/imdj/HNRelevant"><li><div class="title">Show HN: HNRelevant – Add a "related" section to Hacker News</div><div class="domain">github.com &bull; May 24, 2025</div></li></a><a class="li" href="https://www.societyforscience.org/regeneron-sts/2025-student-finalists/chloe-lee/"><li><div class="title">Modification of acetaminophen to reduce liver toxicity and enhance drug efficacy</div><div class="domain">societyforscience.org &bull; May 24, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ACM Queue - All Queue Content (queue.acm.org)</h2> (1)</summary><ul><a class="li" href="http://queue.acm.org/detail.cfm?ref=rss&id=3733701"><li><div class="title">AI: It's All About Inference Now</div><div class="domain">queue.acm.org &bull; May 24, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Seth's Blog (seths.blog)</h2> (1)</summary><ul><a class="li" href="https://seths.blog/2025/05/user-interaction-design-drives-outcomes/"><li><div class="title">User interaction design drives outcomes</div><div class="domain">seths.blog &bull; May 24, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (9)</summary><ul><a class="li" href="https://yourstory.com/2025/05/immersive-culture-virtual-reality-state-museum-bhopal-media-photography"><li><div class="title">Immersive culture: How virtual reality transforms heritage experiences at Bhopal's State Museum</div><div class="domain">yourstory.com &bull; May 24, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/05/telangana-gig-workers-union-accuses-zepto-of-exploitative-practice"><li><div class="title">Telangana gig workers union accuses Zepto of exploitative practices; co refutes accusations</div><div class="domain">yourstory.com &bull; May 24, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/05/okay-to-go-to-india-cant-sell-in-us-without-tariffs-president-trump-to-apple"><li><div class="title">Okay to go to India for plants, but can't sell in US without tariffs: President Trump to Apple</div><div class="domain">yourstory.com &bull; May 24, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/05/gcc-boom-india-supports-expanding-global-leadership-roles-industry-leaders"><li><div class="title">GCC boom in India supports expanding global leadership roles, industry leaders say</div><div class="domain">yourstory.com &bull; May 24, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/05/sarvam-ai-brings-24-billion-parameter-llm-indian-languages-reasoning"><li><div class="title">Sarvam AI brings 24B-parameter LLM for Indian languages, reasoning</div><div class="domain">yourstory.com &bull; May 24, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/05/as-ai-evolves-developers-must-upskill-to-stay-valuable-tech-influencer-arsh-goyal"><li><div class="title">As AI evolves, developers must upskill to stay valuable: Tech influencer Arsh Goyal</div><div class="domain">yourstory.com &bull; May 24, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/05/paytm-gaming-arm-first-games-supreme-court-relief-5712-crore-gst-notice"><li><div class="title">Paytm’s gaming arm gets SC relief on Rs 5,712 Cr GST notice</div><div class="domain">yourstory.com &bull; May 24, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/05/inside-flipkarts-quick-commerce-playbook-rewiring-"><li><div class="title">Inside Flipkart’s quick commerce playbook; Rewiring the campus recruitment system</div><div class="domain">yourstory.com &bull; May 24, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/05/nvidia-looking-power-ai-evolution-tokens-agentic-ai-jigal-halani"><li><div class="title">NVIDIA is looking to power the AI evolution—from tokens to agentic AI, says Jigar Halani</div><div class="domain">yourstory.com &bull; May 24, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Home & Garden (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/qHuJ3E2jA0Q"><li><div class="title">Thu hoạch đậu xanh tại vườn mini | Harvesting green beans in the mini garden #farming</div><div class="domain">youtube.com &bull; May 24, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">History of the Universe (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=2BVqksYJ2yw"><li><div class="title">The Ultimate Guide To Absolutely Everything In The Universe</div><div class="domain">youtube.com &bull; May 24, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Cini Mini Movies (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/shorts/tTexhl2iDzw"><li><div class="title">Carry Conversation NEELAMBARI Episode | Rare Tamil Evergreen Serial | Family Drama | #cmm</div><div class="domain">youtube.com &bull; May 24, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=EkiA6_DTnDw"><li><div class="title">NEELAMBARI Episode - 11 | Rare Tamil Evergreen Serial | Family Drama | #cmm</div><div class="domain">youtube.com &bull; May 24, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">CinemaStix (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=TxqhlKKFtq0"><li><div class="title">bro, they had to know they were giving us one of the greatest characters in movie history</div><div class="domain">youtube.com &bull; May 24, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>

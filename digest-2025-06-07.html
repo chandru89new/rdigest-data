@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-06-07</span>:</h1>
+  <p class="summary">There are 66 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Bear Blog Trending Posts (bearblog.dev)</h2> (4)</summary><ul><a class="li" href="https://justgoidea.com/ben-lai-mei-you-wo/"><li><div class="title">本来没有我</div><div class="domain">justgoidea.com &bull; June 07, 2025</div></li></a><a class="li" href="https://thefantasticisfact.bearblog.dev/the-great-list-of-odd-games/"><li><div class="title">The Great List of OD&D Games</div><div class="domain">thefantasticisfact.bearblog.dev &bull; June 07, 2025</div></li></a><a class="li" href="https://wordbubbles.bearblog.dev/lets-blog-like-its-2004/"><li><div class="title">let's blog like it's 2004</div><div class="domain">wordbubbles.bearblog.dev &bull; June 07, 2025</div></li></a><a class="li" href="https://notes.jeddacp.com/promises-between-the-lines/"><li><div class="title">Promises Between the Lines</div><div class="domain">notes.jeddacp.com &bull; June 07, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Big Think (bigthink.com)</h2> (1)</summary><ul><a class="li" href="https://bigthink.com/starts-with-a-bang/starts-with-a-bang-podcast-118-snowball-earth/"><li><div class="title">Starts With A Bang podcast #118 – Snowball Earth</div><div class="domain">bigthink.com &bull; June 07, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Marginalian (feeds.feedburner.com)</h2> (1)</summary><ul><a class="li" href="https://www.themarginalian.org/2025/06/07/gianni-rodari-the-grammar-of-fantasy/"><li><div class="title">The Grammar of Fantasy and the Fantastic Binomial: Beloved Italian Children’s Book Author Gianny Rodari on Creativity and the Key to Great Storytelling</div><div class="domain">themarginalian.org &bull; June 07, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">kottke.org (feeds.kottke.org)</h2> (1)</summary><ul><a class="li" href="https://kottke.org/25/06/berninis-ratto-di-proserpina"><li><div class="title">Bernini’s Ratto di Proserpina</div><div class="domain">kottke.org &bull; June 07, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Go Make Things (gomakethings.com)</h2> (1)</summary><ul><a class="li" href="https://gomakethings.com/ants-and-anarchy/"><li><div class="title">Ants and anarchy</div><div class="domain">gomakethings.com &bull; June 07, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (2)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/wkLFDLqfeGxhiHayR/solo-park-play-at-three"><li><div class="title">Solo Park Play at Three</div><div class="domain">lesswrong.com &bull; June 07, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/KBx4X2Xj2bqJkDh7f/the-mirror-trap"><li><div class="title">The Mirror Trap</div><div class="domain">lesswrong.com &bull; June 07, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Irrational Exuberance (lethain.com)</h2> (1)</summary><ul><a class="li" href="https://lethain.com/desk-setup-2025/"><li><div class="title">My desk setup in 2025.</div><div class="domain">lethain.com &bull; June 07, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (13)</summary><ul><a class="li" href="https://www.cs.purdue.edu/homes/xyzhang/fall07/Papers/delta-debugging.pdf"><li><div class="title">Simplifying and Isolating Failure-Inducing Input (Delta Debugging)</div><div class="domain">cs.purdue.edu &bull; June 07, 2025</div></li></a><a class="li" href="https://davekilian.com/acquire-release.html"><li><div class="title">Making Sense of Acquire-Release Semantics (2023)</div><div class="domain">davekilian.com &bull; June 07, 2025</div></li></a><a class="li" href="https://fulltimenix.com/episodes/nix-2-29-0-with-nix-team-members"><li><div class="title">Nix 2.29.0 with Nix Team members</div><div class="domain">fulltimenix.com &bull; June 07, 2025</div></li></a><a class="li" href="https://blog.paavo.me/radiant-ai/"><li><div class="title">What was Radiant AI, anyway?</div><div class="domain">blog.paavo.me &bull; June 07, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=8JuWdXrCmWg"><li><div class="title">Astonishing discovery by computer scientist: how to squeeze space into time</div><div class="domain">youtube.com &bull; June 07, 2025</div></li></a><a class="li" href="https://wololo.net/2025/06/06/first-usermode-exploit-and-more-nintendo-switch-2-had-a-busy-hacking-week-for-its-launch/"><li><div class="title">First usermode exploit and more: Nintendo Switch 2 had a busy (hacking) week for its launch</div><div class="domain">wololo.net &bull; June 07, 2025</div></li></a><a class="li" href="https://github.com/arduinocelentano/cdimage"><li><div class="title">A tool for burning visible pictures on a compact disc surface</div><div class="domain">github.com &bull; June 07, 2025</div></li></a><a class="li" href="https://github.com/Olow304/memvid"><li><div class="title">memvid: Video-based AI memory library</div><div class="domain">github.com &bull; June 07, 2025</div></li></a><a class="li" href="https://www.endbasic.dev/2025/06/unveiling-the-endbox.html"><li><div class="title">Unveiling the EndBOX</div><div class="domain">endbasic.dev &bull; June 07, 2025</div></li></a><a class="li" href="https://glama.ai/blog/2025-06-06-mcp-vs-api"><li><div class="title">MCP vs API</div><div class="domain">glama.ai &bull; June 07, 2025</div></li></a><a class="li" href="https://lobste.rs/s/e8abqn/how_can_one_write_blazing_fast_yet_useful"><li><div class="title">How can one write blazing fast yet useful compilers (for lazy pure functional languages)?</div><div class="domain">lobste.rs &bull; June 07, 2025</div></li></a><a class="li" href="https://github.com/linkdd/xq"><li><div class="title">xq: Query XML data using XPath</div><div class="domain">github.com &bull; June 07, 2025</div></li></a><a class="li" href="https://daringfireball.net/linked/2025/06/07/bill-atkinson-rip"><li><div class="title">Bill Atkinson Dies From Cancer at 74</div><div class="domain">daringfireball.net &bull; June 07, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (25)</summary><ul><a class="li" href="https://www.conviva.com/platform/the-concurrency-trap-how-an-atomic-counter-stalled-a-pipeline/"><li><div class="title">The concurrency trap: How an atomic counter stalled a pipeline</div><div class="domain">conviva.com &bull; June 07, 2025</div></li></a><a class="li" href="https://www.cbc.ca/listen/live-radio/1-51-quirks-and-quarks/clip/16150976-plants-hear-pollinators-produce-sweet-nectar-response"><li><div class="title">Plants hear their pollinators, and produce sweet nectar in response</div><div class="domain">cbc.ca &bull; June 07, 2025</div></li></a><a class="li" href="https://palaiologos.rocks/sophie-germain/"><li><div class="title">Sophie Germain Prime Project</div><div class="domain">palaiologos.rocks &bull; June 07, 2025</div></li></a><a class="li" href="https://kaveland.no/posts/2025-06-06-library"><li><div class="title">The librarian immediately attempts to sell you a vuvuzela</div><div class="domain">kaveland.no &bull; June 07, 2025</div></li></a><a class="li" href="https://www.coventry.gov.uk/coventry-light-rail"><li><div class="title">Coventry Very Light Rail</div><div class="domain">coventry.gov.uk &bull; June 07, 2025</div></li></a><a class="li" href="https://practical.engineering/blog/2025/6/3/why-are-smokestacks-so-tall"><li><div class="title">Why are smokestacks so tall?</div><div class="domain">practical.engineering &bull; June 07, 2025</div></li></a><a class="li" href="https://rwandanstories.org/genocide/hate_radio.html"><li><div class="title">Hate Radio (2011)</div><div class="domain">rwandanstories.org &bull; June 07, 2025</div></li></a><a class="li" href="https://leancrew.com/all-this/2025/06/math-symbol-frequencies/"><li><div class="title">Math Symbol Frequencies</div><div class="domain">leancrew.com &bull; June 07, 2025</div></li></a><a class="li" href="https://jobs.ashbyhq.com/one-text/b95952a2-9bc2-4c3a-9da1-3dcc157b4a27"><li><div class="title">OneText (YC W23) Is Hiring a DevOps/DBA Lead Engineer</div><div class="domain">jobs.ashbyhq.com &bull; June 07, 2025</div></li></a><a class="li" href="https://diwank.space/field-notes-from-shipping-real-code-with-claude"><li><div class="title">Field Notes from Shipping Real Code with Claude</div><div class="domain">diwank.space &bull; June 07, 2025</div></li></a><a class="li" href="https://spacenews.com/musk-trump-dispute-includes-threats-to-spacex-contracts/"><li><div class="title">Musk-Trump dispute includes threats to SpaceX contracts</div><div class="domain">spacenews.com &bull; June 07, 2025</div></li></a><a class="li" href="https://joost.blog/path-forward-for-wordpress/"><li><div class="title">The FAIR Package Manager: Decentralized WordPress infrastructure</div><div class="domain">joost.blog &bull; June 07, 2025</div></li></a><a class="li" href="https://spectrum.ieee.org/getting-past-procastination"><li><div class="title">Getting Past Procrastination</div><div class="domain">spectrum.ieee.org &bull; June 07, 2025</div></li></a><a class="li" href="https://blog.railway.com/p/introducing-railpack"><li><div class="title">Why We're Moving on from Nix</div><div class="domain">blog.railway.com &bull; June 07, 2025</div></li></a><a class="li" href="https://arxiv.org/abs/2503.05040"><li><div class="title">Why Understanding Software Cycle Time Is Messy, Not Magic</div><div class="domain">arxiv.org &bull; June 07, 2025</div></li></a><a class="li" href="https://tech.slashdot.org/story/25/06/07/035249/washington-posts-privacy-tip-stop-using-chrome-delete-metas-apps-and-yandex"><li><div class="title">Washington Post's Privacy Tip: Stop Using Chrome, Delete Meta Apps (and Yandex)</div><div class="domain">tech.slashdot.org &bull; June 07, 2025</div></li></a><a class="li" href="https://alloc.dev/2025/06/07/zig_optimization"><li><div class="title">Low-Level Optimization with Zig</div><div class="domain">alloc.dev &bull; June 07, 2025</div></li></a><a class="li" href="https://aoli.al/blogs/jdk-bug/"><li><div class="title">Discovering a JDK Race Condition, and Debugging It in 30 Minutes with Fray</div><div class="domain">aoli.al &bull; June 07, 2025</div></li></a><a class="li" href="https://help.openai.com/en/articles/6825453-chatgpt-release-notes"><li><div class="title">Updates to Advanced Voice Mode for paid users</div><div class="domain">help.openai.com &bull; June 07, 2025</div></li></a><a class="li" href="https://github.com/borgbackup/borg/pull/8798"><li><div class="title">BorgBackup 2 has no server-side append-only anymore</div><div class="domain">github.com &bull; June 07, 2025</div></li></a><a class="li" href="https://corentin.trebaol.com/Blog/8.+The+Homelessness+Experiment"><li><div class="title">My experiment living in a tent in Hong Kong's jungle</div><div class="domain">corentin.trebaol.com &bull; June 07, 2025</div></li></a><a class="li" href="https://www.ssp.sh/blog/self-host-self-independence/"><li><div class="title">Self-Host and Tech Independence: The Joy of Building Your Own</div><div class="domain">ssp.sh &bull; June 07, 2025</div></li></a><a class="li" href="https://gazs.github.io/canvas-atkinson-dither/"><li><div class="title">Convert photos to Atkinson dithering</div><div class="domain">gazs.github.io &bull; June 07, 2025</div></li></a><a class="li" href="https://www.folklore.org/Joining_Apple_Computer.html"><li><div class="title">Joining Apple Computer (2018)</div><div class="domain">folklore.org &bull; June 07, 2025</div></li></a><a class="li" href="https://www.articulation.blog/p/why-you-should-move-your-site-away-from-weebly"><li><div class="title">Why You Should Move Your Site Away from Weebly (YC W07)</div><div class="domain">articulation.blog &bull; June 07, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Seth's Blog (seths.blog)</h2> (1)</summary><ul><a class="li" href="https://seths.blog/2025/06/uphill-and-downhill-challenges/"><li><div class="title">Uphill and downhill challenges</div><div class="domain">seths.blog &bull; June 07, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Sympolymathesy, by Chris Krycho (v5.chriskrycho.com)</h2> (1)</summary><ul><a class="li" href="https://v5.chriskrycho.com/elsewhere/bbedit-syntax-for-jujutsu-commit-messages/"><li><div class="title">[elsewhere] BBEdit Syntax for Jujutsu Commit Messages</div><div class="domain">v5.chriskrycho.com &bull; June 07, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (12)</summary><ul><a class="li" href="https://yourstory.com/2025/06/jk-cement-invests-and-acquires-saifco-cements"><li><div class="title">JK Cement invests Rs 149.81 Cr in Saifco Cements, acquires 60% stake</div><div class="domain">yourstory.com &bull; June 07, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/06/consumer-watchdog-directs-ecommerce-platforms-to-conduct-self-audits"><li><div class="title">Consumer watchdog directs ecommerce platforms to conduct self-audits to eliminate deceptive practices</div><div class="domain">yourstory.com &bull; June 07, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/06/indigrid-to-acquire-renew-solar-aayan-koppal-transmission"><li><div class="title">IndiGrid to acquire ReNew Solar Aayan, Koppal Transmission for Rs 2,108 Cr</div><div class="domain">yourstory.com &bull; June 07, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/06/story-history-museum-goa-creativity-culture-art-photography"><li><div class="title">Story and history: How Museum of Goa interprets culture and stimulates dialogue about the future</div><div class="domain">yourstory.com &bull; June 07, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/06/lenskart-becomes-a-public-ltd-company-ahead-of-its-ipo"><li><div class="title">Lenskart becomes a public entity ahead of its IPO</div><div class="domain">yourstory.com &bull; June 07, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/06/flipkart-report-5-beauty-products-sold-every-second"><li><div class="title">5 beauty products sold every second on Flipkart: Report</div><div class="domain">yourstory.com &bull; June 07, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/06/recognize-red-flags"><li><div class="title">Personal red flags: How to spot them and stop self-sabotage</div><div class="domain">yourstory.com &bull; June 07, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/05/frugal-living-tips-2025"><li><div class="title">Smart frugal living tips to spend less and live more in 2025</div><div class="domain">yourstory.com &bull; June 07, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/06/books-self-sabotage-stop"><li><div class="title">Stop self-sabotage: 7 powerful books to shift your mindset</div><div class="domain">yourstory.com &bull; June 07, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/06/lessons-from-the-upi-outage-strengthening-india"><li><div class="title">Lessons from the UPI outage: Strengthening India’s digital payment ecosystem</div><div class="domain">yourstory.com &bull; June 07, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/06/rbi-rate-cut-and-fintech-lenders-home-salon-ai-beauty-treatment"><li><div class="title">RBI’s rate cut and fintech lenders; Home salons powered with AI</div><div class="domain">yourstory.com &bull; June 07, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/06/rbis-surprise-cut-offers-fintech-lenders-a-breather-amid-credit-crunch"><li><div class="title">RBI’s surprise cut offers fintech lenders a breather amid credit crunch</div><div class="domain">yourstory.com &bull; June 07, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Quanta Magazine (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=_wDIe0XEmwI"><li><div class="title">Mirror Molecules: The Symmetry Rule Life Never Breaks</div><div class="domain">youtube.com &bull; June 07, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">PolyMatter (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=-JbIOGGTRTY"><li><div class="title">Why Apple Can’t Leave China (yet)</div><div class="domain">youtube.com &bull; June 07, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">CinemaStix (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=CaIFN0eQGTc"><li><div class="title">when the filmmakers actually show you what it means to play the king in a movie</div><div class="domain">youtube.com &bull; June 07, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>

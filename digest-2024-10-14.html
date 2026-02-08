@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2024-10-14</span>:</h1>
+  <p class="summary">There are 26 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Bear Blog Trending Posts (bearblog.dev)</h2> (3)</summary><ul><a class="li" href="https://caffeinated.bearblog.dev/privacy-is-politics/"><li><div class="title">Privacy is Politics</div><div class="domain">caffeinated.bearblog.dev &bull; October 14, 2024</div></li></a><a class="li" href="https://gremlin.bearblog.dev/i-hate-my-degree/"><li><div class="title">I hate my degree</div><div class="domain">gremlin.bearblog.dev &bull; October 14, 2024</div></li></a><a class="li" href="https://herman.bearblog.dev/on-being-a-great-gift-giver/"><li><div class="title">On being a great gift-giver</div><div class="domain">herman.bearblog.dev &bull; October 14, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Collab Fund (collabfund.com)</h2> (1)</summary><ul><a class="li" href="https://collabfund.com/blog/a-message-from-the-past-thoughts-on-nostalgia/"><li><div class="title">A Message From the Past (Thoughts on Nostalgia)</div><div class="domain">collabfund.com &bull; October 14, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Two-Wrongs (entropicthoughts.com)</h2> (2)</summary><ul><a class="li" href="https://entropicthoughts.com/announcing-engineering-enigmas"><li><div class="title">Announcing Engineering Enigmas</div><div class="domain">entropicthoughts.com &bull; October 14, 2024</div></li></a><a class="li" href="https://two-wrongs.com/announcing-engineering-enigmas"><li><div class="title">Announcing Engineering Enigmas</div><div class="domain">two-wrongs.com &bull; October 14, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">The Marginalian (feeds.feedburner.com)</h2> (2)</summary><ul><a class="li" href="https://www.themarginalian.org/2024/10/13/watership-down-autumn/"><li><div class="title">The Unphotographable: Richard Adams on the Singular Magic of Autumn</div><div class="domain">themarginalian.org &bull; October 14, 2024</div></li></a><a class="li" href="https://www.themarginalian.org/2024/10/13/dont-waste-your-wildness/"><li><div class="title">Don’t Waste Your Wildness</div><div class="domain">themarginalian.org &bull; October 14, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">kottke.org (feeds.kottke.org)</h2> (3)</summary><ul><a class="li" href="https://kottke.org/24/10/the-last-years-of-alexei-navalny-in-his-own-words"><li><div class="title">The Last Years of Alexei Navalny, In His Own Words</div><div class="domain">kottke.org &bull; October 14, 2024</div></li></a><a class="li" href="https://kottke.org/24/10/0045441-nations-indigenous-people"><li><div class="title">Nation&#8217;s Indigenous People Confirm They Don&#8217;t Need Special Holiday, Just Large Swaths...</div><div class="domain">kottke.org &bull; October 14, 2024</div></li></a><a class="li" href="https://kottke.org/24/10/0045442-an-early-analysis-of-data"><li><div class="title">An early analysis of data by scientists at the World Weather Attribution...</div><div class="domain">kottke.org &bull; October 14, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">fhur's blog (fhur.me)</h2> (1)</summary><ul><a class="li" href="/posts/2024/thats-not-an-abstraction"><li><div class="title">That's not an abstraction, that's just a layer of indirection</div><div class="domain"> &bull; October 14, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Go Make Things (gomakethings.com)</h2> (1)</summary><ul><a class="li" href="https://gomakethings.com/rage-against-the-ai-machine/"><li><div class="title">Rage against the AI machine</div><div class="domain">gomakethings.com &bull; October 14, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Longreads (longreads.com)</h2> (3)</summary><ul><a class="li" href="https://longreads.com/2024/10/14/there-is-no-place-like-home-whatever-that-is/"><li><div class="title">There Is No Place like Home, Whatever That Is</div><div class="domain">longreads.com &bull; October 14, 2024</div></li></a><a class="li" href="https://longreads.com/2024/10/14/the-joy-of-clutter/"><li><div class="title">The Joy of Clutter</div><div class="domain">longreads.com &bull; October 14, 2024</div></li></a><a class="li" href="https://longreads.com/2024/10/14/getting-the-spark-back/"><li><div class="title">Getting the Spark Back</div><div class="domain">longreads.com &bull; October 14, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">matklad (matklad.github.io)</h2> (1)</summary><ul><a class="li" href="https://matklad.github.io/2024/10/14/missing-ide-feature.html"><li><div class="title">A Missing IDE Feature</div><div class="domain">matklad.github.io &bull; October 14, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Nautilus (nautil.us)</h2> (2)</summary><ul><a class="li" href="https://nautil.us/ranchers-cattle-tequila-and-bats-965387/"><li><div class="title">Ranchers, Cattle, Tequila, and Bats</div><div class="domain">nautil.us &bull; October 14, 2024</div></li></a><a class="li" href="https://nautil.us/this-is-a-great-day-with-me-965647/"><li><div class="title">“This Is a Great Day with Me”</div><div class="domain">nautil.us &bull; October 14, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">notes.druchan.com — RSS Feed (notes.druchan.com)</h2> (1)</summary><ul><a class="li" href="https://notes.druchan.com/haskell-journal-day-8"><li><div class="title">Haskell Journal - Day 8</div><div class="domain">notes.druchan.com &bull; October 14, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Quanta Magazine (quantamagazine.org)</h2> (1)</summary><ul><a class="li" href="https://www.quantamagazine.org/big-advance-on-simple-sounding-math-problem-was-a-century-in-the-making-20241014/"><li><div class="title">Big Advance on Simple-Sounding Math Problem Was a Century in the Making</div><div class="domain">quantamagazine.org &bull; October 14, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Reasons to be Cheerful (reasonstobecheerful.world)</h2> (1)</summary><ul><a class="li" href="https://reasonstobecheerful.world/shinta-mani-hotel-empowering-locals-cambodia/"><li><div class="title">How a Hotel Is Empowering Locals in Cambodia</div><div class="domain">reasonstobecheerful.world &bull; October 14, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Sean Voisen (sean.voisen.org)</h2> (2)</summary><ul><a class="li" href="https://seanvoisen.com/blog/why-make-software/"><li><div class="title">Why make software?</div><div class="domain">seanvoisen.com &bull; October 14, 2024</div></li></a><a class="li" href="https://sean.voisen.org/blog/why-make-software"><li><div class="title">Why make software?</div><div class="domain">sean.voisen.org &bull; October 14, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Seth's Blog (seths.blog)</h2> (1)</summary><ul><a class="li" href="https://seths.blog/2024/10/some-simple-rules-for-source-control/"><li><div class="title">Some simple rules for source control</div><div class="domain">seths.blog &bull; October 14, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Journey to the Microcosmos (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=VZ-_dAYB7jg"><li><div class="title">We Spilled Ink On Our Slides to See What Would Happen</div><div class="domain">youtube.com &bull; October 14, 2024</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>

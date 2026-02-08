@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2024-11-20</span>:</h1>
+  <p class="summary">There are 44 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Bear Blog Trending Posts (bearblog.dev)</h2> (3)</summary><ul><a class="li" href="https://welltypedwitch.bearblog.dev/nominal-for-storing-structural-for-manipulating/"><li><div class="title">Nominal for Storing, Structural for Manipulating</div><div class="domain">welltypedwitch.bearblog.dev &bull; November 20, 2024</div></li></a><a class="li" href="https://hwisnu.bearblog.dev/c-raylib-snake-game/"><li><div class="title">C + Raylib: snake game</div><div class="domain">hwisnu.bearblog.dev &bull; November 20, 2024</div></li></a><a class="li" href="https://meadow.cafe/initial-thoughts-on-the-power-of-now-by-eckhart-tolle/"><li><div class="title">Initial thoughts on The Power of Now by Eckhart Tolle</div><div class="domain">meadow.cafe &bull; November 20, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Big Think (bigthink.com)</h2> (4)</summary><ul><a class="li" href="https://bigthink.com/starts-with-a-bang/what-happens-deep-fry-frozen-turkey/"><li><div class="title">What happens if you deep fry a frozen turkey?</div><div class="domain">bigthink.com &bull; November 20, 2024</div></li></a><a class="li" href="https://bigthink.com/the-learning-curve/toxic-productivity/"><li><div class="title">How to break free from your “toxic productivity” cycle</div><div class="domain">bigthink.com &bull; November 20, 2024</div></li></a><a class="li" href="https://bigthink.com/neuropsych/3-emotional-intelligence-tips-for-helping-a-friend-in-a-rough-patch/"><li><div class="title">3 emotional intelligence tips for helping a friend in a rough patch</div><div class="domain">bigthink.com &bull; November 20, 2024</div></li></a><a class="li" href="https://bigthink.com/health/muscles-neurons/"><li><div class="title">When muscles work out, they help neurons to grow</div><div class="domain">bigthink.com &bull; November 20, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Commoncog (commoncog.com)</h2> (1)</summary><ul><a class="li" href="https://commoncog.com/stan-slap-effective-employee-cultures/"><li><div class="title">Stan Slap on the Art of Building Effective Employee Cultures</div><div class="domain">commoncog.com &bull; November 20, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">kottke.org (feeds.kottke.org)</h2> (10)</summary><ul><a class="li" href="https://kottke.org/24/11/0045678-for-the-love-of-god"><li><div class="title">For the love of god, quit calling your newsletter &#8220;my Substack&#8221;. &#8220;You...</div><div class="domain">kottke.org &bull; November 20, 2024</div></li></a><a class="li" href="https://kottke.org/24/11/0045680-rafael-nadal-has-official"><li><div class="title">Rafael Nadal has officially retired from professional tennis. One of the greatest...</div><div class="domain">kottke.org &bull; November 20, 2024</div></li></a><a class="li" href="https://kottke.org/24/11/0045681-google-the-us-forest"><li><div class="title">Google & the US Forest Service are partnering to use machine learning...</div><div class="domain">kottke.org &bull; November 20, 2024</div></li></a><a class="li" href="https://kottke.org/24/11/todays-work-music-a-groovy-autumn-mix"><li><div class="title">Today&#8217;s Work Music: A Groovy Autumn Mix</div><div class="domain">kottke.org &bull; November 20, 2024</div></li></a><a class="li" href="https://kottke.org/24/11/0045673-dental-care-supplier-henr"><li><div class="title">&#8220;Dental care supplier Henry Schein advanced in Monday trading as investors bet...</div><div class="domain">kottke.org &bull; November 20, 2024</div></li></a><a class="li" href="https://kottke.org/24/11/earths-first-interstellar-transmission-is-50-years-old"><li><div class="title">Earth&#8217;s First Interstellar Transmission Is 50 Years Old</div><div class="domain">kottke.org &bull; November 20, 2024</div></li></a><a class="li" href="https://kottke.org/24/11/0045684-photos-by-noah-kalina-of"><li><div class="title">Photos by Noah Kalina of the oldest forest in the world (a...</div><div class="domain">kottke.org &bull; November 20, 2024</div></li></a><a class="li" href="https://kottke.org/24/11/0045651-a-report-from-the-europea"><li><div class="title">A report from the European championship of tram drivers. This was one...</div><div class="domain">kottke.org &bull; November 20, 2024</div></li></a><a class="li" href="https://kottke.org/24/11/chers-new-memoir"><li><div class="title">Cher&#8217;s New Memoir</div><div class="domain">kottke.org &bull; November 20, 2024</div></li></a><a class="li" href="https://kottke.org/24/11/cheese-crime"><li><div class="title">Cheese Crime</div><div class="domain">kottke.org &bull; November 20, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Go Make Things (gomakethings.com)</h2> (1)</summary><ul><a class="li" href="https://gomakethings.com/attribute-styling/"><li><div class="title">Attribute styling</div><div class="domain">gomakethings.com &bull; November 20, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (1)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/pNkjHuQGDetRZypmA/it-s-a-10-chance-which-i-did-10-times-so-it-should-be-100"><li><div class="title">"It's a 10% chance which I did 10 times, so it should be 100%"</div><div class="domain">lesswrong.com &bull; November 20, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (1)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/KPBPc7RayDPxqxdqY/china-hawks-are-manufacturing-an-ai-arms-race"><li><div class="title">China Hawks are Manufacturing an AI Arms Race</div><div class="domain">lesswrong.com &bull; November 20, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (4)</summary><ul><a class="li" href="https://trouble.mataroa.blog/blog/asyncawait-is-real-and-can-hurt-you/"><li><div class="title">Async/Await Is Real And Can Hurt You</div><div class="domain">trouble.mataroa.blog &bull; November 20, 2024</div></li></a><a class="li" href="https://files.adrianistan.eu/talk2024.pdf"><li><div class="title">Native compilation of Prolog predicates with Cranelift</div><div class="domain">files.adrianistan.eu &bull; November 20, 2024</div></li></a><a class="li" href="https://dataswamp.org/~solene/2024-11-15-why-i-stopped-using-openbsd.html"><li><div class="title">Why I stopped using OpenBSD</div><div class="domain">dataswamp.org &bull; November 20, 2024</div></li></a><a class="li" href="https://registerspill.thorstenball.com/p/they-all-use-it"><li><div class="title">They all use it</div><div class="domain">registerspill.thorstenball.com &bull; November 20, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Longreads (longreads.com)</h2> (4)</summary><ul><a class="li" href="https://longreads.com/2024/11/19/finding-food-and-solace-in-the-intertidal/"><li><div class="title">Finding Food and Solace in the Intertidal</div><div class="domain">longreads.com &bull; November 20, 2024</div></li></a><a class="li" href="https://longreads.com/2024/11/20/death-in-nogales/"><li><div class="title">Death in Nogales</div><div class="domain">longreads.com &bull; November 20, 2024</div></li></a><a class="li" href="https://longreads.com/2024/11/20/racings-deadliest-day/"><li><div class="title">Racing’s Deadliest Day</div><div class="domain">longreads.com &bull; November 20, 2024</div></li></a><a class="li" href="https://longreads.com/2024/11/20/he-thought-he-knew-horses-then-he-learned-to-really-listen/"><li><div class="title">He Thought He Knew Horses. Then He Learned to Really Listen.</div><div class="domain">longreads.com &bull; November 20, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Nautilus (nautil.us)</h2> (1)</summary><ul><a class="li" href="https://nautil.us/masters-of-disguise-1161703/"><li><div class="title">Masters of Disguise</div><div class="domain">nautil.us &bull; November 20, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (8)</summary><ul><a class="li" href="https://www.labrujulaverde.com/en/2024/11/german-wwii-soldiers-grave-found-in-poland-with-mesolithic-tools-roman-and-byzantine-coins-and-other-artifacts/"><li><div class="title">German WWII Soldier Grave Found with Mesolithic Tools, Roman and Byzantine Coins</div><div class="domain">labrujulaverde.com &bull; November 20, 2024</div></li></a><a class="li" href="https://github.com/janderland/fql"><li><div class="title">FQL: A KV Query Language</div><div class="domain">github.com &bull; November 20, 2024</div></li></a><a class="li" href="https://www.wsj.com/arts-culture/books/the-best-of-all-possible-worlds-review-leibniz-lives-again-647be296"><li><div class="title">'The Best of All Possible Worlds' Review: Leibniz Lives Again</div><div class="domain">wsj.com &bull; November 20, 2024</div></li></a><a class="li" href="https://newatlas.com/marine/flipping-flip-ship-saved/"><li><div class="title">Flipping FLIP ship saved from scrapyard at last minute</div><div class="domain">newatlas.com &bull; November 20, 2024</div></li></a><a class="li" href="https://www.pcgamer.com/games/fps/a-summer-intern-once-saved-valve-from-a-near-fatal-lawsuit-after-a-publisher-decided-to-go-world-war-3-on-it-and-it-all-hinged-on-one-email/"><li><div class="title">A summer intern once saved Valve from a near-fatal lawsuit</div><div class="domain">pcgamer.com &bull; November 20, 2024</div></li></a><a class="li" href="https://11thrru.org/pdf/AgentBlue.pdf"><li><div class="title">Agent Blue – Arsenic-Laced Rainbow [pdf]</div><div class="domain">11thrru.org &bull; November 20, 2024</div></li></a><a class="li" href="https://electrobun.dev/"><li><div class="title">Electrobun: Cross-platform desktop applications written in TypeScript</div><div class="domain">electrobun.dev &bull; November 20, 2024</div></li></a><a class="li" href="https://trailimap.com/"><li><div class="title">Show HN: Bike route planner that follows almost only official bike trails</div><div class="domain">trailimap.com &bull; November 20, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Quanta Magazine (quantamagazine.org)</h2> (1)</summary><ul><a class="li" href="https://www.quantamagazine.org/all-life-on-earth-today-descended-from-a-single-cell-meet-luca-20241120/"><li><div class="title">All Life on Earth Today Descended From a Single Cell. Meet LUCA.</div><div class="domain">quantamagazine.org &bull; November 20, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Reasons to be Cheerful (reasonstobecheerful.world)</h2> (1)</summary><ul><a class="li" href="https://reasonstobecheerful.world/what-were-reading-heat-resistant-corals/"><li><div class="title">What We’re Reading: The Quest for Heat-Resistant Corals</div><div class="domain">reasonstobecheerful.world &bull; November 20, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Seth's Blog (seths.blog)</h2> (2)</summary><ul><a class="li" href="https://seths.blog/2024/11/the-nature-of-traps/"><li><div class="title">The nature of traps</div><div class="domain">seths.blog &bull; November 20, 2024</div></li></a><a class="li" href="https://seths.blog/2024/11/bongo-is-here/"><li><div class="title">Bongo is here</div><div class="domain">seths.blog &bull; November 20, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">XML.com Atom feed for articles and news items (xml.com)</h2> (1)</summary><ul><a class="li" href="https://www.xml.com/news/2024-11-courses-delightful-computing/"><li><div class="title">Upcoming Courses at Delightful Computing</div><div class="domain">xml.com &bull; November 20, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">World Of A.R.Rahman (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/tagap7pnJCQ"><li><div class="title">Alaipayuthey/Sakhi/Saathiya BGM -  A.R.RAHMAN</div><div class="domain">youtube.com &bull; November 20, 2024</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>

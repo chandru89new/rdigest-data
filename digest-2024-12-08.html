@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2024-12-08</span>:</h1>
+  <p class="summary">There are 85 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Big Think (bigthink.com)</h2> (2)</summary><ul><a class="li" href="https://bigthink.com/the-future/nanotech-development/"><li><div class="title">The big problems driving nanotech development</div><div class="domain">bigthink.com &bull; December 08, 2024</div></li></a><a class="li" href="https://bigthink.com/thinking/platos-cave-ignorance/"><li><div class="title">Plato’s cave and the stubborn persistence of ignorance</div><div class="domain">bigthink.com &bull; December 08, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Two-Wrongs (entropicthoughts.com)</h2> (1)</summary><ul><a class="li" href="https://entropicthoughts.com/the-sample-size-curve"><li><div class="title">The Sample Size Curve</div><div class="domain">entropicthoughts.com &bull; December 08, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">kottke.org (feeds.kottke.org)</h2> (4)</summary><ul><a class="li" href="https://kottke.org/24/12/0045813-catherine-russell-has-sta"><li><div class="title">Catherine Russell has starred in the same off-Broadway play for 37 years,...</div><div class="domain">kottke.org &bull; December 08, 2024</div></li></a><a class="li" href="https://kottke.org/24/12/0045814-it-appears-that-the-bruta"><li><div class="title">It appears that the brutal reign of the Assad regime is over...</div><div class="domain">kottke.org &bull; December 08, 2024</div></li></a><a class="li" href="https://kottke.org/24/12/0045815-just-updated-the-2024-kot"><li><div class="title">Just updated the 2024 Kottke Holiday Gift Guide with suggestions from Kottke...</div><div class="domain">kottke.org &bull; December 08, 2024</div></li></a><a class="li" href="https://kottke.org/24/12/0045805-jia-tolentino-on-the-some"><li><div class="title">Jia Tolentino on the sometimes celebratory reaction to the death of UnitedHealthcare...</div><div class="domain">kottke.org &bull; December 08, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (6)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/vBAE9wd6qub2EQpTg/litigate-for-impact-preparing-legal-action-against-an-agi"><li><div class="title">Litigate-for-Impact: Preparing Legal Action against an AGI Frontier Lab Leader</div><div class="domain">lesswrong.com &bull; December 08, 2024</div></li></a><a class="li" href="https://www.lesswrong.com/posts/A57YTGLytFT6NaDJY/parable-of-the-vanilla-ice-cream-curse-and-how-it-would"><li><div class="title">Parable of the vanilla ice cream curse (and how it would prevent a car from starting!)</div><div class="domain">lesswrong.com &bull; December 08, 2024</div></li></a><a class="li" href="https://www.lesswrong.com/posts/bfLgFyZdtfLfEbGGX/causal-undertow-a-work-of-seed-fiction"><li><div class="title">Causal Undertow: A Work of Seed Fiction</div><div class="domain">lesswrong.com &bull; December 08, 2024</div></li></a><a class="li" href="https://www.lesswrong.com/posts/NExjWLLPKprjZKfC6/cognitive-work-and-ai-safety-a-thermodynamic-perspective"><li><div class="title">Cognitive Work and AI Safety: A Thermodynamic Perspective</div><div class="domain">lesswrong.com &bull; December 08, 2024</div></li></a><a class="li" href="https://www.lesswrong.com/posts/tMrf4Bw27wPT3CaYr/rl-but-don-t-do-anything-i-wouldn-t-do"><li><div class="title">RL, but don't do anything I wouldn't do</div><div class="domain">lesswrong.com &bull; December 08, 2024</div></li></a><a class="li" href="https://www.lesswrong.com/posts/eczwWrmX5XNEo7JsS/intricacies-of-feature-geometry-in-large-language-models"><li><div class="title">Intricacies of Feature Geometry in Large Language Models</div><div class="domain">lesswrong.com &bull; December 08, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Irrational Exuberance (lethain.com)</h2> (1)</summary><ul><a class="li" href="https://lethain.com/measuring-developer-experience-benchmarks-theory-of-improvement/"><li><div class="title">Measuring developer experience, benchmarks, and providing a theory of improvement.</div><div class="domain">lethain.com &bull; December 08, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (14)</summary><ul><a class="li" href="https://duckdb.org/2024/12/06/duckdb-tpch-sf100-on-mobile.html"><li><div class="title">Running TPC-H SF100 on Mobile Phones</div><div class="domain">duckdb.org &bull; December 08, 2024</div></li></a><a class="li" href="https://flameeyes.blog/2024/12/08/defusing-agpl-3-with-batch-processing/"><li><div class="title">Defusing AGPL-3 With Batch Processing</div><div class="domain">flameeyes.blog &bull; December 08, 2024</div></li></a><a class="li" href="https://www.phoronix.com/news/OpenWrt-Compromised-ASU-Builds"><li><div class="title">OpenWrt Affected by Security Issue That Could Have Led to Compromised Build Artifacts</div><div class="domain">phoronix.com &bull; December 08, 2024</div></li></a><a class="li" href="https://rtfm.co.ua/en/victorialogs-a-grafana-dashboard-for-aws-vpc-flow-logs-migrating-from-grafana-loki"><li><div class="title">VictoriaLogs: a Grafana dashboard for AWS VPC Flow Logs – migrating from Grafana Loki</div><div class="domain">rtfm.co.ua &bull; December 08, 2024</div></li></a><a class="li" href="https://quuxplusone.github.io/blog/2024/12/08/should-expected-be-nodiscard/"><li><div class="title">Should std::expected be [[nodiscard]]?</div><div class="domain">quuxplusone.github.io &bull; December 08, 2024</div></li></a><a class="li" href="https://github.com/qutebrowser/qutebrowser"><li><div class="title">qutebrowser: A keyboard-driven, vim-like browser based on Python and Qt</div><div class="domain">github.com &bull; December 08, 2024</div></li></a><a class="li" href="https://douglascrockfordisnotyourdad.technomancy.us/"><li><div class="title">Douglas Crockford Is Not Your Dad</div><div class="domain">douglascrockfordisnotyourdad.technomancy.us &bull; December 08, 2024</div></li></a><a class="li" href="https://blog.mozilla.org/en/mozilla/mozilla-brand-next-era-of-tech/"><li><div class="title">Reclaim the internet: Mozilla’s rebrand for the next era of tech</div><div class="domain">blog.mozilla.org &bull; December 08, 2024</div></li></a><a class="li" href="https://osa1.net/posts/2024-12-07-inlining.html"><li><div class="title">When is inlining useful?</div><div class="domain">osa1.net &bull; December 08, 2024</div></li></a><a class="li" href="https://www.binwang.me/2024-12-02-PostgreSQL-High-Availability-Solutions-Part-1.html"><li><div class="title">Jepsen Test on Patroni: A PostgreSQL High Availability Solution</div><div class="domain">binwang.me &bull; December 08, 2024</div></li></a><a class="li" href="https://news.microsoft.com/2000/09/10/i-found-a-cool-little-problem-that-i-just-couldnt-resist-solving/"><li><div class="title">Protect mode support in the original Windows 3.0 was basically a 1-man skunkworks project</div><div class="domain">news.microsoft.com &bull; December 08, 2024</div></li></a><a class="li" href="https://oldvcr.blogspot.com/2024/12/composite-and-hard-reset-mods-for.html"><li><div class="title">Composite and hard reset mods for the Tandyvision One</div><div class="domain">oldvcr.blogspot.com &bull; December 08, 2024</div></li></a><a class="li" href="http://blog.thelifeofkenneth.com/2017/11/creating-autonomous-system-for-fun-and.html"><li><div class="title">Creating an Autonomous System for Fun and Profit</div><div class="domain">blog.thelifeofkenneth.com &bull; December 08, 2024</div></li></a><a class="li" href="https://yurichev.com/mirrors/knuth1989.pdf"><li><div class="title">The errors of TeX</div><div class="domain">yurichev.com &bull; December 08, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (46)</summary><ul><a class="li" href="https://wetw0rk.github.io/posts/0x01-killing-windows-kernel-mitigations/"><li><div class="title">0x01 – Killing Windows Kernel Mitigations</div><div class="domain">wetw0rk.github.io &bull; December 08, 2024</div></li></a><a class="li" href="https://blog.jgc.org/2024/12/all-you-base-are-belong-to-us.html"><li><div class="title">"All your base are belong to us" intro to my 2004 MIT Spam Conference talk</div><div class="domain">blog.jgc.org &bull; December 08, 2024</div></li></a><a class="li" href="https://www.vice.com/en/article/viganella-italy-fake-manmade-sun/"><li><div class="title">An Italian town that built its own sun (2021)</div><div class="domain">vice.com &bull; December 08, 2024</div></li></a><a class="li" href="https://ezntek.com/posts/librebooting-the-thinkpad-t480-20241207t0933/"><li><div class="title">Librebooting the ThinkPad T480</div><div class="domain">ezntek.com &bull; December 08, 2024</div></li></a><a class="li" href="https://worksinprogress.co/issue/the-world-of-tomorrow/"><li><div class="title">The world of tomorrow</div><div class="domain">worksinprogress.co &bull; December 08, 2024</div></li></a><a class="li" href="https://lcamtuf.substack.com/p/the-marvelous-disappearing-capacitor"><li><div class="title">The Marvelous Disappearing Capacitor</div><div class="domain">lcamtuf.substack.com &bull; December 08, 2024</div></li></a><a class="li" href="https://www.za-zu.com/blog/playbook"><li><div class="title">The Cold Email Handbook</div><div class="domain">za-zu.com &bull; December 08, 2024</div></li></a><a class="li" href="https://www.cnn.com/2024/12/05/style/toledano-chan-meteorite-watch-b1m/index.html"><li><div class="title">Watch carved from meteorite that hit Earth a million years ago</div><div class="domain">cnn.com &bull; December 08, 2024</div></li></a><a class="li" href="https://worldhistory.substack.com/p/the-myth-of-bananaland"><li><div class="title">The Myth of Bananaland: The Marketing and Reality of the United Fruit Company</div><div class="domain">worldhistory.substack.com &bull; December 08, 2024</div></li></a><a class="li" href="https://loreley.one/2024-12-wasm/"><li><div class="title">Show HN: Program a robot to solve a maze on a CPU emulator</div><div class="domain">loreley.one &bull; December 08, 2024</div></li></a><a class="li" href="https://semiengineering.com/nand-flash-targets-1000-layers/"><li><div class="title">NAND Flash Targets 1k Layers</div><div class="domain">semiengineering.com &bull; December 08, 2024</div></li></a><a class="li" href="https://www.economist.com/obituary/2024/12/05/john-kinsel-used-his-own-language-to-fool-the-japanese"><li><div class="title">One of the last Navajo code-talkers died on October 19th, aged 107</div><div class="domain">economist.com &bull; December 08, 2024</div></li></a><a class="li" href="https://blog.brixit.nl/conjuring-a-linux-distribution-out-of-thin-air/"><li><div class="title">Conjuring a Linux distribution out of thin air</div><div class="domain">blog.brixit.nl &bull; December 08, 2024</div></li></a><a class="li" href="https://hazyresearch.stanford.edu/blog/2023-12-11-conv-tutorial"><li><div class="title">Long Convolutions via Polynomial Multiplication</div><div class="domain">hazyresearch.stanford.edu &bull; December 08, 2024</div></li></a><a class="li" href="https://publicdomainreview.org/collection/pinkerton-thirty-years-a-detective/"><li><div class="title">True Crime: Allan Pinkerton's Thirty Years a Detective (1884)</div><div class="domain">publicdomainreview.org &bull; December 08, 2024</div></li></a><a class="li" href="https://msp.ucsd.edu/techniques.htm"><li><div class="title">The Theory and Technique of Electronic Music (2006)</div><div class="domain">msp.ucsd.edu &bull; December 08, 2024</div></li></a><a class="li" href="http://wondering-star.blogspot.com/2011/04/gps-constellation-as-way-to-image.html"><li><div class="title">GPS constellation as a way to image the ionosphere (2011)</div><div class="domain">wondering-star.blogspot.com &bull; December 08, 2024</div></li></a><a class="li" href="https://www.france24.com/en/live-news/20241204-uk-bans-daytime-tv-ads-for-cereals-muffins-and-burgers"><li><div class="title">UK bans daytime TV ads for cereals, muffins and burgers</div><div class="domain">france24.com &bull; December 08, 2024</div></li></a><a class="li" href="https://hackaday.com/2024/12/07/the-25000-tom-evans-pre-amp-repair-and-a-copyright-strike/"><li><div class="title">Mend it Mark gets suspect copyright strike for £25k audio amp repair</div><div class="domain">hackaday.com &bull; December 08, 2024</div></li></a><a class="li" href="https://www.wsj.com/tech/marvell-ai-chip-manufacturing-faa89cb6"><li><div class="title">Small AI Chip Maker Marvell Now More Valuable Than Intel</div><div class="domain">wsj.com &bull; December 08, 2024</div></li></a><a class="li" href="https://github.com/singlr-ai/nocaptcha"><li><div class="title">Show HN: Replace CAPTCHAs with WebAuthn passkeys for bot prevention</div><div class="domain">github.com &bull; December 08, 2024</div></li></a><a class="li" href="https://github.com/sqlite/sqlite/blob/e8346d0a889c89ec8a78e65abc33257a6c6fb81a/src/os.h"><li><div class="title">SQLite changed temp file prefix after McAfee users called devs to complain (2006)</div><div class="domain">github.com &bull; December 08, 2024</div></li></a><a class="li" href="https://blog.yossarian.net/2024/12/06/zizmor-ultralytics-injection"><li><div class="title">Zizmor would have caught the Ultralytics workflow vulnerability</div><div class="domain">blog.yossarian.net &bull; December 08, 2024</div></li></a><a class="li" href="https://cut-the-crab.streamlit.app/"><li><div class="title">Show HN: Cut the crap – remove AI bullshit from websites</div><div class="domain">cut-the-crab.streamlit.app &bull; December 08, 2024</div></li></a><a class="li" href="https://www.lumafield.com/article/new-vs-used-sawstop"><li><div class="title">CT Scans of New vs. Used SawStop</div><div class="domain">lumafield.com &bull; December 08, 2024</div></li></a><a class="li" href="https://rtfm.co.ua/en/victorialogs-a-grafana-dashboard-for-aws-vpc-flow-logs-migrating-from-grafana-loki/"><li><div class="title">VictoriaLogs: A Grafana Dashboard for AWS VPC Flow Logs – Migrating from Grafan</div><div class="domain">rtfm.co.ua &bull; December 08, 2024</div></li></a><a class="li" href="https://blog.frankel.ch/home-assistant/3/"><li><div class="title">Replace Philips Hue Automation with Home Assistant's</div><div class="domain">blog.frankel.ch &bull; December 08, 2024</div></li></a><a class="li" href="https://gizmodo.com/how-much-do-i-need-to-change-my-face-to-avoid-facial-recognition-2000533755"><li><div class="title">How much do I need to change my face to avoid facial recognition?</div><div class="domain">gizmodo.com &bull; December 08, 2024</div></li></a><a class="li" href="https://cbs12.com/news/local/broward-county-to-vacate-convictions-for-people-who-bought-crack-made-by-sheriffs-office-supreme-court-reverse-sting-1993-ruling-state-attorney"><li><div class="title">Broward Co. to vacate convictions for buying crack made by Sheriff's Office</div><div class="domain">cbs12.com &bull; December 08, 2024</div></li></a><a class="li" href="https://www.therulesofprogramming.com"><li><div class="title">The Rules of Programming (2023)</div><div class="domain">therulesofprogramming.com &bull; December 08, 2024</div></li></a><a class="li" href="https://lellep.xyz/blog/failed-data-science-project.html"><li><div class="title">1,600 days of a failed hobby data science project</div><div class="domain">lellep.xyz &bull; December 08, 2024</div></li></a><a class="li" href="https://json5.org/"><li><div class="title">JSON5 – JSON for Humans</div><div class="domain">json5.org &bull; December 08, 2024</div></li></a><a class="li" href="https://hackerone.com/reports/2887487"><li><div class="title">Buffer Overflow Risk in Curl_inet_ntop and Inet_ntop4</div><div class="domain">hackerone.com &bull; December 08, 2024</div></li></a><a class="li" href="https://crabman.me/does-soundcore-motion-sound-different-via-aux-in-and-bluetooth-and-how-to-measure-frequency-response-at-home/"><li><div class="title">How to measure frequency response of a speaker at home</div><div class="domain">crabman.me &bull; December 08, 2024</div></li></a><a class="li" href="https://github.com/e-dant/salmagundi"><li><div class="title">Show HN: A portable hash map in C</div><div class="domain">github.com &bull; December 08, 2024</div></li></a><a class="li" href="https://github.com/skerkour/black-hat-rust"><li><div class="title">Black Hat Rust</div><div class="domain">github.com &bull; December 08, 2024</div></li></a><a class="li" href="https://apnews.com/article/syria-assad-sweida-daraa-homs-hts-qatar-7f65823bbf0a7bd331109e8dff419430"><li><div class="title">Syrian government falls in end to 50-year rule of Assad family</div><div class="domain">apnews.com &bull; December 08, 2024</div></li></a><a class="li" href="https://www.wsj.com/tech/cybersecurity/hacking-brian-krebs-snowflake-waifu-49b87fce"><li><div class="title">Brian Krebs Investigates Internet's Most Vicious Hackers–From a Secret Location</div><div class="domain">wsj.com &bull; December 08, 2024</div></li></a><a class="li" href="http://oldvcr.blogspot.com/2024/12/composite-and-hard-reset-mods-for.html"><li><div class="title">Composite and hard reset mods for the Tandyvision One</div><div class="domain">oldvcr.blogspot.com &bull; December 08, 2024</div></li></a><a class="li" href="https://www.infochunk.com/schannel/index.html"><li><div class="title">Reverse engineering the Sega Channel game image file format</div><div class="domain">infochunk.com &bull; December 08, 2024</div></li></a><a class="li" href="https://nyxt.atlas.engineer/"><li><div class="title">Nyxt: The Hacker's Browser</div><div class="domain">nyxt.atlas.engineer &bull; December 08, 2024</div></li></a><a class="li" href="https://arstechnica.com/cars/2024/12/lower-cost-sodium-ion-batteries-are-finally-having-their-moment/"><li><div class="title">Lower-cost sodium-ion batteries are finally having their moment</div><div class="domain">arstechnica.com &bull; December 08, 2024</div></li></a><a class="li" href="https://www.france24.com/en/live-news/20241203-deepfakes-weaponised-to-target-pakistan-s-women-leaders"><li><div class="title">Deepfakes weaponised to target Pakistan's women leaders</div><div class="domain">france24.com &bull; December 08, 2024</div></li></a><a class="li" href="https://www.ycombinator.com/companies/gromo/jobs/pZHrmBK-senior-executive-finance"><li><div class="title">GroMo (YC W21) Is Hiring</div><div class="domain">ycombinator.com &bull; December 08, 2024</div></li></a><a class="li" href="https://www.tomshardware.com/pc-components/case-fans/arctic-uses-a-fan-to-cool-another-fan-s12038-4k-120mm-fan-adds-an-extra-fan-in-its-center-to-cool-its-central-shaft"><li><div class="title">Arctic uses a fan to cool another fan</div><div class="domain">tomshardware.com &bull; December 08, 2024</div></li></a><a class="li" href="https://news.mit.edu/2024/study-browsing-negative-content-online-makes-mental-health-struggles-worse-1205"><li><div class="title">Browsing negative content online makes mental health struggles worse</div><div class="domain">news.mit.edu &bull; December 08, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Seth's Blog (seths.blog)</h2> (1)</summary><ul><a class="li" href="https://seths.blog/2024/12/what-if-theyre-right/"><li><div class="title">What if they’re right?</div><div class="domain">seths.blog &bull; December 08, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Trevor I. Lasn Thoughts (trevorlasn.com)</h2> (1)</summary><ul><a class="li" href="https://www.trevorlasn.com/blog/what-makes-a-great-engineering-manager"><li><div class="title">What Makes a Great Engineering Manager?</div><div class="domain">trevorlasn.com &bull; December 08, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (9)</summary><ul><a class="li" href="https://yourstory.com/2024/12/myntra-reports-profit-of-rs-309-cr-for-fy24"><li><div class="title">Myntra sashays to profit in FY24 in dramatic turnaround</div><div class="domain">yourstory.com &bull; December 08, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/12/meet-the-house-of-the-dragon-beer-what-travellers-did-in-2024"><li><div class="title">Meet the House of the Dragon beer! What travellers did in 2024</div><div class="domain">yourstory.com &bull; December 08, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/12/pre-budget-meet-msme-stakeholders-seek-tech-upgrade"><li><div class="title">Pre-Budget meet: MSME stakeholders seek tech upgrade, PLI benefits, cut in GST</div><div class="domain">yourstory.com &bull; December 08, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/12/echoes-of-earth-music-festival-art-environment-photography"><li><div class="title">Echoes of Earth kicks off 7th edition of India’s greenest music festival</div><div class="domain">yourstory.com &bull; December 08, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/12/fpis-return-to-indian-equities-with-rs-24-454-cr-inflow"><li><div class="title">FPIs return to Indian equities with Rs 24,454 Cr inflow in Dec first week</div><div class="domain">yourstory.com &bull; December 08, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/12/ipo-frenzy-next-week-five-main-board-6-smes"><li><div class="title">IPO frenzy next week: Five main-board, 6 SMEs to hit primary market to raise Rs 18,500 cr</div><div class="domain">yourstory.com &bull; December 08, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/12/platforms-efficiency-quality-entrepreneur-innovation-education-quiz"><li><div class="title">Platforms, efficiency, quality: test your business creativity with Edition 165 of our weekly quiz!</div><div class="domain">yourstory.com &bull; December 08, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/12/istarts-rising-rajasthan-aims-states-startup-ecosystem"><li><div class="title">iStart’s Rising Rajasthan aims to give the state’s startup ecosystem a fillip</div><div class="domain">yourstory.com &bull; December 08, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/12/how-user-interface-ui-experience-ux-tweaks-turn-apps-into-user-magnets"><li><div class="title">From ordinary to wow: How UI/UX tweaks turn apps into user magnets</div><div class="domain">yourstory.com &bull; December 08, 2024</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>

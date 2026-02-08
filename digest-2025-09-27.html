@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-09-27</span>:</h1>
+  <p class="summary">There are 59 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Bear Blog Trending Posts (bearblog.dev)</h2> (1)</summary><ul><a class="li" href="https://athylbene.bearblog.dev/i-feel-bad-for-the-lgbt-community/"><li><div class="title">I Feel Bad for the LGBT Community</div><div class="domain">athylbene.bearblog.dev &bull; September 27, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (3)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/3mpK6z4xnaEjHP4jP/our-beloved-monsters"><li><div class="title">Our Beloved Monsters</div><div class="domain">lesswrong.com &bull; September 27, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/2pZWhCndKtLAiWXYv/learnings-from-ai-safety-course-so-far"><li><div class="title">Learnings from AI safety course so far</div><div class="domain">lesswrong.com &bull; September 27, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/yjiaNbjDWrPAFaNZs/reasons-to-sell-frontier-lab-equity-to-donate-now-rather"><li><div class="title">Reasons to sell frontier lab equity to donate now rather than later</div><div class="domain">lesswrong.com &bull; September 27, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (16)</summary><ul><a class="li" href="https://risingwave.com/blog/the-case-for-hybrid-cache-for-object-stores/"><li><div class="title">The Case for Hybrid Cache for Object Stores</div><div class="domain">risingwave.com &bull; September 27, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=PSkUOIgYs0Y"><li><div class="title">Building a Serverless WASM AI Runtime in Rust</div><div class="domain">youtube.com &bull; September 27, 2025</div></li></a><a class="li" href="https://blog.cloudflare.com/code-mode/"><li><div class="title">Code Mode: the better way to use MCP</div><div class="domain">blog.cloudflare.com &bull; September 27, 2025</div></li></a><a class="li" href="https://scottaaronson.blog/?p=9170"><li><div class="title">HSBC publishes yet another claim of quantum advantage that isn’t</div><div class="domain">scottaaronson.blog &bull; September 27, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=5m5g4UO5W44"><li><div class="title">LIVE 2025: live talks about live programming</div><div class="domain">youtube.com &bull; September 27, 2025</div></li></a><a class="li" href="https://github.com/landlock-lsm/go-landlock"><li><div class="title">go-landlock: A Go library for the Linux Landlock sandboxing feature</div><div class="domain">github.com &bull; September 27, 2025</div></li></a><a class="li" href="http://64jim64.blogspot.com/2025/09/meshtastic-64-meshtastic-radio-for.html"><li><div class="title">Meshtastic 64 - A meshtastic radio for the Commodore 64</div><div class="domain">64jim64.blogspot.com &bull; September 27, 2025</div></li></a><a class="li" href="https://janmidtgaard.dk/papers/Midtgaard%3AOLIVIERFEST25.pdf"><li><div class="title">Property-Based Testing of OCaml 5’s Runtime System</div><div class="domain">janmidtgaard.dk &bull; September 27, 2025</div></li></a><a class="li" href="https://www.koi.security/blog/postmark-mcp-npm-malicious-backdoor-email-theft"><li><div class="title">First Malicious MCP in the Wild: The Postmark Backdoor That's Stealing Your Emails</div><div class="domain">koi.security &bull; September 27, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=iPoL03tFBtU"><li><div class="title">Docker Was Too Slow, So We Replaced It: Nix in Production</div><div class="domain">youtube.com &bull; September 27, 2025</div></li></a><a class="li" href="https://lobste.rs/s/ybzisr/fun_friday_question_what_s_best_way_you_ve"><li><div class="title">Fun Friday Question: What's the Best Way you've Broken Prod?</div><div class="domain">lobste.rs &bull; September 27, 2025</div></li></a><a class="li" href="https://rodneybrooks.com/why-todays-humanoids-wont-learn-dexterity/"><li><div class="title">Why Today’s Humanoids Won’t Learn Dexterity</div><div class="domain">rodneybrooks.com &bull; September 27, 2025</div></li></a><a class="li" href="https://sanixdk.xyz/blogs/how-i-accidentally-created-the-fastest-csv-parser-ever-made"><li><div class="title">How I Accidentally Created the Fastest CSV Parser Ever Made</div><div class="domain">sanixdk.xyz &bull; September 27, 2025</div></li></a><a class="li" href="https://utcc.utoronto.ca/~cks/space/blog/programming/GoNewWithExpression"><li><div class="title">Go's builtin 'new()' function will take an expression in Go 1.26</div><div class="domain">utcc.utoronto.ca &bull; September 27, 2025</div></li></a><a class="li" href="https://limi.net/checkboxes"><li><div class="title">Checkboxes that kill your product (2013)</div><div class="domain">limi.net &bull; September 27, 2025</div></li></a><a class="li" href="https://lwn.net/Articles/1037577/"><li><div class="title">Typst: a possible LaTeX replacement</div><div class="domain">lwn.net &bull; September 27, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (21)</summary><ul><a class="li" href="https://chillphysicsenjoyer.substack.com/p/measuring-my-diy-air-purifier"><li><div class="title">Measuring My DIY Air Purifier</div><div class="domain">chillphysicsenjoyer.substack.com &bull; September 27, 2025</div></li></a><a class="li" href="https://www.bbc.com/reel/video/p0m4mg2j/washi-the-japanese-paper-crafted-to-last-1-000-years"><li><div class="title">Washi: The Japanese paper crafted to last 1000 years (4 min video)</div><div class="domain">bbc.com &bull; September 27, 2025</div></li></a><a class="li" href="https://shkspr.mobi/blog/2025/09/drunk-css/"><li><div class="title">Drunk CSS</div><div class="domain">shkspr.mobi &bull; September 27, 2025</div></li></a><a class="li" href="https://mort.coffee/home/fast-interpreters/"><li><div class="title">Faster Virtual Machines: Speeding Up Programming Language Execution (2023)</div><div class="domain">mort.coffee &bull; September 27, 2025</div></li></a><a class="li" href="https://www.johnhawks.net/p/when-did-human-chromosome-2-fuse"><li><div class="title">When did human chromosome 2 fuse?(2023)</div><div class="domain">johnhawks.net &bull; September 27, 2025</div></li></a><a class="li" href="https://blog.adafruit.com/2025/09/26/ai-model-trapped-in-raspberry-pi-piday-raspberrypi/"><li><div class="title">AI model trapped in a Raspberry Pi</div><div class="domain">blog.adafruit.com &bull; September 27, 2025</div></li></a><a class="li" href="https://www.ycombinator.com/companies/great-question/jobs/9crdslU-director-of-product"><li><div class="title">Great Question (YC W21) Is Hiring Director of Product</div><div class="domain">ycombinator.com &bull; September 27, 2025</div></li></a><a class="li" href="https://lilianweng.github.io/posts/2025-05-01-thinking/"><li><div class="title">Why We Think</div><div class="domain">lilianweng.github.io &bull; September 27, 2025</div></li></a><a class="li" href="https://newatlas.com/military/microwave-beam-anti-drone-weapon/"><li><div class="title">Microwave weapon downs 49 drones with a single blast</div><div class="domain">newatlas.com &bull; September 27, 2025</div></li></a><a class="li" href="https://signoz.io/blog/llm-observability-opentelemetry/"><li><div class="title">LLM Observability in the Wild – Why OpenTelemetry Should Be the Standard</div><div class="domain">signoz.io &bull; September 27, 2025</div></li></a><a class="li" href="https://matduggan.com/greenland-is-a-beautiful-nightmare/"><li><div class="title">Greenland is a beautiful nightmare</div><div class="domain">matduggan.com &bull; September 27, 2025</div></li></a><a class="li" href="https://online-go.com/learn-to-play-go"><li><div class="title">Learn to Play Go</div><div class="domain">online-go.com &bull; September 27, 2025</div></li></a><a class="li" href="https://www.highnorthnews.com/en/norway-monitor-airborne-radioactivity-svalbard"><li><div class="title">Norway to Monitor Airborne Radioactivity in Svalbard</div><div class="domain">highnorthnews.com &bull; September 27, 2025</div></li></a><a class="li" href="http://music.ishkur.com/"><li><div class="title">Ishkur's Guide to Electronic Music</div><div class="domain">music.ishkur.com &bull; September 27, 2025</div></li></a><a class="li" href="https://www.nikonsmallworld.com/galleries/2025-small-world-in-motion-competition"><li><div class="title">2025 Nikon Small World in Motion Competition Winners</div><div class="domain">nikonsmallworld.com &bull; September 27, 2025</div></li></a><a class="li" href="https://www.the-londoner.co.uk/scarlett-letters-closure-left-wing-bookshop/"><li><div class="title">The death of east London's most radical bookshop</div><div class="domain">the-londoner.co.uk &bull; September 27, 2025</div></li></a><a class="li" href="https://www.theroom.lol"><li><div class="title">I made a public living room and the internet keeps putting weirder stuff in it</div><div class="domain">theroom.lol &bull; September 27, 2025</div></li></a><a class="li" href="https://handy.computer/"><li><div class="title">Handy – Free open-source speech-to-text app written in Rust</div><div class="domain">handy.computer &bull; September 27, 2025</div></li></a><a class="li" href="https://modal.com/blog/reverse-engineer-flash-attention-4"><li><div class="title">We reverse-engineered Flash Attention 4</div><div class="domain">modal.com &bull; September 27, 2025</div></li></a><a class="li" href="https://github.com/francoismichel/ssh3"><li><div class="title">SSH3: Faster and rich secure shell using HTTP/3</div><div class="domain">github.com &bull; September 27, 2025</div></li></a><a class="li" href="https://messenger.abeto.co/"><li><div class="title">A WebGL game where you deliver messages on a tiny planet</div><div class="domain">messenger.abeto.co &bull; September 27, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Seth's Blog (seths.blog)</h2> (1)</summary><ul><a class="li" href="https://seths.blog/2025/09/the-buffet-problem/"><li><div class="title">The buffet problem</div><div class="domain">seths.blog &bull; September 27, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (4)</summary><ul><a class="li" href="https://yourstory.com/2025/09/furniture-design-orange-tree-swoon-creativity-photography"><li><div class="title">Trends and furniture: Orange Tree and Swoon Editions unveil design partnership</div><div class="domain">yourstory.com &bull; September 27, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/09/how-liberal-education-is-redefining-entrepreneurship"><li><div class="title">Breaking the mould: How liberal education is redefining entrepreneurship for a complex world</div><div class="domain">yourstory.com &bull; September 27, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/09/what-makes-brand-virat-kohli-tick"><li><div class="title">What makes Brand Virat Kohli tick?</div><div class="domain">yourstory.com &bull; September 27, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/09/hyderabad-wins-indias-digital-payments-race-ai-as-workflow-translator"><li><div class="title">Hyderabad wins India’s digital payments race; AI as a workflow translator</div><div class="domain">yourstory.com &bull; September 27, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Unphiltered by Samdish (and a fantastic team) (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=kiWlylsf1yE"><li><div class="title">Bihar Ki Baat, Seedha Tejashwi Yadav Ke Saath</div><div class="domain">youtube.com &bull; September 27, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Action Lab (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=F2M2aRXI8lc"><li><div class="title">Why Do Grains Defy Gravity?</div><div class="domain">youtube.com &bull; September 27, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Primer (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=GkiITbgu0V0"><li><div class="title">Simulating a single brain cell</div><div class="domain">youtube.com &bull; September 27, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">meghnerd (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=pQb1xfVNBiY"><li><div class="title">Ladakh protests turn violent; Sonam Wangchuk arrested | POLITICAL THERAPY SHOW</div><div class="domain">youtube.com &bull; September 27, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Kai Lentit (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/L3wfatZ8RBY"><li><div class="title">Terminator 4 (real life)</div><div class="domain">youtube.com &bull; September 27, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Jay Lee Painting (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=wKBOy5VLp_o"><li><div class="title">How to Paint Walking in the Rain / Acrylic Painting Technique</div><div class="domain">youtube.com &bull; September 27, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hoezaay (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=NtKmcxEEujY"><li><div class="title">Ghost Stories Episode 053 with You and Me ?</div><div class="domain">youtube.com &bull; September 27, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Francesco Parrino (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=tMVdOgDQRCU"><li><div class="title">Drops of Jupiter - Train | Piano Cover + Sheet Music</div><div class="domain">youtube.com &bull; September 27, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Engineering Facts (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=AXBD_jISjIk"><li><div class="title">Same same but different.. Cheap vs Costly 2.1 speakers review.. சரியான ஸ்பீக்கர் வாங்குவது எப்படி?</div><div class="domain">youtube.com &bull; September 27, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Einzelgänger (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/75SDLEFOKc0"><li><div class="title">Why Schopenhauer Hated Life</div><div class="domain">youtube.com &bull; September 27, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">darbarfestival (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=rDB7b0XWKkw"><li><div class="title">In Conversation | Shubha Mudgal | Music of India</div><div class="domain">youtube.com &bull; September 27, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Circle Line Art School (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=LMSLXW7Cpts"><li><div class="title">How to Draw a Cottage in a Landscape Scene for Beginners</div><div class="domain">youtube.com &bull; September 27, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">CinemaStix (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=32DvVrY4nrE"><li><div class="title">that movie that the history books seem to forget was great</div><div class="domain">youtube.com &bull; September 27, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>

@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2012-02-05</span>:</h1>
+  <p class="summary">There are 10 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Cabinet of Wonders (cabinet-of-wonders.blogspot.com)</h2> (10)</summary><ul><a class="li" href="http://cabinet-of-wonders.blogspot.com/feeds/373671862258216761/comments/default"><li><div class="title">3 Small Web Animation Experiences</div><div class="domain">cabinet-of-wonders.blogspot.com &bull; February 05, 2012</div></li></a><a class="li" href="http://cabinet-of-wonders.blogspot.com/feeds/4050768105883189224/comments/default"><li><div class="title">A Plethora of Automata, but Lasting Forever</div><div class="domain">cabinet-of-wonders.blogspot.com &bull; February 05, 2012</div></li></a><a class="li" href="http://cabinet-of-wonders.blogspot.com/feeds/7178882358401767391/comments/default"><li><div class="title">Why Cheap Art</div><div class="domain">cabinet-of-wonders.blogspot.com &bull; February 05, 2012</div></li></a><a class="li" href="http://cabinet-of-wonders.blogspot.com/feeds/1632592773516081344/comments/default"><li><div class="title">Where Have I Been?</div><div class="domain">cabinet-of-wonders.blogspot.com &bull; February 05, 2012</div></li></a><a class="li" href="http://cabinet-of-wonders.blogspot.com/feeds/1215521997050840180/comments/default"><li><div class="title">Whose Ideal Was This, Anyway?</div><div class="domain">cabinet-of-wonders.blogspot.com &bull; February 05, 2012</div></li></a><a class="li" href="http://cabinet-of-wonders.blogspot.com/feeds/5996653463194844429/comments/default"><li><div class="title">Coming Home from World Fantasy</div><div class="domain">cabinet-of-wonders.blogspot.com &bull; February 05, 2012</div></li></a><a class="li" href="http://cabinet-of-wonders.blogspot.com/feeds/7539512906420699680/comments/default"><li><div class="title">Lena Herzog's Lost Souls</div><div class="domain">cabinet-of-wonders.blogspot.com &bull; February 05, 2012</div></li></a><a class="li" href="http://cabinet-of-wonders.blogspot.com/feeds/9053831749980853030/comments/default"><li><div class="title">Misfit Zeitgeist</div><div class="domain">cabinet-of-wonders.blogspot.com &bull; February 05, 2012</div></li></a><a class="li" href="http://cabinet-of-wonders.blogspot.com/feeds/1380302587122211596/comments/default"><li><div class="title">The Secret of Kells</div><div class="domain">cabinet-of-wonders.blogspot.com &bull; February 05, 2012</div></li></a><a class="li" href="http://cabinet-of-wonders.blogspot.com/feeds/6298224463032854503/comments/default"><li><div class="title">What Ever Happened to Dog Carts?</div><div class="domain">cabinet-of-wonders.blogspot.com &bull; February 05, 2012</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>

@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-04-27</span>:</h1>
+  <p class="summary">There are 72 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Bear Blog Trending Posts (bearblog.dev)</h2> (6)</summary><ul><a class="li" href="https://writtenbywinter.bearblog.dev/the-club-and-the-kitchen-short-poem/"><li><div class="title">the club and the kitchen | short poem</div><div class="domain">writtenbywinter.bearblog.dev &bull; April 27, 2025</div></li></a><a class="li" href="https://karpathy.bearblog.dev/vibe-coding-menugen/"><li><div class="title">Vibe coding MenuGen</div><div class="domain">karpathy.bearblog.dev &bull; April 27, 2025</div></li></a><a class="li" href="https://tiramisu.bearblog.dev/forest-hills-murray-hill/"><li><div class="title">what are we even doing here? (forest hills, murray hill)</div><div class="domain">tiramisu.bearblog.dev &bull; April 27, 2025</div></li></a><a class="li" href="https://pedropeguerojr.bearblog.dev/love/"><li><div class="title">Love who you are more than what you do</div><div class="domain">pedropeguerojr.bearblog.dev &bull; April 27, 2025</div></li></a><a class="li" href="https://kylevallans.bearblog.dev/why-i-love-the-simple-internet/"><li><div class="title">Why I Love the Simple Internet</div><div class="domain">kylevallans.bearblog.dev &bull; April 27, 2025</div></li></a><a class="li" href="https://kbkartikay.com/finding-yourself/"><li><div class="title">Finding Yourself</div><div class="domain">kbkartikay.com &bull; April 27, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Go Make Things (gomakethings.com)</h2> (1)</summary><ul><a class="li" href="https://gomakethings.com/the-duality-of-creating-change/"><li><div class="title">The duality of creating change</div><div class="domain">gomakethings.com &bull; April 27, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (5)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/hjMy4ZxS5ogA9cTYK/how-i-think-about-my-research-process-explore-understand"><li><div class="title">How I Think About My Research Process: Explore, Understand, Distill</div><div class="domain">lesswrong.com &bull; April 27, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/Cvvf5w2j6BPJd8BzL/ai-self-portraits-aren-t-accurate"><li><div class="title">AI Self Portraits Aren't Accurate</div><div class="domain">lesswrong.com &bull; April 27, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/SebmGh9HYdd8GZtHA/the-urgency-of-interpretability-dario-amodei"><li><div class="title">"The Urgency of Interpretability" (Dario Amodei)</div><div class="domain">lesswrong.com &bull; April 27, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/xxxK9HTBNJvBY2RJL/untitled-draft-m847"><li><div class="title">The case for multi-decade AI timelines [Linkpost]</div><div class="domain">lesswrong.com &bull; April 27, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/t46PYSvHHtJLxmrxn/what-are-important-ui-shaped-problems-that-lightcone-could"><li><div class="title">What are important UI-shaped problems that Lightcone could tackle?</div><div class="domain">lesswrong.com &bull; April 27, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (17)</summary><ul><a class="li" href="https://travier.github.io/fedora-sysexts/"><li><div class="title">systemd system extensions for Fedora image based systems</div><div class="domain">travier.github.io &bull; April 27, 2025</div></li></a><a class="li" href="https://oxide-and-friends.transistor.fm/episodes/a-half-century-of-silicon-valley-with-randy-shoup"><li><div class="title">A Half-Century of Silicon Valley</div><div class="domain">oxide-and-friends.transistor.fm &bull; April 27, 2025</div></li></a><a class="li" href="https://blog.julik.nl/2025/04/a-can-of-shardines"><li><div class="title">A Can of Shardines: SQLite Multitenancy With Rails</div><div class="domain">blog.julik.nl &bull; April 27, 2025</div></li></a><a class="li" href="https://byroot.github.io/ruby/performance/2025/04/26/unlocking-ractors-object-id.html"><li><div class="title">Unlocking Ractors: object_id</div><div class="domain">byroot.github.io &bull; April 27, 2025</div></li></a><a class="li" href="https://www.usenix.org/conference/srecon25americas/presentation/lam"><li><div class="title">Technical Debt as Theory Building and Practice</div><div class="domain">usenix.org &bull; April 27, 2025</div></li></a><a class="li" href="https://theapplewiki.com/wiki/Apple_Encrypted_Archive"><li><div class="title">Apple Encrypted Archive</div><div class="domain">theapplewiki.com &bull; April 27, 2025</div></li></a><a class="li" href="https://comfy.guide/"><li><div class="title">Comfy.Guide</div><div class="domain">comfy.guide &bull; April 27, 2025</div></li></a><a class="li" href="https://overreacted.io/what-does-use-client-do/"><li><div class="title">What Does "use client" Do?</div><div class="domain">overreacted.io &bull; April 27, 2025</div></li></a><a class="li" href="https://9front.org/releases/2025/04/26/0/"><li><div class="title">9front “clause 15 common elements of maus and star type” released</div><div class="domain">9front.org &bull; April 27, 2025</div></li></a><a class="li" href="https://www.usenix.org/conference/usenixsecurity23/presentation/xu-jianhao"><li><div class="title">Silent Bugs Matter: A Study of Compiler-Introduced Security Bugs</div><div class="domain">usenix.org &bull; April 27, 2025</div></li></a><a class="li" href="http://helderman.github.io/htpataic/"><li><div class="title">How to Program a Text Adventure in C</div><div class="domain">helderman.github.io &bull; April 27, 2025</div></li></a><a class="li" href="https://lwn.net/Articles/1017315/"><li><div class="title">What's new in APT 3.0</div><div class="domain">lwn.net &bull; April 27, 2025</div></li></a><a class="li" href="https://tante.cc/2025/04/27/are-ai-system-really-tools/"><li><div class="title">Are "AI" systems really tools?</div><div class="domain">tante.cc &bull; April 27, 2025</div></li></a><a class="li" href="https://marc.info/?l=openbsd-misc&m=174577758604758&w=2"><li><div class="title">OpenBSD 7.7 released April 28, 2025</div><div class="domain">marc.info &bull; April 27, 2025</div></li></a><a class="li" href="https://getoutofmyhead.dev/"><li><div class="title">Remove these tags from <head></div><div class="domain">getoutofmyhead.dev &bull; April 27, 2025</div></li></a><a class="li" href="https://www.reddit.com/r/changemyview/comments/1k8b2hj/meta_unauthorized_experiment_on_cmv_involving/"><li><div class="title">Unauthorized Experiment on CMV Involving AI-generated Comments</div><div class="domain">reddit.com &bull; April 27, 2025</div></li></a><a class="li" href="https://diveintosystems.org/"><li><div class="title">Dive into Systems (2020)</div><div class="domain">diveintosystems.org &bull; April 27, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (32)</summary><ul><a class="li" href="https://pearlab.icrl.org/theory.html"><li><div class="title">Princeton Engineering Anomalies Research (2010)</div><div class="domain">pearlab.icrl.org &bull; April 27, 2025</div></li></a><a class="li" href="https://www.withentropy.com/blog/2025-04-21-beating_the_crowd/"><li><div class="title">Beating the Crowd</div><div class="domain">withentropy.com &bull; April 27, 2025</div></li></a><a class="li" href="https://akuz.me/co-designing-a-sparse-music-codec-with-chatgpt-o3-in-one-day-my-mini-pied-piper.html"><li><div class="title">Co-designing a sparse music codec with ChatGPT o3</div><div class="domain">akuz.me &bull; April 27, 2025</div></li></a><a class="li" href="https://www.zachbellay.com/posts/djangocon-eu-2025/"><li><div class="title">My takeaways from DjangoCon EU 2025</div><div class="domain">zachbellay.com &bull; April 27, 2025</div></li></a><a class="li" href="https://news.ycombinator.com/item?id=43815523"><li><div class="title">Ask HN: What are you working on? (April 2025)</div><div class="domain">news.ycombinator.com &bull; April 27, 2025</div></li></a><a class="li" href="https://romanliutikov.com/blog/running-clojure-in-wasm"><li><div class="title">Running Clojure in WASM with GraalVM</div><div class="domain">romanliutikov.com &bull; April 27, 2025</div></li></a><a class="li" href="https://github.com/zumerlab/snapdom"><li><div class="title">Show HN: I created snapDOM to capture DOM nodes as images with exceptional speed</div><div class="domain">github.com &bull; April 27, 2025</div></li></a><a class="li" href="https://downthetubes.net/in-memoriam-sf-and-fine-artist-david-schleinkofer/"><li><div class="title">In Memoriam: SF and Fine Artist David Schleinkofer</div><div class="domain">downthetubes.net &bull; April 27, 2025</div></li></a><a class="li" href="https://tmuxai.dev/"><li><div class="title">TmuxAI: AI-Powered, Non-Intrusive Terminal Assistant</div><div class="domain">tmuxai.dev &bull; April 27, 2025</div></li></a><a class="li" href="https://github.com/fail0verflow/hbc/blob/80a80251f83f1993c272c58e471d040f3eb1dee9/README.md"><li><div class="title">Libogc (Wii homebrew library) discovered to contain code stolen from RTEMS</div><div class="domain">github.com &bull; April 27, 2025</div></li></a><a class="li" href="https://bhvr.dev"><li><div class="title">Show HN: Bhvr, a Bun and Hono and Vite and React Starter</div><div class="domain">bhvr.dev &bull; April 27, 2025</div></li></a><a class="li" href="https://verdikapuku.com/posts/business-founders-are-less-valuable-than-they-think/"><li><div class="title">Business co-founders in tech startups are less valuable than they think</div><div class="domain">verdikapuku.com &bull; April 27, 2025</div></li></a><a class="li" href="https://ahl.dtrace.org/2016/06/15/apple_and_zfs/"><li><div class="title">ZFS: Apple's new filesystem that wasn't (2016)</div><div class="domain">ahl.dtrace.org &bull; April 27, 2025</div></li></a><a class="li" href="https://www.vaultbreak.ai/daily-jailbreak"><li><div class="title">Show HN: Daily Jailbreak – Prompt Engineer's Wordle</div><div class="domain">vaultbreak.ai &bull; April 27, 2025</div></li></a><a class="li" href="https://floooh.github.io/tiny8bit-preview/"><li><div class="title">Tiny Emulators</div><div class="domain">floooh.github.io &bull; April 27, 2025</div></li></a><a class="li" href="https://cut.chattanooga.gov/"><li><div class="title">Cut: Chattanooga Civic User Testing</div><div class="domain">cut.chattanooga.gov &bull; April 27, 2025</div></li></a><a class="li" href="https://www.fastcompany.com/91323835/virginia-will-use-technology-to-slow-chronic-speeders-cars-and-other-states-are-rushing-to-join-in"><li><div class="title">Virginia passes law to enforce maximum vehicle speeds for repeat speeders</div><div class="domain">fastcompany.com &bull; April 27, 2025</div></li></a><a class="li" href="https://worksonmymachine.substack.com/p/the-coming-knowledge-work-supply"><li><div class="title">The coming knowledge-work supply-chain crisis</div><div class="domain">worksonmymachine.substack.com &bull; April 27, 2025</div></li></a><a class="li" href="https://woof.tech/@crashtestdev/114411537491626882"><li><div class="title">Restoring a Sinclair C5</div><div class="domain">woof.tech &bull; April 27, 2025</div></li></a><a class="li" href="https://dgsq.net/2025-04-27-averages/"><li><div class="title">Computer Architects Can't Find the Average</div><div class="domain">dgsq.net &bull; April 27, 2025</div></li></a><a class="li" href="https://shkspr.mobi/blog/2025/04/reverse-geocoding-is-hard/"><li><div class="title">Reverse geocoding is hard</div><div class="domain">shkspr.mobi &bull; April 27, 2025</div></li></a><a class="li" href="https://www.pipedreams.org/page/how-a-pipe-organ-works"><li><div class="title">How a Pipe Organ Works (2020)</div><div class="domain">pipedreams.org &bull; April 27, 2025</div></li></a><a class="li" href="https://zetier.com/5g-imsi-catcher/"><li><div class="title">Did 5G kill the IMSI catcher?</div><div class="domain">zetier.com &bull; April 27, 2025</div></li></a><a class="li" href="https://thehustle.co/originals/the-suburban-office-park-that-launched-silicon-valley"><li><div class="title">The suburban office park that launched Silicon Valley</div><div class="domain">thehustle.co &bull; April 27, 2025</div></li></a><a class="li" href="https://www.zachbellay.com/daily/i-just-want-to-code/"><li><div class="title">I just want to code (2023)</div><div class="domain">zachbellay.com &bull; April 27, 2025</div></li></a><a class="li" href="https://github.com/mezantrop/i486SX_soft_FPU"><li><div class="title">Show HN: I486SX_soft_FPU – Software FPU Emulator for NetBSD 10 on 486SX</div><div class="domain">github.com &bull; April 27, 2025</div></li></a><a class="li" href="https://thereader.mitpress.mit.edu/the-creativity-hack-no-one-told-you-about-read-the-obits/"><li><div class="title">Read the Obits</div><div class="domain">thereader.mitpress.mit.edu &bull; April 27, 2025</div></li></a><a class="li" href="https://today.ucsd.edu/story/ai-helps-unravel-a-cause-of-alzheimers-disease-and-identify-a-therapeutic-candidate"><li><div class="title">AI Helps Find a Cause of Alzheimer's Disease and Identify Therapeutic Candidate</div><div class="domain">today.ucsd.edu &bull; April 27, 2025</div></li></a><a class="li" href="https://internet-in-a-box.org/"><li><div class="title">Internet in a Box</div><div class="domain">internet-in-a-box.org &bull; April 27, 2025</div></li></a><a class="li" href="https://sigbovik.org/2025/proceedings.pdf"><li><div class="title">Sigbovik Conference Proceedings 2025 [pdf]</div><div class="domain">sigbovik.org &bull; April 27, 2025</div></li></a><a class="li" href="https://gizmodo.com/amazon-just-happens-to-hold-book-sale-during-independent-bookstore-day-2000594958"><li><div class="title">Amazon Just Happens to Hold Book Sale During Independent Bookstore Day</div><div class="domain">gizmodo.com &bull; April 27, 2025</div></li></a><a class="li" href="https://gitlab.com/SpyrjaGaldr/path"><li><div class="title">Path is a utility for working with paths</div><div class="domain">gitlab.com &bull; April 27, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Seth's Blog (seths.blog)</h2> (1)</summary><ul><a class="li" href="https://seths.blog/2025/04/stories-and-hope/"><li><div class="title">Stories and hope</div><div class="domain">seths.blog &bull; April 27, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Diplomat (thediplomat.com)</h2> (2)</summary><ul><a class="li" href="https://thediplomat.com/2025/04/thai-royal-defamation-case-against-american-academic-could-have-dire-consequences/"><li><div class="title">Thai Royal Defamation Case Against American Academic Could Have Dire Consequences</div><div class="domain">thediplomat.com &bull; April 27, 2025</div></li></a><a class="li" href="https://thediplomat.com/2025/04/the-opinion-poll-and-democracy/"><li><div class="title">The Opinion Poll and Democracy</div><div class="domain">thediplomat.com &bull; April 27, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (6)</summary><ul><a class="li" href="https://yourstory.com/2025/04/paint-life-colour-creativity-india-art-festival-inspiration-photography"><li><div class="title">‘Paint your life in the colours of your truth, your chaos, your fire’: Art highlights and tips from the IAF exhibition</div><div class="domain">yourstory.com &bull; April 27, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/04/from-the-brink-of-failure-to-a-bold-new-blueprint"><li><div class="title">From the brink of failure to a bold new blueprint: How Fittr revived from collapse</div><div class="domain">yourstory.com &bull; April 27, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/04/ai-health-inclusion-business-creativity-innovation-entrepreneur-education-quiz"><li><div class="title">AI, health, inclusion: test your business creativity with Edition 185 of our weekly quiz!</div><div class="domain">yourstory.com &bull; April 27, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/04/ather-energy-ipo-sarvam-ai-llm-navya-naveli-nanda-pope-francis"><li><div class="title">Ather Energy zooms to IPO; A tête-à-tête with Navya Naveli Nanda</div><div class="domain">yourstory.com &bull; April 27, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/04/fintech-making-healthcare-treatments-affordable"><li><div class="title">How fintech is making healthcare treatments more affordable</div><div class="domain">yourstory.com &bull; April 27, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/04/india-us-sheel-mohnot-fintech-225m-vc-fund-prime-ventures"><li><div class="title">From India to the US: Sheel Mohnot on building a $225M VC fund and the future of fintech</div><div class="domain">yourstory.com &bull; April 27, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Mouth and Foot Painting Artists (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/UHIafeowwms"><li><div class="title">Happy Birthday, Ayush!🎂🎈| MFPA | Ayush Kundal</div><div class="domain">youtube.com &bull; April 27, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Jacob's Piano (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=tQKfH6nAB50"><li><div class="title">River Flows in You (Felt Version) \\ Jacob's Piano</div><div class="domain">youtube.com &bull; April 27, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>

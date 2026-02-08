@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-08-17</span>:</h1>
+  <p class="summary">There are 70 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Bear Blog Trending Posts (bearblog.dev)</h2> (1)</summary><ul><a class="li" href="https://gobino.be/people-do-care/"><li><div class="title">People do care ✍️</div><div class="domain">gobino.be &bull; August 17, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (8)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/bWYisdRccDDHbista/why-did-interest-in-ai-risk-and-ai-safety-spike-in-june-and"><li><div class="title">Why did interest in "AI risk" and "AI safety" spike in June and July 2025? (Google Trends)</div><div class="domain">lesswrong.com &bull; August 17, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/zvisSDFPLWofyFxEQ/debugging-for-mid-coders"><li><div class="title">Debugging for Mid Coders</div><div class="domain">lesswrong.com &bull; August 17, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/7oBeXzryvmoPNos8W/on-pessimization"><li><div class="title">On Pessimization</div><div class="domain">lesswrong.com &bull; August 17, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/JkrkzXQiPwFNYXqZr/my-interview-with-cade-metz-on-his-reporting-about"><li><div class="title">My Interview With Cade Metz on His Reporting About Lighthaven</div><div class="domain">lesswrong.com &bull; August 17, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/zTCtvXRATWdLoJ7p7/why-latter-day-saints-have-strong-communities"><li><div class="title">Why Latter-day Saints Have Strong Communities</div><div class="domain">lesswrong.com &bull; August 17, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/Dt4DuCCok3Xv5HEnG/agent-foundations-not-really-math-not-really-science"><li><div class="title">Agent foundations: not really math, not really science</div><div class="domain">lesswrong.com &bull; August 17, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/2xHhe4EBHAFofkQJf/plan-e-for-ai-doom"><li><div class="title">Plan E for AI Doom</div><div class="domain">lesswrong.com &bull; August 17, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/f3zeukxj3Kf5byzHi/underdog-bias-rules-everything-around-me"><li><div class="title">Underdog bias rules everything around me</div><div class="domain">lesswrong.com &bull; August 17, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (13)</summary><ul><a class="li" href="https://planetscale.com/blog/consensus-algorithms-at-scale-part-1"><li><div class="title">Consensus algorithms at scale (2020)</div><div class="domain">planetscale.com &bull; August 17, 2025</div></li></a><a class="li" href="http://www.righto.com/2025/08/static-latchup-metastability-386.html"><li><div class="title">Here be dragons: Preventing static damage, latchup, and metastability in the 386</div><div class="domain">righto.com &bull; August 17, 2025</div></li></a><a class="li" href="https://codeberg.org/fuxle/wifiscan-rs"><li><div class="title">wifiscan-rs - A cross-platform Rust crate for scanning Wi-Fi networks</div><div class="domain">codeberg.org &bull; August 17, 2025</div></li></a><a class="li" href="https://cprimozic.net/blog/the-tech-behind-geotoy/"><li><div class="title">The Tech Behind Geotoy</div><div class="domain">cprimozic.net &bull; August 17, 2025</div></li></a><a class="li" href="https://gaussianprocess.org/gpml/chapters/RW.pdf"><li><div class="title">Gaussian Processes for Machine Learning</div><div class="domain">gaussianprocess.org &bull; August 17, 2025</div></li></a><a class="li" href="https://addisoncrump.info/research/consideration-of-input-shapes/"><li><div class="title">A brief consideration of input shapes (fuzzing)</div><div class="domain">addisoncrump.info &bull; August 17, 2025</div></li></a><a class="li" href="https://blog.lyall.co/careful-communication/"><li><div class="title">Careful Communication</div><div class="domain">blog.lyall.co &bull; August 17, 2025</div></li></a><a class="li" href="https://overreacted.io/beyond-booleans/"><li><div class="title">Beyond Booleans: Propositions in Lean</div><div class="domain">overreacted.io &bull; August 17, 2025</div></li></a><a class="li" href="https://xeiaso.net/blog/2025/who-assistant-serve/"><li><div class="title">Who does your assistant serve?</div><div class="domain">xeiaso.net &bull; August 17, 2025</div></li></a><a class="li" href="https://typesanitizer.com/blog/assertions.html"><li><div class="title">A programmer's field guide to assertions</div><div class="domain">typesanitizer.com &bull; August 17, 2025</div></li></a><a class="li" href="https://e-mail.wtf"><li><div class="title">“Email is Easy” email address quiz</div><div class="domain">e-mail.wtf &bull; August 17, 2025</div></li></a><a class="li" href="https://who.ldelossa.is/posts/ebpf-networking-technique-packet-redirection/"><li><div class="title">eBPF Networking Techniques - Packet Redirection (2023)</div><div class="domain">who.ldelossa.is &bull; August 17, 2025</div></li></a><a class="li" href="https://churchofturing.github.io/the-enterprise-experience.html"><li><div class="title">The Enterprise Experience</div><div class="domain">churchofturing.github.io &bull; August 17, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Letters of Note (news.lettersofnote.com)</h2> (1)</summary><ul><a class="li" href="https://news.lettersofnote.com/p/am-i-really-writing-it-at-all"><li><div class="title">Am I really writing it at all?</div><div class="domain">news.lettersofnote.com &bull; August 17, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (23)</summary><ul><a class="li" href="https://hexhowells.com/posts/moravecs-paradox.html"><li><div class="title">Understanding Moravec's Paradox</div><div class="domain">hexhowells.com &bull; August 17, 2025</div></li></a><a class="li" href="https://melonmars.github.io/LatentExplorer/embedding_viewer.html"><li><div class="title">Visualizing GPT-OSS-20B embeddings</div><div class="domain">melonmars.github.io &bull; August 17, 2025</div></li></a><a class="li" href="https://cachemiss.xyz/blog/parallel-reduce-and-scan-on-the-GPU"><li><div class="title">Parallel Reduce and Scan on the GPU</div><div class="domain">cachemiss.xyz &bull; August 17, 2025</div></li></a><a class="li" href="https://koreajoongangdaily.joins.com/news/2025-08-15/business/tech/Thanks-Nvidia-SK-hynix-dethrones-Samsung-as-worlds-top-DRAM-maker-for-first-time-in-over-30-years/2376834"><li><div class="title">SK hynix dethrones Samsung as world’s top DRAM maker</div><div class="domain">koreajoongangdaily.joins.com &bull; August 17, 2025</div></li></a><a class="li" href="https://www.npr.org/2025/08/16/nx-s1-5502671/electricity-bill-high-inflation-ai"><li><div class="title">Electricity prices are climbing more than twice as fast as inflation</div><div class="domain">npr.org &bull; August 17, 2025</div></li></a><a class="li" href="https://github.com/algolia/hn-search/issues/248"><li><div class="title">HN Search isn't ingesting new data since Friday</div><div class="domain">github.com &bull; August 17, 2025</div></li></a><a class="li" href="https://fallinorg.com/#"><li><div class="title">Show HN: Fallinorg - Offline Mac app that organizes files by meaning</div><div class="domain">fallinorg.com &bull; August 17, 2025</div></li></a><a class="li" href="https://undefined.pyfy.ch/why-nim"><li><div class="title">Why Nim?</div><div class="domain">undefined.pyfy.ch &bull; August 17, 2025</div></li></a><a class="li" href="https://github.com/SuperIlu/DOSDevelResources/blob/main/README.md"><li><div class="title">MS-DOS development resources</div><div class="domain">github.com &bull; August 17, 2025</div></li></a><a class="li" href="https://www.trackingai.org/home"><li><div class="title">IQ tests results for AI</div><div class="domain">trackingai.org &bull; August 17, 2025</div></li></a><a class="li" href="https://retrogamecoders.com/bbc-micro-the-ancestor-to-a-device-you-are-guaranteed-to-own/"><li><div class="title">BBC Micro, ancestor to ARM</div><div class="domain">retrogamecoders.com &bull; August 17, 2025</div></li></a><a class="li" href="https://nodejs.org/en/blog/release/v22.18.0"><li><div class="title">Node.js is able to execute TypeScript files without additional configuration</div><div class="domain">nodejs.org &bull; August 17, 2025</div></li></a><a class="li" href="https://news.ycombinator.com/item?id=44931824"><li><div class="title">Show HN: NextDNS Adds "Bypass Age Verification"</div><div class="domain">news.ycombinator.com &bull; August 17, 2025</div></li></a><a class="li" href="https://github.com/ngafar/llama-scan"><li><div class="title">Llama-Scan: Convert PDFs to Text W Local LLMs</div><div class="domain">github.com &bull; August 17, 2025</div></li></a><a class="li" href="https://tracker.archiveteam.org/goo-gl/"><li><div class="title">ArchiveTeam has finished archiving all goo.gl short links</div><div class="domain">tracker.archiveteam.org &bull; August 17, 2025</div></li></a><a class="li" href="https://blog.demofox.org/2025/08/16/derivatives-gradients-jacobians-and-hessians-oh-my/"><li><div class="title">Derivatives, Gradients, Jacobians and Hessians</div><div class="domain">blog.demofox.org &bull; August 17, 2025</div></li></a><a class="li" href="https://news.ycombinator.com/item?id=44932651"><li><div class="title">Show HN: OverType – A Markdown WYSIWYG editor that's just a textarea</div><div class="domain">news.ycombinator.com &bull; August 17, 2025</div></li></a><a class="li" href="https://github.com/bgreenwell/doxx"><li><div class="title">Show HN: Doxx – Terminal .docx viewer inspired by Glow</div><div class="domain">github.com &bull; August 17, 2025</div></li></a><a class="li" href="https://threedle.github.io/ll3m/"><li><div class="title">LL3M: Large Language 3D Modelers</div><div class="domain">threedle.github.io &bull; August 17, 2025</div></li></a><a class="li" href="http://mark---lawrence.blogspot.com/2025/08/the-ai-vs-authors-results-part-2.html"><li><div class="title">AI vs. Professional Authors Results</div><div class="domain">mark---lawrence.blogspot.com &bull; August 17, 2025</div></li></a><a class="li" href="https://claudiacode.com/"><li><div class="title">Claudia – Desktop companion for Claude code</div><div class="domain">claudiacode.com &bull; August 17, 2025</div></li></a><a class="li" href="https://computer.rip/2025-08-16-passive-microwave-repeaters.html"><li><div class="title">Passive Microwave Repeaters</div><div class="domain">computer.rip &bull; August 17, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=3NyUgv6dpJc"><li><div class="title">GDPR meant nothing: chat control ends privacy for the EU [video]</div><div class="domain">youtube.com &bull; August 17, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Seth's Blog (seths.blog)</h2> (1)</summary><ul><a class="li" href="https://seths.blog/2025/08/what-sort-of-success/"><li><div class="title">What sort of success?</div><div class="domain">seths.blog &bull; August 17, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Diplomat (thediplomat.com)</h2> (2)</summary><ul><a class="li" href="https://thediplomat.com/2025/08/stable-instability-china-japan-dilemmas-in-the-shadow-of-sino-american-rivalry/"><li><div class="title">‘Stable Instability’: China-Japan Dilemmas in the Shadow of Sino-American Rivalry</div><div class="domain">thediplomat.com &bull; August 17, 2025</div></li></a><a class="li" href="https://thediplomat.com/2025/08/the-indo-pacific-is-like-the-cold-war-but-not-in-the-way-most-think/"><li><div class="title">The Indo-Pacific Is Like the Cold War, But Not in the Way Most Think</div><div class="domain">thediplomat.com &bull; August 17, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Varun Barad - Curious Developer (varunbarad.com)</h2> (3)</summary><ul><a class="li" href="https://varunbarad.com/blog/backup-workflow-email.html"><li><div class="title">💾 My email backup workflow</div><div class="domain">varunbarad.com &bull; August 17, 2025</div></li></a><a class="li" href="https://varunbarad.com/blog/random-point-inside-circle.html"><li><div class="title">How to get a random point inside a circle</div><div class="domain">varunbarad.com &bull; August 17, 2025</div></li></a><a class="li" href="https://varunbarad.com/blog/replying-to-jedda.html"><li><div class="title">💬 Why am I making myself go through Blaugust?</div><div class="domain">varunbarad.com &bull; August 17, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (12)</summary><ul><a class="li" href="https://yourstory.com/2025/08/foreign-investors-pull-rs-21000-cr-from-indian-equities-in-august-tariffs-economy"><li><div class="title">Foreign investors pull Rs 21,000 Cr from Indian equities in first half of August</div><div class="domain">yourstory.com &bull; August 17, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/08/amazon-sees-festive-cheer-as-smaller-cities-power-growth-prime"><li><div class="title">Amazon sees festive cheer as smaller cities power growth</div><div class="domain">yourstory.com &bull; August 17, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/08/samsung-to-expand-manufacturing-portfolio-in-india-ashwini-vaishnaw"><li><div class="title">Samsung to expand manufacturing portfolio in India: Ashwini Vaishnaw</div><div class="domain">yourstory.com &bull; August 17, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/08/foxconn-iphone-17-production-at-28b-bengaluru-plant-apple-smartphone"><li><div class="title">Foxconn starts iPhone 17 production at $2.8B Bengaluru plant</div><div class="domain">yourstory.com &bull; August 17, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/08/traditions-art-nita-mukesh-ambani-cultural-centre-krishna-bhakti-photography"><li><div class="title">Living traditions: Nita Mukesh Ambani Cultural Centre honours artisans through its Bhakti exhibitions</div><div class="domain">yourstory.com &bull; August 17, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/08/vyome-nasdaq-listing-hind-independence-day-milestone"><li><div class="title">Vyome Debuts as HIND on Nasdaq, Strengthening US-India Innovation Ties</div><div class="domain">yourstory.com &bull; August 17, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/08/sebi-sees-surge-in-settlement-pleas-collects-rs-799-cr-in-fy25"><li><div class="title">SEBI sees surge in settlement pleas, collects Rs 799 Cr in FY25</div><div class="domain">yourstory.com &bull; August 17, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/08/investor-neeraj-tyagi-who-backed-blusmart-and-zypp-passes-away"><li><div class="title">Investor Neeraj Tyagi, who backed Oben and Zypp, passes away</div><div class="domain">yourstory.com &bull; August 17, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/08/drone-tech-startups-india-next-billion-dollar-industry"><li><div class="title">Why India's next billion-dollar industry may fly, not walk?</div><div class="domain">yourstory.com &bull; August 17, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/08/hit-investing-in-india-profit-meets-purpose-with-mahesh-joshi"><li><div class="title">HIT investing in India: Profit meets purpose with Mahesh Joshi</div><div class="domain">yourstory.com &bull; August 17, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/08/ola-electric-rare-earth-magnets-crisis-sports-bike-banarasi-sarees-quiet-fired"><li><div class="title">Ola Electric is sidestepping the magnets crisis; Reviving the heritage Banarasi brocade</div><div class="domain">yourstory.com &bull; August 17, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/08/ai-payment-education-business-creativity-entrepreneur-education-quiz"><li><div class="title">AI, payment, education: Test your business creativity with Edition 201 of our weekly quiz!</div><div class="domain">yourstory.com &bull; August 17, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Suvaissance (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=c9dP0rLdAYU"><li><div class="title">Why Singapore's President loved this Indian potter's song?</div><div class="domain">youtube.com &bull; August 17, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Nirmal Pillai (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/SU2KHIhx0dc"><li><div class="title">Before any college submission...</div><div class="domain">youtube.com &bull; August 17, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lucaas (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=lDp2PNi4SY4"><li><div class="title">United 737 Landing Goes Wrong</div><div class="domain">youtube.com &bull; August 17, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">GreatScott! (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/mimo6CmSf54"><li><div class="title">How Microcontrollers Are Replacing PLCs! #diy #plc #microcontroller #arduino #esp32 #electronics</div><div class="domain">youtube.com &bull; August 17, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Cortex Podcast (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=e7LTv_hz0-w"><li><div class="title">Why Are You Making Fun of Me?</div><div class="domain">youtube.com &bull; August 17, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">3Blue1Brown (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=4NlrfOl0l8U"><li><div class="title">The AI that solved IMO Geometry Problems | Guest video by @Aleph0</div><div class="domain">youtube.com &bull; August 17, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>

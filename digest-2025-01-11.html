@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-01-11</span>:</h1>
+  <p class="summary">There are 60 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Bear Blog Trending Posts (bearblog.dev)</h2> (3)</summary><ul><a class="li" href="https://blog.avas.space/rage-bait/"><li><div class="title">dealing with rage bait in the indie web</div><div class="domain">blog.avas.space &bull; January 11, 2025</div></li></a><a class="li" href="https://louplummer.lol/how-to-internet-2025/"><li><div class="title">How to Internet - 2025 Edition</div><div class="domain">louplummer.lol &bull; January 11, 2025</div></li></a><a class="li" href="https://yuricunha.bearblog.dev/pretending-to-be-okay/"><li><div class="title">pretending to be okay</div><div class="domain">yuricunha.bearblog.dev &bull; January 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Big Think (bigthink.com)</h2> (2)</summary><ul><a class="li" href="https://bigthink.com/starts-with-a-bang/starts-with-a-bang-podcast-113-weird-stars/"><li><div class="title">Starts With A Bang podcast #113 – Weird stars</div><div class="domain">bigthink.com &bull; January 11, 2025</div></li></a><a class="li" href="https://bigthink.com/the-future/cryopreservation/"><li><div class="title">How cryopreservation could end death as we know it</div><div class="domain">bigthink.com &bull; January 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Marginalian (feeds.feedburner.com)</h2> (1)</summary><ul><a class="li" href="https://www.themarginalian.org/2025/01/10/no-te-salves/"><li><div class="title">Do Not Spare Yourself</div><div class="domain">themarginalian.org &bull; January 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (3)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/bPycPKLkdsuZ9hCKa/last-week-of-the-discussion-phase"><li><div class="title">Last week of the Discussion Phase</div><div class="domain">lesswrong.com &bull; January 11, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/3eo4SSZLfpHHCqoEQ/dmitry-s-koan"><li><div class="title">Dmitry's Koan</div><div class="domain">lesswrong.com &bull; January 11, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/esWbhgHd6bcfsTjGL/on-dwarkesh-patel-s-4th-podcast-with-tyler-cowen"><li><div class="title">On Dwarkesh Patel’s 4th Podcast With Tyler Cowen</div><div class="domain">lesswrong.com &bull; January 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (12)</summary><ul><a class="li" href="https://lemire.me/blog/2025/01/11/javascript-hashing-speed-comparison-md5-versus-sha-256/"><li><div class="title">JavaScript hashing speed comparison: MD5 versus SHA-256</div><div class="domain">lemire.me &bull; January 11, 2025</div></li></a><a class="li" href="https://web.stanford.edu/~jurafsky/slp3/"><li><div class="title">Speech and Language Processing: An Introduction to Natural Language Processing, Computational Linguistics, and Speech Recognition with Language Models</div><div class="domain">web.stanford.edu &bull; January 11, 2025</div></li></a><a class="li" href="https://macwright.com/2025/01/11/predictions.html"><li><div class="title">2025 Predictions</div><div class="domain">macwright.com &bull; January 11, 2025</div></li></a><a class="li" href="https://chshersh.com/blog/2025-01-06-the-most-elegant-configuration-language.html"><li><div class="title">The Most Elegant Configuration Language</div><div class="domain">chshersh.com &bull; January 11, 2025</div></li></a><a class="li" href="https://hugodaniel.com/posts/boredom-another-js-framework/"><li><div class="title">boreDOM: another boring JS framework</div><div class="domain">hugodaniel.com &bull; January 11, 2025</div></li></a><a class="li" href="https://jvns.ca/blog/2025/01/11/getting-a-modern-terminal-setup/"><li><div class="title">What's involved in getting a "modern" terminal setup?</div><div class="domain">jvns.ca &bull; January 11, 2025</div></li></a><a class="li" href="https://vermaden.wordpress.com/2025/01/11/freebsd-suspend-resume/"><li><div class="title">FreeBSD Suspend/Resume</div><div class="domain">vermaden.wordpress.com &bull; January 11, 2025</div></li></a><a class="li" href="https://arxiv.org/pdf/2410.19146"><li><div class="title">Rewrite it in Rust: A Computational Physics Case Study</div><div class="domain">arxiv.org &bull; January 11, 2025</div></li></a><a class="li" href="https://neugierig.org/software/blog/2022/03/n2.html"><li><div class="title">n2: revisiting Ninja</div><div class="domain">neugierig.org &bull; January 11, 2025</div></li></a><a class="li" href="https://xeiaso.net/notes/2024/bash-hashmap/"><li><div class="title">Today I learned that bash has hashmaps</div><div class="domain">xeiaso.net &bull; January 11, 2025</div></li></a><a class="li" href="https://blog.jacobstechtavern.com/p/apple-is-killing-swift"><li><div class="title">Apple is Killing Swift</div><div class="domain">blog.jacobstechtavern.com &bull; January 11, 2025</div></li></a><a class="li" href="https://arstechnica.com/gadgets/2025/01/suing-wi-fi-router-makers-remains-a-necessary-part-of-open-source-license-law/"><li><div class="title">German router maker is latest company to inadvertently clarify the LGPL license</div><div class="domain">arstechnica.com &bull; January 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (25)</summary><ul><a class="li" href="http://gerdbreitenbach.de/arnold_cat/cat.html"><li><div class="title">Arnold's Cat (2018)</div><div class="domain">gerdbreitenbach.de &bull; January 11, 2025</div></li></a><a class="li" href="https://www.reuters.com/technology/tsmc-begins-producing-4-nanometer-chips-arizona-raimondo-says-2025-01-10/"><li><div class="title">TSMC begins producing 4-nanometer chips in Arizona</div><div class="domain">reuters.com &bull; January 11, 2025</div></li></a><a class="li" href="https://www.zdnet.com/home-and-office/work-life/i-tested-an-ink-pen-that-records-your-handwriting-and-makes-a-digital-copy-spoiler-it-works/"><li><div class="title">Ink Pen Records Handwriting and Creates Digital Copies</div><div class="domain">zdnet.com &bull; January 11, 2025</div></li></a><a class="li" href="https://profmattstrassler.com/articles-and-posts/particle-physics-basics/the-astonishing-standard-model/why-the-weak-nuclear-force-is-short-range/"><li><div class="title">Why the Weak Nuclear Force Is Short Range</div><div class="domain">profmattstrassler.com &bull; January 11, 2025</div></li></a><a class="li" href="https://ubuntuincident.wordpress.com/2025/01/11/test-if-a-number-is-even/"><li><div class="title">Test if a number is even</div><div class="domain">ubuntuincident.wordpress.com &bull; January 11, 2025</div></li></a><a class="li" href="https://crystal-lang.org/api/1.15.0/Crystal/Macros.html"><li><div class="title">The Macros module is a fictitious module used to document macros</div><div class="domain">crystal-lang.org &bull; January 11, 2025</div></li></a><a class="li" href="https://daringfireball.net/linked/2025/01/10/thomson-dock"><li><div class="title">James Thomson on the Origins of the macOS Dock</div><div class="domain">daringfireball.net &bull; January 11, 2025</div></li></a><a class="li" href="https://www.science.org/doi/10.1126/scitranslmed.aaa2512?url_ver=Z39.88-2003&rfr_id=ori:rid:crossref.org&rfr_dat=cr_pub%20%200pubmed"><li><div class="title">Scanning ultrasound removes amyloid-β, restores memory in Alzheimer mouse model (2015)</div><div class="domain">science.org &bull; January 11, 2025</div></li></a><a class="li" href="https://techcrunch.com/2025/01/11/matt-mullenweg-deactivates-wordpress-accounts-of-contributors-planning-a-fork/"><li><div class="title">Matt Mullenweg deactivates WordPress accounts of contributors planning a fork</div><div class="domain">techcrunch.com &bull; January 11, 2025</div></li></a><a class="li" href="https://sfstandard.com/2025/01/11/chatham-house-rule-burnout/"><li><div class="title">Chatham House Rule is suddenly everywhere in the Bay Area</div><div class="domain">sfstandard.com &bull; January 11, 2025</div></li></a><a class="li" href="https://ncf.idallen.com/english.html"><li><div class="title">The Chaos (1922)</div><div class="domain">ncf.idallen.com &bull; January 11, 2025</div></li></a><a class="li" href="https://www.loc.gov/resource/g4361p.ct000092/?r=-0.628,0.425,1.749,0.902,0"><li><div class="title">Map of California roads for cyclers (1895)</div><div class="domain">loc.gov &bull; January 11, 2025</div></li></a><a class="li" href="https://twitter.com/WalterBright/status/1878209651306803406"><li><div class="title">Obvious Things C Should Do</div><div class="domain">twitter.com &bull; January 11, 2025</div></li></a><a class="li" href="https://github.com/mathuo/dockview"><li><div class="title">Show HN: TypeScript/React/Vue Window Layout Manager (Tabs, Floating, Popouts)</div><div class="domain">github.com &bull; January 11, 2025</div></li></a><a class="li" href="https://www.eso.org/public/news/eso2501/"><li><div class="title">Darkest and clearest skies at risk from industrial megaproject</div><div class="domain">eso.org &bull; January 11, 2025</div></li></a><a class="li" href="https://github.com/hybridgroup/go-haystack"><li><div class="title">Track your devices via Apple FindMy network in Go/TinyGo</div><div class="domain">github.com &bull; January 11, 2025</div></li></a><a class="li" href="https://www.seangoedecke.com/working-for-americans/"><li><div class="title">What it's like working for American companies as an Australian</div><div class="domain">seangoedecke.com &bull; January 11, 2025</div></li></a><a class="li" href="https://lo.calho.st/posts/black-magic-buffer/"><li><div class="title">Using black magic to make a fast circular buffer</div><div class="domain">lo.calho.st &bull; January 11, 2025</div></li></a><a class="li" href="https://jobs.ashbyhq.com/photoroom/81de4c1e-f4ee-4c14-a196-6e869fa6b320"><li><div class="title">Photoroom (YC S20) Is Hiring a Senior Front End Engineer in Paris (React, MobX)</div><div class="domain">jobs.ashbyhq.com &bull; January 11, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=ZSKLA81tBis"><li><div class="title">SQLite: How it works, by Richard Hipp (2024) [video]</div><div class="domain">youtube.com &bull; January 11, 2025</div></li></a><a class="li" href="https://today.duke.edu/2025/01/ingrid-daubechies-awarded-national-medal-science"><li><div class="title">Ingrid Daubechies Awarded National Medal of Science</div><div class="domain">today.duke.edu &bull; January 11, 2025</div></li></a><a class="li" href="https://www.nearlyfreespeech.net/about/faq#BecauseFuckNazisThatsWhy"><li><div class="title">What Is the "Mffam" Policy?</div><div class="domain">nearlyfreespeech.net &bull; January 11, 2025</div></li></a><a class="li" href="https://research.google/blog/extra-extra-read-all-about-it-nearly-all-binary-searches-and-mergesorts-are-broken/"><li><div class="title">Nearly All Binary Searches and Mergesorts Are Broken</div><div class="domain">research.google &bull; January 11, 2025</div></li></a><a class="li" href="https://lwn.net/SubscriberLink/1002342/a8d8a17f30968b93/"><li><div class="title">The State of Vim</div><div class="domain">lwn.net &bull; January 11, 2025</div></li></a><a class="li" href="https://www.core77.com/posts/134948/A-Laptop-Stand-Made-from-a-Single-Sheet-of-Recycled-Paper"><li><div class="title">A Laptop Stand Made from a Single Sheet of Recycled Paper</div><div class="domain">core77.com &bull; January 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Kindred Spirits (readkindredspirits.com)</h2> (1)</summary><ul><a class="li" href="https://www.readkindredspirits.com/p/commitment"><li><div class="title">commitment is an act of agency</div><div class="domain">readkindredspirits.com &bull; January 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Seth's Blog (seths.blog)</h2> (1)</summary><ul><a class="li" href="https://seths.blog/2025/01/slow-down/"><li><div class="title">Slow down to speed up</div><div class="domain">seths.blog &bull; January 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Sympolymathesy, by Chris Krycho (v5.chriskrycho.com)</h2> (3)</summary><ul><a class="li" href="https://v5.chriskrycho.com/notes/momentum/"><li><div class="title">[notes] Momentum</div><div class="domain">v5.chriskrycho.com &bull; January 11, 2025</div></li></a><a class="li" href="https://v5.chriskrycho.com/elsewhere/true-myth-v8.4.0/"><li><div class="title">[elsewhere] True Myth v8.4.0</div><div class="domain">v5.chriskrycho.com &bull; January 11, 2025</div></li></a><a class="li" href="https://v5.chriskrycho.com/library/an-octopus-that-will-not-be-tamed/"><li><div class="title">[library] An Octopus That Will Not Be Tamed?</div><div class="domain">v5.chriskrycho.com &bull; January 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (8)</summary><ul><a class="li" href="https://yourstory.com/2024/12/fastest-growing-careers-2030"><li><div class="title">Future of Jobs Report 2025: Discover fastest growing careers</div><div class="domain">yourstory.com &bull; January 11, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/01/mudrex-rides-the-crypto-wave-freshworks-dennis-woodside-saas"><li><div class="title">Mudrex rides the crypto wave; Why India is “super important” for Freshworks</div><div class="domain">yourstory.com &bull; January 11, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/01/perplexity-ai-looks-to-expand-india-operations"><li><div class="title">Perplexity AI looks to expand India operations</div><div class="domain">yourstory.com &bull; January 11, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/01/indian-economy-little-weaker-in-2025-imf-kristalina-georgieva"><li><div class="title">Indian economy likely to be a little weaker in 2025: IMF MD</div><div class="domain">yourstory.com &bull; January 11, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/01/kotak-mahindra-sees-indian-ipo-market-growth-2025"><li><div class="title">Kotak Mahindra expects Indian IPO market to reach $35B in 2025</div><div class="domain">yourstory.com &bull; January 11, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/01/perspective-patience-perseverance-art-resilience-creativity-success-photography"><li><div class="title">Perspective, patience, perseverance: Tips on resilience from 10 IAF artists</div><div class="domain">yourstory.com &bull; January 11, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/01/onboard-right-seo-partner-2025-marketing"><li><div class="title">How to onboard the right SEO partner in 2025</div><div class="domain">yourstory.com &bull; January 11, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/01/the-rise-of-hyperlocal-marketing-fmcg-brands-regional-markets"><li><div class="title">The rise of hyperlocal marketing: How FMCG brands are connecting with diverse regional markets</div><div class="domain">yourstory.com &bull; January 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">PolyMatter (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=A5Phoh0eRUc"><li><div class="title">The College Enrollment Crisis</div><div class="domain">youtube.com &bull; January 11, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>

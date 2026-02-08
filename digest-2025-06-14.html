@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-06-14</span>:</h1>
+  <p class="summary">There are 59 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Bear Blog Trending Posts (bearblog.dev)</h2> (3)</summary><ul><a class="li" href="https://hwisnu.bearblog.dev/compiler-optimization-options-memchr-and-ripmemchr-case-study/"><li><div class="title">Compiler optimization options - memchr and ripmemchr case study</div><div class="domain">hwisnu.bearblog.dev &bull; June 14, 2025</div></li></a><a class="li" href="https://datadiaries.bearblog.dev/chevelle-restoration-part-6/"><li><div class="title">Chevelle Restoration - Part 6</div><div class="domain">datadiaries.bearblog.dev &bull; June 14, 2025</div></li></a><a class="li" href="https://skeleton.bearblog.dev/frequency-illusion-am-i-crazy/"><li><div class="title">Frequency Illusion, am I crazy?!</div><div class="domain">skeleton.bearblog.dev &bull; June 14, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (2)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/J5JvhFj3PMA3pnpnu/debate-experiments-at-the-curve-lessonline-and-manifest"><li><div class="title">Debate experiments at The Curve, LessOnline and Manifest</div><div class="domain">lesswrong.com &bull; June 14, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/vqzarZEczxiFdLE39/futarchy-s-fundamental-flaw"><li><div class="title">Futarchy's fundamental flaw</div><div class="domain">lesswrong.com &bull; June 14, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (1)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/JQefBJDHG6Wgffw6T/a-straightforward-explanation-of-the-good-regulator-theorem"><li><div class="title">A Straightforward Explanation of the Good Regulator Theorem</div><div class="domain">lesswrong.com &bull; June 14, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Irrational Exuberance (lethain.com)</h2> (1)</summary><ul><a class="li" href="https://lethain.com/competitive-advantage-author-llms/"><li><div class="title">What is the competitive advantage of authors in the age of LLMs?</div><div class="domain">lethain.com &bull; June 14, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (16)</summary><ul><a class="li" href="https://typesanitizer.com/blog/complexity-definitions.html"><li><div class="title">A meta-analysis of three different notions of software complexity</div><div class="domain">typesanitizer.com &bull; June 14, 2025</div></li></a><a class="li" href="https://sway.cloud.microsoft/b1pRwmzuGjqB30On"><li><div class="title">APL Style: Patterns/Anti-patterns</div><div class="domain">sway.cloud.microsoft &bull; June 14, 2025</div></li></a><a class="li" href="https://github.com/rajivharlalka/filedb"><li><div class="title">filedb: Disk Based Key-Value Store Inspired by Bitcask</div><div class="domain">github.com &bull; June 14, 2025</div></li></a><a class="li" href="https://lcamtuf.coredump.cx/blog/abstractions/"><li><div class="title">Self-referential abstractions: A quick look at the wacky epistemology of analog circuitry</div><div class="domain">lcamtuf.coredump.cx &bull; June 14, 2025</div></li></a><a class="li" href="https://www.thedigitalcatonline.com/categories/amiga/"><li><div class="title">"Exploring the Amiga" blog series (2018)</div><div class="domain">thedigitalcatonline.com &bull; June 14, 2025</div></li></a><a class="li" href="https://netflixtechblog.com/uda-unified-data-architecture-6a6aee261d8d"><li><div class="title">Model Once, Represent Everywhere: UDA (Unified Data Architecture) at Netflix</div><div class="domain">netflixtechblog.com &bull; June 14, 2025</div></li></a><a class="li" href="https://github.com/frankmcsherry/blog/blob/master/posts/2025-06-03.md"><li><div class="title">Datalog in Rust</div><div class="domain">github.com &bull; June 14, 2025</div></li></a><a class="li" href="https://www.volkerkrause.eu/2025/06/14/transitous-adding-data.html"><li><div class="title">Adding public transport data to Transitous</div><div class="domain">volkerkrause.eu &bull; June 14, 2025</div></li></a><a class="li" href="https://www.pagetable.com/?p=1810"><li><div class="title">How the Final Cartridge III Freezer works</div><div class="domain">pagetable.com &bull; June 14, 2025</div></li></a><a class="li" href="http://www.righto.com/2025/06/inside-apollo-fdai.html"><li><div class="title">Inside the Apollo "8-Ball" FDAI (Flight Director / Attitude Indicator)</div><div class="domain">righto.com &bull; June 14, 2025</div></li></a><a class="li" href="https://contextgeneric.dev/blog/hypershell-release/"><li><div class="title">Hypershell: A Type-Level DSL for Shell-Scripting in Rust powered by Context-Generic Programming</div><div class="domain">contextgeneric.dev &bull; June 14, 2025</div></li></a><a class="li" href="https://developer.chrome.com/blog/escape-attributes"><li><div class="title">HTML spec change: escaping < and > in attributes</div><div class="domain">developer.chrome.com &bull; June 14, 2025</div></li></a><a class="li" href="https://akselmo.dev/posts/todotxt-in-my-trmnl/"><li><div class="title">todo.txt tasks in my TRMNL</div><div class="domain">akselmo.dev &bull; June 14, 2025</div></li></a><a class="li" href="https://mosh.org"><li><div class="title">Mosh: the mobile shell</div><div class="domain">mosh.org &bull; June 14, 2025</div></li></a><a class="li" href="https://thephd.dev/c2y-hitting-the-ground-running"><li><div class="title">C2y: Hitting the Ground Running</div><div class="domain">thephd.dev &bull; June 14, 2025</div></li></a><a class="li" href="https://pitr.ca/2025-06-14-queens"><li><div class="title">Solving LinkedIn Queens with APL</div><div class="domain">pitr.ca &bull; June 14, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (24)</summary><ul><a class="li" href="https://meodai.github.io/poline/"><li><div class="title">Poline – An enigmatic color palette generator using polar coordinates</div><div class="domain">meodai.github.io &bull; June 14, 2025</div></li></a><a class="li" href="https://arslan.io/2025/06/14/fujifilm-x-half-is-it-the-perfect-family-camera/"><li><div class="title">Fujifilm X half: Is it the perfect family camera?</div><div class="domain">arslan.io &bull; June 14, 2025</div></li></a><a class="li" href="https://chipsandcheese.com/p/amds-pre-zen-interconnect-testing"><li><div class="title">AMD's Pre-Zen Interconnect: Testing Trinity's Northbridge</div><div class="domain">chipsandcheese.com &bull; June 14, 2025</div></li></a><a class="li" href="https://www.bookofjoe.com/2025/05/my-entry-32.html"><li><div class="title">Tetrachromatic Vision</div><div class="domain">bookofjoe.com &bull; June 14, 2025</div></li></a><a class="li" href="https://artofproblemsolving.com/wiki/index.php/Proofs_without_words"><li><div class="title">Proofs Without Words</div><div class="domain">artofproblemsolving.com &bull; June 14, 2025</div></li></a><a class="li" href="https://www.vidarholen.net/contents/wordcount/#fuck*,shit*,damn*,idiot*,retard*,crap*"><li><div class="title">Occurences of swearing in the Linux kernel source code over time</div><div class="domain">vidarholen.net &bull; June 14, 2025</div></li></a><a class="li" href="https://kellenok.github.io/cure-script/"><li><div class="title">Cure Dolly's Japanese Grammar Lessons</div><div class="domain">kellenok.github.io &bull; June 14, 2025</div></li></a><a class="li" href="https://ghuntley.com/atlassian-rovo-source-code/"><li><div class="title">The z80 technique reveals the source code for Atlassian's 'rovo' AI assistant</div><div class="domain">ghuntley.com &bull; June 14, 2025</div></li></a><a class="li" href="https://www.nature.com/articles/s41557-025-01815-x"><li><div class="title">Chemical knowledge and reasoning of large language models vs. chemist expertise</div><div class="domain">nature.com &bull; June 14, 2025</div></li></a><a class="li" href="https://lisp-stat.dev/about/"><li><div class="title">Lisp-stat: Lisp environment for statistical computing</div><div class="domain">lisp-stat.dev &bull; June 14, 2025</div></li></a><a class="li" href="https://github.com/zachlatta/sshtron"><li><div class="title">SSHTron: A multiplayer lightcycle game that runs through SSH</div><div class="domain">github.com &bull; June 14, 2025</div></li></a><a class="li" href="https://labs.stardog.ai/rag-is-a-fancy-lying-search-engine"><li><div class="title">RAG Is a Fancy, Lying Search Engine</div><div class="domain">labs.stardog.ai &bull; June 14, 2025</div></li></a><a class="li" href="http://0x80.pl/notesen/2016-11-28-simd-strfind.html"><li><div class="title">SIMD-friendly algorithms for substring searching (2018)</div><div class="domain">0x80.pl &bull; June 14, 2025</div></li></a><a class="li" href="https://it4sec.substack.com/p/a-flaw-in-infineons-security-microcontrollers"><li><div class="title">Infineon security microcontroller flaw enabled extraction of TPM secret keys</div><div class="domain">it4sec.substack.com &bull; June 14, 2025</div></li></a><a class="li" href="https://inria.hal.science/hal-04776866v1"><li><div class="title">Last fifty years of integer linear programming: Recent practical advances</div><div class="domain">inria.hal.science &bull; June 14, 2025</div></li></a><a class="li" href="https://arxiv.org/abs/2506.10139"><li><div class="title">Unsupervised Elicitation of Language Models</div><div class="domain">arxiv.org &bull; June 14, 2025</div></li></a><a class="li" href="https://garymarcus.substack.com/p/seven-replies-to-the-viral-apple"><li><div class="title">Seven replies to the viral Apple reasoning paper and why they fall short</div><div class="domain">garymarcus.substack.com &bull; June 14, 2025</div></li></a><a class="li" href="https://arxiv.org/pdf/2504.18919"><li><div class="title">Clinical knowledge in LLMs does not translate to human interactions</div><div class="domain">arxiv.org &bull; June 14, 2025</div></li></a><a class="li" href="https://jacobbrazeal.wordpress.com/2025/06/14/fixing-the-mechanics-of-my-bullet-chess/"><li><div class="title">Fixing the mechanics of my bullet chess</div><div class="domain">jacobbrazeal.wordpress.com &bull; June 14, 2025</div></li></a><a class="li" href="https://morethanmoore.substack.com/p/amds-ai-future-is-rack-scale-helios"><li><div class="title">AMD's AI Future Is Rack Scale 'Helios'</div><div class="domain">morethanmoore.substack.com &bull; June 14, 2025</div></li></a><a class="li" href="https://www.righto.com/2025/06/inside-apollo-fdai.html"><li><div class="title">Inside the Apollo "8-Ball" FDAI (Flight Director / Attitude Indicator)</div><div class="domain">righto.com &bull; June 14, 2025</div></li></a><a class="li" href="https://www.vidmakerpro.com/"><li><div class="title">I used ChatGPT to learn programming from zero and built a video generation SaaS</div><div class="domain">vidmakerpro.com &bull; June 14, 2025</div></li></a><a class="li" href="https://github.com/yousef-rafat/miniDiffusion"><li><div class="title">I have reimplemented Stable Diffusion 3.5 from scratch in pure PyTorch</div><div class="domain">github.com &bull; June 14, 2025</div></li></a><a class="li" href="https://www.mathpages.com/home/kmath668/kmath668.htm"><li><div class="title">Infinite Grid of Resistors</div><div class="domain">mathpages.com &bull; June 14, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Seth's Blog (seths.blog)</h2> (1)</summary><ul><a class="li" href="https://seths.blog/2025/06/rigor-and-curiosity/"><li><div class="title">Rigor and curiosity</div><div class="domain">seths.blog &bull; June 14, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (9)</summary><ul><a class="li" href="https://yourstory.com/2025/06/curiosity-sensitivity-creativity-art-success-photography"><li><div class="title">Curiosity, sensitivity, creativity–tips for success from the KCP National Art Festival</div><div class="domain">yourstory.com &bull; June 14, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/06/nclt-directs-insolvency-against-gensol-engineering"><li><div class="title">NCLT initiates insolvency proceedings against Gensol Engineering and Gensol EV Lease following IREDA Petitions</div><div class="domain">yourstory.com &bull; June 14, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/06/karnataka-high-court-upholds-ban-on-bike-taxis-services"><li><div class="title">Karnataka High Court upholds ban on bike taxis; services will cease from June 16</div><div class="domain">yourstory.com &bull; June 14, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/06/aws-opens-applications-genai-startup-accelerator"><li><div class="title">AWS opens applications for GenAI startup accelerator programme</div><div class="domain">yourstory.com &bull; June 14, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/06/garuda-aerospace-agri-drones-indigenisation-facility-chennai"><li><div class="title">Garuda Aerospace sets up agri-drones indigenisation facility near Chennai</div><div class="domain">yourstory.com &bull; June 14, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/06/bengaluru-climbs-to-14th-place-in-global-startup-ecosystem-report"><li><div class="title">Bengaluru climbs to 14th place in Global Startup Ecosystem Report 2025</div><div class="domain">yourstory.com &bull; June 14, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/06/spotlighting-india-as-gcc-leader-how-gccs-can-harness-ai"><li><div class="title">Spotlighting India as a GCC leader; How GCCs can harness AI</div><div class="domain">yourstory.com &bull; June 14, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/06/pawzeeble-pune-startup-creating-tech-based-pet-care-startup"><li><div class="title">It’s Pawzeeble: Pune startup creating a tech-based pet care ecosystem</div><div class="domain">yourstory.com &bull; June 14, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/06/climate-tech-startups-building-infrastructure-global-fashion-compliance"><li><div class="title">How India’s climate tech startups are building the infrastructure for global fashion compliance</div><div class="domain">yourstory.com &bull; June 14, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Ben Eater (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=tIOR7kRevPU"><li><div class="title">Computer noises</div><div class="domain">youtube.com &bull; June 14, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Academy of Ideas (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=3cPis8APuis"><li><div class="title">Why the News Promotes Ignorance and Mental Illness</div><div class="domain">youtube.com &bull; June 14, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>

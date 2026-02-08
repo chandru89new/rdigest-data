@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-10-12</span>:</h1>
+  <p class="summary">There are 84 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Bear Blog Trending Posts (bearblog.dev)</h2> (2)</summary><ul><a class="li" href="https://grizzlygazette.bearblog.dev/you-dont-do-piracy-me-neither-heres-why/"><li><div class="title">You don't do piracy? Me neither. Here's why:</div><div class="domain">grizzlygazette.bearblog.dev &bull; October 12, 2025</div></li></a><a class="li" href="https://blog.avas.space/privacy-value/"><li><div class="title">how can we (re)teach the importance of privacy?</div><div class="domain">blog.avas.space &bull; October 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (1)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/TiDF8JGEbZdh2Awax/how-long-do-ai-companies-have-to-achieve-significant"><li><div class="title">How long do AI companies have to achieve significant capability gains before funding collapses?</div><div class="domain">lesswrong.com &bull; October 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (16)</summary><ul><a class="li" href="https://www.paulox.net/2025/10/12/my-django-on-the-med-2025/"><li><div class="title">My Django On The Med 2025</div><div class="domain">paulox.net &bull; October 12, 2025</div></li></a><a class="li" href="https://evertpot.com/multi-step-login-forms-for-password-managers/"><li><div class="title">Building multi-step login forms that work well with password managers</div><div class="domain">evertpot.com &bull; October 12, 2025</div></li></a><a class="li" href="https://adamj.eu/tech/2025/10/10/introducing-django-http-compression/"><li><div class="title">Django: Introducing django-http-compression - Adam Johnson</div><div class="domain">adamj.eu &bull; October 12, 2025</div></li></a><a class="li" href="https://fabianlindfors.se/blog/nextjs-vibe-engineering/"><li><div class="title">Next.js is not a good fit for vibe engineering</div><div class="domain">fabianlindfors.se &bull; October 12, 2025</div></li></a><a class="li" href="https://iacgm.pages.dev/posts/c2bf/"><li><div class="title">C2BF: A C-to-Brainfuck compiler written in Rust</div><div class="domain">iacgm.pages.dev &bull; October 12, 2025</div></li></a><a class="li" href="https://bumbershootsoft.wordpress.com/2025/10/11/sharp-bilinear-filters-big-clean-pixels-for-pixel-art/"><li><div class="title">Sharp Bilinear Filters: Big Clean Pixels for Pixel Art</div><div class="domain">bumbershootsoft.wordpress.com &bull; October 12, 2025</div></li></a><a class="li" href="https://azeemba.com/posts/satisfaction-of-render-pipelines.html"><li><div class="title">Satisfaction of Render Pipelines</div><div class="domain">azeemba.com &bull; October 12, 2025</div></li></a><a class="li" href="https://emma.has-a.blog/articles/why-do-we-need-an-external-app-for-rest.html"><li><div class="title">Why, in 2025, do we still need a 3rd party app to write a REST API with Django?</div><div class="domain">emma.has-a.blog &bull; October 12, 2025</div></li></a><a class="li" href="https://www.robw.fyi/2025/10/12/using-constraint-satisfaction-to-optimize-item-selection-for-bundles-in-minecraft/"><li><div class="title">Using Constraint Satisfaction to Optimize Item Selection for Bundles in Minecraft</div><div class="domain">robw.fyi &bull; October 12, 2025</div></li></a><a class="li" href="https://www.ninakalinina.com/notes/mgr/"><li><div class="title">I'd like to speak to the Bellcore ManaGeR</div><div class="domain">ninakalinina.com &bull; October 12, 2025</div></li></a><a class="li" href="https://ruudvanasseldonk.com/2025/abstraction-not-syntax"><li><div class="title">Abstraction, not syntax</div><div class="domain">ruudvanasseldonk.com &bull; October 12, 2025</div></li></a><a class="li" href="https://giannirosato.com/blog/post/oavif/"><li><div class="title">Introducing oavif: faster target quality image compression</div><div class="domain">giannirosato.com &bull; October 12, 2025</div></li></a><a class="li" href="https://gcc.gnu.org/legacy-ml/gcc/2000-01/msg00572.html"><li><div class="title">The reason GCC is not a library (2000)</div><div class="domain">gcc.gnu.org &bull; October 12, 2025</div></li></a><a class="li" href="https://github.com/junegunn/fzf/releases/tag/v0.66.0"><li><div class="title">fzf 0.66.0 introduces “--raw mode”</div><div class="domain">github.com &bull; October 12, 2025</div></li></a><a class="li" href="https://sam-cooper.medium.com/the-country-that-broke-kotlin-84bdd0afb237"><li><div class="title">The Country That Broke Kotlin</div><div class="domain">sam-cooper.medium.com &bull; October 12, 2025</div></li></a><a class="li" href="https://www.stavros.io/posts/switch-to-jujutsu-already-a-tutorial/"><li><div class="title">Switch to Jujutsu already: a tutorial</div><div class="domain">stavros.io &bull; October 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (33)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=p0K7u3B_8rY"><li><div class="title">The first interstellar software update: The hack that saved Voyager 1 [video]</div><div class="domain">youtube.com &bull; October 12, 2025</div></li></a><a class="li" href="https://www.compuphase.com/pawn/pawn.htm"><li><div class="title">Pawn is a simple, typeless, 32-bit extension language with a C-like syntax</div><div class="domain">compuphase.com &bull; October 12, 2025</div></li></a><a class="li" href="https://www.theguardian.com/world/2025/oct/12/move-over-alan-turing-meet-the-working-class-hero-of-bletchley-park-you-didnt-see-in-the-movies"><li><div class="title">The working-class hero of Bletchley Park you didn't see in the movies</div><div class="domain">theguardian.com &bull; October 12, 2025</div></li></a><a class="li" href="https://southernwoodenboatsailing.com/news/the-spilhaus-projection-a-world-map-according-to-fish"><li><div class="title">The Spilhaus Projection: A world map according to fish</div><div class="domain">southernwoodenboatsailing.com &bull; October 12, 2025</div></li></a><a class="li" href="https://news.artnet.com/art-world/the-hunt-gobi-wall-mongolia-2674588"><li><div class="title">What's Behind the Mysterious Ancient Wall in the Gobi Desert?</div><div class="domain">news.artnet.com &bull; October 12, 2025</div></li></a><a class="li" href="https://www.WellObserve.com/OurPaint/index_en.html"><li><div class="title">Our Paint – A featureless but programmable painting program</div><div class="domain">WellObserve.com &bull; October 12, 2025</div></li></a><a class="li" href="https://basic-code.bearblog.dev/moonlander/"><li><div class="title">Moonlander.BAS</div><div class="domain">basic-code.bearblog.dev &bull; October 12, 2025</div></li></a><a class="li" href="https://phys.org/news/2025-10-satellite-images-reveal-ancient-south.html"><li><div class="title">Satellite images show ancient hunting traps used by South American social groups</div><div class="domain">phys.org &bull; October 12, 2025</div></li></a><a class="li" href="https://eclecticlight.co/2025/10/12/last-week-on-my-mac-tahoes-elephant/"><li><div class="title">Tahoe's Elephant</div><div class="domain">eclecticlight.co &bull; October 12, 2025</div></li></a><a class="li" href="https://www.wired.com/2003/05/wifirevolution/"><li><div class="title">The Wi-Fi Revolution (2003)</div><div class="domain">wired.com &bull; October 12, 2025</div></li></a><a class="li" href="https://www.pnas.org/doi/10.1073/pnas.2503399122"><li><div class="title">VOC injection into a house reveals large surface reservoir sizes</div><div class="domain">pnas.org &bull; October 12, 2025</div></li></a><a class="li" href="https://the-ventureweaver.itch.io/tlote4111"><li><div class="title">A 4k-Room Text Adventure Written by One Human in QBasic No AI</div><div class="domain">the-ventureweaver.itch.io &bull; October 12, 2025</div></li></a><a class="li" href="https://www.walmart.com/ip/SANTA-SMAGICAL-PHONE/16364964771"><li><div class="title">Show HN: AI toy I worked on is in stores</div><div class="domain">walmart.com &bull; October 12, 2025</div></li></a><a class="li" href="https://rushter.com/blog/helix-editor/"><li><div class="title">How I'm using Helix editor</div><div class="domain">rushter.com &bull; October 12, 2025</div></li></a><a class="li" href="https://news.itsfoss.com/schleswig-holstein-email-system-migration/"><li><div class="title">Schleswig-Holstein completes migration to open source email</div><div class="domain">news.itsfoss.com &bull; October 12, 2025</div></li></a><a class="li" href="https://shreyanjain.net/2024/07/05/nostr-and-atproto.html"><li><div class="title">Nostr and ATProto (2024)</div><div class="domain">shreyanjain.net &bull; October 12, 2025</div></li></a><a class="li" href="https://www.nature.com/articles/s41598-025-18636-0"><li><div class="title">Addictive-like behavioural traits in pet dogs with extreme motivation for toys</div><div class="domain">nature.com &bull; October 12, 2025</div></li></a><a class="li" href="https://ambisounds.app/"><li><div class="title">Show HN: I built a simple ambient sound app with no ads or subscriptions</div><div class="domain">ambisounds.app &bull; October 12, 2025</div></li></a><a class="li" href="https://reactos.org/blogs/investigating-wddm/"><li><div class="title">An initial investigation into WDDM on ReactOS</div><div class="domain">reactos.org &bull; October 12, 2025</div></li></a><a class="li" href="https://www.together.ai/blog/adaptive-learning-speculator-system-atlas"><li><div class="title">AdapTive-LeArning Speculator System (ATLAS): Faster LLM inference</div><div class="domain">together.ai &bull; October 12, 2025</div></li></a><a class="li" href="https://dorotac.eu/posts/fosswon/"><li><div class="title">Free software hasn't won</div><div class="domain">dorotac.eu &bull; October 12, 2025</div></li></a><a class="li" href="https://www.thetimes.com/business-money/economics/article/wall-street-first-brands-private-credit-bubble-risk-363q2tcds"><li><div class="title">Wall Street is worried the private credit bubble will burst</div><div class="domain">thetimes.com &bull; October 12, 2025</div></li></a><a class="li" href="https://www.novelty-automation.com/"><li><div class="title">Novelty Automation</div><div class="domain">novelty-automation.com &bull; October 12, 2025</div></li></a><a class="li" href="https://nanochess.org/ecs_basic_2.html"><li><div class="title">Completing a BASIC language interpreter in 2025</div><div class="domain">nanochess.org &bull; October 12, 2025</div></li></a><a class="li" href="https://danybittel.ch/macro.html"><li><div class="title">Macro Splats 2025</div><div class="domain">danybittel.ch &bull; October 12, 2025</div></li></a><a class="li" href="https://news.ycombinator.com/item?id=45561428"><li><div class="title">Ask HN: What are you working on? (October 2025)</div><div class="domain">news.ycombinator.com &bull; October 12, 2025</div></li></a><a class="li" href="https://github.com/microsoft/edgeai-for-beginners"><li><div class="title">Edge AI for Beginners</div><div class="domain">github.com &bull; October 12, 2025</div></li></a><a class="li" href="https://github.com/chili-chips-ba/wireguard-fpga"><li><div class="title">Wireguard FPGA</div><div class="domain">github.com &bull; October 12, 2025</div></li></a><a class="li" href="https://www.csis.org/analysis/chinas-new-rare-earth-and-magnet-restrictions-threaten-us-defense-supply-chains"><li><div class="title">China's New Rare Earth and Magnet Restrictions Threaten US Defense Supply Chains</div><div class="domain">csis.org &bull; October 12, 2025</div></li></a><a class="li" href="https://localmind.ai/"><li><div class="title">Major security breach at Austrian AI startup localmind.ai</div><div class="domain">localmind.ai &bull; October 12, 2025</div></li></a><a class="li" href="https://arxiv.org/abs/2505.00749"><li><div class="title">Coral Protocol Open Infrastructure Connecting the Internet of Agents</div><div class="domain">arxiv.org &bull; October 12, 2025</div></li></a><a class="li" href="https://techcrunch.com/2025/10/10/spyware-maker-nso-group-confirms-acquisition-by-us-investors/"><li><div class="title">Spyware maker NSO Group confirms acquisition by US investors</div><div class="domain">techcrunch.com &bull; October 12, 2025</div></li></a><a class="li" href="https://github.com/acsandmann/rift"><li><div class="title">Show HN: Rift – A tiling window manager for macOS</div><div class="domain">github.com &bull; October 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Seth's Blog (seths.blog)</h2> (1)</summary><ul><a class="li" href="https://seths.blog/2025/10/uncomfortable-unspoken/"><li><div class="title">Uncomfortable/unspoken</div><div class="domain">seths.blog &bull; October 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Diplomat (thediplomat.com)</h2> (1)</summary><ul><a class="li" href="https://thediplomat.com/2025/10/sri-lanka-and-the-npps-first-year-in-government/"><li><div class="title">Sri Lanka and the NPP’s First Year in Government</div><div class="domain">thediplomat.com &bull; October 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (9)</summary><ul><a class="li" href="https://yourstory.com/2025/10/nse-faces-around-170-million-cyberattacks-daily"><li><div class="title">NSE faces around 170M cyberattacks daily: official</div><div class="domain">yourstory.com &bull; October 12, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/10/easing-nri-investing-indian-markets-urgent-goal-sebi"><li><div class="title">Easing NRI investing in Indian markets urgent goal for SEBI: Pandey</div><div class="domain">yourstory.com &bull; October 12, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/10/exhibition-karnataka-chitrakala-parishath-anek-art-collective-creativity-photography"><li><div class="title">The canvas is an invitation to be brave—highlights and perspectives from the Anek Art Collective</div><div class="domain">yourstory.com &bull; October 12, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/10/judiciary-must-adapt-challenges-posed-data-ai"><li><div class="title">Judiciary must adapt to challenges posed by data, AI: SC judges</div><div class="domain">yourstory.com &bull; October 12, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/10/bharat-6g-alliance-9-global-bodies-sign-delhi-declaration"><li><div class="title">Bharat 6G Alliance, 9 global bodies sign Delhi Declaration to endorse 6G ecosystem</div><div class="domain">yourstory.com &bull; October 12, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/10/sustainability-opportunity-impact-business-creativity-entrepreneur-education-quiz"><li><div class="title">Sustainability, opportunity, impact: Test your business creativity with Edition 209 of our weekly quiz!</div><div class="domain">yourstory.com &bull; October 12, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/10/bira-91s-many-woes-smb-construction-tech-arisinfra"><li><div class="title">Bira 91’s many woes; Tech for SMBs in construction</div><div class="domain">yourstory.com &bull; October 12, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/10/physical-branches-the-future-of-lending-platforms-borrowers-credit"><li><div class="title">From physical branches to just a click: Why the future of lending is platform-led</div><div class="domain">yourstory.com &bull; October 12, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/10/inside-vc-mind-prime-fundraising-masterclass-founders"><li><div class="title">Inside the VC Mind: Prime’s fundraising masterclass for founders</div><div class="domain">yourstory.com &bull; October 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">쿠킹하루 Cooking Haru :) (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/rNzmcXWnZQY"><li><div class="title">노오븐!노밀가루! 초콜릿과 우유가 있다면 정말 맛있는 이 디저트를 만드세요! #chocolate #cake #pudding #fruit #dessert</div><div class="domain">youtube.com &bull; October 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Vox (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/k56dzk0Px5c"><li><div class="title">Maybe kids should have smartphones #shorts</div><div class="domain">youtube.com &bull; October 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">UnchartedX (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/4kg0zVQ5gf4"><li><div class="title">Hiking to the top of Huana Picchu - the mountain behind Machu Picchu!    #peru #machupicchu</div><div class="domain">youtube.com &bull; October 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Soul Boom w/ Rainn Wilson (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/CCUh_cnKCK8"><li><div class="title">Hulk’s Pants EXPOSED! 😅</div><div class="domain">youtube.com &bull; October 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Socrates Studio (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=aWy2i9aoyWA"><li><div class="title">Tamil's Philosophy ll இந்தியத் தத்துவங்களுக்கு அடிப்படை தமிழர் மெய்யியலே! l கணியன் பாலன் - இரா.முரளி</div><div class="domain">youtube.com &bull; October 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Sideprojects (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=RLolzalkT_c"><li><div class="title">China's Failed Overseas Projects</div><div class="domain">youtube.com &bull; October 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Sabine Hossenfelder (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=X-VSmD8KM_I"><li><div class="title">The Webb Telescope Just Observed Faster Than Light Signals</div><div class="domain">youtube.com &bull; October 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Newsthink (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/FT5VSbywLrM"><li><div class="title">The weird experiment that changes when observed</div><div class="domain">youtube.com &bull; October 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Megaprojects (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=QQiMGfm8lkU"><li><div class="title">YJ-21: China’s Next-Gen Hypersonic Ballistic Missile</div><div class="domain">youtube.com &bull; October 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">M M F A Mellisai Mannar Fans Association (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=PHn_55zJUus"><li><div class="title">MALAI POZHUTHIN MAYAKKATHILE 3  MANNAR'S NON TAMIL SONGS - MALAYALAM JEEVIKKA  MARANNU POYA STHREE</div><div class="domain">youtube.com &bull; October 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Huberman Lab Clips (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=nKB5vZ3eG6A"><li><div class="title">How to Build Extreme Mental Resilience | DJ Shipley & Dr. Andrew Huberman</div><div class="domain">youtube.com &bull; October 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">GreatScott! (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/8k6Ui0mSdvA"><li><div class="title">Build your own Oscilloscope for $20! #aliexpress #gadget #review #diy #oscilloscope #arduino</div><div class="domain">youtube.com &bull; October 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">European Space Agency, ESA (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/FPJU3Ih8_B0"><li><div class="title">Have we found a new planet? 🪐</div><div class="domain">youtube.com &bull; October 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Dr Ben Miles (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=_mVBbdbqHmw"><li><div class="title">How Physicists Proved Everything is Quantum - Nobel Physics Prize 2025 Explained</div><div class="domain">youtube.com &bull; October 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Cleo Abram (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/dfNl4EKvAuo"><li><div class="title">Our Solar System Is On A Collision Course</div><div class="domain">youtube.com &bull; October 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Ben Eater (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=mhBya3JYteQ"><li><div class="title">How do aircraft systems communicate?</div><div class="domain">youtube.com &bull; October 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Anand Gandhi & Zain Memon (youtube.com)</h2> (3)</summary><ul><a class="li" href="https://www.youtube.com/shorts/utpLhY3ApTU"><li><div class="title">On the precipice of the Universe, stands a portal.. 48 hours left. 🐦</div><div class="domain">youtube.com &bull; October 12, 2025</div></li></a><a class="li" href="https://www.youtube.com/shorts/KAi30yxO8O4"><li><div class="title">Final reminder: Only 42 hours left to claim the MAYA Collector’s Edition Trilogy - signed and number</div><div class="domain">youtube.com &bull; October 12, 2025</div></li></a><a class="li" href="https://www.youtube.com/shorts/dQUBcGXE7vo"><li><div class="title">Collectors Edition. Now or Never. Last 48 hours!</div><div class="domain">youtube.com &bull; October 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">3Blue1Brown (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=j0wJBEZdwLs"><li><div class="title">But what is a Laplace Transform?</div><div class="domain">youtube.com &bull; October 12, 2025</div></li></a><a class="li" href="https://www.youtube.com/shorts/bnjKwiUg-kw"><li><div class="title">The dynamics of e^(πi)</div><div class="domain">youtube.com &bull; October 12, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>

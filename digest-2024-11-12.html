@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2024-11-12</span>:</h1>
+  <p class="summary">There are 35 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Computer Things (buttondown.com)</h2> (1)</summary><ul><a class="li" href="https://buttondown.com/hillelwayne/archive/five-unusual-raku-features/"><li><div class="title">Five Unusual Raku Features</div><div class="domain">buttondown.com &bull; November 12, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Cabinet Magazine (cabinetmagazine.org)</h2> (1)</summary><ul><a class="li" href="http://www.cabinetmagazine.org/events/broomberg_nahari_bodies_of_evidence.php"><li><div class="title">&ldquo;Presentation / “Bodies of Evidence,” with Adam Broomberg and Ido Nahari&rdquo;</div><div class="domain">cabinetmagazine.org &bull; November 12, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Commoncog (commoncog.com)</h2> (1)</summary><ul><a class="li" href="https://commoncog.com/under-the-hood/"><li><div class="title">Under The Hood</div><div class="domain">commoncog.com &bull; November 12, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Two-Wrongs (entropicthoughts.com)</h2> (2)</summary><ul><a class="li" href="https://entropicthoughts.com/opening-a-cli-in-emacs"><li><div class="title">Opening any CLI in Emacs</div><div class="domain">entropicthoughts.com &bull; November 12, 2024</div></li></a><a class="li" href="https://two-wrongs.com/opening-a-cli-in-emacs"><li><div class="title">Opening any CLI in Emacs</div><div class="domain">two-wrongs.com &bull; November 12, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Go Make Things (gomakethings.com)</h2> (1)</summary><ul><a class="li" href="https://gomakethings.com/the-web-is-a-gift.-the-web-is-a-weapon./"><li><div class="title">The web is a gift. The web is a weapon.</div><div class="domain">gomakethings.com &bull; November 12, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Ludicity (ludic.mataroa.blog)</h2> (1)</summary><ul><a class="li" href="https://ludic.mataroa.blog/blog/why-i-will-always-be-angry-about-software-engineering/"><li><div class="title">Why I Will Always Be Angry About Software Engineering</div><div class="domain">ludic.mataroa.blog &bull; November 12, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Letters of Note (news.lettersofnote.com)</h2> (1)</summary><ul><a class="li" href="https://news.lettersofnote.com/p/lord-what-a-repulsive-remark-to-end"><li><div class="title">Lord what a repulsive remark to end with!</div><div class="domain">news.lettersofnote.com &bull; November 12, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Trevor I. Lasn Thoughts (trevorlasn.com)</h2> (1)</summary><ul><a class="li" href="https://www.trevorlasn.com/blog/bitwise-shifts-in-javascript"><li><div class="title">Understanding Bitwise Shifts in JavaScript: << and >></div><div class="domain">trevorlasn.com &bull; November 12, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">쿠킹하루 Cooking Haru :) (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=iaWWmmzHgUk"><li><div class="title">바삭하고 깊은 풍미! 프렌치 토스트는 이렇게 만들어보세요! 더블치즈 햄 샌드위치! 토스트!</div><div class="domain">youtube.com &bull; November 12, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">베지이즈 Vege is (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=wPW0qD8zldI"><li><div class="title">HEALTHY RECIPES | Daily Slim Fusion Shot | Kickstart Your Health Routine!</div><div class="domain">youtube.com &bull; November 12, 2024</div></li></a><a class="li" href="https://www.youtube.com/watch?v=vdckQ_t-unM"><li><div class="title">HEALTHY RECIPES | Daily Slim Fusion Shot | Kickstart Your Health Routine!</div><div class="domain">youtube.com &bull; November 12, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Wolfram (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=jZu7KZDcxEg"><li><div class="title">Future of Science and Technology Q&A (November 8, 2024)</div><div class="domain">youtube.com &bull; November 12, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">V3Cars (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=Qk_61s5vX9w"><li><div class="title">Kia Seltos Petrol Variants Explained | HTE, HTK, HTK+, HTX, HTX+, GTX, GTX+ S, GTX+, X Line, X LineS</div><div class="domain">youtube.com &bull; November 12, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">The Thought Emporium (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=JIGPV_-MI9w"><li><div class="title">Turning SHRIMP into Fabric</div><div class="domain">youtube.com &bull; November 12, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">The Graham Norton Show (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=fxJT4wftB_4"><li><div class="title">Jennifer Lopez Gets An Emotional Surprise | The Graham Norton Show</div><div class="domain">youtube.com &bull; November 12, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">The Economist (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=m4FOBh1nXFw"><li><div class="title">Look at who’s talking: divining Trump’s Middle East plans</div><div class="domain">youtube.com &bull; November 12, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Sisyphus 55 (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=trIQGNXWRu8"><li><div class="title">Welcome to the Internet! #sisyphus #animation #philosophy #psychology</div><div class="domain">youtube.com &bull; November 12, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Sideprojects (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=AUwqLRj9P7k"><li><div class="title">People Tried to Kill Hitler... A LOT</div><div class="domain">youtube.com &bull; November 12, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Plip Plip (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=NFspHNNGyus"><li><div class="title">Decoding Asal Kolaar! | ft. @asalkolaar416 | Plip Plip</div><div class="domain">youtube.com &bull; November 12, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">newline (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=gtsm0e_gDjA"><li><div class="title">How Do We Turn Words into Emojis with a Large Language Model with AI Domain Specialist, Louis Sanna</div><div class="domain">youtube.com &bull; November 12, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">M M F A Mellisai Mannar Fans Association (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=fyR9eHHyEHQ"><li><div class="title">ENGAL MSV IRAVIN MADYIL VAALI BIRTH DAY SPECIAL TOP 4 FAN SELECTED SONGS PRESENTER RAJESH LAVANYA</div><div class="domain">youtube.com &bull; November 12, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">lucaas (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=c1pcBvl-Ez0"><li><div class="title">Plane Landing Goes Wrong</div><div class="domain">youtube.com &bull; November 12, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">LastWeekTonight (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=s76vrcwpLMo"><li><div class="title">S11 E29: Trump’s Reelection: 11/10/24: Last Week Tonight with John Oliver</div><div class="domain">youtube.com &bull; November 12, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Jack Whitehall (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=jdv1sZQY4jo"><li><div class="title">We're coming to Singapore in January! As Usual, Michael is hugely optimistic about ticket sales 🤦</div><div class="domain">youtube.com &bull; November 12, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Engineering Facts (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=erAUepfrKpQ"><li><div class="title">20A switch -ல 10A போட்ருக்கு?? It's very wrong bro😂😂</div><div class="domain">youtube.com &bull; November 12, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">darbarfestival (youtube.com)</h2> (3)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=aqTX-u41CGg"><li><div class="title">Sindhu Bhairavi | Ken Zuckerman | Music of India</div><div class="domain">youtube.com &bull; November 12, 2024</div></li></a><a class="li" href="https://www.youtube.com/watch?v=qolN4n8SnMA"><li><div class="title">Sudha Ragunathan In Conversation | Music of India</div><div class="domain">youtube.com &bull; November 12, 2024</div></li></a><a class="li" href="https://www.youtube.com/watch?v=LMsaUK1gkxU"><li><div class="title">Jori  | Jasdeep Singh | Music of India</div><div class="domain">youtube.com &bull; November 12, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Continuous Delivery (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=-yHd-GUQpJE"><li><div class="title">The PROBLEM With Checked Exceptions In Java</div><div class="domain">youtube.com &bull; November 12, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">ChessNetwork (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=sC4eb8nDWAA"><li><div class="title">I challenged Leela | Game 6 (Bird's Opening)</div><div class="domain">youtube.com &bull; November 12, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Chef Ranveer Brar (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=SBvB3RRwPcg"><li><div class="title">Malaiyo - From Benares with love 😍 बनारसी मलाइयो  #podcast #malaiyo #ranveerbrar</div><div class="domain">youtube.com &bull; November 12, 2024</div></li></a><a class="li" href="https://www.youtube.com/watch?v=tWzYF0nNL2M"><li><div class="title">इसी liye Matar ke छिलके hote हैं 😋 #greenpeas #ranveerbrar</div><div class="domain">youtube.com &bull; November 12, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Bob & Brad (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=Wz4ZIVIlH1Y"><li><div class="title">Shoulder Pain That Won’t Go Away? #bobandbrad #shoulderhealth #shoulderpainrelief #physicaltherapy</div><div class="domain">youtube.com &bull; November 12, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Bar & Bench (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=gX-MkbXY_uo"><li><div class="title">All those who trolled me will now be unemployed CJI Chandrachud</div><div class="domain">youtube.com &bull; November 12, 2024</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>

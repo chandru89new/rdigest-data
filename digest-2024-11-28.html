@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2024-11-28</span>:</h1>
+  <p class="summary">There are 86 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Bear Blog Trending Posts (bearblog.dev)</h2> (1)</summary><ul><a class="li" href="https://louplummer.lol/thanksgicing-2024/"><li><div class="title">Thanksgiving 2024</div><div class="domain">louplummer.lol &bull; November 28, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Big Think (bigthink.com)</h2> (4)</summary><ul><a class="li" href="https://bigthink.com/business/what-we-can-learn-about-resilience-from-the-pantheon/"><li><div class="title">What we can learn about resilience from the Pantheon</div><div class="domain">bigthink.com &bull; November 28, 2024</div></li></a><a class="li" href="https://bigthink.com/thinking/confucius-aristotle/"><li><div class="title">Confucius vs. Aristotle: What the two philosophers teach us about ethics</div><div class="domain">bigthink.com &bull; November 28, 2024</div></li></a><a class="li" href="https://bigthink.com/the-present/biofuels-red-flags/"><li><div class="title">Biofuels: feeding the earth or feeding the engine?</div><div class="domain">bigthink.com &bull; November 28, 2024</div></li></a><a class="li" href="https://bigthink.com/starts-with-a-bang/gravitational-wave-meet-black-hole/"><li><div class="title">What happens when a gravitational wave meets a black hole?</div><div class="domain">bigthink.com &bull; November 28, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (4)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/5t73TZCf5yE69HbFP/arena-4-0-impact-report-1"><li><div class="title">ARENA 4.0 Impact Report</div><div class="domain">lesswrong.com &bull; November 28, 2024</div></li></a><a class="li" href="https://www.lesswrong.com/posts/BGBLcy3JyjjrT8XbM/ai-92-behind-the-curve"><li><div class="title">AI #92: Behind the Curve</div><div class="domain">lesswrong.com &bull; November 28, 2024</div></li></a><a class="li" href="https://www.lesswrong.com/posts/5iyvopk74zkqBuqzk/map-of-ai-futures-an-interactive-flowchart-1"><li><div class="title">"Map of AI Futures" - An interactive flowchart</div><div class="domain">lesswrong.com &bull; November 28, 2024</div></li></a><a class="li" href="https://www.lesswrong.com/posts/t7zd5EupH4JjcxRH4/dave-kasten-s-agi-by-2027-vignette"><li><div class="title">Dave Kasten's AGI-by-2027 vignette</div><div class="domain">lesswrong.com &bull; November 28, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (14)</summary><ul><a class="li" href="https://youtu.be/czzAVuVz7u4"><li><div class="title">Why Can't We Make Simple Software?</div><div class="domain">youtu.be &bull; November 28, 2024</div></li></a><a class="li" href="https://youtu.be/7-VJvf39xVE"><li><div class="title">How to run your own Bluesky PDS server from home</div><div class="domain">youtu.be &bull; November 28, 2024</div></li></a><a class="li" href="https://blog.nestful.app/p/gleams-lustre-is-frontend-developments"><li><div class="title">Gleam's Lustre is Frontend Development's Endgame</div><div class="domain">blog.nestful.app &bull; November 28, 2024</div></li></a><a class="li" href="https://pkg.go.dev/modernc.org/tk9.0#section-readme"><li><div class="title">tk9.0 - Go GUI library</div><div class="domain">pkg.go.dev &bull; November 28, 2024</div></li></a><a class="li" href="https://github.com/my-badges/my-badges"><li><div class="title">GitHub User-Defined Achievements</div><div class="domain">github.com &bull; November 28, 2024</div></li></a><a class="li" href="https://www.youtube.com/watch?v=0SUM4869ODc"><li><div class="title">Elm & The Future of Open Source (with Evan Czaplicki)</div><div class="domain">youtube.com &bull; November 28, 2024</div></li></a><a class="li" href="https://www.johnnunemaker.com/shrinking-a-postgres-table/"><li><div class="title">Shrinking a Postgres Table</div><div class="domain">johnnunemaker.com &bull; November 28, 2024</div></li></a><a class="li" href="https://blog.rust-lang.org/2024/11/28/Rust-1.83.0.html"><li><div class="title">Announcing Rust 1.83.0</div><div class="domain">blog.rust-lang.org &bull; November 28, 2024</div></li></a><a class="li" href="https://vereis.com/posts/you_built_an_erlang"><li><div class="title">You Have Built an Erlang</div><div class="domain">vereis.com &bull; November 28, 2024</div></li></a><a class="li" href="https://web.archive.org/web/20220118185823/http://sentimentalversioning.org/"><li><div class="title">Sentimental Versioning</div><div class="domain">web.archive.org &bull; November 28, 2024</div></li></a><a class="li" href="https://jcarroll.com.au/2024/11/28/these-languages-are-accumulating/"><li><div class="title">These Languages are Accumulating</div><div class="domain">jcarroll.com.au &bull; November 28, 2024</div></li></a><a class="li" href="https://www.unwoundstack.com/blog/dependent-types-and-http-headers.html"><li><div class="title">Dependent Types and the Art of HTTP Headers</div><div class="domain">unwoundstack.com &bull; November 28, 2024</div></li></a><a class="li" href="https://vondra.me/posts/postgres-performance-archaeology-oltp/"><li><div class="title">Performance archaeology: OLTP</div><div class="domain">vondra.me &bull; November 28, 2024</div></li></a><a class="li" href="https://blog.garambrogne.net/pyxel-initiation-en.html"><li><div class="title">Introduction to retrogame programming with Pyxel</div><div class="domain">blog.garambrogne.net &bull; November 28, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Longreads (longreads.com)</h2> (1)</summary><ul><a class="li" href="https://longreads.com/2024/11/27/is-traveling-to-every-country-in-the-world-a-worthy-cause-this-group-thinks-so/"><li><div class="title">Is Traveling to Every Country in the World a Worthy Cause? This Group Thinks So.</div><div class="domain">longreads.com &bull; November 28, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (33)</summary><ul><a class="li" href="https://cassidoo.co/post/side-project-haunting/"><li><div class="title">Haunted by my own projects</div><div class="domain">cassidoo.co &bull; November 28, 2024</div></li></a><a class="li" href="https://blog.danielh.cc/blog/sat"><li><div class="title">Accidentally writing a fast SAT solver</div><div class="domain">blog.danielh.cc &bull; November 28, 2024</div></li></a><a class="li" href="https://ificl.github.io/MultiFoley/"><li><div class="title">Video-Guided Foley Sound Generation with Multimodal Controls</div><div class="domain">ificl.github.io &bull; November 28, 2024</div></li></a><a class="li" href="https://mytimemachine.github.io"><li><div class="title">MyTimeMachine: Personalized Facial Age Transformation</div><div class="domain">mytimemachine.github.io &bull; November 28, 2024</div></li></a><a class="li" href="https://www.bbc.com/future/article/20171120-the-secret-tricks-hidden-inside-restaurant-menus"><li><div class="title">Restaurant Menu Tricks (2020)</div><div class="domain">bbc.com &bull; November 28, 2024</div></li></a><a class="li" href="https://adamkarvonen.github.io/machine_learning/2024/06/11/sae-intuitions.html"><li><div class="title">An Intuitive Explanation of Sparse Autoencoders for LLM Interpretability</div><div class="domain">adamkarvonen.github.io &bull; November 28, 2024</div></li></a><a class="li" href="https://news.ycombinator.com/item?id=42264427"><li><div class="title">Hetzner cuts traffic on US VPSs, raises prices</div><div class="domain">news.ycombinator.com &bull; November 28, 2024</div></li></a><a class="li" href="https://www.theguardian.com/news/2024/nov/28/great-abandonment-what-happens-natural-world-people-disappear-bulgaria"><li><div class="title">The great abandonment: what happens to the natural world when people disappear?</div><div class="domain">theguardian.com &bull; November 28, 2024</div></li></a><a class="li" href="https://old.reddit.com/r/rust/comments/1h15md8/goodbye_rust_i_wish_you_success_but_im_back_to_c/"><li><div class="title">Goodbye, Rust. I wish you success but I'm back to C++ (sorry, it is a rant)</div><div class="domain">old.reddit.com &bull; November 28, 2024</div></li></a><a class="li" href="https://www.core77.com/posts/134471/A-Washing-Machine-for-Human-Beings-from-1970"><li><div class="title">A washing machine for human beings, from 1970</div><div class="domain">core77.com &bull; November 28, 2024</div></li></a><a class="li" href="https://snowfroc.com/"><li><div class="title">The Denver OWASP Chapter is proud to present SnowFROC '25</div><div class="domain">snowfroc.com &bull; November 28, 2024</div></li></a><a class="li" href="https://www.welivesecurity.com/en/eset-research/bootkitty-analyzing-first-uefi-bootkit-linux/"><li><div class="title">Bootkitty: Analyzing the first UEFI bootkit for Linux</div><div class="domain">welivesecurity.com &bull; November 28, 2024</div></li></a><a class="li" href="https://pkg.go.dev/modernc.org/tk9.0"><li><div class="title">Tk9.0: CGo-free, cross platform GUI toolkit for Go</div><div class="domain">pkg.go.dev &bull; November 28, 2024</div></li></a><a class="li" href="https://harpers.org/archive/2024/12/in-the-rockets-red-glare-rachel-kushner/"><li><div class="title">In the Rockets' Red Glare: The past and future of hot-rodding in America</div><div class="domain">harpers.org &bull; November 28, 2024</div></li></a><a class="li" href="https://121gigawatts.org/copper-sushi-power-flow-european-grid/"><li><div class="title">A pretty visualisation of the European power grid (2022)</div><div class="domain">121gigawatts.org &bull; November 28, 2024</div></li></a><a class="li" href="https://news.alvaroduran.com/p/engineers-do-not-get-to-make-startup"><li><div class="title">Engineers Do Not Get to Make Startup Mistakes When They Build Ledgers</div><div class="domain">news.alvaroduran.com &bull; November 28, 2024</div></li></a><a class="li" href="https://neugierig.org/software/blog/2020/05/ninja.html"><li><div class="title">The success and failure of Ninja (2020)</div><div class="domain">neugierig.org &bull; November 28, 2024</div></li></a><a class="li" href="https://interactionmagic.com/UX-LEGO-Interfaces/"><li><div class="title">The UX of Lego Interface Panels (2020)</div><div class="domain">interactionmagic.com &bull; November 28, 2024</div></li></a><a class="li" href="https://adriano.fyi/posts/hetzner-raises-prices-while-significantly-lowering-bandwidth-in-us/"><li><div class="title">Hetzner raises prices while significantly lowering bandwidth (US)</div><div class="domain">adriano.fyi &bull; November 28, 2024</div></li></a><a class="li" href="https://ContinueAndPersist.org"><li><div class="title">Send someone you appreciate an official 'Continue and Persist' Letter</div><div class="domain">ContinueAndPersist.org &bull; November 28, 2024</div></li></a><a class="li" href="https://www.space.com/the-universe/earth/nasa-aircraft-uncovers-site-of-secret-cold-war-nuclear-missile-tunnels-under-greenland-ice-sheet"><li><div class="title">NASA aircraft uncover Cold War nuclear missile tunnels under Greenland ice sheet</div><div class="domain">space.com &bull; November 28, 2024</div></li></a><a class="li" href="https://variety.com/2024/music/news/fugees-pras-michel-conviction-legal-battle-22-years-prison-1236224041/"><li><div class="title">Fugees Founder Pras Michél Speaks Out: 'I Never Wanted to Be a Spy'</div><div class="domain">variety.com &bull; November 28, 2024</div></li></a><a class="li" href="https://lcamtuf.substack.com/p/building-a-phosphorescence-detector"><li><div class="title">Building a Phosphorescence Detector</div><div class="domain">lcamtuf.substack.com &bull; November 28, 2024</div></li></a><a class="li" href="https://store.steampowered.com/app/2800590/picoCAD/"><li><div class="title">picoCAD – a tiny modeler for tiny models</div><div class="domain">store.steampowered.com &bull; November 28, 2024</div></li></a><a class="li" href="https://github.com/abus-aikorea/voice-pro"><li><div class="title">Show HN: Voice-Pro – AI Voice Cloning Magic: Transform Any Voice in 15 Seconds</div><div class="domain">github.com &bull; November 28, 2024</div></li></a><a class="li" href="https://www.abc.net.au/news/2024-11-28/social-media-age-ban-passes-parliament/104647138"><li><div class="title">Australia: Kids under 16 to be banned from social media after Senate passes laws</div><div class="domain">abc.net.au &bull; November 28, 2024</div></li></a><a class="li" href="https://lithub.com/in-praise-of-print-why-reading-remains-essential-in-an-era-of-epistemological-collapse/"><li><div class="title">In Praise of Print: Reading Is Essential in an Era of Epistemological Collapse</div><div class="domain">lithub.com &bull; November 28, 2024</div></li></a><a class="li" href="https://twitter.com/alexellisuk/status/1862083571231424701"><li><div class="title">Hetzner raises US cloud prices while lowering included bandwidth by 95%</div><div class="domain">twitter.com &bull; November 28, 2024</div></li></a><a class="li" href="https://github.com/mistweaverco/bananas"><li><div class="title">Bananas: Cross-Platform screen sharing made simple</div><div class="domain">github.com &bull; November 28, 2024</div></li></a><a class="li" href="https://proot-me.github.io/"><li><div class="title">PRoot: User-space implementation of chroot, mount –bind, and binfmt_misc</div><div class="domain">proot-me.github.io &bull; November 28, 2024</div></li></a><a class="li" href="https://news.ycombinator.com/item?id=42264789"><li><div class="title">Hetzner - New tariff structure for Cloud servers and Load balancers in the USA</div><div class="domain">news.ycombinator.com &bull; November 28, 2024</div></li></a><a class="li" href="https://aikiwiki.com/"><li><div class="title">Conversational Game Theory</div><div class="domain">aikiwiki.com &bull; November 28, 2024</div></li></a><a class="li" href="https://www.myphotos.site"><li><div class="title">Show HN: myphotos.site – Google photos to a website in 60 seconds</div><div class="domain">myphotos.site &bull; November 28, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Reasons to be Cheerful (reasonstobecheerful.world)</h2> (1)</summary><ul><a class="li" href="https://reasonstobecheerful.world/work-based-learning-drexel-university/"><li><div class="title">From Classroom to Calling: How College Students Are Jumpstarting Their Careers</div><div class="domain">reasonstobecheerful.world &bull; November 28, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Seth's Blog (seths.blog)</h2> (2)</summary><ul><a class="li" href="https://seths.blog/2024/11/bongo-4-thinking-about-power-users-skive/"><li><div class="title">Bongo 4 – Thinking about power users (skive!)</div><div class="domain">seths.blog &bull; November 28, 2024</div></li></a><a class="li" href="https://seths.blog/2024/11/thank-you-is-a-complete-sentence/"><li><div class="title">“Thank you” is a complete sentence</div><div class="domain">seths.blog &bull; November 28, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Trevor I. Lasn Thoughts (trevorlasn.com)</h2> (3)</summary><ul><a class="li" href="https://www.trevorlasn.com/blog/you-dont-own-your-social-media-accounts"><li><div class="title">You Don't Own Your Social Media Accounts</div><div class="domain">trevorlasn.com &bull; November 28, 2024</div></li></a><a class="li" href="https://www.trevorlasn.com/blog/preloading-responsive-images"><li><div class="title">Preloading Responsive Images</div><div class="domain">trevorlasn.com &bull; November 28, 2024</div></li></a><a class="li" href="https://www.trevorlasn.com/blog/http-connect"><li><div class="title">HTTP CONNECT: Building Secure Tunnels Through Proxies</div><div class="domain">trevorlasn.com &bull; November 28, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Sympolymathesy, by Chris Krycho (v5.chriskrycho.com)</h2> (1)</summary><ul><a class="li" href="https://v5.chriskrycho.com/journal/new-tool-jj-gpc/"><li><div class="title">[journal] New Tool: jj-gpc</div><div class="domain">v5.chriskrycho.com &bull; November 28, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">XML.com Atom feed for articles and news items (xml.com)</h2> (1)</summary><ul><a class="li" href="https://www.xml.com/news/2024-11-oxygen-xml-27/"><li><div class="title">Syncro Soft announces the release of version 27 of the Oxygen XML suite of products!</div><div class="domain">xml.com &bull; November 28, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (20)</summary><ul><a class="li" href="https://yourstory.com/2024/11/cci-questions-googles-arbitrary-policies-real-money-gaming"><li><div class="title">CCI questions Google’s ‘arbitrary’ policies on real-money gaming</div><div class="domain">yourstory.com &bull; November 28, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/11/panasonic-strengthens-engagement-with-indian-startup-accelerator"><li><div class="title">Panasonic strengthens engagement with Indian startups with accelerator</div><div class="domain">yourstory.com &bull; November 28, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/11/pokemon-go-players-ai-training-niantic-ar-data"><li><div class="title">Pokémon Go Players Have Unknowingly Been Training a Game-Changing AI Model – Revealed!</div><div class="domain">yourstory.com &bull; November 28, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/11/hero-motocorp-programme-support-startups-automotive-industry"><li><div class="title">Hero MotoCorp launches programme to support startups in automotive industry</div><div class="domain">yourstory.com &bull; November 28, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/11/now-ai-may-help-lower-electricity-bills-pocket-fm-revenue-soars-in-fy24"><li><div class="title">Now AI may help lower electricity bills; Pocket FM revenue soars in FY24</div><div class="domain">yourstory.com &bull; November 28, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/11/pushpa-2-tickets-blinkit-zomato-flexes-ecosystem-muscles"><li><div class="title">With Pushpa 2 tickets on Blinkit, Zomato flexes its ecosystem muscles</div><div class="domain">yourstory.com &bull; November 28, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/11/stockgro-executes-second-esop-buyout-worth-2m"><li><div class="title">StockGro completes second ESOP buyout worth $2M</div><div class="domain">yourstory.com &bull; November 28, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/11/andreessen-horowitz-partner-sriram-krishnan-to-leave-firm"><li><div class="title">Andreessen Horowitz partner Sriram Krishnan to leave firm</div><div class="domain">yourstory.com &bull; November 28, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/11/ubers-new-safety-feature-allows-riders--record-audio"><li><div class="title">Uber's new safety feature allows riders to record audio</div><div class="domain">yourstory.com &bull; November 28, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/11/vobble-aims-children-screen-free-audio-adventure"><li><div class="title">Vobble aims to take children on a screen-free audio adventure</div><div class="domain">yourstory.com &bull; November 28, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/11/softbanks-son-sees-indias-potential-to-become-big-player-chip-design"><li><div class="title">SoftBank's Masayoshi Son sees India's potential to become big player in chip design</div><div class="domain">yourstory.com &bull; November 28, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/11/mirae-asset-completes-acquistion-sharekhan-financial-services"><li><div class="title">Mirae Asset completes acquisition of Sharekhan</div><div class="domain">yourstory.com &bull; November 28, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/11/always-got-to-add-some-spice-kohli-tells-australia"><li><div class="title">Always got to add some spice: Virat Kohli tells Australian PM</div><div class="domain">yourstory.com &bull; November 28, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/11/bengaluru-based-insurmonthly-make-insurance-affordable"><li><div class="title">Bengaluru-based InsurMonthly aims to make insurance plans affordable</div><div class="domain">yourstory.com &bull; November 28, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/11/ozonetel-launches-cxi-switch-instant-customer-engagement"><li><div class="title">Ozonetel launches ‘CXi Switch’ for instant customer engagement</div><div class="domain">yourstory.com &bull; November 28, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/11/mamaearth-honasa-elevates-vipul-maheshwari-product-data-analytics"><li><div class="title">Mamaearth parent Honasa elevates Vipul Maheshwari to lead product, data analytics</div><div class="domain">yourstory.com &bull; November 28, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/11/startup-news-updates-daily-roundup-november-28-2024"><li><div class="title">Startup news and updates: Daily roundup (November 28, 2024)</div><div class="domain">yourstory.com &bull; November 28, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/11/stellaris-venture-partners-closes-fund-mamaearth-zouk-whatfix"><li><div class="title">Stellaris Venture Partners closes Fund III with $300M</div><div class="domain">yourstory.com &bull; November 28, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/11/kenro-capital-peak-xv-secondaries-vc-fund-piyush-gupta"><li><div class="title">Former Peak XV MD launches secondaries fund as VCs look beyond traditional exits</div><div class="domain">yourstory.com &bull; November 28, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/11/balancing-convenience-security-modern-mobile-banking-fintech-apps"><li><div class="title">Balancing convenience and security: the dual mandate of modern mobile banking & fintech apps</div><div class="domain">yourstory.com &bull; November 28, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Klaus Schulze (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/yaFrFpA7iXk"><li><div class="title">"101, MILKY WAY" by Klaus Schulze is out now #ambient #ambientmusic #electronicmusic</div><div class="domain">youtube.com &bull; November 28, 2024</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>

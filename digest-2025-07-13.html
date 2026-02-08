@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-07-13</span>:</h1>
+  <p class="summary">There are 68 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Bear Blog Trending Posts (bearblog.dev)</h2> (3)</summary><ul><a class="li" href="https://blog.avas.space/bearblog-customization-tips/"><li><div class="title">bearblog customization tips</div><div class="domain">blog.avas.space &bull; July 13, 2025</div></li></a><a class="li" href="https://literallythevoid.com/daily-notes-considered-harmful/"><li><div class="title">Daily notes considered harmful</div><div class="domain">literallythevoid.com &bull; July 13, 2025</div></li></a><a class="li" href="https://muliamadiaries.bearblog.dev/creating-a-personal-wiki/"><li><div class="title">Creating a personal wiki</div><div class="domain">muliamadiaries.bearblog.dev &bull; July 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Marginalian (feeds.feedburner.com)</h2> (1)</summary><ul><a class="li" href="https://www.themarginalian.org/2025/07/13/edward-lear-parrots/"><li><div class="title">Is It Not Wonderful to Be Alive: Edward Lear’s Parrots</div><div class="domain">themarginalian.org &bull; July 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">kottke.org (feeds.kottke.org)</h2> (1)</summary><ul><a class="li" href="https://kottke.org/25/07/journalisms-experts-said-conclusion"><li><div class="title">Taking Journalism&#8217;s &#8216;Experts Said&#8230;&#8217; Chicanery About Facts to Its Natural, Absurd Conclusion</div><div class="domain">kottke.org &bull; July 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (3)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/6BBRtduhH3q4kpmAD/against-that-one-rationalist-mashal-about-japanese-fifth"><li><div class="title">against that one rationalist mashal about japanese fifth-columnists</div><div class="domain">lesswrong.com &bull; July 13, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/DwqxPmNL3aXGZDPkT/you-can-get-llms-to-say-almost-anything-you-want"><li><div class="title">You can get LLMs to say almost anything you want</div><div class="domain">lesswrong.com &bull; July 13, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/vFfwBYDRYtWpyRbZK/surprises-and-learnings-from-almost-two-months-of-leo"><li><div class="title">Surprises and learnings from almost two months of Leo Panickssery</div><div class="domain">lesswrong.com &bull; July 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (18)</summary><ul><a class="li" href="https://web.archive.org/web/20250603150137if_/http://www.cs.columbia.edu/~cdall/candidacy/pdf/Bugnion2012.pdf"><li><div class="title">Bringing Virtualization to the x86 Architecture with the Original VMware Workstation (2012)</div><div class="domain">web.archive.org &bull; July 13, 2025</div></li></a><a class="li" href="https://hackacad.net/post/2025-07-12-local-chatbot-rag-with-freebsd-knowledge/"><li><div class="title">Local Chatbot RAG with FreeBSD Knowledge</div><div class="domain">hackacad.net &bull; July 13, 2025</div></li></a><a class="li" href="https://ssd-disclosure.com/ssd-advisory-linux-kernel-pipapo-set-double-free-lpe/"><li><div class="title">Linux Kernel Pipapo Set Double Free LPE</div><div class="domain">ssd-disclosure.com &bull; July 13, 2025</div></li></a><a class="li" href="https://contextgeneric.dev/blog/extensible-datatypes-part-3/"><li><div class="title">The Design and Implementation of Extensible Records for Rust in CGP</div><div class="domain">contextgeneric.dev &bull; July 13, 2025</div></li></a><a class="li" href="https://www.haiku-os.org/blog/waddlesplash/2025-07-12-haiku_activity_contract_report_june_2025/"><li><div class="title">Haiku Activity & Contract Report, June 2025</div><div class="domain">haiku-os.org &bull; July 13, 2025</div></li></a><a class="li" href="https://www.realworldtech.com/forum/?threadid=223220"><li><div class="title">Apple Trace Cache</div><div class="domain">realworldtech.com &bull; July 13, 2025</div></li></a><a class="li" href="https://perldoc.perl.org/5.42.0/perldelta"><li><div class="title">perldelta - what is new for perl v5.42.0</div><div class="domain">perldoc.perl.org &bull; July 13, 2025</div></li></a><a class="li" href="https://syst3mfailure.io/rbtree-family-drama/"><li><div class="title">Exploiting All Google kernelCTF Instances And Debian 12 With A 0-Day For $82k: A RBTree Family Drama (Part One)</div><div class="domain">syst3mfailure.io &bull; July 13, 2025</div></li></a><a class="li" href="https://courses.cs.northwestern.edu/325/readings/graham/graham-notes.html"><li><div class="title">Notes on Graham's ANSI Common Lisp</div><div class="domain">courses.cs.northwestern.edu &bull; July 13, 2025</div></li></a><a class="li" href="https://github.com/graphitemaster/detour"><li><div class="title">detour: A detour through the Linux dynamic linker</div><div class="domain">github.com &bull; July 13, 2025</div></li></a><a class="li" href="https://bleuje.com/physarum-explanation/"><li><div class="title">Algorithms for making interesting organic simulations</div><div class="domain">bleuje.com &bull; July 13, 2025</div></li></a><a class="li" href="https://aleyan.com/blog/2025-task-runners-census/"><li><div class="title">Task Runner Census 2025</div><div class="domain">aleyan.com &bull; July 13, 2025</div></li></a><a class="li" href="https://michael.stapelberg.ch/posts/2025-07-13-nixos-nas-network-storage-config/"><li><div class="title">Migrating my NAS from CoreOS/Flatcar Linux to NixOS</div><div class="domain">michael.stapelberg.ch &bull; July 13, 2025</div></li></a><a class="li" href="https://happyfellow.bearblog.dev/programming-language-theory-has-a-public-relations-problem/"><li><div class="title">Programming Language Theory has a public relations problem</div><div class="domain">happyfellow.bearblog.dev &bull; July 13, 2025</div></li></a><a class="li" href="https://jyn.dev/constrained-languages-are-easier-to-optimize/"><li><div class="title">constrained languages are easier to optimize</div><div class="domain">jyn.dev &bull; July 13, 2025</div></li></a><a class="li" href="https://wiomoc.de/misc/posts/hacking_coroutines_into_c.html"><li><div class="title">Hacking coroutines into C</div><div class="domain">wiomoc.de &bull; July 13, 2025</div></li></a><a class="li" href="https://0x44.xyz/blog/web-request-blocking/"><li><div class="title">How I found a bypass in Google's big anti-adblock update</div><div class="domain">0x44.xyz &bull; July 13, 2025</div></li></a><a class="li" href="https://kristoff.it/blog/zig-new-async-io/"><li><div class="title">Zig's New Async I/O</div><div class="domain">kristoff.it &bull; July 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (26)</summary><ul><a class="li" href="https://archaeologymag.com/2025/07/lighthouse-of-alexandria-rises-again/"><li><div class="title">Stone blocks from the Lighthouse of Alexandria recovered from seafloor</div><div class="domain">archaeologymag.com &bull; July 13, 2025</div></li></a><a class="li" href="https://0xdeadtype.theden.sh/"><li><div class="title">Show HN: 0xDEAD//TYPE – A fast-paced typing shooter with retro vibes</div><div class="domain">0xdeadtype.theden.sh &bull; July 13, 2025</div></li></a><a class="li" href="https://arstechnica.com/ai/2025/07/ai-therapy-bots-fuel-delusions-and-give-dangerous-advice-stanford-study-finds/"><li><div class="title">AI therapy bots fuel delusions and give dangerous advice, Stanford study finds</div><div class="domain">arstechnica.com &bull; July 13, 2025</div></li></a><a class="li" href="https://menerdu.vercel.app/"><li><div class="title">Show HN: I built this to talk Danish to my girlfriend – works with any language</div><div class="domain">menerdu.vercel.app &bull; July 13, 2025</div></li></a><a class="li" href="https://www.nict.go.jp/en/press/2025/05/29-1.html"><li><div class="title">Petabit-class transmission over > 1000 km using standard 19-core optical fiber</div><div class="domain">nict.go.jp &bull; July 13, 2025</div></li></a><a class="li" href="http://loremgibson.com/"><li><div class="title">Lorem Gibson</div><div class="domain">loremgibson.com &bull; July 13, 2025</div></li></a><a class="li" href="https://forums.insertcredit.com/t/what-was-cyberpunk-in-memoriam-1980-2020/1721"><li><div class="title">What Was Cyberpunk? In Memoriam: 1980-2020 (2020)</div><div class="domain">forums.insertcredit.com &bull; July 13, 2025</div></li></a><a class="li" href="https://www.djangoproject.com/weblog/2025/jul/13/happy-20th-birthday-django/"><li><div class="title">Happy 20th Birthday, Django</div><div class="domain">djangoproject.com &bull; July 13, 2025</div></li></a><a class="li" href="https://mbh4h.substack.com/p/neuromancer-2025-review-william-gibson"><li><div class="title">Reading Neuromancer for the first time in 2025</div><div class="domain">mbh4h.substack.com &bull; July 13, 2025</div></li></a><a class="li" href="https://gottorfer-globus.de/en/the-gottorf-globe"><li><div class="title">The Gottorf Globe and its reconstruction</div><div class="domain">gottorfer-globus.de &bull; July 13, 2025</div></li></a><a class="li" href="https://www.ycombinator.com/companies/infisical/jobs/qCrLiJb-developer-relations"><li><div class="title">Infisical (YC W23) Is Hiring DevRel Engineers</div><div class="domain">ycombinator.com &bull; July 13, 2025</div></li></a><a class="li" href="https://www.lttlabs.com/blog/2025/07/11/does-showing-seconds-in-the-system-tray-actually-use-more-power"><li><div class="title">Does showing seconds in the system tray actually use more power?</div><div class="domain">lttlabs.com &bull; July 13, 2025</div></li></a><a class="li" href="https://blog.ivnj.org/post/function-coloring-is-inevitable"><li><div class="title">Zig's new I/O: function coloring is inevitable?</div><div class="domain">blog.ivnj.org &bull; July 13, 2025</div></li></a><a class="li" href="https://github.com/Exorust/TorchLeet"><li><div class="title">Show HN: Learn LLMs LeetCode Style</div><div class="domain">github.com &bull; July 13, 2025</div></li></a><a class="li" href="https://www.sfgate.com/food/article/data-deep-dives-bay-area-fine-dining-restaurants-20404434.php"><li><div class="title">Fine dining restaurants researching guests to make their dinner unforgettable</div><div class="domain">sfgate.com &bull; July 13, 2025</div></li></a><a class="li" href="https://www.mcgill.ca/oss/article/medical-critical-thinking-health-and-nutrition/no-traditional-chinese-medicine-has-not-been-vindicated-science"><li><div class="title">Big Data was used to see if TCM was scientific (2023)</div><div class="domain">mcgill.ca &bull; July 13, 2025</div></li></a><a class="li" href="https://github.com/ByteAtATime/raycast-linux"><li><div class="title">Show HN: A Raycast-compatible launcher for Linux</div><div class="domain">github.com &bull; July 13, 2025</div></li></a><a class="li" href="https://blog.johnluttig.com/p/hypercapitalism-and-the-ai-talent"><li><div class="title">Hypercapitalism and the AI talent wars</div><div class="domain">blog.johnluttig.com &bull; July 13, 2025</div></li></a><a class="li" href="https://www.theregister.com/2025/07/13/fake_it_worker_problem/"><li><div class="title">The North Korean fake IT worker problem is ubiquitous</div><div class="domain">theregister.com &bull; July 13, 2025</div></li></a><a class="li" href="https://zola.ink/blog/posts/a-technical-look-at-irans-internet-shutdown"><li><div class="title">A technical look at Iran's internet shutdowns</div><div class="domain">zola.ink &bull; July 13, 2025</div></li></a><a class="li" href="https://github.com/APKLab/APKLab"><li><div class="title">APKLab: Android Reverse-Engineering Workbench for VS Code</div><div class="domain">github.com &bull; July 13, 2025</div></li></a><a class="li" href="https://www.makingsoftware.com/chapters/how-a-screen-works"><li><div class="title">How does a screen work?</div><div class="domain">makingsoftware.com &bull; July 13, 2025</div></li></a><a class="li" href="https://arxiv.org/abs/2502.17424"><li><div class="title">Emergent Misalignment: Narrow finetuning can produce broadly misaligned LLMs</div><div class="domain">arxiv.org &bull; July 13, 2025</div></li></a><a class="li" href="https://github.com/OpenCut-app/OpenCut"><li><div class="title">OpenCut: The open-source CapCut alternative</div><div class="domain">github.com &bull; July 13, 2025</div></li></a><a class="li" href="https://www.theblock.co/post/362339/moonpay-executives-may-have-sent-250000-to-nigerian-scammer-doj-filing-suggests"><li><div class="title">MoonPay executives may have sent $250k to Nigerian scammer</div><div class="domain">theblock.co &bull; July 13, 2025</div></li></a><a class="li" href="https://www.nytimes.com/2025/07/09/travel/rental-car-ai-scanner-hertz.html"><li><div class="title">A.I. Is Making Sure You Pay for That Ding on Your Rental Car</div><div class="domain">nytimes.com &bull; July 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Seth's Blog (seths.blog)</h2> (1)</summary><ul><a class="li" href="https://seths.blog/2025/07/the-four-arcs/"><li><div class="title">The four arcs</div><div class="domain">seths.blog &bull; July 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Diplomat (thediplomat.com)</h2> (5)</summary><ul><a class="li" href="https://thediplomat.com/2025/07/hasina-had-to-fall-but-political-rhetoric-could-imperil-bangladeshs-democracy/"><li><div class="title">Hasina Had to Fall, But Political Rhetoric Could Imperil Bangladesh’s Democracy</div><div class="domain">thediplomat.com &bull; July 13, 2025</div></li></a><a class="li" href="https://thediplomat.com/2025/07/nickel-for-evs-threatens-the-last-nomadic-peoples-in-indonesia/"><li><div class="title">Nickel For EVs Threatens the Last Nomadic Peoples in Indonesia</div><div class="domain">thediplomat.com &bull; July 13, 2025</div></li></a><a class="li" href="https://thediplomat.com/2025/07/when-are-state-owned-companies-not-interfering-in-the-affairs-of-another-country/"><li><div class="title">When Are State-owned Companies Not Interfering in the Affairs of Another Country?</div><div class="domain">thediplomat.com &bull; July 13, 2025</div></li></a><a class="li" href="https://thediplomat.com/2025/07/sri-lankas-tariff-shock/"><li><div class="title">Sri Lanka’s Tariff Shock</div><div class="domain">thediplomat.com &bull; July 13, 2025</div></li></a><a class="li" href="https://thediplomat.com/2025/07/why-is-india-pushing-back-suspected-infiltrators-to-bangladesh/"><li><div class="title">Why is India Pushing Back Suspected Infiltrators to Bangladesh?</div><div class="domain">thediplomat.com &bull; July 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (5)</summary><ul><a class="li" href="https://yourstory.com/2025/07/ev-maker-vinfast-signs-pacts-13-dealer-groups"><li><div class="title">EV maker VinFast signs pacts with 13 dealer groups, aims 35 dealerships in India by year end</div><div class="domain">yourstory.com &bull; July 13, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/ai-education-health-business-creativity-innovation-entrepreneur-quiz"><li><div class="title">AI, education, health: test your business creativity with Edition 196 of our weekly quiz!</div><div class="domain">yourstory.com &bull; July 13, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/electronics-pharma-sectors-corner-70-pli-disbursements-fy25"><li><div class="title">Electronics, pharma sectors corner 70% of PLI disbursements in FY25</div><div class="domain">yourstory.com &bull; July 13, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/appreciation-affirmation-acclaim-india-art-festival-creativity-photography"><li><div class="title">Appreciation, affirmation, acclaim – India Art Festival artists explain the benefits of exhibitions</div><div class="domain">yourstory.com &bull; July 13, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/the-calm-prescription-luke-coutinho-ikk-punjab-gurugram"><li><div class="title">Take a calm prescription; Relishing a forgotten Punjab</div><div class="domain">yourstory.com &bull; July 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">SmarterEveryDay (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=cRaKMTK7ea0"><li><div class="title">I Went Into a Nuclear Plant and It Changed How I Think About Radiation - Smarter Every Day 309</div><div class="domain">youtube.com &bull; July 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Laasya (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=bbw73fui9dM"><li><div class="title">Sapphire | Indian mix | Dance cover | Ed Sheeran, Arijit Singh| Nivi and Ishanvi | Laasya</div><div class="domain">youtube.com &bull; July 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">John Bartholomew (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=RYulVHOHO4o"><li><div class="title">LoneWolf League: GAME 7</div><div class="domain">youtube.com &bull; July 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hassan & Roshaan (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=JLL1dqOCxJQ"><li><div class="title">🌙</div><div class="domain">youtube.com &bull; July 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Adrian Bliss (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/ihpPhcx95SY"><li><div class="title">The sperm that got away</div><div class="domain">youtube.com &bull; July 13, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>

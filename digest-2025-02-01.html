@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-02-01</span>:</h1>
+  <p class="summary">There are 87 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">The Marginalian (feeds.feedburner.com)</h2> (1)</summary><ul><a class="li" href="https://www.themarginalian.org/2025/01/31/gary-snyder/"><li><div class="title">Gary Snyder on How to Unbreak the World</div><div class="domain">themarginalian.org &bull; February 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (2)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/MEfhRvpKPadJLTuTk/some-articles-in-international-security-that-i-enjoyed"><li><div class="title">Some articles in “International Security” that I enjoyed</div><div class="domain">lesswrong.com &bull; February 01, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/Cc2TagjY2pGAhn7MZ/deepseek-don-t-panic"><li><div class="title">DeepSeek: Don’t Panic</div><div class="domain">lesswrong.com &bull; February 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (14)</summary><ul><a class="li" href="https://lobste.rs/s/utupyb/allow_necromancy_avoid_reposts_enable"><li><div class="title">Allow Necromancy: To Avoid Reposts, Enable Comments on Old Posts</div><div class="domain">lobste.rs &bull; February 01, 2025</div></li></a><a class="li" href="https://island94.org/2025/01/ruby-thread-contention-simply-gvl-queuing"><li><div class="title">Ruby "Thread Contention" is simply GVL Queuing | Island94.org</div><div class="domain">island94.org &bull; February 01, 2025</div></li></a><a class="li" href="https://swift.org/blog/the-next-chapter-in-swift-build-technologies/"><li><div class="title">The Next Chapter in Swift Build Technologies</div><div class="domain">swift.org &bull; February 01, 2025</div></li></a><a class="li" href="https://www.jtolio.com/2025/02/py3-pygame-miyoo-a30/"><li><div class="title">Python 3, Pygame, and Debian Bookworm on the Miyoo A30</div><div class="domain">jtolio.com &bull; February 01, 2025</div></li></a><a class="li" href="https://www.righto.com/2025/02/origin-of-mainframe-term.html"><li><div class="title">The origin and unexpected evolution of the word "mainframe"</div><div class="domain">righto.com &bull; February 01, 2025</div></li></a><a class="li" href="https://blog.tansu.io/articles/serde-kafka-protocol"><li><div class="title">Using serde, quote, syn and proc_macro2 to implement the Kafka protocol sans-io in Rust</div><div class="domain">blog.tansu.io &bull; February 01, 2025</div></li></a><a class="li" href="https://uutils.github.io/blog/2025-02-extending/"><li><div class="title">Extending the Coreutils project - Rewriting base tools in Rust</div><div class="domain">uutils.github.io &bull; February 01, 2025</div></li></a><a class="li" href="https://scryfall.com/blog/the-mtg-wiki-is-now-at-mtg-wiki-hosted-by-scryfall-230"><li><div class="title">The MTG Wiki is now at mtg.wiki</div><div class="domain">scryfall.com &bull; February 01, 2025</div></li></a><a class="li" href="https://soatok.blog/2025/01/31/hell-is-overconfident-developers-writing-encryption-code/"><li><div class="title">Hell Is Overconfident Developers Writing Encryption Code</div><div class="domain">soatok.blog &bull; February 01, 2025</div></li></a><a class="li" href="https://s2.dev/blog/iot"><li><div class="title">Blazing-fast IoT data pipeline for infrared monitoring</div><div class="domain">s2.dev &bull; February 01, 2025</div></li></a><a class="li" href="https://phiresky.github.io/blog/2025/visualizing-all-books-in-isbn-space/"><li><div class="title">Visualizing all books of the world in ISBN-Space</div><div class="domain">phiresky.github.io &bull; February 01, 2025</div></li></a><a class="li" href="https://www.masterzen.fr/2020/05/03/designing-a-keyboard-part-1/"><li><div class="title">Designing a keyboard from scratch</div><div class="domain">masterzen.fr &bull; February 01, 2025</div></li></a><a class="li" href="https://c3.handmade.network/blog/p/8983-another_monthly_release__c3_0.6.6_is_here"><li><div class="title">Another monthly release: C3 0.6.6 is here</div><div class="domain">c3.handmade.network &bull; February 01, 2025</div></li></a><a class="li" href="https://amjith.com/blog/2025/llm-in-litecli-1/"><li><div class="title">Using LLM to write SQLite queries</div><div class="domain">amjith.com &bull; February 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (37)</summary><ul><a class="li" href="https://syntaxglow.com/2025/02/01/how-to-store-and-dry-your-3d-filament-a-complete-guide/"><li><div class="title">How to Store and Dry Your 3D Filament: Full Guide</div><div class="domain">syntaxglow.com &bull; February 01, 2025</div></li></a><a class="li" href="https://codingcafe.jp/posts/signal-5yrs"><li><div class="title">I spent five years building a webapp and got my first $1 (2022)</div><div class="domain">codingcafe.jp &bull; February 01, 2025</div></li></a><a class="li" href="https://omniletters.com/hidden-pyramid-structure-discovered-near-caral/"><li><div class="title">Pyramid structure discovered near Caral Peru</div><div class="domain">omniletters.com &bull; February 01, 2025</div></li></a><a class="li" href="https://unifiedpush.org/news/20250131_push_for_decentralized/"><li><div class="title">Push Notifications for Decentralized Services</div><div class="domain">unifiedpush.org &bull; February 01, 2025</div></li></a><a class="li" href="https://www.sciencedirect.com/science/article/abs/pii/S0016703796002451"><li><div class="title">Natural fission reactors in the Franceville basin, Gabon</div><div class="domain">sciencedirect.com &bull; February 01, 2025</div></li></a><a class="li" href="https://www.electronicsweekly.com/news/business/amd-adds-rf-sampling-data-converters-to-versal-adaptive-socs-2024-12/"><li><div class="title">AMD adds RF-sampling data converters to Versal adaptive SoCs</div><div class="domain">electronicsweekly.com &bull; February 01, 2025</div></li></a><a class="li" href="https://addyo.substack.com/p/why-i-use-cline-for-ai-engineering"><li><div class="title">I Use Cline for AI Engineering</div><div class="domain">addyo.substack.com &bull; February 01, 2025</div></li></a><a class="li" href="https://www.nature.com/immersive/d41586-025-00269-y/"><li><div class="title">Mitochondria as you've never seen them</div><div class="domain">nature.com &bull; February 01, 2025</div></li></a><a class="li" href="https://www.macintoshrepository.org/1799-macintosh-allegro-common-lisp"><li><div class="title">Macintosh Allegro Common Lisp</div><div class="domain">macintoshrepository.org &bull; February 01, 2025</div></li></a><a class="li" href="https://www.hytradboi.com/2025/"><li><div class="title">Hytradboi 2025 Program</div><div class="domain">hytradboi.com &bull; February 01, 2025</div></li></a><a class="li" href="https://github.com/mattsroufe/esp32_rc_cars"><li><div class="title">Show HN: ESP32 RC Cars</div><div class="domain">github.com &bull; February 01, 2025</div></li></a><a class="li" href="https://github.com/suwi-lanji/auto-commit"><li><div class="title">Have Gemini stage and write commit messages for you</div><div class="domain">github.com &bull; February 01, 2025</div></li></a><a class="li" href="https://uwaterloo.ca/news/media/smart-fabric-heats-under-sun"><li><div class="title">Smart fabric heats up under the sun</div><div class="domain">uwaterloo.ca &bull; February 01, 2025</div></li></a><a class="li" href="https://orhun.dev/ratzilla/demo/"><li><div class="title">Ratzilla</div><div class="domain">orhun.dev &bull; February 01, 2025</div></li></a><a class="li" href="https://www.theatlantic.com/health/archive/2025/01/cdc-dei-scientific-data/681531/"><li><div class="title">CDC data are disappearing</div><div class="domain">theatlantic.com &bull; February 01, 2025</div></li></a><a class="li" href="https://domofutu.substack.com/p/the-power-of-poetry"><li><div class="title">The Power of Poetry: Why Everyone Should Write</div><div class="domain">domofutu.substack.com &bull; February 01, 2025</div></li></a><a class="li" href="https://meha.ai"><li><div class="title">Show HN: We're building a desktop app for browser agents</div><div class="domain">meha.ai &bull; February 01, 2025</div></li></a><a class="li" href="https://www.audiomisc.co.uk/YouTube/SpotTheDifference.html"><li><div class="title">YouTube audio quality – How good does it get? (2022)</div><div class="domain">audiomisc.co.uk &bull; February 01, 2025</div></li></a><a class="li" href="https://grnh.se/83c3fffa7us"><li><div class="title">MindsDB (YC W20) Is Hiring an Office Manager in SF</div><div class="domain">grnh.se &bull; February 01, 2025</div></li></a><a class="li" href="https://github.com/kspalaiologos/bzip3"><li><div class="title">Bzip3: A spiritual successor to BZip2</div><div class="domain">github.com &bull; February 01, 2025</div></li></a><a class="li" href="https://lumon-industries.com/"><li><div class="title">Macrodata Refinement</div><div class="domain">lumon-industries.com &bull; February 01, 2025</div></li></a><a class="li" href="https://rlhfbook.com/"><li><div class="title">RLHF Book</div><div class="domain">rlhfbook.com &bull; February 01, 2025</div></li></a><a class="li" href="https://cosmosmagazine.com/science/chemistry/improved-fridge-technology/"><li><div class="title">New thermogalvanic tech paves way for more efficient fridges</div><div class="domain">cosmosmagazine.com &bull; February 01, 2025</div></li></a><a class="li" href="https://alisdair.mcdiarmid.org/kill-sticky-headers/"><li><div class="title">A bookmarklet to kill sticky headers (2013)</div><div class="domain">alisdair.mcdiarmid.org &bull; February 01, 2025</div></li></a><a class="li" href="https://www.swift.org/blog/the-next-chapter-in-swift-build-technologies/"><li><div class="title">Apple is open sourcing Swift Build</div><div class="domain">swift.org &bull; February 01, 2025</div></li></a><a class="li" href="https://routersecurity.org/ISProuters.php"><li><div class="title">Avoid ISP Routers</div><div class="domain">routersecurity.org &bull; February 01, 2025</div></li></a><a class="li" href="https://arstechnica.com/culture/2025/01/the-severance-writer-and-cast-on-corporate-cults-sci-fi-and-more/"><li><div class="title">The Severance writer and cast on corporate cults, sci-fi, and more</div><div class="domain">arstechnica.com &bull; February 01, 2025</div></li></a><a class="li" href="https://lichess.org/@/theScot/blog/50-shades-of-blunders/84VpVCDn"><li><div class="title">Shades of Blunders</div><div class="domain">lichess.org &bull; February 01, 2025</div></li></a><a class="li" href="https://nabeelqu.co/reflections-on-palantir"><li><div class="title">Reflections on palantir – Nabeel S. Qureshi</div><div class="domain">nabeelqu.co &bull; February 01, 2025</div></li></a><a class="li" href="https://future4days.com/list-of-200-uk-companies-that-moved-to-4-day-working-week/"><li><div class="title">List of 200 UK companies that moved to 4-day working week</div><div class="domain">future4days.com &bull; February 01, 2025</div></li></a><a class="li" href="https://www.asurion.com/connect/tech-tips/turn-off-apple-intelligence/"><li><div class="title">How to turn off Apple Intelligence</div><div class="domain">asurion.com &bull; February 01, 2025</div></li></a><a class="li" href="https://github.com/hoppscotch/hoppscotch"><li><div class="title">Hoppscotch: Open source alternative to Postman / Insomnia</div><div class="domain">github.com &bull; February 01, 2025</div></li></a><a class="li" href="https://fosdem.org/2025/schedule/streaming/"><li><div class="title">FOSDEM 2025: Streaming Schedule</div><div class="domain">fosdem.org &bull; February 01, 2025</div></li></a><a class="li" href="https://www.talknotes.tech/"><li><div class="title">Show HN: TalkNotes – A site that turns your GENIUS IDEAS into tasks</div><div class="domain">talknotes.tech &bull; February 01, 2025</div></li></a><a class="li" href="https://digitalspaceport.com/how-to-run-deepseek-r1-671b-fully-locally-on-2000-epyc-rig/"><li><div class="title">How to Run DeepSeek R1 671B Locally on a $2000 EPYC Server</div><div class="domain">digitalspaceport.com &bull; February 01, 2025</div></li></a><a class="li" href="https://mirascope.com/learn/mcp/server/"><li><div class="title">Show HN: Simple to build MCP servers that easily connect with custom LLM calls</div><div class="domain">mirascope.com &bull; February 01, 2025</div></li></a><a class="li" href="https://simonwillison.net/2025/Jan/31/o3-mini/"><li><div class="title">Notes on OpenAI O3-Mini</div><div class="domain">simonwillison.net &bull; February 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Seth's Blog (seths.blog)</h2> (1)</summary><ul><a class="li" href="https://seths.blog/2025/02/cant-complain-but-it-might-be-worth-considering/"><li><div class="title">“Can’t complain” (but it might be worth considering)</div><div class="domain">seths.blog &bull; February 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Sympolymathesy, by Chris Krycho (v5.chriskrycho.com)</h2> (1)</summary><ul><a class="li" href="https://v5.chriskrycho.com/elsewhere/january-music-newsletter-always-ambitious-joy-undimmed/"><li><div class="title">[elsewhere] January Music Newsletter: Always Ambitious, Joy Undimmed</div><div class="domain">v5.chriskrycho.com &bull; February 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">XML.com Atom feed for articles and news items (xml.com)</h2> (1)</summary><ul><a class="li" href="https://www.xml.com/news/2025-01-oxygen-ai-positron-assistant-41/"><li><div class="title">Oxygen AI Positron Assistant 4.1 Introduces Smarter Validation, Dynamic Workflows & More!</div><div class="domain">xml.com &bull; February 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (29)</summary><ul><a class="li" href="https://yourstory.com/2025/02/union-budget-india-insurance-market-full-fdi-allowance"><li><div class="title">India’s insurance market set for major overhaul with 100% FDI</div><div class="domain">yourstory.com &bull; February 01, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/02/union-budget-2025-key-measures-boost-innovation-startup-tax-relief-india-inc-investor-reactions"><li><div class="title">'Relief for middle class': How India Inc reacts to Union Budget 2025</div><div class="domain">yourstory.com &bull; February 01, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/02/union-budget-it-sector-gcc-tax-proposals"><li><div class="title">IT sector welcomes Budget's GCC and tax proposals</div><div class="domain">yourstory.com &bull; February 01, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/02/internet-goes-crazy-over-budget-2025-hope-humor-hilarious-takes"><li><div class="title">'Middle class hero, Bihar Budget': hope, humour, and hilarious takes dominate the internet on Budget 2025</div><div class="domain">yourstory.com &bull; February 01, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/02/budget-2025-sabka-vikas-nirmala-sitharaman-agriculture-to-ai-sector"><li><div class="title">Budget 2025 promises 'sabka vikas' of economy—from agriculture to AI</div><div class="domain">yourstory.com &bull; February 01, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/02/no-immediate-upgrade-of-indias-sovereign-rating-says-moodys"><li><div class="title">No immediate upgrade of India's sovereign rating: Moody’s</div><div class="domain">yourstory.com &bull; February 01, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/02/industry-leaders-react-to-budget-2025-harsh-goenka-kunal-shah"><li><div class="title">'Financial Maha Kumbh': Industry leaders react to Budget 2025</div><div class="domain">yourstory.com &bull; February 01, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/02/budget-2025-fuels-ai-boom-and-nuclear-push-amid-infra-concerns"><li><div class="title">Budget 2025 fuels AI boom and nuclear push amid infra concerns</div><div class="domain">yourstory.com &bull; February 01, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/02/room-to-push-tax-threshold-higher-indian-startup-ecosystem-union-budget-2025"><li><div class="title">Room to push tax threshold higher: What Indian startup ecosystem said about Budget 2025</div><div class="domain">yourstory.com &bull; February 01, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/01/union-budget-2025-nirmala-sitharaman-live-updates"><li><div class="title">Union Budget 2025 live updates: No tax on income up to Rs 12 lakh under new tax regime, says FM</div><div class="domain">yourstory.com &bull; February 01, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/02/markets-open-higher-ahead-of-budget-presentation"><li><div class="title">Markets open higher ahead of Budget presentation</div><div class="domain">yourstory.com &bull; February 01, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/02/govt-plans-agriculture-fuel-innovation-sustainable-farming-agritech-industry"><li><div class="title">Govt plans for agriculture will fuel innovation and sustainable farming, say stakeholders in agritech industry</div><div class="domain">yourstory.com &bull; February 01, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/02/stocks-markets-february-1-union-budget-investors-sitharaman"><li><div class="title">Stock markets slide post Budget presentation as investor concerns loom large</div><div class="domain">yourstory.com &bull; February 01, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/02/budget-2025-focus-on-poor-farmers-women-youth-fm-nirmala-sitharaman"><li><div class="title">Budget will focus on fulfilling aspirations of poor, farmers, women and youth: FM Nirmala Sitharaman</div><div class="domain">yourstory.com &bull; February 01, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/02/social-security-healthcare-gig-workers-budget-nirmala-sitharaman"><li><div class="title">Social security, healthcare schemes to benefit 1 crore gig workers: Nirmala Sitharaman</div><div class="domain">yourstory.com &bull; February 01, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/02/govt-to-launch-national-framework-for-global-capability-centers-in-tier-2-cities"><li><div class="title">Govt to launch National Framework for GCCs in Tier II cities</div><div class="domain">yourstory.com &bull; February 01, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/02/deeptech-fund-of-funds-to-be-set-up-to-nurture-next-generation-starups"><li><div class="title">Deeptech Fund of Funds to be set up to nurture next-generation startups: FM Nirmala Sitharaman</div><div class="domain">yourstory.com &bull; February 01, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/02/budget-2025-electric-vehicles-ev-batteries-lithium-customs-duty"><li><div class="title">Union Budget 2025 delivers a shot in the arm for the electric vehicle sector</div><div class="domain">yourstory.com &bull; February 01, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/02/union-budget-2025-provisions-clean-tech-manufacturing"><li><div class="title">Union Budget 2025 announces provisions to boost clean tech manufacturing</div><div class="domain">yourstory.com &bull; February 01, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/02/cheer-for-the-middle-class-as-fm-announces-new-tax"><li><div class="title">Cheer for the middle class as FM announces new tax reforms; benefits for incomes up to Rs 12 LPA</div><div class="domain">yourstory.com &bull; February 01, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/02/union-budget-fund-of-funds-startups-10000-crore"><li><div class="title">FM introduces new Rs 10,000 crore Fund of Funds for startups in Budget 2025</div><div class="domain">yourstory.com &bull; February 01, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/02/union-budget-2025-indias-toy-story-envisions-global-toy-hub"><li><div class="title">Union Budget 2025 outlines India's toy story; envisions global toy hub</div><div class="domain">yourstory.com &bull; February 01, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/02/government-cuts-funding-for-rupay-and-bhim-upi-incentive-scheme"><li><div class="title">Government cuts funding for RuPay and BHIM-UPI incentive scheme in Budget 2025</div><div class="domain">yourstory.com &bull; February 01, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/02/startup-news-and-updates-daily-roundup-february-1-budget-2025"><li><div class="title">Startup news and updates: Daily roundup (February 1, 2025)</div><div class="domain">yourstory.com &bull; February 01, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/02/budget-2025-india-post-to-lead-public-logistics--digital-financial-inclusion"><li><div class="title">India Post to lead public logistics and digital financial inclusion</div><div class="domain">yourstory.com &bull; February 01, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/02/union-budget-retail-d2c-tax-reforms-higher-discretionary-spending"><li><div class="title">Retail, D2C sectors applaud tax reforms for boosting discretionary spending</div><div class="domain">yourstory.com &bull; February 01, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/02/union-budget-2025-future-ready-workforce-education-skilling-ai-innovation"><li><div class="title">Union Budget 2025 paves way for a future-ready workforce through education, skilling, and AI innovation</div><div class="domain">yourstory.com &bull; February 01, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/02/union-budget-2025-govt-bumps-up-allocation-to-meity-by-rs-8460-crore"><li><div class="title">Union Budget 2025: Govt bumps up allocation to MeitY by Rs 8460 crore</div><div class="domain">yourstory.com &bull; February 01, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/02/two-big-picture-themes-from-this-budget"><li><div class="title">Two big-picture themes from this Budget</div><div class="domain">yourstory.com &bull; February 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Primer (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=1_JbJTeLZJs"><li><div class="title">Simulating the Evolution of Aging</div><div class="domain">youtube.com &bull; February 01, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>

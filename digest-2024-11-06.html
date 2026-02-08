@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2024-11-06</span>:</h1>
+  <p class="summary">There are 64 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Bear Blog Trending Posts (bearblog.dev)</h2> (2)</summary><ul><a class="li" href="https://theiqrafiles.com/notes-on-the-maga-wars/"><li><div class="title">Notes On The MAGA Wars</div><div class="domain">theiqrafiles.com &bull; November 06, 2024</div></li></a><a class="li" href="https://purpleram.xyz/nobody/"><li><div class="title">Nobody reads your blog</div><div class="domain">purpleram.xyz &bull; November 06, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Big Think (bigthink.com)</h2> (5)</summary><ul><a class="li" href="https://bigthink.com/starts-with-a-bang/humanitys-last-exam-fail/"><li><div class="title">Why “humanity’s last exam” will ultimately fail humanity</div><div class="domain">bigthink.com &bull; November 06, 2024</div></li></a><a class="li" href="https://bigthink.com/series/explain-it-like-im-smart/yuval-noah-harari-ai-humanity/"><li><div class="title">Yuval Noah Harari: An AI scenario you should not ignore</div><div class="domain">bigthink.com &bull; November 06, 2024</div></li></a><a class="li" href="https://bigthink.com/business/slow-productivity/"><li><div class="title">Why “slow productivity” is the key to great work and happy teams</div><div class="domain">bigthink.com &bull; November 06, 2024</div></li></a><a class="li" href="https://bigthink.com/life/scientists-kill-192-million-lab-mice-each-year-is-there-a-better-way/"><li><div class="title">Scientists kill 192 million lab mice each year. Is there a better way?</div><div class="domain">bigthink.com &bull; November 06, 2024</div></li></a><a class="li" href="https://bigthink.com/the-present/cybathlon/"><li><div class="title">The Cybathlon: Bionic athletes compete for the gold — and push assistive technologies forward</div><div class="domain">bigthink.com &bull; November 06, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">The Marginalian (feeds.feedburner.com)</h2> (1)</summary><ul><a class="li" href="https://www.themarginalian.org/2024/11/06/transition/"><li><div class="title">A Lighthouse for Dark Times</div><div class="domain">themarginalian.org &bull; November 06, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (4)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/DoT6G6raWWuSqpdR7/bay-winter-solstice-2024-speech-auditions"><li><div class="title">Bay Winter Solstice 2024: Speech Auditions</div><div class="domain">lesswrong.com &bull; November 06, 2024</div></li></a><a class="li" href="https://www.lesswrong.com/posts/N65uQ5RP6dYEC6CHW/graceful-degradation"><li><div class="title">Graceful Degradation</div><div class="domain">lesswrong.com &bull; November 06, 2024</div></li></a><a class="li" href="https://www.lesswrong.com/posts/FkYAYQQig4FDTN6r5/scissors-statements-for-president"><li><div class="title">Scissors Statements for President?</div><div class="domain">lesswrong.com &bull; November 06, 2024</div></li></a><a class="li" href="https://www.lesswrong.com/posts/RveeCTcoApkAtd7oA/anthropic-three-sketches-of-asl-4-safety-case-components"><li><div class="title">Anthropic: Three Sketches of ASL-4 Safety Case Components</div><div class="domain">lesswrong.com &bull; November 06, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (8)</summary><ul><a class="li" href="https://dspinellis.github.io/unix-v3man/v3man.pdf"><li><div class="title">UNIX Programmer's Manual: Third Edition (1973)</div><div class="domain">dspinellis.github.io &bull; November 06, 2024</div></li></a><a class="li" href="https://www.tumfatig.net/2024/gotosocial-wasm-based-sqlite-driver-and-bsd/"><li><div class="title">GoToSocial WASM-based SQLite driver and BSD</div><div class="domain">tumfatig.net &bull; November 06, 2024</div></li></a><a class="li" href="https://c0de517e.com/015_vegetation_system.htm"><li><div class="title">Vegetation in COD:BO4</div><div class="domain">c0de517e.com &bull; November 06, 2024</div></li></a><a class="li" href="https://danschnau.com/blog/how_to_add_a_Blazor_Server_App_to_an_ASPNET_Controller_Web_API"><li><div class="title">Blog Post: How to Add a Blazor Server App to an ASP.NET Model/Controller Web API</div><div class="domain">danschnau.com &bull; November 06, 2024</div></li></a><a class="li" href="https://www.process-one.net/blog/thoughts-on-improving-messaging-protocols-part-2-matrix/"><li><div class="title">Thoughts on Improving Messaging Protocols — Part 2, Matrix</div><div class="domain">process-one.net &bull; November 06, 2024</div></li></a><a class="li" href="https://lists.dns-oarc.net/pipermail/dns-operations/2024-November/022711.html"><li><div class="title">Upcoming changes to the DNSSEC root trust anchor</div><div class="domain">lists.dns-oarc.net &bull; November 06, 2024</div></li></a><a class="li" href="https://samrat.me/elixir-distributed-pooling/"><li><div class="title">Implementing distributed pooling in Elixir</div><div class="domain">samrat.me &bull; November 06, 2024</div></li></a><a class="li" href="https://buttondown.com/hillelwayne/archive/turing-kicked-us-out-of-heaven/"><li><div class="title">Turing kicked us out of Heaven (2023)</div><div class="domain">buttondown.com &bull; November 06, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (20)</summary><ul><a class="li" href="https://www.sciencedirect.com/science/article/abs/pii/S1309104224002678"><li><div class="title">It's raining PFAS in South Florida – study</div><div class="domain">sciencedirect.com &bull; November 06, 2024</div></li></a><a class="li" href="https://www.understandingai.org/p/why-the-deep-learning-boom-caught"><li><div class="title">Why the deep learning boom caught almost everyone by surprise</div><div class="domain">understandingai.org &bull; November 06, 2024</div></li></a><a class="li" href="https://ec.europa.eu/commission/presscorner/detail/en/ip_24_5681"><li><div class="title">EU opens antitrust investigation into anticompetitive practices by Corning</div><div class="domain">ec.europa.eu &bull; November 06, 2024</div></li></a><a class="li" href="https://phys.org/news/2024-11-defibrillation-devices-electricity-optimized.html"><li><div class="title">Defibrillation devices save lives using 1k times less electricity</div><div class="domain">phys.org &bull; November 06, 2024</div></li></a><a class="li" href="https://www.mattkeeter.com/projects/rotation/"><li><div class="title">3D Rotation Design</div><div class="domain">mattkeeter.com &bull; November 06, 2024</div></li></a><a class="li" href="https://passingtime.substack.com/p/learning-not-to-trust-the-all-in"><li><div class="title">Learning Not to Trust the All-In Podcast in Ten Minutes</div><div class="domain">passingtime.substack.com &bull; November 06, 2024</div></li></a><a class="li" href="https://theconversation.com/only-5-3-of-welders-in-the-us-are-women-after-years-as-a-writing-professor-i-became-one-heres-what-i-learned-240431"><li><div class="title">Only 5.3% of US welders are women. After years as a professor, I became one</div><div class="domain">theconversation.com &bull; November 06, 2024</div></li></a><a class="li" href="https://github.com/abuseofnotation/termlisp"><li><div class="title">Show HN: Term-Lisp – A Lisp, based on pattern matching and term rewriting</div><div class="domain">github.com &bull; November 06, 2024</div></li></a><a class="li" href="https://www.phoronix.com/review/amd-ryzen-7-9800x3d-linux"><li><div class="title">AMD Ryzen 7 9800X3D Linux Performance: Zen 5 With 3D V-Cache</div><div class="domain">phoronix.com &bull; November 06, 2024</div></li></a><a class="li" href="https://aide.dev/"><li><div class="title">Show HN: Aide, an open-source AI native IDE</div><div class="domain">aide.dev &bull; November 06, 2024</div></li></a><a class="li" href="https://caseyhandmer.wordpress.com/2024/11/05/powering-the-mars-base/"><li><div class="title">Powering the Mars Base</div><div class="domain">caseyhandmer.wordpress.com &bull; November 06, 2024</div></li></a><a class="li" href="https://jdan.github.io/98.css/"><li><div class="title">98.css – A design system for building faithful recreations of old UIs</div><div class="domain">jdan.github.io &bull; November 06, 2024</div></li></a><a class="li" href="https://thehill.com/homenews/campaign/4969061-trump-wins-presidential-election/"><li><div class="title">Trump wins presidency for second time</div><div class="domain">thehill.com &bull; November 06, 2024</div></li></a><a class="li" href="https://www.videogameschronicle.com/news/nintendo-switchs-successor-will-be-backwards-compatible-with-switch-nintendo-confirms/"><li><div class="title">Switch 2 will be backwards compatible with Switch, Nintendo confirms</div><div class="domain">videogameschronicle.com &bull; November 06, 2024</div></li></a><a class="li" href="https://www.titledrops.net/"><li><div class="title">Title drops in movies</div><div class="domain">titledrops.net &bull; November 06, 2024</div></li></a><a class="li" href="https://weiyen.net/articles/useful-macos-cmd-line-utilities"><li><div class="title">Useful built-in macOS command-line utilities</div><div class="domain">weiyen.net &bull; November 06, 2024</div></li></a><a class="li" href="https://www.missionjuno.swri.edu/junocam/processing?source=all&ob_from=2024-10-01&ob_to=2024-11-01&phases%5B%5D=PERIJOVE+66&perpage=16"><li><div class="title">New images of Jupiter</div><div class="domain">missionjuno.swri.edu &bull; November 06, 2024</div></li></a><a class="li" href="https://playcanvas.com/supersplat/editor?load=https://raw.githubusercontent.com/willeastcott/assets/main/toy-cat.ply&camera.overlay=false&show.bound=false"><li><div class="title">Show HN: SuperSplat – open-source 3D Gaussian Splat Editor</div><div class="domain">playcanvas.com &bull; November 06, 2024</div></li></a><a class="li" href="https://yourhackernews.com/"><li><div class="title">Show HN: Hacker News frontpage as a print newspaper that you can personalize</div><div class="domain">yourhackernews.com &bull; November 06, 2024</div></li></a><a class="li" href="https://security.apple.com/documentation/private-cloud-compute/"><li><div class="title">Private Cloud Compute Security Guide</div><div class="domain">security.apple.com &bull; November 06, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Quanta Magazine (quantamagazine.org)</h2> (1)</summary><ul><a class="li" href="https://www.quantamagazine.org/physicists-spot-quantum-tornadoes-twirling-in-a-supersolid-20241106/"><li><div class="title">Physicists Spot Quantum Tornadoes Twirling in a ‘Supersolid’</div><div class="domain">quantamagazine.org &bull; November 06, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Reasons to be Cheerful (reasonstobecheerful.world)</h2> (1)</summary><ul><a class="li" href="https://reasonstobecheerful.world/a-post-election-day-poem/"><li><div class="title">A Post-Election Day Poem</div><div class="domain">reasonstobecheerful.world &bull; November 06, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Seth's Blog (seths.blog)</h2> (1)</summary><ul><a class="li" href="https://seths.blog/2024/11/the-paradox-of-points/"><li><div class="title">The paradox of points</div><div class="domain">seths.blog &bull; November 06, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (20)</summary><ul><a class="li" href="https://yourstory.com/2024/11/zoomcar-prices-915-m-private-placement-4-28-per-unit"><li><div class="title">Zoomcar prices $9.15M private placement at $4.28 per unit</div><div class="domain">yourstory.com &bull; November 06, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/11/startup-news-and-updates-daily-roundup-november-6-2024"><li><div class="title">Startup news and updates: Daily roundup (November 6, 2024)</div><div class="domain">yourstory.com &bull; November 06, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/11/easy-home-finance-raises-35-million-series-b-funding-round"><li><div class="title">Easy Home Finance raises $35M in Series B round</div><div class="domain">yourstory.com &bull; November 06, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/11/mental-health-benefits-office-work"><li><div class="title">Why office work boosts mental health over remote work</div><div class="domain">yourstory.com &bull; November 06, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/11/inflexor-ventures-raises-rs-280-cr-as-first-close-for-opportunities-fund"><li><div class="title">Inflexor Ventures raises Rs 280 Cr as first close for Opportunities Fund</div><div class="domain">yourstory.com &bull; November 06, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/11/india-among-fastest-growing-markets-artificial-intelligence-microsoft-ai-head-mustafa-suleyman"><li><div class="title">India among fastest-growing markets for AI: Microsoft AI Head Mustafa Suleyman</div><div class="domain">yourstory.com &bull; November 06, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/11/bitcoin-dogecoin-super-expensive"><li><div class="title">Why Bitcoin and Dogecoin are Skyrocketing?</div><div class="domain">yourstory.com &bull; November 06, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/11/appsforbharat-announces-first-esop-buyback-2cr"><li><div class="title">AppsForBharat announces first ESOP buyback worth Rs 2.1 Cr</div><div class="domain">yourstory.com &bull; November 06, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/11/lenskart-pares-losses-84-fy24-revenue-grows-fidelity-eyewear"><li><div class="title">Lenskart pares losses by 84% in FY24, revenue grows 43% as opposed to being doubled a year ago</div><div class="domain">yourstory.com &bull; November 06, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/11/swiggy-ipo-retail-subscribed-employees-day-1"><li><div class="title">Swiggy IPO: Retail portion gets 54% subscription, employees subscribe 74% of allotted shares on Day 1</div><div class="domain">yourstory.com &bull; November 06, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/11/wooden-satellite-worlds-first-satelite-wood"><li><div class="title">Wooden Satellite - World's first Satelite made of wood launched by Japan but there's a problem!</div><div class="domain">yourstory.com &bull; November 06, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/11/indias-golden-rbi-secretly-repatriates-102-tonnes-gold-london"><li><div class="title">India’s Golden Power Move: RBI Secretly Repatriates 102 Tonnes of Gold from London</div><div class="domain">yourstory.com &bull; November 06, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/11/identify-coworker-red-flags"><li><div class="title">Toxic colleagues? 7 red flags to look out for in coworkers</div><div class="domain">yourstory.com &bull; November 06, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/11/ipl-2025-mega-auction-jeddah-november-24-25"><li><div class="title">IPL mega auction: Here's all you need to know</div><div class="domain">yourstory.com &bull; November 06, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/11/traditional-vs-ai-powered-search-engines-navigating-future-search"><li><div class="title">Traditional vs. AI-Powered Search Engines: Navigating the Future of Search</div><div class="domain">yourstory.com &bull; November 06, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/11/usha-vance-second-lady-united-states"><li><div class="title">Here's the Indian connection to the White House</div><div class="domain">yourstory.com &bull; November 06, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/11/family-culture-hurts-workplace"><li><div class="title">Why ‘family’ culture may harm your workplace dynamics</div><div class="domain">yourstory.com &bull; November 06, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/11/nasas-leap-second-mars-helicopter-flight-ingenuity-triumph"><li><div class="title">NASA's Next Leap: A Second Mars Helicopter Soon To Take Flight After Ingenuity's Triumph</div><div class="domain">yourstory.com &bull; November 06, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/11/wazirx-launch-decentralised-exchange-features-platform"><li><div class="title">WazirX to launch a decentralised exchange and add new features to its existing platform</div><div class="domain">yourstory.com &bull; November 06, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/11/hi-encubay-indrive-present-women-tech-summit"><li><div class="title">Encubay and inDrive Present the Women Technology Summit: Empowering, Inspiring, and Connecting India's Women Tech Leaders</div><div class="domain">yourstory.com &bull; November 06, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">oliSUNvia (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=DbcuRvCDMf4"><li><div class="title">when mother is not "mothering": the devaluation of motherhood</div><div class="domain">youtube.com &bull; November 06, 2024</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>

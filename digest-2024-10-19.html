@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2024-10-19</span>:</h1>
+  <p class="summary">There are 50 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Bear Blog Trending Posts (bearblog.dev)</h2> (2)</summary><ul><a class="li" href="https://yordi.me/stop-optimizing-everything/"><li><div class="title">Stop Optimizing Everything</div><div class="domain">yordi.me &bull; October 19, 2024</div></li></a><a class="li" href="https://azhdarchid.com/microsoft-is-basically-discontinuing-windows-what-will-happen-then/"><li><div class="title">Microsoft is basically discontinuing Windows. What will happen, then?</div><div class="domain">azhdarchid.com &bull; October 19, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Big Think (bigthink.com)</h2> (2)</summary><ul><a class="li" href="https://bigthink.com/health/bird-flu-human-infection/"><li><div class="title">Decoding bird flu: New research reveals potential route for human infection</div><div class="domain">bigthink.com &bull; October 19, 2024</div></li></a><a class="li" href="https://bigthink.com/hard-science/physics-new-math/"><li><div class="title">Why physics is unreasonably good at creating new math</div><div class="domain">bigthink.com &bull; October 19, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (1)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/TyusAoBMjYzGN3eZS/why-i-m-not-a-bayesian"><li><div class="title">Why I’m not a Bayesian</div><div class="domain">lesswrong.com &bull; October 19, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (2)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/qt4vTGjj4mwAMwDsr/the-mysterious-trump-buyers-on-polymarket"><li><div class="title">The Mysterious Trump Buyers on Polymarket</div><div class="domain">lesswrong.com &bull; October 19, 2024</div></li></a><a class="li" href="https://www.lesswrong.com/posts/4yWyccoTbsu7yuqnD/start-an-upper-room-uv-installation-company"><li><div class="title">Start an Upper-Room UV Installation Company?</div><div class="domain">lesswrong.com &bull; October 19, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Irrational Exuberance (lethain.com)</h2> (1)</summary><ul><a class="li" href="https://lethain.com/driver-onboarding-model/"><li><div class="title">Modeling driving onboarding.</div><div class="domain">lethain.com &bull; October 19, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (16)</summary><ul><a class="li" href="https://lexp.lt/posts/implementing_an_intermediate_representation/"><li><div class="title">Implementing an intermediate representation for ArkScript</div><div class="domain">lexp.lt &bull; October 19, 2024</div></li></a><a class="li" href="https://testing.googleblog.com/2024/10/smurf-beyond-test-pyramid.html"><li><div class="title">SMURF: Beyond the Test Pyramid</div><div class="domain">testing.googleblog.com &bull; October 19, 2024</div></li></a><a class="li" href="https://shafik.github.io/c++/llvm/2024/10/17/triaging-clang-fronend-bugs.html"><li><div class="title">Triaging clang C++ frontend bugs</div><div class="domain">shafik.github.io &bull; October 19, 2024</div></li></a><a class="li" href="https://www.multicians.org/lcp.html"><li><div class="title">The Multics Maclisp Compiler: The Basic Hackery – A Tutorial (1977)</div><div class="domain">multicians.org &bull; October 19, 2024</div></li></a><a class="li" href="https://blog.codingconfessions.com/p/a-selective-survey-of-speculative-decoding"><li><div class="title">A Selective Survey of Efficient Speculative Decoding Techniques for LLM Inference</div><div class="domain">blog.codingconfessions.com &bull; October 19, 2024</div></li></a><a class="li" href="https://people.cs.nott.ac.uk/pszgmh/123.pdf"><li><div class="title">Programming language semantics: It’s easy as 1,2,3</div><div class="domain">people.cs.nott.ac.uk &bull; October 19, 2024</div></li></a><a class="li" href="https://langdev.stackexchange.com/a/2021/1445"><li><div class="title">You could have invented denotational semantics</div><div class="domain">langdev.stackexchange.com &bull; October 19, 2024</div></li></a><a class="li" href="https://dl.acm.org/doi/pdf/10.1145/987452.987458"><li><div class="title">Eliza in SNOBOL4</div><div class="domain">dl.acm.org &bull; October 19, 2024</div></li></a><a class="li" href="https://simonwillison.net/2024/Oct/19/mistralrs/"><li><div class="title">LLM inference library written in Rust with mistral.rs</div><div class="domain">simonwillison.net &bull; October 19, 2024</div></li></a><a class="li" href="https://lwn.net/SubscriberLink/994322/45aa5211a50bc63a/"><li><div class="title">The long road to lazy preemption</div><div class="domain">lwn.net &bull; October 19, 2024</div></li></a><a class="li" href="https://github.com/wingo/whippet/"><li><div class="title">whippet: A work-in-progress garbage collector for Guile</div><div class="domain">github.com &bull; October 19, 2024</div></li></a><a class="li" href="https://github.com/csmith-project/creduce"><li><div class="title">C-Reduce, a C and C++ program reducer</div><div class="domain">github.com &bull; October 19, 2024</div></li></a><a class="li" href="https://cosmowenman.substack.com/p/secret-3d-scans-in-the-french-supreme"><li><div class="title">Secret 3D Scans in the French Supreme Court</div><div class="domain">cosmowenman.substack.com &bull; October 19, 2024</div></li></a><a class="li" href="https://obrhubr.org/phucking-with-phishers"><li><div class="title">Phucking with Phishers</div><div class="domain">obrhubr.org &bull; October 19, 2024</div></li></a><a class="li" href="https://notgull.net/blocking-leaky/"><li><div class="title">Blocking code is a leaky abstraction</div><div class="domain">notgull.net &bull; October 19, 2024</div></li></a><a class="li" href="https://www.youtube.com/watch?v=-Ln-8QM8KhQ"><li><div class="title">How is this website so fast?</div><div class="domain">youtube.com &bull; October 19, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (16)</summary><ul><a class="li" href="https://theconversation.com/what-makes-a-person-seem-wise-global-study-finds-that-cultures-do-differ-but-not-as-much-as-youd-think-238808"><li><div class="title">What makes a person seem wise?</div><div class="domain">theconversation.com &bull; October 19, 2024</div></li></a><a class="li" href="https://beyondloom.com/blog/denial.html"><li><div class="title">Stages of Denial (2020)</div><div class="domain">beyondloom.com &bull; October 19, 2024</div></li></a><a class="li" href="https://news.ycombinator.com/item?id=41885689"><li><div class="title">Ask HN: In 2024 what's the best way to manage contacts?</div><div class="domain">news.ycombinator.com &bull; October 19, 2024</div></li></a><a class="li" href="https://civet.dev/"><li><div class="title">Civet: A Superset of TypeScript</div><div class="domain">civet.dev &bull; October 19, 2024</div></li></a><a class="li" href="https://www.bbc.com/news/uk-england-35840393"><li><div class="title">Knocker uppers: Waking up the workers in industrial Britain (2016)</div><div class="domain">bbc.com &bull; October 19, 2024</div></li></a><a class="li" href="https://www.npmjs.com/package/svelte"><li><div class="title">Svelte 5 Released</div><div class="domain">npmjs.com &bull; October 19, 2024</div></li></a><a class="li" href="https://github.com/awslabs/git-remote-s3"><li><div class="title">S3 as a Git remote and LFS server</div><div class="domain">github.com &bull; October 19, 2024</div></li></a><a class="li" href="https://www.tomshardware.com/tech-industry/artificial-intelligence/ai-engineers-build-new-algorithm-for-ai-processing-replace-complex-floating-point-multiplication-with-integer-addition"><li><div class="title">AI engineers claim new algorithm reduces AI power consumption by 95%</div><div class="domain">tomshardware.com &bull; October 19, 2024</div></li></a><a class="li" href="https://www.ribbonfarm.com/2024/10/10/ribbonfarm-is-retiring/"><li><div class="title">Ribbonfarm Is Retiring</div><div class="domain">ribbonfarm.com &bull; October 19, 2024</div></li></a><a class="li" href="https://send.vis.ee/"><li><div class="title">Send: Open-source fork of Firefox Send</div><div class="domain">send.vis.ee &bull; October 19, 2024</div></li></a><a class="li" href="https://github.com/norvig/pytudes/blob/main/ipynb/Triplets.ipynb"><li><div class="title">The Languages of English, Math, and Programming</div><div class="domain">github.com &bull; October 19, 2024</div></li></a><a class="li" href="https://arxiv.org/abs/2310.09423"><li><div class="title">QUIC is not quick enough over fast internet</div><div class="domain">arxiv.org &bull; October 19, 2024</div></li></a><a class="li" href="https://frondly.app/"><li><div class="title">Show HN: I made a site to quick identify any plant and learn how to care for it</div><div class="domain">frondly.app &bull; October 19, 2024</div></li></a><a class="li" href="https://cpldcpu.wordpress.com/2024/05/02/machine-learning-mnist-inference-on-the-3-cent-microcontroller/"><li><div class="title">Implementing neural networks on the "3 cent" 8-bit microcontroller</div><div class="domain">cpldcpu.wordpress.com &bull; October 19, 2024</div></li></a><a class="li" href="https://dvc.org/"><li><div class="title">Data Version Control</div><div class="domain">dvc.org &bull; October 19, 2024</div></li></a><a class="li" href="https://aworkinglibrary.com/writing/accountability-sinks"><li><div class="title">Accountability sinks</div><div class="domain">aworkinglibrary.com &bull; October 19, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Kindred Spirits (readkindredspirits.com)</h2> (1)</summary><ul><a class="li" href="https://www.readkindredspirits.com/p/fortunas-favourite-child"><li><div class="title">fortuna's favourite child</div><div class="domain">readkindredspirits.com &bull; October 19, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Seth's Blog (seths.blog)</h2> (1)</summary><ul><a class="li" href="https://seths.blog/2024/10/confused-about-good/"><li><div class="title">Confused about good</div><div class="domain">seths.blog &bull; October 19, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Trevor I. Lasn Thoughts (trevorlasn.com)</h2> (1)</summary><ul><a class="li" href="https://www.trevorlasn.com/blog/astro-capo"><li><div class="title">Optimize Your Astro Site's <head> with astro-capo</div><div class="domain">trevorlasn.com &bull; October 19, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (6)</summary><ul><a class="li" href="https://yourstory.com/2024/10/journey-process-success-art-creativity-exhibition-photography"><li><div class="title">Journey, process and success – three women artists share their experiences with creativity</div><div class="domain">yourstory.com &bull; October 19, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/10/pe-vc-investments-decline-by-40-in-sept-qtr-says-ivca-ey-report"><li><div class="title">PE/VC investments decline by 40% in Sept quarter: IVCA-EY report</div><div class="domain">yourstory.com &bull; October 19, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/10/stpi-to-fund-25-startups-from-tier-2-3-towns"><li><div class="title">STPI to fund 25 startups from Tier II, III cities</div><div class="domain">yourstory.com &bull; October 19, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/10/gom-proposes-gst-exemption-on-health-insurance-policies"><li><div class="title">GoM proposes GST exemption on health insurance policies</div><div class="domain">yourstory.com &bull; October 19, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/10/breaking-the-menopause-taboo"><li><div class="title">Breaking the menopause taboo; Eruditus prepares to shift base to India</div><div class="domain">yourstory.com &bull; October 19, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/10/refurbished-phones-circular-economy-closing-loop-tech-consumption"><li><div class="title">Refurbished phones and the circular economy: closing the loop in tech consumption</div><div class="domain">yourstory.com &bull; October 19, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Suvaissance (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=yS1g69LnqgU"><li><div class="title">Fusion Suprabhatam: How this composer modernized the ancient prayer</div><div class="domain">youtube.com &bull; October 19, 2024</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>

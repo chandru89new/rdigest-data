@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-06-21</span>:</h1>
+  <p class="summary">There are 56 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Bear Blog Trending Posts (bearblog.dev)</h2> (1)</summary><ul><a class="li" href="https://azhdarchid.com/are-llms-useful/"><li><div class="title">Are LLMs 'useful'?</div><div class="domain">azhdarchid.com &bull; June 21, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Marginalian (feeds.feedburner.com)</h2> (1)</summary><ul><a class="li" href="https://www.themarginalian.org/2025/06/21/stone-time/"><li><div class="title">How to Be a Stone: Three Poems for Trusting Time</div><div class="domain">themarginalian.org &bull; June 21, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">kottke.org (feeds.kottke.org)</h2> (1)</summary><ul><a class="li" href="https://kottke.org/25/06/0046990-happening-all-day-today-a"><li><div class="title">Happening all day today: a Reading Rainbow marathon on PBS Retro. PBS...</div><div class="domain">kottke.org &bull; June 21, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (5)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/WqwxBmf8JB6Zvxsij/the-silk-pajamas-effect"><li><div class="title">the silk pajamas effect</div><div class="domain">lesswrong.com &bull; June 21, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/oHQ6FdcNymCt2rqbi/ai-121-part-2-the-openai-files"><li><div class="title">AI #121 Part 2: The OpenAI Files</div><div class="domain">lesswrong.com &bull; June 21, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/9rKWm8BzTYAiCCFjx/musings-on-ai-companies-of-2025-2026-jun-2025"><li><div class="title">Musings on AI Companies of 2025-2026 (Jun 2025)</div><div class="domain">lesswrong.com &bull; June 21, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/rdbqmyohYJwwxyeEt/genomic-emancipation"><li><div class="title">Genomic emancipation</div><div class="domain">lesswrong.com &bull; June 21, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/D4eZF6FAZhrW4KaGG/consider-chilling-out-in-2028"><li><div class="title">Consider chilling out in 2028</div><div class="domain">lesswrong.com &bull; June 21, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (20)</summary><ul><a class="li" href="https://thephd.dev/to-bind-and-loose-a-reference-optional"><li><div class="title">To Bind and Loose a Reference (2020)</div><div class="domain">thephd.dev &bull; June 21, 2025</div></li></a><a class="li" href="https://clickhouse.com/blog/scaling-observability-beyond-100pb-wide-events-replacing-otel"><li><div class="title">Scaling our Observability platform beyond 100 Petabytes by embracing wide events and replacing OTel</div><div class="domain">clickhouse.com &bull; June 21, 2025</div></li></a><a class="li" href="https://quic.video/blog/application-first"><li><div class="title">Application First - Media over QUIC</div><div class="domain">quic.video &bull; June 21, 2025</div></li></a><a class="li" href="https://harelang.org/blog/2025-06-21-hare-0.25.2-released/"><li><div class="title">Hare 0.25.2 released</div><div class="domain">harelang.org &bull; June 21, 2025</div></li></a><a class="li" href="https://opendylan.org/release-notes/2025.1.html"><li><div class="title">Open Dylan 2025.1 - Open Dylan Release</div><div class="domain">opendylan.org &bull; June 21, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=uE6qp94InBM"><li><div class="title">Rhapsody OS: Installing Apple’s Lost x86 OS from 1998 on a 3.4 Ghz i7 CPU & SSD</div><div class="domain">youtube.com &bull; June 21, 2025</div></li></a><a class="li" href="https://crescentro.se/posts/writing-drivers/"><li><div class="title">Writing a basic Linux device driver when you know nothing about Linux drivers or USB</div><div class="domain">crescentro.se &bull; June 21, 2025</div></li></a><a class="li" href="https://charity.wtf/2025/06/19/in-praise-of-normal-engineers/"><li><div class="title">In Praise of “Normal” Engineers</div><div class="domain">charity.wtf &bull; June 21, 2025</div></li></a><a class="li" href="https://www.linkedin.com/pulse/good-job-bad-interview-time-rethink-hiring-christopher-robertson-jdnie"><li><div class="title">Good at the Job, Bad at the Interview: Time to Rethink Hiring</div><div class="domain">linkedin.com &bull; June 21, 2025</div></li></a><a class="li" href="https://herbsutter.com/2025/06/21/trip-report-june-2025-iso-c-standards-meeting-sofia-bulgaria/"><li><div class="title">Trip report: June 2025 ISO C++ standards meeting</div><div class="domain">herbsutter.com &bull; June 21, 2025</div></li></a><a class="li" href="http://oldvcr.blogspot.com/2025/06/see-jane-128-by-arktronics-run.html"><li><div class="title">See Jane 128 by Arktronics run (featuring Magic Desk, 3-Plus-1 and the Thomson MO5)</div><div class="domain">oldvcr.blogspot.com &bull; June 21, 2025</div></li></a><a class="li" href="https://mattgreer.dev/blog/balatro-for-the-nintendo-ereader/"><li><div class="title">Balatro for the Nintendo E-Reader</div><div class="domain">mattgreer.dev &bull; June 21, 2025</div></li></a><a class="li" href="https://blog.khinsen.net/posts/2025/06/20/computational-reproducibility.html"><li><div class="title">Why computational reproducibility matters</div><div class="domain">blog.khinsen.net &bull; June 21, 2025</div></li></a><a class="li" href="https://systemf.epfl.ch/blog/re2-lookbehinds/"><li><div class="title">Adding linear-time lookbehinds to RE2</div><div class="domain">systemf.epfl.ch &bull; June 21, 2025</div></li></a><a class="li" href="https://cosmoe.org/index.html"><li><div class="title">Cosmoe: BeOS Class Library on top of Wayland</div><div class="domain">cosmoe.org &bull; June 21, 2025</div></li></a><a class="li" href="https://pointieststick.com/2025/06/21/about-plasmas-x11-session/"><li><div class="title">About Plasma’s X11 session</div><div class="domain">pointieststick.com &bull; June 21, 2025</div></li></a><a class="li" href="https://j3s.sh/thought/my-website-is-one-binary.html"><li><div class="title">my website is one binary</div><div class="domain">j3s.sh &bull; June 21, 2025</div></li></a><a class="li" href="https://noelberry.ca/posts/celeste_lighting/"><li><div class="title">Remaking Celeste's Lighting</div><div class="domain">noelberry.ca &bull; June 21, 2025</div></li></a><a class="li" href="https://blog.trailofbits.com/2025/06/17/unexpected-security-footguns-in-gos-parsers/"><li><div class="title">Unexpected security footguns in Go's parsers</div><div class="domain">blog.trailofbits.com &bull; June 21, 2025</div></li></a><a class="li" href="https://vermaden.wordpress.com/2025/06/21/more-undervalued-hardware-companions/"><li><div class="title">More Undervalued Hardware Companions</div><div class="domain">vermaden.wordpress.com &bull; June 21, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (16)</summary><ul><a class="li" href="https://danieltan.weblog.lol/2025/06/map-llms-excel-saved-my-passion-for-game-dev"><li><div class="title">Mapping LLMs over excel saved my passion for game dev</div><div class="domain">danieltan.weblog.lol &bull; June 21, 2025</div></li></a><a class="li" href="https://www.cnn.com/2025/06/17/science/spiders-deep-sea-methane-new-species"><li><div class="title">First methane-powered sea spiders found crawling on the ocean floor</div><div class="domain">cnn.com &bull; June 21, 2025</div></li></a><a class="li" href="https://byok.io"><li><div class="title">BYOK – Bring Your Own Keyboard</div><div class="domain">byok.io &bull; June 21, 2025</div></li></a><a class="li" href="https://ootrandomizer.com/"><li><div class="title">Ocarina of Time Randomizer</div><div class="domain">ootrandomizer.com &bull; June 21, 2025</div></li></a><a class="li" href="https://siglog.org/winner-of-the-2025-alonzo-church-award/"><li><div class="title">2025 Alonzo Church Award: Paul Blain Levy for Call-by-Push-Value (CBPV)</div><div class="domain">siglog.org &bull; June 21, 2025</div></li></a><a class="li" href="https://mmondrian.com/"><li><div class="title">Show HN: MMOndrian</div><div class="domain">mmondrian.com &bull; June 21, 2025</div></li></a><a class="li" href="https://delta.chat/en/"><li><div class="title">Delta Chat is a decentralized and secure messenger app</div><div class="domain">delta.chat &bull; June 21, 2025</div></li></a><a class="li" href="https://testflight.apple.com/join/JjTcThrV"><li><div class="title">uBlock Origin Lite Beta for Safari iOS</div><div class="domain">testflight.apple.com &bull; June 21, 2025</div></li></a><a class="li" href="https://www.ycombinator.com/companies/weave-3/jobs/SqFnIFE-founding-ai-engineer"><li><div class="title">Weave (YC W25) is hiring a founding AI engineer</div><div class="domain">ycombinator.com &bull; June 21, 2025</div></li></a><a class="li" href="https://www.lemonde.fr/en/science/article/2025/06/21/gwada-negative-french-scientists-find-new-blood-type-in-woman_6742577_10.html"><li><div class="title">'Gwada negative': French scientists find new blood type in woman</div><div class="domain">lemonde.fr &bull; June 21, 2025</div></li></a><a class="li" href="https://www.bloomberg.com/news/articles/2025-06-20/ai-is-ushering-in-the-tiny-team-era-in-silicon-valley"><li><div class="title">AI is ushering in a 'tiny team' era</div><div class="domain">bloomberg.com &bull; June 21, 2025</div></li></a><a class="li" href="https://news.ycombinator.com/item?id=44338562"><li><div class="title">Tell HN: Beware confidentiality agreements that act as lifetime non competes</div><div class="domain">news.ycombinator.com &bull; June 21, 2025</div></li></a><a class="li" href="https://smex.org/open-letter-to-samsung-end-forced-israeli-app-installations-in-the-wana-region/"><li><div class="title">Samsung embeds IronSource spyware app on phones across WANA</div><div class="domain">smex.org &bull; June 21, 2025</div></li></a><a class="li" href="https://alltracker.github.io/"><li><div class="title">AllTracker: Efficient Dense Point Tracking at High Resolution</div><div class="domain">alltracker.github.io &bull; June 21, 2025</div></li></a><a class="li" href="https://7goldfish.com/articles/Requiem_for_a_solar_plant.php"><li><div class="title">Requiem for a Solar Plant</div><div class="domain">7goldfish.com &bull; June 21, 2025</div></li></a><a class="li" href="https://www.filmlabs.org/wiki/en/meetings_projects/spectral/laborberlin16mmprojector/start"><li><div class="title">LaborBerlin: State-of-the-Art 16mm Projector</div><div class="domain">filmlabs.org &bull; June 21, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Seth's Blog (seths.blog)</h2> (1)</summary><ul><a class="li" href="https://seths.blog/2025/06/but-what-do-they-say-at-the-meeting/"><li><div class="title">But what do they say at the meeting?</div><div class="domain">seths.blog &bull; June 21, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Diplomat (thediplomat.com)</h2> (1)</summary><ul><a class="li" href="https://thediplomat.com/2025/06/what-democracies-get-wrong-about-chinese-ai/"><li><div class="title">What Democracies Get Wrong About Chinese AI</div><div class="domain">thediplomat.com &bull; June 21, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (7)</summary><ul><a class="li" href="https://yourstory.com/2025/06/sebi-guiding-principle-responsible-usage-ai-ml-securities-markets"><li><div class="title">Sebi proposes guiding principles for responsible use of AI, ML in securities markets</div><div class="domain">yourstory.com &bull; June 21, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/06/govt-launches-rs-23-cr-startup-programme-to-fast-track-rooftop-solar-installation"><li><div class="title">Govt launches Rs 2.3-Cr startup programme to fast-track rooftop solar installation</div><div class="domain">yourstory.com &bull; June 21, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/06/kalakriti-art-gallery-culture-creativity-exhibition-photography"><li><div class="title">How Kalakriti Art Gallery creates cultural spaces that are both contemplative and inclusive</div><div class="domain">yourstory.com &bull; June 21, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/06/karnataka-bike-taxi-ban-vidhan-soudha-demand-policy-framework"><li><div class="title">Karnataka bike taxi riders rally at Vidhan Soudha, demand clear policy framework</div><div class="domain">yourstory.com &bull; June 21, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/06/national-startup-awards-2025-deadline-extended-july-5"><li><div class="title">National Startup Awards 2025 Deadline Extended — Submit Your Startup Now</div><div class="domain">yourstory.com &bull; June 21, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/06/riders-dilemma-without-bike-taxis"><li><div class="title">Riders’ dilemma without bike taxis; Cashing in on rare earth magnet supply</div><div class="domain">yourstory.com &bull; June 21, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/06/how-ai-could-be-the-key-to-better-data-governance"><li><div class="title">How AI could be the key to better data governance</div><div class="domain">yourstory.com &bull; June 21, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">SchaeferArt (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=O2hyg0pAyCg"><li><div class="title">Your Sketchbook Holds More Than You Think</div><div class="domain">youtube.com &bull; June 21, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Let's Game It Out (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=SLvZ1qYYj7Q"><li><div class="title">I Created the Most Dysfunctional Store Using Essentially Just 1 Item - Teddy's Haven</div><div class="domain">youtube.com &bull; June 21, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Academy of Ideas (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/VNnlaTEPBRU"><li><div class="title">Unused Creativity Destroys You - Actualize your Creative Potential</div><div class="domain">youtube.com &bull; June 21, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>

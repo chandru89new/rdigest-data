@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2026-03-02</span>:</h1>
+  <p class="summary">There are 14 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (3)</summary><ul><a class="li" href="https://codeberg.org/NRK/xuv"><li><div class="title">xuv: X11 user daemon to automatically run commands triggered by user specified events</div><div class="domain">codeberg.org &bull; March 02, 2026</div></li></a><a class="li" href="https://www.joshuaamaju.com/blog/the-pitfalls-of-explicit-resource-management"><li><div class="title">Explicit Resource Management Has a Color Problem</div><div class="domain">joshuaamaju.com &bull; March 02, 2026</div></li></a><a class="li" href="https://github.com/dzervas/mcp-firewall"><li><div class="title">mcp-firewall: A better policy-engine for CLI agents</div><div class="domain">github.com &bull; March 02, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (3)</summary><ul><a class="li" href="https://twitter.com/backnotprop/status/2028293637373841759"><li><div class="title">We will sacrifice quality for convenience</div><div class="domain">twitter.com &bull; March 02, 2026</div></li></a><a class="li" href="https://9to5mac.com/2026/03/01/claude-hits-1-on-the-app-store-as-users-rally-behind-anthropics-government-standoff/"><li><div class="title">Claude hits #1 on the App Store as users rally behind Anthropic</div><div class="domain">9to5mac.com &bull; March 02, 2026</div></li></a><a class="li" href="https://github.com/kossisoroyce/timber"><li><div class="title">Show HN: Timber – Ollama for classical ML models, 336x faster than Python</div><div class="domain">github.com &bull; March 02, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (1)</summary><ul><a class="li" href="https://yourstory.com/2026/03/rise-of-the-digital-worker-women-creating-employment"><li><div class="title">Rise of the digital worker; Women creating employment</div><div class="domain">yourstory.com &bull; March 02, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">Veritasium (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/DJ_5_JS9_Rs"><li><div class="title">You Can't Feel Wet</div><div class="domain">youtube.com &bull; March 02, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">The Hindu (youtube.com)</h2> (3)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=trMC53Y1pQE"><li><div class="title">PM Narendra Modi holds NDA rally with Palaniswami in Madurai ahead of TN polls</div><div class="domain">youtube.com &bull; March 02, 2026</div></li></a><a class="li" href="https://www.youtube.com/watch?v=vokVdY-C35c"><li><div class="title">Trump warns of more U.S. casualties as Iran conflict intensifies, 3 soldiers killed in Iran strikes</div><div class="domain">youtube.com &bull; March 02, 2026</div></li></a><a class="li" href="https://www.youtube.com/watch?v=Fi5XLnePQAE"><li><div class="title">UK PM Keir Starmer says British forces active in Middle East defensive ops amid Iran escalation</div><div class="domain">youtube.com &bull; March 02, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">The Dodo (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/DiH-MsS8DB0"><li><div class="title">Three Fluffy Owlets Grow Big And Strong And Return To The Wild | The Dodo</div><div class="domain">youtube.com &bull; March 02, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">Jackson Galaxy (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/A-NH0Wi4CT0"><li><div class="title">Cats aren’t just agile; they’re engineering masterpieces wrapped in style.</div><div class="domain">youtube.com &bull; March 02, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">ChessBase India (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/yKtLjWsSMO4"><li><div class="title">Divya Deshmukh showing her class at Prague Chess Festival Challengers 2026</div><div class="domain">youtube.com &bull; March 02, 2026</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>

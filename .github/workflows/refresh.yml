@@ -1,0 +1,62 @@
+name: Scheduled refresh
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 1 * * *" # runs at 1:00AM UTC (approx 6-7AM IST)
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Download rdigest
+        run: |
+          REPO_OWNER="chandru89new" # Replace with actual owner
+          REPO_NAME="rdigest"   # Replace with actual repo name
+
+          # Fetch the latest release tag
+          LATEST_TAG=$(curl -s https://api.github.com/repos/$REPO_OWNER/$REPO_NAME/releases/latest | jq -r .tag_name)
+
+          # Construct the download URL
+          BINARY_URL="https://github.com/$REPO_OWNER/$REPO_NAME/releases/download/$LATEST_TAG/rdigest_linux_amd64_$LATEST_TAG.tar.gz"
+
+          # Download and make the binary executable
+          curl -L $BINARY_URL --output rdigest.tar.gz
+          tar -xzf rdigest.tar.gz
+          chmod +x ./rdigest
+
+      - name: Refresh feeds
+        run: |
+          export RDIGEST_FOLDER=.
+          ./rdigest refresh
+
+      - name: Notify on TG
+        if: false
+        run: |
+          export RDIGEST_FOLDER=.
+          export TG_TOKEN=${{ secrets.TG_TOKEN }}
+          export TG_CHAN_ID=${{ secrets.TG_CHAN_ID }}
+          ./rdigest notify
+
+      - name: Remove binary
+        run: |
+          rm rdigest
+          rm *.tar.gz
+
+      - name: Configure Git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Commit and Push Changes
+        run: |
+          git add .
+          git commit --amend --no-edit
+          git push --force origin main

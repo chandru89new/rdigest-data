@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-08-06</span>:</h1>
+  <p class="summary">There are 90 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Aeon | a world of ideas (aeon.co)</h2> (1)</summary><ul><a class="li" href="https://aeon.co/videos/whats-an-idea-worth-how-prominent-thinkers-have-understood-intellectual-property?utm_source=rss-feed"><li><div class="title">Should knowledge be free?</div><div class="domain">aeon.co &bull; August 06, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Bear Blog Trending Posts (bearblog.dev)</h2> (5)</summary><ul><a class="li" href="https://jishu.bearblog.dev/taming-the-feed-cutting-back-on-youtube-and-late-night-browsing/"><li><div class="title">Taming the Feed: Cutting Back on YouTube and Late-Night Browsing</div><div class="domain">jishu.bearblog.dev &bull; August 06, 2025</div></li></a><a class="li" href="https://blog.lauramichet.com/blaugust/"><li><div class="title">Blaugust...?</div><div class="domain">blog.lauramichet.com &bull; August 06, 2025</div></li></a><a class="li" href="https://reverie.bearblog.dev/weeds-in-the-garden/"><li><div class="title">weeds in the garden</div><div class="domain">reverie.bearblog.dev &bull; August 06, 2025</div></li></a><a class="li" href="https://skryblans.com/the-horror-of-too-many-readers/"><li><div class="title">the horror of too many readers</div><div class="domain">skryblans.com &bull; August 06, 2025</div></li></a><a class="li" href="https://herman.bearblog.dev/notifications/"><li><div class="title">Digital hygiene: Notifications</div><div class="domain">herman.bearblog.dev &bull; August 06, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Big Think (bigthink.com)</h2> (4)</summary><ul><a class="li" href="https://bigthink.com/starts-with-a-bang/nuclear-reactor-moon-nasa/"><li><div class="title">What a nuclear reactor on the Moon really means for NASA’s future</div><div class="domain">bigthink.com &bull; August 06, 2025</div></li></a><a class="li" href="https://bigthink.com/perception-box/brain-briefs-power-and-influence/"><li><div class="title">How to expand your influence, according to 2 experts</div><div class="domain">bigthink.com &bull; August 06, 2025</div></li></a><a class="li" href="https://bigthink.com/series/the-big-think-interview/jefferson-fisher/"><li><div class="title">The true cost of always needing to win an argument</div><div class="domain">bigthink.com &bull; August 06, 2025</div></li></a><a class="li" href="https://bigthink.com/mini-philosophy/3-ways-to-find-and-invite-more-wonder/"><li><div class="title">3 ways to find and invite more wonder</div><div class="domain">bigthink.com &bull; August 06, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Computer Things (buttondown.com)</h2> (1)</summary><ul><a class="li" href="https://buttondown.com/hillelwayne/archive/software-books-i-wish-i-could-read/"><li><div class="title">Software books I wish I could read</div><div class="domain">buttondown.com &bull; August 06, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">HBR.org (feeds.harvardbusiness.org)</h2> (4)</summary><ul><a class="li" href="https://hbr.org/2025/08/use-ai-to-stress-test-your-supply-chain"><li><div class="title">Use AI to Stress Test Your Supply Chain</div><div class="domain">hbr.org &bull; August 06, 2025</div></li></a><a class="li" href="https://hbr.org/podcast/2025/08/step-up-from-middle-management-to-senior-leadership"><li><div class="title">Step Up from Middle Management to Senior Leadership</div><div class="domain">hbr.org &bull; August 06, 2025</div></li></a><a class="li" href="https://hbr.org/2025/08/identify-your-leadership-blindspots"><li><div class="title">Identify Your Leadership Blindspots</div><div class="domain">hbr.org &bull; August 06, 2025</div></li></a><a class="li" href="https://hbr.org/2025/08/its-time-to-streamline-how-we-communicate-at-work"><li><div class="title">It’s Time to Streamline How We Communicate at Work</div><div class="domain">hbr.org &bull; August 06, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">kottke.org (feeds.kottke.org)</h2> (12)</summary><ul><a class="li" href="https://kottke.org/25/08/0047287-health-secretary-robert-f"><li><div class="title">&#8220;Health Secretary Robert F. Kennedy Jr. has canceled nearly $500 million of...</div><div class="domain">kottke.org &bull; August 06, 2025</div></li></a><a class="li" href="https://kottke.org/25/08/0047282-mrna-vaccines-for-hiv-tri"><li><div class="title">mRNA vaccines for HIV trigger strong immune response in people. &#8220;Two vaccine...</div><div class="domain">kottke.org &bull; August 06, 2025</div></li></a><a class="li" href="https://kottke.org/25/08/0047273-matt-webb-on-copyrighting"><li><div class="title">Matt Webb on copyrighting your faults. &#8220;I think part of growing up...</div><div class="domain">kottke.org &bull; August 06, 2025</div></li></a><a class="li" href="https://kottke.org/25/08/0047275-as-a-clinical-psychologis"><li><div class="title">&#8220;As a clinical psychologist, I was curious: Could ChatGPT function like a...</div><div class="domain">kottke.org &bull; August 06, 2025</div></li></a><a class="li" href="https://kottke.org/25/08/0047279-from-restitution-to-confr"><li><div class="title">From restitution to confronting authoritarian regimes, here are five ways museums can...</div><div class="domain">kottke.org &bull; August 06, 2025</div></li></a><a class="li" href="https://kottke.org/25/08/0047285-the-case-for-memes-as"><li><div class="title">The case for memes as a new form of comics. &#8220;Memes —...</div><div class="domain">kottke.org &bull; August 06, 2025</div></li></a><a class="li" href="https://kottke.org/25/08/0047286-i-analyzed-more-than-100"><li><div class="title">I analyzed more than 100 extremist manifestos: Misogyny was the common thread....</div><div class="domain">kottke.org &bull; August 06, 2025</div></li></a><a class="li" href="https://kottke.org/25/08/0047288-at-a-wisconsin-pond-a"><li><div class="title">&#8220;At a Wisconsin pond, a pair of cranes is raising an abandoned...</div><div class="domain">kottke.org &bull; August 06, 2025</div></li></a><a class="li" href="https://kottke.org/25/08/classical-statues-dressed-up-as-hipsters-1"><li><div class="title">Classical Statues Dressed Up As Hipsters</div><div class="domain">kottke.org &bull; August 06, 2025</div></li></a><a class="li" href="https://kottke.org/25/08/0047291-the-official-online-copy-"><li><div class="title">The official online copy of the US Constitution is missing some critical...</div><div class="domain">kottke.org &bull; August 06, 2025</div></li></a><a class="li" href="https://kottke.org/25/08/0047290-watchdog-group-downgrades"><li><div class="title">Watchdog Group Downgrades U.S. From Democracy To Whatever Political System Lobsters Have....</div><div class="domain">kottke.org &bull; August 06, 2025</div></li></a><a class="li" href="https://kottke.org/25/08/jamelle-bouie-on-the-death-of-the-fourth-american-republic"><li><div class="title">Jamelle Bouie on the Death of the Fourth American Republic</div><div class="domain">kottke.org &bull; August 06, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Go Make Things (gomakethings.com)</h2> (1)</summary><ul><a class="li" href="https://gomakethings.com/sweating-the-details/"><li><div class="title">Sweating the details</div><div class="domain">gomakethings.com &bull; August 06, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (5)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/GxhtzqMwdTHo6326y/statistical-suggestions-for-mech-interp-research-and-beyond"><li><div class="title">Statistical suggestions for mech interp research and beyond</div><div class="domain">lesswrong.com &bull; August 06, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/ohznigkLX5CNwaLSz/inscrutability-was-always-inevitable-right"><li><div class="title">Inscrutability was always inevitable, right?</div><div class="domain">lesswrong.com &bull; August 06, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/oDX5vcDTEei8WuoBx/re-recent-anthropic-safety-research"><li><div class="title">Re: recent Anthropic safety research</div><div class="domain">lesswrong.com &bull; August 06, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/WzN3PFpyBaMeXqeRz/childhood-and-education-13-college"><li><div class="title">Childhood and Education #13: College</div><div class="domain">lesswrong.com &bull; August 06, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/grgb2ipxQf2wzNDEG/the-perils-of-under-vs-over-sculpting-agi-desires"><li><div class="title">The perils of under- vs over-sculpting AGI desires</div><div class="domain">lesswrong.com &bull; August 06, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (7)</summary><ul><a class="li" href="https://dev.to/yawaramin/why-hx-boost-is-actually-the-most-important-feature-of-htmx-3nc0"><li><div class="title">Why hx-boost is actually the most important feature of htmx</div><div class="domain">dev.to &bull; August 06, 2025</div></li></a><a class="li" href="https://danielchasehooper.com/posts/segment_array/"><li><div class="title">A Fast, Growable Array With Stable Pointers in C</div><div class="domain">danielchasehooper.com &bull; August 06, 2025</div></li></a><a class="li" href="https://tonsky.me/blog/lockfiles/"><li><div class="title">We shouldn’t have needed lockfiles</div><div class="domain">tonsky.me &bull; August 06, 2025</div></li></a><a class="li" href="https://www.arscyni.cc/file/codeberg.html"><li><div class="title">The how and why of GitHub to Codeberg</div><div class="domain">arscyni.cc &bull; August 06, 2025</div></li></a><a class="li" href="https://www.b-list.org/weblog/2025/aug/06/litestar/"><li><div class="title">Litestar is worth a look</div><div class="domain">b-list.org &bull; August 06, 2025</div></li></a><a class="li" href="https://github.com/jart/cosmopolitan"><li><div class="title">cosmopolitan: build-once run-anywhere c library</div><div class="domain">github.com &bull; August 06, 2025</div></li></a><a class="li" href="https://mattjhall.co.uk/posts/be-careful-with-go-struct-embedding.html"><li><div class="title">Be Careful with Go Struct Embedding</div><div class="domain">mattjhall.co.uk &bull; August 06, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Longreads (longreads.com)</h2> (4)</summary><ul><a class="li" href="https://longreads.com/2025/08/06/viral-trickshot-video-stars/"><li><div class="title">The Agony and Ecstasy of being a Viral Trickshot Video Star</div><div class="domain">longreads.com &bull; August 06, 2025</div></li></a><a class="li" href="https://longreads.com/2025/08/06/public-pools-segregation/"><li><div class="title">No Entry</div><div class="domain">longreads.com &bull; August 06, 2025</div></li></a><a class="li" href="https://longreads.com/2025/08/06/can-this-sherpa-change-mountain-climbing-forever/"><li><div class="title">Can this Sherpa Change Mountain Climbing Forever?</div><div class="domain">longreads.com &bull; August 06, 2025</div></li></a><a class="li" href="https://longreads.com/2025/08/06/all-hail-the-mighty-snail/"><li><div class="title">All Hail the Mighty Snail</div><div class="domain">longreads.com &bull; August 06, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Nautilus (nautil.us)</h2> (3)</summary><ul><a class="li" href="https://nautil.us/the-magic-of-herding-1229248/"><li><div class="title">The Magic of Herding</div><div class="domain">nautil.us &bull; August 06, 2025</div></li></a><a class="li" href="https://nautil.us/how-to-count-butterflies-1229300/"><li><div class="title">How to Count Butterflies</div><div class="domain">nautil.us &bull; August 06, 2025</div></li></a><a class="li" href="https://nautil.us/what-a-massive-butterfly-count-reveals-1229295/"><li><div class="title">What a Massive Butterfly Count Reveals</div><div class="domain">nautil.us &bull; August 06, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (15)</summary><ul><a class="li" href="https://www.sweet.security/blog/ecscape-understanding-iam-privilege-boundaries-in-amazon-ecs"><li><div class="title">ECScape: Understanding IAM Privilege Boundaries in Amazon ECS</div><div class="domain">sweet.security &bull; August 06, 2025</div></li></a><a class="li" href="https://www.theplan.it/eng/award-2018-Culture/suzhou-imperial-kiln-ruins-park-museum-of-imperial-kiln-brick-1"><li><div class="title">Suzhou Imperial Kiln Ruins Park and Museum of Imperial Kiln Brick (2018)</div><div class="domain">theplan.it &bull; August 06, 2025</div></li></a><a class="li" href="https://projectf.io/isle/fpga-computer.html"><li><div class="title">Isle FPGA Computer: creating a simple, open, modern computer</div><div class="domain">projectf.io &bull; August 06, 2025</div></li></a><a class="li" href="https://primal.net/saunter/testing-bitchat-at-the-music-festival"><li><div class="title">Testing Bitchat at the music festival</div><div class="domain">primal.net &bull; August 06, 2025</div></li></a><a class="li" href="https://philipotoole.com/consistency-over-availability-how-rqlite-handles-the-cap-theorem/"><li><div class="title">Consistency over Availability: How rqlite Handles the CAP theorem</div><div class="domain">philipotoole.com &bull; August 06, 2025</div></li></a><a class="li" href="https://chameth.com/how-i-use-tailscale/"><li><div class="title">How I use Tailscale</div><div class="domain">chameth.com &bull; August 06, 2025</div></li></a><a class="li" href="https://nicholas.carlini.com/writing/2021/unlimited-register-machine-game-of-life.html"><li><div class="title">A Simple CPU on the Game of Life (2021)</div><div class="domain">nicholas.carlini.com &bull; August 06, 2025</div></li></a><a class="li" href="https://krebsonsecurity.com/2025/08/who-got-arrested-in-the-raid-on-the-xss-crime-forum/"><li><div class="title">Who got arrested in the raid on the XSS crime forum?</div><div class="domain">krebsonsecurity.com &bull; August 06, 2025</div></li></a><a class="li" href="https://www.zachdaniel.dev/p/elixir-misconceptions-1"><li><div class="title">Don't “let it crash”, let it heal</div><div class="domain">zachdaniel.dev &bull; August 06, 2025</div></li></a><a class="li" href="https://arun.is/blog/diy-modular-charging-station/"><li><div class="title">My DIY modular charging station</div><div class="domain">arun.is &bull; August 06, 2025</div></li></a><a class="li" href="https://wiki.why2025.org/Badge/Fire_hazard"><li><div class="title">Fire hazard of WHY2025 badge due to 18650 Li-Ion cells</div><div class="domain">wiki.why2025.org &bull; August 06, 2025</div></li></a><a class="li" href="https://github.com/manzaltu/claude-code-ide.el"><li><div class="title">Claude Code IDE integration for Emacs</div><div class="domain">github.com &bull; August 06, 2025</div></li></a><a class="li" href="https://www.bbc.com/news/live/cdjxp4n2371t"><li><div class="title">Science Titan sub firm used intimidation tactics and flawed safety practices</div><div class="domain">bbc.com &bull; August 06, 2025</div></li></a><a class="li" href="https://www.sfgate.com/tech/article/meta-eavesdropped-period-tracker-app-20803399.php"><li><div class="title">Meta eavesdropped on period-tracker app's users, SF jury rules</div><div class="domain">sfgate.com &bull; August 06, 2025</div></li></a><a class="li" href="https://algogist.com/kitten-tts-the-25mb-ai-voice-model-thats-about-to-change-everything-runs-on-a-potato/"><li><div class="title">Kitten TTS: 25MB CPU-Only, Open-Source Voice Model</div><div class="domain">algogist.com &bull; August 06, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Psyche | on the human condition (psyche.co)</h2> (2)</summary><ul><a class="li" href="https://psyche.co/notes-to-self/why-breaking-a-stressful-situation-into-parts-might-help?utm_source=rss-feed"><li><div class="title">Seeing all the parts of a tough situation</div><div class="domain">psyche.co &bull; August 06, 2025</div></li></a><a class="li" href="https://psyche.co/videos/in-an-elegy-for-his-childhood-home-a-filmmaker-constructs-a-lyrical-collage-of-memory?utm_source=rss-feed"><li><div class="title">A cream and two plains</div><div class="domain">psyche.co &bull; August 06, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Quanta Magazine (quantamagazine.org)</h2> (1)</summary><ul><a class="li" href="https://www.quantamagazine.org/new-method-is-the-fastest-way-to-find-the-best-routes-20250806/"><li><div class="title">New Method Is the Fastest Way To Find the Best Routes</div><div class="domain">quantamagazine.org &bull; August 06, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Reasons to be Cheerful (reasonstobecheerful.world)</h2> (1)</summary><ul><a class="li" href="https://reasonstobecheerful.world/what-were-reading-copenhagen-sponge-city/"><li><div class="title">What We’re Reading: Copenhagen Is Becoming a ‘Sponge City’</div><div class="domain">reasonstobecheerful.world &bull; August 06, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Seth's Blog (seths.blog)</h2> (1)</summary><ul><a class="li" href="https://seths.blog/2025/08/the-table-of-contents-and-the-index/"><li><div class="title">The table of contents (and the index)</div><div class="domain">seths.blog &bull; August 06, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Diplomat (thediplomat.com)</h2> (16)</summary><ul><a class="li" href="https://thediplomat.com/2025/08/philippines-and-india-announce-establishment-of-strategic-partnership/"><li><div class="title">Philippines and India Announce Establishment of Strategic Partnership</div><div class="domain">thediplomat.com &bull; August 06, 2025</div></li></a><a class="li" href="https://thediplomat.com/2025/08/chinas-diplomatic-campaign-following-trumps-tariffs/"><li><div class="title">China’s Diplomatic Campaign Following Trump’s Tariffs</div><div class="domain">thediplomat.com &bull; August 06, 2025</div></li></a><a class="li" href="https://thediplomat.com/2025/08/why-cambodia-is-losing-the-information-war-with-thailand/"><li><div class="title">Why Cambodia Is Losing the Information War With Thailand</div><div class="domain">thediplomat.com &bull; August 06, 2025</div></li></a><a class="li" href="https://thediplomat.com/2025/08/indias-russian-oil-dilemma/"><li><div class="title">India’s Russian Oil Dilemma</div><div class="domain">thediplomat.com &bull; August 06, 2025</div></li></a><a class="li" href="https://thediplomat.com/2025/08/philippine-house-seeks-reversal-of-supreme-court-ruling-on-vps-impeachment/"><li><div class="title">Philippine House Seeks Reversal of Supreme Court Ruling on VP’s Impeachment</div><div class="domain">thediplomat.com &bull; August 06, 2025</div></li></a><a class="li" href="https://thediplomat.com/2025/08/the-landlocked-gather-in-turkmenistan-to-confront-an-age-old-conundrum/"><li><div class="title">The Landlocked Gather in Turkmenistan to Confront an Age-old Conundrum</div><div class="domain">thediplomat.com &bull; August 06, 2025</div></li></a><a class="li" href="https://thediplomat.com/2025/08/how-prabowo-is-rewriting-indonesias-diplomatic-playbook/"><li><div class="title">How Prabowo is Rewriting Indonesia’s Diplomatic Playbook</div><div class="domain">thediplomat.com &bull; August 06, 2025</div></li></a><a class="li" href="https://thediplomat.com/2025/08/iranian-presidents-visit-to-pakistan-signals-islamabads-growing-role-in-global-politics/"><li><div class="title">Iranian President’s Visit to Pakistan Signals Islamabad’s Growing Role in Global Politics</div><div class="domain">thediplomat.com &bull; August 06, 2025</div></li></a><a class="li" href="https://thediplomat.com/2025/08/the-strategic-ripples-of-chinas-mega-dam-for-bangladesh/"><li><div class="title">The Strategic Ripples of China’s Mega-Dam for Bangladesh</div><div class="domain">thediplomat.com &bull; August 06, 2025</div></li></a><a class="li" href="https://thediplomat.com/2025/08/as-trump-lifts-sanctions-on-myanmar-elites-is-the-us-eyeing-rare-earth-reserves/"><li><div class="title">As Trump Lifts Sanctions on Myanmar Elites, Is the US Eyeing Rare Earth Reserves?</div><div class="domain">thediplomat.com &bull; August 06, 2025</div></li></a><a class="li" href="https://thediplomat.com/2025/08/how-trumps-tariffs-upended-byds-mexico-ev-gambit/"><li><div class="title">How Trump’s Tariffs Upended BYD’s Mexico EV Gambit</div><div class="domain">thediplomat.com &bull; August 06, 2025</div></li></a><a class="li" href="https://thediplomat.com/2025/08/serbia-and-china-boost-security-ties-with-special-forces-exercise/"><li><div class="title">Serbia and China Boost Security Ties With Special Forces Exercise</div><div class="domain">thediplomat.com &bull; August 06, 2025</div></li></a><a class="li" href="https://thediplomat.com/2025/08/can-the-sco-survive-its-own-conflicts/"><li><div class="title">Can the SCO Survive Its Own Conflicts?</div><div class="domain">thediplomat.com &bull; August 06, 2025</div></li></a><a class="li" href="https://thediplomat.com/2025/08/the-three-pats-xi-jinpings-enduring-governance-dilemma/"><li><div class="title">The ‘Three Pats’: Xi Jinping’s Enduring Governance Dilemma</div><div class="domain">thediplomat.com &bull; August 06, 2025</div></li></a><a class="li" href="https://thediplomat.com/2025/08/pakistans-mass-deportations-of-afghan-refugees-a-humanitarian-emergency-in-the-making/"><li><div class="title">Pakistan’s Mass Deportations of Afghan Refugees: A Humanitarian Emergency in the Making</div><div class="domain">thediplomat.com &bull; August 06, 2025</div></li></a><a class="li" href="https://thediplomat.com/2025/08/indias-strategic-bet-on-battery-security-can-it-turn-black-mass-into-white-gold/"><li><div class="title">India’s Strategic Bet on Battery Security: Can It Turn ‘Black Mass’ into ‘White Gold’?</div><div class="domain">thediplomat.com &bull; August 06, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (3)</summary><ul><a class="li" href="https://yourstory.com/2025/08/agentic-ai-startups-pique-vc-interest-zelo-electric"><li><div class="title">Agentic AI startups pique VC interest; Affordable EVs for small-town India</div><div class="domain">yourstory.com &bull; August 06, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/08/real-time-fraud-detection-startup-drona-pay-safe-digital-banking"><li><div class="title">Real-time fraud detection: How Drona Pay keeps digital banking safe</div><div class="domain">yourstory.com &bull; August 06, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/08/deepfakes-fake-news-cyber-threats-you-cant-see-coming"><li><div class="title">Deepfakes and fake news: The new cyber threats you can’t see coming</div><div class="domain">yourstory.com &bull; August 06, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">SchaeferArt (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/7pVvOGsmlTU"><li><div class="title">Trust the Process, Not Your..</div><div class="domain">youtube.com &bull; August 06, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Physics Girl (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/CAsSpcitNF4"><li><div class="title">Why does this ice NOT float or sink?</div><div class="domain">youtube.com &bull; August 06, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">PBS Origins (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/cl2YyNieEsY"><li><div class="title">Did a personal grudge almost end The American Revolution?</div><div class="domain">youtube.com &bull; August 06, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Mohak Mangal (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=vbr0bAuwAB0"><li><div class="title">Why Singapore Is 30 Years Ahead of India</div><div class="domain">youtube.com &bull; August 06, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>

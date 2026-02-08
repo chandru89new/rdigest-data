@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-08-03</span>:</h1>
+  <p class="summary">There are 59 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Bear Blog Trending Posts (bearblog.dev)</h2> (4)</summary><ul><a class="li" href="https://joshs.bearblog.dev/ai-ethics/"><li><div class="title">Ethical AI is harder than you think</div><div class="domain">joshs.bearblog.dev &bull; August 03, 2025</div></li></a><a class="li" href="https://blog.avas.space/false-expectations/"><li><div class="title">false expectations</div><div class="domain">blog.avas.space &bull; August 03, 2025</div></li></a><a class="li" href="https://prickly.oxhe.art/nothingness/"><li><div class="title">Do Nothing</div><div class="domain">prickly.oxhe.art &bull; August 03, 2025</div></li></a><a class="li" href="https://jeddacp.me/zoelarkin/"><li><div class="title">Our San Francisco Wedding Photographer</div><div class="domain">jeddacp.me &bull; August 03, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Two-Wrongs (entropicthoughts.com)</h2> (1)</summary><ul><a class="li" href="https://entropicthoughts.com/getting-an-llm-to-play-text-adventures"><li><div class="title">Getting an LLM to Play Text Adventures</div><div class="domain">entropicthoughts.com &bull; August 03, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Go Make Things (gomakethings.com)</h2> (1)</summary><ul><a class="li" href="https://gomakethings.com/mundango/"><li><div class="title">Mundango</div><div class="domain">gomakethings.com &bull; August 03, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (1)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/PkRXkhsEHwcGqRJ9Z/emotions-make-sense"><li><div class="title">Emotions Make Sense</div><div class="domain">lesswrong.com &bull; August 03, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (15)</summary><ul><a class="li" href="https://www.assemblyscript.org/"><li><div class="title">AssemblyScript</div><div class="domain">assemblyscript.org &bull; August 03, 2025</div></li></a><a class="li" href="https://www.parsonsmatt.org/2017/10/11/type_safety_back_and_forth.html"><li><div class="title">Type Safety Back and Forth</div><div class="domain">parsonsmatt.org &bull; August 03, 2025</div></li></a><a class="li" href="https://www.ioccc.org/2024/index.html"><li><div class="title">Twenty Eighth International Obfuscated C Code Contest</div><div class="domain">ioccc.org &bull; August 03, 2025</div></li></a><a class="li" href="https://www.aparker.io/post/3lvjepuyf4q2w"><li><div class="title">The Future Of Software Is Small</div><div class="domain">aparker.io &bull; August 03, 2025</div></li></a><a class="li" href="https://www.bassi.io"><li><div class="title">Governance in GNOME</div><div class="domain">bassi.io &bull; August 03, 2025</div></li></a><a class="li" href="https://blog.fabiomanganiello.com/article/render-your-jupyter-notebooks-in-opengist"><li><div class="title">Render your Jupyter notebooks in OpenGist</div><div class="domain">blog.fabiomanganiello.com &bull; August 03, 2025</div></li></a><a class="li" href="https://octet-stream.net/b/scb/2025-08-03-injecting-java-from-native-libraries-on-android.html"><li><div class="title">Injecting Java from native libraries on Android</div><div class="domain">octet-stream.net &bull; August 03, 2025</div></li></a><a class="li" href="https://kubyshkin.name/posts/c-language-enums-tips-and-tricks/"><li><div class="title">C Language Enum Tips & Tricks (2021)</div><div class="domain">kubyshkin.name &bull; August 03, 2025</div></li></a><a class="li" href="https://ciesie.com/post/tagged_unions/"><li><div class="title">Tagged Unions are actually quite sexy</div><div class="domain">ciesie.com &bull; August 03, 2025</div></li></a><a class="li" href="http://oldvcr.blogspot.com/2025/08/a-real-powerbook-macintosh-application.html"><li><div class="title">A real PowerBook: the Macintosh Application Environment on a PA-RISC laptop</div><div class="domain">oldvcr.blogspot.com &bull; August 03, 2025</div></li></a><a class="li" href="https://andreas-kupries.github.io/critcl/"><li><div class="title">CriTcl: easily embed C code in Tcl</div><div class="domain">andreas-kupries.github.io &bull; August 03, 2025</div></li></a><a class="li" href="https://www.jonoalderson.com/conjecture/why-semantic-html-still-matters/"><li><div class="title">Why Semantic HTML Still Matters</div><div class="domain">jonoalderson.com &bull; August 03, 2025</div></li></a><a class="li" href="https://utcc.utoronto.ca/~cks/space/blog/sysadmin/LoginServersStillUsed"><li><div class="title">People still use our old-fashioned Unix login servers</div><div class="domain">utcc.utoronto.ca &bull; August 03, 2025</div></li></a><a class="li" href="https://lexi-lambda.github.io/blog/2019/11/05/parse-don-t-validate/"><li><div class="title">Parse, don’t validate (2019)</div><div class="domain">lexi-lambda.github.io &bull; August 03, 2025</div></li></a><a class="li" href="https://shime.sh/five-ideas"><li><div class="title">I’ve just deleted five of my ideas</div><div class="domain">shime.sh &bull; August 03, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Letters of Note (news.lettersofnote.com)</h2> (1)</summary><ul><a class="li" href="https://news.lettersofnote.com/p/you-go-to-hell-you"><li><div class="title">You go to hell, you</div><div class="domain">news.lettersofnote.com &bull; August 03, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (19)</summary><ul><a class="li" href="https://publicdomainreview.org/collection/manifesto-antropofago/"><li><div class="title">Cannibal Modernity: Oswald de Andrade's Manifesto Antropófago (1928)</div><div class="domain">publicdomainreview.org &bull; August 03, 2025</div></li></a><a class="li" href="https://leftarcode.com/posts/afd-reverse-engineering-part1/"><li><div class="title">Under the Hood of AFD.sys Part 1: Investigating Undocumented Interfaces</div><div class="domain">leftarcode.com &bull; August 03, 2025</div></li></a><a class="li" href="https://www.reuters.com/world/un-report-finds-united-nations-reports-are-not-widely-read-2025-08-01/"><li><div class="title">UN report finds UN reports are not widely read</div><div class="domain">reuters.com &bull; August 03, 2025</div></li></a><a class="li" href="https://fab.cba.mit.edu/classes/863.19/CBA/people/dsculley/index.html"><li><div class="title">How to make almost anything (2019)</div><div class="domain">fab.cba.mit.edu &bull; August 03, 2025</div></li></a><a class="li" href="https://howtogrowalmostanything.notion.site/htgaa25"><li><div class="title">How to grow almost anything</div><div class="domain">howtogrowalmostanything.notion.site &bull; August 03, 2025</div></li></a><a class="li" href="https://ethanding.substack.com/p/ai-subscriptions-get-short-squeezed"><li><div class="title">Tokens are getting more expensive</div><div class="domain">ethanding.substack.com &bull; August 03, 2025</div></li></a><a class="li" href="https://archive.irixnet.org/thisoldsgi/"><li><div class="title">This Old SGI: notes and memoirs on the Silicon Graphics 4D series (1996)</div><div class="domain">archive.irixnet.org &bull; August 03, 2025</div></li></a><a class="li" href="https://news.asu.edu/20250725-environment-and-sustainability-new-global-study-shows-freshwater-disappearing-alarming"><li><div class="title">Shrinking freshwater availability increasing land contribution to sea level rise</div><div class="domain">news.asu.edu &bull; August 03, 2025</div></li></a><a class="li" href="https://www.economist.com/graphic-detail/2022/09/29/a-study-of-lights-at-night-suggests-dictators-lie-about-economic-growth"><li><div class="title">A study of lights at night suggests dictators lie about economic growth (2022)</div><div class="domain">economist.com &bull; August 03, 2025</div></li></a><a class="li" href="https://deluisio.com/networking/unifi/2025/08/03/everything-you-need-to-know-about-unifi-os-server-before-you-waste-time-testing-it/"><li><div class="title">"If you can rack it, you can run UniFi OS" Ubiquiti self-hosted UniFi OS release</div><div class="domain">deluisio.com &bull; August 03, 2025</div></li></a><a class="li" href="https://www.science.org/content/article/human-speech-may-have-universal-transmission-rate-39-bits-second"><li><div class="title">Human speech may have a universal transmission rate (2019)</div><div class="domain">science.org &bull; August 03, 2025</div></li></a><a class="li" href="https://worrydream.com/LearnableProgramming/"><li><div class="title">Learnable Programming (2012)</div><div class="domain">worrydream.com &bull; August 03, 2025</div></li></a><a class="li" href="https://lexi-lambda.github.io/blog/2020/11/01/names-are-not-type-safety/"><li><div class="title">Names are not type safety (2020)</div><div class="domain">lexi-lambda.github.io &bull; August 03, 2025</div></li></a><a class="li" href="https://solmaz.io/typed-languages-are-better-suited-for-vibecoding"><li><div class="title">Typed languages are better suited for vibecoding</div><div class="domain">solmaz.io &bull; August 03, 2025</div></li></a><a class="li" href="https://www.anthropic.com/research/persona-vectors"><li><div class="title">Persona vectors: Monitoring and controlling character traits in language models</div><div class="domain">anthropic.com &bull; August 03, 2025</div></li></a><a class="li" href="https://grantslatton.com/how-to-design-document"><li><div class="title">Writing a good design document</div><div class="domain">grantslatton.com &bull; August 03, 2025</div></li></a><a class="li" href="https://kashw1n.com/blog/nodejs-2025/"><li><div class="title">Modern Node.js Patterns</div><div class="domain">kashw1n.com &bull; August 03, 2025</div></li></a><a class="li" href="https://github.com/schuyler4/voltpeek"><li><div class="title">Show HN: Voltpeek – Vim-inspired oscilloscope software</div><div class="domain">github.com &bull; August 03, 2025</div></li></a><a class="li" href="https://www.reachablecode.com/2025/07/31/c26-reflections-adventures-compile-time-uml/"><li><div class="title">C++26 Reflections adventures and compile-time UML</div><div class="domain">reachablecode.com &bull; August 03, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Seth's Blog (seths.blog)</h2> (1)</summary><ul><a class="li" href="https://seths.blog/2025/08/movies-books-and-paintings/"><li><div class="title">Movies, books and paintings</div><div class="domain">seths.blog &bull; August 03, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Diplomat (thediplomat.com)</h2> (6)</summary><ul><a class="li" href="https://thediplomat.com/2025/08/as-the-us-rethinks-aukus-australia-and-the-uk-forge-ahead/"><li><div class="title">As the US Rethinks AUKUS, Australia and the UK Forge Ahead</div><div class="domain">thediplomat.com &bull; August 03, 2025</div></li></a><a class="li" href="https://thediplomat.com/2025/08/systemic-suppression-the-ccps-silent-elimination-of-alternative-confucianism/"><li><div class="title">Systemic Suppression: The CCP’s Silent Elimination of Alternative Confucianism</div><div class="domain">thediplomat.com &bull; August 03, 2025</div></li></a><a class="li" href="https://thediplomat.com/2025/08/the-age-of-economic-warfare-comes-for-the-energy-transition/"><li><div class="title">The ‘Age of Economic Warfare’ Comes for the Energy Transition</div><div class="domain">thediplomat.com &bull; August 03, 2025</div></li></a><a class="li" href="https://thediplomat.com/2025/08/the-changing-skies-over-central-asia/"><li><div class="title">The Changing Skies Over Central Asia</div><div class="domain">thediplomat.com &bull; August 03, 2025</div></li></a><a class="li" href="https://thediplomat.com/2025/08/australias-intelligence-agency-foreign-spying-at-unprecedented-levels/"><li><div class="title">Australia’s Intelligence Agency: Foreign Spying at Unprecedented Levels</div><div class="domain">thediplomat.com &bull; August 03, 2025</div></li></a><a class="li" href="https://thediplomat.com/2025/08/taiwans-civil-society-is-not-ready-for-war/"><li><div class="title">Taiwan’s Civil Society Is Not Ready for War</div><div class="domain">thediplomat.com &bull; August 03, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (4)</summary><ul><a class="li" href="https://yourstory.com/2025/08/cci-orders-probe-google-adtech-dominance-charges-adif"><li><div class="title">CCI orders probe against Google over adtech dominance charges alleged by ADIF</div><div class="domain">yourstory.com &bull; August 03, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/08/ai-platforms-energy-business-creativity-innovation-entrepreneur-education-quiz"><li><div class="title">AI, platforms, energy: Test your business creativity with Edition 199 of our weekly quiz!</div><div class="domain">yourstory.com &bull; August 03, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/08/ai-disruptions-reskilling-jobs-karnataka-it-minister"><li><div class="title">AI disruptions will be brief as reskilling drives new jobs: Karnataka IT Minister</div><div class="domain">yourstory.com &bull; August 03, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/08/fijis-bold-culinary-landscape-swiping-left-dating-burnout"><li><div class="title">Fiji’s bold culinary landscape; Swiping left on dating burnout</div><div class="domain">yourstory.com &bull; August 03, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Thought Emporium (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/9Om2X6QcTgw"><li><div class="title">This machine took control of my brain... and eyeballs</div><div class="domain">youtube.com &bull; August 03, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Socrates Studio (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=GCwMvwVspXQ"><li><div class="title">Ramana Maharishi ll Killing the Mind ll இரமண மகரிஷி l மனதைக் கொல்லுவது எப்படி?ll பேரா.இரா.முரளி</div><div class="domain">youtube.com &bull; August 03, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lucaas (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=EZV9h1zN6Qc"><li><div class="title">Plane Engine Fails Over Crowded Beach</div><div class="domain">youtube.com &bull; August 03, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Laasya (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=aG6NqsNfMQA"><li><div class="title">Bharat ki Beti | Patriotic dance cover | independence day special | Nivi and Ishanvi | Laasya</div><div class="domain">youtube.com &bull; August 03, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">John Bartholomew (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=lU4HwQ26R4A"><li><div class="title">LoneWolf League: GAME 10</div><div class="domain">youtube.com &bull; August 03, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">GreatScott! (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/X7zKNS5fQPM"><li><div class="title">This Microcontroller is Every Developer's Dream! #aliexpress #gadget #review #arduino #esp32</div><div class="domain">youtube.com &bull; August 03, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>

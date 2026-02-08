@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-04-20</span>:</h1>
+  <p class="summary">There are 75 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Bear Blog Trending Posts (bearblog.dev)</h2> (5)</summary><ul><a class="li" href="https://megancarnes.blog/heres-what-i-mean-when-i-say-im-a-romantic-at-heart/"><li><div class="title">Here’s what I mean when I say I’m a romantic at heart</div><div class="domain">megancarnes.blog &bull; April 20, 2025</div></li></a><a class="li" href="https://monocyte.bearblog.dev/leaving-social-media-and-its-effects/"><li><div class="title">leaving social media and it's effects</div><div class="domain">monocyte.bearblog.dev &bull; April 20, 2025</div></li></a><a class="li" href="https://magmacranes.bearblog.dev/heres-what-i-mean-when-i-say-im-a-romantic-at-heart/"><li><div class="title">Here’s what I mean when I say I’m a romantic at heart</div><div class="domain">magmacranes.bearblog.dev &bull; April 20, 2025</div></li></a><a class="li" href="https://digitallynick.bearblog.dev/weaponising-silence/"><li><div class="title">Weaponising Silence</div><div class="domain">digitallynick.bearblog.dev &bull; April 20, 2025</div></li></a><a class="li" href="https://dioscuria.com/okolo-poludnya/"><li><div class="title">OKOLO POLUDNYA!!!!</div><div class="domain">dioscuria.com &bull; April 20, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Commoncog (commoncog.com)</h2> (1)</summary><ul><a class="li" href="https://commoncog.com/vanguard-as-a-demand-side-mystery/"><li><div class="title">Vanguard as a Demand-Side Mystery</div><div class="domain">commoncog.com &bull; April 20, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Marginalian (feeds.feedburner.com)</h2> (1)</summary><ul><a class="li" href="https://www.themarginalian.org/2025/04/20/kiln-quantum/"><li><div class="title">The Kiln and the Quantum of Relationships</div><div class="domain">themarginalian.org &bull; April 20, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (3)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/FX978FWaNQXeyat9S/how-close-we-are-to-a-complete-list-of-imprinted-genes"><li><div class="title">How Close We Are to a Complete List of Imprinted Genes</div><div class="domain">lesswrong.com &bull; April 20, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/DiJT4qJivkjrGPFi8/impact-agency-and-taste"><li><div class="title">Impact, agency, and taste</div><div class="domain">lesswrong.com &bull; April 20, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/7mqp8uRnnPdbBzJZE/is-gemini-now-better-than-claude-at-pokemon"><li><div class="title">Is Gemini now better than Claude at Pokémon?</div><div class="domain">lesswrong.com &bull; April 20, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Irrational Exuberance (lethain.com)</h2> (1)</summary><ul><a class="li" href="https://lethain.com/staffeng-site-refresh/"><li><div class="title">Refreshed StaffEng.com and a few other sites</div><div class="domain">lethain.com &bull; April 20, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (19)</summary><ul><a class="li" href="https://github.com/EvanZhouDev/llm.pdf"><li><div class="title">llm.pdf: Run LLMs inside a PDF file</div><div class="domain">github.com &bull; April 20, 2025</div></li></a><a class="li" href="https://github.com/thiagokokada/gh-gfm-preview"><li><div class="title">gh-gfm-preview: A standalone/GitHub CLI extension to preview GitHub Flavored Markdown, even offline</div><div class="domain">github.com &bull; April 20, 2025</div></li></a><a class="li" href="https://git.gammaspectra.live/WeebDataHoarder/go-assembler-gen"><li><div class="title">Go assembler generator</div><div class="domain">git.gammaspectra.live &bull; April 20, 2025</div></li></a><a class="li" href="http://mikehadlow.blogspot.com/2012/05/configuration-complexity-clock.html"><li><div class="title">The Configuration Complexity Clock (2012)</div><div class="domain">mikehadlow.blogspot.com &bull; April 20, 2025</div></li></a><a class="li" href="https://docs.google.com/document/d/1W83ME5JecI2hd5hAUqQ1BVF32wtCel8zxb7WPq-D4f8/edit?tab=t.0#heading=h.moseg6gryxz1"><li><div class="title">Notes on B (K) Implementation</div><div class="domain">docs.google.com &bull; April 20, 2025</div></li></a><a class="li" href="https://github.com/google/cel-spec"><li><div class="title">Common Expression Language</div><div class="domain">github.com &bull; April 20, 2025</div></li></a><a class="li" href="https://notes.eatonphil.com/2025-04-20-transactions-are-a-protocol.html"><li><div class="title">Transactions are a protocol</div><div class="domain">notes.eatonphil.com &bull; April 20, 2025</div></li></a><a class="li" href="https://meowbark.dev/Better-error-handling"><li><div class="title">Better error handling</div><div class="domain">meowbark.dev &bull; April 20, 2025</div></li></a><a class="li" href="https://blog.broulik.de/2025/04/be-free-to-have-multiple-clocks/"><li><div class="title">Be Free to Have Multiple Clocks</div><div class="domain">blog.broulik.de &bull; April 20, 2025</div></li></a><a class="li" href="http://oldvcr.blogspot.com/2025/04/lets-give-provenix-barely-adequate-pre.html"><li><div class="title">Let's give PRO/VENIX a barely adequate, pre-C89 TCP/IP stack (featuring Slirp-CK)</div><div class="domain">oldvcr.blogspot.com &bull; April 20, 2025</div></li></a><a class="li" href="https://jerf.org/iri/post/2025/go_layered_design/"><li><div class="title">Layered Design in Go</div><div class="domain">jerf.org &bull; April 20, 2025</div></li></a><a class="li" href="https://www.cs.utexas.edu/~EWD/transcriptions/EWD10xx/EWD1036.html"><li><div class="title">On the cruelty of really teaching computing science (1988)</div><div class="domain">cs.utexas.edu &bull; April 20, 2025</div></li></a><a class="li" href="https://tikzjax.com/"><li><div class="title">Embedding TikZ diagrams in HTML Documents</div><div class="domain">tikzjax.com &bull; April 20, 2025</div></li></a><a class="li" href="https://beej.us/guide/bggit/html/split/"><li><div class="title">Beej's Guide to Git</div><div class="domain">beej.us &bull; April 20, 2025</div></li></a><a class="li" href="https://andrejradovic.com/blog/ansible/"><li><div class="title">Ansible: pure (only in its) pragmatism</div><div class="domain">andrejradovic.com &bull; April 20, 2025</div></li></a><a class="li" href="http://muratbuffalo.blogspot.com/2025/04/what-id-do-as-college-freshman.html"><li><div class="title">What I'd do as a College Freshman in 2025</div><div class="domain">muratbuffalo.blogspot.com &bull; April 20, 2025</div></li></a><a class="li" href="https://firefly-iii.org/"><li><div class="title">Firefly III - A free and open source personal finance manager</div><div class="domain">firefly-iii.org &bull; April 20, 2025</div></li></a><a class="li" href="https://blog.ollien.com/posts/llm-friction/"><li><div class="title">LLMs Reduce Development Friction. Is That a Good Thing?</div><div class="domain">blog.ollien.com &bull; April 20, 2025</div></li></a><a class="li" href="https://akselmo.dev/posts/how-i-use-kate-editor/"><li><div class="title">How I use Kate Editor</div><div class="domain">akselmo.dev &bull; April 20, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (21)</summary><ul><a class="li" href="https://cq94.medium.com/get-your-minitels-back-the-computel-videotex-bbs-is-back-1d8c42f1ea17"><li><div class="title">Get your Minitel back, the COMPUTEL videotex BBS is back</div><div class="domain">cq94.medium.com &bull; April 20, 2025</div></li></a><a class="li" href="https://danielpetrica.com/my-experience-of-participating-to-a-startup-weekend-competition-in-italy/"><li><div class="title">My experience of participating to a startup weekend competition in Italy</div><div class="domain">danielpetrica.com &bull; April 20, 2025</div></li></a><a class="li" href="https://www.history.com/articles/toys-r-us-closing-legacy"><li><div class="title">The Rise and Fall of Toys 'R' Us (2018)</div><div class="domain">history.com &bull; April 20, 2025</div></li></a><a class="li" href="https://readmultiplex.com/2025/04/19/a-review-of-the-personal-humanoid-robots/"><li><div class="title">A Review of the Personal Humanoid Robots</div><div class="domain">readmultiplex.com &bull; April 20, 2025</div></li></a><a class="li" href="https://scitechdaily.com/99-effective-first-hormone-free-male-birth-control-pill-enters-human-trials/"><li><div class="title">First hormone-free male birth control pill enters human trials</div><div class="domain">scitechdaily.com &bull; April 20, 2025</div></li></a><a class="li" href="https://arxiv.org/abs/2411.17525"><li><div class="title">Pushing the Limits of LLM Quantization via the Linearity Theorem</div><div class="domain">arxiv.org &bull; April 20, 2025</div></li></a><a class="li" href="https://420.headset.io"><li><div class="title">Show HN: Real-time 4/20 cannabis sales dashboard using Estuary and Tinybird</div><div class="domain">420.headset.io &bull; April 20, 2025</div></li></a><a class="li" href="https://jurynow.app/"><li><div class="title">Show HN: JuryNow – Get an anonymous instant verdict from 12 real people</div><div class="domain">jurynow.app &bull; April 20, 2025</div></li></a><a class="li" href="https://serverless.industries/2024/05/31/digital-cinema.en.html"><li><div class="title">How encryption for Cinema Movies works</div><div class="domain">serverless.industries &bull; April 20, 2025</div></li></a><a class="li" href="https://www.cbc.ca/arts/home-galleries-are-hiding-in-plain-sight-across-canada-1.7503886"><li><div class="title">Home galleries are hiding in plain sight across Canada</div><div class="domain">cbc.ca &bull; April 20, 2025</div></li></a><a class="li" href="https://fxrant.blogspot.com/2025/04/the-movie-mistake-mystery-from-revenge.html"><li><div class="title">The movie mistake mystery from "Revenge of the Sith"</div><div class="domain">fxrant.blogspot.com &bull; April 20, 2025</div></li></a><a class="li" href="https://github.com/maximecb/Turing-Drawings"><li><div class="title">Turing-Drawings</div><div class="domain">github.com &bull; April 20, 2025</div></li></a><a class="li" href="https://www.oneusefulthing.org/p/on-jagged-agi-o3-gemini-25-and-everything"><li><div class="title">Jagged AGI: o3, Gemini 2.5, and everything after</div><div class="domain">oneusefulthing.org &bull; April 20, 2025</div></li></a><a class="li" href="https://blues.win/posts/joy-of-linux-theming/"><li><div class="title">The Joy of Linux Theming in the Age of Bootable Containers</div><div class="domain">blues.win &bull; April 20, 2025</div></li></a><a class="li" href="https://www.thepythoncodingstack.com/p/demystifying-python-decorators"><li><div class="title">Demystifying decorators: They don't need to be cryptic</div><div class="domain">thepythoncodingstack.com &bull; April 20, 2025</div></li></a><a class="li" href="https://www.well-typed.com/blog/2023/04/falsify/"><li><div class="title">Falsify: Hypothesis-Inspired Shrinking for Haskell (2023)</div><div class="domain">well-typed.com &bull; April 20, 2025</div></li></a><a class="li" href="https://www.quiss.org/signal_carnival/"><li><div class="title">Signal Carnival</div><div class="domain">quiss.org &bull; April 20, 2025</div></li></a><a class="li" href="https://colors2.alessandroroussel.com/"><li><div class="title">Find the Odd Disk</div><div class="domain">colors2.alessandroroussel.com &bull; April 20, 2025</div></li></a><a class="li" href="https://developers.googleblog.com/en/gemma-3-quantized-aware-trained-state-of-the-art-ai-to-consumer-gpus/"><li><div class="title">Gemma 3 QAT Models: Bringing AI to Consumer GPUs</div><div class="domain">developers.googleblog.com &bull; April 20, 2025</div></li></a><a class="li" href="https://storage.googleapis.com/deepmind-media/Era-of-Experience%20/The%20Era%20of%20Experience%20Paper.pdf"><li><div class="title">Welcome to the Era of Experience [pdf]</div><div class="domain">storage.googleapis.com &bull; April 20, 2025</div></li></a><a class="li" href="https://www.science.org/doi/10.1126/sciadv.adu1052"><li><div class="title">Novel color via stimulation of individual photoreceptors at population scale</div><div class="domain">science.org &bull; April 20, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Seth's Blog (seths.blog)</h2> (1)</summary><ul><a class="li" href="https://seths.blog/2025/04/work-ethic-vs-discipline/"><li><div class="title">Work ethic vs discipline</div><div class="domain">seths.blog &bull; April 20, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (17)</summary><ul><a class="li" href="https://yourstory.com/2025/04/every-country-debt-owe"><li><div class="title">Why All Countries Have Debt — And Who They're Borrowing From?</div><div class="domain">yourstory.com &bull; April 20, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/04/googles-new-ai-talk-dolphins"><li><div class="title">Google's New AI Can Talk to Dolphins!</div><div class="domain">yourstory.com &bull; April 20, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/04/switzerland-insanely-rich-resources"><li><div class="title">How Switzerland Became So Insanely Rich Without Any Resources</div><div class="domain">yourstory.com &bull; April 20, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/04/keep-jumping-jobs-hike-lets-talk"><li><div class="title">Should You Keep Jumping Jobs for a Hike? Let’s Talk!</div><div class="domain">yourstory.com &bull; April 20, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/04/economics-steam"><li><div class="title">How Steam became a multi-billion dollars company?</div><div class="domain">yourstory.com &bull; April 20, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/04/hadron-collider-2-coming-giant-leap-giant-gamble"><li><div class="title">The Hadron Collider 2.0 is Coming: A Giant Leap or a Giant Gamble?</div><div class="domain">yourstory.com &bull; April 20, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/04/success-luck-hard-work-uncomfortable-truth-big"><li><div class="title">Is Success Luck or Hard Work? The Uncomfortable Truth About Making It Big</div><div class="domain">yourstory.com &bull; April 20, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/04/us-tariffs-chinese-imports-indian-toy-makers-keen-leverage"><li><div class="title">US tariffs on Chinese imports: Indian toy makers keen to leverage 'golden opportunity'</div><div class="domain">yourstory.com &bull; April 20, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/04/hedge-funds-billions"><li><div class="title">What Are Hedge Funds and How Do They Make Billions?</div><div class="domain">yourstory.com &bull; April 20, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/04/trump-targeted-vietnam--tariffs-global-trade"><li><div class="title">Why Trump Targeted Vietnam with Tariffs—and What It Means for Global Trade?</div><div class="domain">yourstory.com &bull; April 20, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/04/sebi-finds-manufacturing-gensol-pune-ev-plant"><li><div class="title">SEBI finds no manufacturing at Gensol's Pune EV plant</div><div class="domain">yourstory.com &bull; April 20, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/04/top-companies-results-trail-expectations-amid-tariff-woes"><li><div class="title">Top IT companies’ results trail expectations amid tariff woes</div><div class="domain">yourstory.com &bull; April 20, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/04/must-read-books-marquez"><li><div class="title">Gabriel García Márquez: Top 7 books for literature lovers</div><div class="domain">yourstory.com &bull; April 20, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/04/ai-bubble-modern-echo-dot-com-era"><li><div class="title">The AI Bubble: A Modern Echo of the Dot-Com Era</div><div class="domain">yourstory.com &bull; April 20, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/04/thought-provoking-books"><li><div class="title">7 thought-provoking books that challenge and change you</div><div class="domain">yourstory.com &bull; April 20, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/04/services-platforms-sme-business-creativity-entrepreneur-innovation-education-quiz"><li><div class="title">Services, platforms, SMEs: Test your business creativity with Edition 184 of our weekly quiz!</div><div class="domain">yourstory.com &bull; April 20, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/04/style-substance-success-creativity-india-art-festival-photography"><li><div class="title">Style, substance, success: Creativity insights and tips from India Art Festival</div><div class="domain">yourstory.com &bull; April 20, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">베지이즈 Vege is (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/0l1ozQmjhCk"><li><div class="title">🍊 MORNING ORANGE DETOX SHOT  #DetoxShot #HealthyRoutine #VitaminCBoost  #ImmunitySupport</div><div class="domain">youtube.com &bull; April 20, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Numberphile (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=hKpa9ntjgeo"><li><div class="title">Cardioids in Coffee Cups - Numberphile</div><div class="domain">youtube.com &bull; April 20, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Mouth and Foot Painting Artists (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/tCQ-Wwe1U5k"><li><div class="title">Happy Birthday Ummil 💖🎉 | MFPA | Ummil</div><div class="domain">youtube.com &bull; April 20, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Cinemawali (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=eLf5qgdLaaA"><li><div class="title">Chamkila Discussion Feat. Long Live Cinema</div><div class="domain">youtube.com &bull; April 20, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=Ih4n114YIHg"><li><div class="title">Failing at Life - The Disciple</div><div class="domain">youtube.com &bull; April 20, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">3Blue1Brown (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/aQwEJKWATlE"><li><div class="title">How to measure nearby galaxies</div><div class="domain">youtube.com &bull; April 20, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>

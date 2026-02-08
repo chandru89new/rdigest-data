@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-01-01</span>:</h1>
+  <p class="summary">There are 68 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Bear Blog Trending Posts (bearblog.dev)</h2> (3)</summary><ul><a class="li" href="https://brandons-journal.com/grateful/"><li><div class="title">Grateful</div><div class="domain">brandons-journal.com &bull; January 01, 2025</div></li></a><a class="li" href="https://louplummer.lol/dear-internet-a-letter-to-my-constant-companion/"><li><div class="title">Dear Internet - A Letter to My Constant Companion</div><div class="domain">louplummer.lol &bull; January 01, 2025</div></li></a><a class="li" href="https://veronique.ink/happy-nye/"><li><div class="title">happy NYE ;)</div><div class="domain">veronique.ink &bull; January 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Big Think (bigthink.com)</h2> (3)</summary><ul><a class="li" href="https://bigthink.com/business/the-business-case-for-neurodiversity/"><li><div class="title">Great minds don’t think alike: The business case for neurodiversity</div><div class="domain">bigthink.com &bull; January 01, 2025</div></li></a><a class="li" href="https://bigthink.com/neuropsych/psychology-consciousness/"><li><div class="title">Psychology has a consciousness problem</div><div class="domain">bigthink.com &bull; January 01, 2025</div></li></a><a class="li" href="https://bigthink.com/starts-with-a-bang/one-page-calendar/"><li><div class="title">The one-page calendar that changes how you view the year</div><div class="domain">bigthink.com &bull; January 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (4)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/6AmNoxGrFzdmfgb86/fireplace-and-candle-smoke"><li><div class="title">Fireplace and Candle Smoke</div><div class="domain">lesswrong.com &bull; January 01, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/CJ4sppkGcbnGMSG2r/2024-in-ai-predictions"><li><div class="title">2024 in AI predictions</div><div class="domain">lesswrong.com &bull; January 01, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/ceknBY4GpoNWwJNn9/new-chinese-stealth-aircraft"><li><div class="title">new chinese stealth aircraft</div><div class="domain">lesswrong.com &bull; January 01, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/hx5EkHFH5hGzngZDs/comment-on-death-and-the-gorgon"><li><div class="title">Comment on "Death and the Gorgon"</div><div class="domain">lesswrong.com &bull; January 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (17)</summary><ul><a class="li" href="https://www.softwarepreservation.org/projects/FOCAL"><li><div class="title">History of the FOCAL programming language</div><div class="domain">softwarepreservation.org &bull; January 01, 2025</div></li></a><a class="li" href="https://pratt.im/notes/jj-go-gerrit.html"><li><div class="title">jj for developing Go</div><div class="domain">pratt.im &bull; January 01, 2025</div></li></a><a class="li" href="https://www.cs.cmu.edu/~pavlo/blog/2025/01/2024-databases-retrospective.html"><li><div class="title">Databases in 2024: A Year in Review</div><div class="domain">cs.cmu.edu &bull; January 01, 2025</div></li></a><a class="li" href="https://blog.sinjakli.co.uk/2025/01/01/ruby-3-4-highlights/"><li><div class="title">Ruby 3.4 highlights</div><div class="domain">blog.sinjakli.co.uk &bull; January 01, 2025</div></li></a><a class="li" href="https://github.com/indiv0/aoc-fastest"><li><div class="title">Solving Advent of Code 2024 in Under 1ms</div><div class="domain">github.com &bull; January 01, 2025</div></li></a><a class="li" href="https://github.blog/news-insights/octoverse/octoverse-2024/"><li><div class="title">Octoverse 2024</div><div class="domain">github.blog &bull; January 01, 2025</div></li></a><a class="li" href="https://geo-ant.github.io/blog/2024/rust-rethinking-builders-lazy-generics/"><li><div class="title">Rethinking Builders… with Lazy Generics (2024)</div><div class="domain">geo-ant.github.io &bull; January 01, 2025</div></li></a><a class="li" href="https://inbox.sourceware.org/gcc-patches/20250101020952.18404-1-jose.marchesi@oracle.com/T/#m77fd0f35b77b78403a85bbf7f9fd981b8e0b7b10"><li><div class="title">Algol 68 GCC Front-End</div><div class="domain">inbox.sourceware.org &bull; January 01, 2025</div></li></a><a class="li" href="https://genuary.art/"><li><div class="title">GENUARY 2025</div><div class="domain">genuary.art &bull; January 01, 2025</div></li></a><a class="li" href="https://cprimozic.net/blog/optimizing-advent-of-code-2024/"><li><div class="title">Optimizing Advent of Code D9P2 with High-Performance Rust</div><div class="domain">cprimozic.net &bull; January 01, 2025</div></li></a><a class="li" href="https://matthewsanabria.dev/posts/tools-worth-changing-to-in-2025/"><li><div class="title">Tools Worth Changing To in 2025</div><div class="domain">matthewsanabria.dev &bull; January 01, 2025</div></li></a><a class="li" href="https://nyanpasu64.gitlab.io/blog/amdgpu-sleep-wake-hang/"><li><div class="title">How I helped fix sleep-wake hangs on Linux with AMD GPUs</div><div class="domain">nyanpasu64.gitlab.io &bull; January 01, 2025</div></li></a><a class="li" href="https://quakkels.com/posts/202412_01_goodbye_github_pages_hello_coolify/"><li><div class="title">Goodbye Github Pages, Hello Coolify</div><div class="domain">quakkels.com &bull; January 01, 2025</div></li></a><a class="li" href="https://libreserver.org/epicyon/v1_6_0.html"><li><div class="title">Epicyon ActivityPub server release version 1.6.0</div><div class="domain">libreserver.org &bull; January 01, 2025</div></li></a><a class="li" href="https://discourse.imfreedom.org/t/pidgin-3-0-experimental-1-has-been-released/227"><li><div class="title">Pidgin 3.0 Experimental 1 Has been released</div><div class="domain">discourse.imfreedom.org &bull; January 01, 2025</div></li></a><a class="li" href="https://www.youtube.com/shorts/l3tUHngkL1k"><li><div class="title">Why the Earth could be less than 6000 years old in less than 60 seconds [video]</div><div class="domain">youtube.com &bull; January 01, 2025</div></li></a><a class="li" href="https://dgl.cx/2024/12/ghostty-terminal-title"><li><div class="title">Déjà vu: Ghostly CVEs in my terminal title</div><div class="domain">dgl.cx &bull; January 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Longreads (longreads.com)</h2> (1)</summary><ul><a class="li" href="https://longreads.com/2025/01/01/smells-like-american-spirit/"><li><div class="title">Smells Like American Spirit</div><div class="domain">longreads.com &bull; January 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (28)</summary><ul><a class="li" href="https://www.sfgate.com/local/article/peggy-caserta-obituary-sf-bell-bottom-jeans-19976707.php"><li><div class="title">Counterculture legend who invented bell-bottom jeans dies at 84</div><div class="domain">sfgate.com &bull; January 01, 2025</div></li></a><a class="li" href="https://cameronboehmer.com/building-a-polite-and-fast-web-crawler.html"><li><div class="title">Crawling More Politely Than Big Tech</div><div class="domain">cameronboehmer.com &bull; January 01, 2025</div></li></a><a class="li" href="https://tokio.rs/blog/2025-01-01-announcing-axum-0-8-0"><li><div class="title">Axum 0.8</div><div class="domain">tokio.rs &bull; January 01, 2025</div></li></a><a class="li" href="https://academic.oup.com/mnrasl/article/537/1/L55/7926647"><li><div class="title">Supernovae evidence for foundational change to cosmological models</div><div class="domain">academic.oup.com &bull; January 01, 2025</div></li></a><a class="li" href="https://discuo.com"><li><div class="title">Discuo – Anonymous discussions with infinite branching and 24h lifespan</div><div class="domain">discuo.com &bull; January 01, 2025</div></li></a><a class="li" href="https://www.twz.com/news-features/how-sailor-poets-take-over-u-s-navy-deck-logs-on-new-years-day"><li><div class="title">Sailor Poets Take over U.S. Navy Deck Logs on New Year's Day</div><div class="domain">twz.com &bull; January 01, 2025</div></li></a><a class="li" href="https://www.cnn.com/2024/12/30/science/comb-jellies-fuse-single-organism/index.html"><li><div class="title">The comb jelly can fuse with another (including nervous and digestive systems)</div><div class="domain">cnn.com &bull; January 01, 2025</div></li></a><a class="li" href="https://nation.africa/kenya/news/object-that-fell-from-the-skies-identified-as-separation-ring-from-a-rocket-4875322"><li><div class="title">Object that fell from the skies identified as separation ring from a rocket</div><div class="domain">nation.africa &bull; January 01, 2025</div></li></a><a class="li" href="https://arosnews.github.io/aros-x86-summary-2024/"><li><div class="title">(Amiga) AROS Research Operating System: Summary of 2024</div><div class="domain">arosnews.github.io &bull; January 01, 2025</div></li></a><a class="li" href="https://screensaverchess.com"><li><div class="title">Show HN: I made a screensaver that solves chess puzzles</div><div class="domain">screensaverchess.com &bull; January 01, 2025</div></li></a><a class="li" href="https://robotics-transformer2.github.io/"><li><div class="title">RT-2: Vision-Language-Action Models (2023)</div><div class="domain">robotics-transformer2.github.io &bull; January 01, 2025</div></li></a><a class="li" href="https://www.hackster.io/news/signalens-signalsdr-pro-is-a-raspberry-pi-like-high-performance-software-defined-radio-33d06214b465"><li><div class="title">Signalens' SignalSDR Pro Is a Raspberry Pi-Like High-Performance SDR</div><div class="domain">hackster.io &bull; January 01, 2025</div></li></a><a class="li" href="https://openreview.net/forum?id=YXnwlZe0yf&noteId=yrsGpHd0Sf"><li><div class="title">30% drop in O1-preview accuracy when Putnam problems are slightly variated</div><div class="domain">openreview.net &bull; January 01, 2025</div></li></a><a class="li" href="https://www.snopes.com/fact-check/trees-stars-milky-way/"><li><div class="title">There Are More Trees on Earth Than Stars in the Milky Way</div><div class="domain">snopes.com &bull; January 01, 2025</div></li></a><a class="li" href="https://engineering.fb.com/2024/12/19/developer-tools/glean-open-source-code-indexing/"><li><div class="title">Indexing Code at Scale with Glean</div><div class="domain">engineering.fb.com &bull; January 01, 2025</div></li></a><a class="li" href="https://apiparrot.com/"><li><div class="title">Show HN: API Parrot – Automatically Reverse Engineer HTTP APIs</div><div class="domain">apiparrot.com &bull; January 01, 2025</div></li></a><a class="li" href="https://blog.jacobvosmaer.nl/0036-beeper/"><li><div class="title">My favourite computer ergonomics hack</div><div class="domain">blog.jacobvosmaer.nl &bull; January 01, 2025</div></li></a><a class="li" href="https://davidallengreen.com/2025/01/how-the-lore-of-new-year-defeated-the-law-of-new-year-how-the-english-state-gave-up-on-insisting-the-new-year-started-on-25-march/"><li><div class="title">How the lore of New Year defeated the law of New Year</div><div class="domain">davidallengreen.com &bull; January 01, 2025</div></li></a><a class="li" href="https://austinhenley.com/blog/25yearsofai.html"><li><div class="title">My 25-year adventure in AI and ML</div><div class="domain">austinhenley.com &bull; January 01, 2025</div></li></a><a class="li" href="https://doom-captcha.vercel.app/"><li><div class="title">DOOM CAPTCHA</div><div class="domain">doom-captcha.vercel.app &bull; January 01, 2025</div></li></a><a class="li" href="https://literallythevoid.com/blog/rails_for_everything.html"><li><div class="title">Rails for Everything</div><div class="domain">literallythevoid.com &bull; January 01, 2025</div></li></a><a class="li" href="https://mathstodon.xyz/@tao/113721192051328193"><li><div class="title">Terence Tao: One of my papers got declined today</div><div class="domain">mathstodon.xyz &bull; January 01, 2025</div></li></a><a class="li" href="https://www.lanl.gov/media/publications/actinide-research-quarterly/first-quarter-2023/hitting-the-jackpot-the-birth-of-the-monte-carlo-method"><li><div class="title">Hitting the Jackpot: The Birth of the Monte Carlo Method – LANL</div><div class="domain">lanl.gov &bull; January 01, 2025</div></li></a><a class="li" href="https://github.com/facebookresearch/large_concept_model"><li><div class="title">Large Concept Models: Language modeling in a sentence representation space</div><div class="domain">github.com &bull; January 01, 2025</div></li></a><a class="li" href="https://cesium.com/platform/cesium-for-unreal/"><li><div class="title">Cesium for Unreal – Bring the Real World to Unreal Engine</div><div class="domain">cesium.com &bull; January 01, 2025</div></li></a><a class="li" href="https://www.ycombinator.com/companies/keeper/jobs/fLwv59z-senior-fullstack-engineer"><li><div class="title">Keeper (YC S21) Is Hiring a Senior Fullstack Engineer</div><div class="domain">ycombinator.com &bull; January 01, 2025</div></li></a><a class="li" href="https://c-faq.com/decl/spiral.anderson.html"><li><div class="title">C "clockwise/spiral" rule to understand declarations</div><div class="domain">c-faq.com &bull; January 01, 2025</div></li></a><a class="li" href="https://thoughts.wyounas.com/p/books-i-enjoyed-most-in-2024"><li><div class="title">Books I Loved Reading in 2024</div><div class="domain">thoughts.wyounas.com &bull; January 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Scholar's Stage (scholars-stage.org)</h2> (1)</summary><ul><a class="li" href="https://scholars-stage.org/science-proceeds-one-question-at-a-time/"><li><div class="title">Science Proceeds One Question at a Time</div><div class="domain">scholars-stage.org &bull; January 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Seth's Blog (seths.blog)</h2> (1)</summary><ul><a class="li" href="https://seths.blog/2025/01/find-the-others-3/"><li><div class="title">Find the others</div><div class="domain">seths.blog &bull; January 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Diplomat (thediplomat.com)</h2> (1)</summary><ul><a class="li" href="https://thediplomat.com/2025/01/the-role-of-bangladeshs-military-in-the-july-revolution-and-its-historical-legacy/"><li><div class="title">The Role of Bangladesh’s Military in the July Revolution and Its Historical Legacy</div><div class="domain">thediplomat.com &bull; January 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Sympolymathesy, by Chris Krycho (v5.chriskrycho.com)</h2> (1)</summary><ul><a class="li" href="https://v5.chriskrycho.com/journal/2024-in-review/"><li><div class="title">[journal] 2024 in Review</div><div class="domain">v5.chriskrycho.com &bull; January 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (8)</summary><ul><a class="li" href="https://yourstory.com/2025/01/blue-chip-buying-lifts-sensex-nifty-first-trading-day-2025"><li><div class="title">Blue-chip buying lifts Sensex and Nifty on the first trading day of 2025</div><div class="domain">yourstory.com &bull; January 01, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/01/grapes-chips-ice-cubes-top-quick-commerce-orders-new-years-eve"><li><div class="title">Grapes, chips, and ice cubes among the top quick commerce orders on New Year's Eve</div><div class="domain">yourstory.com &bull; January 01, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/01/easemytrip-co-founder-rikant-pittie-as-ceo"><li><div class="title">EaseMyTrip appoints co-founder Rikant Pittie as CEO</div><div class="domain">yourstory.com &bull; January 01, 2025</div></li></a><a class="li" href="https://yourstory.com/2024/12/big-leap-for-whatsapp-pay-building-a-skin-care-brand"><li><div class="title">Big leap for WhatsApp Pay; building a skin care brand</div><div class="domain">yourstory.com &bull; January 01, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/01/sebi-mf-lite-framework-simplify-compliance-passive-mutual-funds"><li><div class="title">SEBI unveils MF Lite framework to simplify compliance for passive mutual funds</div><div class="domain">yourstory.com &bull; January 01, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/01/sensex-nifty-start-2025-on-weak-note-amid-foreign-fund-outflows"><li><div class="title">Sensex, Nifty start 2025 on a weak note amid foreign fund outflows</div><div class="domain">yourstory.com &bull; January 01, 2025</div></li></a><a class="li" href="https://yourstory.com/2024/12/planet-electric-reduce-logistics-costs-lightweight-cargo-carriers"><li><div class="title">Planet Electric wants to reduce logistics costs with lightweight cargo carriers</div><div class="domain">yourstory.com &bull; January 01, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/01/accel-bags-usd-650m-india-fund-131-investors"><li><div class="title">Accel bags $650M for new India fund with 131 investors</div><div class="domain">yourstory.com &bull; January 01, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>

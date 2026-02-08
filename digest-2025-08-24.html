@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-08-24</span>:</h1>
+  <p class="summary">There are 78 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Bear Blog Trending Posts (bearblog.dev)</h2> (1)</summary><ul><a class="li" href="https://monocyte.blog/i-kind-of-miss-slowly/"><li><div class="title">i kind of miss slowly</div><div class="domain">monocyte.blog &bull; August 24, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (4)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/gBnfwLqxcF4zyBE2J/deepseek-v3-1-is-not-having-a-moment"><li><div class="title">DeepSeek v3.1 Is Not Having a Moment</div><div class="domain">lesswrong.com &bull; August 24, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/6HJckDZuj2j5KGdhY/futility-illusions"><li><div class="title">Futility Illusions</div><div class="domain">lesswrong.com &bull; August 24, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/iZPKuuWsDXAcQWbLJ/shorter-tokens-are-more-likely"><li><div class="title">Shorter Tokens Are More Likely</div><div class="domain">lesswrong.com &bull; August 24, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/oLzoHA9ZtF2ygYgx4/notes-on-cooperating-with-unaligned-ais"><li><div class="title">Notes on cooperating with unaligned AIs</div><div class="domain">lesswrong.com &bull; August 24, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (21)</summary><ul><a class="li" href="https://bobdahacker.com/blog/monster-energy"><li><div class="title">I Hacked Monster Energy and Uncovered Their Employee Training Material</div><div class="domain">bobdahacker.com &bull; August 24, 2025</div></li></a><a class="li" href="https://github.com/Textualize/frogmouth"><li><div class="title">frogmouth: A Markdown browser for your terminal</div><div class="domain">github.com &bull; August 24, 2025</div></li></a><a class="li" href="https://ghuntley.com/agent/"><li><div class="title">how to build a coding agent</div><div class="domain">ghuntley.com &bull; August 24, 2025</div></li></a><a class="li" href="https://abhinavsarkar.net/posts/arithmetic-bytecode-vm-compiler/"><li><div class="title">A Fast Bytecode VM for Arithmetic: The Compiler</div><div class="domain">abhinavsarkar.net &bull; August 24, 2025</div></li></a><a class="li" href="https://esoteric.codes/blog/jon-corbett"><li><div class="title">Interview with Jon Corbett: Cree#, Ancestral Code, and an Indigenous Computing Framework</div><div class="domain">esoteric.codes &bull; August 24, 2025</div></li></a><a class="li" href="https://lobste.rs/s/ayqmih/what_are_you_doing_this_weekend"><li><div class="title">What are you doing this weekend?</div><div class="domain">lobste.rs &bull; August 24, 2025</div></li></a><a class="li" href="https://colinhacks.com/essays/introducing-zod-codecs"><li><div class="title">Introducing Zod Codecs</div><div class="domain">colinhacks.com &bull; August 24, 2025</div></li></a><a class="li" href="https://www.aazuspan.dev/blog/automating-pre-push-checks-with-jujutsu/"><li><div class="title">Automating Pre-Push Checks with Jujutsu</div><div class="domain">aazuspan.dev &bull; August 24, 2025</div></li></a><a class="li" href="https://pwy.io/posts/kruci-post-mortem/"><li><div class="title">kruci: Post-mortem of a UI library</div><div class="domain">pwy.io &bull; August 24, 2025</div></li></a><a class="li" href="https://blog.winny.tech/posts/update-on-my-racket-exit/"><li><div class="title">Update on my Racket exit</div><div class="domain">blog.winny.tech &bull; August 24, 2025</div></li></a><a class="li" href="https://taylor.town/diggit-000"><li><div class="title">Good Vibes: A Claude-Code Case-Study</div><div class="domain">taylor.town &bull; August 24, 2025</div></li></a><a class="li" href="https://blog.cf8.gg/surrealdbs-ch/"><li><div class="title">SurrealDB is sacrificing data durability to make benchmarks look better</div><div class="domain">blog.cf8.gg &bull; August 24, 2025</div></li></a><a class="li" href="https://parentheticallyspeaking.org/articles/first-language-wrong-question/"><li><div class="title">Which Programming Language Should I Teach First?</div><div class="domain">parentheticallyspeaking.org &bull; August 24, 2025</div></li></a><a class="li" href="https://michael.stapelberg.ch/posts/2025-08-24-secret-management-with-sops-nix/"><li><div class="title">Secret Management on NixOS with sops-nix</div><div class="domain">michael.stapelberg.ch &bull; August 24, 2025</div></li></a><a class="li" href="https://avi.im/blag/2025/sqlite-fsync/"><li><div class="title">SQLite (with WAL) doesn't do `fsync` on each commit under default settings</div><div class="domain">avi.im &bull; August 24, 2025</div></li></a><a class="li" href="https://bmitch.net/blog/2025-08-22-ghrc-appears-malicious/"><li><div class="title">ghrc.io Appears to be Malicious</div><div class="domain">bmitch.net &bull; August 24, 2025</div></li></a><a class="li" href="https://kevincox.ca/2025/07/20/no-imports/"><li><div class="title">I Don't Like Imports</div><div class="domain">kevincox.ca &bull; August 24, 2025</div></li></a><a class="li" href="https://github.com/DavidBuchanan314/anubis_offload"><li><div class="title">anubis_offload: userscript to offload Anubis PoW to native CPU or GPU code</div><div class="domain">github.com &bull; August 24, 2025</div></li></a><a class="li" href="https://leahneukirchen.org/blog/archive/2025/08/comparing-nitro-to-runit.html"><li><div class="title">Comparing nitro to runit</div><div class="domain">leahneukirchen.org &bull; August 24, 2025</div></li></a><a class="li" href="https://lina.sh/blog/telefonica-sabotages-me"><li><div class="title">A German ISP tampered with their DNS - specifically to sabotage my website</div><div class="domain">lina.sh &bull; August 24, 2025</div></li></a><a class="li" href="http://oldvcr.blogspot.com/2025/08/make-your-apple-ii-or-commodore-64.html"><li><div class="title">Reverse-engineering Roadsearch Plus, or, roadgeeking with an 8-bit CPU</div><div class="domain">oldvcr.blogspot.com &bull; August 24, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (29)</summary><ul><a class="li" href="https://www.bbc.com/future/article/20250819-why-italys-beloved-ancient-monolith-is-falling"><li><div class="title">'Rocks as big as cars' are flying down the Dolomites</div><div class="domain">bbc.com &bull; August 24, 2025</div></li></a><a class="li" href="https://www.cbc.ca/news/science/bloodsuckers-1.5361074"><li><div class="title">You shouldn't salt a leech that's sucking your blood (2019)</div><div class="domain">cbc.ca &bull; August 24, 2025</div></li></a><a class="li" href="https://www.goranssongaspar.com/mastermind"><li><div class="title">Using information theory to solve Mastermind</div><div class="domain">goranssongaspar.com &bull; August 24, 2025</div></li></a><a class="li" href="https://www.nvidia.com/en-us/products/workstations/dgx-spark/"><li><div class="title">Nvidia DGX Spark</div><div class="domain">nvidia.com &bull; August 24, 2025</div></li></a><a class="li" href="https://arstechnica.com/space/2025/08/china-may-have-taken-an-early-lead-in-the-race-for-a-military-megaconstellation/"><li><div class="title">China's Guowang megaconstellation is more than another version of Starlink</div><div class="domain">arstechnica.com &bull; August 24, 2025</div></li></a><a class="li" href="https://fortune.com/2025/08/23/neuralink-participant-1-noland-arbaugh-18-months-post-surgery-life-changed-elon-musk/"><li><div class="title">Neuralink 'Participant 1' says his life has changed</div><div class="domain">fortune.com &bull; August 24, 2025</div></li></a><a class="li" href="https://www.livescience.com/space/space-exploration/chinese-astronauts-make-rocket-fuel-and-oxygen-in-space-using-1st-of-its-kind-artificial-photosynthesis"><li><div class="title">Chinese astronauts make rocket fuel and oxygen in space</div><div class="domain">livescience.com &bull; August 24, 2025</div></li></a><a class="li" href="https://chriskw.xyz/2025/08/24/Hyper-Wordle/"><li><div class="title">Playing every game of Wordle simultaneously</div><div class="domain">chriskw.xyz &bull; August 24, 2025</div></li></a><a class="li" href="https://www.dbreunig.com/2025/06/26/how-to-fix-your-context.html"><li><div class="title">How to Fix Your Context</div><div class="domain">dbreunig.com &bull; August 24, 2025</div></li></a><a class="li" href="https://www.gojiberries.io/how-to-make-things-slower-so-they-go-faster-a-jitter-design-manual/"><li><div class="title">How to make things slower so they go faster</div><div class="domain">gojiberries.io &bull; August 24, 2025</div></li></a><a class="li" href="https://mobprogramming.org/"><li><div class="title">Mob Programming</div><div class="domain">mobprogramming.org &bull; August 24, 2025</div></li></a><a class="li" href="https://www.aitidbits.ai/p/deepwiki"><li><div class="title">DeepWiki: Understand Any Codebase</div><div class="domain">aitidbits.ai &bull; August 24, 2025</div></li></a><a class="li" href="https://www.caseyliss.com/2025/8/15/a-rube-goldberg-camera"><li><div class="title">Turning a Decommissioned iPhone into a UniFi Protect Camera</div><div class="domain">caseyliss.com &bull; August 24, 2025</div></li></a><a class="li" href="https://nlp.seas.harvard.edu/annotated-transformer/"><li><div class="title">The Annotated Transformer</div><div class="domain">nlp.seas.harvard.edu &bull; August 24, 2025</div></li></a><a class="li" href="https://vgr.land/content/posts/20250821.xml"><li><div class="title">Show HN: I Built a XSLT Blog Framework</div><div class="domain">vgr.land &bull; August 24, 2025</div></li></a><a class="li" href="https://twitter.com/zack_overflow/status/1959308058200551721"><li><div class="title">Comet AI browser can get prompt injected from any site, drain your bank account</div><div class="domain">twitter.com &bull; August 24, 2025</div></li></a><a class="li" href="https://github.com/cross-tools/musl-cross"><li><div class="title">GNU cross-tools: musl-cross 313.3M</div><div class="domain">github.com &bull; August 24, 2025</div></li></a><a class="li" href="https://github.com/roryclear/clearcam"><li><div class="title">Show HN: Clearcam – Add AI object detection to your IP CCTV cameras</div><div class="domain">github.com &bull; August 24, 2025</div></li></a><a class="li" href="https://bits.ashleyblewer.com/halt-and-catch-fire-syllabus/"><li><div class="title">Halt and Catch Fire Syllabus (2021)</div><div class="domain">bits.ashleyblewer.com &bull; August 24, 2025</div></li></a><a class="li" href="https://horace.io/walks"><li><div class="title">How many paths of length K are there between A and B? (2021)</div><div class="domain">horace.io &bull; August 24, 2025</div></li></a><a class="li" href="https://iopscience.iop.org/article/10.3847/2041-8213/adf62f"><li><div class="title">A Brilliant and Nearby One-off Fast Radio Burst Localized to 13 pc Precision</div><div class="domain">iopscience.iop.org &bull; August 24, 2025</div></li></a><a class="li" href="https://marianogappa.github.io/software/2025/08/24/i-made-two-card-games-in-go/"><li><div class="title">Making games in Go: 3 months without LLMs vs. 3 days with LLMs</div><div class="domain">marianogappa.github.io &bull; August 24, 2025</div></li></a><a class="li" href="https://github.com/repomirrorhq/repomirror/blob/main/repomirror.md"><li><div class="title">We put a coding agent in a while loop</div><div class="domain">github.com &bull; August 24, 2025</div></li></a><a class="li" href="https://torrentfreak.com/uk-govt-finds-ideal-pirate-bay-poster-boy-to-sell-blocking-of-non-pirate-sites-250824/"><li><div class="title">Is 4chan the perfect Pirate Bay poster child to justify wider UK site-blocking?</div><div class="domain">torrentfreak.com &bull; August 24, 2025</div></li></a><a class="li" href="https://dseltzer.gitlab.io/sping/docs/"><li><div class="title">Show HN: Sping – An HTTP/TCP Latency Tool That's Easy on the Eye</div><div class="domain">dseltzer.gitlab.io &bull; August 24, 2025</div></li></a><a class="li" href="https://eclecticlight.co/2025/08/21/how-to-check-if-your-apple-silicon-mac-is-booting-securely/"><li><div class="title">How to check if your Apple Silicon Mac is booting securely</div><div class="domain">eclecticlight.co &bull; August 24, 2025</div></li></a><a class="li" href="https://www.seangoedecke.com/good-api-design/"><li><div class="title">Everything I know about good API design</div><div class="domain">seangoedecke.com &bull; August 24, 2025</div></li></a><a class="li" href="https://www.vincirufus.com/posts/agi-is-engineering-problem/"><li><div class="title">AGI is an engineering problem, not a model training problem</div><div class="domain">vincirufus.com &bull; August 24, 2025</div></li></a><a class="li" href="https://www.gojiberries.io/not-so-prompt-prompt-optimization-as-model-selection/"><li><div class="title">Not so prompt: Prompt optimization as model selection (2024)</div><div class="domain">gojiberries.io &bull; August 24, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Seth's Blog (seths.blog)</h2> (1)</summary><ul><a class="li" href="https://seths.blog/2025/08/get-outta-my-way/"><li><div class="title">“GET OUTTA MY WAY”</div><div class="domain">seths.blog &bull; August 24, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Diplomat (thediplomat.com)</h2> (4)</summary><ul><a class="li" href="https://thediplomat.com/2025/08/rentiers-of-the-world-unite/"><li><div class="title">Rentiers of the World, Unite</div><div class="domain">thediplomat.com &bull; August 24, 2025</div></li></a><a class="li" href="https://thediplomat.com/2025/08/china-japan-and-shifting-narratives-of-war/"><li><div class="title">China, Japan, and Shifting Narratives of War</div><div class="domain">thediplomat.com &bull; August 24, 2025</div></li></a><a class="li" href="https://thediplomat.com/2025/08/bangladeshs-lethal-gameplan-in-myanmars-arakan/"><li><div class="title">Bangladesh’s Lethal Gameplan in Myanmar’s Arakan</div><div class="domain">thediplomat.com &bull; August 24, 2025</div></li></a><a class="li" href="https://thediplomat.com/2025/08/bhavani-fonseka-on-mass-graves-and-transitional-justice-in-sri-lanka/"><li><div class="title">Bhavani Fonseka on Mass Graves and Transitional Justice in Sri Lanka</div><div class="domain">thediplomat.com &bull; August 24, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Trevor I. Lasn Thoughts (trevorlasn.com)</h2> (1)</summary><ul><a class="li" href="https://www.trevorlasn.com/blog/courses-reviews-facelift"><li><div class="title">courses.reviews gets a facelift + now AI-powered</div><div class="domain">trevorlasn.com &bull; August 24, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Varun Barad - Curious Developer (varunbarad.com)</h2> (3)</summary><ul><a class="li" href="https://varunbarad.com/blog/tabletop-game-mindikot.html"><li><div class="title">🃏 Card game: Mindikot / Dehla Pakad / Catch the Ten</div><div class="domain">varunbarad.com &bull; August 24, 2025</div></li></a><a class="li" href="https://varunbarad.com/blog/https-local-sites.html"><li><div class="title">📝 Serve local sites over HTTPS connections</div><div class="domain">varunbarad.com &bull; August 24, 2025</div></li></a><a class="li" href="https://varunbarad.com/blog/phone-home-screen-2025.html"><li><div class="title">📱 What's on my phone home screen</div><div class="domain">varunbarad.com &bull; August 24, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (9)</summary><ul><a class="li" href="https://yourstory.com/2025/08/india-can-boost-world-economic-growth-says-pm-modi"><li><div class="title">India can boost world economic growth: PM Modi</div><div class="domain">yourstory.com &bull; August 24, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/08/dream-sports-dream11-financial-services-segment-online-gaming-ban"><li><div class="title">Dream Sports aims to foray into financial services segment</div><div class="domain">yourstory.com &bull; August 24, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/08/winzo-enters-us-market-with-short-video-content-format"><li><div class="title">WinZO enters the US market with short video content format</div><div class="domain">yourstory.com &bull; August 24, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/08/india-to-launch-more-than-100-satellites-over-next-15-years-minister"><li><div class="title">India to launch more than 100 satellites over next 15 years: Minister</div><div class="domain">yourstory.com &bull; August 24, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/08/creativity-diversity-mccord-stewart-museum-justice-dialogue-photography"><li><div class="title">Creativity and diversity: McCord Stewart Museum shows its commitment to social justice and dialogue</div><div class="domain">yourstory.com &bull; August 24, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/08/data-ai-applications-business-creativity-entrepreneur-innovation-education-quiz"><li><div class="title">Data, AI, applications: Test your business creativity with Edition 202 of our weekly quiz!</div><div class="domain">yourstory.com &bull; August 24, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/08/nbec-2025-awards-indian-biotech-startups-funding-ccamp-biocon-group"><li><div class="title">NBEC 2025 awards Rs 40 Cr in funding to biotech startups</div><div class="domain">yourstory.com &bull; August 24, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/08/devsparks2025-hyderabad-charts-ai-roadmap-lab-grown-diamonds"><li><div class="title">DevSparks2025 Hyderabad charts AI roadmap; Diamonds for next-gen buyers</div><div class="domain">yourstory.com &bull; August 24, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/08/khadim-batti-whatfix-global-saas-leader"><li><div class="title">How Khadim Batti scaled Whatfix into a $900M global SaaS powerhouse</div><div class="domain">yourstory.com &bull; August 24, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Sisyphus 55 (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/IKHLNZSNvuw"><li><div class="title">dating a man-child  #carljung</div><div class="domain">youtube.com &bull; August 24, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Plip Plip (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=AvPgl57-05w"><li><div class="title">if You were a Woman... 🫦💅 | ft. @GuySkills | Plip Plip</div><div class="domain">youtube.com &bull; August 24, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Nirmal Pillai (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/kMUxqGuKC1s"><li><div class="title">Blind date fun 🎈</div><div class="domain">youtube.com &bull; August 24, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Lex Fridman (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=jdCKiEJpwf4"><li><div class="title">Scott Horton: The Case Against War and the Military Industrial Complex | Lex Fridman Podcast #478</div><div class="domain">youtube.com &bull; August 24, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">GreatScott! (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=D86an4uN7FE"><li><div class="title">I tried Super Useful Future Tech! (That you can use Today)</div><div class="domain">youtube.com &bull; August 24, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>

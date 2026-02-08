@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-08-16</span>:</h1>
+  <p class="summary">There are 76 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Bear Blog Trending Posts (bearblog.dev)</h2> (5)</summary><ul><a class="li" href="https://blog.avas.space/overly-online/"><li><div class="title">communicating with social media users</div><div class="domain">blog.avas.space &bull; August 16, 2025</div></li></a><a class="li" href="https://megancarnes.blog/im-trying-to-make-my-life-cuter/"><li><div class="title">I'm trying to make my life cuter</div><div class="domain">megancarnes.blog &bull; August 16, 2025</div></li></a><a class="li" href="https://erincayaz.bearblog.dev/hello-bear-blog/"><li><div class="title">Hello Bear Blog (or: How I Tricked Myself Into Writing)</div><div class="domain">erincayaz.bearblog.dev &bull; August 16, 2025</div></li></a><a class="li" href="https://www.muliama.blog/web-strangers/"><li><div class="title">You aren't alone on the internet - Talk to strangers</div><div class="domain">muliama.blog &bull; August 16, 2025</div></li></a><a class="li" href="https://ginoz.bearblog.dev/my-boss-fired-me-over-whatsapp-while-he-was-on-vacation-in-honolulu/"><li><div class="title">My boss fired me over WhatsApp while he was on vacation in Honolulu</div><div class="domain">ginoz.bearblog.dev &bull; August 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Go Make Things (gomakethings.com)</h2> (1)</summary><ul><a class="li" href="https://gomakethings.com/usvsthem/"><li><div class="title">USvsTHEM</div><div class="domain">gomakethings.com &bull; August 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (7)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/a4EDinzAYtRwpNmx9/towards-data-centric-interpretability-with-sparse"><li><div class="title">Towards data-centric interpretability with sparse autoencoders</div><div class="domain">lesswrong.com &bull; August 16, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/BrpSBrWw4KG553kf3/the-inheritors-a-book-review"><li><div class="title">The Inheritors: a book review</div><div class="domain">lesswrong.com &bull; August 16, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/HGyKm2be6u3EeYv9G/anthropic-lets-claude-opus-4-and-4-1-end-conversations"><li><div class="title">Anthropic Lets Claude Opus 4 & 4.1 End Conversations</div><div class="domain">lesswrong.com &bull; August 16, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/yhEES8AH8MirLroij/the-collider-bias-theory-of-not-quite-everything"><li><div class="title">The Collider Bias Theory of (Not Quite) Everything</div><div class="domain">lesswrong.com &bull; August 16, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/NMoNLfX3ihXSZJwqK/church-planting-when-venture-capital-finds-jesus"><li><div class="title">Church Planting: When Venture Capital Finds Jesus</div><div class="domain">lesswrong.com &bull; August 16, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/vqfT5QCWa66gsfziB/a-phylogeny-of-agents"><li><div class="title">A Phylogeny of Agents</div><div class="domain">lesswrong.com &bull; August 16, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/ct6SMDuexe9uBwDoL/thoughts-on-gradual-disempowerment"><li><div class="title">Thoughts on Gradual Disempowerment</div><div class="domain">lesswrong.com &bull; August 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (21)</summary><ul><a class="li" href="https://dyna.org/"><li><div class="title">Dyna — Logic Programming for Machine Learning</div><div class="domain">dyna.org &bull; August 16, 2025</div></li></a><a class="li" href="https://www.marginalia.nu/log/a_123_index_io/"><li><div class="title">Faster Index I/O with NVMe SSDs</div><div class="domain">marginalia.nu &bull; August 16, 2025</div></li></a><a class="li" href="https://treeform.github.io/devcompas/"><li><div class="title">Dev Compass - Programming Philosophy Quiz</div><div class="domain">treeform.github.io &bull; August 16, 2025</div></li></a><a class="li" href="https://anadodik.github.io/publication/meschers/"><li><div class="title">Meschers: Geometry Processing of Impossible Objects</div><div class="domain">anadodik.github.io &bull; August 16, 2025</div></li></a><a class="li" href="https://ratfactor.com/faceclick/index"><li><div class="title">Faceclick: A lightweight Emoji picker with keyword search</div><div class="domain">ratfactor.com &bull; August 16, 2025</div></li></a><a class="li" href="https://www.seangoedecke.com/good-system-design/"><li><div class="title">Everything I know about good system design</div><div class="domain">seangoedecke.com &bull; August 16, 2025</div></li></a><a class="li" href="https://alperenkeles.com/posts/vocab-for-testing/"><li><div class="title">A Better Vocabulary for Testing</div><div class="domain">alperenkeles.com &bull; August 16, 2025</div></li></a><a class="li" href="https://appliedcryptography.page/gadgets/clocks"><li><div class="title">Understanding Diffie-Hellman with Clocks</div><div class="domain">appliedcryptography.page &bull; August 16, 2025</div></li></a><a class="li" href="https://www.jwz.org/blog/2025/07/ambient-age-verification/"><li><div class="title">Ambient age verification</div><div class="domain">jwz.org &bull; August 16, 2025</div></li></a><a class="li" href="https://www.gamedeveloper.com/programming/dirty-coding-tricks"><li><div class="title">Dirty Coding Tricks</div><div class="domain">gamedeveloper.com &bull; August 16, 2025</div></li></a><a class="li" href="https://hachyderm.io/@simontatham/115025974777386803"><li><div class="title">There is a new short domain name for PuTTY</div><div class="domain">hachyderm.io &bull; August 16, 2025</div></li></a><a class="li" href="https://pudding.cool/2025/08/onions/"><li><div class="title">Dicing an Onion, the Mathematically Optimal Way</div><div class="domain">pudding.cool &bull; August 16, 2025</div></li></a><a class="li" href="https://akselmo.dev/posts/how-to-linux-2025/"><li><div class="title">Various desktop Linux tips for newbies</div><div class="domain">akselmo.dev &bull; August 16, 2025</div></li></a><a class="li" href="https://lindbakk.com/blog/is-gleam-production-ready-part-1"><li><div class="title">Is Gleam production ready?</div><div class="domain">lindbakk.com &bull; August 16, 2025</div></li></a><a class="li" href="https://lists.debian.org/debian-devel-announce/2025/08/msg00006.html"><li><div class="title">Happy 100000th birthday, Debian</div><div class="domain">lists.debian.org &bull; August 16, 2025</div></li></a><a class="li" href="https://words.filippo.io/last-resort/"><li><div class="title">Maintainers of Last Resort</div><div class="domain">words.filippo.io &bull; August 16, 2025</div></li></a><a class="li" href="https://lobste.rs/s/cpadta/proposal_mark_punish_ai_imagery"><li><div class="title">proposal: mark/punish ai imagery</div><div class="domain">lobste.rs &bull; August 16, 2025</div></li></a><a class="li" href="https://socket.dev/blog/libxml2-maintainer-ends-embargoed-vulnerability-reports"><li><div class="title">libxml2 Maintainer Ends Embargoed Vulnerability Reports, Citing Unsustainable Burden</div><div class="domain">socket.dev &bull; August 16, 2025</div></li></a><a class="li" href="https://lobste.rs/s/gwh1ys/lobsters_blog_carnival"><li><div class="title">Lobsters Blog Carnival</div><div class="domain">lobste.rs &bull; August 16, 2025</div></li></a><a class="li" href="https://voidfox.com/blog/payment_processor_fun_2025_making_your_own_msp/"><li><div class="title">Payment Processor Fun 2025: Making Your Own MSP</div><div class="domain">voidfox.com &bull; August 16, 2025</div></li></a><a class="li" href="https://tylercipriani.com/blog/2025/08/15/git-lfs/"><li><div class="title">The future of large files in Git is Git</div><div class="domain">tylercipriani.com &bull; August 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">matklad (matklad.github.io)</h2> (1)</summary><ul><a class="li" href="https://matklad.github.io/2025/08/16/reserve-first.html"><li><div class="title">Reserve First</div><div class="domain">matklad.github.io &bull; August 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (24)</summary><ul><a class="li" href="https://www.figma.com/blog/how-figmas-multiplayer-technology-works/"><li><div class="title">How Figma’s multiplayer technology works (2019)</div><div class="domain">figma.com &bull; August 16, 2025</div></li></a><a class="li" href="https://cpldcpu.com/2025/08/13/candle-flame-oscillations-as-a-clock/"><li><div class="title">Candle Flame Oscillations as a Clock</div><div class="domain">cpldcpu.com &bull; August 16, 2025</div></li></a><a class="li" href="https://arstechnica.com/gadgets/2025/08/tiny-removable-mini-ssd-could-eventually-be-a-big-deal-for-gaming-handhelds/"><li><div class="title">Tiny, removable "mini SSD" could eventually be a big deal for gaming handhelds</div><div class="domain">arstechnica.com &bull; August 16, 2025</div></li></a><a class="li" href="https://5wgraphicsblog.com/2016/10/24/the-cutaway-illustrations-of-fred-freeman/"><li><div class="title">The Cutaway Illustrations of Fred Freeman (2016)</div><div class="domain">5wgraphicsblog.com &bull; August 16, 2025</div></li></a><a class="li" href="https://jotunheimr.idlerpg.net/users/jotun/lawnmower/"><li><div class="title">An IRC-Enabled Lawn Mower</div><div class="domain">jotunheimr.idlerpg.net &bull; August 16, 2025</div></li></a><a class="li" href="https://scrollguard.app/"><li><div class="title">Show HN: I built an app to block Shorts and Reels</div><div class="domain">scrollguard.app &bull; August 16, 2025</div></li></a><a class="li" href="https://www.popsci.com/technology/tibetan-prayer-scroll-scans/"><li><div class="title">X-ray scans reveal Buddhist prayers inside tiny Tibetan scrolls</div><div class="domain">popsci.com &bull; August 16, 2025</div></li></a><a class="li" href="https://distill.pub/2019/visual-exploration-gaussian-processes/"><li><div class="title">A Visual Exploration of Gaussian Processes (2019)</div><div class="domain">distill.pub &bull; August 16, 2025</div></li></a><a class="li" href="https://victorwynne.com/processor-trace-instrument/"><li><div class="title">Apple's new Processor Trace instrument is incredible</div><div class="domain">victorwynne.com &bull; August 16, 2025</div></li></a><a class="li" href="https://www.energy-reporters.com/environment/97-battery-recycling-breakthrough-princeton-nuenergy-opens-first-u-s-commercial-facility-cutting-costs-38-and-slashing-environmental-impact/"><li><div class="title">Princeton NuEnergy's battery recycling tech recovers 97% of lithium-ion material</div><div class="domain">energy-reporters.com &bull; August 16, 2025</div></li></a><a class="li" href="https://wisewolfmedia.substack.com/p/it-cant-happen-here-sinclair-lewis"><li><div class="title">When Fascism Comes Wrapped in the Flag and Carrying a Cross</div><div class="domain">wisewolfmedia.substack.com &bull; August 16, 2025</div></li></a><a class="li" href="https://www.kcl.ac.uk/news/toothpaste-made-from-hair-provides-natural-root-to-repair-teeth"><li><div class="title">Toothpaste made with keratin may protect and repair damaged teeth: study</div><div class="domain">kcl.ac.uk &bull; August 16, 2025</div></li></a><a class="li" href="https://github.com/superstarryeyes/lue"><li><div class="title">Show HN: Lue – Terminal eBook Reader with Text-to-Speech</div><div class="domain">github.com &bull; August 16, 2025</div></li></a><a class="li" href="https://github.com/Robert-van-Engelen/tinylisp"><li><div class="title">A Lisp in 99LOC</div><div class="domain">github.com &bull; August 16, 2025</div></li></a><a class="li" href="https://qouteall.fun/qouteall-blog/2025/Traps%20to%20Developers"><li><div class="title">Traps to Developers</div><div class="domain">qouteall.fun &bull; August 16, 2025</div></li></a><a class="li" href="https://gonzoml.substack.com/p/tversky-neural-networks"><li><div class="title">Tversky Neural Networks</div><div class="domain">gonzoml.substack.com &bull; August 16, 2025</div></li></a><a class="li" href="https://derwiki.medium.com/do-things-that-dont-scale-and-then-don-t-scale-9fd2cd7e2156"><li><div class="title">Do things that don't scale, and then don't scale</div><div class="domain">derwiki.medium.com &bull; August 16, 2025</div></li></a><a class="li" href="https://www.openpa.net/hp-ux_office.html"><li><div class="title">Office on HP-UX and Unix</div><div class="domain">openpa.net &bull; August 16, 2025</div></li></a><a class="li" href="http://unsafehttp.benren.au"><li><div class="title">Show HN: unsafehttp – tiny web server from scratch in C, running on an orange pi</div><div class="domain">unsafehttp.benren.au &bull; August 16, 2025</div></li></a><a class="li" href="https://github.com/microsoft/vscode/issues/261976"><li><div class="title">Please Keep Humans in the Loop (on GitHub Issues)</div><div class="domain">github.com &bull; August 16, 2025</div></li></a><a class="li" href="https://en.wikipedia.org/wiki/Pfeilstorch"><li><div class="title">Pfeilstorch</div><div class="domain">en.wikipedia.org &bull; August 16, 2025</div></li></a><a class="li" href="https://progress.openai.com"><li><div class="title">OpenAI Progress</div><div class="domain">progress.openai.com &bull; August 16, 2025</div></li></a><a class="li" href="https://www.bbc.com/news/health-26888280"><li><div class="title">Living with Williams Syndrome, the 'opposite of autism' (2014)</div><div class="domain">bbc.com &bull; August 16, 2025</div></li></a><a class="li" href="https://www.guidsmash.com"><li><div class="title">Visualising how close random GUIDs come to being the same</div><div class="domain">guidsmash.com &bull; August 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Scholar's Stage (scholars-stage.org)</h2> (1)</summary><ul><a class="li" href="https://scholars-stage.org/did-taiwan-lose-trump/"><li><div class="title">Did Taiwan “Lose Trump?”</div><div class="domain">scholars-stage.org &bull; August 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Seth's Blog (seths.blog)</h2> (1)</summary><ul><a class="li" href="https://seths.blog/2025/08/disenchanted/"><li><div class="title">Disenchanted</div><div class="domain">seths.blog &bull; August 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Varun Barad - Curious Developer (varunbarad.com)</h2> (1)</summary><ul><a class="li" href="https://varunbarad.com/blog/vue-children-tabs.html"><li><div class="title">Tabbed navigation on a screen in a Vue app</div><div class="domain">varunbarad.com &bull; August 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (5)</summary><ul><a class="li" href="https://yourstory.com/2025/08/tradition-development-kalakriti-art-gallery-creativity-photography"><li><div class="title">Tradition and development: Kalakriti Art Gallery promotes conversations on modernity</div><div class="domain">yourstory.com &bull; August 16, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/08/centre-proposes-gst-reforms-in-registration-returns-and-refunds"><li><div class="title">Centre proposes GST reforms in registration, returns, and refunds</div><div class="domain">yourstory.com &bull; August 16, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/08/weekly-vc-startup-funding-roundup-aug-9-16"><li><div class="title">[Weekly funding roundup Aug 9-16] VC inflow into Indian startups on the rise</div><div class="domain">yourstory.com &bull; August 16, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/08/ola-electric-sports-scooter-line-cell-variants-ai-powered-platform"><li><div class="title">Ola Electric plans to move to ferrite magnet motor amid rare earth crisis; rolls out sports scooter line</div><div class="domain">yourstory.com &bull; August 16, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/08/perplexity-ai-funding-india-future-ai-jobs-chatgpt-openai-revenue"><li><div class="title">India’s future rests on AI, jobs; Digital-first approach to financial freedom</div><div class="domain">yourstory.com &bull; August 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">VICE (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/SDFkSInkee8"><li><div class="title">Confronting Yelp's worst rated dating coach with her 'horrible' reviews</div><div class="domain">youtube.com &bull; August 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Vaak (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=CUyf7Ukn9Y8"><li><div class="title">Madurai Mani Iyer 1961 Jamshedpur Concert | ICONIC Thaye Yashoda Neraval | Krishna Jayanthi Offering</div><div class="domain">youtube.com &bull; August 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Action Lab (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=Shu4BVjwI7k"><li><div class="title">Scientists Just Found Why Electrified Drops DON'T Splash</div><div class="domain">youtube.com &bull; August 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Plip Plip (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=4xVDtAgcNY4"><li><div class="title">Coolie Roast | Plip Plip</div><div class="domain">youtube.com &bull; August 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Mustard (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=5RtwFbSeV5Y"><li><div class="title">The Iraqi Ambush America Never Talks About</div><div class="domain">youtube.com &bull; August 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Man of Recaps (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=hPvgO2JeU-Y"><li><div class="title">The Wheel of Time RECAP: Season 3</div><div class="domain">youtube.com &bull; August 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Laasya (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=TczTf2v0JOU"><li><div class="title">Nindrantha Mayil | Janmashtami special Krishna dance | Ishanvi Hegde | Guru Dr Asha Nair</div><div class="domain">youtube.com &bull; August 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Jay Lee Painting (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=xvR4n26ydBA"><li><div class="title">How to Paint Water Reflection Effect / Acrylic Painting Techniques</div><div class="domain">youtube.com &bull; August 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Circle Line Art School (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=-fS0nxWHYNw"><li><div class="title">How to Draw a Realistic City Street in One-Point Perspective for Beginners</div><div class="domain">youtube.com &bull; August 16, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>

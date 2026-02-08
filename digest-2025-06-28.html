@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-06-28</span>:</h1>
+  <p class="summary">There are 52 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Bear Blog Trending Posts (bearblog.dev)</h2> (1)</summary><ul><a class="li" href="https://jkap.io/cohost-postmortem/"><li><div class="title">(a) cohost postmortem: life after death</div><div class="domain">jkap.io &bull; June 28, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Big Think (bigthink.com)</h2> (1)</summary><ul><a class="li" href="https://bigthink.com/health/5-science-backed-ways-to-extend-your-healthspan/"><li><div class="title">5 science-backed ways to extend your healthspan</div><div class="domain">bigthink.com &bull; June 28, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Go Make Things (gomakethings.com)</h2> (1)</summary><ul><a class="li" href="https://gomakethings.com/on-being-a-whole-person/"><li><div class="title">On being a whole person</div><div class="domain">gomakethings.com &bull; June 28, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (3)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/3pHL3w6mQdwssFC97/childhood-and-education-11-the-art-of-learning"><li><div class="title">Childhood and Education #11: The Art of Learning</div><div class="domain">lesswrong.com &bull; June 28, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/yjrpmCmqurDmbMztW/paper-stochastic-parameter-decomposition"><li><div class="title">[Paper] Stochastic Parameter Decomposition</div><div class="domain">lesswrong.com &bull; June 28, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/vxfEtbCwmZKu9hiNr/proposal-for-making-credible-commitments-to-ais"><li><div class="title">Proposal for making credible commitments to AIs.</div><div class="domain">lesswrong.com &bull; June 28, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (13)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=ke-Ao-CpI7E"><li><div class="title">Wait… Who’s the New CEO of Commodore?! • Let's Buy Commodore Part 2</div><div class="domain">youtube.com &bull; June 28, 2025</div></li></a><a class="li" href="https://media.defense.gov/2025/Jun/23/2003742198/-1/-1/0/CSI_MEMORY_SAFE_LANGUAGES_REDUCING_VULNERABILITIES_IN_MODERN_SOFTWARE_DEVELOPMENT.PDF"><li><div class="title">Memory Safe Languages: Reducing Vulnerabilities in Modern Software Development</div><div class="domain">media.defense.gov &bull; June 28, 2025</div></li></a><a class="li" href="https://interlisp.org/documentation/young-ccece2025.pdf"><li><div class="title">The Medley Interlisp Project: Reviving a Historical Software System</div><div class="domain">interlisp.org &bull; June 28, 2025</div></li></a><a class="li" href="https://aimanagers.app"><li><div class="title">AI Manager - The Future of Management</div><div class="domain">aimanagers.app &bull; June 28, 2025</div></li></a><a class="li" href="https://emacsconf.org/2025/cfp/"><li><div class="title">EmacsConf 2025 Call for Participation</div><div class="domain">emacsconf.org &bull; June 28, 2025</div></li></a><a class="li" href="https://lwn.net/Articles/1027289/"><li><div class="title">Bcachefs may be headed out of the kernel</div><div class="domain">lwn.net &bull; June 28, 2025</div></li></a><a class="li" href="https://blog.buenzli.dev/rust-for-linux-first-contrib/"><li><div class="title">A Newbie's First Contribution to (Rust for) Linux</div><div class="domain">blog.buenzli.dev &bull; June 28, 2025</div></li></a><a class="li" href="https://usborne.com/us/books/computer-and-coding-books"><li><div class="title">Computer and coding books from Usborne (1982-1985)</div><div class="domain">usborne.com &bull; June 28, 2025</div></li></a><a class="li" href="https://github.com/kaniini/wayback"><li><div class="title">wayback: experimental X11 compatibility layer</div><div class="domain">github.com &bull; June 28, 2025</div></li></a><a class="li" href="https://github.com/pizlonator/llvm-project-deluge"><li><div class="title">Fil-C</div><div class="domain">github.com &bull; June 28, 2025</div></li></a><a class="li" href="https://jameshaydon.github.io/passport/"><li><div class="title">Solving `UK Passport Application` with Haskell</div><div class="domain">jameshaydon.github.io &bull; June 28, 2025</div></li></a><a class="li" href="https://herecomesthemoon.net/2025/06/i-like-helix/"><li><div class="title">I really like the Helix editor</div><div class="domain">herecomesthemoon.net &bull; June 28, 2025</div></li></a><a class="li" href="https://github.com/basecamp/omarchy"><li><div class="title">omarchy: Opinionated Arch/Hyprland Setup</div><div class="domain">github.com &bull; June 28, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (22)</summary><ul><a class="li" href="https://utk.claranguyen.me/talks.php?id=videogames"><li><div class="title">Graph Theory Applications in Video Games</div><div class="domain">utk.claranguyen.me &bull; June 28, 2025</div></li></a><a class="li" href="https://blog.danpetrolito.xyz/i-built-something-that-changed-my-friend-gro-social-fabric/"><li><div class="title">I built something that changed my friend group's social fabric</div><div class="domain">blog.danpetrolito.xyz &bull; June 28, 2025</div></li></a><a class="li" href="https://bullseye2d.org/"><li><div class="title">Show HN: I made a 2D game engine in Dart</div><div class="domain">bullseye2d.org &bull; June 28, 2025</div></li></a><a class="li" href="https://www.heritagedaily.com/2025/06/soldiers-wrist-purse-discovered-at-roman-legionary-camp/155513"><li><div class="title">Soldier's wrist purse discovered at Roman legionary camp</div><div class="domain">heritagedaily.com &bull; June 28, 2025</div></li></a><a class="li" href="https://www.sapiens.org/culture/korean-dmz-estuary-politics-war-borders-diaspora/"><li><div class="title">Why Do Swallows Fly to the Korean DMZ?</div><div class="domain">sapiens.org &bull; June 28, 2025</div></li></a><a class="li" href="https://arstechnica.com/science/2025/05/your-next-gaming-dice-could-be-shaped-like-a-dragon-or-armadillo/"><li><div class="title">Creating fair dice from random objects</div><div class="domain">arstechnica.com &bull; June 28, 2025</div></li></a><a class="li" href="https://www.dolthub.com/blog/2025-06-03-people-keep-inventing-prolly-trees/"><li><div class="title">People Keep Inventing Prolly Trees</div><div class="domain">dolthub.com &bull; June 28, 2025</div></li></a><a class="li" href="https://maxwell.kohterai.com/"><li><div class="title">Exploring Trichromacy through Maxwell's Color Experiment (2023)</div><div class="domain">maxwell.kohterai.com &bull; June 28, 2025</div></li></a><a class="li" href="https://getvet.sh"><li><div class="title">Show HN: Vet – A tool for safely running remote shell scripts</div><div class="domain">getvet.sh &bull; June 28, 2025</div></li></a><a class="li" href="https://akr.am/blog/posts/parsing-json-in-forty-lines-of-awk"><li><div class="title">Parsing JSON in Forty Lines of Awk</div><div class="domain">akr.am &bull; June 28, 2025</div></li></a><a class="li" href="https://github.com/sirius-db/sirius"><li><div class="title">Sirius: A GPU-native SQL engine</div><div class="domain">github.com &bull; June 28, 2025</div></li></a><a class="li" href="https://www.theguardian.com/music/2025/jun/26/unheard-works-by-erik-satie-to-premiere-100-years-after-his-death"><li><div class="title">Unheard works by Erik Satie to premiere 100 years after his death</div><div class="domain">theguardian.com &bull; June 28, 2025</div></li></a><a class="li" href="https://www.keepingbackyardbees.com/an-indoor-beehive-zbwz1810zsau/"><li><div class="title">An Indoor Beehive in My Bedroom Wall</div><div class="domain">keepingbackyardbees.com &bull; June 28, 2025</div></li></a><a class="li" href="https://masonyarbrough.substack.com/p/engineered-addictions"><li><div class="title">Addictions Are Being Engineered</div><div class="domain">masonyarbrough.substack.com &bull; June 28, 2025</div></li></a><a class="li" href="https://fuel.edby.coffee/posts/how-we-ported-xv6-os-to-a-home-built-cpu-with-a-home-built-c-compiler/"><li><div class="title">We ran a Unix-like OS Xv6 on our home-built CPU with a home-built C compiler (2020)</div><div class="domain">fuel.edby.coffee &bull; June 28, 2025</div></li></a><a class="li" href="https://www.ubicloud.com/blog/life-of-an-inference-request-vllm-v1"><li><div class="title">Life of an inference request (vLLM V1): How LLMs are served efficiently at scale</div><div class="domain">ubicloud.com &bull; June 28, 2025</div></li></a><a class="li" href="https://www.arrl.org/field-day"><li><div class="title">2025 ARRL Field Day</div><div class="domain">arrl.org &bull; June 28, 2025</div></li></a><a class="li" href="https://scottaaronson.blog/?p=8972"><li><div class="title">BusyBeaver(6) Is Quite Large</div><div class="domain">scottaaronson.blog &bull; June 28, 2025</div></li></a><a class="li" href="https://text.npr.org/nx-s1-5446120"><li><div class="title">US Defense Department will stop providing satellite weather data</div><div class="domain">text.npr.org &bull; June 28, 2025</div></li></a><a class="li" href="https://worksonmymachine.substack.com/p/mcp-an-accidentally-universal-plugin"><li><div class="title">MCP: An (Accidentally) Universal Plugin System</div><div class="domain">worksonmymachine.substack.com &bull; June 28, 2025</div></li></a><a class="li" href="https://deno.com/blog/deno-v-oracle4"><li><div class="title">JavaScript Trademark Update</div><div class="domain">deno.com &bull; June 28, 2025</div></li></a><a class="li" href="https://www.theverge.com/meta/694685/meta-ai-camera-roll"><li><div class="title">Facebook is starting to feed its AI with private, unpublished photos</div><div class="domain">theverge.com &bull; June 28, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Seth's Blog (seths.blog)</h2> (1)</summary><ul><a class="li" href="https://seths.blog/2025/06/education-is-free-learning-is-expensive/"><li><div class="title">Education is free, learning is expensive</div><div class="domain">seths.blog &bull; June 28, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (6)</summary><ul><a class="li" href="https://yourstory.com/2025/06/majority-of-indian-startups-leveraging-ai-for-core"><li><div class="title">Majority of Indian startups leveraging AI for core biz functions: reprot</div><div class="domain">yourstory.com &bull; June 28, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/06/art-view-feel-question-kalakriti-gallery-creativity-exhibition-photography"><li><div class="title">Art is not just something to view, but something to feel and question, affirms Ruchi Sharma of Kalakriti Art Gallery</div><div class="domain">yourstory.com &bull; June 28, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/06/us-canada-trade-talks-president-donald-trump-digital-services-tax"><li><div class="title">US President Trump ends trade talks with Canada due to digital services tax</div><div class="domain">yourstory.com &bull; June 28, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/06/social-commerce-unicorn-meesho-ipo-shareholders-nod-rs-4250-crore"><li><div class="title">Meesho gets shareholders' nod for Rs 4,250 Cr IPO: Report</div><div class="domain">yourstory.com &bull; June 28, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/06/startup-news-and-updates-daily-roundup-june-28-2025"><li><div class="title">Startup news and updates: Daily roundup (June 28, 2025)</div><div class="domain">yourstory.com &bull; June 28, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/06/wakefit-makes-an-ipo-move-msmes-leveraging-digital-payments-boom"><li><div class="title">Wakefit makes an IPO move; MSMEs leveraging digital payments boom</div><div class="domain">yourstory.com &bull; June 28, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">SchaeferArt (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/NVNGISO4S9w"><li><div class="title">How Time Transforms your Drawings</div><div class="domain">youtube.com &bull; June 28, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">MinuteFood (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/DsfMiILOwsU"><li><div class="title">I Tested a “Perfect Chicken” Hack</div><div class="domain">youtube.com &bull; June 28, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Francesco Parrino (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/zkWRqySpVGY"><li><div class="title">Another #piano gem by Maestro Morricone! 🌊 #shorts</div><div class="domain">youtube.com &bull; June 28, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">CinemaStix (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=ZaO2Ka6ztOc"><li><div class="title">that moment you realize it's not cgi</div><div class="domain">youtube.com &bull; June 28, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>

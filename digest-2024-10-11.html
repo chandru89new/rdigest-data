@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2024-10-11</span>:</h1>
+  <p class="summary">There are 19 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">kottke.org (feeds.kottke.org)</h2> (10)</summary><ul><a class="li" href="https://kottke.org/24/10/0045409-initial-experiments-in-us"><li><div class="title">Initial experiments in using Dungeons & Dragons as a group therapy tool...</div><div class="domain">kottke.org &bull; October 11, 2024</div></li></a><a class="li" href="https://kottke.org/24/10/0045425-i-am-tempted-by-this"><li><div class="title">I am tempted by this Lego Fortnite Battle Bus set. (Alas, it...</div><div class="domain">kottke.org &bull; October 11, 2024</div></li></a><a class="li" href="https://kottke.org/24/10/0045411-twin-peaks-actually-expla"><li><div class="title">Twin Peaks Actually Explained (in a four-hour video). &#8220;Lynch&#8217;s obsession with electricity...</div><div class="domain">kottke.org &bull; October 11, 2024</div></li></a><a class="li" href="https://kottke.org/24/10/the-distorted-paper-collages-of-lola-dupre"><li><div class="title">The Distorted Paper Collages of Lola Dupré</div><div class="domain">kottke.org &bull; October 11, 2024</div></li></a><a class="li" href="https://kottke.org/24/10/0045415-photos-of-spanish-human-t"><li><div class="title">Photos of Spanish Human Tower Competitions. &#8220;More than 40 teams of &#8216;castellers&#8217;...</div><div class="domain">kottke.org &bull; October 11, 2024</div></li></a><a class="li" href="https://kottke.org/24/10/0045436-newly-remastered-and-avai"><li><div class="title">Newly remastered and available on YouTube, Interview Project (presented by David Lynch)...</div><div class="domain">kottke.org &bull; October 11, 2024</div></li></a><a class="li" href="https://kottke.org/24/10/0045402-the-most-sought-after-tra"><li><div class="title">The Most Sought-After Travel Guide Is a Google Doc. &#8220;Nothing is more...</div><div class="domain">kottke.org &bull; October 11, 2024</div></li></a><a class="li" href="https://kottke.org/24/10/floor-maps-of-iconic-nyc-fast-food-joints-1"><li><div class="title">Floor Maps of Iconic NYC Fast Food Joints</div><div class="domain">kottke.org &bull; October 11, 2024</div></li></a><a class="li" href="https://kottke.org/24/10/0045414-a-syllabus-for-generalist"><li><div class="title">A Syllabus for Generalists. Featuring resources for learning about geometry, chemistry, world...</div><div class="domain">kottke.org &bull; October 11, 2024</div></li></a><a class="li" href="https://kottke.org/24/10/0045412-a-short-thread-of-videos"><li><div class="title">A short thread of videos that sync perfectly to other audio tracks,...</div><div class="domain">kottke.org &bull; October 11, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Go Make Things (gomakethings.com)</h2> (1)</summary><ul><a class="li" href="https://gomakethings.com/html-for-people/"><li><div class="title">HTML for People</div><div class="domain">gomakethings.com &bull; October 11, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (1)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/jTiSWHKAtnyA723LE/overview-of-strong-human-intelligence-amplification-methods"><li><div class="title">Overview of strong human intelligence amplification methods</div><div class="domain">lesswrong.com &bull; October 11, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Nautilus (nautil.us)</h2> (2)</summary><ul><a class="li" href="https://nautil.us/the-anatomical-quirk-that-saved-dr-no-951705/"><li><div class="title">The Anatomical Quirk That Saved Dr. No</div><div class="domain">nautil.us &bull; October 11, 2024</div></li></a><a class="li" href="https://nautil.us/the-most-detailed-brain-map-ever-954889/"><li><div class="title">The Most Detailed Brain Map Ever</div><div class="domain">nautil.us &bull; October 11, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Letters of Note (news.lettersofnote.com)</h2> (1)</summary><ul><a class="li" href="https://news.lettersofnote.com/p/my-life-and-creative-work-are-justified"><li><div class="title">My life and creative work are justified and completed</div><div class="domain">news.lettersofnote.com &bull; October 11, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">notes.druchan.com — RSS Feed (notes.druchan.com)</h2> (1)</summary><ul><a class="li" href="https://notes.druchan.com/haskell-journal-day-5"><li><div class="title">Haskell Journal - Day 5</div><div class="domain">notes.druchan.com &bull; October 11, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Quanta Magazine (quantamagazine.org)</h2> (1)</summary><ul><a class="li" href="https://www.quantamagazine.org/even-a-single-bacterial-cell-can-sense-the-seasons-changing-20241011/"><li><div class="title">Even a Single Bacterial Cell Can Sense the Seasons Changing</div><div class="domain">quantamagazine.org &bull; October 11, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Reasons to be Cheerful (reasonstobecheerful.world)</h2> (1)</summary><ul><a class="li" href="https://reasonstobecheerful.world/living-well-with-diabetes-with-help-from-a-peer/"><li><div class="title">Living Well With Diabetes — With Help From a Peer</div><div class="domain">reasonstobecheerful.world &bull; October 11, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Sympolymathesy, by Chris Krycho (v5.chriskrycho.com)</h2> (1)</summary><ul><a class="li" href="https://v5.chriskrycho.com/journal/read-the-manual/cd/"><li><div class="title">[journal] Read the Manual: cd</div><div class="domain">v5.chriskrycho.com &bull; October 11, 2024</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>

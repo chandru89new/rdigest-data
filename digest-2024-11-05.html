@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2024-11-05</span>:</h1>
+  <p class="summary">There are 90 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Bear Blog Trending Posts (bearblog.dev)</h2> (3)</summary><ul><a class="li" href="https://birming.com/share-your-shit/"><li><div class="title">Share Your Shit</div><div class="domain">birming.com &bull; November 05, 2024</div></li></a><a class="li" href="https://mgx.me/by-the-power-of-bear-blog/"><li><div class="title">by the power of bear blog</div><div class="domain">mgx.me &bull; November 05, 2024</div></li></a><a class="li" href="https://louplummer.lol/advice-to-graduates/"><li><div class="title">AMA - What advice would you give someone graduating from high school?</div><div class="domain">louplummer.lol &bull; November 05, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Big Think (bigthink.com)</h2> (5)</summary><ul><a class="li" href="https://bigthink.com/starts-with-a-bang/jwst-what-wrong-vega/"><li><div class="title">JWST compels us to ask: what’s wrong with Vega?</div><div class="domain">bigthink.com &bull; November 05, 2024</div></li></a><a class="li" href="https://bigthink.com/series/devils-advocate/amanda-ripley-divide/"><li><div class="title">The one temptation to resist post-election: Good vs. evil</div><div class="domain">bigthink.com &bull; November 05, 2024</div></li></a><a class="li" href="https://bigthink.com/the-long-game/question-are-you-asking-the-right-questions/"><li><div class="title">Question: Are you asking the “right” questions?</div><div class="domain">bigthink.com &bull; November 05, 2024</div></li></a><a class="li" href="https://bigthink.com/thinking/the-case-for-sparing-46-million-turkeys-this-thanksgiving/"><li><div class="title">The case for sparing 46 million turkeys this Thanksgiving</div><div class="domain">bigthink.com &bull; November 05, 2024</div></li></a><a class="li" href="https://bigthink.com/hard-science/will-protons-last-forever-why-scientists-are-searching-for-signs-of-decay/"><li><div class="title">Will protons last forever? Why scientists are searching for signs of decay</div><div class="domain">bigthink.com &bull; November 05, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Computer Things (buttondown.com)</h2> (1)</summary><ul><a class="li" href="https://buttondown.com/hillelwayne/archive/a-list-of-ternary-operators/"><li><div class="title">A list of ternary operators</div><div class="domain">buttondown.com &bull; November 05, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">kottke.org (feeds.kottke.org)</h2> (10)</summary><ul><a class="li" href="https://kottke.org/24/11/0045582-fleabag-in-lego-i-look"><li><div class="title">Fleabag in Lego. &#8220;I look like a pencil!&#8221;...</div><div class="domain">kottke.org &bull; November 05, 2024</div></li></a><a class="li" href="https://kottke.org/24/11/danny-macaskill-rides-the-adidas-hq"><li><div class="title">Danny MacAskill Rides the Adidas HQ</div><div class="domain">kottke.org &bull; November 05, 2024</div></li></a><a class="li" href="https://kottke.org/24/11/0045585-tony-hawk-posted-a-photo"><li><div class="title">Tony Hawk posted a photo from the 70s of a girl skateboarding...</div><div class="domain">kottke.org &bull; November 05, 2024</div></li></a><a class="li" href="https://kottke.org/24/11/0045577-how-ill-advised-guideline"><li><div class="title">How ill-advised guidelines created a peanut allergy epidemic in the US. &#8220;The...</div><div class="domain">kottke.org &bull; November 05, 2024</div></li></a><a class="li" href="https://kottke.org/24/11/0045586-sometimes-a-post-title-ju"><li><div class="title">Sometimes a post title just reaches right into your introverted soul: The...</div><div class="domain">kottke.org &bull; November 05, 2024</div></li></a><a class="li" href="https://kottke.org/24/11/0045588-if-you-need-some-last"><li><div class="title">If you need some last minute cajoling to not sit out this...</div><div class="domain">kottke.org &bull; November 05, 2024</div></li></a><a class="li" href="https://kottke.org/24/11/0045575-i-did-go-touch-that"><li><div class="title">&#8220;I did go touch that rock. I didn&#8217;t tell anyone&#8230;&#8221; I live...</div><div class="domain">kottke.org &bull; November 05, 2024</div></li></a><a class="li" href="https://kottke.org/24/11/0045579-wow-more-than-40-people"><li><div class="title">Wow, more than 40 people have undergone a CAR-T-cell therapy for lupus,...</div><div class="domain">kottke.org &bull; November 05, 2024</div></li></a><a class="li" href="https://kottke.org/24/11/0045581-til-about-argonaut-octopu"><li><div class="title">TIL about argonaut octopuses. &#8220;Although most octopuses live near the ocean floor...</div><div class="domain">kottke.org &bull; November 05, 2024</div></li></a><a class="li" href="https://kottke.org/24/11/0045583-a-scottish-childrens-hosp"><li><div class="title">A Scottish children&#8217;s hospital has a gamer-in-residence who plays w/ patients. &#8220;He...</div><div class="domain">kottke.org &bull; November 05, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Go Make Things (gomakethings.com)</h2> (1)</summary><ul><a class="li" href="https://gomakethings.com/styling-web-component-shadow-dom-elements-with-inline-styles/"><li><div class="title">Styling Web Component shadow DOM elements with inline styles</div><div class="domain">gomakethings.com &bull; November 05, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (4)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/JLZnSnJptzmPtSRTc/intuitive-self-models-8-rooting-out-free-will-intuitions"><li><div class="title">[Intuitive self-models] 8. Rooting Out Free Will Intuitions</div><div class="domain">lesswrong.com &bull; November 05, 2024</div></li></a><a class="li" href="https://www.lesswrong.com/posts/eTHvMqxaLsrxtRLq3/empathy-systemizing-quotient-is-a-poor-biased-model-for-the"><li><div class="title">Empathy/Systemizing Quotient is a poor/biased model for the autism/sex link</div><div class="domain">lesswrong.com &bull; November 05, 2024</div></li></a><a class="li" href="https://www.lesswrong.com/posts/5mgAd5kY6Jag7d5o9/metastatic-cancer-treatment-since-2010-the-success-stories"><li><div class="title">Metastatic Cancer Treatment Since 2010: The Success Stories</div><div class="domain">lesswrong.com &bull; November 05, 2024</div></li></a><a class="li" href="https://www.lesswrong.com/posts/9XtMrLzuf6Pmymckv/the-shallow-bench"><li><div class="title">The Shallow Bench</div><div class="domain">lesswrong.com &bull; November 05, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (24)</summary><ul><a class="li" href="https://matt.blwt.io/post/on-that-okta-ldap-bug/"><li><div class="title">On That Okta LDAP Bug</div><div class="domain">matt.blwt.io &bull; November 05, 2024</div></li></a><a class="li" href="https://github.com/Dr-Nekoma/lyceum"><li><div class="title">Lyceum - An MMO game written in Erlang + Zig (+ Raylib)</div><div class="domain">github.com &bull; November 05, 2024</div></li></a><a class="li" href="https://smallcultfollowing.com/babysteps/blog/2024/11/05/minpin/"><li><div class="title">MinPin: yet another pin proposal</div><div class="domain">smallcultfollowing.com &bull; November 05, 2024</div></li></a><a class="li" href="https://lobste.rs/s/keyzzp/i_m_bored_want_foss_project_write_code_for"><li><div class="title">I'm bored and want a FOSS project to write code for</div><div class="domain">lobste.rs &bull; November 05, 2024</div></li></a><a class="li" href="https://www.citationneeded.news/we-can-have-a-different-web/"><li><div class="title">We can have a different web</div><div class="domain">citationneeded.news &bull; November 05, 2024</div></li></a><a class="li" href="https://thomascountz.com/2023/07/30/low-poly-image-generation"><li><div class="title">Low-Poly Image Generation using Evolutionary Algorithms in Ruby</div><div class="domain">thomascountz.com &bull; November 05, 2024</div></li></a><a class="li" href="https://keymaterial.net/2024/11/05/hashml-dsa-considered-harmful/"><li><div class="title">HashML-DSA considered harmful</div><div class="domain">keymaterial.net &bull; November 05, 2024</div></li></a><a class="li" href="https://matt.blwt.io/post/long-distance-relationships/"><li><div class="title">Long Distance Relationships</div><div class="domain">matt.blwt.io &bull; November 05, 2024</div></li></a><a class="li" href="https://arstechnica.com/security/2024/11/javascript-developers-targeted-by-hundreds-of-malicious-code-libraries/"><li><div class="title">Hundreds of code libraries posted to NPM try to install malware on dev machines</div><div class="domain">arstechnica.com &bull; November 05, 2024</div></li></a><a class="li" href="https://www.scalevp.com/insights/the-rise-of-advanced-build-systems/"><li><div class="title">The rise of advanced build systems</div><div class="domain">scalevp.com &bull; November 05, 2024</div></li></a><a class="li" href="https://stevenharman.net/configure-ssh-keys-for-multiple-github-accounts"><li><div class="title">Configuring SSH Keys for Multiple GitHub Accounts</div><div class="domain">stevenharman.net &bull; November 05, 2024</div></li></a><a class="li" href="https://blog.izissise.net/posts/ngxp-cookie-auth/"><li><div class="title">Nginx Explorer - Cookie Authentication</div><div class="domain">blog.izissise.net &bull; November 05, 2024</div></li></a><a class="li" href="https://leimao.github.io/blog/CPP-Shared-Ptr-Thread-Safety/"><li><div class="title">C++ Shared Pointer Thread-Safety</div><div class="domain">leimao.github.io &bull; November 05, 2024</div></li></a><a class="li" href="https://hanamirb.org/blog/2024/11/05/hanami-220/"><li><div class="title">Hanami 2.2: Persistence pays off</div><div class="domain">hanamirb.org &bull; November 05, 2024</div></li></a><a class="li" href="https://www.danielgratzer.com/papers/type-theory-book.pdf"><li><div class="title">Principles of Dependent Type Theory</div><div class="domain">danielgratzer.com &bull; November 05, 2024</div></li></a><a class="li" href="https://nochlin.com/blog/how-the-new-sqlite3_rsync-utility-works"><li><div class="title">How the New sqlite3_rsync Utility Works</div><div class="domain">nochlin.com &bull; November 05, 2024</div></li></a><a class="li" href="https://github.com/nlewo/comin"><li><div class="title">comin: GitOps For NixOS Machines</div><div class="domain">github.com &bull; November 05, 2024</div></li></a><a class="li" href="https://gleam.run//news/developer-survey-2024/"><li><div class="title">Developer Survey 2024</div><div class="domain">gleam.run &bull; November 05, 2024</div></li></a><a class="li" href="https://rknight.me/blog/thinking-about-recipe-formats-more-than-anyone-should/"><li><div class="title">Thinking About Recipe Formats More Than Anyone Should</div><div class="domain">rknight.me &bull; November 05, 2024</div></li></a><a class="li" href="https://blogsystem5.substack.com/p/demystifying-secure-nfs"><li><div class="title">Demystifying secure NFS</div><div class="domain">blogsystem5.substack.com &bull; November 05, 2024</div></li></a><a class="li" href="https://the-mikedavis.github.io/posts/german-string-optimizations-in-spellbook/"><li><div class="title">"German string" optimizations in Spellbook</div><div class="domain">the-mikedavis.github.io &bull; November 05, 2024</div></li></a><a class="li" href="https://ziglang.org/devlog/2024/#2024-11-04"><li><div class="title">The Unreasonable Effectiveness of Naming Integers</div><div class="domain">ziglang.org &bull; November 05, 2024</div></li></a><a class="li" href="https://wickedchicken.github.io/post/programmer-in-berlin/"><li><div class="title">What I wish I had known as a programmer moving to Berlin</div><div class="domain">wickedchicken.github.io &bull; November 05, 2024</div></li></a><a class="li" href="https://www.openmymind.net/Zigs-weird-syntax/"><li><div class="title">Zig's (.{}){} syntax</div><div class="domain">openmymind.net &bull; November 05, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Longreads (longreads.com)</h2> (1)</summary><ul><a class="li" href="https://longreads.com/2024/11/05/the-alchemists/"><li><div class="title">The Alchemists</div><div class="domain">longreads.com &bull; November 05, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Nautilus (nautil.us)</h2> (2)</summary><ul><a class="li" href="https://nautil.us/how-to-drill-for-extraterrestrial-life-on-europa-1066414/"><li><div class="title">How to Drill for Extraterrestrial Life on Europa</div><div class="domain">nautil.us &bull; November 05, 2024</div></li></a><a class="li" href="https://nautil.us/print-edition-58-1070588/"><li><div class="title">Print Edition 58</div><div class="domain">nautil.us &bull; November 05, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (16)</summary><ul><a class="li" href="https://www.thonking.ai/p/what-shapes-do-matrix-multiplications"><li><div class="title">What Shapes Do Matrix Multiplications Like?</div><div class="domain">thonking.ai &bull; November 05, 2024</div></li></a><a class="li" href="https://www.cs.columbia.edu/~smb/papers/netnews-hist.pdf"><li><div class="title">Netnews: The Origin Story [pdf]</div><div class="domain">cs.columbia.edu &bull; November 05, 2024</div></li></a><a class="li" href="https://www.bloomberg.com/news/articles/2024-11-05/boeing-ends-crippling-strike-after-workers-accept-latest-offer"><li><div class="title">Boeing Ends Crippling Strike as Workers Accept Latest Offer</div><div class="domain">bloomberg.com &bull; November 05, 2024</div></li></a><a class="li" href="https://www.archpaper.com/2024/10/documentary-reveals-21000-workers-killed-saudi-vision-2030-neom/"><li><div class="title">New documentary reveals that 21,000 laborers have died working Saudi Vision 2030</div><div class="domain">archpaper.com &bull; November 05, 2024</div></li></a><a class="li" href="https://news.sky.com/story/worlds-first-wooden-satellite-heads-to-space-in-mars-exploration-test-13248719"><li><div class="title">World's First Wooden Satellite Heads to Space in Mars Exploration Test</div><div class="domain">news.sky.com &bull; November 05, 2024</div></li></a><a class="li" href="https://igorpak.wordpress.com/2020/12/10/what-if-they-are-all-wrong/"><li><div class="title">What if they are all wrong? (2020)</div><div class="domain">igorpak.wordpress.com &bull; November 05, 2024</div></li></a><a class="li" href="https://github.com/SelfExplainML/PiML-Toolbox"><li><div class="title">PiML: Python Interpretable Machine Learning Toolbox</div><div class="domain">github.com &bull; November 05, 2024</div></li></a><a class="li" href="https://literaryreview.co.uk/we-shall-fight-in-the-buttery"><li><div class="title">We Shall Fight in the Buttery – Oxford's War 1939–1945</div><div class="domain">literaryreview.co.uk &bull; November 05, 2024</div></li></a><a class="li" href="https://www.pnas.org/doi/10.1073/pnas.2413514121"><li><div class="title">Soft matter mechanics of baseball's Rubbing Mud</div><div class="domain">pnas.org &bull; November 05, 2024</div></li></a><a class="li" href="https://github.com/varse-io/varse"><li><div class="title">Show HN: Varse – Simple remote application config</div><div class="domain">github.com &bull; November 05, 2024</div></li></a><a class="li" href="https://worldsensorium.com/will-plants-grow-on-the-moon/"><li><div class="title">Will Plants Grow on the Moon?</div><div class="domain">worldsensorium.com &bull; November 05, 2024</div></li></a><a class="li" href="https://www.bbc.co.uk/news/articles/cwy1vze09wwo"><li><div class="title">Netflix Europe offices raided in tax fraud probe</div><div class="domain">bbc.co.uk &bull; November 05, 2024</div></li></a><a class="li" href="https://github.com/darwindarak/rallyup"><li><div class="title">Show HN: rallyup – Lightweight Wake-on-LAN Scheduler</div><div class="domain">github.com &bull; November 05, 2024</div></li></a><a class="li" href="https://nap.nationalacademies.org/read/26982/chapter/1"><li><div class="title">Failure Analysis of the Arecibo 305 Meter Telescope Collapse</div><div class="domain">nap.nationalacademies.org &bull; November 05, 2024</div></li></a><a class="li" href="https://docs.hackerfab.org/hacker-fab-space"><li><div class="title">Hacker Fab</div><div class="domain">docs.hackerfab.org &bull; November 05, 2024</div></li></a><a class="li" href="https://battleda.sh/blog/ea-account-takeover"><li><div class="title">Hacking 700M Electronic Arts Accounts</div><div class="domain">battleda.sh &bull; November 05, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Reasons to be Cheerful (reasonstobecheerful.world)</h2> (1)</summary><ul><a class="li" href="https://reasonstobecheerful.world/one-question-109-responses-no-matter-who-wins-_____________/"><li><div class="title">One Question, 109 Responses: No Matter Who Wins, _____________.</div><div class="domain">reasonstobecheerful.world &bull; November 05, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Seth's Blog (seths.blog)</h2> (1)</summary><ul><a class="li" href="https://seths.blog/2024/11/kinds-of-power/"><li><div class="title">Kinds of power</div><div class="domain">seths.blog &bull; November 05, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Trevor I. Lasn Thoughts (trevorlasn.com)</h2> (2)</summary><ul><a class="li" href="https://www.trevorlasn.com/blog/javascript-nullish-coalescing-assignment-operator"><li><div class="title">JavaScript's ??= Operator: Default Values Made Simple</div><div class="domain">trevorlasn.com &bull; November 05, 2024</div></li></a><a class="li" href="https://www.trevorlasn.com/blog/javascript-logical-and-assignment-operator"><li><div class="title">JavaScript's &&= Operator: Understanding Logical AND Assignment</div><div class="domain">trevorlasn.com &bull; November 05, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">XML.com Atom feed for articles and news items (xml.com)</h2> (1)</summary><ul><a class="li" href="https://www.xml.com/news/2024-11-oxygen-ai-positron-assistant-40/"><li><div class="title">Oxygen AI Positron Assistant 4.0 is now available!</div><div class="domain">xml.com &bull; November 05, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (17)</summary><ul><a class="li" href="https://yourstory.com/2024/11/startup-news-updates-daily-roundup-november-5-2024-pepperfry-wakefit"><li><div class="title">Startup news and updates: Daily roundup (November 5, 2024)</div><div class="domain">yourstory.com &bull; November 05, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/11/qa-with-swiggy-leaders-ahead-of-ipo-sanjeev-bikhchandani-info-edge"><li><div class="title">Q&A with Swiggy leaders ahead of IPO; Sanjeev Bikhchandani on AI rising</div><div class="domain">yourstory.com &bull; November 05, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/11/euler-motors-net-loss-widens-to-rs-226-crore-in-fy24"><li><div class="title">Euler Motors’ net loss widens to Rs 227 crore in FY24</div><div class="domain">yourstory.com &bull; November 05, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/11/fidelity-marks-lenskart-valuation-12-56-billion-eyewear-peyush-bansal"><li><div class="title">Fidelity marks up Lenskart valuation by 12% to $5.6B just months after investment</div><div class="domain">yourstory.com &bull; November 05, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/11/royal-enfield-forays-into-electric-bike-segment"><li><div class="title">Royal Enfield launches electric bike segment</div><div class="domain">yourstory.com &bull; November 05, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/11/bandhan-group-acquires-genisys-group-enters-tech-space"><li><div class="title">Bandhan Group enters tech space with Genisys Group acquisition</div><div class="domain">yourstory.com &bull; November 05, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/11/ms-dhoni-backed-khatabook-clocks-rs-1027-cr-revenue-cuts-losses-7-in-fy24"><li><div class="title">Dhoni-backed Khatabook clocks Rs 102.7 Cr revenue, cuts losses by 7% in FY24</div><div class="domain">yourstory.com &bull; November 05, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/11/paytm-cpo-shreyas-srinivasan-exits-paytm-zomato-deal"><li><div class="title">Paytm CPO Shreyas Srinivasan exits Paytm after Zomato deal</div><div class="domain">yourstory.com &bull; November 05, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/11/veefin-acquires-singapore-based-genai-startup-walnut"><li><div class="title">Veefin acquires Singapore-based GenAI startup Walnut</div><div class="domain">yourstory.com &bull; November 05, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/11/spinny-parent-company-reports-fy24-revenue-loss-earnings-expense"><li><div class="title">Spinny’s reports 14% rise in FY24 revenue, narrows losses</div><div class="domain">yourstory.com &bull; November 05, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/11/cartrade-expects-30-revenue-growth-third-quarter"><li><div class="title">CarTrade’s consumer group expects 30% Q3 revenue growth with festive season bump</div><div class="domain">yourstory.com &bull; November 05, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/11/dronetech-marut-drones-bags-6-million-series-a-lok-capital"><li><div class="title">Dronetech firm Marut Drones bags $6.2M in Series A funding from Lok Capital</div><div class="domain">yourstory.com &bull; November 05, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/11/entrust-family-office-startups-ultra-high-net-worth-individuals-sreepriya"><li><div class="title">Entrust Family Office on working with startups and guiding the next generation of ultra-high net worth individuals</div><div class="domain">yourstory.com &bull; November 05, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/11/enhancing-business-with-advanced-saas-cash-flow-management"><li><div class="title">Enhancing business with advanced SaaS cash flow management</div><div class="domain">yourstory.com &bull; November 05, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/10/quartr-design-leading-tier-2-cities-digital-revolution"><li><div class="title">Quartr Design is leading the digital revolution in Tier II cities</div><div class="domain">yourstory.com &bull; November 05, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/10/supercharging-developer-work-processes-to-drive-digital-innovation-with-search-ai"><li><div class="title">Supercharging developer work processes to drive digital innovation with Search AI</div><div class="domain">yourstory.com &bull; November 05, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/11/benny-abraham-appointed-evp--chief-solutions-officer-epiplexai"><li><div class="title">Benny Abraham appointed as EVP & Chief Solutions Officer at epiplex.ai</div><div class="domain">yourstory.com &bull; November 05, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">achalchitra (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=FiL4ply2f44"><li><div class="title">Chaar Phool Hain Aur Duniya Hai - Teaser</div><div class="domain">youtube.com &bull; November 05, 2024</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>

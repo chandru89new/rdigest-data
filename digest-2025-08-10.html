@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-08-10</span>:</h1>
+  <p class="summary">There are 75 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Bear Blog Trending Posts (bearblog.dev)</h2> (1)</summary><ul><a class="li" href="https://prickly.oxhe.art/scarcity/"><li><div class="title">The Darkness You Choose, The Darkness that Chooses You</div><div class="domain">prickly.oxhe.art &bull; August 10, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DOC (doc.cc)</h2> (1)</summary><ul><a class="li" href="https://www.doc.cc/articles/the-creator-and-the-machine"><li><div class="title">The creator and the machine</div><div class="domain">doc.cc &bull; August 10, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">kottke.org (feeds.kottke.org)</h2> (1)</summary><ul><a class="li" href="https://kottke.org/25/08/0047305-great-new-t-shirt-for-gra"><li><div class="title">Great new t-shirt for Gracie&#8217;s Ice Cream features a Jaws-shaped cone about...</div><div class="domain">kottke.org &bull; August 10, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Go Make Things (gomakethings.com)</h2> (1)</summary><ul><a class="li" href="https://gomakethings.com/at-my-worst/"><li><div class="title">At my worst</div><div class="domain">gomakethings.com &bull; August 10, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (2)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/AmcEyFErJc9TQ5ySF/four-places-where-you-can-put-llm-monitoring"><li><div class="title">Four places where you can put LLM monitoring</div><div class="domain">lesswrong.com &bull; August 10, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/ntELqTE47jyHPnH84/a-self-dialogue-on-the-value-proposition-of-romantic"><li><div class="title">A Self-Dialogue on The Value Proposition of Romantic Relationships</div><div class="domain">lesswrong.com &bull; August 10, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (15)</summary><ul><a class="li" href="https://soatok.blog/2025/08/09/improving-geographical-resilience-for-distributed-open-source-teams-with-freon/"><li><div class="title">Improving Geographical Resilience For Distributed Open Source Teams with FREON</div><div class="domain">soatok.blog &bull; August 10, 2025</div></li></a><a class="li" href="https://worksonmymachine.ai/p/mcp-an-accidentally-universal-plugin"><li><div class="title">MCP: An (Accidentally) Universal Plugin System</div><div class="domain">worksonmymachine.ai &bull; August 10, 2025</div></li></a><a class="li" href="https://marvinh.dev/blog/speeding-up-javascript-ecosystem-part-12/"><li><div class="title">Speeding up the JavaScript ecosystem - Semver</div><div class="domain">marvinh.dev &bull; August 10, 2025</div></li></a><a class="li" href="https://robert.ocallahan.org/2016/02/introducing-rr-chaos-mode.html"><li><div class="title">Introducing rr Chaos Mode (2016)</div><div class="domain">robert.ocallahan.org &bull; August 10, 2025</div></li></a><a class="li" href="https://github.com/yumaikas/onion"><li><div class="title">onion: Stack language compiled to lua</div><div class="domain">github.com &bull; August 10, 2025</div></li></a><a class="li" href="https://world.hey.com/dhh/all-in-on-omarchy-at-37signals-68162450"><li><div class="title">All-in on Omarchy at 37signals</div><div class="domain">world.hey.com &bull; August 10, 2025</div></li></a><a class="li" href="https://blog.poly.nomial.co.uk/2025-08-10-creating-high-quality-electronics-schematics.html"><li><div class="title">Creating high quality electronics schematics</div><div class="domain">blog.poly.nomial.co.uk &bull; August 10, 2025</div></li></a><a class="li" href="https://bernsteinbear.com/blog/compiling-a-lisp-12/"><li><div class="title">Compiling a Lisp: Lambda lifting</div><div class="domain">bernsteinbear.com &bull; August 10, 2025</div></li></a><a class="li" href="https://janetdocs.org/"><li><div class="title">JanetDocs</div><div class="domain">janetdocs.org &bull; August 10, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=bjrmH7hVBOo"><li><div class="title">Resurrecting Google's Search Appliance</div><div class="domain">youtube.com &bull; August 10, 2025</div></li></a><a class="li" href="https://www.ohyaml.wtf/"><li><div class="title">ohyaml.wtf | YAML Quiz</div><div class="domain">ohyaml.wtf &bull; August 10, 2025</div></li></a><a class="li" href="https://lemire.me/blog/2025/08/09/why-do-we-even-need-simd-instructions/"><li><div class="title">Why do we even need SIMD instructions ?</div><div class="domain">lemire.me &bull; August 10, 2025</div></li></a><a class="li" href="https://github.com/tanrax/lobsters.el"><li><div class="title">Lobsters client for Emacs</div><div class="domain">github.com &bull; August 10, 2025</div></li></a><a class="li" href="https://matklad.github.io/2025/08/09/zigs-lovely-syntax.html"><li><div class="title">Zig's Lovely Syntax</div><div class="domain">matklad.github.io &bull; August 10, 2025</div></li></a><a class="li" href="https://passo.uno/from-tech-writers-to-ai-context-curators/"><li><div class="title">AI must RTFM: Why technical writers are becoming context curators</div><div class="domain">passo.uno &bull; August 10, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Nautilus (nautil.us)</h2> (1)</summary><ul><a class="li" href="https://nautil.us/spying-the-medusa-slayers-meteor-shower-1229884/"><li><div class="title">Spying the Medusa Slayer’s Meteor Shower</div><div class="domain">nautil.us &bull; August 10, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (25)</summary><ul><a class="li" href="https://mashable.com/archive/soviet-hobbit"><li><div class="title">1976 Soviet edition of 'The Hobbit' (2015)</div><div class="domain">mashable.com &bull; August 10, 2025</div></li></a><a class="li" href="https://burntsushi.net/transducers/"><li><div class="title">Index 1.6B Keys with Automata and Rust (2015)</div><div class="domain">burntsushi.net &bull; August 10, 2025</div></li></a><a class="li" href="https://www.historytoday.com/archive/history-matters/galileos-telescopes-seeing-believing"><li><div class="title">Galileo’s telescopes: Seeing is believing (2010)</div><div class="domain">historytoday.com &bull; August 10, 2025</div></li></a><a class="li" href="https://yosefk.com/blog/llms-arent-world-models.html"><li><div class="title">LLMs aren't world models</div><div class="domain">yosefk.com &bull; August 10, 2025</div></li></a><a class="li" href="https://bscholl.substack.com/p/move-fast-and-dont-break-safety-critical"><li><div class="title">How Boom uses software to accelerate hardware development</div><div class="domain">bscholl.substack.com &bull; August 10, 2025</div></li></a><a class="li" href="https://www.abortretry.fail/p/the-history-of-windows-xp"><li><div class="title">The History of Windows XP</div><div class="domain">abortretry.fail &bull; August 10, 2025</div></li></a><a class="li" href="https://github.com/AdoPi/wlgblock"><li><div class="title">Show HN: Play Pokémon to unlock your Wayland session</div><div class="domain">github.com &bull; August 10, 2025</div></li></a><a class="li" href="https://github.com/mendableai/open-lovable"><li><div class="title">Open Lovable</div><div class="domain">github.com &bull; August 10, 2025</div></li></a><a class="li" href="https://gitpi.us/article-archive/inside-os2/"><li><div class="title">Inside OS/2 (1987)</div><div class="domain">gitpi.us &bull; August 10, 2025</div></li></a><a class="li" href="https://www.psu.edu/news/engineering/story/conversations-remotely-detected-cell-phone-vibrations-researchers-report"><li><div class="title">Conversations remotely detected from cell phone vibrations, researchers report</div><div class="domain">psu.edu &bull; August 10, 2025</div></li></a><a class="li" href="https://github.com/denizsafak/abogen"><li><div class="title">Abogen – Generate audiobooks from EPUBs, PDFs and text</div><div class="domain">github.com &bull; August 10, 2025</div></li></a><a class="li" href="https://www.ycombinator.com/companies/type/jobs/1idOunL-founding-product-engineer"><li><div class="title">Type (YC W23) is hiring a founding engineer to build an AI-native doc editor</div><div class="domain">ycombinator.com &bull; August 10, 2025</div></li></a><a class="li" href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/Events"><li><div class="title">Events</div><div class="domain">developer.mozilla.org &bull; August 10, 2025</div></li></a><a class="li" href="https://mill-build.org/blog/14-bash-zsh-completion.html"><li><div class="title">Writing simple tab-completions for Bash and Zsh</div><div class="domain">mill-build.org &bull; August 10, 2025</div></li></a><a class="li" href="https://underjord.io/booting-5000-erlangs-on-ampere-one.html"><li><div class="title">Booting 5000 Erlangs on Ampere One 192-core</div><div class="domain">underjord.io &bull; August 10, 2025</div></li></a><a class="li" href="https://jinjieni.notion.site/Diffusion-Language-Models-are-Super-Data-Learners-239d8f03a866800ab196e49928c019ac"><li><div class="title">Diffusion language models are super data learners</div><div class="domain">jinjieni.notion.site &bull; August 10, 2025</div></li></a><a class="li" href="https://onemillionscreenshots.com/?q=random"><li><div class="title">One Million Screenshots</div><div class="domain">onemillionscreenshots.com &bull; August 10, 2025</div></li></a><a class="li" href="https://engineering.fyi/"><li><div class="title">Show HN: Engineering.fyi – Search across tech engineering blogs in one place</div><div class="domain">engineering.fyi &bull; August 10, 2025</div></li></a><a class="li" href="https://fightchatcontrol.eu/"><li><div class="title">Fight Chat Control</div><div class="domain">fightchatcontrol.eu &bull; August 10, 2025</div></li></a><a class="li" href="https://www.derekthompson.org/p/1910-the-year-the-modern-world-lost"><li><div class="title">1910: The year the modern world lost its mind</div><div class="domain">derekthompson.org &bull; August 10, 2025</div></li></a><a class="li" href="https://github.com/Beariish/bolt"><li><div class="title">Show HN: Bolt – A super-fast, statically-typed scripting language written in C</div><div class="domain">github.com &bull; August 10, 2025</div></li></a><a class="li" href="https://magazine.sebastianraschka.com/p/from-gpt-2-to-gpt-oss-analyzing-the"><li><div class="title">GPT-OSS vs. Qwen3 and a detailed look how things evolved since GPT-2</div><div class="domain">magazine.sebastianraschka.com &bull; August 10, 2025</div></li></a><a class="li" href="https://ygdp.yale.edu/phenomena/try-and"><li><div class="title">Try and</div><div class="domain">ygdp.yale.edu &bull; August 10, 2025</div></li></a><a class="li" href="https://garymarcus.substack.com/p/gpt-5-overdue-overhyped-and-underwhelming"><li><div class="title">GPT-5: Overdue, overhyped and underwhelming. And that's not the worst of it</div><div class="domain">garymarcus.substack.com &bull; August 10, 2025</div></li></a><a class="li" href="https://justbuynothing.com/"><li><div class="title">Just Buy Nothing: A fake online store to combat shopping addiction</div><div class="domain">justbuynothing.com &bull; August 10, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Seth's Blog (seths.blog)</h2> (1)</summary><ul><a class="li" href="https://seths.blog/2025/08/after-the-chores/"><li><div class="title">After the chores</div><div class="domain">seths.blog &bull; August 10, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Diplomat (thediplomat.com)</h2> (3)</summary><ul><a class="li" href="https://thediplomat.com/2025/08/chinas-wolf-warrior-diplomacy-persists-in-latin-america/"><li><div class="title">China’s ‘Wolf Warrior’ Diplomacy Persists in Latin America</div><div class="domain">thediplomat.com &bull; August 10, 2025</div></li></a><a class="li" href="https://thediplomat.com/2025/08/is-pakistans-second-chance-in-the-tribal-areas-slipping-away/"><li><div class="title">Is Pakistan’s Second Chance in the Tribal Areas Slipping Away?</div><div class="domain">thediplomat.com &bull; August 10, 2025</div></li></a><a class="li" href="https://thediplomat.com/2025/08/banning-gas-motorbikes-in-vietnam-is-a-silly-move/"><li><div class="title">Banning Gas Motorbikes in Vietnam Is a Silly Move</div><div class="domain">thediplomat.com &bull; August 10, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (9)</summary><ul><a class="li" href="https://yourstory.com/2025/08/millennials-gen-z-blue-collar-job-applications"><li><div class="title">Millennials, Gen Z form 65% of blue-collar job applications: Report</div><div class="domain">yourstory.com &bull; August 10, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/08/sebi-proposes-lower-entry-threshold-large-value-alternative-investment-funds"><li><div class="title">SEBI proposes lower entry threshold for large-value AIFs at Rs 25 Cr</div><div class="domain">yourstory.com &bull; August 10, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/08/fpis-withdraw-18000-crore-equities-aug-trade-tension-earnings"><li><div class="title">FPIs withdraw close to Rs 18,000 Cr from equities in Aug on trade tension, disappointing earnings</div><div class="domain">yourstory.com &bull; August 10, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/08/jm-financial-unit-sell-stake-home-loans-bajaj-allianz-life"><li><div class="title">JM Financial unit to sell 2.1% stake in home loans arm to Bajaj Allianz Life for Rs 65.5 Cr</div><div class="domain">yourstory.com &bull; August 10, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/08/sebi-moots-lighter-regulatory-framework-aifs"><li><div class="title">SEBI moots lighter regulatory framework for AIFs with accredited investors</div><div class="domain">yourstory.com &bull; August 10, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/08/bharatpe-raise-funds-before-ipo-listing-not-this-fiscal"><li><div class="title">BharatPe to raise funds before IPO, listing not on card this fiscal: CEO Nalin Negi</div><div class="domain">yourstory.com &bull; August 10, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/08/public-charging-infra-development-vital-ev-adoption"><li><div class="title">Public charging infra development vital for EV adoption: Maruti Suzuki</div><div class="domain">yourstory.com &bull; August 10, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/08/navigating-new-cloud-landscape-through-data-residency"><li><div class="title">Navigating the new cloud landscape through data residency and compliance</div><div class="domain">yourstory.com &bull; August 10, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/08/history-on-a-plate-openai-chatgpt-gpt5"><li><div class="title">History on a plate; A slice of Italy in Bengaluru</div><div class="domain">yourstory.com &bull; August 10, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Socrates Studio (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=N-lmJ1tIQX4"><li><div class="title">Philosophy of Aseevagam llஆசீவகம் பேசும் மெய்யியல் ll  பேரா.இரா.முரளி</div><div class="domain">youtube.com &bull; August 10, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Newsthink (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=a6vQeszsnnw"><li><div class="title">The American Who Spied For Israel</div><div class="domain">youtube.com &bull; August 10, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">newline (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=jslwjKps41M"><li><div class="title">From “AI-Overwhelmed” to Confident AI Builder — Sunjith’s Journey Into GenAI Engineering</div><div class="domain">youtube.com &bull; August 10, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lucaas (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=D1rHy9Kz-4Q"><li><div class="title">A321 Landing Goes Wrong</div><div class="domain">youtube.com &bull; August 10, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Let's Game It Out (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=UuMFCfixvRw"><li><div class="title">I Became a Millionaire Running a Mail Service with a 0.03% Delivery Success Rate -  Parcel Simulator</div><div class="domain">youtube.com &bull; August 10, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Home & Garden (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=fQ-YGzbzjbM"><li><div class="title">Trồng tắc chua trong vườn nhà quê | Growing sour kumquat in the country garden</div><div class="domain">youtube.com &bull; August 10, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hassan & Roshaan (youtube.com)</h2> (8)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=VK7V4lT2sew"><li><div class="title">Hassan & Roshaan - Saiyaan</div><div class="domain">youtube.com &bull; August 10, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=FpP61_Q-X4M"><li><div class="title">Hassan & Roshaan - Mysterious</div><div class="domain">youtube.com &bull; August 10, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=lOLucCQroHA"><li><div class="title">Hassan & Roshaan - Zaalima</div><div class="domain">youtube.com &bull; August 10, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=7Vxoq0MbDLg"><li><div class="title">Hassan & Roshaan - Ud Da Phiraan</div><div class="domain">youtube.com &bull; August 10, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=FnF96WqXn3k"><li><div class="title">Hassan & Roshaan - Ajnabi (ft. Amna Riaz)</div><div class="domain">youtube.com &bull; August 10, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=VZZ9CxHg8yw"><li><div class="title">Hassan & Roshaan - O Ranjhana</div><div class="domain">youtube.com &bull; August 10, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=B6xg0gbH54o"><li><div class="title">Hassan & Roshaan - Runaway</div><div class="domain">youtube.com &bull; August 10, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=hvClYHaSvDU"><li><div class="title">Hassan & Roshaan - Phool Chunein</div><div class="domain">youtube.com &bull; August 10, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">GreatScott! (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=LOIVrVVYBfA"><li><div class="title">Is it IMPOSSIBLE to make the Ultimate USB-C Cable? (Shielding) EB#64</div><div class="domain">youtube.com &bull; August 10, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>

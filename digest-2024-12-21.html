@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2024-12-21</span>:</h1>
+  <p class="summary">There are 55 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Bear Blog Trending Posts (bearblog.dev)</h2> (4)</summary><ul><a class="li" href="https://sankalp.bearblog.dev/evolution-of-ai-assisted-coding-features-and-developer-interaction-patterns/"><li><div class="title">The Evolution of AI-assisted coding features and developer interaction patterns</div><div class="domain">sankalp.bearblog.dev &bull; December 21, 2024</div></li></a><a class="li" href="https://notes.jeddacp.com/week-notes-036/"><li><div class="title">Week Notes 036</div><div class="domain">notes.jeddacp.com &bull; December 21, 2024</div></li></a><a class="li" href="https://louplummer.lol/my-internet-culture-war-of-2024/"><li><div class="title">My Internet Culture War of 2024</div><div class="domain">louplummer.lol &bull; December 21, 2024</div></li></a><a class="li" href="https://jkap.io/of-the-year-2024/"><li><div class="title">of the year</div><div class="domain">jkap.io &bull; December 21, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Big Think (bigthink.com)</h2> (1)</summary><ul><a class="li" href="https://bigthink.com/the-future/synchron-bci/"><li><div class="title">How Neuralink’s chief competitor is tapping into the brain without surgery</div><div class="domain">bigthink.com &bull; December 21, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Fragments — brandur.org (brandur.org)</h2> (1)</summary><ul><a class="li" href="https://brandur.org/fragments/go-max-time-duration"><li><div class="title">Go's maximum time.Duration</div><div class="domain">brandur.org &bull; December 21, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">kottke.org (feeds.kottke.org)</h2> (3)</summary><ul><a class="li" href="https://kottke.org/24/12/0045898-last-minute-gift-idea-for"><li><div class="title">Last minute gift idea for the art fan in your life: Amy...</div><div class="domain">kottke.org &bull; December 21, 2024</div></li></a><a class="li" href="https://kottke.org/24/12/0045899-rickey-henderson-has-died"><li><div class="title">Rickey Henderson has died aged 65. &#8220;There may not have been any...</div><div class="domain">kottke.org &bull; December 21, 2024</div></li></a><a class="li" href="https://kottke.org/24/12/0045896-my-mouth-is-watering-read"><li><div class="title">My mouth is watering reading this retrospective by Cup of Jo&#8217;s retiring...</div><div class="domain">kottke.org &bull; December 21, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (2)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/cTioLtLJy2trw998A/moderately-skeptical-of-risks-of-mirror-biology"><li><div class="title">Moderately Skeptical of "Risks of Mirror Biology"</div><div class="domain">lesswrong.com &bull; December 21, 2024</div></li></a><a class="li" href="https://www.lesswrong.com/posts/PKoGicBvbomuBzJYE/the-nihilism-of-neurips"><li><div class="title">The nihilism of NeurIPS</div><div class="domain">lesswrong.com &bull; December 21, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (15)</summary><ul><a class="li" href="https://blog.cathoderaydude.com/doku.php?id=blog:making_a_website_is_hard"><li><div class="title">making a website is hard</div><div class="domain">blog.cathoderaydude.com &bull; December 21, 2024</div></li></a><a class="li" href="https://github.com/yugr/sortcheck"><li><div class="title">sortcheck: Tool for detecting violations of ordering axioms in qsort/bsearch callbacks</div><div class="domain">github.com &bull; December 21, 2024</div></li></a><a class="li" href="https://2024.stateofjs.com/"><li><div class="title">State of JavaScript 2024</div><div class="domain">2024.stateofjs.com &bull; December 21, 2024</div></li></a><a class="li" href="https://eli.thegreenplace.net/2024/implementing-raft-part-5-exactly-once-delivery/"><li><div class="title">Implementing Raft: Part 5 - Exactly-once delivery</div><div class="domain">eli.thegreenplace.net &bull; December 21, 2024</div></li></a><a class="li" href="https://www.jviotti.com/2023/12/01/understanding-objective-c-by-transpiling-it-to-cpp.html"><li><div class="title">Understanding Objective-C by transpiling it to C++</div><div class="domain">jviotti.com &bull; December 21, 2024</div></li></a><a class="li" href="https://liam-on-linux.dreamwidth.org/93196.html"><li><div class="title">Plan 9 is a bicycle</div><div class="domain">liam-on-linux.dreamwidth.org &bull; December 21, 2024</div></li></a><a class="li" href="https://taylor.town/flat-scraps-000"><li><div class="title">Cramming scrapscript into msgpack</div><div class="domain">taylor.town &bull; December 21, 2024</div></li></a><a class="li" href="https://ryelang.org/cookbook/working-with/spreadsheets/"><li><div class="title">Spreadsheets 1/3 - Rye Language</div><div class="domain">ryelang.org &bull; December 21, 2024</div></li></a><a class="li" href="https://s2.dev/blog/intro"><li><div class="title">Introducing S2: The Log – made serverless</div><div class="domain">s2.dev &bull; December 21, 2024</div></li></a><a class="li" href="https://mastodon.online/@nikitonsky/113691789641950263"><li><div class="title">Pride Versioning</div><div class="domain">mastodon.online &bull; December 21, 2024</div></li></a><a class="li" href="http://www.chriswarbo.net/blog/2024-05-24-nix_build_system.html"><li><div class="title">Nix is a build system</div><div class="domain">chriswarbo.net &bull; December 21, 2024</div></li></a><a class="li" href="https://nullprogram.com/blog/2024/12/20/"><li><div class="title">Rules to avoid common extended inline assembly mistakes</div><div class="domain">nullprogram.com &bull; December 21, 2024</div></li></a><a class="li" href="https://lisp-journey.gitlab.io/blog/three-web-views-for-common-lisp--cross-platform-guis/"><li><div class="title">Three web views for Common Lisp: build cross platform GUIs with Electron, WebUI or CLOG Frame</div><div class="domain">lisp-journey.gitlab.io &bull; December 21, 2024</div></li></a><a class="li" href="https://daniel.haxx.se/blog/2024/12/21/dropping-hyper/"><li><div class="title">dropping hyper</div><div class="domain">daniel.haxx.se &bull; December 21, 2024</div></li></a><a class="li" href="https://arxiv.org/abs/2412.15042"><li><div class="title">Compiling C to Safe Rust, Formalized</div><div class="domain">arxiv.org &bull; December 21, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (21)</summary><ul><a class="li" href="https://nyuu.page/essays/solidity/"><li><div class="title">Saving Nanocap Speculators from Themselves</div><div class="domain">nyuu.page &bull; December 21, 2024</div></li></a><a class="li" href="https://github.com/samwho/spacer"><li><div class="title">CLI tool to insert spacers when command output stops</div><div class="domain">github.com &bull; December 21, 2024</div></li></a><a class="li" href="https://techcrunch.com/2024/12/20/why-apple-sends-spyware-victims-to-this-nonprofit-security-lab/"><li><div class="title">Why Apple sends spyware victims to this nonprofit security lab</div><div class="domain">techcrunch.com &bull; December 21, 2024</div></li></a><a class="li" href="https://gbragafibra.github.io/2024/12/21/collatz_ant.html"><li><div class="title">Collatz's Ant</div><div class="domain">gbragafibra.github.io &bull; December 21, 2024</div></li></a><a class="li" href="https://www.boxingscene.com/the-beltline-ai-powered-judge-takes-boxing-a-step-closer-to-the-brave-new-world-it-appears-to-seek--200866"><li><div class="title">'AI-powered judge' takes boxing closer to brave new world it appears to seek</div><div class="domain">boxingscene.com &bull; December 21, 2024</div></li></a><a class="li" href="https://code.dblock.org/2020/09/01/keep-a-changelog-at-work.html"><li><div class="title">Keeping a Changelog at Work (2020)</div><div class="domain">code.dblock.org &bull; December 21, 2024</div></li></a><a class="li" href="https://www.laphamsquarterly.org/future/magical-thinking"><li><div class="title">Magical Thinking: Edward Bellamy's Looking Backward (2011)</div><div class="domain">laphamsquarterly.org &bull; December 21, 2024</div></li></a><a class="li" href="https://talktomehuman.com/demo"><li><div class="title">Show HN: Demo of my web game about social persuasion</div><div class="domain">talktomehuman.com &bull; December 21, 2024</div></li></a><a class="li" href="https://www.reuters.com/technology/cybersecurity/us-judge-finds-israels-nso-group-liable-hacking-whatsapp-lawsuit-2024-12-21/"><li><div class="title">US judge finds NSO Group liable for hacking journalists via WhatsApp</div><div class="domain">reuters.com &bull; December 21, 2024</div></li></a><a class="li" href="https://openjdk.org/jeps/483"><li><div class="title">JEP 483: Ahead-of-Time Class Loading and Linking</div><div class="domain">openjdk.org &bull; December 21, 2024</div></li></a><a class="li" href="https://pubsonline.informs.org/doi/pdf/10.1287/opre.50.1.48.17791"><li><div class="title">Richard Bellman on the Birth of Dynamic Programming (2002) [pdf]</div><div class="domain">pubsonline.informs.org &bull; December 21, 2024</div></li></a><a class="li" href="https://github.com/ggerganov/ggml/discussions/707"><li><div class="title">Train a Mnist VAE with C and CUDA</div><div class="domain">github.com &bull; December 21, 2024</div></li></a><a class="li" href="https://eonfall.com"><li><div class="title">Show HN: Eonfall – A new third-person co-op action game built for the web</div><div class="domain">eonfall.com &bull; December 21, 2024</div></li></a><a class="li" href="https://gist.github.com/bssrdf/397900607028bffd0f8d223a7acdce7e"><li><div class="title">A curious case of O(N^2) behavior which should be O(N) (2023)</div><div class="domain">gist.github.com &bull; December 21, 2024</div></li></a><a class="li" href="https://github.com/malmeloo/FindMy.py"><li><div class="title">Query Apple's FindMy network with Python</div><div class="domain">github.com &bull; December 21, 2024</div></li></a><a class="li" href="https://anvaka.github.io/city-roads/"><li><div class="title">City Roads: A tool to draw all roads in a city at once</div><div class="domain">anvaka.github.io &bull; December 21, 2024</div></li></a><a class="li" href="http://0x80.pl/notesen/2024-12-21-uint8-division.html"><li><div class="title">Dividing unsigned 8-bit numbers</div><div class="domain">0x80.pl &bull; December 21, 2024</div></li></a><a class="li" href="https://www.datafix.com.au/BASHing/2020-08-12.html"><li><div class="title">A data table thousands of years old (2020)</div><div class="domain">datafix.com.au &bull; December 21, 2024</div></li></a><a class="li" href="https://www.nature.com/articles/d41586-024-04220-5"><li><div class="title">Why eating less slows ageing: this molecule is key</div><div class="domain">nature.com &bull; December 21, 2024</div></li></a><a class="li" href="https://www.theguardian.com/cities/2019/dec/25/the-christmas-story-of-one-tube-stations-mind-the-gap-voice"><li><div class="title">The Christmas story of one tube station's 'Mind the Gap' voice (2019)</div><div class="domain">theguardian.com &bull; December 21, 2024</div></li></a><a class="li" href="https://www.kannel.org/overview.shtml"><li><div class="title">Kannel: Open-Source WAP and SMS Gateway</div><div class="domain">kannel.org &bull; December 21, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Seth's Blog (seths.blog)</h2> (1)</summary><ul><a class="li" href="https://seths.blog/2024/12/mediocre-tools/"><li><div class="title">Mediocre tools</div><div class="domain">seths.blog &bull; December 21, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (7)</summary><ul><a class="li" href="https://yourstory.com/2024/12/semiconductors-2025-emerging-trends-shaping-tech-revolution"><li><div class="title">Semiconductors 2025: Emerging trends shaping the tech revolution</div><div class="domain">yourstory.com &bull; December 21, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/12/honda-nissan-merger-charging-ahead-race-ev-supremacy"><li><div class="title">The Honda-Nissan Merger: Charging Ahead in the Race for EV Supremacy</div><div class="domain">yourstory.com &bull; December 21, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/12/startups-won-public-markets-in-2024-edtech-space-tech-startup"><li><div class="title">Startups won public markets in 2024; Edtech learnings in 2024</div><div class="domain">yourstory.com &bull; December 21, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/12/fully-committed-tata-starbucks-dismisses-india-exit-reports"><li><div class="title">Tata Starbucks dismisses India exit reports</div><div class="domain">yourstory.com &bull; December 21, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/12/serendipity-arts-festival-goa-creativity-culture-crafts-photography"><li><div class="title">Serendipity Arts Festival kicks off its spectacular ninth edition in Goa</div><div class="domain">yourstory.com &bull; December 21, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/12/girish-mathrubhootham-sells-39m-in-freshworks-stock"><li><div class="title">Freshworks' founder Girish Mathrubootham sells shares worth $39M</div><div class="domain">yourstory.com &bull; December 21, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/12/ai-stock-trading-wealthtech-startup-draws-investors-small-cap-equities"><li><div class="title">AI in wealth management: How LotusDew is transforming investment advisory</div><div class="domain">yourstory.com &bull; December 21, 2024</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>

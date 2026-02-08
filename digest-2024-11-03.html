@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2024-11-03</span>:</h1>
+  <p class="summary">There are 71 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Bear Blog Trending Posts (bearblog.dev)</h2> (7)</summary><ul><a class="li" href="https://ani.bearblog.dev/the-best-thing-about-deleting-my-youtube-history/"><li><div class="title">The best thing about deleting my youtube history</div><div class="domain">ani.bearblog.dev &bull; November 03, 2024</div></li></a><a class="li" href="https://yordi.me/step-by-step-guide-to-show-webmention-interactions-on-bear-blog/"><li><div class="title">Step-by-Step Guide to Show Webmention Interactions on Bear Blog</div><div class="domain">yordi.me &bull; November 03, 2024</div></li></a><a class="li" href="https://lucio.bearblog.dev/i-am-no-longer-asking-you-will-make-a-blog/"><li><div class="title">I Am No Longer Asking, You WILL Make a Blog</div><div class="domain">lucio.bearblog.dev &bull; November 03, 2024</div></li></a><a class="li" href="https://louplummer.lol/i-m-an-expert-on-relationships-lol/"><li><div class="title">I'm An Expert on Relationships, LOL</div><div class="domain">louplummer.lol &bull; November 03, 2024</div></li></a><a class="li" href="https://blog.platinumtulip.net/lost-in-my-own-head-about-making-art/"><li><div class="title">lost in my own head about making art</div><div class="domain">blog.platinumtulip.net &bull; November 03, 2024</div></li></a><a class="li" href="https://veronique.ink/daily-projects/"><li><div class="title">daily projects</div><div class="domain">veronique.ink &bull; November 03, 2024</div></li></a><a class="li" href="https://blog.platinumtulip.net/one-year-of-linux-a-personal-retrospective/"><li><div class="title">one year of linux: a personal retrospective</div><div class="domain">blog.platinumtulip.net &bull; November 03, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Big Think (bigthink.com)</h2> (1)</summary><ul><a class="li" href="https://bigthink.com/the-future/technology-supercycle/"><li><div class="title">Why futurist Amy Webb sees a “technology supercycle” headed our way</div><div class="domain">bigthink.com &bull; November 03, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (3)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/PTDM7NJqGBsx2xWEs/feedback-request-what-am-i-missing"><li><div class="title">Feedback request: what am I missing?</div><div class="domain">lesswrong.com &bull; November 03, 2024</div></li></a><a class="li" href="https://www.lesswrong.com/posts/ZoFxTqWRBkyanonyb/current-safety-training-techniques-do-not-fully-transfer-to"><li><div class="title">Current safety training techniques do not fully transfer to the agent setting</div><div class="domain">lesswrong.com &bull; November 03, 2024</div></li></a><a class="li" href="https://www.lesswrong.com/posts/5LwWEcC5FjdLykA3r/electric-turbofans"><li><div class="title">electric turbofans</div><div class="domain">lesswrong.com &bull; November 03, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (20)</summary><ul><a class="li" href="https://protocols-made-fun.com/specification/modelchecking/tlaplus/apalache/2024/11/03/ben-or.html"><li><div class="title">Model checking safety of Ben-Or’s Byzantine consensus with Apalache</div><div class="domain">protocols-made-fun.com &bull; November 03, 2024</div></li></a><a class="li" href="https://arxiv.org/abs/2410.19927"><li><div class="title">Scheduling Languages: A Past, Present, and Future Taxonomy</div><div class="domain">arxiv.org &bull; November 03, 2024</div></li></a><a class="li" href="https://blog.mwmbl.org/articles/reranking-on-the-client-side/"><li><div class="title">Re-ranking search results on the client side</div><div class="domain">blog.mwmbl.org &bull; November 03, 2024</div></li></a><a class="li" href="https://geometrian.com/programming/reference/timestds/index.php"><li><div class="title">Time Standards Reference</div><div class="domain">geometrian.com &bull; November 03, 2024</div></li></a><a class="li" href="https://www.process-one.net/blog/matrix-and-xmpp-thoughts-on-improving-messaging-protocols-part-1/"><li><div class="title">Matrix and XMPP: Thoughts on Improving Messaging Protocols – Part 1</div><div class="domain">process-one.net &bull; November 03, 2024</div></li></a><a class="li" href="https://eli.thegreenplace.net/2024/ranging-over-functions-in-go-123/"><li><div class="title">Ranging over functions in Go 1.23</div><div class="domain">eli.thegreenplace.net &bull; November 03, 2024</div></li></a><a class="li" href="https://tim-harding.github.io/blog/soa-rs/"><li><div class="title">Macros, Safety, and SOA</div><div class="domain">tim-harding.github.io &bull; November 03, 2024</div></li></a><a class="li" href="https://github.com/crazyscot/qcp"><li><div class="title">qcp: QUIC File Copy</div><div class="domain">github.com &bull; November 03, 2024</div></li></a><a class="li" href="https://leanrada.com/notes/css-sprite-sheets/"><li><div class="title">CSS sprite sheet animations</div><div class="domain">leanrada.com &bull; November 03, 2024</div></li></a><a class="li" href="https://avi.im/blag/2024/disaggregated-storage/"><li><div class="title">Disaggregated Storage - a brief introduction</div><div class="domain">avi.im &bull; November 03, 2024</div></li></a><a class="li" href="https://azeemba.com/posts/cpp-complexity-compiler-bugs.html"><li><div class="title">C++, Complexity, and Compiler Bugs</div><div class="domain">azeemba.com &bull; November 03, 2024</div></li></a><a class="li" href="https://blog.jetbrains.com/idea/2024/11/in-memory-of-stiver/"><li><div class="title">The Original Author of the Fernflower Java Decompiler, Stiver, has Passed Away</div><div class="domain">blog.jetbrains.com &bull; November 03, 2024</div></li></a><a class="li" href="https://infoscience.epfl.ch/entities/publication/4bfdd194-457f-4ec0-953d-a7be55ec0e1b"><li><div class="title">RRB Vector: A Practical General Purpose Immutable Sequence</div><div class="domain">infoscience.epfl.ch &bull; November 03, 2024</div></li></a><a class="li" href="https://slawlor.github.io/ractor/quickstart/"><li><div class="title">Ractor - A Rust actor framework</div><div class="domain">slawlor.github.io &bull; November 03, 2024</div></li></a><a class="li" href="https://dl.acm.org/doi/10.1145/3622818"><li><div class="title">Rhombus: A New Spin on Macros without All the Parentheses</div><div class="domain">dl.acm.org &bull; November 03, 2024</div></li></a><a class="li" href="https://mikemcquaid.com/ruby-on-guard-rails/"><li><div class="title">Ruby on (Guard)Rails</div><div class="domain">mikemcquaid.com &bull; November 03, 2024</div></li></a><a class="li" href="https://saytheprime.com/"><li><div class="title">Say the prime</div><div class="domain">saytheprime.com &bull; November 03, 2024</div></li></a><a class="li" href="https://akselmo.dev/posts/moving-from-c-to-odin/"><li><div class="title">Moving my game project from C to the Odin language</div><div class="domain">akselmo.dev &bull; November 03, 2024</div></li></a><a class="li" href="https://devblogs.microsoft.com/oldnewthing/20241031-00/?p=110443"><li><div class="title">What has case distinction but is neither uppercase nor lowercase?</div><div class="domain">devblogs.microsoft.com &bull; November 03, 2024</div></li></a><a class="li" href="https://zkrising.com/writing/rusts-most-subtle-syntax/"><li><div class="title">Rust's Most Subtle Syntax</div><div class="domain">zkrising.com &bull; November 03, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (25)</summary><ul><a class="li" href="https://bettersoftware.uk/2024/11/03/missing-open-source-contributor-presents-a-dilemma-when-accepting-their-contribution/"><li><div class="title">Missing open-source contributor presents a dilemma when accepting their PR</div><div class="domain">bettersoftware.uk &bull; November 03, 2024</div></li></a><a class="li" href="https://cacm.acm.org/news/the-secret-of-ramsey-numbers/"><li><div class="title">The Secret of Ramsey Numbers</div><div class="domain">cacm.acm.org &bull; November 03, 2024</div></li></a><a class="li" href="https://johnhawks.net/weblog/the-top-10-discoveries-about-ancient-people-from-dna-in-2023/"><li><div class="title">Top discoveries about ancient people from DNA in 2023</div><div class="domain">johnhawks.net &bull; November 03, 2024</div></li></a><a class="li" href="https://kevinboone.me/systemd_embedded.html"><li><div class="title">Why systemd is a problem for embedded Linux</div><div class="domain">kevinboone.me &bull; November 03, 2024</div></li></a><a class="li" href="https://news.ycombinator.com/item?id=42034242"><li><div class="title">GoGoGrandparent (YC S16) Is Hiring Back End and Full-Stack Engineers</div><div class="domain">news.ycombinator.com &bull; November 03, 2024</div></li></a><a class="li" href="https://throwflame.com/products/flamethrower-drone-kit/"><li><div class="title">Wasp Flamethrower Drone Attachment</div><div class="domain">throwflame.com &bull; November 03, 2024</div></li></a><a class="li" href="https://whatdinner.com/"><li><div class="title">Show HN: Tinder, but to Decide What to Eat</div><div class="domain">whatdinner.com &bull; November 03, 2024</div></li></a><a class="li" href="https://www.newyorker.com/magazine/2017/02/27/why-facts-dont-change-our-minds"><li><div class="title">Why Facts Don't Change Our Minds</div><div class="domain">newyorker.com &bull; November 03, 2024</div></li></a><a class="li" href="https://spin.atomicobject.com/redis-postgresql/"><li><div class="title">Do you need Redis? PostgreSQL does queuing, locking, and pub/sub</div><div class="domain">spin.atomicobject.com &bull; November 03, 2024</div></li></a><a class="li" href="https://michaelengen.com/posts/my-eleventy-resume/"><li><div class="title">Building My Resume in HTML Using Eleventy</div><div class="domain">michaelengen.com &bull; November 03, 2024</div></li></a><a class="li" href="https://github.com/karthink/gptel"><li><div class="title">gptel: a simple LLM client for Emacs</div><div class="domain">github.com &bull; November 03, 2024</div></li></a><a class="li" href="https://github.com/ahmetsait/toolgit"><li><div class="title">ToolGit: A collection of scripts that extend Git with various sub-commands</div><div class="domain">github.com &bull; November 03, 2024</div></li></a><a class="li" href="https://www.pgflo.io/"><li><div class="title">pg_flo – Stream, transform, and re-route PostgreSQL data in real-time</div><div class="domain">pgflo.io &bull; November 03, 2024</div></li></a><a class="li" href="https://hardenedbsd.org/content/easy-feature-comparison"><li><div class="title">HardenedBSD Feature Comparison with OpenBSD, FreeBSD, NetBSD</div><div class="domain">hardenedbsd.org &bull; November 03, 2024</div></li></a><a class="li" href="https://lmcinnes.github.io/datamapplot_examples/hackernews/"><li><div class="title">Hacker News Data Map [180MB]</div><div class="domain">lmcinnes.github.io &bull; November 03, 2024</div></li></a><a class="li" href="https://spectrum.ieee.org/touchscreens"><li><div class="title">Touchscreens are out, and tactile controls are back</div><div class="domain">spectrum.ieee.org &bull; November 03, 2024</div></li></a><a class="li" href="https://si.inc/hertz-dev/"><li><div class="title">Hertz-dev, the first open-source base model for conversational audio</div><div class="domain">si.inc &bull; November 03, 2024</div></li></a><a class="li" href="https://github.com/altera-al/project-sid"><li><div class="title">Project Sid: Many-agent simulations toward AI civilization</div><div class="domain">github.com &bull; November 03, 2024</div></li></a><a class="li" href="https://chromewebstore.google.com/detail/hn-explorer/amiaaonefodebppoklclafmglnkleobk"><li><div class="title">Hacker News Explorer</div><div class="domain">chromewebstore.google.com &bull; November 03, 2024</div></li></a><a class="li" href="https://electrek.co/2024/11/01/toyota-solar-farm-texas/"><li><div class="title">Toyota to buy clean power from a $1.1B solar farm in Texas</div><div class="domain">electrek.co &bull; November 03, 2024</div></li></a><a class="li" href="https://techcrunch.com/2024/11/02/quantum-machines-and-nvidia-use-machine-learning-to-get-closer-to-an-error-corrected-quantum-computer/"><li><div class="title">Quantum Machines, Nvidia use machine learning to get closer to quantum computer</div><div class="domain">techcrunch.com &bull; November 03, 2024</div></li></a><a class="li" href="https://www.pcworld.com/article/2504035/security-flaws-found-in-all-nvidia-geforce-gpus-update-drivers-asap.html"><li><div class="title">Security flaws found in all Nvidia GeForce GPUs. Update drivers ASAP</div><div class="domain">pcworld.com &bull; November 03, 2024</div></li></a><a class="li" href="https://www2.eecs.berkeley.edu/Pubs/TechRpts/2024/EECS-2024-35.pdf"><li><div class="title">Advances in Zero-Knowledge Proofs: Bridging the Gap Between Theory and Practice [pdf]</div><div class="domain">www2.eecs.berkeley.edu &bull; November 03, 2024</div></li></a><a class="li" href="https://cloud.google.com/blog/products/networking/speed-scale-reliability-25-years-of-data-center-networking"><li><div class="title">Speed, scale and reliability: 25 years of Google datacenter networking evolution</div><div class="domain">cloud.google.com &bull; November 03, 2024</div></li></a><a class="li" href="https://bitfieldconsulting.com/posts/need-money"><li><div class="title">If you need the money, don't take the job</div><div class="domain">bitfieldconsulting.com &bull; November 03, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Sean Voisen (sean.voisen.org)</h2> (2)</summary><ul><a class="li" href="https://seanvoisen.com/blog/read-at-whim/"><li><div class="title">Reading at Whim</div><div class="domain">seanvoisen.com &bull; November 03, 2024</div></li></a><a class="li" href="https://sean.voisen.org/marginalia/read-at-whim"><li><div class="title">Reading at Whim</div><div class="domain">sean.voisen.org &bull; November 03, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Seth's Blog (seths.blog)</h2> (1)</summary><ul><a class="li" href="https://seths.blog/2024/11/the-problem-with-very/"><li><div class="title">The problem with ‘very’</div><div class="domain">seths.blog &bull; November 03, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (11)</summary><ul><a class="li" href="https://yourstory.com/2024/11/magicpin-slashes-platform-fee-to-rs-5-per-delivery"><li><div class="title">Magicpin slashes platform fee to Rs 5 per delivery</div><div class="domain">yourstory.com &bull; November 03, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/11/not-seeing-slowdown-in-tech-spends-rather-lot-of-momentum-around-ai-copilot-microsoft-india-prez"><li><div class="title">Not seeing slowdown in tech spends, rather lot of momentum around AI, Copilot: Microsoft India Prez</div><div class="domain">yourstory.com &bull; November 03, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/11/how-indian-horror-storytelling-matured-sudhanshu-rai-recruitment"><li><div class="title">How Indian horror storytelling matured; From BPO to recruitment leader</div><div class="domain">yourstory.com &bull; November 03, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/11/social-entrepreneurship-business-creativity-innovation-startup-quiz"><li><div class="title">Social entrepreneurship: Test your business creativity with Edition 160 of our weekly quiz!</div><div class="domain">yourstory.com &bull; November 03, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/11/amazon-india-great-indian-festival-2024-records-high-growth-premium-product-festive-sales"><li><div class="title">Amazon India records high growth in premium product sales during festival period</div><div class="domain">yourstory.com &bull; November 03, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/11/karnataka-chitrakala-parishath-exhibition-culture-art-heritage-photography"><li><div class="title">70 artists, 180 artworks: Karnataka Chitrakala Parishath showcases the state’s artistic legacy</div><div class="domain">yourstory.com &bull; November 03, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/11/how-d2c-brands-are-personalising-the-shopping-experience"><li><div class="title">How D2C brands are personalising the shopping experience</div><div class="domain">yourstory.com &bull; November 03, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/11/fmcg-firms-worry-over-high-inflation-squeezing-urban-market-hint-price-hike"><li><div class="title">FMCG firms worry over high inflation, squeezing urban market; hint price hike</div><div class="domain">yourstory.com &bull; November 03, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/01/first-video-game-creator"><li><div class="title">First video game: How Tennis for Two sparked a gaming boom</div><div class="domain">yourstory.com &bull; November 03, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/11/vc-funding-in-october-crosses-1b-mark-sees-11-annual-decline"><li><div class="title">VC funding in October crosses $1B mark; sees 11% annual decline</div><div class="domain">yourstory.com &bull; November 03, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/04/linus-torvalds-ai-hype-vs-reality"><li><div class="title">Linus Torvalds on AI: 90% marketing and 10% reality</div><div class="domain">yourstory.com &bull; November 03, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Adrian Bliss (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/A_KIPzSO_Ss"><li><div class="title">Giving your heart away</div><div class="domain">youtube.com &bull; November 03, 2024</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>

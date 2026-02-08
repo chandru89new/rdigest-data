@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-05-04</span>:</h1>
+  <p class="summary">There are 73 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Bear Blog Trending Posts (bearblog.dev)</h2> (2)</summary><ul><a class="li" href="https://notes.jeddacp.com/a-decade-of-us/"><li><div class="title">A Decade of Us</div><div class="domain">notes.jeddacp.com &bull; May 04, 2025</div></li></a><a class="li" href="https://blog.avas.space/blogging-in-isolation/"><li><div class="title">blogging in isolation</div><div class="domain">blog.avas.space &bull; May 04, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Marginalian (feeds.feedburner.com)</h2> (1)</summary><ul><a class="li" href="https://www.themarginalian.org/2025/05/04/emily-dickinson-hope-kate/"><li><div class="title">The Alchemy of Heartbreak and How to Live with Unrequited Love: The Story Behind Emily Dickinson’s “Hope Is the Thing with Feathers”</div><div class="domain">themarginalian.org &bull; May 04, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (7)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/FFKnWk2MGJmyQWEsd/updates-from-comments-on-ai-2027-is-a-bet-against-amdahl-s"><li><div class="title">Updates from Comments on "AI 2027 is a Bet Against Amdahl's Law"</div><div class="domain">lesswrong.com &bull; May 04, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/n27jK9PJNJMrTgYFT/untitled-draft-wq43"><li><div class="title">Navigating burnout</div><div class="domain">lesswrong.com &bull; May 04, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/R7r8Zz3uRyjeaZbss/superhuman-isn-t-well-specified"><li><div class="title">"Superhuman" Isn't Well Specified</div><div class="domain">lesswrong.com &bull; May 04, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/SKpWRLDAytoTGqbKv/psa-before-may-21-is-a-good-time-to-sign-up-for-cryonics"><li><div class="title">PSA: Before May 21 is a good time to sign up for cryonics</div><div class="domain">lesswrong.com &bull; May 04, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/sJpwvYsC5tJis8onw/the-ukraine-war-and-the-kill-market"><li><div class="title">The Ukraine War and the Kill Market</div><div class="domain">lesswrong.com &bull; May 04, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/PwnadG4BFjaER3MGf/interpretability-will-not-reliably-find-deceptive-ai"><li><div class="title">Interpretability Will Not Reliably Find Deceptive AI</div><div class="domain">lesswrong.com &bull; May 04, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/MDgEfWPrvZdmPZwxf/why-i-am-not-a-successionist"><li><div class="title">Why I am not a successionist</div><div class="domain">lesswrong.com &bull; May 04, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (23)</summary><ul><a class="li" href="https://www.scotto.me/blog/a-simple-common-lisp-web-app/"><li><div class="title">A simple Common Lisp web app</div><div class="domain">scotto.me &bull; May 04, 2025</div></li></a><a class="li" href="https://www.rfc-editor.org/rfc/rfc5081.html"><li><div class="title">RFC 5081: Using OpenPGP Keys for Transport Layer Security (TLS) Authentication</div><div class="domain">rfc-editor.org &bull; May 04, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=rHOwhkHv21U"><li><div class="title">Moving Beyond Containers - Introducing Boxer by Daniel Phillips @Wasm I/O 2025</div><div class="domain">youtube.com &bull; May 04, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=9YM7pDMLvr4"><li><div class="title">Andreas Kling's Keynote Presentation on the Ladybird Browser</div><div class="domain">youtube.com &bull; May 04, 2025</div></li></a><a class="li" href="https://sr.ht/~meejah/git-withme/"><li><div class="title">Git With Me: Peer-to-peer, encrypted, ephemeral Git collaboration</div><div class="domain">sr.ht &bull; May 04, 2025</div></li></a><a class="li" href="https://surfingcomplexity.blog/2025/05/04/you-cant-prevent-your-last-outage-no-matter-how-hard-you-try/"><li><div class="title">You can’t prevent your last outage, no matter how hard you try</div><div class="domain">surfingcomplexity.blog &bull; May 04, 2025</div></li></a><a class="li" href="https://zeux.io/2025/05/03/load-store-conflicts/"><li><div class="title">Load-store conflicts</div><div class="domain">zeux.io &bull; May 04, 2025</div></li></a><a class="li" href="https://overreacted.io/functional-html/"><li><div class="title">Functional HTML</div><div class="domain">overreacted.io &bull; May 04, 2025</div></li></a><a class="li" href="https://alhassy.com/TypedLisp.html"><li><div class="title">Typed Lisp, A Primer</div><div class="domain">alhassy.com &bull; May 04, 2025</div></li></a><a class="li" href="https://www.linkedin.com/posts/kittylyst_ai-llms-activity-7321451673275514880-npfA/"><li><div class="title">Show me the Pull Requests</div><div class="domain">linkedin.com &bull; May 04, 2025</div></li></a><a class="li" href="https://soatok.blog/2025/05/04/tech-companies-apparently-do-not-understand-why-we-dislike-ai/"><li><div class="title">Tech Companies Apparently Do Not Understand Why We Dislike AI</div><div class="domain">soatok.blog &bull; May 04, 2025</div></li></a><a class="li" href="https://den.dev/blog/pihole/"><li><div class="title">The Beauty Of Having A Pi-hole</div><div class="domain">den.dev &bull; May 04, 2025</div></li></a><a class="li" href="https://github.com/BersisSe/feather"><li><div class="title">Feather: A web framework that skips Rust’s async boilerplate and just works</div><div class="domain">github.com &bull; May 04, 2025</div></li></a><a class="li" href="https://nedbatchelder.com/blog/202505/filtering_github_actions_by_changed_files.html"><li><div class="title">Filtering GitHub actions by changed files</div><div class="domain">nedbatchelder.com &bull; May 04, 2025</div></li></a><a class="li" href="https://austinhenley.com/blog/firstswiftproject.html"><li><div class="title">My first experience using Swift, SwiftUI, and XCode</div><div class="domain">austinhenley.com &bull; May 04, 2025</div></li></a><a class="li" href="https://alan.norbauer.com/articles/dying-for-beauty/"><li><div class="title">Dying for Beauty</div><div class="domain">alan.norbauer.com &bull; May 04, 2025</div></li></a><a class="li" href="https://serverlesshorrors.com/all/firebase-100k/"><li><div class="title">Single day Firebase bill for $100,000</div><div class="domain">serverlesshorrors.com &bull; May 04, 2025</div></li></a><a class="li" href="https://fedibot.club"><li><div class="title">a site for making bots for the fediverse</div><div class="domain">fedibot.club &bull; May 04, 2025</div></li></a><a class="li" href="https://bsky.app/profile/michael.express/post/3lo7irdr6ic24"><li><div class="title">New Go garbage collector</div><div class="domain">bsky.app &bull; May 04, 2025</div></li></a><a class="li" href="https://choly.ca/post/refactor-rhythm/"><li><div class="title">Refactoring Rhythm</div><div class="domain">choly.ca &bull; May 04, 2025</div></li></a><a class="li" href="https://island94.org/2025/04/wide-models-and-active-record-custom-validation-contexts"><li><div class="title">Wide Models and Active Record custom validation contexts</div><div class="domain">island94.org &bull; May 04, 2025</div></li></a><a class="li" href="https://hackerfactor.com/blog/index.php?/archives/1066-Hello-my-perverted-friend.html"><li><div class="title">Hello my perverted friend</div><div class="domain">hackerfactor.com &bull; May 04, 2025</div></li></a><a class="li" href="http://oldvcr.blogspot.com/2025/05/what-went-wrong-with-wireless-usb.html"><li><div class="title">What went wrong with wireless USB</div><div class="domain">oldvcr.blogspot.com &bull; May 04, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (27)</summary><ul><a class="li" href="https://blog.zactownsend.com/know-your-enemy-how-three-years-at-mckinsey-shaped-my-second-startup"><li><div class="title">How three years at McKinsey shaped my second startup</div><div class="domain">blog.zactownsend.com &bull; May 04, 2025</div></li></a><a class="li" href="http://www.scitechantiques.com/belldiscovery/"><li><div class="title">Bell's 1881 Metal detector</div><div class="domain">scitechantiques.com &bull; May 04, 2025</div></li></a><a class="li" href="https://martypc.net/?mount=fd:0:Area%205150%20(Compo%20Version).img"><li><div class="title">A cycle-accurate IBM PC emulator in your web browser</div><div class="domain">martypc.net &bull; May 04, 2025</div></li></a><a class="li" href="https://github.com/dse/old-timey-mono-font"><li><div class="title">Old Timey Code and Old Timey Mono Fonts</div><div class="domain">github.com &bull; May 04, 2025</div></li></a><a class="li" href="https://www.huffpost.com/entry/utah-school-lunch-debt-relief-free-student-meals_n_681258fbe4b03207b5ba49fa"><li><div class="title">I decided to pay off a school’s lunch debt</div><div class="domain">huffpost.com &bull; May 04, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=7hdJQkn8rtA"><li><div class="title">Critical Program Reading (1975) [video]</div><div class="domain">youtube.com &bull; May 04, 2025</div></li></a><a class="li" href="https://news.ycombinator.com/item?id=43889502"><li><div class="title">Ask HN: Hackathons feel fake now</div><div class="domain">news.ycombinator.com &bull; May 04, 2025</div></li></a><a class="li" href="https://terrytao.wordpress.com/2025/05/04/orders-of-infinity/"><li><div class="title">Orders of Infinity</div><div class="domain">terrytao.wordpress.com &bull; May 04, 2025</div></li></a><a class="li" href="https://www.tbray.org/ongoing/When/202x/2025/04/28/Censoring-Social-Media"><li><div class="title">Censoring Social Media</div><div class="domain">tbray.org &bull; May 04, 2025</div></li></a><a class="li" href="https://raw.githubusercontent.com/Stefan20162016/linux-insides-code/master/bootloader.asm"><li><div class="title">Minimal Linux Bootloader (2018)</div><div class="domain">raw.githubusercontent.com &bull; May 04, 2025</div></li></a><a class="li" href="http://pascal.hansotten.com/niklaus-wirth/project-oberon/oberon-pi/"><li><div class="title">Oberon Pi</div><div class="domain">pascal.hansotten.com &bull; May 04, 2025</div></li></a><a class="li" href="https://www.theballotboy.com/electing-the-doge"><li><div class="title">The complicated business of electing a Doge</div><div class="domain">theballotboy.com &bull; May 04, 2025</div></li></a><a class="li" href="https://www.rollingstone.com/culture/culture-features/ai-spiritual-delusions-destroying-human-relationships-1235330175/"><li><div class="title">People are losing loved ones to AI-fueled spiritual fantasies</div><div class="domain">rollingstone.com &bull; May 04, 2025</div></li></a><a class="li" href="https://www.ycombinator.com/companies/kaipod-learning/jobs/Bs3H9uB-vp-of-engineering"><li><div class="title">KaiPod Learning (YC S21) Is Hiring VP of Engineering</div><div class="domain">ycombinator.com &bull; May 04, 2025</div></li></a><a class="li" href="https://github.com/Foreseerr/TScale"><li><div class="title">TScale – Distributed training on consumer GPUs</div><div class="domain">github.com &bull; May 04, 2025</div></li></a><a class="li" href="https://oxfordamerican.org/oa-now/the-alabama-landline-that-keeps-ringing"><li><div class="title">An Alabama landline that keeps ringing</div><div class="domain">oxfordamerican.org &bull; May 04, 2025</div></li></a><a class="li" href="https://arxiv.org/abs/2503.23817"><li><div class="title">Matrix-vector multiplication implemented in off-the-shelf DRAM for Low-Bit LLMs</div><div class="domain">arxiv.org &bull; May 04, 2025</div></li></a><a class="li" href="https://rentry.co/samplers"><li><div class="title">Dummy's Guide to Modern LLM Sampling</div><div class="domain">rentry.co &bull; May 04, 2025</div></li></a><a class="li" href="https://victoriametrics.com/blog/go-graceful-shutdown/index.html"><li><div class="title">Graceful Shutdown in Go: Practical Patterns</div><div class="domain">victoriametrics.com &bull; May 04, 2025</div></li></a><a class="li" href="https://hedgehogreview.com/issues/after-neoliberalism/articles/on-not-carrying-a-camera"><li><div class="title">On Not Carrying a Camera – Cultivating memories instead of snapshots</div><div class="domain">hedgehogreview.com &bull; May 04, 2025</div></li></a><a class="li" href="https://owentrueblood.com/blog/2025/05/04/helmdar/"><li><div class="title">Helmdar: 3D Scanning Brooklyn on Rollerblades</div><div class="domain">owentrueblood.com &bull; May 04, 2025</div></li></a><a class="li" href="https://blog.rahix.de/design-for-3d-printing/"><li><div class="title">Design for 3D-Printing</div><div class="domain">blog.rahix.de &bull; May 04, 2025</div></li></a><a class="li" href="https://claytonwramsey.com/blog/prompt/"><li><div class="title">I'd rather read the prompt</div><div class="domain">claytonwramsey.com &bull; May 04, 2025</div></li></a><a class="li" href="https://www.simplypsychology.org/zone-of-proximal-development.html"><li><div class="title">Vygotsky's Zone of Proximal Development</div><div class="domain">simplypsychology.org &bull; May 04, 2025</div></li></a><a class="li" href="https://www.shayon.dev/post/2025/119/a-postgresql-planner-gotcha-with-ctes-delete-and-limit/"><li><div class="title">A PostgreSQL planner semi-join gotcha with CTE, LIMIT, and RETURNING</div><div class="domain">shayon.dev &bull; May 04, 2025</div></li></a><a class="li" href="http://bitsavers.org/pdf/americanMegatrends/Programmers_Guide_to_the_AMIBIOS_1993.pdf"><li><div class="title">Programmers Guide to the AMIBIOS (1993) [pdf]</div><div class="domain">bitsavers.org &bull; May 04, 2025</div></li></a><a class="li" href="http://pascal.hansotten.com/"><li><div class="title">Pascal for Small Machines</div><div class="domain">pascal.hansotten.com &bull; May 04, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Seth's Blog (seths.blog)</h2> (1)</summary><ul><a class="li" href="https://seths.blog/2025/05/sorting-and-choosing/"><li><div class="title">Sorting and choosing</div><div class="domain">seths.blog &bull; May 04, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Diplomat (thediplomat.com)</h2> (4)</summary><ul><a class="li" href="https://thediplomat.com/2025/05/trumps-art-of-the-tiktok-deal-should-be-carefully-scrutinized-by-congress/"><li><div class="title">Trump’s Art of the TikTok Deal Should be Carefully Scrutinized by Congress</div><div class="domain">thediplomat.com &bull; May 04, 2025</div></li></a><a class="li" href="https://thediplomat.com/2025/05/nuclear-weapons-are-no-silver-bullet-for-australias-strategic-predicament/"><li><div class="title">Nuclear Weapons Are No Silver Bullet for Australia’s Strategic Predicament</div><div class="domain">thediplomat.com &bull; May 04, 2025</div></li></a><a class="li" href="https://thediplomat.com/2025/05/ecuadors-incoming-government-faces-difficult-choices-regarding-china/"><li><div class="title">Ecuador’s Incoming Government Faces Difficult Choices Regarding China</div><div class="domain">thediplomat.com &bull; May 04, 2025</div></li></a><a class="li" href="https://thediplomat.com/2025/05/what-could-japans-coast-guard-do-in-an-armed-attack/"><li><div class="title">What Could Japan’s Coast Guard Do in an Armed Attack?</div><div class="domain">thediplomat.com &bull; May 04, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Trevor I. Lasn Thoughts (trevorlasn.com)</h2> (1)</summary><ul><a class="li" href="https://www.trevorlasn.com/blog/fetching-data-for-complex-next-and-react-apps"><li><div class="title">Robust Data Fetching Architecture For Complex React/Next.js Apps</div><div class="domain">trevorlasn.com &bull; May 04, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Varun Barad - Curious Developer (varunbarad.com)</h2> (1)</summary><ul><a class="li" href="https://varunbarad.com/blog/project-valet.html"><li><div class="title">🗃️ My valet parks my files for me</div><div class="domain">varunbarad.com &bull; May 04, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (5)</summary><ul><a class="li" href="https://yourstory.com/2025/05/ai-livelihood-health-business-creativity-innovation-entrepreneur-education-quiz"><li><div class="title">AI, livelihood, health: test your business creativity with Edition 186 of our weekly quiz!</div><div class="domain">yourstory.com &bull; May 04, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/05/community-connections-india-art-festival-creativity-inspiration-photography"><li><div class="title">Community and connections: How art exhibitions benefit creators</div><div class="domain">yourstory.com &bull; May 04, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/05/centralised-kyc-system-in-works-sebi-chairman"><li><div class="title">Centralised KYC system in works: SEBI chairman</div><div class="domain">yourstory.com &bull; May 04, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/05/debt-free-farming-how-satellite-remote-sensing-is-helping-farmers-avoid-crop-losses"><li><div class="title">Debt-free farming: How satellite remote sensing is helping farmers avoid crop losses</div><div class="domain">yourstory.com &bull; May 04, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/05/reviving-lost-indian-recipes-radiant-manufacturers-vicky-ratnani-sindhi"><li><div class="title">Reviving lost Indian recipes; A chef with a ‘Sindhi heart and soul’</div><div class="domain">yourstory.com &bull; May 04, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">3Blue1Brown (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=Dlsa9EBKDGI"><li><div class="title">Where my explanation of Grover’s algorithm failed</div><div class="domain">youtube.com &bull; May 04, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>

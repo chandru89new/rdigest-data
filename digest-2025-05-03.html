@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-05-03</span>:</h1>
+  <p class="summary">There are 64 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Bear Blog Trending Posts (bearblog.dev)</h2> (3)</summary><ul><a class="li" href="https://boreign.bearblog.dev/tiny-web-is-fun/"><li><div class="title">Side note: it's fun to be on the tinyweb and that this is a thing!</div><div class="domain">boreign.bearblog.dev &bull; May 03, 2025</div></li></a><a class="li" href="https://extremq.com/my-minimalist-theme-for-bearblog-and-why-i-use-it/"><li><div class="title">My Minimalist theme for bearblog and why I use it</div><div class="domain">extremq.com &bull; May 03, 2025</div></li></a><a class="li" href="https://kashibamikoshi.bearblog.dev/so-im-transgender/"><li><div class="title">So I'm transgender</div><div class="domain">kashibamikoshi.bearblog.dev &bull; May 03, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Big Think (bigthink.com)</h2> (1)</summary><ul><a class="li" href="https://bigthink.com/mini-philosophy/lessons-roman-empire-danger-luxury/"><li><div class="title">Lessons from the Roman Empire about the danger of luxury</div><div class="domain">bigthink.com &bull; May 03, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Marginalian (feeds.feedburner.com)</h2> (1)</summary><ul><a class="li" href="https://www.themarginalian.org/2025/05/03/stalactite-stalagmite/"><li><div class="title">Stalactite & Stalagmite: A Brief Illustrated History of Earth and One Great Truth about Love</div><div class="domain">themarginalian.org &bull; May 03, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (3)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/pazFKtkp7T8qaRzva/ai-114-liars-sycophants-and-cheaters"><li><div class="title">AI #114: Liars, Sycophants and Cheaters</div><div class="domain">lesswrong.com &bull; May 03, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/54HbdzcDR47SNNWfg/obstacles-in-arc-s-agenda-mechanistic-anomaly-detection"><li><div class="title">Obstacles in ARC's agenda: Mechanistic Anomaly Detection</div><div class="domain">lesswrong.com &bull; May 03, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/jqnda7W9hugFP4Cnr/obstacles-in-arc-s-agenda-low-probability-estimation"><li><div class="title">Obstacles in ARC's agenda: Low Probability Estimation</div><div class="domain">lesswrong.com &bull; May 03, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Irrational Exuberance (lethain.com)</h2> (2)</summary><ul><a class="li" href="https://lethain.com/filter-old-gmail-messages/"><li><div class="title">How to filter out old email from inbox</div><div class="domain">lethain.com &bull; May 03, 2025</div></li></a><a class="li" href="https://lethain.com/public-company-comparables/"><li><div class="title">Public company comparables.</div><div class="domain">lethain.com &bull; May 03, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (14)</summary><ul><a class="li" href="https://www.netmeister.org/blog/netbsd-pqc.html"><li><div class="title">Post-Quantum Cryptography on NetBSD</div><div class="domain">netmeister.org &bull; May 03, 2025</div></li></a><a class="li" href="https://lobste.rs/s/1m6hnb/what_are_you_doing_this_weekend"><li><div class="title">What are you doing this weekend?</div><div class="domain">lobste.rs &bull; May 03, 2025</div></li></a><a class="li" href="https://dev.to/hmpljs/best-alpinejs-alternative-2hme"><li><div class="title">Alpine.js Alternative</div><div class="domain">dev.to &bull; May 03, 2025</div></li></a><a class="li" href="https://arxiv.org/abs/2502.03689"><li><div class="title">Stop treating `AGI' as the north-star goal of AI research</div><div class="domain">arxiv.org &bull; May 03, 2025</div></li></a><a class="li" href="https://www.visualmode.dev/a-better-man-page-viewer"><li><div class="title">A Better Man Page Viewer</div><div class="domain">visualmode.dev &bull; May 03, 2025</div></li></a><a class="li" href="https://github.com/bugsbugsbux/understanding-j"><li><div class="title">understanding-j: An introduction to the J programming language that gets to the point</div><div class="domain">github.com &bull; May 03, 2025</div></li></a><a class="li" href="https://github.com/Jacksaur/Gorgeous-GRUB"><li><div class="title">Gorgeous-GRUB: collection of decent community-made GRUB themes</div><div class="domain">github.com &bull; May 03, 2025</div></li></a><a class="li" href="https://hardcover.app/blog/part-1-how-we-fell-out-of-love-with-next-js-and-back-in-love-with-ruby-on-rails-inertia-js"><li><div class="title">How We Fell Out of Love with Next.js and Back in Love with Ruby on Rails & Inertia.js</div><div class="domain">hardcover.app &bull; May 03, 2025</div></li></a><a class="li" href="https://zerowidth.com/2025/jj-tips-and-tricks/"><li><div class="title">jj tips and tricks</div><div class="domain">zerowidth.com &bull; May 03, 2025</div></li></a><a class="li" href="https://world.hey.com/dhh/don-t-make-google-sell-chrome-93cefbc6"><li><div class="title">Don't make Google sell Chrome</div><div class="domain">world.hey.com &bull; May 03, 2025</div></li></a><a class="li" href="https://eregon.me/blog/2025/05/03/contributions-to-ruby-spec.html"><li><div class="title">Contributions to ruby/spec by Ruby implementation</div><div class="domain">eregon.me &bull; May 03, 2025</div></li></a><a class="li" href="https://dbushell.com/2025/05/02/progressive-dehancement/"><li><div class="title">Progressive Dehancement</div><div class="domain">dbushell.com &bull; May 03, 2025</div></li></a><a class="li" href="https://blog.yaakov.online/replacing-kubernetes-with-systemd/"><li><div class="title">Replacing Kubernetes with systemd (2024)</div><div class="domain">blog.yaakov.online &bull; May 03, 2025</div></li></a><a class="li" href="https://github.com/TechnicJelle/GitDroid"><li><div class="title">GitDroid: A third party Android app manager for apps uploaded to GitHub releases</div><div class="domain">github.com &bull; May 03, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (22)</summary><ul><a class="li" href="https://ostwilkens.se/blog/determining-favorite-shirt-color"><li><div class="title">Determining favorite t-shirt color using science</div><div class="domain">ostwilkens.se &bull; May 03, 2025</div></li></a><a class="li" href="https://ayitey.me/git-tunes"><li><div class="title">Make music from GitHub contribution graphs</div><div class="domain">ayitey.me &bull; May 03, 2025</div></li></a><a class="li" href="https://www.vanityfair.com/hollywood/2015/04/pulgasari-north-korea-cult-hit"><li><div class="title">How Kim Jong Il Kidnapped a Director, Made a Cult Hit Godzilla Knockoff (2015)</div><div class="domain">vanityfair.com &bull; May 03, 2025</div></li></a><a class="li" href="https://www.thehandbasket.co/p/independent-journalism-legacy-media-credit"><li><div class="title">“An independent journalist” who won't remain nameless</div><div class="domain">thehandbasket.co &bull; May 03, 2025</div></li></a><a class="li" href="https://literaryreview.co.uk/the-once-future-genius"><li><div class="title">The Once and Future Genius</div><div class="domain">literaryreview.co.uk &bull; May 03, 2025</div></li></a><a class="li" href="https://arstechnica.com/science/2025/05/cyborg-cicadas-play-pachelbels-canon/"><li><div class="title">Cyborg cicadas play Pachelbel's Canon</div><div class="domain">arstechnica.com &bull; May 03, 2025</div></li></a><a class="li" href="https://acoup.blog/2025/05/02/collections-why-archers-didnt-volley-fire/"><li><div class="title">Why Archers Didn't Volley Fire</div><div class="domain">acoup.blog &bull; May 03, 2025</div></li></a><a class="li" href="https://workshop.cjpais.com/projects/handy-m0100"><li><div class="title">I turned a 40 year old Apple Mouse into a speech to text button</div><div class="domain">workshop.cjpais.com &bull; May 03, 2025</div></li></a><a class="li" href="https://leancrew.com/all-this/2025/05/mathml-with-pandoc/"><li><div class="title">MathML with Pandoc</div><div class="domain">leancrew.com &bull; May 03, 2025</div></li></a><a class="li" href="https://www.technologyreview.com/2025/05/02/1116059/the-us-approves-crispr-pigs-for-food/"><li><div class="title">The US has approved CRISPR pigs for food</div><div class="domain">technologyreview.com &bull; May 03, 2025</div></li></a><a class="li" href="https://n8n.io/"><li><div class="title">N8n – Flexible AI workflow automation for technical teams</div><div class="domain">n8n.io &bull; May 03, 2025</div></li></a><a class="li" href="https://ostwilkens.se/blog/setting-up-blog"><li><div class="title">Minimum Viable Blog</div><div class="domain">ostwilkens.se &bull; May 03, 2025</div></li></a><a class="li" href="https://halletecco.substack.com/p/why-i-stopped-angel-investing-after"><li><div class="title">Why I stopped angel investing after 15 years (and what I'm doing instead)</div><div class="domain">halletecco.substack.com &bull; May 03, 2025</div></li></a><a class="li" href="https://www.bloomberg.com/news/articles/2025-05-03/warren-buffett-to-step-down-from-berkshire-hathaway-at-year-end"><li><div class="title">Buffett to step down following six-decade run atop Berkshire</div><div class="domain">bloomberg.com &bull; May 03, 2025</div></li></a><a class="li" href="https://classes.matthewjbrown.net/teaching-files/philtech/berry-computer.pdf"><li><div class="title">Why I Am Not Going to Buy a Computer (1987) [pdf]</div><div class="domain">classes.matthewjbrown.net &bull; May 03, 2025</div></li></a><a class="li" href="https://github.com/serverless-dns/serverless-dns"><li><div class="title">RethinkDNS Resolver That Deploys to CF Workers, Deno Deploy, Fastly, Fly.io</div><div class="domain">github.com &bull; May 03, 2025</div></li></a><a class="li" href="https://github.com/AaronFriel/qmodem-4.51"><li><div class="title">QModem 4.51 Source Code</div><div class="domain">github.com &bull; May 03, 2025</div></li></a><a class="li" href="https://arstechnica.com/ai/2025/05/time-saved-by-ai-offset-by-new-work-created-study-suggests/"><li><div class="title">Time saved by AI offset by new work created, study suggests</div><div class="domain">arstechnica.com &bull; May 03, 2025</div></li></a><a class="li" href="https://github.com/Anemll/Anemll"><li><div class="title">Run LLMs on Apple Neural Engine (ANE)</div><div class="domain">github.com &bull; May 03, 2025</div></li></a><a class="li" href="https://venkovic.github.io/NLA-for-CS-and-IE.html"><li><div class="title">Numerical Linear Algebra Class in Julia TUM</div><div class="domain">venkovic.github.io &bull; May 03, 2025</div></li></a><a class="li" href="https://www.dbreunig.com/2025/05/03/duckdb-is-the-most-impactful-geospatial-software-in-a-decade.html"><li><div class="title">DuckDB is probably the most important geospatial software of the last decade</div><div class="domain">dbreunig.com &bull; May 03, 2025</div></li></a><a class="li" href="https://breezepdf.com"><li><div class="title">Show HN: Free, in-browser PDF editor</div><div class="domain">breezepdf.com &bull; May 03, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Seth's Blog (seths.blog)</h2> (1)</summary><ul><a class="li" href="https://seths.blog/2025/05/seriously/"><li><div class="title">Seriously</div><div class="domain">seths.blog &bull; May 03, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Sympolymathesy, by Chris Krycho (v5.chriskrycho.com)</h2> (1)</summary><ul><a class="li" href="https://v5.chriskrycho.com/notes/tip-apple-music-hides-deleted-albums/"><li><div class="title">[notes] Tip: Apple Music Hides Deleted Albums</div><div class="domain">v5.chriskrycho.com &bull; May 03, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (8)</summary><ul><a class="li" href="https://yourstory.com/2025/05/mastercard-inclusivity-pivot-how-india-shaped-fintech-cos-evolution"><li><div class="title">Mastercard’s inclusivity pivot: How India shaped the fintech co's evolution</div><div class="domain">yourstory.com &bull; May 03, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/05/sebi-eases-norms-stock-brokers-gift-city-abolishes-separate-noc-requirement"><li><div class="title">SENI eases norms for stock brokers to operate from GIFT city</div><div class="domain">yourstory.com &bull; May 03, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/05/icai-likely-to-complete-review-of-gensol-engg-blusmart-mobilitys-fin-statements-in-6-months"><li><div class="title">ICAI likely to complete review of Gensol Engg, BluSmart Mobility's fin statements in 6 months</div><div class="domain">yourstory.com &bull; May 03, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/05/expression-exhibition-engagement-creativity-art-monalisa-kalagram-photography"><li><div class="title">Expression, exhibition, engagement: Tips for creative success from gallerist-curator Lisa Pingale</div><div class="domain">yourstory.com &bull; May 03, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/05/netflix-economic-impact-productions-india-ceo-ted-sarandos"><li><div class="title">Netflix created $2B economic impact through productions in India: CEO Ted Sarandos</div><div class="domain">yourstory.com &bull; May 03, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/05/being-tax-compliant-businesses-global-legal-compliance-regulations"><li><div class="title">Being tax compliant: Insights for businesses expanding globally</div><div class="domain">yourstory.com &bull; May 03, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/05/india-first-ai-data-center-nava-raipur-launch"><li><div class="title">India’s first AI data center park launched in Nava Raipur</div><div class="domain">yourstory.com &bull; May 03, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/05/india-shifts-to-interactive-media-a-hub-for-coastal-consciousness"><li><div class="title">India shifts to interactive media; A hub for coastal consciousness</div><div class="domain">yourstory.com &bull; May 03, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Primal Space (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=wyTOYEk_Z2Y"><li><div class="title">Why Ancient Ruins Are Underground</div><div class="domain">youtube.com &bull; May 03, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Plip Plip (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=Wleby2uqYDE"><li><div class="title">Retro Roast | Plip Plip</div><div class="domain">youtube.com &bull; May 03, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Let's Game It Out (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=LnwdjHpZzqU"><li><div class="title">I Ruined Everything I Touched In RuneScape: Dragonwilds</div><div class="domain">youtube.com &bull; May 03, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Kannadhasan Productions by Annadurai Kannadhasan (youtube.com)</h2> (3)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=v4LoeOWUmZg"><li><div class="title">219A - திருச்சியும் கண்ணதாசனும் ஒரு விசித்திர பிணைப்பு-Re upload</div><div class="domain">youtube.com &bull; May 03, 2025</div></li></a><a class="li" href="https://www.youtube.com/shorts/P0-ZrQ_O_qA"><li><div class="title">3 May 2025</div><div class="domain">youtube.com &bull; May 03, 2025</div></li></a><a class="li" href="https://www.youtube.com/shorts/SKdVRVwXTYU"><li><div class="title">சிருங்கேரியில்</div><div class="domain">youtube.com &bull; May 03, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">IFP (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/ivcSZ7BzU3U"><li><div class="title">What does your DIRECTOR actually want from you? Comment your thoughts 💭 #cinema #films #director</div><div class="domain">youtube.com &bull; May 03, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">CinemaStix (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=JkuS-JkHd8s"><li><div class="title">yeah, they don't want you to watch Star Wars this way, but it's better</div><div class="domain">youtube.com &bull; May 03, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>

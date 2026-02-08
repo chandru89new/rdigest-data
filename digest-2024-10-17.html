@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2024-10-17</span>:</h1>
+  <p class="summary">There are 36 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Bear Blog Trending Posts (bearblog.dev)</h2> (3)</summary><ul><a class="li" href="https://louplummer.lol/doing-the-best-we-can/"><li><div class="title">Doing the Best We Can</div><div class="domain">louplummer.lol &bull; October 17, 2024</div></li></a><a class="li" href="https://whoknows.bearblog.dev/memories-outlast-pictures/"><li><div class="title">Memories outlast pictures.</div><div class="domain">whoknows.bearblog.dev &bull; October 17, 2024</div></li></a><a class="li" href="https://veronique.ink/meaning-making/"><li><div class="title">meaning-making</div><div class="domain">veronique.ink &bull; October 17, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Big Think (bigthink.com)</h2> (3)</summary><ul><a class="li" href="https://bigthink.com/starts-with-a-bang/time-yes-dimension-not-like-space/"><li><div class="title">Time: Yes, it’s a dimension, but no, it’s not like space</div><div class="domain">bigthink.com &bull; October 17, 2024</div></li></a><a class="li" href="https://bigthink.com/business/the-ai-manifesto-of-a-silicon-valley-legend/"><li><div class="title">The AI manifesto of a Silicon Valley legend</div><div class="domain">bigthink.com &bull; October 17, 2024</div></li></a><a class="li" href="https://bigthink.com/strange-maps/tidal-ranges-north-america-europe/"><li><div class="title">Hell or high water: The wonders and dangers of Earth’s tidal ranges</div><div class="domain">bigthink.com &bull; October 17, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">The Marginalian (feeds.feedburner.com)</h2> (1)</summary><ul><a class="li" href="https://www.themarginalian.org/2024/10/17/comet-star/"><li><div class="title">Comet & Star: A Cosmic Fable about the Rhythms and Consolations of Friendship</div><div class="domain">themarginalian.org &bull; October 17, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">kottke.org (feeds.kottke.org)</h2> (12)</summary><ul><a class="li" href="https://kottke.org/24/10/a-bonkers-japanese-skateboarding-show"><li><div class="title">A Bonkers Japanese Skateboarding Show</div><div class="domain">kottke.org &bull; October 17, 2024</div></li></a><a class="li" href="https://kottke.org/24/10/ooh-a-color-kindle-is-finally-here"><li><div class="title">Ooh, a Color Kindle Is Finally Here</div><div class="domain">kottke.org &bull; October 17, 2024</div></li></a><a class="li" href="https://kottke.org/24/10/ravioli-and-other-ravioli-shaped-objects"><li><div class="title">Ravioli and Other Ravioli-Shaped Objects</div><div class="domain">kottke.org &bull; October 17, 2024</div></li></a><a class="li" href="https://kottke.org/24/10/0045396-new-research-documents-ac"><li><div class="title">&#8220;New research documents accelerating plant growth on the Antarctic Peninsula and nearby...</div><div class="domain">kottke.org &bull; October 17, 2024</div></li></a><a class="li" href="https://kottke.org/24/10/0045468-the-binary-game-tests-you"><li><div class="title">The Binary Game tests you on quickly converting numbers from binary to...</div><div class="domain">kottke.org &bull; October 17, 2024</div></li></a><a class="li" href="https://kottke.org/24/10/0045470-ok-this-is-a-genuinely"><li><div class="title">Ok, this is a genuinely shocking thing to hear: &#8220;There is a...</div><div class="domain">kottke.org &bull; October 17, 2024</div></li></a><a class="li" href="https://kottke.org/24/10/0045469-supreme-court-rules-6-3-t"><li><div class="title">Supreme Court Rules 6-3 To Open Evil Tomb Of Batibat. &#8220;Contemporaneous accounts...</div><div class="domain">kottke.org &bull; October 17, 2024</div></li></a><a class="li" href="https://kottke.org/24/10/how-cranberries-are-harvested-1"><li><div class="title">How Cranberries Are Harvested</div><div class="domain">kottke.org &bull; October 17, 2024</div></li></a><a class="li" href="https://kottke.org/24/10/0045471-a-weird-form-of-dark"><li><div class="title">A Weird Form of Dark Energy Might Solve a Cosmic Conundrum. &#8220;Estimates...</div><div class="domain">kottke.org &bull; October 17, 2024</div></li></a><a class="li" href="https://kottke.org/24/10/0045472-this-mashup-of-ymca-by"><li><div class="title">This mashup of Y.M.C.A. by the Village People and a track from...</div><div class="domain">kottke.org &bull; October 17, 2024</div></li></a><a class="li" href="https://kottke.org/24/10/0045477-the-biden-administration-"><li><div class="title">The Biden administration has cancelled $175 billion in student debt for almost...</div><div class="domain">kottke.org &bull; October 17, 2024</div></li></a><a class="li" href="https://kottke.org/24/10/0045473-redbox-went-bankrupt-and-"><li><div class="title">Redbox went bankrupt and abandoned their DVD lending machines. Tinkerers have hacked...</div><div class="domain">kottke.org &bull; October 17, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Go Make Things (gomakethings.com)</h2> (1)</summary><ul><a class="li" href="https://gomakethings.com/styling-web-components/"><li><div class="title">Styling web components</div><div class="domain">gomakethings.com &bull; October 17, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (1)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/zSNLvRBhyphwuYdeC/ai-86-just-think-of-the-potential"><li><div class="title">AI #86: Just Think of the Potential</div><div class="domain">lesswrong.com &bull; October 17, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Longreads (longreads.com)</h2> (2)</summary><ul><a class="li" href="https://longreads.com/2024/10/17/americas-monster/"><li><div class="title">America’s Monster</div><div class="domain">longreads.com &bull; October 17, 2024</div></li></a><a class="li" href="https://longreads.com/2024/10/17/chortle-chortle-scribble-scribble-inside-the-old-bailey-with-britains-last-court-reporters/"><li><div class="title">Chortle Chortle, Scribble Scribble: Inside the Old Bailey with Britain’s Last Court Reporters</div><div class="domain">longreads.com &bull; October 17, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Nautilus (nautil.us)</h2> (2)</summary><ul><a class="li" href="https://nautil.us/the-mystery-of-the-cave-cats-988938/"><li><div class="title">The Mystery of the Cave Cats</div><div class="domain">nautil.us &bull; October 17, 2024</div></li></a><a class="li" href="https://nautil.us/i-was-made-of-language-989146/"><li><div class="title">I Was Made of Language</div><div class="domain">nautil.us &bull; October 17, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (8)</summary><ul><a class="li" href="https://skalt.github.io/projects/brzozowski_ts/"><li><div class="title">Implementing Regular Expressions in TypeScript Types (Badly)</div><div class="domain">skalt.github.io &bull; October 17, 2024</div></li></a><a class="li" href="https://dhruvmethi.substack.com/p/bureaucracy"><li><div class="title">Understanding how bureaucracy develops</div><div class="domain">dhruvmethi.substack.com &bull; October 17, 2024</div></li></a><a class="li" href="https://www.wpri.com/news/street-stories/blue-whale-skeleton-at-new-bedford-museum-still-leaking-oil/"><li><div class="title">Blue whale skeleton at New Bedford museum still oozing oil</div><div class="domain">wpri.com &bull; October 17, 2024</div></li></a><a class="li" href="https://simonwillison.net/2024/Oct/17/video-scraping/"><li><div class="title">Video scraping: extracting JSON from a 35s screen capture for 1/10th of a cent</div><div class="domain">simonwillison.net &bull; October 17, 2024</div></li></a><a class="li" href="https://gizmodo.com/nasa-freezes-starliner-missions-after-boeing-leaves-astronauts-stranded-2000512963"><li><div class="title">NASA freezes Starliner missions</div><div class="domain">gizmodo.com &bull; October 17, 2024</div></li></a><a class="li" href="https://arxiv.org/abs/2402.01502"><li><div class="title">Why do random forests work? They are self-regularizing adaptive smoothers</div><div class="domain">arxiv.org &bull; October 17, 2024</div></li></a><a class="li" href="https://www.555-timer-circuits.com/"><li><div class="title">555 Timer Circuits</div><div class="domain">555-timer-circuits.com &bull; October 17, 2024</div></li></a><a class="li" href="https://www.scientificamerican.com/article/you-dont-need-words-to-think/"><li><div class="title">Language is not essential for the cognitive processes that underlie thought</div><div class="domain">scientificamerican.com &bull; October 17, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">notes.druchan.com — RSS Feed (notes.druchan.com)</h2> (1)</summary><ul><a class="li" href="https://notes.druchan.com/haskell-journal-day-11"><li><div class="title">Haskell Journal - Day 11</div><div class="domain">notes.druchan.com &bull; October 17, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Reasons to be Cheerful (reasonstobecheerful.world)</h2> (1)</summary><ul><a class="li" href="https://reasonstobecheerful.world/moldova-women-in-tech-flourishing/"><li><div class="title">The Small Country Where Women in Tech Are Flourishing</div><div class="domain">reasonstobecheerful.world &bull; October 17, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Seth's Blog (seths.blog)</h2> (1)</summary><ul><a class="li" href="https://seths.blog/2024/10/decisions-as-effort/"><li><div class="title">Decisions as effort</div><div class="domain">seths.blog &bull; October 17, 2024</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>

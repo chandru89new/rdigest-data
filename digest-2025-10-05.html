@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-10-05</span>:</h1>
+  <p class="summary">There are 37 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">The Marginalian (feeds.feedburner.com)</h2> (2)</summary><ul><a class="li" href="https://www.themarginalian.org/2025/10/05/rudyard-kipling-writing/"><li><div class="title">Heed Your Daemon: Rudyard Kipling on Writing</div><div class="domain">themarginalian.org &bull; October 05, 2025</div></li></a><a class="li" href="https://www.themarginalian.org/2025/10/05/carl-rogers-good-life/"><li><div class="title">The Three Elements of the Good Life</div><div class="domain">themarginalian.org &bull; October 05, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Go Make Things (gomakethings.com)</h2> (1)</summary><ul><a class="li" href="https://gomakethings.com/adhd-pride/"><li><div class="title">ADHD pride</div><div class="domain">gomakethings.com &bull; October 05, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (2)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/emEmipwkKvjxksohy/making-your-pain-worse-can-get-you-what-you-want"><li><div class="title">Making Your Pain Worse can Get You What You Want</div><div class="domain">lesswrong.com &bull; October 05, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/wdddpMjLCC67LsCnD/the-counterfactual-quiet-agi-timeline"><li><div class="title">The Counterfactual Quiet AGI Timeline</div><div class="domain">lesswrong.com &bull; October 05, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (3)</summary><ul><a class="li" href="https://abner.page/post/exit-the-feed/"><li><div class="title">Exit the Feed: The Best Coders Should Walk Away</div><div class="domain">abner.page &bull; October 05, 2025</div></li></a><a class="li" href="https://github.com/chrispsn/mesh-spreadsheet"><li><div class="title">mesh-spreadsheet: data & code editor</div><div class="domain">github.com &bull; October 05, 2025</div></li></a><a class="li" href="https://inessential.com/2025/10/04/why-netnewswire-is-not-web-app.html"><li><div class="title">Why NetNewsWire Is Not a Web App</div><div class="domain">inessential.com &bull; October 05, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (10)</summary><ul><a class="li" href="https://techcrunch.com/2025/10/02/after-nine-years-of-grinding-replit-finally-found-its-market-can-it-keep-it/"><li><div class="title">After nine years of grinding, Replit found its market. Can it keep it?</div><div class="domain">techcrunch.com &bull; October 05, 2025</div></li></a><a class="li" href="https://mazzo.li/posts/lanczos.html"><li><div class="title">Lánczos Interpolation Explained (2022)</div><div class="domain">mazzo.li &bull; October 05, 2025</div></li></a><a class="li" href="https://vitalik.eth.limo/general/2025/10/05/memory13.html"><li><div class="title">Memory access is O(N^[1/3])</div><div class="domain">vitalik.eth.limo &bull; October 05, 2025</div></li></a><a class="li" href="https://www.ft.com/content/87d4dcfe-f66a-4aad-bba9-394e9fc77c1d"><li><div class="title">The agony and ecstasy of restoring a Fra Angelico masterpiece</div><div class="domain">ft.com &bull; October 05, 2025</div></li></a><a class="li" href="https://www.aerolane.com/"><li><div class="title">Aerocart cargo gliders</div><div class="domain">aerolane.com &bull; October 05, 2025</div></li></a><a class="li" href="https://techcrunch.com/2025/09/17/meta-launches-hyperscape-technology-to-turn-real-world-spaces-into-vr/"><li><div class="title">Meta launches Hyperscape, technology to turn real-world spaces into VR</div><div class="domain">techcrunch.com &bull; October 05, 2025</div></li></a><a class="li" href="https://www.geoffchappell.com/notes/windows/retro/extrawin.htm"><li><div class="title">Windows 3.1 in a Windows 95 Virtual Machine (2022)</div><div class="domain">geoffchappell.com &bull; October 05, 2025</div></li></a><a class="li" href="https://nickchandler.dev/articles/2025/10/03/lab-report-adding-stride-scheduling-to-xv6/"><li><div class="title">Adding Stride Scheduling to Xv6</div><div class="domain">nickchandler.dev &bull; October 05, 2025</div></li></a><a class="li" href="https://tombh.co.uk/packing-world-lines-of-sight"><li><div class="title">Packing the world for longest lines of sight</div><div class="domain">tombh.co.uk &bull; October 05, 2025</div></li></a><a class="li" href="https://richardsapperdesign.com/products/mod-5140/"><li><div class="title">Mod. 5140 - IBM's First Laptop Computer</div><div class="domain">richardsapperdesign.com &bull; October 05, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">notes.druchan.com — RSS Feed (notes.druchan.com)</h2> (1)</summary><ul><a class="li" href="https://notes.druchan.com/wordladder-journal-4"><li><div class="title">Wordladder Journal Ep. 4</div><div class="domain">notes.druchan.com &bull; October 05, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Seth's Blog (seths.blog)</h2> (1)</summary><ul><a class="li" href="https://seths.blog/2025/10/status-vs-goodness/"><li><div class="title">Status vs. goodness</div><div class="domain">seths.blog &bull; October 05, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Diplomat (thediplomat.com)</h2> (1)</summary><ul><a class="li" href="https://thediplomat.com/2025/10/will-takaichi-sanae-be-japans-margaret-thatcher-or-another-liz-truss/"><li><div class="title">Will Takaichi Sanae Be Japan’s Margaret Thatcher – or Another Liz Truss?</div><div class="domain">thediplomat.com &bull; October 05, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (2)</summary><ul><a class="li" href="https://yourstory.com/2025/10/msme-green-financing-mumbai-housing-war-openai-sora-ai-video-app-taylor-swift"><li><div class="title">What’s ‘green’ in green financing?; Inside Mumbai’s housing war</div><div class="domain">yourstory.com &bull; October 05, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/09/personalised-journeys-vs-programmed-filters-the-real-test-of-ai-in-finance"><li><div class="title">Personalised Journeys vs Programmed Filters: The real test of AI in finance</div><div class="domain">yourstory.com &bull; October 05, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">쿠킹하루 Cooking Haru :) (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/3gfxjKvczvs"><li><div class="title">완벽한 아침! 정말 맛있는 핫도그?! NO! 밥도그!! #주먹밥 #gimbap #onigiri #hotdog #sausage</div><div class="domain">youtube.com &bull; October 05, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Vox (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/Gs1HavjYauE"><li><div class="title">You can be more empathetic (if you want to be)</div><div class="domain">youtube.com &bull; October 05, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Tsoding Daily (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=kwMkrehm-Jg"><li><div class="title">Packing game assets into a binary file</div><div class="domain">youtube.com &bull; October 05, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Socrates Studio (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=uoqu25Iod0w"><li><div class="title">Ayan Rand ll அயன் ராண்டின் சுயநலமே அறம் எனும் தத்துவம் ll பேரா.இரா.முரளி</div><div class="domain">youtube.com &bull; October 05, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">SciFri (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=higLJohMCPY"><li><div class="title">SciFri Live! Ask an Astronaut: Ellen Ochoa</div><div class="domain">youtube.com &bull; October 05, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=tSz_S-sKdsM"><li><div class="title">SciFri Live! Ask an Astronaut: Nicole Stott</div><div class="domain">youtube.com &bull; October 05, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Megaprojects (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=nOjvKvODc0A"><li><div class="title">COMAC: China's Rival to Airbus and Boeing. Should They Be Worried?</div><div class="domain">youtube.com &bull; October 05, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">M M F A Mellisai Mannar Fans Association (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=UJfHx-1ixQw"><li><div class="title">MALAI POZHUTHIN MAYAKKATHILE 2 MELLISAI MANNAR'S NON TAMIL SONGS - TELUGU RAJA MALAYA SIMHA 1959</div><div class="domain">youtube.com &bull; October 05, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Let's Game It Out (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=28_KFa02DlA"><li><div class="title">People Asked for a City, I Built Them a Nightmare</div><div class="domain">youtube.com &bull; October 05, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Jacob's Piano (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=_coUAIuBRug"><li><div class="title">Now We Are Free (from "Gladiator") \\ Jacob's Piano Visualizer</div><div class="domain">youtube.com &bull; October 05, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">GreatScott! (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=VyqljSodp6k"><li><div class="title">I tried finding Hidden Gems on AliExpress AGAIN! (Part 16)</div><div class="domain">youtube.com &bull; October 05, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Dr. Shashi Tharoor Official (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=4vWYCSw3kpg"><li><div class="title">Dr Shashi Tharoor at Mata Amritanandamayi’s 72nd Birthday Celebration</div><div class="domain">youtube.com &bull; October 05, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Dr Ben Miles (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/rd2V5DhsfEY"><li><div class="title">Scientists Create Spermbot to Deliver Medicine</div><div class="domain">youtube.com &bull; October 05, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">3Blue1Brown (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=-j8PzkZ70Lg"><li><div class="title">The Physics of Euler's Formula | Laplace Transform Prelude</div><div class="domain">youtube.com &bull; October 05, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>

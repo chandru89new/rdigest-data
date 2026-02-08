@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-09-14</span>:</h1>
+  <p class="summary">There are 62 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Bear Blog Trending Posts (bearblog.dev)</h2> (3)</summary><ul><a class="li" href="https://strangeleaflet.com/switched-to-bear/"><li><div class="title">Switched to Bear</div><div class="domain">strangeleaflet.com &bull; September 14, 2025</div></li></a><a class="li" href="https://hwisnu.bearblog.dev/digesting-the-views-of-indonesias-new-finance-minister-mr-purbaya/"><li><div class="title">Digesting the views of Indonesia's new Finance Minister - Mr. Purbaya</div><div class="domain">hwisnu.bearblog.dev &bull; September 14, 2025</div></li></a><a class="li" href="https://prickly.oxhe.art/avoidance/"><li><div class="title">Block Your Exits</div><div class="domain">prickly.oxhe.art &bull; September 14, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Kevin Martin Jose (kevinmartinjose.com)</h2> (1)</summary><ul><a class="li" href="https://kevinmartinjose.com/2025/09/15/on-training-binary-neural-networks/"><li><div class="title">On training binary neural networks</div><div class="domain">kevinmartinjose.com &bull; September 14, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (1)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/AzFxTMFfkTt4mhMKt/alignment-as-uploading-with-more-steps"><li><div class="title">Alignment as uploading with more steps</div><div class="domain">lesswrong.com &bull; September 14, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (17)</summary><ul><a class="li" href="https://letsencrypt.org/2025/08/06/ocsp-service-has-reached-end-of-life"><li><div class="title">OCSP Service Has Reached End of Life</div><div class="domain">letsencrypt.org &bull; September 14, 2025</div></li></a><a class="li" href="https://diziet.dreamwidth.org/20143.html"><li><div class="title">tag2upload in the first month of Debian forky</div><div class="domain">diziet.dreamwidth.org &bull; September 14, 2025</div></li></a><a class="li" href="https://www.kickstarter.com/projects/mwlucas/networking-for-system-administrators-2nd-edition/"><li><div class="title">Networking for System Administrators (2nd Edition)</div><div class="domain">kickstarter.com &bull; September 14, 2025</div></li></a><a class="li" href="http://oldvcr.blogspot.com/2025/09/refurb-weekend-silicon-graphics-indigo.html"><li><div class="title">Refurb weekend: Silicon Graphics Indigo² IMPACT 10000</div><div class="domain">oldvcr.blogspot.com &bull; September 14, 2025</div></li></a><a class="li" href="https://github.com/DavidLiedle/DriftDB"><li><div class="title">DriftDB: An experimental append-only database with built-in time travel</div><div class="domain">github.com &bull; September 14, 2025</div></li></a><a class="li" href="https://arxiv.org/abs/2509.09331"><li><div class="title">On the Security of SSH Client Signatures</div><div class="domain">arxiv.org &bull; September 14, 2025</div></li></a><a class="li" href="https://github.com/h2337/tsink"><li><div class="title">tsink: Embedded time-series database for Rust</div><div class="domain">github.com &bull; September 14, 2025</div></li></a><a class="li" href="https://thechipletter.substack.com/p/motorola-intel-ibm-make-a-mainframe"><li><div class="title">Motorola, Intel, IBM Make A Mainframe in a PC - The PC XT/370</div><div class="domain">thechipletter.substack.com &bull; September 14, 2025</div></li></a><a class="li" href="https://dotat.at/@/2025-09-14-ratelimit.html"><li><div class="title">a few notes on ratelimiting</div><div class="domain">dotat.at &bull; September 14, 2025</div></li></a><a class="li" href="https://popovicu.com/posts/writing-an-operating-system-kernel-from-scratch/"><li><div class="title">Writing an operating system kernel from scratch</div><div class="domain">popovicu.com &bull; September 14, 2025</div></li></a><a class="li" href="https://neilmadden.blog/2025/09/12/rating-26-years-of-java-changes/"><li><div class="title">Rating 26 years of Java changes</div><div class="domain">neilmadden.blog &bull; September 14, 2025</div></li></a><a class="li" href="https://notes.abhinavsarkar.net/2025/broken-feeds"><li><div class="title">The Many Broken Feeds</div><div class="domain">notes.abhinavsarkar.net &bull; September 14, 2025</div></li></a><a class="li" href="https://github.com/Voultapher/sort-research-rs/blob/main/writeup/unreasonable/text.md"><li><div class="title">The unreasonable effectiveness of modern sort algorithms</div><div class="domain">github.com &bull; September 14, 2025</div></li></a><a class="li" href="https://ericcodes.io/blog/gleam-my-new-obsession.html"><li><div class="title">Gleam is my new obsession</div><div class="domain">ericcodes.io &bull; September 14, 2025</div></li></a><a class="li" href="https://www.redox-os.org/news/development-priorities-2025-09/"><li><div class="title">Redox Development Priorities for 2025/26</div><div class="domain">redox-os.org &bull; September 14, 2025</div></li></a><a class="li" href="https://www.freebsd.org/status/report-2024-10-2024-12/qemu_l4b/"><li><div class="title">bsd-user-4-linux project</div><div class="domain">freebsd.org &bull; September 14, 2025</div></li></a><a class="li" href="https://rachelbythebay.com/w/2025/09/12/tz/"><li><div class="title">Debian 12 installer promotes US/* time zones</div><div class="domain">rachelbythebay.com &bull; September 14, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (22)</summary><ul><a class="li" href="https://en.wikipedia.org/wiki/English_Braille"><li><div class="title">Grade 2 Braille</div><div class="domain">en.wikipedia.org &bull; September 14, 2025</div></li></a><a class="li" href="https://www.cppstories.com/2025/join_concat_ranges/"><li><div class="title">How to join or concat ranges, C++26</div><div class="domain">cppstories.com &bull; September 14, 2025</div></li></a><a class="li" href="https://jjrscott.com/to-deflate-or-not/"><li><div class="title">Understanding Deflate</div><div class="domain">jjrscott.com &bull; September 14, 2025</div></li></a><a class="li" href="https://disobey.net/@yawnbox/115203365485529363"><li><div class="title">ChatControl update: blocking minority held but Denmark is moving forward anyway</div><div class="domain">disobey.net &bull; September 14, 2025</div></li></a><a class="li" href="https://github.com/BICLab/SpikingBrain-7B"><li><div class="title">SpikingBrain 7B – More efficient than classic LLMs</div><div class="domain">github.com &bull; September 14, 2025</div></li></a><a class="li" href="https://news.cnrs.fr/articles/fukushima-insects-tested-for-cognition"><li><div class="title">Fukushima insects tested for cognition</div><div class="domain">news.cnrs.fr &bull; September 14, 2025</div></li></a><a class="li" href="http://ewaste.fka.wtf/"><li><div class="title">Website is hosted on a disposable vape</div><div class="domain">ewaste.fka.wtf &bull; September 14, 2025</div></li></a><a class="li" href="https://mo42.bearblog.dev/read-to-forget/"><li><div class="title">Read to forget</div><div class="domain">mo42.bearblog.dev &bull; September 14, 2025</div></li></a><a class="li" href="https://medicalxpress.com/news/2025-09-cannabis-quadrupled-diabetes-million-adults.html"><li><div class="title">Cannabis use associated with quadrupled risk of developing type 2 diabetes</div><div class="domain">medicalxpress.com &bull; September 14, 2025</div></li></a><a class="li" href="https://blog.3mdeb.com/2025/2025-09-11-gigabyte-mz33-ar1-blob-analysis/"><li><div class="title">AMD Turin PSP binaries analysis from open-source firmware perspective</div><div class="domain">blog.3mdeb.com &bull; September 14, 2025</div></li></a><a class="li" href="https://svg.nicubunu.ro/"><li><div class="title">Nicu's test website made with SVG (2007)</div><div class="domain">svg.nicubunu.ro &bull; September 14, 2025</div></li></a><a class="li" href="http://stations.albertguillaumes.cat/"><li><div class="title">Models of European metro stations</div><div class="domain">stations.albertguillaumes.cat &bull; September 14, 2025</div></li></a><a class="li" href="https://serd.es/2025/09/14/Trigger-crossbar.html"><li><div class="title">Trigger Crossbar</div><div class="domain">serd.es &bull; September 14, 2025</div></li></a><a class="li" href="https://behavioralscientist.org/why-we-spiral/"><li><div class="title">Why We Spiral</div><div class="domain">behavioralscientist.org &bull; September 14, 2025</div></li></a><a class="li" href="https://bmcpsychiatry.biomedcentral.com/articles/10.1186/s12888-025-06815-2"><li><div class="title">Repetitive negative thinking associated with cognitive decline in older adults</div><div class="domain">bmcpsychiatry.biomedcentral.com &bull; September 14, 2025</div></li></a><a class="li" href="https://github.com/gingerBill/titania"><li><div class="title">Titania Programming Language</div><div class="domain">github.com &bull; September 14, 2025</div></li></a><a class="li" href="https://wiki.gentoo.org/wiki/Project:Council/AI_policy"><li><div class="title">Gentoo AI Policy</div><div class="domain">wiki.gentoo.org &bull; September 14, 2025</div></li></a><a class="li" href="https://www.cubbyathome.com/boxed-cake-mix-sizes-have-shrunk-80045058"><li><div class="title">Betty Crocker broke recipes by shrinking boxes</div><div class="domain">cubbyathome.com &bull; September 14, 2025</div></li></a><a class="li" href="https://www.sdstate.edu/news/2025/08/can-grapevines-help-slow-plastic-waste-problem"><li><div class="title">Grapevine cellulose makes stronger plastic alternative, biodegrades in 17 days</div><div class="domain">sdstate.edu &bull; September 14, 2025</div></li></a><a class="li" href="https://www.theartnewspaper.com/2025/09/12/how-the-restoration-of-ancient-babylon-is-helping-to-draw-tourists-back-to-iraq"><li><div class="title">How the restoration of ancient Babylon is drawing tourists back to Iraq</div><div class="domain">theartnewspaper.com &bull; September 14, 2025</div></li></a><a class="li" href="https://jeffreybigham.com/blog/2025/where-will-my-kids-go.html"><li><div class="title">If my kids excel, will they move away?</div><div class="domain">jeffreybigham.com &bull; September 14, 2025</div></li></a><a class="li" href="https://datatracker.ietf.org/doc/html/rfc9460"><li><div class="title">RFC9460: SVCB and HTTPS DNS Records</div><div class="domain">datatracker.ietf.org &bull; September 14, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Scholar's Stage (scholars-stage.org)</h2> (1)</summary><ul><a class="li" href="https://scholars-stage.org/bullets-and-ballots-the-legacy-of-charlie-kirk/"><li><div class="title">Bullets and Ballots: The Legacy of Charlie Kirk</div><div class="domain">scholars-stage.org &bull; September 14, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Seth's Blog (seths.blog)</h2> (1)</summary><ul><a class="li" href="https://seths.blog/2025/09/often-give-in/"><li><div class="title">Often give in</div><div class="domain">seths.blog &bull; September 14, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Diplomat (thediplomat.com)</h2> (1)</summary><ul><a class="li" href="https://thediplomat.com/2025/09/whos-afraid-of-sustainable-steam-power/"><li><div class="title">Who’s Afraid of ‘Sustainable Steam Power’?</div><div class="domain">thediplomat.com &bull; September 14, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (7)</summary><ul><a class="li" href="https://yourstory.com/2025/09/flipkart-loss-widens-revenue-up-fy25"><li><div class="title">Flipkart's loss widens to Rs 5,189 Cr in FY25; revenue up over 17%</div><div class="domain">yourstory.com &bull; September 14, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/09/ai-inclusion-environment-business-creativity-entrepreneur-education-quiz"><li><div class="title">AI, inclusion, environment: Test your business creativity with Edition 205 of our weekly quiz!</div><div class="domain">yourstory.com &bull; September 14, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/09/culture-representation-champa-sharath-gallery-sumukha-art-photography"><li><div class="title">Culture and representation: How printmaker Champa Sharath challenges the traditional gaze</div><div class="domain">yourstory.com &bull; September 14, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/09/promise-practice-ai-artificial-intelligence-transforming-healthcare-delivery"><li><div class="title">From promise to practice: How AI is transforming healthcare delivery</div><div class="domain">yourstory.com &bull; September 14, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/09/myntras-net-profit-soars-fiji-indoai"><li><div class="title">Myntra’s net profit soars; Fiji beyond the postcard</div><div class="domain">yourstory.com &bull; September 14, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/09/india-needs-a-deeptech-fund-and-not-just-a-startup-fund"><li><div class="title">India needs a deeptech fund and not just a startup fund</div><div class="domain">yourstory.com &bull; September 14, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/09/co-intelligence-revolution-humans--ai-will-reshape-startups-venkat-ramaswamy"><li><div class="title">The co-intelligence revolution: How humans + AI will reshape startups and enterprises</div><div class="domain">yourstory.com &bull; September 14, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">쿠킹하루 Cooking Haru :) (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/w_efdISVMf8"><li><div class="title">포근 계란 초밥 스팸 주먹밥 ASMR #egg #lunchbox #rice #cooking #recipe #riceballs #sushi</div><div class="domain">youtube.com &bull; September 14, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Wint Wealth (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/1XGo7rPtREM"><li><div class="title">You can Never RETIRE, here's why!</div><div class="domain">youtube.com &bull; September 14, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Veritasium (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/b8XVCsXyIZs"><li><div class="title">What Happens When You Spin a Football?</div><div class="domain">youtube.com &bull; September 14, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Vaak (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=ojc_s8-8nLE"><li><div class="title">Ramnad Krishnan | Kamala & Laxman Wedding Concert, 1954 | 108th Birth Anniversary Tribute</div><div class="domain">youtube.com &bull; September 14, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lucaas (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=2p4HELQypwk"><li><div class="title">787 Slices Through Another Plane</div><div class="domain">youtube.com &bull; September 14, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Let's Game It Out (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=8t0XnLKGm4k"><li><div class="title">I Became a Millionaire by Obliterating Everyone In My Waterpark - Waterpark Simulator</div><div class="domain">youtube.com &bull; September 14, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">GreatScott! (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/KhueMygLf_I"><li><div class="title">No Lab Bench Power Supply? No Problem! #aliexpress #review #gadget #diy #power #supply #lab #atx</div><div class="domain">youtube.com &bull; September 14, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Circle Line Art School (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=H5qwphbrgTA"><li><div class="title">How to Draw a City using One-Point Perspective: Bird's Eye View for Beginners</div><div class="domain">youtube.com &bull; September 14, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>

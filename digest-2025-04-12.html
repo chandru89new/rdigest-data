@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-04-12</span>:</h1>
+  <p class="summary">There are 63 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Bear Blog Trending Posts (bearblog.dev)</h2> (2)</summary><ul><a class="li" href="https://bluemountain.bearblog.dev/vancian-casting-is-good-actually/"><li><div class="title">Vancian Casting is Good, Actually</div><div class="domain">bluemountain.bearblog.dev &bull; April 12, 2025</div></li></a><a class="li" href="https://posthuman.blog/this-reddit-post-fried-my-brain/"><li><div class="title">A Reddit Bot Drove Me Insane</div><div class="domain">posthuman.blog &bull; April 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Big Think (bigthink.com)</h2> (1)</summary><ul><a class="li" href="https://bigthink.com/mini-philosophy/epiphenomenalism-mind-body-problem-dualism/"><li><div class="title">Epiphenomenalism: One of philosophy’s most disturbing ideas</div><div class="domain">bigthink.com &bull; April 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Jon Udell (blog.jonudell.net)</h2> (1)</summary><ul><a class="li" href="https://blog.jonudell.net/2025/04/12/who-will-take-care-of-you-in-your-time-of-need/"><li><div class="title">Who will take care of you in your time of need?</div><div class="domain">blog.jonudell.net &bull; April 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (4)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/RdHEhPKJG6mp39Agw/paper"><li><div class="title">Paper</div><div class="domain">lesswrong.com &bull; April 12, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/tWuYhdajaXx4WzMHz/youth-lockout"><li><div class="title">Youth Lockout</div><div class="domain">lesswrong.com &bull; April 12, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/ntDA4Q7BaYhWPgzuq/reward-seekers"><li><div class="title">How training-gamers might function (and win)</div><div class="domain">lesswrong.com &bull; April 12, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/Y49znC2qfL9SXkT7e/why-does-lw-not-put-much-more-focus-on-ai-governance-and"><li><div class="title">Why does LW not put much more focus on AI governance and outreach?</div><div class="domain">lesswrong.com &bull; April 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (18)</summary><ul><a class="li" href="https://www.nirsoft.net/articles/pst_password_bug.html"><li><div class="title">Bug in Outlook PST Password Protection (2006)</div><div class="domain">nirsoft.net &bull; April 12, 2025</div></li></a><a class="li" href="https://github.com/dendibakh/perf-book"><li><div class="title">Performance Analysis and Tuning on Modern CPUs</div><div class="domain">github.com &bull; April 12, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=HGkuRp5HfH8"><li><div class="title">Creating 256 Bytes of RAM (in a simulation)</div><div class="domain">youtube.com &bull; April 12, 2025</div></li></a><a class="li" href="https://core-math.gitlabpages.inria.fr/"><li><div class="title">CORE-MATH: high performance open-source mathematical functions with correct rounding</div><div class="domain">core-math.gitlabpages.inria.fr &bull; April 12, 2025</div></li></a><a class="li" href="https://lobste.rs/s/uetrpm/my_cloudflare_r2_has_been_blocked_from"><li><div class="title">My Cloudflare R2 has been blocked from LaLiga (Spain football league), is it even legal?</div><div class="domain">lobste.rs &bull; April 12, 2025</div></li></a><a class="li" href="https://rust-gpu.github.io/blog/2025/04/10/shadertoys"><li><div class="title">Shadertoys ported to Rust GPU</div><div class="domain">rust-gpu.github.io &bull; April 12, 2025</div></li></a><a class="li" href="https://www.xfaang.com/blog/Natural-Language-Is-Now-the-Only-No-Code-Tool-That-Matters/slvrJ005SjSnDqnIIfeVX"><li><div class="title">Natural Language Is Now the Only No-Code Tool That Matters</div><div class="domain">xfaang.com &bull; April 12, 2025</div></li></a><a class="li" href="https://codepen.io/HejChristian/full/YPzLbYX"><li><div class="title">Holographic Masks</div><div class="domain">codepen.io &bull; April 12, 2025</div></li></a><a class="li" href="https://fractalfir.github.io/generated_html/cg_clr_odd_platforms.html"><li><div class="title">Rust to C compiler - 95.9% test pass rate, odd platforms</div><div class="domain">fractalfir.github.io &bull; April 12, 2025</div></li></a><a class="li" href="https://github.com/sebastiancarlos/cl-yasboi"><li><div class="title">cl-yasboi: Yet Another Starter Boilerplate for Common Lisp</div><div class="domain">github.com &bull; April 12, 2025</div></li></a><a class="li" href="https://waspdev.com/articles/2025-04-06/features-that-every-js-developer-must-know-in-2025"><li><div class="title">Some features that every JavaScript developer should know in 2025</div><div class="domain">waspdev.com &bull; April 12, 2025</div></li></a><a class="li" href="https://beza1e1.tuxen.de/config_levels.html"><li><div class="title">The 5 Levels of Configuration Languages</div><div class="domain">beza1e1.tuxen.de &bull; April 12, 2025</div></li></a><a class="li" href="https://gamesbymason.com/blog/2025/zcs/"><li><div class="title">ZCS — An Entity Component System in Zig</div><div class="domain">gamesbymason.com &bull; April 12, 2025</div></li></a><a class="li" href="https://socket.dev/blog/slopsquatting-how-ai-hallucinations-are-fueling-a-new-class-of-supply-chain-attacks"><li><div class="title">Slopsquatting: Planting Malicious Packages Under Names AIs Will Hallucinate</div><div class="domain">socket.dev &bull; April 12, 2025</div></li></a><a class="li" href="https://www.jeffgeerling.com/blog/2025/bps-gps-alternative-nobodys-heard"><li><div class="title">BPS is a GPS alternative that nobody's heard of</div><div class="domain">jeffgeerling.com &bull; April 12, 2025</div></li></a><a class="li" href="https://blog.codingconfessions.com/p/python-performance-why-if-not-list"><li><div class="title">Python Performance: Why 'if not list' is 2x Faster Than Using len()</div><div class="domain">blog.codingconfessions.com &bull; April 12, 2025</div></li></a><a class="li" href="https://xeiaso.net/notes/2025/anubis-works/"><li><div class="title">Anubis works</div><div class="domain">xeiaso.net &bull; April 12, 2025</div></li></a><a class="li" href="https://data-star.dev/"><li><div class="title">Datastar - The hypermedia framework</div><div class="domain">data-star.dev &bull; April 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (24)</summary><ul><a class="li" href="https://www.theguardian.com/artanddesign/2025/apr/12/28-fake-images-that-fooled-the-world"><li><div class="title">Fake images that fooled the world</div><div class="domain">theguardian.com &bull; April 12, 2025</div></li></a><a class="li" href="https://ourworldindata.org/learning-curve"><li><div class="title">What does it mean for a technology to follow Wright's Law?</div><div class="domain">ourworldindata.org &bull; April 12, 2025</div></li></a><a class="li" href="https://archaeology.org/issues/may-june-2025/features/lost-city-of-the-samurai/"><li><div class="title">Lost City of the Samurai</div><div class="domain">archaeology.org &bull; April 12, 2025</div></li></a><a class="li" href="https://www.bbc.com/news/articles/czd3ygd7mrno"><li><div class="title">AI used for skin cancer checks at London hospital</div><div class="domain">bbc.com &bull; April 12, 2025</div></li></a><a class="li" href="https://transformerlab.ai/"><li><div class="title">Transformer Lab</div><div class="domain">transformerlab.ai &bull; April 12, 2025</div></li></a><a class="li" href="https://culture.pl/en/article/philip-k-dick-stanislaw-lem-is-a-communist-committee"><li><div class="title">Philip K. Dick: Stanisław Lem Is a Communist Committee (2015)</div><div class="domain">culture.pl &bull; April 12, 2025</div></li></a><a class="li" href="https://docs.evidence.dev/components/all-components/"><li><div class="title">Apache ECharts + Leaflet + shadcn for data viz</div><div class="domain">docs.evidence.dev &bull; April 12, 2025</div></li></a><a class="li" href="https://news.ycombinator.com/item?id=43667887"><li><div class="title">Ask HN: How do you monetize personal code if it's not an "app"?</div><div class="domain">news.ycombinator.com &bull; April 12, 2025</div></li></a><a class="li" href="https://www.ycombinator.com/companies/artie/jobs/7kGvDVC-founding-product-engineer"><li><div class="title">Artie (YC S23) Is Hiring Engineer #3</div><div class="domain">ycombinator.com &bull; April 12, 2025</div></li></a><a class="li" href="http://smalldatum.blogspot.com/2025/04/battle-of-mallocators.html"><li><div class="title">Battle of the Mallocators</div><div class="domain">smalldatum.blogspot.com &bull; April 12, 2025</div></li></a><a class="li" href="https://rust-gpu.github.io/blog/2025/04/10/shadertoys/"><li><div class="title">Shadertoys Ported to Rust GPU</div><div class="domain">rust-gpu.github.io &bull; April 12, 2025</div></li></a><a class="li" href="https://www.bloomberg.com/news/articles/2025-04-12/trump-exempts-phones-computers-chips-from-reciprocal-tariffs"><li><div class="title">Trump exempts phones, computers, chips from 'reciprocal' tariffs</div><div class="domain">bloomberg.com &bull; April 12, 2025</div></li></a><a class="li" href="https://v4.zod.dev/v4"><li><div class="title">Zod v4 Beta</div><div class="domain">v4.zod.dev &bull; April 12, 2025</div></li></a><a class="li" href="https://sloanreview.mit.edu/article/how-to-structure-a-b2b-marketplace-venture/"><li><div class="title">How to Structure a B2B Marketplace Venture</div><div class="domain">sloanreview.mit.edu &bull; April 12, 2025</div></li></a><a class="li" href="https://arktype.io/"><li><div class="title">ArkType: Ergonomic TS validator 100x faster than Zod</div><div class="domain">arktype.io &bull; April 12, 2025</div></li></a><a class="li" href="https://tunarr.com/"><li><div class="title">Tunarr: Create and configure live TV channels from media on your servers</div><div class="domain">tunarr.com &bull; April 12, 2025</div></li></a><a class="li" href="https://blog.glyphdrawing.club/why-is-there-a-small-house-in-ibm-s-code-page-437/"><li><div class="title">Why is there a "small house" in IBM's Code page 437?</div><div class="domain">blog.glyphdrawing.club &bull; April 12, 2025</div></li></a><a class="li" href="https://vert.sh"><li><div class="title">Open source and self hostable/private file converter</div><div class="domain">vert.sh &bull; April 12, 2025</div></li></a><a class="li" href="https://gitea.bubbletea.dev/shibao/memex"><li><div class="title">Show HN: memEx, a personal knowledge base inspired by zettlekasten and org-mode</div><div class="domain">gitea.bubbletea.dev &bull; April 12, 2025</div></li></a><a class="li" href="https://protesilaos.com/emacs/emacs-lisp-elements"><li><div class="title">Emacs Lisp Elements</div><div class="domain">protesilaos.com &bull; April 12, 2025</div></li></a><a class="li" href="https://webtui.ironclad.sh"><li><div class="title">WebTUI – A CSS Library That Brings the Beauty of Terminal UIs to the Browser</div><div class="domain">webtui.ironclad.sh &bull; April 12, 2025</div></li></a><a class="li" href="https://www.bram.us/2022/01/11/yaml-the-norway-problem/"><li><div class="title">YAML: The Norway Problem (2022)</div><div class="domain">bram.us &bull; April 12, 2025</div></li></a><a class="li" href="https://fuma-nama.vercel.app/blog/svg-art"><li><div class="title">Nice Things with SVG</div><div class="domain">fuma-nama.vercel.app &bull; April 12, 2025</div></li></a><a class="li" href="https://github.com/glynawe/awe"><li><div class="title">Awe – Modern compiler for Algol W</div><div class="domain">github.com &bull; April 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Seth's Blog (seths.blog)</h2> (1)</summary><ul><a class="li" href="https://seths.blog/2025/04/the-ai-effort-gap/"><li><div class="title">The AI effort gap</div><div class="domain">seths.blog &bull; April 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (11)</summary><ul><a class="li" href="https://yourstory.com/2025/04/ipo-bound-zepto-appoints-airtels-akhil-gupta-company"><li><div class="title">IPO-bound Zepto appoints Airtel's Akhil Gupta to company board</div><div class="domain">yourstory.com &bull; April 12, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/04/contemporary-signatures-art-exhibition-monalisa-kalagram-creativity-photography"><li><div class="title">‘Contemporary Signatures’–how this art exhibition series continues to raise the bar of creativity</div><div class="domain">yourstory.com &bull; April 12, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/04/upi-faces-third-outage-india"><li><div class="title">UPI faces third outage in less than a fortnight, transactions impacted nationwide</div><div class="domain">yourstory.com &bull; April 12, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/04/one-third-of-digital-payment-transactions-credit-2024"><li><div class="title">One-third of digital payment transactions credit-driven in 2024: Report</div><div class="domain">yourstory.com &bull; April 12, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/04/books-offering-healing-therapy"><li><div class="title">5 Powerful books that offer healing as good as therapy</div><div class="domain">yourstory.com &bull; April 12, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/04/why-some-robotics-startups-grow-while-others-stall"><li><div class="title">The Smart Scale: Why some robotics startups grow while others stall</div><div class="domain">yourstory.com &bull; April 12, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/04/delhi-ev-policy-may-create-20000-jobs-focus-on-battery-swapping-and-charging-network"><li><div class="title">Delhi's EV policy may create 20,000 jobs; focus on battery swapping and charging network</div><div class="domain">yourstory.com &bull; April 12, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/04/plugzmart-indian-startup-arai-nod-ev-indegenious-charger"><li><div class="title">Plugzmart becomes first Indian startup to get ARAI nod for indigenous EV charger tech</div><div class="domain">yourstory.com &bull; April 12, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/04/april-theory-reset-life"><li><div class="title">April Theory: What is it and how to apply it to your life?</div><div class="domain">yourstory.com &bull; April 12, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/03/vaseline-inventor-story"><li><div class="title">Meet the Vaseline inventor who allegedly ate his product</div><div class="domain">yourstory.com &bull; April 12, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/04/the-joy-of-frugal-living-inside-the-wealth-company"><li><div class="title">The joy of frugal living; Inside The Wealth Company</div><div class="domain">yourstory.com &bull; April 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">KabitasKitchen Quick Recipes (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=2A7jeiVKe2A"><li><div class="title">Mango Milkshake Recipe - Watermelon Milkshake Recipe - KabitaKitchen</div><div class="domain">youtube.com &bull; April 12, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>

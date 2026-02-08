@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-07-21</span>:</h1>
+  <p class="summary">There are 89 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Aeon | a world of ideas (aeon.co)</h2> (2)</summary><ul><a class="li" href="https://aeon.co/essays/when-is-enjoying-funny-animal-videos-not-anthropomorphism?utm_source=rss-feed"><li><div class="title">Humanlike?</div><div class="domain">aeon.co &bull; July 21, 2025</div></li></a><a class="li" href="https://aeon.co/videos/after-independence-mexico-was-in-search-of-identity-these-paintings-offered-a-blueprint?utm_source=rss-feed"><li><div class="title">Great art explained: José María Velasco</div><div class="domain">aeon.co &bull; July 21, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Bear Blog Trending Posts (bearblog.dev)</h2> (2)</summary><ul><a class="li" href="https://blog.avas.space/taking-the-scenic-route/"><li><div class="title">taking the scenic route</div><div class="domain">blog.avas.space &bull; July 21, 2025</div></li></a><a class="li" href="https://fromemily.com/creative-ex-lax-experiment/"><li><div class="title">An Experiment in Creative Ex-Lax</div><div class="domain">fromemily.com &bull; July 21, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Big Think (bigthink.com)</h2> (4)</summary><ul><a class="li" href="https://bigthink.com/starts-with-a-bang/nasa-hubble/"><li><div class="title">What we’ve learned after 35 years of NASA’s Hubble</div><div class="domain">bigthink.com &bull; July 21, 2025</div></li></a><a class="li" href="https://bigthink.com/the-well/how-to-manage-your-emotions/"><li><div class="title">Manage your emotions, in 9 minutes</div><div class="domain">bigthink.com &bull; July 21, 2025</div></li></a><a class="li" href="https://bigthink.com/business/founders-the-hiring-strategy-that-can-turn-scrappy-to-stellar/"><li><div class="title">Founders: The hiring strategy that can turn scrappy to stellar</div><div class="domain">bigthink.com &bull; July 21, 2025</div></li></a><a class="li" href="https://bigthink.com/strange-maps/america-in-england/"><li><div class="title">Is this acre in England really American territory?</div><div class="domain">bigthink.com &bull; July 21, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Two-Wrongs (entropicthoughts.com)</h2> (1)</summary><ul><a class="li" href="https://entropicthoughts.com/pay-off-or-invest"><li><div class="title">Pay Off Mortgage Or Invest?</div><div class="domain">entropicthoughts.com &bull; July 21, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">HBR.org (feeds.harvardbusiness.org)</h2> (3)</summary><ul><a class="li" href="https://hbr.org/2025/07/new-research-on-how-layoffs-affect-the-labor-market"><li><div class="title">New Research on How Layoffs Affect the Labor Market</div><div class="domain">hbr.org &bull; July 21, 2025</div></li></a><a class="li" href="https://hbr.org/2025/07/a-data-based-approach-to-delegating"><li><div class="title">A Data-Based Approach to Delegating</div><div class="domain">hbr.org &bull; July 21, 2025</div></li></a><a class="li" href="https://hbr.org/2025/07/doing-business-in-china-the-risks-and-rewards"><li><div class="title">Doing Business in China: The Risks and Rewards</div><div class="domain">hbr.org &bull; July 21, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">kottke.org (feeds.kottke.org)</h2> (10)</summary><ul><a class="li" href="https://kottke.org/25/07/0047170-a-remake-of-the-thomas"><li><div class="title">A remake of The Thomas Crown Affair with Michael B. Jordan, Danai...</div><div class="domain">kottke.org &bull; July 21, 2025</div></li></a><a class="li" href="https://kottke.org/25/07/0047178-terrible-nights-sleep-her"><li><div class="title">&#8220;Terrible night&#8217;s sleep? Here&#8217;s how to make it through the day&#8230;&#8221; Maybe...</div><div class="domain">kottke.org &bull; July 21, 2025</div></li></a><a class="li" href="https://kottke.org/25/07/intricate-drawings-by-shunshun"><li><div class="title">Intricate Drawings by Shunshun</div><div class="domain">kottke.org &bull; July 21, 2025</div></li></a><a class="li" href="https://kottke.org/25/07/0047182-catherine-laceys-the-mobi"><li><div class="title">Catherine Lacey&#8217;s The Möbius Book is both a memoir and a novel,...</div><div class="domain">kottke.org &bull; July 21, 2025</div></li></a><a class="li" href="https://kottke.org/25/07/0047183-the-alamo-announced-frida"><li><div class="title">&#8220;The Alamo announced Friday a whimsical and nostalgic new addition to its...</div><div class="domain">kottke.org &bull; July 21, 2025</div></li></a><a class="li" href="https://kottke.org/25/07/how-to-flood-proof-a-hurricane-prone-florida-town"><li><div class="title">How to Flood-Proof a Hurricane-Prone Florida Town</div><div class="domain">kottke.org &bull; July 21, 2025</div></li></a><a class="li" href="https://kottke.org/25/07/0047185-gregor-formanek-is-likely"><li><div class="title">Gregor Formanek is likely the very last SS guard of a concentration...</div><div class="domain">kottke.org &bull; July 21, 2025</div></li></a><a class="li" href="https://kottke.org/25/07/when-the-icebergs-came-to-town"><li><div class="title">When the Icebergs Came to Town</div><div class="domain">kottke.org &bull; July 21, 2025</div></li></a><a class="li" href="https://kottke.org/25/07/0047187-a-look-at-40-years"><li><div class="title">A look at 40 years of Rembrandt self-portraits. &#8220;Rembrandt documented his face...</div><div class="domain">kottke.org &bull; July 21, 2025</div></li></a><a class="li" href="https://kottke.org/25/07/the-most-observed-plants-animals-in-each-us-state"><li><div class="title">The Most Observed Plants & Animals in Each US State</div><div class="domain">kottke.org &bull; July 21, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Go Make Things (gomakethings.com)</h2> (1)</summary><ul><a class="li" href="https://gomakethings.com/how-to-automatically-create-a-release-for-a-pull-request-using-a-bash-script/"><li><div class="title">How to automatically create a release for a pull request using a bash script</div><div class="domain">gomakethings.com &bull; July 21, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (7)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/6DzFsRvEoD8vFPWPg/fiction-our-trial"><li><div class="title">[Fiction] Our Trial</div><div class="domain">lesswrong.com &bull; July 21, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/zs4oDeNmKRukS7mjh/monthly-roundup-32-july-2025"><li><div class="title">Monthly Roundup #32: July 2025</div><div class="domain">lesswrong.com &bull; July 21, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/D8ELLgzmmeHTQwGE2/hrt-in-menopause-a-candidate-for-a-case-study-of"><li><div class="title">HRT in Menopause: A candidate for a case study of epistemology in epidemiology, statistics & medicine</div><div class="domain">lesswrong.com &bull; July 21, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/csCofgK3ebjQbSfyv/gdm-also-claims-imo-gold-medal"><li><div class="title">GDM also claims IMO gold medal</div><div class="domain">lesswrong.com &bull; July 21, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/utcZSRv2JfahD8yfz/detecting-high-stakes-interactions-with-activation-probes"><li><div class="title">Detecting High-Stakes Interactions with Activation Probes</div><div class="domain">lesswrong.com &bull; July 21, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/7Ci6X9SfuS2yBtWbw/if-anyone-builds-it-everyone-dies-call-for-translators-for"><li><div class="title">If Anyone Builds It, Everyone Dies: Call for Translators (for Supplementary Materials)</div><div class="domain">lesswrong.com &bull; July 21, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/pqYxDFz2ckGWr8i8G/plato-s-trolley"><li><div class="title">Plato's Trolley</div><div class="domain">lesswrong.com &bull; July 21, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (8)</summary><ul><a class="li" href="https://typesanitizer.com/blog/deeper-theories.html"><li><div class="title">Deeper theories of program design</div><div class="domain">typesanitizer.com &bull; July 21, 2025</div></li></a><a class="li" href="https://sapling-scm.com/"><li><div class="title">Sapling</div><div class="domain">sapling-scm.com &bull; July 21, 2025</div></li></a><a class="li" href="https://bitbashing.io/gc-for-systems-programmers.html"><li><div class="title">Garbage Collection for Systems Programmers (2023)</div><div class="domain">bitbashing.io &bull; July 21, 2025</div></li></a><a class="li" href="https://tony-zorman.com/posts/phd-typesetting.html"><li><div class="title">Dissertation Typesetting Considerations</div><div class="domain">tony-zorman.com &bull; July 21, 2025</div></li></a><a class="li" href="https://ryelang.org/blog/posts/programming-language-in-age-of-llms/"><li><div class="title">Working on a Programming Language in the Age of LLMs</div><div class="domain">ryelang.org &bull; July 21, 2025</div></li></a><a class="li" href="https://maddie.wtf/posts/2025-07-21-jujutsu-for-busy-devs"><li><div class="title">Jujutsu For Busy Devs</div><div class="domain">maddie.wtf &bull; July 21, 2025</div></li></a><a class="li" href="https://lobste.rs/s/bd2ssn/is_there_any_good_onboarding_saas_tool_for"><li><div class="title">Is there any good onboarding SaaS tool for iOS apps?</div><div class="domain">lobste.rs &bull; July 21, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=YNtoDGS4uak"><li><div class="title">Tools of the Trade</div><div class="domain">youtube.com &bull; July 21, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Longreads (longreads.com)</h2> (4)</summary><ul><a class="li" href="https://longreads.com/2025/07/21/hollywoods-being-reshaped-by-generative-ai-what-does-that-mean-for-screenwriters/"><li><div class="title">Hollywood’s Being Reshaped by Generative AI. What Does That Mean for Screenwriters?</div><div class="domain">longreads.com &bull; July 21, 2025</div></li></a><a class="li" href="https://longreads.com/2025/07/21/what-happens-once-we-spot-the-asteroid-that-will-hit-earth/"><li><div class="title">What Happens Once We Spot the Asteroid That Will Hit Earth?</div><div class="domain">longreads.com &bull; July 21, 2025</div></li></a><a class="li" href="https://longreads.com/2025/07/21/puzzled/"><li><div class="title">Puzzled</div><div class="domain">longreads.com &bull; July 21, 2025</div></li></a><a class="li" href="https://longreads.com/2025/07/21/the-two-lives-of-william-woods/"><li><div class="title">The Two Lives of William Woods</div><div class="domain">longreads.com &bull; July 21, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Nautilus (nautil.us)</h2> (2)</summary><ul><a class="li" href="https://nautil.us/the-we-evolved-to-eat-meat-argument-doesnt-hold-up-1225358/"><li><div class="title">The “We Evolved to Eat Meat” Argument Doesn’t Hold Up</div><div class="domain">nautil.us &bull; July 21, 2025</div></li></a><a class="li" href="https://nautil.us/anteaters-have-evolved-more-than-a-dozen-times-1225481/"><li><div class="title">Anteaters Have Evolved More Than a Dozen Times</div><div class="domain">nautil.us &bull; July 21, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (18)</summary><ul><a class="li" href="https://pubs.opengroup.org/onlinepubs/9799919799/utilities/vi.html"><li><div class="title">The POSIX specification of vi</div><div class="domain">pubs.opengroup.org &bull; July 21, 2025</div></li></a><a class="li" href="https://www.nature.com/articles/s44222-025-00323-4"><li><div class="title">Writing is thinking</div><div class="domain">nature.com &bull; July 21, 2025</div></li></a><a class="li" href="https://github.com/lslvr/mwm"><li><div class="title">Mwm – The smallest usable X11 window manager</div><div class="domain">github.com &bull; July 21, 2025</div></li></a><a class="li" href="http://evincarofautumn.blogspot.com/2012/02/why-concatenative-programming-matters.html"><li><div class="title">Why concatenative programming matters (2012)</div><div class="domain">evincarofautumn.blogspot.com &bull; July 21, 2025</div></li></a><a class="li" href="https://spectrum.ieee.org/cdimensions-2d-semiconductors"><li><div class="title">Low-Temp 2D Semiconductors: A Chipmaking Shift</div><div class="domain">spectrum.ieee.org &bull; July 21, 2025</div></li></a><a class="li" href="https://ntietz.com/blog/covers-as-a-way-of-learning/"><li><div class="title">Covers as a way of learning music and code</div><div class="domain">ntietz.com &bull; July 21, 2025</div></li></a><a class="li" href="https://arxiv.org/abs/2407.20479"><li><div class="title">RE#: High performance derivative-based regular expression matching (2024)</div><div class="domain">arxiv.org &bull; July 21, 2025</div></li></a><a class="li" href="https://www.vidarholen.net/contents/blog/?p=1160"><li><div class="title">I wasted weeks hand optimizing assembly because I benchmarked on random data</div><div class="domain">vidarholen.net &bull; July 21, 2025</div></li></a><a class="li" href="https://positron.posit.co/"><li><div class="title">Positron – A next-generation data science IDE</div><div class="domain">positron.posit.co &bull; July 21, 2025</div></li></a><a class="li" href="https://news.cgtn.com/news/2025-07-19/China-develops-new-method-to-mass-produce-high-quality-semiconductors-1F8iTEyEwVi/p.html"><li><div class="title">China develops new method to mass-produce high-quality semiconductors</div><div class="domain">news.cgtn.com &bull; July 21, 2025</div></li></a><a class="li" href="https://www.newyorker.com/culture/persons-of-interest/can-dave-hurwitz-save-classical-recording"><li><div class="title">Can Dave Hurwitz Save Classical Recording?</div><div class="domain">newyorker.com &bull; July 21, 2025</div></li></a><a class="li" href="https://www.bookforum.com/print/3201/hegel-dust-62209"><li><div class="title">Hegel Dust</div><div class="domain">bookforum.com &bull; July 21, 2025</div></li></a><a class="li" href="https://lunalux.io/introduction-to-neural-networks/computational-complexity-of-neural-networks/"><li><div class="title">Computational complexity of neural networks (2022)</div><div class="domain">lunalux.io &bull; July 21, 2025</div></li></a><a class="li" href="https://http1mustdie.com/"><li><div class="title">HTTP/1.1 Must Die – The Desync Endgame Begins</div><div class="domain">http1mustdie.com &bull; July 21, 2025</div></li></a><a class="li" href="https://www.generalanalysis.com/blog/imessage-stripe-exploit"><li><div class="title">iMessage integration in Claude can hijack the model to do anything</div><div class="domain">generalanalysis.com &bull; July 21, 2025</div></li></a><a class="li" href="https://johnscolaro.xyz/blog/log-by-time-not-by-count"><li><div class="title">Log by time, not by count</div><div class="domain">johnscolaro.xyz &bull; July 21, 2025</div></li></a><a class="li" href="https://xbow.com/blog/alloy-agents/"><li><div class="title">Agents built from alloys</div><div class="domain">xbow.com &bull; July 21, 2025</div></li></a><a class="li" href="https://github.com/h2337/connmap"><li><div class="title">Show HN: X11 desktop widget that shows location of your network peers on a map</div><div class="domain">github.com &bull; July 21, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Psyche | on the human condition (psyche.co)</h2> (1)</summary><ul><a class="li" href="https://psyche.co/guides/how-to-anticipate-and-cope-with-the-mania-of-bipolar-disorder?utm_source=rss-feed"><li><div class="title">How to anticipate and cope with mania</div><div class="domain">psyche.co &bull; July 21, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Quanta Magazine (quantamagazine.org)</h2> (1)</summary><ul><a class="li" href="https://www.quantamagazine.org/ai-comes-up-with-bizarre-physics-experiments-but-they-work-20250721/"><li><div class="title">AI Comes Up with Bizarre Physics Experiments. But They Work.</div><div class="domain">quantamagazine.org &bull; July 21, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Reasons to be Cheerful (reasonstobecheerful.world)</h2> (1)</summary><ul><a class="li" href="https://reasonstobecheerful.world/detroit-sequoias-super-trees/"><li><div class="title">A Sequoia Forest Grows in Detroit</div><div class="domain">reasonstobecheerful.world &bull; July 21, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Seth's Blog (seths.blog)</h2> (1)</summary><ul><a class="li" href="https://seths.blog/2025/07/resilience-is-a-practice/"><li><div class="title">Resilience is a practice</div><div class="domain">seths.blog &bull; July 21, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Diplomat (thediplomat.com)</h2> (13)</summary><ul><a class="li" href="https://thediplomat.com/2025/07/china-issues-diplomatic-protest-over-philippines-engagement-with-taiwan/"><li><div class="title">China Issues Diplomatic Protest Over Philippines’ Engagement With Taiwan</div><div class="domain">thediplomat.com &bull; July 21, 2025</div></li></a><a class="li" href="https://thediplomat.com/2025/07/whats-holding-back-asean-on-renewable-energy/"><li><div class="title">What’s Holding Back ASEAN on Renewable Energy?</div><div class="domain">thediplomat.com &bull; July 21, 2025</div></li></a><a class="li" href="https://thediplomat.com/2025/07/bureaucratized-confucianism-how-tradition-became-a-tool-of-control-in-china/"><li><div class="title">Bureaucratized Confucianism: How Tradition Became a Tool of Control in China</div><div class="domain">thediplomat.com &bull; July 21, 2025</div></li></a><a class="li" href="https://thediplomat.com/2025/07/chinas-fast-shrinking-central-military-commission-implications-for-the-pla/"><li><div class="title">China’s Fast-Shrinking Central Military Commission: Implications for the PLA</div><div class="domain">thediplomat.com &bull; July 21, 2025</div></li></a><a class="li" href="https://thediplomat.com/2025/07/hindi-vs-marathi-and-the-contest-over-indian-identity/"><li><div class="title">Hindi vs Marathi and the Contest Over Indian Identity</div><div class="domain">thediplomat.com &bull; July 21, 2025</div></li></a><a class="li" href="https://thediplomat.com/2025/07/between-sectors-between-worlds-the-significance-of-seasonal-labor-in-india/"><li><div class="title">Between Sectors, Between Worlds: The Significance of Seasonal Labor in India</div><div class="domain">thediplomat.com &bull; July 21, 2025</div></li></a><a class="li" href="https://thediplomat.com/2025/07/between-partnership-and-primacy-australias-diplomatic-posture-in-southeast-asia-and-the-pacific/"><li><div class="title">Between Partnership and Primacy: Australia’s Diplomatic Posture in Southeast Asia and the Pacific</div><div class="domain">thediplomat.com &bull; July 21, 2025</div></li></a><a class="li" href="https://thediplomat.com/2025/07/the-philippines-us-relationship-is-tested-as-president-marcos-visits-washington/"><li><div class="title">The Philippines-US Relationship Is Tested as President Marcos Visits Washington</div><div class="domain">thediplomat.com &bull; July 21, 2025</div></li></a><a class="li" href="https://thediplomat.com/2025/07/france-mongolia-expand-civil-security-and-emergency-response-cooperation/"><li><div class="title">France, Mongolia Expand Civil Security and Emergency Response Cooperation</div><div class="domain">thediplomat.com &bull; July 21, 2025</div></li></a><a class="li" href="https://thediplomat.com/2025/07/the-ldp-bears-responsibility-for-japans-populist-surge/"><li><div class="title">The LDP Bears Responsibility for Japan’s Populist Surge</div><div class="domain">thediplomat.com &bull; July 21, 2025</div></li></a><a class="li" href="https://thediplomat.com/2025/07/the-icc-wants-to-arrest-taliban-leaders-over-their-mistreatment-of-women-will-it-matter/"><li><div class="title">The ICC Wants to Arrest Taliban Leaders Over Their Mistreatment of Women. Will It Matter?</div><div class="domain">thediplomat.com &bull; July 21, 2025</div></li></a><a class="li" href="https://thediplomat.com/2025/07/who-will-rule-crypto-the-china-us-battle-for-global-financial-leadership/"><li><div class="title">Who Will Rule Crypto? The China-US Battle for Global Financial Leadership</div><div class="domain">thediplomat.com &bull; July 21, 2025</div></li></a><a class="li" href="https://thediplomat.com/2025/07/hun-sens-facebook-photos/"><li><div class="title">Hun Sen’s Facebook Photos</div><div class="domain">thediplomat.com &bull; July 21, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">XML.com Atom feed for articles and news items (xml.com)</h2> (1)</summary><ul><a class="li" href="https://www.xml.com/news/2025-07-elemental-660-and-720/"><li><div class="title">Elemental 6.6.0 and 7.2.0 have been released</div><div class="domain">xml.com &bull; July 21, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (4)</summary><ul><a class="li" href="https://yourstory.com/2025/07/from-fintech-to-developing-ai-agents-infibeam-flyers-soft-startup"><li><div class="title">Inside Infibeam’s AI ambitions; Redefining tech services with AI</div><div class="domain">yourstory.com &bull; July 21, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/eternal-q1-preview-growth-quick-commerce-blinkit-zomato-margins"><li><div class="title">Eternal Q1 preview: Strong GOV growth for Blinkit, Zomato even as take rate plateaus</div><div class="domain">yourstory.com &bull; July 21, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/flyers-soft-startup-redefining-tech-services-ai-powered-accelerators"><li><div class="title">How Flyers Soft is redefining tech services with AI-powered accelerators</div><div class="domain">yourstory.com &bull; July 21, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/how-urban-cooperative-banks-can-crack-offline-merchant-acuiring"><li><div class="title">How urban cooperative banks can crack the offline merchant acquiring code</div><div class="domain">yourstory.com &bull; July 21, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">매일맛나 delicious day (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=GTvnaVWyxqo"><li><div class="title">7가지 샌드위치 레시피 :: 인기가요, 클럽샌드위치, 계란샌드위치, 참치샌드위치, 크랜베리치킨샌드위치, 아보카도샌드위치, 게살샌드위치</div><div class="domain">youtube.com &bull; July 21, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Well (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=slny0D4xWzs"><li><div class="title">No, you don’t need a lobotomy | Ethan Kross</div><div class="domain">youtube.com &bull; July 21, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">NASA Jet Propulsion Laboratory (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=sLjvAmK_siU"><li><div class="title">NISAR Mission Countdown: Preview to Launch</div><div class="domain">youtube.com &bull; July 21, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Little White Lies (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=x9qPW_pyc0g"><li><div class="title">Marcello Mastroianni: a life lived beautifully</div><div class="domain">youtube.com &bull; July 21, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">John Bartholomew (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=_iZkf5pSFg8"><li><div class="title">LoneWolf League: GAME 8</div><div class="domain">youtube.com &bull; July 21, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
