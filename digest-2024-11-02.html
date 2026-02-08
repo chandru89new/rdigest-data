@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2024-11-02</span>:</h1>
+  <p class="summary">There are 52 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Bear Blog Trending Posts (bearblog.dev)</h2> (3)</summary><ul><a class="li" href="https://mgx.me/bear-blog-css-playground/"><li><div class="title">bear blog css playground</div><div class="domain">mgx.me &bull; November 02, 2024</div></li></a><a class="li" href="https://birming.com/my-world-confusion/"><li><div class="title">My World of Confusion</div><div class="domain">birming.com &bull; November 02, 2024</div></li></a><a class="li" href="https://anubiarts.bearblog.dev/4-years-ago-3/"><li><div class="title">4 Years Ago</div><div class="domain">anubiarts.bearblog.dev &bull; November 02, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Big Think (bigthink.com)</h2> (1)</summary><ul><a class="li" href="https://bigthink.com/the-future/commercial-spaceflight/"><li><div class="title">T-Minus: 10 milestones in commercial spaceflight</div><div class="domain">bigthink.com &bull; November 02, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Jon Udell (blog.jonudell.net)</h2> (1)</summary><ul><a class="li" href="https://blog.jonudell.net/2024/11/02/how-to-create-software-diagrams-with-chatgpt-and-claude/"><li><div class="title">How To Create Software Diagrams With ChatGPT and Claude</div><div class="domain">blog.jonudell.net &bull; November 02, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">The Marginalian (feeds.feedburner.com)</h2> (1)</summary><ul><a class="li" href="https://www.themarginalian.org/2024/11/02/art-of-crying-pepita-sandwich/"><li><div class="title">The Science of Tears and the Art of Crying: An Illustrated Manifesto for Reclaiming Our Deepest Humanity</div><div class="domain">themarginalian.org &bull; November 02, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (4)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/EzrFeLRuww7zTSXhy/toward-safety-case-inspired-basic-research"><li><div class="title">Toward Safety Case Inspired Basic Research</div><div class="domain">lesswrong.com &bull; November 02, 2024</div></li></a><a class="li" href="https://www.lesswrong.com/posts/NMLq8yoTecAF44KX9/sae-probing-what-is-it-good-for-absolutely-something"><li><div class="title">SAE Probing: What is it good for? Absolutely something!</div><div class="domain">lesswrong.com &bull; November 02, 2024</div></li></a><a class="li" href="https://www.lesswrong.com/posts/tHncgnNSZN6oPgfZX/science-advances-one-funeral-at-a-time"><li><div class="title">Science advances one funeral at a time</div><div class="domain">lesswrong.com &bull; November 02, 2024</div></li></a><a class="li" href="https://www.lesswrong.com/posts/vZcXAc6txvJDanQ4F/the-median-researcher-problem-1"><li><div class="title">The Median Researcher Problem</div><div class="domain">lesswrong.com &bull; November 02, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (15)</summary><ul><a class="li" href="https://youtu.be/PYeKEshvAh8"><li><div class="title">The State of Racket</div><div class="domain">youtu.be &bull; November 02, 2024</div></li></a><a class="li" href="https://snarky.ca/dont-use-named-tuples-in-new-apis/"><li><div class="title">Don't return named tuples in new APIs</div><div class="domain">snarky.ca &bull; November 02, 2024</div></li></a><a class="li" href="https://timkellogg.me/blog/2015/03/01/websockets-are-not-magic"><li><div class="title">Websockets Are Not Magical (2015)</div><div class="domain">timkellogg.me &bull; November 02, 2024</div></li></a><a class="li" href="https://rhaas.blogspot.com/2024/11/why-pgdump-is-amazing.html"><li><div class="title">Why pg_dump Is Amazing</div><div class="domain">rhaas.blogspot.com &bull; November 02, 2024</div></li></a><a class="li" href="https://www.vldb.org/pvldb/vol15/p1173-fuchs.pdf"><li><div class="title">Sortledton: a Universal, Transactional Graph Data Structure</div><div class="domain">vldb.org &bull; November 02, 2024</div></li></a><a class="li" href="https://deerz.one/pages/blog/2024/dtf-introduction.dtf"><li><div class="title">Deer Text Format - the system powering this site, and how it can work for you</div><div class="domain">deerz.one &bull; November 02, 2024</div></li></a><a class="li" href="https://smolweb.org/specs/index.html"><li><div class="title">smolweb HTML specification</div><div class="domain">smolweb.org &bull; November 02, 2024</div></li></a><a class="li" href="https://irctoday.com/"><li><div class="title">IRC Today hosted IRC bouncer</div><div class="domain">irctoday.com &bull; November 02, 2024</div></li></a><a class="li" href="https://tweedegolf.nl/en/blog/65/async-rust-vs-rtos-showdown"><li><div class="title">Async Rust vs RTOS showdown (2022)</div><div class="domain">tweedegolf.nl &bull; November 02, 2024</div></li></a><a class="li" href="https://www.decisionproblem.com/paperclips/index2.html"><li><div class="title">A game to understand AI alignment by making paperclips</div><div class="domain">decisionproblem.com &bull; November 02, 2024</div></li></a><a class="li" href="https://github.com/thelounge/thelounge"><li><div class="title">The Lounge: a Modern, responsive, cross-platform, self-hosted web IRC client</div><div class="domain">github.com &bull; November 02, 2024</div></li></a><a class="li" href="https://lemire.me/blog/2024/11/02/having-fun-with-modern-c/"><li><div class="title">Having fun with modern C++</div><div class="domain">lemire.me &bull; November 02, 2024</div></li></a><a class="li" href="https://eighty-twenty.org/2024/07/22/m4-crimes"><li><div class="title">m4 crimes for metaprogramming Processing</div><div class="domain">eighty-twenty.org &bull; November 02, 2024</div></li></a><a class="li" href="https://orlp.net/blog/breaking-hash-functions/"><li><div class="title">Breaking CityHash64, MurmurHash2/3, wyhash, and more</div><div class="domain">orlp.net &bull; November 02, 2024</div></li></a><a class="li" href="https://googleprojectzero.blogspot.com/2024/10/from-naptime-to-big-sleep.html"><li><div class="title">From Naptime to Big Sleep: Using Large Language Models To Catch Vulnerabilities In Real-World Code</div><div class="domain">googleprojectzero.blogspot.com &bull; November 02, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (12)</summary><ul><a class="li" href="https://github.com/matvp91/superstreamer"><li><div class="title">Superstreamer – OSS streaming toolkit from video source to player</div><div class="domain">github.com &bull; November 02, 2024</div></li></a><a class="li" href="https://charliegerard.dev/blog/replay-attacks-javascript-hackrf/"><li><div class="title">Hacking cars in JavaScript (Replay attacks in the browser with the HackRF)</div><div class="domain">charliegerard.dev &bull; November 02, 2024</div></li></a><a class="li" href="https://github.com/dmd/morse"><li><div class="title">Show HN: Midnight Reminders via Morse Code</div><div class="domain">github.com &bull; November 02, 2024</div></li></a><a class="li" href="https://github.com/fabiospampinato/cash"><li><div class="title">Cash: A small jQuery alternative for modern browsers</div><div class="domain">github.com &bull; November 02, 2024</div></li></a><a class="li" href="https://github.com/rbbydotdev/someday"><li><div class="title">Show HN: Someday, Open-Source Calendly Alternative for Gmail / Google App Script</div><div class="domain">github.com &bull; November 02, 2024</div></li></a><a class="li" href="https://lynx.boo"><li><div class="title">Show HN: A minimalist (brutalist?) website for sharing all your links</div><div class="domain">lynx.boo &bull; November 02, 2024</div></li></a><a class="li" href="https://blog.spawek.com/SpawELO"><li><div class="title">SpawELO – small free matchmaking system for LAN parties</div><div class="domain">blog.spawek.com &bull; November 02, 2024</div></li></a><a class="li" href="https://arxiv.org/abs/2111.08566"><li><div class="title">Spann: Highly-Efficient Billion-Scale Approximate Nearest Neighbor Search (2021)</div><div class="domain">arxiv.org &bull; November 02, 2024</div></li></a><a class="li" href="https://justine.lol/lex/"><li><div class="title">Weird Lexical Syntax</div><div class="domain">justine.lol &bull; November 02, 2024</div></li></a><a class="li" href="https://railsatscale.com/2024-10-23-next-generation-oob-gc/"><li><div class="title">Next Generation Out of Band Garbage Collection</div><div class="domain">railsatscale.com &bull; November 02, 2024</div></li></a><a class="li" href="https://link.springer.com/article/10.1007/s11831-022-09740-9"><li><div class="title">Eighty Years of the Finite Element Method (2022)</div><div class="domain">link.springer.com &bull; November 02, 2024</div></li></a><a class="li" href="https://pypi.org/project/venvstacks/"><li><div class="title">Venvstacks: Virtual Environment Stacks for Python</div><div class="domain">pypi.org &bull; November 02, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Kindred Spirits (readkindredspirits.com)</h2> (1)</summary><ul><a class="li" href="https://www.readkindredspirits.com/p/trampoline-theory-of-opportunity"><li><div class="title">the trampoline theory of opportunity</div><div class="domain">readkindredspirits.com &bull; November 02, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Seth's Blog (seths.blog)</h2> (1)</summary><ul><a class="li" href="https://seths.blog/2024/11/choose-your-fuel-wisely/"><li><div class="title">Choose your fuel wisely</div><div class="domain">seths.blog &bull; November 02, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (9)</summary><ul><a class="li" href="https://yourstory.com/2024/11/google-india-pat-rises--to-rs-1425-cr-in-fy24"><li><div class="title">Google India PAT rises % to Rs 1,425 Cr in FY24</div><div class="domain">yourstory.com &bull; November 02, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/10/quick-commerce-india-top-players"><li><div class="title">Quick commerce in India: Market leaders & new entrants</div><div class="domain">yourstory.com &bull; November 02, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/11/india-forex-reserves-drop-rbi-data"><li><div class="title">India’s forex reserves drop by $3.463B to $684.805B</div><div class="domain">yourstory.com &bull; November 02, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/10/memorable-job-interview-tips"><li><div class="title">How to be more memorable in your next job interview?</div><div class="domain">yourstory.com &bull; November 02, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/10/mental-strength-truths-boundaries"><li><div class="title">5 truths for building mental strength in a social world</div><div class="domain">yourstory.com &bull; November 02, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/11/weekly-funding-roundup-october-27-nov-1-sharp-increase-vc-inflow"><li><div class="title">(Weekly funding roundup Oct 27-Nov 1) Sharp increase in venture capital inflow</div><div class="domain">yourstory.com &bull; November 02, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/11/a-health-monitor-for-pets-care-community-awareness-education"><li><div class="title">A health monitor for pets; Fostering leadership and community awareness</div><div class="domain">yourstory.com &bull; November 02, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/11/curation-culture-museum-art-photography-creativity-exhibition"><li><div class="title">Curation and culture: How Museum of Art and Photography showcases creativity through the ages</div><div class="domain">yourstory.com &bull; November 02, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/09/google-project-jarvis-ai-assistant"><li><div class="title">Google's project Jarvis: The future of AI assistance</div><div class="domain">yourstory.com &bull; November 02, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">하루한끼 one meal a day (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=onBeq5ltBOo"><li><div class="title">피스타치오 티라미수 Pistachio Tiramisu</div><div class="domain">youtube.com &bull; November 02, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">This Guy Edits (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=v0jKZknRIf8"><li><div class="title">Crew Confessions from Cameron’s TITANIC Expedition</div><div class="domain">youtube.com &bull; November 02, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">JSConf (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=Eg8eOIEE-7w"><li><div class="title">JSConf MX 2024 - día 2 - audio traducido</div><div class="domain">youtube.com &bull; November 02, 2024</div></li></a><a class="li" href="https://www.youtube.com/watch?v=bKVfFN7QX8Y"><li><div class="title">JSConf MX 2024 - día 2 - audio original</div><div class="domain">youtube.com &bull; November 02, 2024</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>

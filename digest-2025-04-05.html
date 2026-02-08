@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-04-05</span>:</h1>
+  <p class="summary">There are 64 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Bear Blog Trending Posts (bearblog.dev)</h2> (2)</summary><ul><a class="li" href="https://smyrnaeus.bearblog.dev/this-blossom-isnt-real/"><li><div class="title">This Blossom Isn’t Real</div><div class="domain">smyrnaeus.bearblog.dev &bull; April 05, 2025</div></li></a><a class="li" href="https://tora.bearblog.dev/03/"><li><div class="title">the internet</div><div class="domain">tora.bearblog.dev &bull; April 05, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Big Think (bigthink.com)</h2> (1)</summary><ul><a class="li" href="https://bigthink.com/starts-with-a-bang/starts-with-a-bang-podcast-116-disintegrating-exoplanets/"><li><div class="title">Starts With A Bang podcast #116 – Disintegrating exoplanets</div><div class="domain">bigthink.com &bull; April 05, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">kottke.org (feeds.kottke.org)</h2> (2)</summary><ul><a class="li" href="https://kottke.org/25/04/0046572-theyre-gonna-do-a-season"><li><div class="title">They&#8217;re gonna do a season three of The Lord of the Rings:...</div><div class="domain">kottke.org &bull; April 05, 2025</div></li></a><a class="li" href="https://kottke.org/25/04/season-three-trailer-for-star-trek-strange-new-worlds"><li><div class="title">Season Three Trailer for Star Trek: Strange New Worlds</div><div class="domain">kottke.org &bull; April 05, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Go Make Things (gomakethings.com)</h2> (1)</summary><ul><a class="li" href="https://gomakethings.com/its-like-a-new-phone/"><li><div class="title">It's like a new phone</div><div class="domain">gomakethings.com &bull; April 05, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (3)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/WcrpYFFmv9YTxkxiY/meditation-and-reduced-sleep-need"><li><div class="title">Meditation and Reduced Sleep Need</div><div class="domain">lesswrong.com &bull; April 05, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/jWFvsJnJieXnWBb9r/alignment-faking-ctfs-apply-to-my-mats-stream"><li><div class="title">Alignment faking CTFs: Apply to my MATS stream</div><div class="domain">lesswrong.com &bull; April 05, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/gRc8KL2HLtKkFmNPr/among-us-a-sandbox-for-agentic-deception"><li><div class="title">Among Us: A Sandbox for Agentic Deception</div><div class="domain">lesswrong.com &bull; April 05, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (15)</summary><ul><a class="li" href="https://ishadeed.com/article/modern-attr/"><li><div class="title">First Look at The Modern attr() in CSS</div><div class="domain">ishadeed.com &bull; April 05, 2025</div></li></a><a class="li" href="https://github.com/fatfingers23/rusty_statusphere_example_app"><li><div class="title">ATProto Statusphere App Implemented in Rust</div><div class="domain">github.com &bull; April 05, 2025</div></li></a><a class="li" href="https://code.tvl.fyi/tree/users/sterni/nix/html/README.md"><li><div class="title">html.nix (2021)</div><div class="domain">code.tvl.fyi &bull; April 05, 2025</div></li></a><a class="li" href="https://github.com/ashos/ashos"><li><div class="title">ashos: The immutable/mutable meta-distribution (universal bootstrapper)</div><div class="domain">github.com &bull; April 05, 2025</div></li></a><a class="li" href="https://github.com/SeaOfNodes/Simple/blob/main/ASimpleReply.md"><li><div class="title">A Simple Reply</div><div class="domain">github.com &bull; April 05, 2025</div></li></a><a class="li" href="https://okmij.org/ftp/tagless-final/Compiler/index.html"><li><div class="title">Compilers: Incrementally and Extensibly</div><div class="domain">okmij.org &bull; April 05, 2025</div></li></a><a class="li" href="https://yeet.cx/blog/bpf-from-scratch-in-rust/"><li><div class="title">BPF From Scratch In Rust</div><div class="domain">yeet.cx &bull; April 05, 2025</div></li></a><a class="li" href="https://salsa.debian.org/jgoerzen/docker-nncpnet-mailnode/-/wikis/home"><li><div class="title">Email over NNCP (via exim)</div><div class="domain">salsa.debian.org &bull; April 05, 2025</div></li></a><a class="li" href="https://zamundaaa.github.io/colormanagement/2025/03/31/about-brightness.html"><li><div class="title">On brightness, and calibrating your displays</div><div class="domain">zamundaaa.github.io &bull; April 05, 2025</div></li></a><a class="li" href="https://ochagavia.nl/blog/jit-calculators-finale/"><li><div class="title">JIT calculators finale</div><div class="domain">ochagavia.nl &bull; April 05, 2025</div></li></a><a class="li" href="https://ai.meta.com/blog/llama-4-multimodal-intelligence/"><li><div class="title">The Llama 4 herd</div><div class="domain">ai.meta.com &bull; April 05, 2025</div></li></a><a class="li" href="https://www.microsoft.com/en-us/research/wp-content/uploads/2025/01/lee_2025_ai_critical_thinking_survey.pdf"><li><div class="title">The Impact of Generative AI on Critical Thinking: Self-Reported Reductions in Cognitive Effort & Confidence Effects From a Survey of Knowledge Workers</div><div class="domain">microsoft.com &bull; April 05, 2025</div></li></a><a class="li" href="https://www.landh.tech/blog/20250211-hack-supply-chain-for-50k/"><li><div class="title">How We Hacked a Software Supply Chain for $50K</div><div class="domain">landh.tech &bull; April 05, 2025</div></li></a><a class="li" href="https://unixmagic.net"><li><div class="title">Annotated Unix Magic Poster</div><div class="domain">unixmagic.net &bull; April 05, 2025</div></li></a><a class="li" href="https://vermaden.wordpress.com/2025/04/05/minecraft-server-freebsd-jails-container/"><li><div class="title">Minecraft Server in FreeBSD Jails Container</div><div class="domain">vermaden.wordpress.com &bull; April 05, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (28)</summary><ul><a class="li" href="https://www.life.com/arts-entertainment/the-greatest-motorcycle-photo-ever/"><li><div class="title">The Greatest Motorcycle Photo</div><div class="domain">life.com &bull; April 05, 2025</div></li></a><a class="li" href="https://www.oneusefulthing.org/p/no-elephants-breakthroughs-in-image"><li><div class="title">No elephants: Breakthroughs in image generation</div><div class="domain">oneusefulthing.org &bull; April 05, 2025</div></li></a><a class="li" href="https://hackaday.io/project/202541-replica-of-the-pdp-1-pidp-1/log/239666-finished-the-first-test-batch-of-5-machines"><li><div class="title">PiDP-1, or the rebirth of an old machine</div><div class="domain">hackaday.io &bull; April 05, 2025</div></li></a><a class="li" href="https://www.washingtonpost.com/health/2025/04/05/marathon-running-cardiac-arrest-cpr/"><li><div class="title">Cardiac arrest deaths among marathoners have decreased, study finds</div><div class="domain">washingtonpost.com &bull; April 05, 2025</div></li></a><a class="li" href="https://news.umich.edu/charging-electric-vehicles-5x-faster-in-subfreezing-temps/"><li><div class="title">Charging electric vehicles 5x faster in subfreezing temps</div><div class="domain">news.umich.edu &bull; April 05, 2025</div></li></a><a class="li" href="https://www.openculture.com/2024/03/openvertebrate-presents-a-massive-database-of-13000-3d-scans-of-vertebrate-specimens.html"><li><div class="title">OpenVertebrate Presents a Database of 13,000 3D Scans of Specimens</div><div class="domain">openculture.com &bull; April 05, 2025</div></li></a><a class="li" href="https://thoughts-and-things.ghost.io/recreating-daft-punks-something-about-us/"><li><div class="title">Recreating Daft Punk's Something About Us</div><div class="domain">thoughts-and-things.ghost.io &bull; April 05, 2025</div></li></a><a class="li" href="https://shilin.ca/to-do-nothing/"><li><div class="title">To Do Nothing</div><div class="domain">shilin.ca &bull; April 05, 2025</div></li></a><a class="li" href="https://news.ycombinator.com/item?id=43595442"><li><div class="title">Show HN: iPhone 2005 weird "Blob Keyboard" simulator</div><div class="domain">news.ycombinator.com &bull; April 05, 2025</div></li></a><a class="li" href="https://www.ycombinator.com/companies/great-question/jobs/AtPa8pe-ai-engineer"><li><div class="title">Great Question (YC W21) Is Hiring Applied AI Engineers</div><div class="domain">ycombinator.com &bull; April 05, 2025</div></li></a><a class="li" href="https://googology.fandom.com/wiki/Loader%27s_number"><li><div class="title">Loader's Number</div><div class="domain">googology.fandom.com &bull; April 05, 2025</div></li></a><a class="li" href="https://eshard.com/posts/emulating-ios-14-with-qemu"><li><div class="title">Emulating an iPhone in QEMU</div><div class="domain">eshard.com &bull; April 05, 2025</div></li></a><a class="li" href="https://pypi.org/project/model-signing/"><li><div class="title">Open Source Coalition Announces 'Model-Signing' to Strengthen ML Supply Chain</div><div class="domain">pypi.org &bull; April 05, 2025</div></li></a><a class="li" href="https://simone.org/advertising/"><li><div class="title">What If We Made Advertising Illegal?</div><div class="domain">simone.org &bull; April 05, 2025</div></li></a><a class="li" href="https://www.devonlive.com/whats-on/whats-on-news/exeters-unassuming-co-op-worker-10039941"><li><div class="title">Exeter's unassuming co-op worker leads double life as 'Lord of the Logos'</div><div class="domain">devonlive.com &bull; April 05, 2025</div></li></a><a class="li" href="https://forums.swift.org/t/pitch-a-vision-for-webassembly-support-in-swift/79060"><li><div class="title">A Vision for WebAssembly Support in Swift</div><div class="domain">forums.swift.org &bull; April 05, 2025</div></li></a><a class="li" href="https://chipsandcheese.com/p/dynamic-register-allocation-on-amds"><li><div class="title">Dynamic Register Allocation on AMD's RDNA 4 GPU Architecture</div><div class="domain">chipsandcheese.com &bull; April 05, 2025</div></li></a><a class="li" href="https://add.org/the-body-double/"><li><div class="title">The ADHD Body Double: A Unique Tool for Getting Things Done</div><div class="domain">add.org &bull; April 05, 2025</div></li></a><a class="li" href="https://github.com/erica-synths/diy-eurorack"><li><div class="title">Erica Synths DIY Eurorack Modules</div><div class="domain">github.com &bull; April 05, 2025</div></li></a><a class="li" href="https://www.whatsit.today/"><li><div class="title">Show HN: I built a word game. My mom thinks it's great. What do you think?</div><div class="domain">whatsit.today &bull; April 05, 2025</div></li></a><a class="li" href="https://www.jsg.utexas.edu/news/2025/04/north-america-is-dripping-from-below-geoscientists-discover/"><li><div class="title">North America Is Dripping from Below, Geoscientists Discover</div><div class="domain">jsg.utexas.edu &bull; April 05, 2025</div></li></a><a class="li" href="https://haseebq.com/my-ten-rules-for-negotiating-a-job-offer/"><li><div class="title">Ten Rules for Negotiating a Job Offer</div><div class="domain">haseebq.com &bull; April 05, 2025</div></li></a><a class="li" href="https://tansanrao.com/blog/2025/04/xnu-kernel-and-darwin-evolution-and-architecture/"><li><div class="title">Apple's Darwin OS and XNU Kernel Deep Dive</div><div class="domain">tansanrao.com &bull; April 05, 2025</div></li></a><a class="li" href="https://www.wsj.com/finance/stocks/u-s-stock-futures-fall-further-after-china-retaliates-against-trump-tariffs-3be33fa7"><li><div class="title">Trump's Tariffs Wipe Out over $6T on Wall Street in Epic Two-Day Rout</div><div class="domain">wsj.com &bull; April 05, 2025</div></li></a><a class="li" href="https://en.wikipedia.org/wiki/Mercantilism"><li><div class="title">Mercantilism</div><div class="domain">en.wikipedia.org &bull; April 05, 2025</div></li></a><a class="li" href="https://www.usda.gov/sites/default/files/documents/sm-1078-006.pdf"><li><div class="title">Increasing Timber Production, an Emergency Situation on National Forest Lands [pdf]</div><div class="domain">usda.gov &bull; April 05, 2025</div></li></a><a class="li" href="https://unixmagic.net/"><li><div class="title">Annotated Unix Magic Poster</div><div class="domain">unixmagic.net &bull; April 05, 2025</div></li></a><a class="li" href="https://www.att.com/support/article/wireless/KM1061254/"><li><div class="title">AT&T Email-to-Text Gateway Service Ending June 17</div><div class="domain">att.com &bull; April 05, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">ACM Queue - All Queue Content (queue.acm.org)</h2> (1)</summary><ul><a class="li" href="http://queue.acm.org/detail.cfm?ref=rss&id=3722544"><li><div class="title">From Function Frustrations to Framework Flexibility</div><div class="domain">queue.acm.org &bull; April 05, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Seth's Blog (seths.blog)</h2> (1)</summary><ul><a class="li" href="https://seths.blog/2025/04/we-are-all-goofballs/"><li><div class="title">We are all goofballs</div><div class="domain">seths.blog &bull; April 05, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (8)</summary><ul><a class="li" href="https://yourstory.com/2025/04/ai-logistics-sustainability-business-creativity-innovation-entrepreneur-education-quiz"><li><div class="title">AI, logistics, sustainability: Test your business creativity with Edition 182 of our weekly quiz!</div><div class="domain">yourstory.com &bull; April 05, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/04/trumps-tariffs-impact-markets-crash-china-hits-back-no-tiktok-deal"><li><div class="title">Impact of Trump’s tariffs: Markets crash, China hits back, no deal on TikTok</div><div class="domain">yourstory.com &bull; April 05, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/04/paytm-aims-to-be-profitable-in-q4-of-fy25"><li><div class="title">Paytm aims to be profitable in Q4 of FY25</div><div class="domain">yourstory.com &bull; April 05, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/04/vr-bengaluru-whitefield-art-collective-creativity-exhibition-photography"><li><div class="title">The future is now: VR Bengaluru hosts month-long exhibition on art and technology</div><div class="domain">yourstory.com &bull; April 05, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/04/co-working-office-space-leasing-dips-by-43-cbre"><li><div class="title">Co-working office space leasing dips by 43%: CBRE report</div><div class="domain">yourstory.com &bull; April 05, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/04/delhivery-acquires-ecom-express-for-rs-1-407-crore"><li><div class="title">Logistics unicorn Delhivery acquires rival Ecom Express for Rs 1,407 Cr</div><div class="domain">yourstory.com &bull; April 05, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/04/unified-lending-identity-the-next-upi-moment-for-india"><li><div class="title">Unified lending identity: The next UPI moment for India</div><div class="domain">yourstory.com &bull; April 05, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/04/founders-push-back-piyush-goyal-weaving-sustainability-textiles"><li><div class="title">Founders push back on Piyush Goyal's remarks; Weaving sustainability into textiles</div><div class="domain">yourstory.com &bull; April 05, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">PolyMatter (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=GL-MPhghHRI"><li><div class="title">How China Accidentally Created a Billion Dollar Scam Industry</div><div class="domain">youtube.com &bull; April 05, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">CinemaStix (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=BOjnIkmIaac"><li><div class="title">yo, they did an awesome thing that not enough movies get right</div><div class="domain">youtube.com &bull; April 05, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>

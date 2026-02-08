@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-05-10</span>:</h1>
+  <p class="summary">There are 71 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Bear Blog Trending Posts (bearblog.dev)</h2> (1)</summary><ul><a class="li" href="https://blog.avas.space/screen-intimacy/"><li><div class="title">(sick of) screen-only intimacy</div><div class="domain">blog.avas.space &bull; May 10, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Big Think (bigthink.com)</h2> (2)</summary><ul><a class="li" href="https://bigthink.com/mini-philosophy/tolkien-fantasy-science-fiction/"><li><div class="title">Why Tolkien thought “sub-creation” was the secret to great fantasy and science fiction</div><div class="domain">bigthink.com &bull; May 10, 2025</div></li></a><a class="li" href="https://bigthink.com/starts-with-a-bang/starts-with-a-bang-podcast-117-gravitational-waves-and-the-universe/"><li><div class="title">Starts With A Bang podcast #117 – Gravitational waves and the Universe</div><div class="domain">bigthink.com &bull; May 10, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Go Make Things (gomakethings.com)</h2> (1)</summary><ul><a class="li" href="https://gomakethings.com/a-future-worth-fighting-for/"><li><div class="title">A future worth fighting for</div><div class="domain">gomakethings.com &bull; May 10, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (1)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/8ZExgaGnvLevkZxR5/attend-the-2025-reproductive-frontiers-summit-june-10-12"><li><div class="title">Attend the 2025 Reproductive Frontiers Summit, June 10-12</div><div class="domain">lesswrong.com &bull; May 10, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (19)</summary><ul><a class="li" href="https://terrytao.wordpress.com/2025/05/09/a-tool-to-verify-estimates-ii-a-flexible-proof-assistant/"><li><div class="title">A tool to verify estimates, II: a flexible proof assistant</div><div class="domain">terrytao.wordpress.com &bull; May 10, 2025</div></li></a><a class="li" href="https://www.5volts.ch/pages/dcj11sbc/"><li><div class="title">DCJ11 Single Board Computer (PDP-11)</div><div class="domain">5volts.ch &bull; May 10, 2025</div></li></a><a class="li" href="https://bsky.app/profile/filippo.abyssdomain.expert/post/3loquchbrpm2m"><li><div class="title">Tuscolo Static Certificate Transparency Log</div><div class="domain">bsky.app &bull; May 10, 2025</div></li></a><a class="li" href="https://piware.de/post/2025-08-09-sourcery/"><li><div class="title">Testing sourcery.ai and GitHub Copilot for cockpit PR reviews</div><div class="domain">piware.de &bull; May 10, 2025</div></li></a><a class="li" href="https://kjosib.github.io/Counterpoint/effects.html"><li><div class="title">Algebraic Effects: Another mistake carried through to perfection?</div><div class="domain">kjosib.github.io &bull; May 10, 2025</div></li></a><a class="li" href="https://github.com/stassa/louise"><li><div class="title">louise: Polynomial-time Meta-Interpretive Learning for logic programming</div><div class="domain">github.com &bull; May 10, 2025</div></li></a><a class="li" href="https://bonfirenetworks.org/posts/slow_software_for_a_burning_world/"><li><div class="title">Slow Software for a Burning World</div><div class="domain">bonfirenetworks.org &bull; May 10, 2025</div></li></a><a class="li" href="https://michael.stapelberg.ch/posts/2025-05-10-grobi-x11-monitor-autoconfig/"><li><div class="title">In praise of grobi for auto-configuring X11 monitors</div><div class="domain">michael.stapelberg.ch &bull; May 10, 2025</div></li></a><a class="li" href="http://www.righto.com/2025/05/386-prefetch-circuitry-reverse-engineered.html"><li><div class="title">Reverse engineering the 386 processor's prefetch queue circuitry</div><div class="domain">righto.com &bull; May 10, 2025</div></li></a><a class="li" href="https://storage.googleapis.com/gweb-research2023-media/pubtools/7665.pdf"><li><div class="title">Secure by Design: Google’s Perspective on Memory Safety (2024)</div><div class="domain">storage.googleapis.com &bull; May 10, 2025</div></li></a><a class="li" href="https://www.pentestpartners.com/security-blog/exploiting-copilot-ai-for-sharepoint/"><li><div class="title">Exploiting Copilot AI for SharePoint</div><div class="domain">pentestpartners.com &bull; May 10, 2025</div></li></a><a class="li" href="https://en.wikipedia.org/wiki/Naked_objects"><li><div class="title">Naked objects</div><div class="domain">en.wikipedia.org &bull; May 10, 2025</div></li></a><a class="li" href="https://lume.land/blog/posts/lume-3/"><li><div class="title">Lume 3 was released</div><div class="domain">lume.land &bull; May 10, 2025</div></li></a><a class="li" href="https://emptysqua.re/blog/are-we-serious-about-statistical-properties-tlaplus/"><li><div class="title">Are We Serious About Using TLA+ For Statistical Properties?</div><div class="domain">emptysqua.re &bull; May 10, 2025</div></li></a><a class="li" href="https://lix.systems/blog/2025-05-06-lix-2.93-release/"><li><div class="title">Announcing Lix 2.93 “Bici Bici”</div><div class="domain">lix.systems &bull; May 10, 2025</div></li></a><a class="li" href="https://github.com/kubkon/bold/releases/tag/v0.2.0"><li><div class="title">bold linker v0.2.0 release - bold just got faster</div><div class="domain">github.com &bull; May 10, 2025</div></li></a><a class="li" href="https://vermaden.wordpress.com/2024/04/20/truenas-core-versus-truenas-scale/#truenas-core-dead-long-live-zvault"><li><div class="title">TrueNAS CORE is Dead – Long Live zVault</div><div class="domain">vermaden.wordpress.com &bull; May 10, 2025</div></li></a><a class="li" href="https://changelog.com/posts/our-slack-is-dead-long-live-zulip"><li><div class="title">Changelog Slack is dead. Long live Zulip</div><div class="domain">changelog.com &bull; May 10, 2025</div></li></a><a class="li" href="https://fireborn.mataroa.blog/blog/i-want-to-love-linux-it-doesnt-love-me-back-post-1-built-for-control-but-not-for-people/"><li><div class="title">I Want to Love Linux. It Doesn’t Love Me Back</div><div class="domain">fireborn.mataroa.blog &bull; May 10, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (33)</summary><ul><a class="li" href="https://ash-hq.org/"><li><div class="title">Ash Framework – Model your domain, derive the rest</div><div class="domain">ash-hq.org &bull; May 10, 2025</div></li></a><a class="li" href="https://physics.aps.org/articles/v18/99"><li><div class="title">Interferometer Device Sees Text from a Mile Away</div><div class="domain">physics.aps.org &bull; May 10, 2025</div></li></a><a class="li" href="https://membrane.stream/"><li><div class="title">Membrane: Media Framework for Elixir</div><div class="domain">membrane.stream &bull; May 10, 2025</div></li></a><a class="li" href="https://ostwilkens.se/blog/coffee"><li><div class="title">Coffee for people who don't like coffee</div><div class="domain">ostwilkens.se &bull; May 10, 2025</div></li></a><a class="li" href="https://www.warpstream.com/blog/taking-out-the-trash-garbage-collection-of-object-storage-at-massive-scale"><li><div class="title">Garbage collection of object storage at scale</div><div class="domain">warpstream.com &bull; May 10, 2025</div></li></a><a class="li" href="https://news.harvard.edu/gazette/story/2025/05/when-graphic-design-saves-lives/"><li><div class="title">When graphic design saves lives</div><div class="domain">news.harvard.edu &bull; May 10, 2025</div></li></a><a class="li" href="https://www.space.com/space-exploration/launches-spacecraft/failed-soviet-venus-lander-kosmos-482-crashes-to-earth-after-53-years-in-orbit"><li><div class="title">Failed Soviet Venus lander Kosmos 482 crashes to Earth after 53 years in orbit</div><div class="domain">space.com &bull; May 10, 2025</div></li></a><a class="li" href="https://chaos.social/@gsuberland/114485304658708399"><li><div class="title">Has anyone coined the term “fast tech” yet?</div><div class="domain">chaos.social &bull; May 10, 2025</div></li></a><a class="li" href="https://blog.janestreet.com/why-gadts-matter-for-performance/"><li><div class="title">Why GADTs matter for performance (2015)</div><div class="domain">blog.janestreet.com &bull; May 10, 2025</div></li></a><a class="li" href="https://examine.com/research-feed/study/1jjKq1/"><li><div class="title">Continuous glucose monitors reveal variable glucose responses to the same meals</div><div class="domain">examine.com &bull; May 10, 2025</div></li></a><a class="li" href="https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/transience/"><li><div class="title">Policy of Transience</div><div class="domain">chiark.greenend.org.uk &bull; May 10, 2025</div></li></a><a class="li" href="https://alvinng4.github.io/grav_sim/5_steps_to_n_body_simulation/"><li><div class="title">Writing N-body gravity simulations code in Python</div><div class="domain">alvinng4.github.io &bull; May 10, 2025</div></li></a><a class="li" href="https://www.hjorthjort.xyz/2018/02/21/the-deathbed-fallacy.html"><li><div class="title">The Deathbed Fallacy (2018)</div><div class="domain">hjorthjort.xyz &bull; May 10, 2025</div></li></a><a class="li" href="https://fakehistoryhunter.net/2022/07/26/not-a-3-year-old-chimney-sweep/"><li><div class="title">Not a three-year-old chimney sweep (2022)</div><div class="domain">fakehistoryhunter.net &bull; May 10, 2025</div></li></a><a class="li" href="https://www.react-three.org/"><li><div class="title">React Three Ecosystem</div><div class="domain">react-three.org &bull; May 10, 2025</div></li></a><a class="li" href="https://www.ycombinator.com/companies/weave-3/jobs"><li><div class="title">Weave (YC W25) is hiring a founding engineer</div><div class="domain">ycombinator.com &bull; May 10, 2025</div></li></a><a class="li" href="https://www.abortretry.fail/p/intel-winning-and-losing"><li><div class="title">Intel: Winning and Losing</div><div class="domain">abortretry.fail &bull; May 10, 2025</div></li></a><a class="li" href="https://www.bleepingcomputer.com/news/microsoft/microsoft-teams-will-soon-block-screen-capture-during-meetings/"><li><div class="title">Microsoft Teams will soon block screen capture during meetings</div><div class="domain">bleepingcomputer.com &bull; May 10, 2025</div></li></a><a class="li" href="https://www.vintagecomputing.com/index.php/archives/2833/why-the-apple-ii-didnt-support-lowercase-letters"><li><div class="title">Why the Apple II Didn't Support Lowercase Letters (2020)</div><div class="domain">vintagecomputing.com &bull; May 10, 2025</div></li></a><a class="li" href="https://github.com/RVCA212/codesys"><li><div class="title">Show HN: Code Claude Code</div><div class="domain">github.com &bull; May 10, 2025</div></li></a><a class="li" href="https://embracergamesarchive.com/"><li><div class="title">Embracer Games Archive is preserving 75000 video games and needs contributions</div><div class="domain">embracergamesarchive.com &bull; May 10, 2025</div></li></a><a class="li" href="https://www.etalabs.net/compare_libcs.html"><li><div class="title">Comparison of C/POSIX standard library implementations for Linux</div><div class="domain">etalabs.net &bull; May 10, 2025</div></li></a><a class="li" href="https://www.vatican.va/content/leo-xiv/en/speeches/2025/may/documents/20250510-collegio-cardinalizio.html"><li><div class="title">Pope Leo XIV: "AI poses new challenges re: human dignity, justice and labour"</div><div class="domain">vatican.va &bull; May 10, 2025</div></li></a><a class="li" href="https://retool.com/visual-basic"><li><div class="title">The History and Legacy of Visual Basic</div><div class="domain">retool.com &bull; May 10, 2025</div></li></a><a class="li" href="https://github.com/danielcota/LoopMix128"><li><div class="title">Show HN: LoopMix128 – Fast C PRNG (.46ns), 2^128 Period, BigCrush/PractRand Pass</div><div class="domain">github.com &bull; May 10, 2025</div></li></a><a class="li" href="https://s3data.computerhistory.org/brochures/commodore.commodore64.1982.102646264.pdf"><li><div class="title">For $595, you get what nobody else can give you for twice the price (1982) [pdf]</div><div class="domain">s3data.computerhistory.org &bull; May 10, 2025</div></li></a><a class="li" href="https://storage.courtlistener.com/recap/gov.uscourts.dcd.223205/gov.uscourts.dcd.223205.1300.1.pdf"><li><div class="title">US vs. Google amicus curiae brief of Y Combinator in support of plaintiffs [pdf]</div><div class="domain">storage.courtlistener.com &bull; May 10, 2025</div></li></a><a class="li" href="https://github.com/blackrabbit17/xenolab"><li><div class="title">Show HN: Xenolab – Rasp Pi monitor for my pet carnivourus plants</div><div class="domain">github.com &bull; May 10, 2025</div></li></a><a class="li" href="https://lcamtuf.substack.com/p/sierpinski-triangle-in-my-bitwise"><li><div class="title">Sierpiński Triangle? In My Bitwise and?</div><div class="domain">lcamtuf.substack.com &bull; May 10, 2025</div></li></a><a class="li" href="https://skincontact.substack.com/p/21-observations-from-people-watching"><li><div class="title">Observations from people watching</div><div class="domain">skincontact.substack.com &bull; May 10, 2025</div></li></a><a class="li" href="https://madebyevan.com/webgl-water/"><li><div class="title">WebGL Water (2010)</div><div class="domain">madebyevan.com &bull; May 10, 2025</div></li></a><a class="li" href="https://brandonli.net/semisim/"><li><div class="title">Brandon's Semiconductor Simulator</div><div class="domain">brandonli.net &bull; May 10, 2025</div></li></a><a class="li" href="https://realitystudio.org/bibliographic-bunker/charles-bukowski-william-burroughs-and-the-computer/"><li><div class="title">Charles Bukowski, William Burroughs, and the Computer (2009)</div><div class="domain">realitystudio.org &bull; May 10, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Kindred Spirits (readkindredspirits.com)</h2> (1)</summary><ul><a class="li" href="https://www.readkindredspirits.com/p/no-one-is-an-island-everyone-is-vanilla"><li><div class="title">no one is an island, everyone is vanilla extract</div><div class="domain">readkindredspirits.com &bull; May 10, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Seth's Blog (seths.blog)</h2> (1)</summary><ul><a class="li" href="https://seths.blog/2025/05/expectations-3/"><li><div class="title">Expectations</div><div class="domain">seths.blog &bull; May 10, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (9)</summary><ul><a class="li" href="https://yourstory.com/2025/05/india-fastest-growing-strategically-significant-markets-google-cloud-country-md"><li><div class="title">India among fastest-growing, strategically significant markets: Google Cloud Country MD</div><div class="domain">yourstory.com &bull; May 10, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/05/mapmyindias-q4-profit-jumps-28-yoy-to-rs-49-cr"><li><div class="title">MapmyIndia’s Q4 profit jumps 28% YoY to Rs 49 Cr</div><div class="domain">yourstory.com &bull; May 10, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/05/5-reasons-to-read-murakami"><li><div class="title">5 Compelling Reasons to Read the Works of Haruki Murakami</div><div class="domain">yourstory.com &bull; May 10, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/05/sebi-considers-providing-flexibility-to-aifs-coinvestment"><li><div class="title">Sebi considers providing flexibility to AIFs to offer co-investment opportunities to investors</div><div class="domain">yourstory.com &bull; May 10, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/05/echoes-windows-spirituality-kalakriti-art-gallery-exhibition-creativity-photography"><li><div class="title">Echoes and windows: Kalakriti Art Gallery exhibitions explore repetition and spirituality</div><div class="domain">yourstory.com &bull; May 10, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/05/7-books-that-teach-boundaries"><li><div class="title">7 Powerful Nonfiction Books to Set Boundaries Without Guilt</div><div class="domain">yourstory.com &bull; May 10, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/05/navigating-change-adapting-hr-practices-in-the-age"><li><div class="title">Navigating change: Adapting HR practices in the age of automation</div><div class="domain">yourstory.com &bull; May 10, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/05/5-classic-mystery-novels-thriller"><li><div class="title">5 Timeless Mystery Novels Every Thriller Fan Should Read</div><div class="domain">yourstory.com &bull; May 10, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/05/the-cost-of-swiggys-growth-taking-the-pain-out-of-healthcare"><li><div class="title">The cost of Swiggy’s growth; Taking the pain out of healthcare</div><div class="domain">yourstory.com &bull; May 10, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Thought Emporium (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/JDcdjpX7CsQ"><li><div class="title">Recreating the miracle of 1263</div><div class="domain">youtube.com &bull; May 10, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Plip Plip (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=9JdUoRJ7PKY"><li><div class="title">GIRLFRIEND REVEAL!</div><div class="domain">youtube.com &bull; May 10, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Angela Collier (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=lPVSj9rcK-E"><li><div class="title">a target data story</div><div class="domain">youtube.com &bull; May 10, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>

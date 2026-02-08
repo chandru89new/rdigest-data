@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2026-02-14</span>:</h1>
+  <p class="summary">There are 14 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (1)</summary><ul><a class="li" href="https://aredridel.dinhe.net/2026/02/12/the-ai-haters-guide-to-code-with-llms/"><li><div class="title">The AI hater's guide to code with LLMs (The Overview)</div><div class="domain">aredridel.dinhe.net &bull; February 14, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (3)</summary><ul><a class="li" href="https://theshamblog.com/an-ai-agent-published-a-hit-piece-on-me-part-2/"><li><div class="title">An AI Agent Published a Hit Piece on Me – More Things Have Happened</div><div class="domain">theshamblog.com &bull; February 14, 2026</div></li></a><a class="li" href="https://phys.org/news/2026-02-dating-apps-optimizing-hint-isnt.html"><li><div class="title">What dating apps are optimizing. Hint: It isn't love</div><div class="domain">phys.org &bull; February 14, 2026</div></li></a><a class="li" href="https://npmx.dev"><li><div class="title">NPMX – a fast, modern browser for the NPM registry</div><div class="domain">npmx.dev &bull; February 14, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (2)</summary><ul><a class="li" href="https://yourstory.com/2026/02/ola-electric-suffers-in-q3-helmet-for-women"><li><div class="title">Ola Electric suffers in Q3; A helmet made for women rider</div><div class="domain">yourstory.com &bull; February 14, 2026</div></li></a><a class="li" href="https://yourstory.com/2026/02/india-international-coffee-festival-photography"><li><div class="title">Community, conversations, connections: India International Coffee Festival kicks off 2026 edition</div><div class="domain">yourstory.com &bull; February 14, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">ThePrint (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=ybdB-fFUn94"><li><div class="title">How Pink Trumpet trees briefly soften Mumbai’s Eastern Express</div><div class="domain">youtube.com &bull; February 14, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">The Hindu (youtube.com)</h2> (3)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=aemeNNzaAHI"><li><div class="title">Epilepsy: management and care | Webinar</div><div class="domain">youtube.com &bull; February 14, 2026</div></li></a><a class="li" href="https://www.youtube.com/watch?v=V-mkAVZARx4"><li><div class="title">Gurez Snow Cricket Premier League: Girls’ exhibition match highlights women’s sport in J&K</div><div class="domain">youtube.com &bull; February 14, 2026</div></li></a><a class="li" href="https://www.youtube.com/watch?v=S_nnONnmEG8"><li><div class="title">President Trump delivers remarks to Fort Bragg military families in North Carolina visit</div><div class="domain">youtube.com &bull; February 14, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">The Dodo (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/yARYiOh2fik"><li><div class="title">This Greyhound Story Broke Our Hearts — Then Healed Us | The Dodo</div><div class="domain">youtube.com &bull; February 14, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=b5HV7j1no7U"><li><div class="title">Survivalists in the Land of No Mercy! | Dual Survival S2 E1, 4, 7, 10 | Discovery Channel India</div><div class="domain">youtube.com &bull; February 14, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">DD Movies (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/rCENRt70-nw"><li><div class="title">கல்யாணத்த பண்ணிப்பாரு சும்மாவா சொன்னாங்க | DD Movies</div><div class="domain">youtube.com &bull; February 14, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">Bob & Brad (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/BrY3VIe07y4"><li><div class="title">How to Decompress your Knee!</div><div class="domain">youtube.com &bull; February 14, 2026</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>

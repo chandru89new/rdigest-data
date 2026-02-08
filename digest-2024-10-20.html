@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2024-10-20</span>:</h1>
+  <p class="summary">There are 75 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Bear Blog Trending Posts (bearblog.dev)</h2> (2)</summary><ul><a class="li" href="https://birming.com/busy-blog/"><li><div class="title">Don't say you're too busy to blog</div><div class="domain">birming.com &bull; October 20, 2024</div></li></a><a class="li" href="https://cropp.blog/making-a-change-for-the-better/"><li><div class="title">Making a change for the better</div><div class="domain">cropp.blog &bull; October 20, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Big Think (bigthink.com)</h2> (1)</summary><ul><a class="li" href="https://bigthink.com/the-future/genetic-test-nucleus/"><li><div class="title">This $400 genetic test could save your life</div><div class="domain">bigthink.com &bull; October 20, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">The Marginalian (feeds.feedburner.com)</h2> (2)</summary><ul><a class="li" href="https://www.themarginalian.org/2024/10/20/wheeler-death/"><li><div class="title">Everything Is Happening All the Time: Legendary Physicist John Archibald Wheeler on Death and the Life-Force</div><div class="domain">themarginalian.org &bull; October 20, 2024</div></li></a><a class="li" href="https://www.themarginalian.org/2024/10/20/kafka-diaries-self-doubt/"><li><div class="title">Kafka’s Creative Block and the Four Psychological Hindrances That Keep the Talented from Manifesting Their Talent</div><div class="domain">themarginalian.org &bull; October 20, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (3)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/WjGcbR3RcRfGtmFfJ/d-and-d-sci-coliseum-arena-of-data"><li><div class="title">D&D Sci Coliseum: Arena of Data</div><div class="domain">lesswrong.com &bull; October 20, 2024</div></li></a><a class="li" href="https://www.lesswrong.com/posts/XCKg2e39J2iMZKC5K/if-far-uv-is-so-great-why-isn-t-it-everywhere"><li><div class="title">If far-UV is so great, why isn't it everywhere?</div><div class="domain">lesswrong.com &bull; October 20, 2024</div></li></a><a class="li" href="https://www.lesswrong.com/posts/JxsJdBnL2gG5oa2Li/overcoming-bias-anthology"><li><div class="title">Overcoming Bias Anthology</div><div class="domain">lesswrong.com &bull; October 20, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (19)</summary><ul><a class="li" href="https://lostpixellore.com/blog/lost-media-pokemon-fever-vhs-tape/"><li><div class="title">Lost Media: Pokémon Fever (1999) VHS Tape</div><div class="domain">lostpixellore.com &bull; October 20, 2024</div></li></a><a class="li" href="https://www.doc.ic.ac.uk/~scd/Dafny_Material/Lectures.pdf"><li><div class="title">Verified Programming in Dafny</div><div class="domain">doc.ic.ac.uk &bull; October 20, 2024</div></li></a><a class="li" href="https://devnonsense.com/posts/mac-programming-for-dummies/"><li><div class="title">Mac Programming for Dummies (1999)</div><div class="domain">devnonsense.com &bull; October 20, 2024</div></li></a><a class="li" href="https://nolanlawson.com/2024/10/20/why-im-skeptical-of-rewriting-javascript-tools-in-faster-languages/"><li><div class="title">Why I’m skeptical of rewriting JavaScript tools in "faster" languages</div><div class="domain">nolanlawson.com &bull; October 20, 2024</div></li></a><a class="li" href="https://huggingface.co/nvidia/Llama-3.1-Nemotron-70B-Instruct-HF"><li><div class="title">nvidia/Llama-3.1-Nemotron-70B-Instruct-HF</div><div class="domain">huggingface.co &bull; October 20, 2024</div></li></a><a class="li" href="https://markentier.tech/posts/2021/03/responsive-toc-leader-lines-with-css/"><li><div class="title">Responsive TOC leader lines with CSS (2021)</div><div class="domain">markentier.tech &bull; October 20, 2024</div></li></a><a class="li" href="https://racket.discourse.group/t/good-first-issues-contributing-to-racket/3243"><li><div class="title">Good first issues & contributing to Racket</div><div class="domain">racket.discourse.group &bull; October 20, 2024</div></li></a><a class="li" href="https://lwn.net/Articles/991088/"><li><div class="title">Debian changes OpenSSH packaging</div><div class="domain">lwn.net &bull; October 20, 2024</div></li></a><a class="li" href="https://raisetools.github.io"><li><div class="title">The RAISE specification language, method, and tools</div><div class="domain">raisetools.github.io &bull; October 20, 2024</div></li></a><a class="li" href="https://www.cs.cmu.edu/~pavlo/blog/2023/04/the-part-of-postgresql-we-hate-the-most.html"><li><div class="title">The Part of PostgreSQL We Hate the Most (2023)</div><div class="domain">cs.cmu.edu &bull; October 20, 2024</div></li></a><a class="li" href="https://paravoce.bearblog.dev/how-do-you-deploy-in-10-seconds/"><li><div class="title">How do you deploy in 10 seconds?</div><div class="domain">paravoce.bearblog.dev &bull; October 20, 2024</div></li></a><a class="li" href="https://github.com/devgianlu/go-librespot"><li><div class="title">Yet another open source Spotify client, written in Go</div><div class="domain">github.com &bull; October 20, 2024</div></li></a><a class="li" href="https://tonyfinn.com/blog/jj/"><li><div class="title">Jujutsu (jj), a git compatible VCS</div><div class="domain">tonyfinn.com &bull; October 20, 2024</div></li></a><a class="li" href="https://sirikon.me/posts/0009-pid-1-bash-script-docker-container.html"><li><div class="title">PID 1 Bash script for Docker containers explained line by line</div><div class="domain">sirikon.me &bull; October 20, 2024</div></li></a><a class="li" href="https://github.com/bitwarden/clients/issues/11611"><li><div class="title">Bitwarden version 2024.10.0 is no longer free software</div><div class="domain">github.com &bull; October 20, 2024</div></li></a><a class="li" href="https://testing.googleblog.com/2024/10/smurf-beyond-test-pyramid.html?m=1"><li><div class="title">SMURF: Beyond the Test Pyramid</div><div class="domain">testing.googleblog.com &bull; October 20, 2024</div></li></a><a class="li" href="https://bwplotka.dev/2024/go-microbenchmarks-benchstat/"><li><div class="title">Leveraging benchstat Projections in Go Benchmark Analysis</div><div class="domain">bwplotka.dev &bull; October 20, 2024</div></li></a><a class="li" href="https://www.potaroo.net/ispcol/2024-10/ipv6-transition.html"><li><div class="title">The IPv6 Transition</div><div class="domain">potaroo.net &bull; October 20, 2024</div></li></a><a class="li" href="https://lobste.rs/s/to1rtr/which_kernel_is_most_readable_one"><li><div class="title">Which kernel is the most readable one?</div><div class="domain">lobste.rs &bull; October 20, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (41)</summary><ul><a class="li" href="https://kk.org/thetechnium/irreproducible/"><li><div class="title">Irreproducible Results (2011)</div><div class="domain">kk.org &bull; October 20, 2024</div></li></a><a class="li" href="https://samtxt.samrawal.com/"><li><div class="title">Show HN: Semantic Macros Text Editor</div><div class="domain">samtxt.samrawal.com &bull; October 20, 2024</div></li></a><a class="li" href="https://www.tabletmag.com/sections/arts-letters/articles/mad-magazine-files"><li><div class="title">The Mad Files</div><div class="domain">tabletmag.com &bull; October 20, 2024</div></li></a><a class="li" href="https://labs.psych.ucsb.edu/schooler/jonathan/sites/labs.psych.ucsb.edu.schooler.jonathan/files/pubs/202._mind_wandering.pdf"><li><div class="title">Mind Wandering: More than a Bad Habit (2018) [pdf]</div><div class="domain">labs.psych.ucsb.edu &bull; October 20, 2024</div></li></a><a class="li" href="https://boilingsteam.com/paranormasight-review/"><li><div class="title">Paranormasight: A Game Exploring the Depths of Honjo in Tokyo</div><div class="domain">boilingsteam.com &bull; October 20, 2024</div></li></a><a class="li" href="https://www.bloomberg.com/news/features/2024-10-18/do-ai-detectors-work-students-face-false-cheating-accusations"><li><div class="title">Do AI detectors work? Students face false cheating accusations</div><div class="domain">bloomberg.com &bull; October 20, 2024</div></li></a><a class="li" href="https://phys.org/news/2024-10-optical-device-paves-faster-fiber.html"><li><div class="title">All-optical switch device paves way for faster fiber-optic communication</div><div class="domain">phys.org &bull; October 20, 2024</div></li></a><a class="li" href="https://bsky.app/profile/pfrazee.com/post/3l6xwi52zti2y"><li><div class="title">If you're curious why every username is a domain, it's because users are sites</div><div class="domain">bsky.app &bull; October 20, 2024</div></li></a><a class="li" href="https://github.com/aotakeda/learn-thing"><li><div class="title">Show HN: Create mind maps to learn new things using AI</div><div class="domain">github.com &bull; October 20, 2024</div></li></a><a class="li" href="https://techcrunch.com/2024/10/17/microsoft-said-it-lost-weeks-of-security-logs-for-its-customers-cloud-products/"><li><div class="title">Microsoft said it lost weeks of security logs for its customers' cloud products</div><div class="domain">techcrunch.com &bull; October 20, 2024</div></li></a><a class="li" href="https://paste.c-net.org/"><li><div class="title">A Console-Friendly Pastebin with binary support</div><div class="domain">paste.c-net.org &bull; October 20, 2024</div></li></a><a class="li" href="https://blog.moertel.com/posts/2024-08-23-sampling-with-sql.html"><li><div class="title">Sampling with SQL</div><div class="domain">blog.moertel.com &bull; October 20, 2024</div></li></a><a class="li" href="https://www.cambridge.org/core/journals/review-of-international-studies/article/machine-conquest-jules-vernes-technocratic-worldmaking/E5897EB8F3FB9A8F0142075EE38D69BC"><li><div class="title">Machine conquest: Jules Verne's technocratic worldmaking</div><div class="domain">cambridge.org &bull; October 20, 2024</div></li></a><a class="li" href="https://passo.uno/what-docs-as-code-means/"><li><div class="title">What docs-as-code means</div><div class="domain">passo.uno &bull; October 20, 2024</div></li></a><a class="li" href="https://mrmr.io/cat"><li><div class="title">The useful use of cat</div><div class="domain">mrmr.io &bull; October 20, 2024</div></li></a><a class="li" href="https://www.anthropic.com/research/sabotage-evaluations"><li><div class="title">Sabotage Evaluations for Frontier Models</div><div class="domain">anthropic.com &bull; October 20, 2024</div></li></a><a class="li" href="https://hnup.date/"><li><div class="title">Show HN: HN Update – Hourly News Broadcast of Top HN Stories</div><div class="domain">hnup.date &bull; October 20, 2024</div></li></a><a class="li" href="https://www.bbc.com/future/article/20241018-barcodes-at-75-how-black-and-white-lines-went-into-space-and-stoked-fears-of-the-antichrist"><li><div class="title">The History of the Barcode</div><div class="domain">bbc.com &bull; October 20, 2024</div></li></a><a class="li" href="https://www.sciencedirect.com/science/article/pii/S0094576524005976"><li><div class="title">Phenomenal consciousness is alien to us: SETI and the Fermi paradox</div><div class="domain">sciencedirect.com &bull; October 20, 2024</div></li></a><a class="li" href="https://www.sciencedirect.com/science/article/pii/S030645302200292X"><li><div class="title">Energy-based model explains how chronic stress transforms into disease over time</div><div class="domain">sciencedirect.com &bull; October 20, 2024</div></li></a><a class="li" href="https://phys.org/news/2024-10-bumblebee-queens-hibernate-pesticide-contaminated.html"><li><div class="title">Bumblebee queens choose to hibernate in pesticide-contaminated soil</div><div class="domain">phys.org &bull; October 20, 2024</div></li></a><a class="li" href="https://arxiv.org/abs/1504.05140"><li><div class="title">Route Planning in Transportation Networks (2015)</div><div class="domain">arxiv.org &bull; October 20, 2024</div></li></a><a class="li" href="https://forum.syncthing.net/t/discontinuing-syncthing-android/23002"><li><div class="title">Syncthing Android App Discontinued</div><div class="domain">forum.syncthing.net &bull; October 20, 2024</div></li></a><a class="li" href="https://dl.acm.org/doi/10.1145/3689746"><li><div class="title">The Ultimate Conditional Syntax</div><div class="domain">dl.acm.org &bull; October 20, 2024</div></li></a><a class="li" href="https://aphelis.net/scratches-kubrick-2001-space-odyssey/"><li><div class="title">Scratches in 2001: A Space Osyssey (2018)</div><div class="domain">aphelis.net &bull; October 20, 2024</div></li></a><a class="li" href="https://bgolus.medium.com/the-best-darn-grid-shader-yet-727f9278b9d8"><li><div class="title">The Best Darn Grid Shader (Yet) (2023)</div><div class="domain">bgolus.medium.com &bull; October 20, 2024</div></li></a><a class="li" href="https://www.rubinghscience.org/surv/euroweights1.html"><li><div class="title">Using Euro coins as weights (2004)</div><div class="domain">rubinghscience.org &bull; October 20, 2024</div></li></a><a class="li" href="https://versatiles.org/"><li><div class="title">VersaTiles – a complete FLOSS map stack</div><div class="domain">versatiles.org &bull; October 20, 2024</div></li></a><a class="li" href="https://www.apricitas.io/p/the-ai-investment-boom"><li><div class="title">The AI Investment Boom</div><div class="domain">apricitas.io &bull; October 20, 2024</div></li></a><a class="li" href="https://www.c-motive.com/technology/"><li><div class="title">C-Motive's electrostatic motors use printed circuit boards instead of magnets</div><div class="domain">c-motive.com &bull; October 20, 2024</div></li></a><a class="li" href="https://martin.kleppmann.com/2016/02/08/how-to-do-distributed-locking.html"><li><div class="title">How to do distributed locking (2016)</div><div class="domain">martin.kleppmann.com &bull; October 20, 2024</div></li></a><a class="li" href="https://www.bleepingcomputer.com/news/security/internet-archive-breached-again-through-stolen-access-tokens/"><li><div class="title">Internet Archive breached again through stolen access tokens</div><div class="domain">bleepingcomputer.com &bull; October 20, 2024</div></li></a><a class="li" href="https://www.polygon.com/board-games/467103/kurt-vonnegut-ghq-lost-board-game-publisher-interview"><li><div class="title">Kurt Vonnegut's lost board game published</div><div class="domain">polygon.com &bull; October 20, 2024</div></li></a><a class="li" href="https://github.com/drasi-project/drasi-platform"><li><div class="title">Drasi: Microsoft's open source data processing platform for event-driven systems</div><div class="domain">github.com &bull; October 20, 2024</div></li></a><a class="li" href="https://wifi-solver.com"><li><div class="title">WebGPU-Based WiFi Simulator</div><div class="domain">wifi-solver.com &bull; October 20, 2024</div></li></a><a class="li" href="https://www.nature.com/articles/s43247-024-01711-1"><li><div class="title">A recent surge in global warming is not detectable yet</div><div class="domain">nature.com &bull; October 20, 2024</div></li></a><a class="li" href="https://time.com/7093536/surgeons-apple-vision-pro/"><li><div class="title">Why Surgeons Are Wearing the Apple Vision Pro in Operating Rooms</div><div class="domain">time.com &bull; October 20, 2024</div></li></a><a class="li" href="https://techcommunity.microsoft.com/t5/azure-infrastructure-blog/securing-hardware-and-firmware-supply-chains/ba-p/4268815"><li><div class="title">Securing Hardware and Firmware Supply Chains</div><div class="domain">techcommunity.microsoft.com &bull; October 20, 2024</div></li></a><a class="li" href="https://www.takeourword.com/TOW146/page4.html"><li><div class="title">Origin of 'Daemon' in Computing</div><div class="domain">takeourword.com &bull; October 20, 2024</div></li></a><a class="li" href="https://hms.harvard.edu/news/new-artificial-intelligence-tool-cancer"><li><div class="title">A New Artificial Intelligence Tool for Cancer</div><div class="domain">hms.harvard.edu &bull; October 20, 2024</div></li></a><a class="li" href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0151588"><li><div class="title">Poor Perception of Friendship Ties Limits the Ability to Promote Change (2016)</div><div class="domain">journals.plos.org &bull; October 20, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Scattered Thoughts (scattered-thoughts.net)</h2> (1)</summary><ul><a class="li" href="https://www.scattered-thoughts.net/writing/serious-fun/"><li><div class="title">Serious fun</div><div class="domain">scattered-thoughts.net &bull; October 20, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Seth's Blog (seths.blog)</h2> (1)</summary><ul><a class="li" href="https://seths.blog/2024/10/foundering-or-floundering/"><li><div class="title">Foundering or floundering?</div><div class="domain">seths.blog &bull; October 20, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (5)</summary><ul><a class="li" href="https://yourstory.com/2024/10/bitoech-sector-india-valued-at-150-billion-says-birac-md"><li><div class="title">Biotech sector in India valued at $150B, says BIRAC MD</div><div class="domain">yourstory.com &bull; October 20, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/10/jobs-sports-parenting-quiz-creativity-entrepreneur-innovation-education"><li><div class="title">Jobs, sports, parenting: test your business creativity with Edition 158 of our weekly quiz!</div><div class="domain">yourstory.com &bull; October 20, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/10/culture-economy-impact-kolkata-durga-puja-creativity-art-photography-inspiration"><li><div class="title">Cultural and economic impact: Kolkata’s Durga Puja as one of the world’s largest public art festivals</div><div class="domain">yourstory.com &bull; October 20, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/10/spotlight-on-mental-health-at-work"><li><div class="title">Spotlight on mental health at work; Exploring rustic flavours of the Himalayas</div><div class="domain">yourstory.com &bull; October 20, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/10/professional-grade-algorithms-empower-retail-investors"><li><div class="title">Professional-grade algorithms empower retail investors, marking the next frontier in India's investing landscape</div><div class="domain">yourstory.com &bull; October 20, 2024</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>

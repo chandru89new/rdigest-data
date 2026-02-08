@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-05-18</span>:</h1>
+  <p class="summary">There are 48 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Bear Blog Trending Posts (bearblog.dev)</h2> (3)</summary><ul><a class="li" href="https://megancarnes.blog/a-lightly-edited-post-anxiety-attack-stream-of-consciousness-thing/"><li><div class="title">A lightly edited post-anxiety attack stream of consciousness thing</div><div class="domain">megancarnes.blog &bull; May 18, 2025</div></li></a><a class="li" href="https://mgx.me/when-your-mom-needs-a-website-but-only-knows-google-sheets/"><li><div class="title">when your mom needs a website but only knows google sheets</div><div class="domain">mgx.me &bull; May 18, 2025</div></li></a><a class="li" href="https://swarn.bearblog.dev/vk-test/"><li><div class="title">Its started to grow on me</div><div class="domain">swarn.bearblog.dev &bull; May 18, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Marginalian (feeds.feedburner.com)</h2> (1)</summary><ul><a class="li" href="https://www.themarginalian.org/2025/05/18/carl-jung-neurosis-creativity/"><li><div class="title">The Pain and the God Within You: Carl Jung on the Relationship Between Psychological Suffering and Creativity</div><div class="domain">themarginalian.org &bull; May 18, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">kottke.org (feeds.kottke.org)</h2> (1)</summary><ul><a class="li" href="https://kottke.org/25/05/some-recent-tweaks-and-post-faving"><li><div class="title">Some Recent Tweaks (and Post Faving!)</div><div class="domain">kottke.org &bull; May 18, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (4)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/MGGm8B7StJtbhQs56/google-logo-ligature-bug"><li><div class="title">Google Logo Ligature Bug</div><div class="domain">lesswrong.com &bull; May 18, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/PuSD6entRFBbnru9P/book-review-the-art-of-happiness"><li><div class="title">Book Review: The Art of Happiness</div><div class="domain">lesswrong.com &bull; May 18, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/hoFLMjgjkLGtGfiay/d-and-d-sci-the-choosing-ones"><li><div class="title">D&D.Sci: The Choosing Ones</div><div class="domain">lesswrong.com &bull; May 18, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/mtgbgepheaQsAyXmG/what-openai-told-california-s-attorney-general"><li><div class="title">What OpenAI Told California's Attorney General</div><div class="domain">lesswrong.com &bull; May 18, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (13)</summary><ul><a class="li" href="https://www.c0ffee.net/blog/freebsd-on-a-laptop/"><li><div class="title">FreeBSD on a Laptop (2018)</div><div class="domain">c0ffee.net &bull; May 18, 2025</div></li></a><a class="li" href="https://choly.ca/post/agent-recursion/"><li><div class="title">Agent Recursion</div><div class="domain">choly.ca &bull; May 18, 2025</div></li></a><a class="li" href="https://smallcultfollowing.com/babysteps/blog/2025/05/15/10-years-of-rust/"><li><div class="title">Rust turns 10</div><div class="domain">smallcultfollowing.com &bull; May 18, 2025</div></li></a><a class="li" href="https://fabiensanglard.net/2168/index.html"><li><div class="title">Building my childhood dream PC</div><div class="domain">fabiensanglard.net &bull; May 18, 2025</div></li></a><a class="li" href="https://pwy.io/posts/mimalloc-cigarette/"><li><div class="title">Mimalloc Cigarette: Losing one week of my life catching a memory leak</div><div class="domain">pwy.io &bull; May 18, 2025</div></li></a><a class="li" href="https://amberwilliams.io/blogs/building-my-own-pkms"><li><div class="title">Ditching Obsidian and building my own</div><div class="domain">amberwilliams.io &bull; May 18, 2025</div></li></a><a class="li" href="https://rustunit.com/blog/2025/05-18-bevy-ios-deep-linking/"><li><div class="title">iOS Deep-Linking with Bevy in Rust</div><div class="domain">rustunit.com &bull; May 18, 2025</div></li></a><a class="li" href="https://xenodium.com/llm-text-chat-is-everywhere-whos-optimizing-ux"><li><div class="title">LLM text chat is everywhere. Who’s optimizing its UX?</div><div class="domain">xenodium.com &bull; May 18, 2025</div></li></a><a class="li" href="https://gist.github.com/taramtrampam/fca4e599992909b48a3ba1ce69e215a2"><li><div class="title">"Safe" YAML monster</div><div class="domain">gist.github.com &bull; May 18, 2025</div></li></a><a class="li" href="https://btxx.org/posts/x220/"><li><div class="title">The X220 ThinkPad is the Best Laptop in the World (2023)</div><div class="domain">btxx.org &bull; May 18, 2025</div></li></a><a class="li" href="https://btxx.org/posts/beginners-guide-sourcehut/"><li><div class="title">A Beginner's Guide to SourceHut</div><div class="domain">btxx.org &bull; May 18, 2025</div></li></a><a class="li" href="https://blog.cloudflare.com/quic-restarts-slow-problems-udpgrm-to-the-rescue/"><li><div class="title">QUIC restarts, slow problems: udpgrm to the rescue</div><div class="domain">blog.cloudflare.com &bull; May 18, 2025</div></li></a><a class="li" href="https://v8.dev/features/explicit-resource-management"><li><div class="title">JavaScript's New Superpower: Explicit Resource Management</div><div class="domain">v8.dev &bull; May 18, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (17)</summary><ul><a class="li" href="https://nghiant3223.github.io/2025/04/15/go-scheduler.html"><li><div class="title">Understanding the Go Scheduler</div><div class="domain">nghiant3223.github.io &bull; May 18, 2025</div></li></a><a class="li" href="https://londonist.com/london/features/london-s-water-pump"><li><div class="title">London's Water Pumps: Where Strange History Flows Freely (2024)</div><div class="domain">londonist.com &bull; May 18, 2025</div></li></a><a class="li" href="https://www.filibeto.org/aduritz/truetrue/e10000/how-e10k-wasborn.html"><li><div class="title">How the Sun Enterprise 10000 was born (2007)</div><div class="domain">filibeto.org &bull; May 18, 2025</div></li></a><a class="li" href="https://www.science.org/doi/10.1126/sciadv.adu9368"><li><div class="title">Emergent social conventions and collective bias in LLM populations</div><div class="domain">science.org &bull; May 18, 2025</div></li></a><a class="li" href="https://www.neowin.net/news/kde-is-finally-getting-a-native-virtual-machine-manager-called-karton/"><li><div class="title">KDE is finally getting a native virtual machine manager called “Karton”</div><div class="domain">neowin.net &bull; May 18, 2025</div></li></a><a class="li" href="https://github.com/m4xshen/hardtime.nvim"><li><div class="title">Show HN: Hardtime.nvim – break bad habits and master Vim motions</div><div class="domain">github.com &bull; May 18, 2025</div></li></a><a class="li" href="https://github.com/gvelesandro/constructor-theory-simulator"><li><div class="title">Show HN: Python Simulator of David Deutsch’s “Constructor Theory of Time”</div><div class="domain">github.com &bull; May 18, 2025</div></li></a><a class="li" href="https://every.to/superorganizers/the-fall-of-roam"><li><div class="title">The Fall of Roam (2022)</div><div class="domain">every.to &bull; May 18, 2025</div></li></a><a class="li" href="https://www.kscale.dev/"><li><div class="title">K-Scale Labs: Open-source humanoid robots, built for developers</div><div class="domain">kscale.dev &bull; May 18, 2025</div></li></a><a class="li" href="https://notes.andymatuschak.org/Spaced_repetition_memory_system"><li><div class="title">Spaced Repetition Memory System</div><div class="domain">notes.andymatuschak.org &bull; May 18, 2025</div></li></a><a class="li" href="https://sifter.org/~simon/journal/20240718.html"><li><div class="title">$30 Homebrew Automated Blinds Opener</div><div class="domain">sifter.org &bull; May 18, 2025</div></li></a><a class="li" href="https://github.com/skift-org/vaev"><li><div class="title">Show HN: Vaev – A browser engine built from scratch (It renders google.com)</div><div class="domain">github.com &bull; May 18, 2025</div></li></a><a class="li" href="https://github.com/brianmg/voynich-nlp-analysis"><li><div class="title">Show HN: I modeled the Voynich Manuscript with SBERT to test for structure</div><div class="domain">github.com &bull; May 18, 2025</div></li></a><a class="li" href="https://social.numerique.gouv.fr/@codegouvfr/114529954373492878"><li><div class="title">France Endorses UN Open Source Principles</div><div class="domain">social.numerique.gouv.fr &bull; May 18, 2025</div></li></a><a class="li" href="https://domenic.me/fsrs/"><li><div class="title">Spaced repetition systems have gotten better</div><div class="domain">domenic.me &bull; May 18, 2025</div></li></a><a class="li" href="https://www.wsj.com/business/autos/california-ev-mandate-auto-industry-64708033"><li><div class="title">GM Is Pushing Hard to Tank California's EV Mandate</div><div class="domain">wsj.com &bull; May 18, 2025</div></li></a><a class="li" href="https://letsencrypt.org/2025/05/14/ending-tls-client-authentication/"><li><div class="title">Lets Encrypt Ending TLS Client Authentication Certificate Support in 2026</div><div class="domain">letsencrypt.org &bull; May 18, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Seth's Blog (seths.blog)</h2> (1)</summary><ul><a class="li" href="https://seths.blog/2025/05/moving-to-the-golden-quadrant/"><li><div class="title">The Impact Matrix: Moving to the golden quadrant</div><div class="domain">seths.blog &bull; May 18, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (6)</summary><ul><a class="li" href="https://yourstory.com/2025/05/shiprocket-unveils-indias-first-ai-integrated-mcp-server"><li><div class="title">Shiprocket unveils India's first AI-integrated MCP Server</div><div class="domain">yourstory.com &bull; May 18, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/05/international-museum-day-art-photography-culture-creativity-inspiration"><li><div class="title">International Museum Day: How the Museum of Art and Photography keeps culture alive and vibrant</div><div class="domain">yourstory.com &bull; May 18, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/05/platforms-food-sustainability-business-creativity-education-entrepreneur-innovation-quiz"><li><div class="title">Platforms, food, sustainability: Test your business creativity with Edition 188 of our weekly quiz!</div><div class="domain">yourstory.com &bull; May 18, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/05/india-largest-market-electric-three-wheelers-iea"><li><div class="title">India largest market for electric three-wheelers: IEA</div><div class="domain">yourstory.com &bull; May 18, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/05/yourstory-launches-builders-guild-"><li><div class="title">YourStory launches Builders’ Guild; Financial revolution in rural India</div><div class="domain">yourstory.com &bull; May 18, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/05/blended-finance-the-missing-link-in-scaling-climate-innovation"><li><div class="title">Blended finance: The missing link in scaling climate innovation</div><div class="domain">yourstory.com &bull; May 18, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Laasya (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=0-qXiqfg4Lk"><li><div class="title">Shaky | Sanju Rathod | Dance cover | Nivi & Ishanvi | Laasya | Mom daughter dance | Marathi song</div><div class="domain">youtube.com &bull; May 18, 2025</div></li></a><a class="li" href="https://www.youtube.com/shorts/JoWHFV7p4A0"><li><div class="title">Shaky | ek number teri kamar | mom daughter dance</div><div class="domain">youtube.com &bull; May 18, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>

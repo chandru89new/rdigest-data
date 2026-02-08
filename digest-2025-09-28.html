@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-09-28</span>:</h1>
+  <p class="summary">There are 74 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Bear Blog Trending Posts (bearblog.dev)</h2> (4)</summary><ul><a class="li" href="https://blog.absurdpirate.com/our-experiences-with-our-favorite-games/"><li><div class="title">Our Experiences with Our Favorite Games</div><div class="domain">blog.absurdpirate.com &bull; September 28, 2025</div></li></a><a class="li" href="https://zoeloukia.bearblog.dev/slow-sunday-morning/"><li><div class="title">slow sunday morning</div><div class="domain">zoeloukia.bearblog.dev &bull; September 28, 2025</div></li></a><a class="li" href="https://blog.avas.space/photodump-september-august/"><li><div class="title">the past few weeks [photo dump]</div><div class="domain">blog.avas.space &bull; September 28, 2025</div></li></a><a class="li" href="https://jishu.bearblog.dev/breaking-the-loop-replacing-reddit-with-quiet-and-focus/"><li><div class="title">Breaking the Loop: Replacing Reddit with Quiet and Focus</div><div class="domain">jishu.bearblog.dev &bull; September 28, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Marginalian (feeds.feedburner.com)</h2> (1)</summary><ul><a class="li" href="https://www.themarginalian.org/2025/09/28/john-burroughs-cell-crystal/"><li><div class="title">The Cell vs. the Crystal: The Philosopher-Naturalist John Burroughs on What Makes a Great Poem and a Great Person</div><div class="domain">themarginalian.org &bull; September 28, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (4)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/iFRrJfkXEpR4hFcEv/a-reply-to-macaskill-on-if-anyone-builds-it-everyone-dies"><li><div class="title">A Reply to MacAskill on "If Anyone Builds It, Everyone Dies"</div><div class="domain">lesswrong.com &bull; September 28, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/u9znAFunGJKpybSNd/solving-the-problem-of-needing-to-give-a-talk"><li><div class="title">Solving the problem of needing to give a talk</div><div class="domain">lesswrong.com &bull; September 28, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/pyuCDYysud6GuY8tt/transgender-sticker-fallacy"><li><div class="title">Transgender Sticker Fallacy</div><div class="domain">lesswrong.com &bull; September 28, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/CScshtFrSwwjWyP2m/a-non-review-of-if-anyone-builds-it-everyone-dies"><li><div class="title">A non-review of "If Anyone Builds It, Everyone Dies"</div><div class="domain">lesswrong.com &bull; September 28, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (21)</summary><ul><a class="li" href="https://sebastiano.tronto.net/blog/2025-09-28-alphabetic-order/"><li><div class="title">When I say "alphabetical order", I mean "alphabetical order"</div><div class="domain">sebastiano.tronto.net &bull; September 28, 2025</div></li></a><a class="li" href="https://devblogs.microsoft.com/visualstudio/visual-studio-2026-insiders-is-here/"><li><div class="title">Visual Studio 2026 Insiders is here</div><div class="domain">devblogs.microsoft.com &bull; September 28, 2025</div></li></a><a class="li" href="https://blog.apnic.net/2025/09/16/is-ip-fragmentation-still-considered-vulnerable/"><li><div class="title">Is IP fragmentation still considered vulnerable?</div><div class="domain">blog.apnic.net &bull; September 28, 2025</div></li></a><a class="li" href="https://www.seangoedecke.com/taste/"><li><div class="title">What is "good taste" in software engineering?</div><div class="domain">seangoedecke.com &bull; September 28, 2025</div></li></a><a class="li" href="https://alvarop.com/2025/09/j-link-compact-usb-c-issues/"><li><div class="title">J-Link Compact USB-C Issues</div><div class="domain">alvarop.com &bull; September 28, 2025</div></li></a><a class="li" href="https://www.corsix.org/content/riscv-conditional-moves"><li><div class="title">RISC-V Conditional Moves</div><div class="domain">corsix.org &bull; September 28, 2025</div></li></a><a class="li" href="https://blog.viraptor.info/post/supply-chain-security-for-the-0001-and-why-it-wont-catch-on"><li><div class="title">Supply chain security for the 0.001% (and why it won’t catch on)</div><div class="domain">blog.viraptor.info &bull; September 28, 2025</div></li></a><a class="li" href="https://blog.nommy.moe/blog/exotic-mesh-vpn/"><li><div class="title">Testing "exotic" p2p VPN</div><div class="domain">blog.nommy.moe &bull; September 28, 2025</div></li></a><a class="li" href="https://lobste.rs/s/g9z6o4/death_utilitarian_programming"><li><div class="title">The death of utilitarian programming</div><div class="domain">lobste.rs &bull; September 28, 2025</div></li></a><a class="li" href="https://tasvideos.org/8991S"><li><div class="title">NES Super Mario Bros. "arbitrary code execution"</div><div class="domain">tasvideos.org &bull; September 28, 2025</div></li></a><a class="li" href="https://archaeologist.dev/artifacts/priorities"><li><div class="title">Urgency vs importance</div><div class="domain">archaeologist.dev &bull; September 28, 2025</div></li></a><a class="li" href="https://lobste.rs/s/ijemcw/tag_suggestion_plan9"><li><div class="title">Tag suggestion: plan9</div><div class="domain">lobste.rs &bull; September 28, 2025</div></li></a><a class="li" href="https://nibblestew.blogspot.com/2025/09/in-c-modules-globally-unique-module.html"><li><div class="title">In C++ modules globally unique module names seem to be unavoidable</div><div class="domain">nibblestew.blogspot.com &bull; September 28, 2025</div></li></a><a class="li" href="https://git.lain.faith/iitalics/scm2wasm"><li><div class="title">scm2wasm: A Scheme to WASM compiler in 600 lines of C, making use of WASM GC</div><div class="domain">git.lain.faith &bull; September 28, 2025</div></li></a><a class="li" href="https://blogs.oracle.com/java/post/detaching-graalvm-from-the-java-ecosystem-train"><li><div class="title">Detaching GraalVM from the Java Ecosystem Train</div><div class="domain">blogs.oracle.com &bull; September 28, 2025</div></li></a><a class="li" href="https://giodicanio.com/2025/08/27/linus-torvalds-and-the-supposedly-garbage-code/"><li><div class="title">Linus Torvalds and the Supposedly “Garbage Code”</div><div class="domain">giodicanio.com &bull; September 28, 2025</div></li></a><a class="li" href="https://github.com/DavidVentura/firefox-translator"><li><div class="title">Offline translator for Android</div><div class="domain">github.com &bull; September 28, 2025</div></li></a><a class="li" href="https://justin.searls.co/posts/why-im-not-rushing-to-take-sides-in-the-rubygems-fiasco/"><li><div class="title">Why I'm not rushing to take sides in the RubyGems fiasco</div><div class="domain">justin.searls.co &bull; September 28, 2025</div></li></a><a class="li" href="https://topicpartition.io/definitions/small-data"><li><div class="title">Small Data</div><div class="domain">topicpartition.io &bull; September 28, 2025</div></li></a><a class="li" href="https://andre.arko.net/2025/09/28/stupid-jj-tricks/"><li><div class="title">stupid jj tricks</div><div class="domain">andre.arko.net &bull; September 28, 2025</div></li></a><a class="li" href="https://discourse.nixos.org/t/a-statement-from-members-of-the-moderation-team/69828"><li><div class="title">A statement from members of the NixOS moderation team</div><div class="domain">discourse.nixos.org &bull; September 28, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Letters of Note (news.lettersofnote.com)</h2> (1)</summary><ul><a class="li" href="https://news.lettersofnote.com/p/how-to-turn-down-an-invitation"><li><div class="title">How to turn down an invitation</div><div class="domain">news.lettersofnote.com &bull; September 28, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (22)</summary><ul><a class="li" href="https://hazyresearch.stanford.edu/blog/2025-09-28-tp-llama-main"><li><div class="title">We bought the whole GPU, so we're damn well going to use the whole GPU</div><div class="domain">hazyresearch.stanford.edu &bull; September 28, 2025</div></li></a><a class="li" href="https://www.keshikan.net/fonts-e.html"><li><div class="title">"DSEG": Original 7-segment and 14-segment fonts (2014)</div><div class="domain">keshikan.net &bull; September 28, 2025</div></li></a><a class="li" href="https://andyjakubowski.github.io/statechart-watch/"><li><div class="title">A replica of Citizen Quartz watch based on Harel's paper introducing statecharts</div><div class="domain">andyjakubowski.github.io &bull; September 28, 2025</div></li></a><a class="li" href="https://nanochess.org/ecs_basic.html"><li><div class="title">Coding a new BASIC interpreter in 2025 to replace a slow one</div><div class="domain">nanochess.org &bull; September 28, 2025</div></li></a><a class="li" href="https://gizmodo.com/new-jersey-theme-park-puts-animatronic-dinosaurs-on-facebook-marketplace-as-it-shuts-down-2000664489"><li><div class="title">NJ Theme Park Puts Animatronic Dinosaurs on Facebook Marketplace</div><div class="domain">gizmodo.com &bull; September 28, 2025</div></li></a><a class="li" href="https://sanixdk.xyz/blogs/the-weird-concept-of-branchless-programming"><li><div class="title">The Weird Concept of Branchless Programming</div><div class="domain">sanixdk.xyz &bull; September 28, 2025</div></li></a><a class="li" href="https://petition.parliament.uk/petitions/730194"><li><div class="title">UK Petition: Do not introduce Digital ID cards</div><div class="domain">petition.parliament.uk &bull; September 28, 2025</div></li></a><a class="li" href="https://github.com/jedisct1/c-sigma"><li><div class="title">C-sigma: Easy-to-use Sigma proofs in C using libsodium</div><div class="domain">github.com &bull; September 28, 2025</div></li></a><a class="li" href="https://toolbrew.co/"><li><div class="title">Show HN: Toolbrew – Free little tools without signups or ads</div><div class="domain">toolbrew.co &bull; September 28, 2025</div></li></a><a class="li" href="https://news.ycombinator.com/item?id=45407951"><li><div class="title">Roe (YC W24) Is Hiring</div><div class="domain">news.ycombinator.com &bull; September 28, 2025</div></li></a><a class="li" href="https://virtualize.sh/blog/vmscape-and-why-xen-dodged-it/"><li><div class="title">VMScape and why Xen dodged it</div><div class="domain">virtualize.sh &bull; September 28, 2025</div></li></a><a class="li" href="https://scottaaronson.blog/?p=9183"><li><div class="title">The QMA Singularity</div><div class="domain">scottaaronson.blog &bull; September 28, 2025</div></li></a><a class="li" href="https://humbledollar.com/forum/farewell-friends/"><li><div class="title">Farewell friends</div><div class="domain">humbledollar.com &bull; September 28, 2025</div></li></a><a class="li" href="https://chrisloy.dev/post/2025/09/28/the-ai-coding-trap"><li><div class="title">The AI coding trap</div><div class="domain">chrisloy.dev &bull; September 28, 2025</div></li></a><a class="li" href="https://sites.stat.columbia.edu/gelman/book/BDA3.pdf"><li><div class="title">Bayesian Data Analysis, Third edition (2013) [pdf]</div><div class="domain">sites.stat.columbia.edu &bull; September 28, 2025</div></li></a><a class="li" href="https://academic.oup.com/mbe/article/42/9/msaf189/8245036?login=false"><li><div class="title">Autism may be the price of human intelligence, linked to human brain evolution</div><div class="domain">academic.oup.com &bull; September 28, 2025</div></li></a><a class="li" href="https://spikepuppet.io/posts/write-the-stupid-code/"><li><div class="title">Go ahead, write the “stupid” code</div><div class="domain">spikepuppet.io &bull; September 28, 2025</div></li></a><a class="li" href="https://privacybadger.org/"><li><div class="title">Privacy Badger is a free browser extension made by EFF to stop spying</div><div class="domain">privacybadger.org &bull; September 28, 2025</div></li></a><a class="li" href="https://demian.ferrei.ro/snake/"><li><div class="title">Play snake in the URL address bar</div><div class="domain">demian.ferrei.ro &bull; September 28, 2025</div></li></a><a class="li" href="https://www.theguardian.com/business/2025/sep/27/jaguar-land-rover-plans-to-restart-engine-manufacturing-in-early-october-report-says"><li><div class="title">UK government underwriting £1.5B loan to Jaguar Land Rover after cyber-attack</div><div class="domain">theguardian.com &bull; September 28, 2025</div></li></a><a class="li" href="https://arstechnica.com/gaming/2025/09/reports-ea-set-to-be-sold-to-private-investors-for-up-to-50-billion/"><li><div class="title">Reports: EA set to be sold to private investors for up to $50B</div><div class="domain">arstechnica.com &bull; September 28, 2025</div></li></a><a class="li" href="https://www.tomshardware.com/networking/enthusiasts-bond-twelve-56k-dial-up-modems-together-to-set-dial-up-broadband-records-a-dozen-screeching-boxes-achieve-record-668-kbps-download-speeds"><li><div class="title">Enthusiasts bond twelve 56K modems together to set dial-up record: 668kbps</div><div class="domain">tomshardware.com &bull; September 28, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Seth's Blog (seths.blog)</h2> (1)</summary><ul><a class="li" href="https://seths.blog/2025/09/act-fast/"><li><div class="title">Act now!</div><div class="domain">seths.blog &bull; September 28, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (8)</summary><ul><a class="li" href="https://yourstory.com/2025/09/wework-india-to-launch-rs-3-000-cr-ipo-in-october"><li><div class="title">WeWork India to launch Rs 3,000 Cr IPO on October 3</div><div class="domain">yourstory.com &bull; September 28, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/09/hocco-secures-rs-115-cr-in-funding-at-rs-2-000-cr-sauce-vc"><li><div class="title">Hocco secures Rs 115 Cr in funding at Rs 2,000 Cr valuation led by Sauce.VC</div><div class="domain">yourstory.com &bull; September 28, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/09/kapiva-raises-funds-led-by-360-one-asset-and-vertex-ventures"><li><div class="title">Kapiva raises $60M in Series D round led by 360 ONE Asset and Vertex Growth</div><div class="domain">yourstory.com &bull; September 28, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/09/ai-health-workflow-business-creativity-entrepreneur-education-quiz"><li><div class="title">AI, health, workflow: Test your business creativity with Edition 207 of our weekly quiz!</div><div class="domain">yourstory.com &bull; September 28, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/09/kalakriti-gallery-miniature-art-exhibition-hyderabad-creativity-photography"><li><div class="title">Preserve, reinterpret, promote: Kalakriti Gallery pushes new frontiers of miniature art</div><div class="domain">yourstory.com &bull; September 28, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/09/decoding-the-virat-kohli-brand-appeal-vc-inflows-take-macro-hit"><li><div class="title">Decoding the Virat Kohli brand appeal; VC inflows take a macro hit</div><div class="domain">yourstory.com &bull; September 28, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/09/why-india-must-lead-in-deep-ai-research-google-deepmind-director"><li><div class="title">Why India must lead in deep AI research | Insights from Google DeepMind Director</div><div class="domain">yourstory.com &bull; September 28, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/09/how-to-make-india-a-global-hub-for-clinical-research"><li><div class="title">How to make India a global hub for clinical research</div><div class="domain">yourstory.com &bull; September 28, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">쿠킹하루 Cooking Haru :) (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/yxrv_iQT-O4"><li><div class="title">겉바속촉! 밀가루 반죽 없는! 감자 치즈 도넛!! #potato #donuts #onion</div><div class="domain">youtube.com &bull; September 28, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">UnchartedX (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=8-oPVquUEi4"><li><div class="title">Who Built the Incredible Megalithic Structures of the Ancient City of Cusco? Walk and Talk!</div><div class="domain">youtube.com &bull; September 28, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Tsoding Daily (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=4JpgbdESzIU"><li><div class="title">Stealing ideas from Go</div><div class="domain">youtube.com &bull; September 28, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Sideprojects (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=b2GsWk-MpjY"><li><div class="title">Times Superior Militaries Were Crushed in Battle.</div><div class="domain">youtube.com &bull; September 28, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Megaprojects (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=ybFU5jbhreo"><li><div class="title">How Billions Were Wasted on the Superconducting Super Collider</div><div class="domain">youtube.com &bull; September 28, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">M M F A Mellisai Mannar Fans Association (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=vCW7VNmKO1o"><li><div class="title">51  MELLISAI MANNARGAL ISAIPPAYANAM  FILM PANATHTHOTTAM 1963 JAVVATHU MEDIYITTU TMS PS KAVIGNAR</div><div class="domain">youtube.com &bull; September 28, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Laasya (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=kFd2y8YaLsE"><li><div class="title">Bhairavi Shatakam | Navratri special Kali Dance | Ishanvi Hegde | Guru Dr Asha Nair choreography</div><div class="domain">youtube.com &bull; September 28, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Idhu Namma Stories - Vini & Anandh (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/N2Ei8BlPbM8"><li><div class="title">Avan than ennavan❤️🧿#youtube #shorts #love #husband #smile #couple #explore #viral #trending #fyp</div><div class="domain">youtube.com &bull; September 28, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">GreatScott! (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/S1T1E3AY6cE"><li><div class="title">Is This the Future of all Electric Vehicles? #ev #electric #vehicle #motor #pmsm #electronics</div><div class="domain">youtube.com &bull; September 28, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Dr Ben Miles (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/2ikEsJ8ayvg"><li><div class="title">Engineers Just Built World's Largest Sand Battery</div><div class="domain">youtube.com &bull; September 28, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Artist RamyaSadasivam (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=uAkXwAJmmIs"><li><div class="title">5 reasons will help you decide if grid is the right technique for you | How to draw a face</div><div class="domain">youtube.com &bull; September 28, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Adrian Bliss (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/4KUZwVv8u10"><li><div class="title">Advice from The Big Bad Wolf #comedy</div><div class="domain">youtube.com &bull; September 28, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>

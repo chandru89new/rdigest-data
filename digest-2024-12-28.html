@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2024-12-28</span>:</h1>
+  <p class="summary">There are 82 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Bear Blog Trending Posts (bearblog.dev)</h2> (3)</summary><ul><a class="li" href="https://dabi.bearblog.dev/write-what-you-want/"><li><div class="title">Write what you want</div><div class="domain">dabi.bearblog.dev &bull; December 28, 2024</div></li></a><a class="li" href="https://weirdwonder.bearblog.dev/the-garlic-press/"><li><div class="title">In Defense of the Garlic Press</div><div class="domain">weirdwonder.bearblog.dev &bull; December 28, 2024</div></li></a><a class="li" href="https://forkingmad.blog/fediverse-awkward/"><li><div class="title">The Fediverse is awkward</div><div class="domain">forkingmad.blog &bull; December 28, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Big Think (bigthink.com)</h2> (2)</summary><ul><a class="li" href="https://bigthink.com/the-past/typing-consciousness/"><li><div class="title">How typing transformed Nietzsche’s consciousness</div><div class="domain">bigthink.com &bull; December 28, 2024</div></li></a><a class="li" href="https://bigthink.com/the-future/t-minus-kessler-syndrome/"><li><div class="title">T-Minus: Kessler Syndrome</div><div class="domain">bigthink.com &bull; December 28, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (4)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/LDYPF6yfe3f8SPHFT/ai-assistants-should-have-a-direct-line-to-their-developers"><li><div class="title">AI Assistants Should Have a Direct Line to Their Developers</div><div class="domain">lesswrong.com &bull; December 28, 2024</div></li></a><a class="li" href="https://www.lesswrong.com/posts/KFFaKu27FNugCHFmh/by-default-capital-will-matter-more-than-ever-after-agi"><li><div class="title">By default, capital will matter more than ever after AGI</div><div class="domain">lesswrong.com &bull; December 28, 2024</div></li></a><a class="li" href="https://www.lesswrong.com/posts/yfoJe8eiHyLuNzdES/what-is-your-personal-totalizing-and-self-consistent"><li><div class="title">What is your personal totalizing and self-consistent worldview/philosophy?</div><div class="domain">lesswrong.com &bull; December 28, 2024</div></li></a><a class="li" href="https://www.lesswrong.com/posts/s6wew6qerE4XHmbTL/greedy-advantage-aware-rlhf"><li><div class="title">Greedy-Advantage-Aware RLHF</div><div class="domain">lesswrong.com &bull; December 28, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Irrational Exuberance (lethain.com)</h2> (1)</summary><ul><a class="li" href="https://lethain.com/refining-eng-strategy/"><li><div class="title">How to effectively refine engineering strategy.</div><div class="domain">lethain.com &bull; December 28, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (16)</summary><ul><a class="li" href="http://www.righto.com/2024/12/this-die-photo-of-pentium-shows.html"><li><div class="title">Intel's $475 million error: the silicon behind the Pentium division bug</div><div class="domain">righto.com &bull; December 28, 2024</div></li></a><a class="li" href="https://kubuzetto.github.io/posts/go-axum-handlers-pt2/"><li><div class="title">Axum-style Magic Handler Functions in Go, Part 2</div><div class="domain">kubuzetto.github.io &bull; December 28, 2024</div></li></a><a class="li" href="https://www.youtube.com/watch?v=hZyJtRY84P4"><li><div class="title">Allocator-Aware C++ Type Design</div><div class="domain">youtube.com &bull; December 28, 2024</div></li></a><a class="li" href="https://www.screamingatmyscreen.com/django-in-2024/"><li><div class="title">Django in 2024</div><div class="domain">screamingatmyscreen.com &bull; December 28, 2024</div></li></a><a class="li" href="https://pixel-druid.com/articles/stuff-i-learnt-in-2024"><li><div class="title">Stuff I learnt in 2024</div><div class="domain">pixel-druid.com &bull; December 28, 2024</div></li></a><a class="li" href="http://www.righto.com/2024/12/this-die-photo-of-pentium-shows.html?m=1"><li><div class="title">Intel's $475 million error: the silicon behind the Pentium division bug</div><div class="domain">righto.com &bull; December 28, 2024</div></li></a><a class="li" href="https://it-notes.dragas.net/2024/12/28/i-almost-died-for-a-full-sentry-database/"><li><div class="title">I Almost Died for a Full Sentry Database</div><div class="domain">it-notes.dragas.net &bull; December 28, 2024</div></li></a><a class="li" href="https://fishshell.com/blog/rustport/"><li><div class="title">Fish 4.0: The Fish Of Theseus</div><div class="domain">fishshell.com &bull; December 28, 2024</div></li></a><a class="li" href="https://arstechnica.com/tech-policy/2024/12/from-ai-to-rto-unpopular-policies-may-fuel-tech-worker-movements-in-2025/"><li><div class="title">Tech worker movements grow as threats of RTO, AI loom</div><div class="domain">arstechnica.com &bull; December 28, 2024</div></li></a><a class="li" href="https://lpil.uk/blog/how-to-add-metaprogramming-to-gleam/"><li><div class="title">How to add metaprogramming to Gleam</div><div class="domain">lpil.uk &bull; December 28, 2024</div></li></a><a class="li" href="https://databasearchitects.blogspot.com/2024/12/advent-of-code-2024-in-pure-sql.html"><li><div class="title">Advent of Code 2024 in pure SQL</div><div class="domain">databasearchitects.blogspot.com &bull; December 28, 2024</div></li></a><a class="li" href="https://www.youtube.com/watch?v=zg8xM0xxFa8"><li><div class="title">James Gosling on Java - Historical Oddities & Persistent Itches</div><div class="domain">youtube.com &bull; December 28, 2024</div></li></a><a class="li" href="https://blog.ktz.me/keeping-secrets-secret-with-git-crypt/"><li><div class="title">Keeping secrets secret with git-crypt</div><div class="domain">blog.ktz.me &bull; December 28, 2024</div></li></a><a class="li" href="https://blogsystem5.substack.com/p/netbsd-build-system"><li><div class="title">Revisiting the NetBSD build system</div><div class="domain">blogsystem5.substack.com &bull; December 28, 2024</div></li></a><a class="li" href="https://annas-archive.org/blog/all-isbns.html"><li><div class="title">Visualizing All ISBNs — $10k by 2025-01-31</div><div class="domain">annas-archive.org &bull; December 28, 2024</div></li></a><a class="li" href="https://nytpu.com/gemlog/2024-12-27"><li><div class="title">On Ada's Dependent Types, and its Types as a Whole</div><div class="domain">nytpu.com &bull; December 28, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (47)</summary><ul><a class="li" href="https://publicdomainreview.org/collection/celestial-phenomena-16th-century-germany/"><li><div class="title">Celestial Phenomena in 16th-Century Germany</div><div class="domain">publicdomainreview.org &bull; December 28, 2024</div></li></a><a class="li" href="https://kyndinfo.notion.site/Direction-of-the-waves-8d1da5a580614d01af8724c1e698a6e1"><li><div class="title">Direction of the Waves</div><div class="domain">kyndinfo.notion.site &bull; December 28, 2024</div></li></a><a class="li" href="https://arstechnica.com/space/2024/12/blue-origin-hot-fires-new-glenn-rocket-setting-up-a-launch-early-next-year/"><li><div class="title">After a 24-second test of its engines, the New Glenn rocket is ready to fly</div><div class="domain">arstechnica.com &bull; December 28, 2024</div></li></a><a class="li" href="https://handwritten-card.vercel.app/show-hn"><li><div class="title">Show HN: Handwritten Christmas Card for Hacker News</div><div class="domain">handwritten-card.vercel.app &bull; December 28, 2024</div></li></a><a class="li" href="https://jpcamara.com/2024/12/27/peephole-optimizations-adding-optrespondto-to.html"><li><div class="title">Peephole optimizations: adding `opt_respond_to` to the Ruby VM, part 4</div><div class="domain">jpcamara.com &bull; December 28, 2024</div></li></a><a class="li" href="https://www.yahoo.com/news/worlds-largest-3d-printed-neighborhood-060654029.html"><li><div class="title">3D-printed neighborhood nears completion in Texas</div><div class="domain">yahoo.com &bull; December 28, 2024</div></li></a><a class="li" href="https://www.hardbreak.wiki/network-analysis/protocols/application-layer/proprietary-protocols/parrot-anafi-drone-reverse-engineering"><li><div class="title">I Reversed a Drone and Landed It with My PC</div><div class="domain">hardbreak.wiki &bull; December 28, 2024</div></li></a><a class="li" href="https://www.newyorker.com/magazine/2019/09/09/what-statistics-can-and-cant-tell-us-about-ourselves"><li><div class="title">Lies. Damned Lies. P-value thresholds</div><div class="domain">newyorker.com &bull; December 28, 2024</div></li></a><a class="li" href="https://justinpombrio.net/archive/penrose-maze/"><li><div class="title">Penrose Mazes (2020)</div><div class="domain">justinpombrio.net &bull; December 28, 2024</div></li></a><a class="li" href="https://educatedguesswork.org/posts/ensuring-software-provenance/"><li><div class="title">Why it's hard to trust software, but you mostly have to anyway</div><div class="domain">educatedguesswork.org &bull; December 28, 2024</div></li></a><a class="li" href="https://thenewstack.io/what-happens-to-relicensed-open-source-projects-and-their-forks/"><li><div class="title">What Happens to Relicensed Open Source Projects and Their Forks?</div><div class="domain">thenewstack.io &bull; December 28, 2024</div></li></a><a class="li" href="https://www.seyfertgalaxies.com/"><li><div class="title">Seyfert Galaxies</div><div class="domain">seyfertgalaxies.com &bull; December 28, 2024</div></li></a><a class="li" href="https://github.com/jeremyevans/ruby-refrigerator"><li><div class="title">Ruby-refrigerator: Freeze all core Ruby classes</div><div class="domain">github.com &bull; December 28, 2024</div></li></a><a class="li" href="https://dthompson.us/posts/issues-with-object-oriented-programming-in-guile.html"><li><div class="title">Issues with object-oriented programming in Guile</div><div class="domain">dthompson.us &bull; December 28, 2024</div></li></a><a class="li" href="https://www.solipsys.co.uk/ZimExpt/Solsthelion.html"><li><div class="title">Wishing Everyone a Happy Solsthelion</div><div class="domain">solipsys.co.uk &bull; December 28, 2024</div></li></a><a class="li" href="https://acatalepsie.fr/posts/overloading-lambda.html"><li><div class="title">Overloading the lambda abstraction in Haskell (2022)</div><div class="domain">acatalepsie.fr &bull; December 28, 2024</div></li></a><a class="li" href="https://chuckwnelson.com/blog/google-search-results-infested-open-ai-using-google-playbook"><li><div class="title">Google's Results Are Infested, Open AI Is Using Their Playbook from the 2000s</div><div class="domain">chuckwnelson.com &bull; December 28, 2024</div></li></a><a class="li" href="https://www.theguardian.com/us-news/2024/dec/28/openai-whistleblower-suchir-balaji"><li><div class="title">Family of OpenAI whistleblower Suchir Balaji demand FBI investigate death</div><div class="domain">theguardian.com &bull; December 28, 2024</div></li></a><a class="li" href="https://media.ccc.de/v/38c3-blinkencity-radio-controlling-street-lamps-and-power-plants"><li><div class="title">38C3: Blinkencity, radio controlling street lamps and power plants [video]</div><div class="domain">media.ccc.de &bull; December 28, 2024</div></li></a><a class="li" href="https://btiffin.users.sourceforge.net/up/unicon.html"><li><div class="title">The Unicon Programming Language</div><div class="domain">btiffin.users.sourceforge.net &bull; December 28, 2024</div></li></a><a class="li" href="https://imatix-legacy.github.io/libero/index.htm"><li><div class="title">Libero – A Programmer's Tool and Code Generator (1997)</div><div class="domain">imatix-legacy.github.io &bull; December 28, 2024</div></li></a><a class="li" href="https://yosefk.com/blog/my-history-with-forth-stack-machines.html"><li><div class="title">My history with Forth and stack machines (2010)</div><div class="domain">yosefk.com &bull; December 28, 2024</div></li></a><a class="li" href="https://www.france24.com/en/europe/20241228-eu-law-mandating-universal-chargers-for-devices-comes-into-force"><li><div class="title">EU law mandating universal chargers for devices comes into force</div><div class="domain">france24.com &bull; December 28, 2024</div></li></a><a class="li" href="https://jamchamb.net/2018/07/11/animal-crossing-nes-emulator-hacks.html"><li><div class="title">Finding and exploiting hidden features of Animal Crossing's NES emulator</div><div class="domain">jamchamb.net &bull; December 28, 2024</div></li></a><a class="li" href="https://github.com/thiswillbeyourgithub/AnkiAIUtils"><li><div class="title">AnkiAIUtils: Flashcards+AI Illustrations, Explanations, Mnemonics etc. – FOSS</div><div class="domain">github.com &bull; December 28, 2024</div></li></a><a class="li" href="https://lapcatsoftware.com/articles/2024/12/3.html"><li><div class="title">Apple Photos phones home on iOS 18 and macOS 15</div><div class="domain">lapcatsoftware.com &bull; December 28, 2024</div></li></a><a class="li" href="https://www.righto.com/2024/12/this-die-photo-of-pentium-shows.html"><li><div class="title">Intel's $475M error: the silicon behind the Pentium division bug</div><div class="domain">righto.com &bull; December 28, 2024</div></li></a><a class="li" href="https://www.bmj.com/content/387/bmj-2024-081814"><li><div class="title">Dexterity assessment of hospital workers: prospective comparative study</div><div class="domain">bmj.com &bull; December 28, 2024</div></li></a><a class="li" href="https://blog.daviddodda.com/how-i-automated-my-job-application-process-part-1"><li><div class="title">I Automated My Job Application Process</div><div class="domain">blog.daviddodda.com &bull; December 28, 2024</div></li></a><a class="li" href="https://ptrtojoel.dev/posts/so-you-want-to-write-java-in-neovim/"><li><div class="title">So You Want to Write Java in Neovim</div><div class="domain">ptrtojoel.dev &bull; December 28, 2024</div></li></a><a class="li" href="https://www.chronotrains.com/en"><li><div class="title">Where can you go in Europe by train in 8h?</div><div class="domain">chronotrains.com &bull; December 28, 2024</div></li></a><a class="li" href="https://sachachua.com/blog/2024/12/emacsconf-2024-notes/"><li><div class="title">EmacsConf 2024 Notes</div><div class="domain">sachachua.com &bull; December 28, 2024</div></li></a><a class="li" href="https://github.com/SpongePowered/Mixin"><li><div class="title">Mixin is a trait/mixin and bytecode weaving framework for Java using ASM</div><div class="domain">github.com &bull; December 28, 2024</div></li></a><a class="li" href="https://arxiv.org/abs/2404.01332"><li><div class="title">Explaining Large Language Models Decisions Using Shapley Values</div><div class="domain">arxiv.org &bull; December 28, 2024</div></li></a><a class="li" href="https://www.worldofreel.com/blog/2024/12/27/netflix-tells-writers-to-have-characters-announce-what-theyre-doing-just-in-case-viewer-is-busy-doing-something-else"><li><div class="title">Netflix tells writers to have characters "announce what they're doing"</div><div class="domain">worldofreel.com &bull; December 28, 2024</div></li></a><a class="li" href="https://www.digitalmusicnews.com/2024/12/23/billionaire-daniel-ek-shuts-down-spotify-unwrapped-calculator/"><li><div class="title">Spotify Shuts Down 'Unwrapped' Artist Royalty Calculator with Legal Threats</div><div class="domain">digitalmusicnews.com &bull; December 28, 2024</div></li></a><a class="li" href="https://mako.cc/writing/hill-free_tools.html"><li><div class="title">Free Software Needs Free Tools (2010)</div><div class="domain">mako.cc &bull; December 28, 2024</div></li></a><a class="li" href="https://forum.level1techs.com/t/bizarre-pcie-trouble-with-4tb-crucial-t500-nvme-ssd/222915"><li><div class="title">PCIe trouble with 4TB Crucial T500 NVMe SSD for >1 power cycle on MSI PRO X670-P</div><div class="domain">forum.level1techs.com &bull; December 28, 2024</div></li></a><a class="li" href="https://www.theguardian.com/sport/2024/dec/27/chess-carlsen-targets-rapid-and-blitz-gold-on-wall-street-this-weekend"><li><div class="title">Chess: Magnus Carlsen disqualified in N.Y. after refusing to change out of jeans</div><div class="domain">theguardian.com &bull; December 28, 2024</div></li></a><a class="li" href="https://media.ccc.de/v/38c3-libobscura-cameras-are-difficult"><li><div class="title">Libobscura: Cameras Are Difficult [video]</div><div class="domain">media.ccc.de &bull; December 28, 2024</div></li></a><a class="li" href="https://jobs.ashbyhq.com/permitflow?departmentId=d33195eb-8978-4439-abc6-5a8a072de808"><li><div class="title">PermitFlow (YC W22) Is Hiring Senior/Staff Engineers in NYC</div><div class="domain">jobs.ashbyhq.com &bull; December 28, 2024</div></li></a><a class="li" href="https://www.nplusonemag.com/issue-49/essays/casual-viewing/"><li><div class="title">Casual Viewing – Why Netflix looks like that</div><div class="domain">nplusonemag.com &bull; December 28, 2024</div></li></a><a class="li" href="https://www.ams.org/notices/202501/rnoti-p6.pdf"><li><div class="title">Machine-Assisted Proof [pdf]</div><div class="domain">ams.org &bull; December 28, 2024</div></li></a><a class="li" href="https://thechipletter.substack.com/p/the-nvidia-way"><li><div class="title">The Nvidia Way – Review of Tae Kim's New Book</div><div class="domain">thechipletter.substack.com &bull; December 28, 2024</div></li></a><a class="li" href="https://www.timesnownews.com/sports/magnus-carlsen-disqualified-from-world-rapid-and-blitz-championship-for-wearing-jeans-article-116727852"><li><div class="title">Carlsen Disqualified from World Rapid and Blitz Championship for Wearing Jeans</div><div class="domain">timesnownews.com &bull; December 28, 2024</div></li></a><a class="li" href="https://media.ccc.de/v/38c3-liberating-wi-fi-on-the-esp32"><li><div class="title">Liberating Wi-Fi on the ESP32 [video]</div><div class="domain">media.ccc.de &bull; December 28, 2024</div></li></a><a class="li" href="https://mitchellh.com/writing/ghostty-1-0-reflection"><li><div class="title">Ghostty: Reflecting on Reaching 1.0</div><div class="domain">mitchellh.com &bull; December 28, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Seth's Blog (seths.blog)</h2> (1)</summary><ul><a class="li" href="https://seths.blog/2024/12/fiblets/"><li><div class="title">Fiblets</div><div class="domain">seths.blog &bull; December 28, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (7)</summary><ul><a class="li" href="https://yourstory.com/2024/12/year-social-impact-movements-ai-blockchain-shape-2024-tech-policies"><li><div class="title">A year of social impact movements; AI, blockchain shape 2024’s tech policies</div><div class="domain">yourstory.com &bull; December 28, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/12/year-of-reckoning-indian-fintech-startups-rbi-tightens-rules"><li><div class="title">A year of reckoning for Indian fintech startups as RBI tightens the rules</div><div class="domain">yourstory.com &bull; December 28, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/12/paintings-panels-platforms-museum-art-photography-creativity-exhibition"><li><div class="title">Paintings, panels, platforms: Museum of Art and Photography wraps up ‘Art is Life’ festival</div><div class="domain">yourstory.com &bull; December 28, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/12/tech30-surat-startup-vicharak-pioneering-india-hardware-revolution"><li><div class="title">Surat-based Vicharak is pioneering India’s hardware revolution</div><div class="domain">yourstory.com &bull; December 28, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/12/gifting-health-environment-business-creativity-education-entrepreneur-quiz"><li><div class="title">Gifting, health, environment: Test your business creativity with Edition 168 of our weekly quiz!</div><div class="domain">yourstory.com &bull; December 28, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/12/major-tech-startup-policies-2024-ai-space-tech-blockchain"><li><div class="title">Major tech, startup policies of 2024: AI, space tech, blockchain define the year</div><div class="domain">yourstory.com &bull; December 28, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/12/india-art-festival-bengaluru-exhibition-creativity-photography"><li><div class="title">30 galleries, 350 artists: India Art Festival wraps up its fourth Bengaluru edition</div><div class="domain">yourstory.com &bull; December 28, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Chess with Suren (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=guWl_Ab4j5I"><li><div class="title">Magnus Carlsen and the 'Jeans Scandal'</div><div class="domain">youtube.com &bull; December 28, 2024</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>

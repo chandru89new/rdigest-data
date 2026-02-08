@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2024-11-19</span>:</h1>
+  <p class="summary">There are 44 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Bear Blog Trending Posts (bearblog.dev)</h2> (4)</summary><ul><a class="li" href="https://blog.avas.space/repeating-the-cycle/"><li><div class="title">are we repeating the cycle?</div><div class="domain">blog.avas.space &bull; November 19, 2024</div></li></a><a class="li" href="https://louplummer.lol/the-stranger-i-know/"><li><div class="title">The Stranger I Know</div><div class="domain">louplummer.lol &bull; November 19, 2024</div></li></a><a class="li" href="https://mgx.me/abzug-theme-for-bear-blog/"><li><div class="title">"abzug" theme for bear blog</div><div class="domain">mgx.me &bull; November 19, 2024</div></li></a><a class="li" href="https://jakobusbrahms.com/i-love-blogging/"><li><div class="title">I love blogging</div><div class="domain">jakobusbrahms.com &bull; November 19, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Big Think (bigthink.com)</h2> (3)</summary><ul><a class="li" href="https://bigthink.com/the-long-game/why-every-long-term-investor-should-study-ancient-architecture/"><li><div class="title">Why every long-term investor should study ancient architecture</div><div class="domain">bigthink.com &bull; November 19, 2024</div></li></a><a class="li" href="https://bigthink.com/the-present/microplastic-overload-is-cutting-production-the-only-realistic-way-to-curb-pollution/"><li><div class="title">Microplastic overload: Is cutting production the only realistic way to curb pollution?</div><div class="domain">bigthink.com &bull; November 19, 2024</div></li></a><a class="li" href="https://bigthink.com/13-8/the-pre-life-puzzle-tracing-the-rise-of-complexity-in-a-lifeless-world/"><li><div class="title">The pre-life puzzle: Tracing the rise of complexity in a lifeless world</div><div class="domain">bigthink.com &bull; November 19, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Computer Things (buttondown.com)</h2> (1)</summary><ul><a class="li" href="https://buttondown.com/hillelwayne/archive/hyperproperties/"><li><div class="title">Hyperproperties</div><div class="domain">buttondown.com &bull; November 19, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">The Marginalian (feeds.feedburner.com)</h2> (1)</summary><ul><a class="li" href="https://www.themarginalian.org/2024/11/19/john-berger-miners-heroes/"><li><div class="title">The Heroes Among Us: John Berger on the Courage to Create</div><div class="domain">themarginalian.org &bull; November 19, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">kottke.org (feeds.kottke.org)</h2> (11)</summary><ul><a class="li" href="https://kottke.org/24/11/can-a-bike-flip-on-a-train"><li><div class="title">Can A Bike Flip On A Train</div><div class="domain">kottke.org &bull; November 19, 2024</div></li></a><a class="li" href="https://kottke.org/24/11/0045667-on-saturday-more-than-50"><li><div class="title">&#8220;On Saturday, more than 50 Jeremy Allen White lookalikes descended on the...</div><div class="domain">kottke.org &bull; November 19, 2024</div></li></a><a class="li" href="https://kottke.org/24/11/weight-of-the-world"><li><div class="title">Weight of the World</div><div class="domain">kottke.org &bull; November 19, 2024</div></li></a><a class="li" href="https://kottke.org/24/11/how-to-survive-our-authoritarian-post-truth-era"><li><div class="title">How to Survive Our Authoritarian Post-Truth Era</div><div class="domain">kottke.org &bull; November 19, 2024</div></li></a><a class="li" href="https://kottke.org/24/11/0045675-emoji-rain-is-a-visualiza"><li><div class="title">Emoji Rain is a visualization of emoji use on Bluesky. &#8220;Emojis from...</div><div class="domain">kottke.org &bull; November 19, 2024</div></li></a><a class="li" href="https://kottke.org/24/11/0045671-asheville-nc-has-lifted-i"><li><div class="title">Asheville, NC has lifted its boil water notice after 53 days. Hurricane...</div><div class="domain">kottke.org &bull; November 19, 2024</div></li></a><a class="li" href="https://kottke.org/24/11/purple-isnt-real"><li><div class="title">Purple Isn&#8217;t Real</div><div class="domain">kottke.org &bull; November 19, 2024</div></li></a><a class="li" href="https://kottke.org/24/11/0045676-you-still-have-a-couple"><li><div class="title">You still have a couple of days left to back Kelli Anderson&#8217;s...</div><div class="domain">kottke.org &bull; November 19, 2024</div></li></a><a class="li" href="https://kottke.org/24/11/0045668-every-day-people-go-out"><li><div class="title">Every day, people go out and do the kind of stuff you&#8217;ve...</div><div class="domain">kottke.org &bull; November 19, 2024</div></li></a><a class="li" href="https://kottke.org/24/11/0045672-25-years-after-maligned"><li><div class="title">25 years after the much maligned DK Rap premiered to scorn in...</div><div class="domain">kottke.org &bull; November 19, 2024</div></li></a><a class="li" href="https://kottke.org/24/11/doomsday-fish"><li><div class="title">Doomsday Fish</div><div class="domain">kottke.org &bull; November 19, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Go Make Things (gomakethings.com)</h2> (1)</summary><ul><a class="li" href="https://gomakethings.com/combining-light-dom-and-shadow-dom-in-a-web-component/"><li><div class="title">Combining light DOM and shadow DOM in a Web Component</div><div class="domain">gomakethings.com &bull; November 19, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Longreads (longreads.com)</h2> (3)</summary><ul><a class="li" href="https://longreads.com/2024/11/19/your-datas-strange-undersea-voyage/"><li><div class="title">Your Data’s Strange Undersea Voyage</div><div class="domain">longreads.com &bull; November 19, 2024</div></li></a><a class="li" href="https://longreads.com/2024/11/19/letter-to-my-teenage-self-an-incarcerated-man-interrogates-the-person-he-once-was/"><li><div class="title">Letter to My Teenage Self: An Incarcerated Man Interrogates the Person He Once Was</div><div class="domain">longreads.com &bull; November 19, 2024</div></li></a><a class="li" href="https://longreads.com/2024/11/19/gift-thinking/"><li><div class="title">Gift Thinking</div><div class="domain">longreads.com &bull; November 19, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Nautilus (nautil.us)</h2> (2)</summary><ul><a class="li" href="https://nautil.us/the-power-of-small-wonderments-1161221/"><li><div class="title">The Power of Small Wonderments</div><div class="domain">nautil.us &bull; November 19, 2024</div></li></a><a class="li" href="https://nautil.us/the-once-and-future-woods-1161275/"><li><div class="title">The Once and Future Woods</div><div class="domain">nautil.us &bull; November 19, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (14)</summary><ul><a class="li" href="https://slack.engineering/astra-dynamic-chunks-how-we-saved-by-redesigning-a-key-part-of-astra/"><li><div class="title">Astra Dynamic Chunks: How We Saved by Redesigning a Key Part of Astra</div><div class="domain">slack.engineering &bull; November 19, 2024</div></li></a><a class="li" href="https://xiph.org/video/vid2.shtml"><li><div class="title">Digital Show and Tell (2013): Xiph's Monty on Digital Audio</div><div class="domain">xiph.org &bull; November 19, 2024</div></li></a><a class="li" href="https://esolangs.org/wiki/English"><li><div class="title">The English Esoteric Programming Language</div><div class="domain">esolangs.org &bull; November 19, 2024</div></li></a><a class="li" href="https://www.mathsquad.com/calculatorwords.pdf"><li><div class="title">Three hundred words you can spell on a calculator [pdf]</div><div class="domain">mathsquad.com &bull; November 19, 2024</div></li></a><a class="li" href="https://www.nytimes.com/2024/11/15/world/europe/message-in-bottle-lighthouse-scotland.html"><li><div class="title">A 132-Year-Old Message in a Bottle in a Scottish Lighthouse</div><div class="domain">nytimes.com &bull; November 19, 2024</div></li></a><a class="li" href="https://practical.engineering/blog/2024/11/14/which-power-plant-does-my-electricity-come-from"><li><div class="title">Which Power Plant Does My Electricity Come From?</div><div class="domain">practical.engineering &bull; November 19, 2024</div></li></a><a class="li" href="https://johncarlosbaez.wordpress.com/2015/08/11/the-physics-of-butterfly-wings/"><li><div class="title">The Physics of Butterfly Wings</div><div class="domain">johncarlosbaez.wordpress.com &bull; November 19, 2024</div></li></a><a class="li" href="https://www.nature.com/articles/d41586-024-03756-w"><li><div class="title">A silly science prize changed my career</div><div class="domain">nature.com &bull; November 19, 2024</div></li></a><a class="li" href="https://www.verbeeld.be/2024/11/17/using-gps-in-the-year-1565/"><li><div class="title">Using GPS in the Year 1565</div><div class="domain">verbeeld.be &bull; November 19, 2024</div></li></a><a class="li" href="https://jennyjams.net/blog/cpp-mixin/"><li><div class="title">A C++ Mixin System</div><div class="domain">jennyjams.net &bull; November 19, 2024</div></li></a><a class="li" href="https://arthur-johnston.com/tuesday_to_tuesday/"><li><div class="title">Oncall shift should be Tuesday to Tuesday</div><div class="domain">arthur-johnston.com &bull; November 19, 2024</div></li></a><a class="li" href="https://rachit.pl/post/you-have-built-a-compiler/"><li><div class="title">Dear sir, you have built a compiler (2022)</div><div class="domain">rachit.pl &bull; November 19, 2024</div></li></a><a class="li" href="https://www.polarsignals.com/blog/posts/2024/11/13/lua-unwinding"><li><div class="title">A Walk with LuaJIT</div><div class="domain">polarsignals.com &bull; November 19, 2024</div></li></a><a class="li" href="https://blog.yossarian.net/2023/06/27/Software-defined-Internet-radio-with-Liquidsoap"><li><div class="title">Software-defined (Internet) radio with Liquidsoap (2023)</div><div class="domain">blog.yossarian.net &bull; November 19, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">The Pudding (pudding.cool)</h2> (1)</summary><ul><a class="li" href="https://pudding.cool/2024/11/sitters-standers"><li><div class="title">Sitters and Standers</div><div class="domain">pudding.cool &bull; November 19, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Reasons to be Cheerful (reasonstobecheerful.world)</h2> (1)</summary><ul><a class="li" href="https://reasonstobecheerful.world/in-india-good-health-starts-in-the-soil/"><li><div class="title">In India, Good Health Starts in the Soil</div><div class="domain">reasonstobecheerful.world &bull; November 19, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Seth's Blog (seths.blog)</h2> (1)</summary><ul><a class="li" href="https://seths.blog/2024/11/i-changed-my-mind/"><li><div class="title">“I changed my mind”</div><div class="domain">seths.blog &bull; November 19, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Trevor I. Lasn Thoughts (trevorlasn.com)</h2> (1)</summary><ul><a class="li" href="https://www.trevorlasn.com/blog/corepack-nodejs"><li><div class="title">Node.js Corepack: Version Control for Package Managers</div><div class="domain">trevorlasn.com &bull; November 19, 2024</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>

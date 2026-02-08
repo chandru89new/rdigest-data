@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-02-15</span>:</h1>
+  <p class="summary">There are 74 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Big Think (bigthink.com)</h2> (2)</summary><ul><a class="li" href="https://bigthink.com/starts-with-a-bang/starts-with-a-bang-podcast-114-pluto-and-charon/"><li><div class="title">Starts With A Bang podcast #114 – Pluto and Charon</div><div class="domain">bigthink.com &bull; February 15, 2025</div></li></a><a class="li" href="https://bigthink.com/the-past/how-early-human-brains-expanded-over-time/"><li><div class="title">How early human brains expanded over time</div><div class="domain">bigthink.com &bull; February 15, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">kottke.org (feeds.kottke.org)</h2> (3)</summary><ul><a class="li" href="https://kottke.org/25/02/0046234-new-evidence-suggests-hum"><li><div class="title">New Evidence Suggests Humans Developed Written Language To Avoid Breaking Up In...</div><div class="domain">kottke.org &bull; February 15, 2025</div></li></a><a class="li" href="https://kottke.org/25/02/0046230-cool-thing-that-i-did"><li><div class="title">Cool thing that I did not notice about The Wild Robot: at...</div><div class="domain">kottke.org &bull; February 15, 2025</div></li></a><a class="li" href="https://kottke.org/25/02/0046233-the-evolution-of-electron"><li><div class="title">The Evolution of Electronic Music (1929-2019). Interesting that it took so long...</div><div class="domain">kottke.org &bull; February 15, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (19)</summary><ul><a class="li" href="https://www.taichi-lang.org/"><li><div class="title">Taichi: High-performance Parallel Programming in Python</div><div class="domain">taichi-lang.org &bull; February 15, 2025</div></li></a><a class="li" href="https://blog.muni.town/roomy-deep-dive/"><li><div class="title">Roomy Deep Dive: ATProto + Automerge</div><div class="domain">blog.muni.town &bull; February 15, 2025</div></li></a><a class="li" href="https://www.thesalmons.org/john/random123/papers/random123sc11.pdf"><li><div class="title">Parallel Random Numbers: As Easy as 1, 2, 3</div><div class="domain">thesalmons.org &bull; February 15, 2025</div></li></a><a class="li" href="https://webkit.org/blog/16458/announcing-interop-2025/"><li><div class="title">Announcing Interop 2025</div><div class="domain">webkit.org &bull; February 15, 2025</div></li></a><a class="li" href="https://blog.jgc.org/2024/09/cracking-old-zip-file-to-help-open.html"><li><div class="title">Cracking an old ZIP file to help open source the ANC's "Operation Vula" secret crypto code</div><div class="domain">blog.jgc.org &bull; February 15, 2025</div></li></a><a class="li" href="https://operations.osmfoundation.org/2025/02/15/post-mortem.html"><li><div class="title">Post-Mortem - Network Outage Affecting OpenStreetMap.org - 15 December 2024</div><div class="domain">operations.osmfoundation.org &bull; February 15, 2025</div></li></a><a class="li" href="https://github.com/facundoolano/news.olano.dev"><li><div class="title">A transient feed aggregator built with Gleam</div><div class="domain">github.com &bull; February 15, 2025</div></li></a><a class="li" href="https://en.wikipedia.org/wiki/Gemini_(protocol)"><li><div class="title">Gemini (protocol)</div><div class="domain">en.wikipedia.org &bull; February 15, 2025</div></li></a><a class="li" href="https://blog.sshh.io/p/how-to-backdoor-large-language-models"><li><div class="title">How to Backdoor Large Language Models</div><div class="domain">blog.sshh.io &bull; February 15, 2025</div></li></a><a class="li" href="https://www.cs.otago.ac.nz/cosc345/resources/nasa-10-rules.htm"><li><div class="title">NASA has a list of 10 rules for software development</div><div class="domain">cs.otago.ac.nz &bull; February 15, 2025</div></li></a><a class="li" href="https://github.com/bigskysoftware/fixi"><li><div class="title">fixi.js - minimal general hypermedia controls</div><div class="domain">github.com &bull; February 15, 2025</div></li></a><a class="li" href="https://simonwillison.net/2025/Feb/15/llm-mlx/"><li><div class="title">Run LLMs on macOS using llm-mlx and Apple’s MLX framework</div><div class="domain">simonwillison.net &bull; February 15, 2025</div></li></a><a class="li" href="https://arstechnica.com/gaming/2025/02/the-diablo-hackers-that-debunked-a-record-speedrun/"><li><div class="title">How Diablo hackers uncovered a speedrun scandal</div><div class="domain">arstechnica.com &bull; February 15, 2025</div></li></a><a class="li" href="https://chaos.social/@hexa/114009069746212598"><li><div class="title">Devenv telemetry warning</div><div class="domain">chaos.social &bull; February 15, 2025</div></li></a><a class="li" href="https://www.subnetspider.com/2025/01/22/building-a-fault-tolerant-reverse-proxy-with-freebsd.html"><li><div class="title">Building a fault-tolerant reverse proxy with FreeBSD</div><div class="domain">subnetspider.com &bull; February 15, 2025</div></li></a><a class="li" href="https://git-repo.info/en/2020/03/agit-flow-and-git-repo/"><li><div class="title">Agit-Flow and git-repo</div><div class="domain">git-repo.info &bull; February 15, 2025</div></li></a><a class="li" href="https://int10h.org/blog/2015/08/8088-mph-final-old-vs-new-cga-gory-details/"><li><div class="title">8088 MPH Final: Old vs. New CGA (and Other Gory Details) (2015)</div><div class="domain">int10h.org &bull; February 15, 2025</div></li></a><a class="li" href="https://rivet.gg/blog/2025-02-16-sqlite-on-the-server-is-misunderstood"><li><div class="title">SQLite-on-the-Server Is Misunderstood: Better At Hyper-Scale Than Micro-Scale</div><div class="domain">rivet.gg &bull; February 15, 2025</div></li></a><a class="li" href="https://aresluna.org/the-hardest-working-font-in-manhattan/"><li><div class="title">The hardest working font in Manhattan</div><div class="domain">aresluna.org &bull; February 15, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (33)</summary><ul><a class="li" href="https://github.com/yolhan83/BloodFlowTrixi.jl"><li><div class="title">Bloodflowtrixi.jl – 1D and 2D blood flow models for arterial circulation</div><div class="domain">github.com &bull; February 15, 2025</div></li></a><a class="li" href="https://phys.org/news/2025-01-complex-human-cell-lines-reveals.html"><li><div class="title">Engineering of human cells reveals genome's resilience to structural changes</div><div class="domain">phys.org &bull; February 15, 2025</div></li></a><a class="li" href="https://gyptazy.com/howto-kleene-as-a-container-management-platform-for-freebsd/"><li><div class="title">Kleene as a Container Management Platform for FreeBSD</div><div class="domain">gyptazy.com &bull; February 15, 2025</div></li></a><a class="li" href="https://pubby.games/sisyphus.html"><li><div class="title">Little Sisyphus A physics-based platformer for the NES</div><div class="domain">pubby.games &bull; February 15, 2025</div></li></a><a class="li" href="https://github.com/vnglst/when-ai-fails/tree/main/playing-set"><li><div class="title">Are LLMs able to play the card game Set?</div><div class="domain">github.com &bull; February 15, 2025</div></li></a><a class="li" href="https://tristanrhodes.com/blog/The-Joy-of-Nand2Tetris"><li><div class="title">The Joy of Nand2Tetris</div><div class="domain">tristanrhodes.com &bull; February 15, 2025</div></li></a><a class="li" href="https://phys.org/news/2025-02-tweezers-technique-generates-topological-gravity.html"><li><div class="title">New technique generates topological structures with gravity water waves</div><div class="domain">phys.org &bull; February 15, 2025</div></li></a><a class="li" href="https://www.sfgate.com/sports/article/sf-thought-built-stadium-future-fog-ewing-field-20051971.php"><li><div class="title">The San Francisco stadium that fog killed</div><div class="domain">sfgate.com &bull; February 15, 2025</div></li></a><a class="li" href="https://sfstandard.com/2025/02/14/san-francisco-department-public-health-daniel-tsai-opioids-mckinsey/"><li><div class="title">New SF public health chief was part of McKinsey opioid-marketing operation</div><div class="domain">sfstandard.com &bull; February 15, 2025</div></li></a><a class="li" href="https://newatlas.com/brain/alzheimers-dementia/alzheimers-biomarkers-visible-decade-before-symptoms/"><li><div class="title">Alzheimer's biomarkers now visible up to a decade ahead of symptoms</div><div class="domain">newatlas.com &bull; February 15, 2025</div></li></a><a class="li" href="https://linkedrecords.com/the-big-tdd-misunderstanding-8e22c2f1fc21"><li><div class="title">The Big TDD Misunderstanding (2022)</div><div class="domain">linkedrecords.com &bull; February 15, 2025</div></li></a><a class="li" href="https://www.volexity.com/blog/2025/02/13/multiple-russian-threat-actors-targeting-microsoft-device-code-authentication/"><li><div class="title">Multiple Russian Threat Actors Targeting Microsoft Device Code Authentication</div><div class="domain">volexity.com &bull; February 15, 2025</div></li></a><a class="li" href="https://nabraj.com/blog/basketball-solved-sport/"><li><div class="title">Basketball has evolved into a game of calculated decision-making</div><div class="domain">nabraj.com &bull; February 15, 2025</div></li></a><a class="li" href="https://techxplore.com/news/2025-02-carbon-capture-renewables.html"><li><div class="title">Carbon capture more costly than switching to renewables, researchers find</div><div class="domain">techxplore.com &bull; February 15, 2025</div></li></a><a class="li" href="https://github.com/mpatajac/jillc"><li><div class="title">Jill – a functional programming language for the Nand2Tetris platform</div><div class="domain">github.com &bull; February 15, 2025</div></li></a><a class="li" href="https://source-robotics.github.io/PAROL-docs/"><li><div class="title">PAROL6: 3D-printed desktop robotic arm</div><div class="domain">source-robotics.github.io &bull; February 15, 2025</div></li></a><a class="li" href="https://forum.qubes-os.org/t/create-a-gaming-hvm/19000"><li><div class="title">Create a QubesOS Gaming HVM with GPU PCI passthrough (2023)</div><div class="domain">forum.qubes-os.org &bull; February 15, 2025</div></li></a><a class="li" href="https://www.perplexity.ai/hub/blog/introducing-perplexity-deep-research"><li><div class="title">Perplexity Deep Research</div><div class="domain">perplexity.ai &bull; February 15, 2025</div></li></a><a class="li" href="https://h.43z.one/blog/2025-02-12/"><li><div class="title">Watt The Fox?</div><div class="domain">h.43z.one &bull; February 15, 2025</div></li></a><a class="li" href="https://weeks.ginatrapani.org/"><li><div class="title">My Life in Weeks</div><div class="domain">weeks.ginatrapani.org &bull; February 15, 2025</div></li></a><a class="li" href="https://jellyfin.org/"><li><div class="title">Jellyfin: The Free Software Media System</div><div class="domain">jellyfin.org &bull; February 15, 2025</div></li></a><a class="li" href="https://techcrunch.com/2025/02/14/airbnb-ceo-says-its-still-too-early-for-ai-trip-planning/"><li><div class="title">Airbnb CEO says it's still too early for AI trip planning</div><div class="domain">techcrunch.com &bull; February 15, 2025</div></li></a><a class="li" href="https://www.usatoday.com/story/entertainment/books/2025/01/28/bookshop-org-ereader-ebook-app/77928209007/"><li><div class="title">Bookshop.org launches Kindle alternative, sends e-book sales to local bookstores</div><div class="domain">usatoday.com &bull; February 15, 2025</div></li></a><a class="li" href="https://fly.io/blog/semgrep-but-for-real-now/"><li><div class="title">Did Semgrep Just Get a Lot More Interesting?</div><div class="domain">fly.io &bull; February 15, 2025</div></li></a><a class="li" href="https://dk.toastednet.org/Q2DOS/"><li><div class="title">Q2DOS – Quake 2 backported to MS-DOS</div><div class="domain">dk.toastednet.org &bull; February 15, 2025</div></li></a><a class="li" href="https://www.phoronix.com/news/Karol-Herbst-Nouveau-No"><li><div class="title">Karol Herbst Steps Down as Nouveau Maintainer Due to Linux's Toxic Environment</div><div class="domain">phoronix.com &bull; February 15, 2025</div></li></a><a class="li" href="https://github.com/Goldziher/kreuzberg"><li><div class="title">Show HN: Kreuzberg – Modern async Python library for document text extraction</div><div class="domain">github.com &bull; February 15, 2025</div></li></a><a class="li" href="https://www.figgie.com/"><li><div class="title">Jane Street's Figgie card game</div><div class="domain">figgie.com &bull; February 15, 2025</div></li></a><a class="li" href="https://www.wyden.senate.gov/news/press-releases/wyden-releases-draft-bill-to-secure-americans-communications-against-foreign-surveillance-demands"><li><div class="title">Wyden Releases Draft Bill to Secure Americans' Communications</div><div class="domain">wyden.senate.gov &bull; February 15, 2025</div></li></a><a class="li" href="https://www.cbsnews.com/sanfrancisco/news/doge-3-men-show-up-at-sf-city-hall-demand-records/"><li><div class="title">Men claiming to be from DOGE show up at San Francisco City Hall, demand records</div><div class="domain">cbsnews.com &bull; February 15, 2025</div></li></a><a class="li" href="https://theintercept.com/2025/02/14/irs-ai-nvidia-tax/"><li><div class="title">The IRS Is Buying an AI Supercomputer from Nvidia</div><div class="domain">theintercept.com &bull; February 15, 2025</div></li></a><a class="li" href="https://foodishealth.substack.com/p/breaking-executive-order-for-maha"><li><div class="title">Executive Order for MAHA Commission</div><div class="domain">foodishealth.substack.com &bull; February 15, 2025</div></li></a><a class="li" href="https://www.tindie.com/products/cycle/msxbook-onechipmsx-msx2-computer/"><li><div class="title">Msxbook OneChipMSX MSX2 Computer</div><div class="domain">tindie.com &bull; February 15, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Seth's Blog (seths.blog)</h2> (1)</summary><ul><a class="li" href="https://seths.blog/2025/02/ensemble-stars/"><li><div class="title">Ensemble stars</div><div class="domain">seths.blog &bull; February 15, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Trevor I. Lasn Thoughts (trevorlasn.com)</h2> (1)</summary><ul><a class="li" href="https://www.trevorlasn.com/blog/advice-to-new-engineering-managers"><li><div class="title">Advice to New Engineering Managers</div><div class="domain">trevorlasn.com &bull; February 15, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Sympolymathesy, by Chris Krycho (v5.chriskrycho.com)</h2> (2)</summary><ul><a class="li" href="https://v5.chriskrycho.com/journal/how-progress-feels/"><li><div class="title">[journal] How Progress Feels</div><div class="domain">v5.chriskrycho.com &bull; February 15, 2025</div></li></a><a class="li" href="https://v5.chriskrycho.com/notes/indurate/"><li><div class="title">[notes] Indurate</div><div class="domain">v5.chriskrycho.com &bull; February 15, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (11)</summary><ul><a class="li" href="https://yourstory.com/2025/02/india-among-key-markets-for-metas-50000-km-undersea-cable-project-waterworth"><li><div class="title">India among key markets for Meta’s 50,000 km undersea cable Project Waterworth</div><div class="domain">yourstory.com &bull; February 15, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/02/surveillance-video-intelligence-fostering-next-generation-soonicorns"><li><div class="title">From surveillance to video intelligence; Fostering the next generation of soonicorns</div><div class="domain">yourstory.com &bull; February 15, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/02/rapido-launch-pink-rapido-bikes-karnataka-25000-jobs-women"><li><div class="title">Rapido to launch 'Pink Rapido' bikes in Karnataka, creating 25,000 jobs for women</div><div class="domain">yourstory.com &bull; February 15, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/02/cycle-diaries-exhibition-museum-goa-creativity-photography"><li><div class="title">‘Cycle Diaries’ exhibition explores the role of bicycles in India and Netherlands</div><div class="domain">yourstory.com &bull; February 15, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/02/modi-trump-dialogue-india-us-collaboration-emerging-technologies"><li><div class="title">Modi-Trump dialogue explores India-US collaboration in emerging technologies</div><div class="domain">yourstory.com &bull; February 15, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/02/it-ministry-extends-deadline-data-protection-rule-feedback-march-5"><li><div class="title">IT Ministry extends deadline for data protection rule feedback to March 5</div><div class="domain">yourstory.com &bull; February 15, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/02/navigating-family-offices-balancing-public-and-private-investments"><li><div class="title">Navigating family offices: Balancing public and private investments</div><div class="domain">yourstory.com &bull; February 15, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/01/grigori-perelman-mathematical-genius"><li><div class="title">Grigori Perelman: The mathematician who refused a million dollars</div><div class="domain">yourstory.com &bull; February 15, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/02/brain-rot-signs-causes-prevention"><li><div class="title">Feeling mentally drained? You might have brain rot</div><div class="domain">yourstory.com &bull; February 15, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/02/ai-critical-thinking-decline"><li><div class="title">Is AI making us dumber? This Microsoft study thinks so</div><div class="domain">yourstory.com &bull; February 15, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/02/elliott-hill-nike-intern-journey-ceo"><li><div class="title">Elliott Hill: From company intern to Nike CEO in 36 years</div><div class="domain">yourstory.com &bull; February 15, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Let's Game It Out (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=QhChwIOdIRQ"><li><div class="title">Became a Streamer, Made $21,169,810 in 48 Hours in Streamer Life Simulator 2</div><div class="domain">youtube.com &bull; February 15, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">History of the Universe (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=qS7tt_9P1k8"><li><div class="title">What Is The Universe Expanding Into?</div><div class="domain">youtube.com &bull; February 15, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>

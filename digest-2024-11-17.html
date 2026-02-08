@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2024-11-17</span>:</h1>
+  <p class="summary">There are 18 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Bear Blog Trending Posts (bearblog.dev)</h2> (4)</summary><ul><a class="li" href="https://notes.jeddacp.com/my-moleskine-to-hobonici-notebook-switch/"><li><div class="title">My Moleskine to Hobonici Notebook Switch</div><div class="domain">notes.jeddacp.com &bull; November 17, 2024</div></li></a><a class="li" href="https://louplummer.lol/i-m-tired-boss/"><li><div class="title">I'm Tired, Boss</div><div class="domain">louplummer.lol &bull; November 17, 2024</div></li></a><a class="li" href="https://hwisnu.bearblog.dev/ascii-snake-in-c/"><li><div class="title">ASCII snake in C</div><div class="domain">hwisnu.bearblog.dev &bull; November 17, 2024</div></li></a><a class="li" href="https://noat.blog/my-blog-theme-and-my-mini-theme-editing-dev-environment/"><li><div class="title">My blog theme and my mini, theme-editing dev environment</div><div class="domain">noat.blog &bull; November 17, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">The Marginalian (feeds.feedburner.com)</h2> (1)</summary><ul><a class="li" href="https://www.themarginalian.org/2024/11/17/kafka-on-friendship/"><li><div class="title">Kafka on Friendship and the Art of Reconnection</div><div class="domain">themarginalian.org &bull; November 17, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">kottke.org (feeds.kottke.org)</h2> (1)</summary><ul><a class="li" href="https://kottke.org/24/11/downhill-skateboarding"><li><div class="title">Downhill Skateboarding</div><div class="domain">kottke.org &bull; November 17, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (1)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/WxnuLJEtRzqvpbQ7g/neutrality"><li><div class="title">Neutrality</div><div class="domain">lesswrong.com &bull; November 17, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (3)</summary><ul><a class="li" href="https://blog.mbrt.dev/posts/transactional-object-storage/"><li><div class="title">Transactional Object Storage?</div><div class="domain">blog.mbrt.dev &bull; November 17, 2024</div></li></a><a class="li" href="https://www.weatherzone.com.au/news/making-waves-through-the-wallace-line/1890090"><li><div class="title">Making waves through the Wallace Line</div><div class="domain">weatherzone.com.au &bull; November 17, 2024</div></li></a><a class="li" href="https://www.theguardian.com/education/2024/nov/16/oxford-deliveroo-contracts-tutorials-full-time-staff-gig-economy"><li><div class="title">Oxford accused of relying on young academics employed on gig-economy terms</div><div class="domain">theguardian.com &bull; November 17, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">notes.druchan.com — RSS Feed (notes.druchan.com)</h2> (2)</summary><ul><a class="li" href="https://notes.druchan.com/musings-from-another-place-bangkok"><li><div class="title">Musings from another place — Bangkok</div><div class="domain">notes.druchan.com &bull; November 17, 2024</div></li></a><a class="li" href="https://notes.druchan.com/musings-from-another-place"><li><div class="title">Musings from another place</div><div class="domain">notes.druchan.com &bull; November 17, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Seth's Blog (seths.blog)</h2> (1)</summary><ul><a class="li" href="https://seths.blog/2024/11/how-to-buy-a-lottery-ticket/"><li><div class="title">How to buy a lottery ticket</div><div class="domain">seths.blog &bull; November 17, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Trevor I. Lasn Thoughts (trevorlasn.com)</h2> (2)</summary><ul><a class="li" href="https://www.trevorlasn.com/blog/sets-and-maps-in-javascript"><li><div class="title">JavaScript Sets and Maps: Beyond Arrays and Objects</div><div class="domain">trevorlasn.com &bull; November 17, 2024</div></li></a><a class="li" href="https://www.trevorlasn.com/blog/can-open-source-pledge-fix-open-source-sustainability"><li><div class="title">Can OSSPledge Fix Open Source Sustainability?</div><div class="domain">trevorlasn.com &bull; November 17, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">베지이즈 Vege is (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/TSGG2x0nmdE"><li><div class="title">THE BENEFITS OF CARROT</div><div class="domain">youtube.com &bull; November 17, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">This Guy Edits (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=u3R9aYt4EeE"><li><div class="title">Don't EDIT Scenes Without BEATS</div><div class="domain">youtube.com &bull; November 17, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Plip Plip (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=vzYjm3AXbOs"><li><div class="title">Kanguva Roast 🗣️📢 | Plip Plip</div><div class="domain">youtube.com &bull; November 17, 2024</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>

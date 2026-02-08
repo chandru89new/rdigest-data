@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-04-26</span>:</h1>
+  <p class="summary">There are 65 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Bear Blog Trending Posts (bearblog.dev)</h2> (3)</summary><ul><a class="li" href="https://brandons-journal.com/a-fundamental-misunderstanding-of-how-people-work/"><li><div class="title">A Fundamental Misunderstanding of How People Work</div><div class="domain">brandons-journal.com &bull; April 26, 2025</div></li></a><a class="li" href="https://posthuman.blog/bryan-johnson-boner-graph/"><li><div class="title">I Saw Bryan Johnson's Boner Graph. It Ruined Me.</div><div class="domain">posthuman.blog &bull; April 26, 2025</div></li></a><a class="li" href="https://hwisnu.bearblog.dev/mitata-benchmarking-tool/"><li><div class="title">Mitata - a beautiful benchmarking tool</div><div class="domain">hwisnu.bearblog.dev &bull; April 26, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Big Think (bigthink.com)</h2> (1)</summary><ul><a class="li" href="https://bigthink.com/mini-philosophy/gibsons-law-hard-trust-experts/"><li><div class="title">How “Gibson’s law” makes it hard to trust experts</div><div class="domain">bigthink.com &bull; April 26, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">kottke.org (feeds.kottke.org)</h2> (1)</summary><ul><a class="li" href="https://kottke.org/25/04/0046718-this-five-hundred-word-bu"><li><div class="title">This Five-Hundred-Word Bumper Sticker on My Tesla Explains Why I&#8217;m Not a...</div><div class="domain">kottke.org &bull; April 26, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (2)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/sHXGRTTs4SrceEnoG/worries-about-ai-are-usually-complements-not-substitutes"><li><div class="title">Worries About AI Are Usually Complements Not Substitutes</div><div class="domain">lesswrong.com &bull; April 26, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/W3KfxjbqBAnifBQoi/we-should-try-to-automate-ai-safety-work-asap"><li><div class="title">We should try to automate AI safety work asap</div><div class="domain">lesswrong.com &bull; April 26, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (16)</summary><ul><a class="li" href="https://beyondloom.com/blog/slicedice.html"><li><div class="title">K Slices, K Dices</div><div class="domain">beyondloom.com &bull; April 26, 2025</div></li></a><a class="li" href="https://popovicu.com/posts/bare-metal-printf/"><li><div class="title">Bare metal printf - C standard library without OS</div><div class="domain">popovicu.com &bull; April 26, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=8QNNCr8WfDM"><li><div class="title">DataFusion - The Database Building Toolkit</div><div class="domain">youtube.com &bull; April 26, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=EwpFdMJlVP4"><li><div class="title">Implementing Silent Hill's Fog in My (Real) PS1 Game</div><div class="domain">youtube.com &bull; April 26, 2025</div></li></a><a class="li" href="https://quuxplusone.github.io/blog/2018/12/06/dont-use-weverything/"><li><div class="title">Don’t put -Weverything in your build flags (2018)</div><div class="domain">quuxplusone.github.io &bull; April 26, 2025</div></li></a><a class="li" href="https://bugs.ruby-lang.org/issues/16131"><li><div class="title">Ruby Feature #16131: Remove $SAFE, taint and trust (2019)</div><div class="domain">bugs.ruby-lang.org &bull; April 26, 2025</div></li></a><a class="li" href="https://dolthub.com/blog/2025-04-25-sql-engine-anatomy/"><li><div class="title">Anatomy Of A SQL Engine</div><div class="domain">dolthub.com &bull; April 26, 2025</div></li></a><a class="li" href="https://xpqz.github.io/cultivations/Intro.html"><li><div class="title">APL Cultivations</div><div class="domain">xpqz.github.io &bull; April 26, 2025</div></li></a><a class="li" href="https://softwaredoug.com/blog/2025/04/26/stop-overbuilding-evals"><li><div class="title">Stop overbuilding evals</div><div class="domain">softwaredoug.com &bull; April 26, 2025</div></li></a><a class="li" href="https://smallweb.run/"><li><div class="title">Smallweb – Your Internet Folder</div><div class="domain">smallweb.run &bull; April 26, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=YcUycQoz0zg"><li><div class="title">How We Diagnosed and Fixed the 2023 Voyager 1 Anomaly from 15 Billion Miles Away</div><div class="domain">youtube.com &bull; April 26, 2025</div></li></a><a class="li" href="https://www.complete.org/nncp/"><li><div class="title">NNCP: Encrypted, authenticated, onion-routed version of UUCP</div><div class="domain">complete.org &bull; April 26, 2025</div></li></a><a class="li" href="https://codeberg.org/akselmo/rss2remarkable"><li><div class="title">rss2remarkable - Script to make RSS feeds readable on your reMarkable tablet</div><div class="domain">codeberg.org &bull; April 26, 2025</div></li></a><a class="li" href="https://blog.jez.io/history-of-sorbet-syntax/"><li><div class="title">Past, Present, and Future of Sorbet Type Syntax</div><div class="domain">blog.jez.io &bull; April 26, 2025</div></li></a><a class="li" href="https://jfmengels.net/compiler-reminders"><li><div class="title">Compiler reminders</div><div class="domain">jfmengels.net &bull; April 26, 2025</div></li></a><a class="li" href="https://wanix.sh/"><li><div class="title">Wanix :: Virtual environment kit for the local-first web, inspired by Plan 9</div><div class="domain">wanix.sh &bull; April 26, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (31)</summary><ul><a class="li" href="https://thetruesize.com/"><li><div class="title">The True Size Of</div><div class="domain">thetruesize.com &bull; April 26, 2025</div></li></a><a class="li" href="https://github.com/Fosowl/agenticSeek"><li><div class="title">Show HN: AgenticSeek – Self-hosted alternative to cloud-based AI tools</div><div class="domain">github.com &bull; April 26, 2025</div></li></a><a class="li" href="https://greydanus.github.io/2023/03/05/ncf-tutorial/"><li><div class="title">Finding paths of least action with gradient descent (2023)</div><div class="domain">greydanus.github.io &bull; April 26, 2025</div></li></a><a class="li" href="https://naml.us/post/thank-you-for-holding-my-duck/"><li><div class="title">Thank you for holding my duck (2021)</div><div class="domain">naml.us &bull; April 26, 2025</div></li></a><a class="li" href="https://chtenb.dev/?page=tpsv"><li><div class="title">TPSV, an Alternative to TSV (and CSV)</div><div class="domain">chtenb.dev &bull; April 26, 2025</div></li></a><a class="li" href="https://www.esa.int/ESA_Multimedia/Images/2025/04/Solar_Orbiter_s_widest_high-res_view_of_the_Sun"><li><div class="title">Solar Orbiter's widest high-res view of the Sun</div><div class="domain">esa.int &bull; April 26, 2025</div></li></a><a class="li" href="https://github.com/facebookresearch/MILS"><li><div class="title">LLMs can see and hear without any training</div><div class="domain">github.com &bull; April 26, 2025</div></li></a><a class="li" href="https://mobygratis.com/"><li><div class="title">Mobygratis – Free Moby music to empower your creative projects</div><div class="domain">mobygratis.com &bull; April 26, 2025</div></li></a><a class="li" href="https://www.chemistryworld.com/news/australian-who-ordered-radioactive-materials-over-the-internet-walks-away-from-court/4021306.article"><li><div class="title">Australian who ordered radioactive materials walks away from court</div><div class="domain">chemistryworld.com &bull; April 26, 2025</div></li></a><a class="li" href="https://www.construction-physics.com/p/robot-dexterity-still-seems-hard"><li><div class="title">Robot Dexterity Still Seems Hard</div><div class="domain">construction-physics.com &bull; April 26, 2025</div></li></a><a class="li" href="https://github.com/si14/stuffed-naan-js"><li><div class="title">Stuffed-Na(a)N: stuff your NaNs</div><div class="domain">github.com &bull; April 26, 2025</div></li></a><a class="li" href="https://www.http-feeds.org/"><li><div class="title">HTTP Feeds: a minimal specification for polling events over HTTP</div><div class="domain">http-feeds.org &bull; April 26, 2025</div></li></a><a class="li" href="https://www.happiness.hks.harvard.edu/february-2025-issue/the-friendship-recession-the-lost-art-of-connecting"><li><div class="title">The Friendship Recession: The lost art of connecting</div><div class="domain">happiness.hks.harvard.edu &bull; April 26, 2025</div></li></a><a class="li" href="https://sifeiliu.net/CosAE-page/"><li><div class="title">CosAE: Learnable Fourier Series for Image Restoration</div><div class="domain">sifeiliu.net &bull; April 26, 2025</div></li></a><a class="li" href="https://www.bart.gov/news/fun/anime"><li><div class="title">BART's Anime Mascots</div><div class="domain">bart.gov &bull; April 26, 2025</div></li></a><a class="li" href="https://www.cloudofoz.com/verlet-test/"><li><div class="title">Cloth</div><div class="domain">cloudofoz.com &bull; April 26, 2025</div></li></a><a class="li" href="https://nonstopsystems.com/radio/frank_radio_antenna.htm"><li><div class="title">Slinky-Coil Dipole (2021)</div><div class="domain">nonstopsystems.com &bull; April 26, 2025</div></li></a><a class="li" href="http://ucbvax.berkeley.edu/passing-of-ucbvax.txt"><li><div class="title">The Passing of Ucbvax (1994)</div><div class="domain">ucbvax.berkeley.edu &bull; April 26, 2025</div></li></a><a class="li" href="https://github.com/tilt-dev/tilt"><li><div class="title">Tilt: dev environment as code</div><div class="domain">github.com &bull; April 26, 2025</div></li></a><a class="li" href="https://www.dolthub.com/blog/2025-04-25-sql-engine-anatomy/"><li><div class="title">Anatomy of a SQL Engine</div><div class="domain">dolthub.com &bull; April 26, 2025</div></li></a><a class="li" href="https://yarchive.net/blog/prostate/"><li><div class="title">An end to all this prostate trouble?</div><div class="domain">yarchive.net &bull; April 26, 2025</div></li></a><a class="li" href="https://www.pentadact.com/2018-12-18-dad-and-the-egg-controller/"><li><div class="title">Dad and the Egg Controller (2018)</div><div class="domain">pentadact.com &bull; April 26, 2025</div></li></a><a class="li" href="https://www.pagetable.com/?p=43"><li><div class="title">Bill Gates's Personal Easter Eggs in 8 Bit BASIC (2008)</div><div class="domain">pagetable.com &bull; April 26, 2025</div></li></a><a class="li" href="https://github.com/joexbayer/RetrOS-32"><li><div class="title">Show HN: My self-written hobby OS is finally running on my vintage IBM ThinkPad</div><div class="domain">github.com &bull; April 26, 2025</div></li></a><a class="li" href="https://simonwillison.net/2025/Apr/26/o3-photo-locations/"><li><div class="title">Watching o3 guess a photo's location is surreal, dystopian and entertaining</div><div class="domain">simonwillison.net &bull; April 26, 2025</div></li></a><a class="li" href="https://www.scientificamerican.com/article/lofty-math-problem-called-hilberts-sixth-closer-to-being-solved/"><li><div class="title">Mathematicians just solved a 125-year-old problem, uniting 3 theories in physics</div><div class="domain">scientificamerican.com &bull; April 26, 2025</div></li></a><a class="li" href="https://newatlas.com/computers/smartphone-listening-conversations-ads-facebook/"><li><div class="title">Your phone isn't secretly listening to you, but the truth is more disturbing</div><div class="domain">newatlas.com &bull; April 26, 2025</div></li></a><a class="li" href="https://pubs.aeaweb.org/doi/pdfplus/10.1257/aer.20131408"><li><div class="title">Bankruptcy as Implicit Health Insurance</div><div class="domain">pubs.aeaweb.org &bull; April 26, 2025</div></li></a><a class="li" href="https://www.doliver.org/articles/rss-as-a-skill"><li><div class="title">Reading RSS content is a skilled activity</div><div class="domain">doliver.org &bull; April 26, 2025</div></li></a><a class="li" href="https://lite.berkeley-humanoid.org/"><li><div class="title">Berkeley Humanoid Lite – open-source robot</div><div class="domain">lite.berkeley-humanoid.org &bull; April 26, 2025</div></li></a><a class="li" href="https://samj.substack.com/p/that-joke-isnt-funny-any-more"><li><div class="title">I wrote a book called "Crap Towns". It seemed funny at the time</div><div class="domain">samj.substack.com &bull; April 26, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Seth's Blog (seths.blog)</h2> (1)</summary><ul><a class="li" href="https://seths.blog/2025/04/a-powerful-story/"><li><div class="title">A powerful story</div><div class="domain">seths.blog &bull; April 26, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (10)</summary><ul><a class="li" href="https://yourstory.com/2025/04/ireda-gensol-promoters-diluted-equity-without-lender-approval-eow-complaint"><li><div class="title">IREDA says Gensol promoters diluted equity without lender approval, files EoW complaint</div><div class="domain">yourstory.com &bull; April 26, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/04/rise-of-saas-20-why-ai-first-platforms-are-the-future-vertical-saas"><li><div class="title">Rise of SaaS 2.0: Why AI-first platforms are the future</div><div class="domain">yourstory.com &bull; April 26, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/04/meity-back-four-startups-rs-10-000-crore-indiaai-mission"><li><div class="title">MeitY to back four startups under Rs 10,000 Cr IndiaAI Mission: Report</div><div class="domain">yourstory.com &bull; April 26, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/04/ather-energy-raises-rs-1-340-cr-anchor-investors-ipo"><li><div class="title">Ather Energy raises Rs 1,340 Cr from anchor investors ahead of IPO</div><div class="domain">yourstory.com &bull; April 26, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/04/battery-transition-ebitda-margins-ather-ipo-profitability"><li><div class="title">Battery transition, better EBITDA margins: Ather lays out path to profitability ahead of IPO</div><div class="domain">yourstory.com &bull; April 26, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/04/hei-schools-gurugram-bringing-best-international-curriculum"><li><div class="title">HEI Schools Gurugram: Bringing the best international curriculum for India's young minds</div><div class="domain">yourstory.com &bull; April 26, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/04/india-taps-sarvam-build-sovereign-large-languag"><li><div class="title">India taps Sarvam to build sovereign large language model</div><div class="domain">yourstory.com &bull; April 26, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/04/cars24-lays-off-nearly-250-employees-organisational-restructuring"><li><div class="title">Cars24 lays off nearly 200 employees amid organisational restructuring</div><div class="domain">yourstory.com &bull; April 26, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/04/powering-indias-deeptech-ecosystem-"><li><div class="title">Powering India’s deeptech ecosystem; Menstrual equity in India</div><div class="domain">yourstory.com &bull; April 26, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/04/art-creativity-artist-failure-lessons-chitra-santhe-photography"><li><div class="title">How artists learn from failure–perspectives and tips from five creators</div><div class="domain">yourstory.com &bull; April 26, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>

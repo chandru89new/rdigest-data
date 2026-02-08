@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-07-11</span>:</h1>
+  <p class="summary">There are 97 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Aeon | a world of ideas (aeon.co)</h2> (1)</summary><ul><a class="li" href="https://aeon.co/essays/what-can-slime-mould-teach-us-about-biological-memory?utm_source=rss-feed"><li><div class="title">Memories without brains</div><div class="domain">aeon.co &bull; July 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">apenwarr (apenwarr.ca)</h2> (1)</summary><ul><a class="li" href="https://apenwarr.ca/log/20250711"><li><div class="title">Billionaire math</div><div class="domain">apenwarr.ca &bull; July 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Bear Blog Trending Posts (bearblog.dev)</h2> (4)</summary><ul><a class="li" href="https://notes.jeddacp.com/teen-angst-the-rules-we-broke/"><li><div class="title">Teen Angst & the Rules We Broke</div><div class="domain">notes.jeddacp.com &bull; July 11, 2025</div></li></a><a class="li" href="https://tala.bearblog.dev/finding-meaning-with-a-friend/"><li><div class="title">finding meaning with a friend</div><div class="domain">tala.bearblog.dev &bull; July 11, 2025</div></li></a><a class="li" href="https://blog.avas.space/events-vs-privacy/"><li><div class="title">events vs. privacy</div><div class="domain">blog.avas.space &bull; July 11, 2025</div></li></a><a class="li" href="https://haraiva.bearblog.dev/an-update-on-things-im-working-on-right-now/"><li><div class="title">an update on things i'm working on right now</div><div class="domain">haraiva.bearblog.dev &bull; July 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Big Think (bigthink.com)</h2> (3)</summary><ul><a class="li" href="https://bigthink.com/starts-with-a-bang/worst-prediction-in-all-of-science/"><li><div class="title">Ask Ethan: Can we fix the worst prediction in all of science?</div><div class="domain">bigthink.com &bull; July 11, 2025</div></li></a><a class="li" href="https://bigthink.com/health/video-games-and-citizen-science-could-help-cure-disease/"><li><div class="title">Gaming cancer: How video games and citizen science could help cure disease</div><div class="domain">bigthink.com &bull; July 11, 2025</div></li></a><a class="li" href="https://bigthink.com/series/full-interview/brian-cox-black-holes/"><li><div class="title">Are black holes the key to unlocking a quantum theory of gravity?</div><div class="domain">bigthink.com &bull; July 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">HBR.org (feeds.harvardbusiness.org)</h2> (3)</summary><ul><a class="li" href="https://hbr.org/2025/07/leading-is-emotionally-draining-heres-how-to-recover"><li><div class="title">Leading Is Emotionally Draining. Here’s How to Recover.</div><div class="domain">hbr.org &bull; July 11, 2025</div></li></a><a class="li" href="https://hbr.org/2025/07/how-to-know-when-to-pursue-your-side-gig-full-time"><li><div class="title">How to Know When to Pursue Your Side Gig Full-Time</div><div class="domain">hbr.org &bull; July 11, 2025</div></li></a><a class="li" href="https://hbr.org/2025/07/why-understanding-ai-doesnt-necessarily-lead-people-to-embrace-it"><li><div class="title">Why Understanding AI Doesn’t Necessarily Lead People to Embrace It</div><div class="domain">hbr.org &bull; July 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">kottke.org (feeds.kottke.org)</h2> (3)</summary><ul><a class="li" href="https://kottke.org/25/07/0047126-mend-is-a-project-based"><li><div class="title">Mend is a project based in Syracuse, NY that publishes the &#8220;creative...</div><div class="domain">kottke.org &bull; July 11, 2025</div></li></a><a class="li" href="https://kottke.org/25/07/0047113-scrappy-is-a-prototype-to"><li><div class="title">Scrappy is a prototype tool for building &#8220;little apps for you and...</div><div class="domain">kottke.org &bull; July 11, 2025</div></li></a><a class="li" href="https://kottke.org/25/07/0047134-maya-rulers-tomb-is-unear"><li><div class="title">Maya Ruler&#8217;s Tomb Is Unearthed in Belize, With Clues to His Ancient...</div><div class="domain">kottke.org &bull; July 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (3)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/aYNYmaKFXT6wHNzoz/linkpost-redwood-research-reading-list"><li><div class="title">Linkpost: Redwood Research reading list</div><div class="domain">lesswrong.com &bull; July 11, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/9eizzh3gtcRvWipq8/measuring-the-impact-of-early-2025-ai-on-experienced-open"><li><div class="title">Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity</div><div class="domain">lesswrong.com &bull; July 11, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/2pkNCvBtK6G6FKoNn/so-you-think-you-ve-awoken-chatgpt"><li><div class="title">So You Think You've Awoken ChatGPT</div><div class="domain">lesswrong.com &bull; July 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (18)</summary><ul><a class="li" href="https://secondthoughts.ai/p/ai-coding-slowdown"><li><div class="title">Not So Fast: AI Coding Tools Can Actually Reduce Productivity</div><div class="domain">secondthoughts.ai &bull; July 11, 2025</div></li></a><a class="li" href="https://ashutoshpg.blogspot.com/2025/07/efficiency-of-sparse-hash-table.html"><li><div class="title">Efficiency of a sparse hash table</div><div class="domain">ashutoshpg.blogspot.com &bull; July 11, 2025</div></li></a><a class="li" href="https://www.sipgate.de/blog/sipgate-discovers-null-pointer-dereference-in-mediatek-volte-stack-firmware"><li><div class="title">sipgate discovers null-pointer-dereference  in Mediatek VoLTE stack firmware</div><div class="domain">sipgate.de &bull; July 11, 2025</div></li></a><a class="li" href="https://omerbenamram.github.io/evtx/"><li><div class="title">EVTX Viewer - Windows Event Log Explorer</div><div class="domain">omerbenamram.github.io &bull; July 11, 2025</div></li></a><a class="li" href="https://daniel.haxx.se/blog/2025/07/11/cybersecurity-risk-assessment-request/"><li><div class="title">Cybersecurity Risk Assessment Request</div><div class="domain">daniel.haxx.se &bull; July 11, 2025</div></li></a><a class="li" href="https://blog.yoshuawuyts.com/placing-functions/"><li><div class="title">Placing functions</div><div class="domain">blog.yoshuawuyts.com &bull; July 11, 2025</div></li></a><a class="li" href="https://lobste.rs/s/dtj5hr/what_are_you_doing_this_weekend"><li><div class="title">What are you doing this weekend?</div><div class="domain">lobste.rs &bull; July 11, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=YPAaUFGrlEE"><li><div class="title">Rethinking our Adoption Strategy</div><div class="domain">youtube.com &bull; July 11, 2025</div></li></a><a class="li" href="https://www.ty-penguin.org.uk/~auj/blog/2025/03/25/fake-jpeg/"><li><div class="title">Faking a JPEG</div><div class="domain">ty-penguin.org.uk &bull; July 11, 2025</div></li></a><a class="li" href="https://halcy.de/blog/2025/02/09/measuring-power-network-frequency-using-junk-you-have-in-your-closet/"><li><div class="title">Measuring power network frequency using junk you have in your closet</div><div class="domain">halcy.de &bull; July 11, 2025</div></li></a><a class="li" href="https://curtispoe.org/blog/rip-mst.html"><li><div class="title">A remembrance of Matthew S. Trout (mst)</div><div class="domain">curtispoe.org &bull; July 11, 2025</div></li></a><a class="li" href="https://blog.evacchi.dev/posts/2025/07/11/wasm-the-hard-way-porting-the-chicory-compiler-to-android/"><li><div class="title">Wasm the Hard Way: Porting the Chicory Compiler to Android</div><div class="domain">blog.evacchi.dev &bull; July 11, 2025</div></li></a><a class="li" href="https://arch.dog/bark/clustered-postgresql"><li><div class="title">Clustered PostgreSQL</div><div class="domain">arch.dog &bull; July 11, 2025</div></li></a><a class="li" href="https://c3-lang.org/blog/forget-borrow-checkers-c3-solved-memory-lifetimes-with-scopes/"><li><div class="title">Forget Borrow Checkers: C3 Solved Memory Lifetimes With Scopes</div><div class="domain">c3-lang.org &bull; July 11, 2025</div></li></a><a class="li" href="https://btxx.org/posts/openbsd-router/"><li><div class="title">Building a Simple Router with OpenBSD</div><div class="domain">btxx.org &bull; July 11, 2025</div></li></a><a class="li" href="https://anubis.techaro.lol/blog/release/v1.20.0/#no-js-challenge"><li><div class="title">Anubis now supports non-JS challenges</div><div class="domain">anubis.techaro.lol &bull; July 11, 2025</div></li></a><a class="li" href="https://jank-lang.org/blog/2025-07-11-jank-is-cpp/"><li><div class="title">jank is C++</div><div class="domain">jank-lang.org &bull; July 11, 2025</div></li></a><a class="li" href="https://jsdate.wtf/"><li><div class="title">new Date("wtf")</div><div class="domain">jsdate.wtf &bull; July 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Longreads (longreads.com)</h2> (3)</summary><ul><a class="li" href="https://longreads.com/2025/07/11/the-top-5-longreads-of-the-week-570/"><li><div class="title">The Top 5 Longreads of the Week</div><div class="domain">longreads.com &bull; July 11, 2025</div></li></a><a class="li" href="https://longreads.com/2025/07/11/cloning-came-to-polo-then-things-got-truly-uncivilized/"><li><div class="title">Cloning Came to Polo. Then Things Got Truly Uncivilized</div><div class="domain">longreads.com &bull; July 11, 2025</div></li></a><a class="li" href="https://longreads.com/2025/07/11/the-river-house-broke-we-rushed-in-the-river/"><li><div class="title">“The River House Broke. We Rushed in the River.”</div><div class="domain">longreads.com &bull; July 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Nautilus (nautil.us)</h2> (2)</summary><ul><a class="li" href="https://nautil.us/behold-these-hidden-galaxies-1223749/"><li><div class="title">Behold These Hidden Galaxies</div><div class="domain">nautil.us &bull; July 11, 2025</div></li></a><a class="li" href="https://nautil.us/is-the-show-finally-over-for-these-whales-and-dolphins-1223809/"><li><div class="title">Is the Show Finally Over for These Whales and Dolphins?</div><div class="domain">nautil.us &bull; July 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Letters of Note (news.lettersofnote.com)</h2> (1)</summary><ul><a class="li" href="https://news.lettersofnote.com/p/diaries-of-note-912"><li><div class="title">Diaries of Note</div><div class="domain">news.lettersofnote.com &bull; July 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (19)</summary><ul><a class="li" href="https://www.eff.org/deeplinks/2025/07/axons-draft-one-designed-defy-transparency"><li><div class="title">Axon’s Draft One is designed to defy transparency</div><div class="domain">eff.org &bull; July 11, 2025</div></li></a><a class="li" href="https://github.com/dsekz/chrome-x-browser-validation-header"><li><div class="title">Chrome's hidden X-Browser-Validation header reverse engineered</div><div class="domain">github.com &bull; July 11, 2025</div></li></a><a class="li" href="https://www.quantamagazine.org/the-biggest-ever-digital-camera-is-this-cosmologists-magnum-opus-20250711/"><li><div class="title">The Biggest-Ever Digital Camera Is This Cosmologist's Magnum Opus</div><div class="domain">quantamagazine.org &bull; July 11, 2025</div></li></a><a class="li" href="https://bentoml.com/llm/"><li><div class="title">LLM Inference Handbook</div><div class="domain">bentoml.com &bull; July 11, 2025</div></li></a><a class="li" href="https://e360.yale.edu/digest/solar-biggest-power-source-europe-june-2025"><li><div class="title">In a First, Solar Was Europe's Biggest Source of Power Last Month</div><div class="domain">e360.yale.edu &bull; July 11, 2025</div></li></a><a class="li" href="https://www.pennlive.com/news/2025/07/pa-house-passes-click-to-cancel-subscription-bills-as-court-throws-out-federal-rule.html"><li><div class="title">Pa. House passes 'click-to-cancel' subscription bills</div><div class="domain">pennlive.com &bull; July 11, 2025</div></li></a><a class="li" href="https://www.nytimes.com/2025/07/10/world/europe/uk-post-office-scandal-report.html"><li><div class="title">At Least 13 People Died by Suicide Amid U.K. Post Office Scandal, Report Says</div><div class="domain">nytimes.com &bull; July 11, 2025</div></li></a><a class="li" href="https://www.npr.org/sections/goats-and-soda/2024/09/23/nx-s1-5011028/detectives-mystery-lead-poisoning-new-york-bangladesh"><li><div class="title">Lead pigment in turmeric is the culprit in a global poisoning mystery (2024)</div><div class="domain">npr.org &bull; July 11, 2025</div></li></a><a class="li" href="https://openpipe.ai/blog/ruler"><li><div class="title">Show HN: RULER – Easily apply RL to any agent</div><div class="domain">openpipe.ai &bull; July 11, 2025</div></li></a><a class="li" href="https://ccrma.stanford.edu/~jos/filters/"><li><div class="title">Introduction to Digital Filters</div><div class="domain">ccrma.stanford.edu &bull; July 11, 2025</div></li></a><a class="li" href="https://www.bleepingcomputer.com/news/security/123456-password-exposed-chats-for-64-million-mcdonalds-job-applicants/"><li><div class="title">'123456' password exposed chats for 64M McDonald's job applicants</div><div class="domain">bleepingcomputer.com &bull; July 11, 2025</div></li></a><a class="li" href="https://christianselig.com/2025/07/repaste-macbook/"><li><div class="title">Repaste Your MacBook</div><div class="domain">christianselig.com &bull; July 11, 2025</div></li></a><a class="li" href="https://www.science.org/content/article/astronomers-race-study-interstellar-interloper"><li><div class="title">Astronomers race to study interstellar interloper</div><div class="domain">science.org &bull; July 11, 2025</div></li></a><a class="li" href="https://patternproject.substack.com/p/from-the-mac-to-the-mystical-bill"><li><div class="title">Bill Atkinson's psychedelic user interface</div><div class="domain">patternproject.substack.com &bull; July 11, 2025</div></li></a><a class="li" href="https://www.jeffgeerling.com/blog/2025/upgrading-m4-pro-mac-minis-storage-half-price"><li><div class="title">Upgrading an M4 Pro Mac mini's storage for half the price</div><div class="domain">jeffgeerling.com &bull; July 11, 2025</div></li></a><a class="li" href="https://bettersoftwareconference.com/"><li><div class="title">A software conference that advocates for quality</div><div class="domain">bettersoftwareconference.com &bull; July 11, 2025</div></li></a><a class="li" href="https://www.bbc.co.uk/news/live/cx20p2x9093t"><li><div class="title">Preliminary report into Air India crash released</div><div class="domain">bbc.co.uk &bull; July 11, 2025</div></li></a><a class="li" href="https://ethz.ch/en/news-and-events/eth-news/news/2025/07/a-language-model-built-for-the-public-good.html"><li><div class="title">ETH Zurich and EPFL to release a LLM developed on public infrastructure</div><div class="domain">ethz.ch &bull; July 11, 2025</div></li></a><a class="li" href="https://www.theverge.com/openai/705999/google-windsurf-ceo-openai"><li><div class="title">OpenAI’s Windsurf deal is off, and Windsurf’s CEO is going to Google</div><div class="domain">theverge.com &bull; July 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Psyche | on the human condition (psyche.co)</h2> (2)</summary><ul><a class="li" href="https://psyche.co/ideas/how-the-nature-of-friendship-has-changed-through-the-centuries?utm_source=rss-feed"><li><div class="title">How the nature of friendship has changed through the centuries</div><div class="domain">psyche.co &bull; July 11, 2025</div></li></a><a class="li" href="https://psyche.co/videos/a-former-office-worker-charts-his-own-path-herding-sheep-high-into-the-pyrenees?utm_source=rss-feed"><li><div class="title">Notes from above the clouds</div><div class="domain">psyche.co &bull; July 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Reasons to be Cheerful (reasonstobecheerful.world)</h2> (1)</summary><ul><a class="li" href="https://reasonstobecheerful.world/homeless-san-diegans-bicycle-rides/"><li><div class="title">Homeless San Diegans Are Bicycling Toward Independence</div><div class="domain">reasonstobecheerful.world &bull; July 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Seth's Blog (seths.blog)</h2> (2)</summary><ul><a class="li" href="https://seths.blog/2025/07/our-spot-in-the-universe/"><li><div class="title">Agency and contribution</div><div class="domain">seths.blog &bull; July 11, 2025</div></li></a><a class="li" href="https://seths.blog/2025/07/the-poetry-machine/"><li><div class="title">The poetry machine</div><div class="domain">seths.blog &bull; July 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Diplomat (thediplomat.com)</h2> (5)</summary><ul><a class="li" href="https://thediplomat.com/2025/07/how-will-new-delhi-navigate-the-dalai-lama-succession-row/"><li><div class="title">How Will New Delhi Navigate the Dalai Lama Succession Row?</div><div class="domain">thediplomat.com &bull; July 11, 2025</div></li></a><a class="li" href="https://thediplomat.com/2025/07/reframing-the-french-indo-pacific-clipperton-frances-indo-pacific-edge/"><li><div class="title">Reframing the French Indo-Pacific: Clipperton, France’s Indo-Pacific Edge</div><div class="domain">thediplomat.com &bull; July 11, 2025</div></li></a><a class="li" href="https://thediplomat.com/2025/07/indonesia-vietnam-and-the-brics-question/"><li><div class="title">Indonesia, Vietnam, and the BRICS Question</div><div class="domain">thediplomat.com &bull; July 11, 2025</div></li></a><a class="li" href="https://thediplomat.com/2025/07/how-beijing-can-turn-washingtons-tariff-spat-with-brasilia-into-strategic-gain/"><li><div class="title">How Beijing Can Turn Washington’s Tariff Spat with Brasília into Strategic Gain</div><div class="domain">thediplomat.com &bull; July 11, 2025</div></li></a><a class="li" href="https://thediplomat.com/2025/07/partners-in-deterrence-china-and-russias-deepening-military-technical-ties/"><li><div class="title">Partners in Deterrence: China and Russia’s Deepening Military-Technical Ties</div><div class="domain">thediplomat.com &bull; July 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Sympolymathesy, by Chris Krycho (v5.chriskrycho.com)</h2> (2)</summary><ul><a class="li" href="https://v5.chriskrycho.com/notes/jj-tip-cool-revsets-and-per-repo-aliases/"><li><div class="title">[notes] jj tip: cool revsets and per-repo aliases</div><div class="domain">v5.chriskrycho.com &bull; July 11, 2025</div></li></a><a class="li" href="https://v5.chriskrycho.com/notes/the-way-we-use-language/"><li><div class="title">[notes] the way we use language</div><div class="domain">v5.chriskrycho.com &bull; July 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (17)</summary><ul><a class="li" href="https://yourstory.com/2025/07/startup-news-and-updates-daily-roundup-july-11-2025"><li><div class="title">Startup news and updates: Daily roundup (July 11, 2025)</div><div class="domain">yourstory.com &bull; July 11, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/ihss-returns-for-2nd-edition-to-spotlight-india"><li><div class="title">IHSS returns for second edition to spotlight India’s growing healthy snacking sector</div><div class="domain">yourstory.com &bull; July 11, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/phool-flowercycling-sustainable-innovation"><li><div class="title">Phool: How Flowercycling Is Revolutionising Waste and Wellness</div><div class="domain">yourstory.com &bull; July 11, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/nvidia-4-trillion-market-cap-ai-chip-boom"><li><div class="title">Nvidia becomes world’s most valuable firm, crosses $4 trillion mark</div><div class="domain">yourstory.com &bull; July 11, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/noccarc-medical-devices-innovation"><li><div class="title">Noccarc: Engineering India’s Future in Critical Care Technology</div><div class="domain">yourstory.com &bull; July 11, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/weekly-funding-roundup-july-5-11-vc-inflow-continues-to-dip"><li><div class="title">[Weekly funding roundup July 5-11] Uncertainity looms large over venture capital</div><div class="domain">yourstory.com &bull; July 11, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/google-ai-day-for-startups-brings-together-150-startups"><li><div class="title">Google AI Day for startups brings together 150+ startups at AIC‑BIMTECH</div><div class="domain">yourstory.com &bull; July 11, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/awfis-expands-into-furniture-business-boost-margins-revenue-peak-xv"><li><div class="title">Awfis expands into furniture business to boost margins, revenue</div><div class="domain">yourstory.com &bull; July 11, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/peak-xv-backed-probo-india-polymarket-like-platform-ed-probe"><li><div class="title">Peak XV-backed Probo, India’s Polymarket-like platform, faces ED probe</div><div class="domain">yourstory.com &bull; July 11, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/uber-shuts-shuttle-services-mumbai-hyderabad"><li><div class="title">Uber shuts down shuttle services in Mumbai, Hyderabad</div><div class="domain">yourstory.com &bull; July 11, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/05/discipline-made-easy"><li><div class="title">Discipline made easy: 7 mental hacks that actually work</div><div class="domain">yourstory.com &bull; July 11, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/three-powerhouses-leadership-journey"><li><div class="title">Tech, trust and tough calls: Inside the leadership journeys of three powerhouses</div><div class="domain">yourstory.com &bull; July 11, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/flipkart-launches-50-million-esop-buyback-eyes-second-liquidity-event-early-2026"><li><div class="title">Flipkart launches $50M ESOP buyback, eyes second liquidity event in early 2026</div><div class="domain">yourstory.com &bull; July 11, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/founder-wants-replace-classroom-teaching-ai-tutoring"><li><div class="title">This founder wants to replace classroom teaching with AI tutoring</div><div class="domain">yourstory.com &bull; July 11, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/04/7-unusual-signs-natural-leadership"><li><div class="title">7 rare signs you’re a leader (even if you don’t know it)</div><div class="domain">yourstory.com &bull; July 11, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/mindset-limits-small-companies-ai-vijay-shekhar-sharma-paytm"><li><div class="title">Mindset, not size, limits small companies; AI is changing that: Paytm's Vijay Shekhar Sharma</div><div class="domain">yourstory.com &bull; July 11, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/shiprocket-shunyaai-sovereign-multimodal-ai-model-msmes"><li><div class="title">Shiprocket launches Shunya.ai, a sovereign multimodal AI model for MSMEs</div><div class="domain">yourstory.com &bull; July 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The House of Tabula (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=ATf0JM7WG7s"><li><div class="title">Queer Art Used to be Beautiful</div><div class="domain">youtube.com &bull; July 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Closer Look (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=vkDRSgo6tdo"><li><div class="title">How To Write Intelligent Horror — Sinners</div><div class="domain">youtube.com &bull; July 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Physics Girl (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/RPFD2QfxdDA"><li><div class="title">Water Levitates! The Leidenfrost Effect Explained</div><div class="domain">youtube.com &bull; July 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Mustard (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/paaNIM2-oAU"><li><div class="title">When A Stolen MiG- 25 Landed In Japan</div><div class="domain">youtube.com &bull; July 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">MinuteFood (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=EEPO1uilmw8"><li><div class="title">This might be the world’s weirdest berry</div><div class="domain">youtube.com &bull; July 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Jacob's Piano (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/d7-J3lwAzCM"><li><div class="title">Song From A Secret Garden 🎵</div><div class="domain">youtube.com &bull; July 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Dr. Plants (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=I6lANHo2WPY"><li><div class="title">Raising 10,000 Bees (in my home)</div><div class="domain">youtube.com &bull; July 11, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>

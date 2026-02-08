@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-07-26</span>:</h1>
+  <p class="summary">There are 60 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Bear Blog Trending Posts (bearblog.dev)</h2> (3)</summary><ul><a class="li" href="https://lofgren.xyz/digital-space/"><li><div class="title">Get a digital space</div><div class="domain">lofgren.xyz &bull; July 26, 2025</div></li></a><a class="li" href="https://zy.bearblog.dev/the-history-of-digital-piracy-how-we-got-here/"><li><div class="title">the history of digital piracy: how we got here</div><div class="domain">zy.bearblog.dev &bull; July 26, 2025</div></li></a><a class="li" href="https://tallywinkle.bearblog.dev/the-internet-is-forever/"><li><div class="title">"the internet is forever"</div><div class="domain">tallywinkle.bearblog.dev &bull; July 26, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Marginalian (feeds.feedburner.com)</h2> (2)</summary><ul><a class="li" href="https://www.themarginalian.org/2025/07/26/ellen-bass-kiss/"><li><div class="title">Kiss: Ellen Bass’s Stunning Ode to the Courage of Tenderness as an Antidote to Helplessness</div><div class="domain">themarginalian.org &bull; July 26, 2025</div></li></a><a class="li" href="https://www.themarginalian.org/2025/07/25/urns/"><li><div class="title">Hold On Let Go: Urns for Living and the Art of Trusting Time</div><div class="domain">themarginalian.org &bull; July 26, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (1)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/J8nvbu5AFqR5ysSDR/a-9-week-trip-on-retatrutide"><li><div class="title">a 9-week trip on retatrutide</div><div class="domain">lesswrong.com &bull; July 26, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (16)</summary><ul><a class="li" href="http://geon.github.io/programming/2025/07/24/bubble-bobble-c64-rng-emulator"><li><div class="title">Reversing the C64 Bubble Bobble RNG</div><div class="domain">geon.github.io &bull; July 26, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=Ca53JTohdN4"><li><div class="title">Most of your projects are stupid. Please make some actual games</div><div class="domain">youtube.com &bull; July 26, 2025</div></li></a><a class="li" href="https://git.sr.ht/~abcdw/emacs-arei"><li><div class="title">emacs-arei Async IDE for Guile</div><div class="domain">git.sr.ht &bull; July 26, 2025</div></li></a><a class="li" href="https://github.com/dtenny/clj-coll"><li><div class="title">clj-coll: Clojure collections and sequences in Common Lisp</div><div class="domain">github.com &bull; July 26, 2025</div></li></a><a class="li" href="https://fx.hot.page/split-flap"><li><div class="title">Split Flap</div><div class="domain">fx.hot.page &bull; July 26, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=HI7oEiaR8PU"><li><div class="title">Hand Drawn CGI: Animating the Terrahawks Title Sequence</div><div class="domain">youtube.com &bull; July 26, 2025</div></li></a><a class="li" href="https://marcin.juszkiewicz.com.pl/2025/07/22/arm-desktop-emulation/"><li><div class="title">Arm desktop: x86 emulation</div><div class="domain">marcin.juszkiewicz.com.pl &bull; July 26, 2025</div></li></a><a class="li" href="https://accounting.penrose.com/"><li><div class="title">Can LLMs Do Accounting?</div><div class="domain">accounting.penrose.com &bull; July 26, 2025</div></li></a><a class="li" href="https://www.agner.org/forum/viewtopic.php?t=287&start=11"><li><div class="title">Test results for AMD Zen 5</div><div class="domain">agner.org &bull; July 26, 2025</div></li></a><a class="li" href="https://github.com/wren-lang/wren"><li><div class="title">Wren - a small, fast, class-based concurrent scripting language</div><div class="domain">github.com &bull; July 26, 2025</div></li></a><a class="li" href="https://blog.pkh.me/p/44-perfecting-anti-aliasing-on-signed-distance-functions.html"><li><div class="title">Perfecting anti-aliasing on signed distance functions</div><div class="domain">blog.pkh.me &bull; July 26, 2025</div></li></a><a class="li" href="https://log.pfad.fr/2025/optimi-zig-sudoku-solving/"><li><div class="title">Optimi-Zi(n)g Sudoku-Solving</div><div class="domain">log.pfad.fr &bull; July 26, 2025</div></li></a><a class="li" href="https://holdtherobot.com/blog/heredocs-can-make-your-bash-scripts-self-documenting/"><li><div class="title">Heredocs Can Make Your Bash Scripts Self-Documenting</div><div class="domain">holdtherobot.com &bull; July 26, 2025</div></li></a><a class="li" href="https://lucumr.pocoo.org/2025/7/26/virtual-threads/"><li><div class="title">From Async/Await to Virtual Threads</div><div class="domain">lucumr.pocoo.org &bull; July 26, 2025</div></li></a><a class="li" href="https://tristanpemble.com/resizable-structs-in-zig/"><li><div class="title">Resizable structs in Zig</div><div class="domain">tristanpemble.com &bull; July 26, 2025</div></li></a><a class="li" href="https://arxiv.org/abs/2504.17768"><li><div class="title">The Sparse Frontier: Sparse Attention Trade-offs in Transformer LLMs</div><div class="domain">arxiv.org &bull; July 26, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (20)</summary><ul><a class="li" href="https://docs.freestyle.sh/blog/docs-revamp"><li><div class="title">We revamped our docs for AI-driven development</div><div class="domain">docs.freestyle.sh &bull; July 26, 2025</div></li></a><a class="li" href="https://docs.flightsimulator.com/msfs2024/html/6_Programming_APIs/WASM/WebAssembly.htm"><li><div class="title">Microsoft Flight Simulator 2024: WebAssembly SDK</div><div class="domain">docs.flightsimulator.com &bull; July 26, 2025</div></li></a><a class="li" href="https://senhongo.com/blog/when-javaScript-decided-my-day-starts-at-9am"><li><div class="title">JavaScript decided my day starts at 9am</div><div class="domain">senhongo.com &bull; July 26, 2025</div></li></a><a class="li" href="https://color-me-same.franzai.com/"><li><div class="title">Show HN: (Ask HN) Color Me Same – A New Kind of Logic Game – Pursue It Further?</div><div class="domain">color-me-same.franzai.com &bull; July 26, 2025</div></li></a><a class="li" href="https://github.com/launchbadge/sqlx"><li><div class="title">SQLx – Rust SQL Toolkit</div><div class="domain">github.com &bull; July 26, 2025</div></li></a><a class="li" href="https://www.elidourado.com/p/personal-aviation"><li><div class="title">Personal aviation is about to get interesting (2023)</div><div class="domain">elidourado.com &bull; July 26, 2025</div></li></a><a class="li" href="https://www.smithsonianmag.com/smart-news/cctv-footage-captures-the-first-ever-video-of-an-earthquake-fault-in-motion-shining-a-rare-light-on-seismic-dynamics-180987034/"><li><div class="title">CCTV footage captures video of an earthquake fault in motion</div><div class="domain">smithsonianmag.com &bull; July 26, 2025</div></li></a><a class="li" href="https://cs3110.github.io/textbook/cover.html"><li><div class="title">OCaml Programming: Correct and Efficient and Beautiful</div><div class="domain">cs3110.github.io &bull; July 26, 2025</div></li></a><a class="li" href="https://taipology.substack.com/p/epic-recall-epic-fail"><li><div class="title">Epic Recall, Epic Fail</div><div class="domain">taipology.substack.com &bull; July 26, 2025</div></li></a><a class="li" href="https://www.agner.org/forum/viewtopic.php?t=287&start=10"><li><div class="title">Test Results for AMD Zen 5</div><div class="domain">agner.org &bull; July 26, 2025</div></li></a><a class="li" href="https://norvig.com/21-days.html"><li><div class="title">Teach Yourself Programming in Ten Years</div><div class="domain">norvig.com &bull; July 26, 2025</div></li></a><a class="li" href="https://www.cbc.ca/news/business/lab-grown-diamonds-1.7592336"><li><div class="title">The natural diamond industry is getting rocked. Thank the lab-grown variety</div><div class="domain">cbc.ca &bull; July 26, 2025</div></li></a><a class="li" href="https://www.nytimes.com/2025/07/26/health/coronary-artery-calcium-heart.html"><li><div class="title">Coronary artery calcium testing can reveal plaque in arteries, but is underused</div><div class="domain">nytimes.com &bull; July 26, 2025</div></li></a><a class="li" href="https://www.theguardian.com/music/2025/jul/24/the-god-of-small-things-celebrating-arvo-part-at-90"><li><div class="title">Arvo Pärt at 90</div><div class="domain">theguardian.com &bull; July 26, 2025</div></li></a><a class="li" href="https://arxiv.org/abs/2507.17615"><li><div class="title">Torqued Accelerator Using Radiation from the Sun (Tars) for Interstellar Payload</div><div class="domain">arxiv.org &bull; July 26, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=jPwo1XsKKXg"><li><div class="title">Paul Dirac and the religion of mathematical beauty (2011) [video]</div><div class="domain">youtube.com &bull; July 26, 2025</div></li></a><a class="li" href="https://dfarq.homeip.net/what-went-wrong-for-yahoo/"><li><div class="title">What went wrong for Yahoo</div><div class="domain">dfarq.homeip.net &bull; July 26, 2025</div></li></a><a class="li" href="https://research.eye.security/how-we-rooted-copilot/"><li><div class="title">How We Rooted Copilot</div><div class="domain">research.eye.security &bull; July 26, 2025</div></li></a><a class="li" href="https://furnacecreek.org/quicktunes/"><li><div class="title">Show HN: QuickTunes: Apple Music player for Mac with iPod vibes</div><div class="domain">furnacecreek.org &bull; July 26, 2025</div></li></a><a class="li" href="https://www.theverge.com/report/714103/dji-skyrover-x1-evade-ban-amazon"><li><div class="title">DJI couldn't confirm or deny it disguised this drone to evade a US ban</div><div class="domain">theverge.com &bull; July 26, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Seth's Blog (seths.blog)</h2> (1)</summary><ul><a class="li" href="https://seths.blog/2025/07/settling-for-better/"><li><div class="title">Settling for better</div><div class="domain">seths.blog &bull; July 26, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Diplomat (thediplomat.com)</h2> (1)</summary><ul><a class="li" href="https://thediplomat.com/2025/07/taiwans-great-recall-fizzles-out/"><li><div class="title">Taiwan’s ‘Great Recall’ Fizzles Out</div><div class="domain">thediplomat.com &bull; July 26, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Trevor I. Lasn Thoughts (trevorlasn.com)</h2> (1)</summary><ul><a class="li" href="https://www.trevorlasn.com/blog/npq-protects-npm-installs-from-malicious-packages"><li><div class="title">NPQ: Open source CLI tool that audits and protects your npm installs from malicious packages</div><div class="domain">trevorlasn.com &bull; July 26, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (6)</summary><ul><a class="li" href="https://yourstory.com/2025/07/more-seed-funds-incubation-centres-startup-india-kerala-innovation-festival-ksum"><li><div class="title">More seed funds for incubation centres: Startup India head at Kerala Innovation Festival</div><div class="domain">yourstory.com &bull; July 26, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/mistakes-detours-route-failure-resilience-art-creativity-success-tips-photography"><li><div class="title">‘Mistakes are not detours, they are part of the route’ – 6 artists share how they bounce back from failure</div><div class="domain">yourstory.com &bull; July 26, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/startup-farmonaut-providing-birds-eye-view-farming"><li><div class="title">How Farmonaut is providing a bird’s-eye view of farming</div><div class="domain">yourstory.com &bull; July 26, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/amagi-files-for-ipo-to-raise-rs-1-020-cr"><li><div class="title">Amagi files for IPO, plans to raise Rs 1,020 Cr</div><div class="domain">yourstory.com &bull; July 26, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/piersights-ocean-surveillance-techniques-tech-metal-supply-chain"><li><div class="title">PierSight’s ocean surveillance techniques; Building tech for metal supply chain</div><div class="domain">yourstory.com &bull; July 26, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/the-evolution-of-healthy-eating-in-india-whats-next-for-the-market"><li><div class="title">The evolution of healthy eating in India: What’s next for the market?</div><div class="domain">yourstory.com &bull; July 26, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Unphiltered by Samdish (and a fantastic team) (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=dgLeisKuY-w"><li><div class="title">Samdish Goes International? | Akhand Bharat Ek Khoj</div><div class="domain">youtube.com &bull; July 26, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">SchaeferArt (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=hb4qhHzWD08"><li><div class="title">What 35 Paintings in 7 Days Taught Me</div><div class="domain">youtube.com &bull; July 26, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Mohak Mangal (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=U0d43eaoD-s"><li><div class="title">How Two Americans Scammed Indian Option Traders</div><div class="domain">youtube.com &bull; July 26, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lucaas (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=lIVH8rbTDyg"><li><div class="title">Unbelievable Aviation Moments Caught on Camera</div><div class="domain">youtube.com &bull; July 26, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Kai Lentit (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=xIk0_uFV-rU"><li><div class="title">Interview with Cloud Architect in 2025</div><div class="domain">youtube.com &bull; July 26, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Jay Lee Painting (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=Ryt82FfNejs"><li><div class="title">Baby's Breath Painting for Beginners / Q-Tips Painting Technique / Easy creative art</div><div class="domain">youtube.com &bull; July 26, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">IFP (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/wVKkKqt1pmw"><li><div class="title">Unreleased Fantastic Four Movie #fantasticfour #marvel #pedropascal</div><div class="domain">youtube.com &bull; July 26, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Design Theory (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=0xWQMbEEQ-A"><li><div class="title">Why Creative Success Destroys People</div><div class="domain">youtube.com &bull; July 26, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Adrian Bliss (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/II_17U3gpR4"><li><div class="title">Bringing back the mammoth</div><div class="domain">youtube.com &bull; July 26, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>

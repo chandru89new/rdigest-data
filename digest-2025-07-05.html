@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-07-05</span>:</h1>
+  <p class="summary">There are 70 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Bear Blog Trending Posts (bearblog.dev)</h2> (4)</summary><ul><a class="li" href="https://fabiansjournal.bearblog.dev/you-are-not-tired-you-are-distracted/"><li><div class="title">You Are Not Tired. You Are Distracted</div><div class="domain">fabiansjournal.bearblog.dev &bull; July 05, 2025</div></li></a><a class="li" href="https://forkingmad.blog/my-junk-email-is-someone-elses-sick-note/"><li><div class="title">My junk email is someone else's sick note!</div><div class="domain">forkingmad.blog &bull; July 05, 2025</div></li></a><a class="li" href="https://aeryn.me/begin/"><li><div class="title">Hello! Another new home for this blog</div><div class="domain">aeryn.me &bull; July 05, 2025</div></li></a><a class="li" href="https://megancarnes.blog/im-making-art-and-the-world-is-crumbling/"><li><div class="title">I’m making art and the world is crumbling</div><div class="domain">megancarnes.blog &bull; July 05, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Big Think (bigthink.com)</h2> (1)</summary><ul><a class="li" href="https://bigthink.com/starts-with-a-bang/starts-with-a-bang-podcast-119-the-cmb/"><li><div class="title">Starts With a Bang podcast #119 – The CMB</div><div class="domain">bigthink.com &bull; July 05, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Go Make Things (gomakethings.com)</h2> (1)</summary><ul><a class="li" href="https://gomakethings.com/people-who-act-like-machines/"><li><div class="title">People who act like machines</div><div class="domain">gomakethings.com &bull; July 05, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (4)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/qKz2hBahahmb4uDty/how-much-novel-security-critical-infrastructure-do-you-need"><li><div class="title">How much novel security-critical infrastructure do you need during the singularity?</div><div class="domain">lesswrong.com &bull; July 05, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/AAJAXexNz2pmPkj55/claude-is-a-ravenclaw"><li><div class="title">Claude is a Ravenclaw</div><div class="domain">lesswrong.com &bull; July 05, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/XNm5rc2MN83hsi4kh/buckle-up-bucko-this-ain-t-over-till-it-s-over"><li><div class="title">"Buckle up bucko, this ain't over till it's over."</div><div class="domain">lesswrong.com &bull; July 05, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/knxdLtYbPpsd73ZE4/the-cult-of-pain"><li><div class="title">The Cult of Pain</div><div class="domain">lesswrong.com &bull; July 05, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (19)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=9NDkOehZUGs"><li><div class="title">Fixing the Web?</div><div class="domain">youtube.com &bull; July 05, 2025</div></li></a><a class="li" href="https://fi-le.net/baba/"><li><div class="title">Making Language Models Play Baba is You</div><div class="domain">fi-le.net &bull; July 05, 2025</div></li></a><a class="li" href="https://matttproud.com/blog/posts/approach-to-llm.html"><li><div class="title">Approach to LLMs and Other Reflections</div><div class="domain">matttproud.com &bull; July 05, 2025</div></li></a><a class="li" href="http://www.vintagecalculators.com/html/the_calculator-on-a-chip.html"><li><div class="title">The Calculator-on-a-Chip (2015)</div><div class="domain">vintagecalculators.com &bull; July 05, 2025</div></li></a><a class="li" href="https://github.com/izabera/bgcmd"><li><div class="title">bgcmd: let AI interact with any REPL</div><div class="domain">github.com &bull; July 05, 2025</div></li></a><a class="li" href="https://research.exoticsilicon.com/articles/console_4096"><li><div class="title">4096 colours and the blink attribute</div><div class="domain">research.exoticsilicon.com &bull; July 05, 2025</div></li></a><a class="li" href="https://jyn.dev/operators-not-users-and-programmers/"><li><div class="title">operators, not users and programmers</div><div class="domain">jyn.dev &bull; July 05, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=HRfbQJ6FdF0"><li><div class="title">160 Core RISC-V supercluster on a single M.2</div><div class="domain">youtube.com &bull; July 05, 2025</div></li></a><a class="li" href="https://johnnysswlab.com/the-messy-reality-of-simd-vector-functions"><li><div class="title">The messy reality of SIMD (vector) functions</div><div class="domain">johnnysswlab.com &bull; July 05, 2025</div></li></a><a class="li" href="https://lobste.rs/s/zupgan/what_clever_tools_workflows_do_you_use"><li><div class="title">What clever tools/workflows do you use to manage development environments?</div><div class="domain">lobste.rs &bull; July 05, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=MrfiUMm2Qxk"><li><div class="title">Broken AI Discourse with Steve Klabnik</div><div class="domain">youtube.com &bull; July 05, 2025</div></li></a><a class="li" href="https://openmw.org/2025/openmw-0-49-0-released/"><li><div class="title">OpenMW 0.49.0 Released</div><div class="domain">openmw.org &bull; July 05, 2025</div></li></a><a class="li" href="https://undeadly.org/cgi?action=article;sid=20250705081711"><li><div class="title">KDE Plasma 6.4 has landed in OpenBSD</div><div class="domain">undeadly.org &bull; July 05, 2025</div></li></a><a class="li" href="https://otwarchive.atlassian.net/jira/software/c/projects/AO3/issues/AO3-7031?jql=project%20%3D%20%22AO3%22%20ORDER%20BY%20created%20DESC"><li><div class="title">Recent Archive of Our Own outage was caused by integer exhaustion</div><div class="domain">otwarchive.atlassian.net &bull; July 05, 2025</div></li></a><a class="li" href="https://dukespace.lib.duke.edu/server/api/core/bitstreams/816ef134-55cf-49f6-9a8b-1e8a2324b1ff/content"><li><div class="title">Anubis Pilot Project Report - June 2025</div><div class="domain">dukespace.lib.duke.edu &bull; July 05, 2025</div></li></a><a class="li" href="https://fidget-spinner.github.io/posts/jit-reflections.html"><li><div class="title">Reflections on 2 years of CPython’s JIT Compiler: The good, the bad, the ugly</div><div class="domain">fidget-spinner.github.io &bull; July 05, 2025</div></li></a><a class="li" href="https://yobibyte.github.io/vim.html"><li><div class="title">Why I got rid of all my neovim plugins</div><div class="domain">yobibyte.github.io &bull; July 05, 2025</div></li></a><a class="li" href="https://www.jsoftware.com/papers/APL87.htm"><li><div class="title">apl87</div><div class="domain">jsoftware.com &bull; July 05, 2025</div></li></a><a class="li" href="https://github.com/densumesh/actix-passport"><li><div class="title">actix-passport: A comprehensive, flexible authentication framework for actix-web</div><div class="domain">github.com &bull; July 05, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (24)</summary><ul><a class="li" href="https://alicemaz.substack.com/p/on-the-meaning-of-ritual"><li><div class="title">On The Meaning of Ritual</div><div class="domain">alicemaz.substack.com &bull; July 05, 2025</div></li></a><a class="li" href="https://ceramic-engine.com/"><li><div class="title">Ceramic: A cross-platform and open-source 2D framework in Haxe</div><div class="domain">ceramic-engine.com &bull; July 05, 2025</div></li></a><a class="li" href="https://www.nature.com/articles/s41586-025-09223-4"><li><div class="title">Plants monitor the integrity of their barrier by sensing gas diffusion</div><div class="domain">nature.com &bull; July 05, 2025</div></li></a><a class="li" href="https://www.librariesforthefuture.bio/p/is-this-aging"><li><div class="title">So you wanna build an aging company</div><div class="domain">librariesforthefuture.bio &bull; July 05, 2025</div></li></a><a class="li" href="http://global.cafa.edu.cn/infoDetail/1/324"><li><div class="title">Artist in Residence on a Satellite</div><div class="domain">global.cafa.edu.cn &bull; July 05, 2025</div></li></a><a class="li" href="https://mildbyte.xyz/blog/solving-wordle-with-uv-dependency-resolver/"><li><div class="title">Solving Wordle with uv's dependency resolver</div><div class="domain">mildbyte.xyz &bull; July 05, 2025</div></li></a><a class="li" href="https://random.colorado.edu/"><li><div class="title">CU Randomness Beacon</div><div class="domain">random.colorado.edu &bull; July 05, 2025</div></li></a><a class="li" href="https://www.futureecologies.net/listen/fe-6-5-the-method"><li><div class="title">The Miyawaki Method of micro-forestry</div><div class="domain">futureecologies.net &bull; July 05, 2025</div></li></a><a class="li" href="https://www.gecode.org/"><li><div class="title">Gecode is an open source C++ toolkit for developing constraint-based systems (2019)</div><div class="domain">gecode.org &bull; July 05, 2025</div></li></a><a class="li" href="https://www.lemonde.fr/en/france/article/2025/07/05/seine-reopens-to-paris-swimmers-after-century-long-ban_6743058_7.html"><li><div class="title">Seine reopens to Paris swimmers after century-long ban</div><div class="domain">lemonde.fr &bull; July 05, 2025</div></li></a><a class="li" href="https://blog.alexoglou.com/posts/database-decisions/"><li><div class="title">What 'Project Hail Mary' teaches us about the PlanetScale vs. Neon debate</div><div class="domain">blog.alexoglou.com &bull; July 05, 2025</div></li></a><a class="li" href="https://www.winuae.net/"><li><div class="title">WinUAE 6 Amiga Emulator</div><div class="domain">winuae.net &bull; July 05, 2025</div></li></a><a class="li" href="https://blog.tripjam.app/the-right-way-to-embed-an-llm-in-a-group-chat/"><li><div class="title">The Right Way to Embed an LLM in a Group Chat</div><div class="domain">blog.tripjam.app &bull; July 05, 2025</div></li></a><a class="li" href="https://xata.io/blog/behind-the-scenes-speeding-up-pgstream-snapshots-for-postgresql"><li><div class="title">Speeding up PostgreSQL dump/restore snapshots</div><div class="domain">xata.io &bull; July 05, 2025</div></li></a><a class="li" href="https://basicappleguy.com/basicappleblog/macos-icon-history"><li><div class="title">macOS Icon History</div><div class="domain">basicappleguy.com &bull; July 05, 2025</div></li></a><a class="li" href="https://arxiv.org/abs/2503.14283"><li><div class="title">Techno-Feudalism and the Rise of AGI: A Future Without Economic Rights?</div><div class="domain">arxiv.org &bull; July 05, 2025</div></li></a><a class="li" href="https://www.eumetsat.int/europes-first-geostationary-sounder-satellite-launched"><li><div class="title">Europe's first geostationary sounder satellite is launched</div><div class="domain">eumetsat.int &bull; July 05, 2025</div></li></a><a class="li" href="https://viksit.substack.com/p/optimizing-tool-selection-for-llm"><li><div class="title">Optimizing Tool Selection for LLM Workflows with Differentiable Programming</div><div class="domain">viksit.substack.com &bull; July 05, 2025</div></li></a><a class="li" href="https://mynoise.net/blog.php"><li><div class="title">What a Hacker Stole from Me</div><div class="domain">mynoise.net &bull; July 05, 2025</div></li></a><a class="li" href="https://aginfer.bearblog.dev/how-to-network-as-an-introvert/"><li><div class="title">How to Network as an Introvert</div><div class="domain">aginfer.bearblog.dev &bull; July 05, 2025</div></li></a><a class="li" href="https://www.smithsonianmag.com/smart-news/these-cod-have-been-shrinking-dramatically-for-decades-now-scientists-say-theyve-solved-the-mystery-180986920/"><li><div class="title">Cod Have Been Shrinking for Decades, Scientists Say They've Solved Mystery</div><div class="domain">smithsonianmag.com &bull; July 05, 2025</div></li></a><a class="li" href="https://www.inkandswitch.com/essay/local-first/"><li><div class="title">Local-first software (2019)</div><div class="domain">inkandswitch.com &bull; July 05, 2025</div></li></a><a class="li" href="https://interactions.acm.org/archive/view/july-august-2025/stop-hiding-my-controls-hidden-interface-controls-are-affecting-usability"><li><div class="title">Stop Hiding My Controls: Hidden Interface Controls Are Affecting Usability</div><div class="domain">interactions.acm.org &bull; July 05, 2025</div></li></a><a class="li" href="https://www.kbkg.com/feature/house-passes-tax-bill-sending-to-president-for-signature"><li><div class="title">OBBB signed: Reinstates immediate expensing for U.S.-based R&D</div><div class="domain">kbkg.com &bull; July 05, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Seth's Blog (seths.blog)</h2> (1)</summary><ul><a class="li" href="https://seths.blog/2025/07/diagnostics/"><li><div class="title">Diagnostics</div><div class="domain">seths.blog &bull; July 05, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (12)</summary><ul><a class="li" href="https://yourstory.com/2025/07/piyush-goyal-rs-10-000-cr-second-tranche-for-deeptech-startups-fof"><li><div class="title">Govt commits 2nd tranche of Rs 10,000 Cr Fund of Funds for deeptech startups: Piyush Goyal</div><div class="domain">yourstory.com &bull; July 05, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/retail-trading-impacted-if-jane-street-step-back-warns-zerodha-ceo"><li><div class="title">Retail trading may be impacted if giants like Jane Street step back, warns Zerodha CEO</div><div class="domain">yourstory.com &bull; July 05, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/exploration-validation-sales-success-india-art-festival-creativity-photography"><li><div class="title">Exploration, validation, sales: Artists from India Art Festival share what success means to them</div><div class="domain">yourstory.com &bull; July 05, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/fmcg-makers-see-weather-impact-on-topline-growth-in-june-quarter"><li><div class="title">FMCG makers see weather impact on topline growth in June quarter</div><div class="domain">yourstory.com &bull; July 05, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/bihar-one-block-one-product-atmanirbhar"><li><div class="title">One Block, One Product: Bihar’s Big Push for Local Economy Boost</div><div class="domain">yourstory.com &bull; July 05, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/vikas-khanna-assam-tea-festival-bungalow-nyc"><li><div class="title">200 Years of Assam Tea: Vikas Khanna to Host Festival at NYC’s Bungalow</div><div class="domain">yourstory.com &bull; July 05, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/phonepe-hdfc-upi-credit-card-rewards-lounge-cashback"><li><div class="title">PhonePe & HDFC Co-branded Credit Card: Inside the Benefits of the 'Ultimo' Variant</div><div class="domain">yourstory.com &bull; July 05, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/nearly-half-of-msmes-polled-prefer-upi-for-busines-paynearby"><li><div class="title">Nearly half of MSMEs prefer UPI for business transactions: PayNearby report</div><div class="domain">yourstory.com &bull; July 05, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/aakash-aesl-sends-legal-notice-to-ey-over-dual-advisory-role"><li><div class="title">Aakash sends another notice to EY over dual advisory role with rival Allen</div><div class="domain">yourstory.com &bull; July 05, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/ludhiana-startup-skincare-startup-dermabay-sunscreen-nykaa"><li><div class="title">Inside Dermabay Skincare, the Ludhiana startup developing indigenous and affordable products</div><div class="domain">yourstory.com &bull; July 05, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/why-mid-career-and-emerging-indian-artists-are-in-the-spotlight"><li><div class="title">Why mid-career and emerging Indian artists are in the spotlight</div><div class="domain">yourstory.com &bull; July 05, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/digital-water-grid-can-tech-help-india-solve-water-crisis"><li><div class="title">Digital water grid: Can tech help India solve its water crisis</div><div class="domain">yourstory.com &bull; July 05, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">toha film (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/shorts/kvj2DocYT6M"><li><div class="title">NOT A HOTEL HIROO</div><div class="domain">youtube.com &bull; July 05, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=WvVP9tadta4"><li><div class="title">NOT A HOTEL HIROO</div><div class="domain">youtube.com &bull; July 05, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The House of Tabula (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=bBiFGRg2YxA"><li><div class="title">Hamlet Analysis</div><div class="domain">youtube.com &bull; July 05, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Francesco Parrino (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=dno3svILjvo"><li><div class="title">True Colors - Cyndi Lauper | Piano Cover + Sheet Music</div><div class="domain">youtube.com &bull; July 05, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>

@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-10-11</span>:</h1>
+  <p class="summary">There are 82 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Bear Blog Trending Posts (bearblog.dev)</h2> (1)</summary><ul><a class="li" href="https://racc.blog/join-the-racc-movement/"><li><div class="title">Join the racc movement!</div><div class="domain">racc.blog &bull; October 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Big Think (bigthink.com)</h2> (1)</summary><ul><a class="li" href="https://bigthink.com/starts-with-a-bang/starts-with-a-bang-podcast-122-galaxy-evolution-and-jwst/"><li><div class="title">Starts With A Bang podcast #122 – Galaxy evolution and JWST</div><div class="domain">bigthink.com &bull; October 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">kottke.org (feeds.kottke.org)</h2> (1)</summary><ul><a class="li" href="https://kottke.org/25/10/0047701-diane-keaton-oscar-winnin"><li><div class="title">Diane Keaton, Oscar-Winning &#8216;Annie Hall&#8217; Star, Dies at 79....</div><div class="domain">kottke.org &bull; October 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (3)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/2ZsqYRLW32Ffca9gB/emil-the-moose"><li><div class="title">Emil the Moose</div><div class="domain">lesswrong.com &bull; October 11, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/SwiChH68fRERBiCHe/experiments-with-sonnet-4-5-s-fiction"><li><div class="title">Experiments With Sonnet 4.5's Fiction</div><div class="domain">lesswrong.com &bull; October 11, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/arwATwCTscahYwTzD/the-most-common-bad-argument-in-these-parts"><li><div class="title">The Most Common Bad Argument In These Parts</div><div class="domain">lesswrong.com &bull; October 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (16)</summary><ul><a class="li" href="https://www.monument.ai/m/parallel"><li><div class="title">Monument Engine: Jx</div><div class="domain">monument.ai &bull; October 11, 2025</div></li></a><a class="li" href="https://github.com/NICUP14/DebDroid"><li><div class="title">DebDroid - Debian on Android (v1.1)</div><div class="domain">github.com &bull; October 11, 2025</div></li></a><a class="li" href="https://ryan.freumh.org/eon.html"><li><div class="title">Eon -  an Effects-based OCaml Nameserver</div><div class="domain">ryan.freumh.org &bull; October 11, 2025</div></li></a><a class="li" href="https://tarides.com/blog/2025-10-10-ocaml-5-4-release-new-features-fixes-and-more/"><li><div class="title">OCaml 5.4 Release: New Features, Fixes, and More</div><div class="domain">tarides.com &bull; October 11, 2025</div></li></a><a class="li" href="https://myriad-dreamin.github.io/tinymist/"><li><div class="title">Tinymist is an integrated language service for Typst</div><div class="domain">myriad-dreamin.github.io &bull; October 11, 2025</div></li></a><a class="li" href="https://snarky.ca/why-it-took-4-years-to-get-a-lock-files-specification/"><li><div class="title">Why it took 4 years to get a lock files specification</div><div class="domain">snarky.ca &bull; October 11, 2025</div></li></a><a class="li" href="https://lineageos.org/Changelog-30/"><li><div class="title">LineageOS 23 released</div><div class="domain">lineageos.org &bull; October 11, 2025</div></li></a><a class="li" href="https://denodell.com/blog/a-better-web-for-everyone-everywhere"><li><div class="title">The European Accessibility Act will make the Web Better for Everyone</div><div class="domain">denodell.com &bull; October 11, 2025</div></li></a><a class="li" href="https://ounapuu.ee/posts/2025/10/06/datablocks-white-label-drives/"><li><div class="title">Testing two 18 TB white label SATA hard drives from datablocks.dev</div><div class="domain">ounapuu.ee &bull; October 11, 2025</div></li></a><a class="li" href="https://github.com/BalajeS/WSL-For-FreeBSD"><li><div class="title">WSL-For-FreeBSD: Experimental project to FreeBSD in WSL2</div><div class="domain">github.com &bull; October 11, 2025</div></li></a><a class="li" href="https://bun.com/blog/bun-v1.3"><li><div class="title">Bun 1.3</div><div class="domain">bun.com &bull; October 11, 2025</div></li></a><a class="li" href="https://www.cs.utexas.edu/~EWD/transcriptions/EWD06xx/EWD667.html"><li><div class="title">Dijkstra on the foolishness of natural language programming (1978)</div><div class="domain">cs.utexas.edu &bull; October 11, 2025</div></li></a><a class="li" href="https://denodell.com/blog/html-best-kept-secret-output-tag"><li><div class="title">HTML’s Best Kept Secret: The output Tag</div><div class="domain">denodell.com &bull; October 11, 2025</div></li></a><a class="li" href="https://mitchellh.com/writing/non-trivial-vibing"><li><div class="title">Vibing a Non-Trivial Ghostty Feature</div><div class="domain">mitchellh.com &bull; October 11, 2025</div></li></a><a class="li" href="https://maknee.github.io/blog/2025/3FS-Performance-Journal-3/"><li><div class="title">Network Storage and Scaling Characteristics of a Distributed Filesystem</div><div class="domain">maknee.github.io &bull; October 11, 2025</div></li></a><a class="li" href="https://github.com/wfjm/w11"><li><div class="title">w11: PDP-11/70 CPU core and SoC</div><div class="domain">github.com &bull; October 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (22)</summary><ul><a class="li" href="https://en.wikipedia.org/wiki/Deepstaria_enigmatica"><li><div class="title">Deepstaria Enigmatica</div><div class="domain">en.wikipedia.org &bull; October 11, 2025</div></li></a><a class="li" href="https://www.pgedge.com/blog/living-on-the-edge"><li><div class="title">Understanding conflict resolution and avoidance in PostgreSQL: a complete guide</div><div class="domain">pgedge.com &bull; October 11, 2025</div></li></a><a class="li" href="https://nswskc.wordpress.com/2002/10/24/incredible-journey-50/"><li><div class="title">Oskar Speck's 1932 Kayak Journey from Germany to Australia</div><div class="domain">nswskc.wordpress.com &bull; October 11, 2025</div></li></a><a class="li" href="https://www.battlefields.org/learn/head-tilting-history/rise-and-fall-powdered-wig"><li><div class="title">The rise and fall of the powered wig</div><div class="domain">battlefields.org &bull; October 11, 2025</div></li></a><a class="li" href="https://news.mit.edu/2025/mit-physicists-improve-atomic-clocks-precision-1008"><li><div class="title">MIT physicists improve the precision of atomic clocks</div><div class="domain">news.mit.edu &bull; October 11, 2025</div></li></a><a class="li" href="https://blog.gingerbeardman.com/2025/10/11/how-to-tame-a-user-interface-using-a-spreadsheet/"><li><div class="title">How to tame a user interface using a spreadsheet</div><div class="domain">blog.gingerbeardman.com &bull; October 11, 2025</div></li></a><a class="li" href="https://entropicthoughts.com/root-cause-analysis-youre-doing-it-wrong"><li><div class="title">Root cause analysis? You're doing it wrong</div><div class="domain">entropicthoughts.com &bull; October 11, 2025</div></li></a><a class="li" href="https://fgiesen.wordpress.com/2018/03/05/a-whirlwind-introduction-to-dataflow-graphs/"><li><div class="title">A whirlwind introduction to dataflow graphs (2018)</div><div class="domain">fgiesen.wordpress.com &bull; October 11, 2025</div></li></a><a class="li" href="https://www.gnuhealth.org/about-us.html"><li><div class="title">GNU Health</div><div class="domain">gnuhealth.org &bull; October 11, 2025</div></li></a><a class="li" href="https://blog.fsck.com/2025/10/09/superpowers/"><li><div class="title">Superpowers: How I'm using coding agents in October 2025</div><div class="domain">blog.fsck.com &bull; October 11, 2025</div></li></a><a class="li" href="https://arstechnica.com/gadgets/2025/10/people-regret-buying-amazon-smart-displays-after-being-bombarded-with-ads/"><li><div class="title">People regret buying Amazon smart displays after being bombarded with ads</div><div class="domain">arstechnica.com &bull; October 11, 2025</div></li></a><a class="li" href="https://psyonik.tech/posts/a-guide-for-wireguard-vpn-setup-with-pi-hole-adblock-and-unbound-dns/"><li><div class="title">A Guide for WireGuard VPN Setup with Pi-Hole Adblock and Unbound DNS</div><div class="domain">psyonik.tech &bull; October 11, 2025</div></li></a><a class="li" href="https://github.com/anthropics/prompt-eng-interactive-tutorial"><li><div class="title">Anthropic's Prompt Engineering Tutorial</div><div class="domain">github.com &bull; October 11, 2025</div></li></a><a class="li" href="https://arxiv.org/abs/2510.05096"><li><div class="title">Paper2Video: Automatic Video Generation from Scientific Papers</div><div class="domain">arxiv.org &bull; October 11, 2025</div></li></a><a class="li" href="https://www.androidauthority.com/pixel-ims-broken-october-update-3606444/"><li><div class="title">Google blocks Android hack that let Pixel users enable VoLTE anywhere</div><div class="domain">androidauthority.com &bull; October 11, 2025</div></li></a><a class="li" href="https://hardware.slashdot.org/story/25/10/11/0238213/microsofts-onedrive-begins-testing-face-recognizing-ai-for-photos-for-some-preview-users"><li><div class="title">Microsoft only lets you opt out of AI photo scanning 3x a year</div><div class="domain">hardware.slashdot.org &bull; October 11, 2025</div></li></a><a class="li" href="https://news.ycombinator.com/item?id=45553132"><li><div class="title">Ask HN: Abandoned/dead projects you think died before their time and why?</div><div class="domain">news.ycombinator.com &bull; October 11, 2025</div></li></a><a class="li" href="https://scamcouver.wordpress.com/wp-content/uploads/2012/04/scam-capital.pdf"><li><div class="title">Vancouver Stock Exchange: Scam capital of the world (1989) [pdf]</div><div class="domain">scamcouver.wordpress.com &bull; October 11, 2025</div></li></a><a class="li" href="https://justismills.substack.com/p/heroin-addicts-often-seem-normal"><li><div class="title">Heroin addicts often seem normal</div><div class="domain">justismills.substack.com &bull; October 11, 2025</div></li></a><a class="li" href="https://paddedinputs.substack.com/p/meta-superintelligences-surprising"><li><div class="title">Meta Superintelligence's surprising first paper</div><div class="domain">paddedinputs.substack.com &bull; October 11, 2025</div></li></a><a class="li" href="https://www.theregister.com/2025/10/10/datacenter_coal_power/"><li><div class="title">Climate goals go up in smoke as US datacenters turn to coal</div><div class="domain">theregister.com &bull; October 11, 2025</div></li></a><a class="li" href="https://twitter.com/prem_thakker/status/1976786912154386828/"><li><div class="title">TikTok removing posts for violating the "joy of TikTok"</div><div class="domain">twitter.com &bull; October 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Seth's Blog (seths.blog)</h2> (1)</summary><ul><a class="li" href="https://seths.blog/2025/10/two-kinds-of-luck/"><li><div class="title">Two kinds of luck</div><div class="domain">seths.blog &bull; October 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Trevor I. Lasn Thoughts (trevorlasn.com)</h2> (1)</summary><ul><a class="li" href="https://www.trevorlasn.com/blog/join-skillcraft-ai-discord"><li><div class="title">You have been invited to the skillcraft.ai Discord server!</div><div class="domain">trevorlasn.com &bull; October 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Sympolymathesy, by Chris Krycho (v5.chriskrycho.com)</h2> (1)</summary><ul><a class="li" href="https://v5.chriskrycho.com/notes/aspire/"><li><div class="title">[notes] Robin Sloan’s “Aspire” Zine</div><div class="domain">v5.chriskrycho.com &bull; October 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (12)</summary><ul><a class="li" href="https://yourstory.com/2025/10/bira-91-chief-seeks-fresh-funding-amid-employees-demanding-change"><li><div class="title">Bira 91 chief seeks fresh funding amid employees demanding change</div><div class="domain">yourstory.com &bull; October 11, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/10/google-invest-88-000-crore-data-centres-ai-vizag"><li><div class="title">Google will invest Rs 88,000 Cr in data centres, AI in Vizag over 3 years: Andhra CM</div><div class="domain">yourstory.com &bull; October 11, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/10/kotak-mahindra-bank-expands-startup-accelerator-launches-season-2-of-bizlabs"><li><div class="title">Kotak Mahindra Bank expands startup accelerator, launches season 2 of BizLabs</div><div class="domain">yourstory.com &bull; October 11, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/10/ai-make-telecom-network-self-healing-improve-customer-services"><li><div class="title">AI to make telecom network self-healing, improve customer services with shift to 6G: DoT Secretary</div><div class="domain">yourstory.com &bull; October 11, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/10/big-tech-future-of-retail-nano-businesses-entrepreneurs"><li><div class="title">Beyond Big Tech: Why the future of retail belongs to nano businesses</div><div class="domain">yourstory.com &bull; October 11, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/09/ai-bots-killing-internet"><li><div class="title">Is the internet dying? How AI bots are taking over the web</div><div class="domain">yourstory.com &bull; October 11, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/09/common-startup-branding-mistakes"><li><div class="title">Top 3 branding mistakes every startup should avoid</div><div class="domain">yourstory.com &bull; October 11, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/09/simple-profitable-business-ideas-india"><li><div class="title">5 Profitable small business ideas for new founders</div><div class="domain">yourstory.com &bull; October 11, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/10/maharashtras-draft-rules-vehicle-aggregators-cap-surge-pricing"><li><div class="title">Maharashtra's draft rules for vehicle aggregators cap surge pricing, limit working hours of drivers</div><div class="domain">yourstory.com &bull; October 11, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/10/creativity-divinity-femininity-swati-tiwari-painting-art-photography"><li><div class="title">Creativity, divinity, femininity–the journey of artist Swati Tiwari</div><div class="domain">yourstory.com &bull; October 11, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/10/gen-zs-rewriting-mental-health-narrative-a-half-a-trillion-dollar-opportunity"><li><div class="title">Gen Zs rewriting mental health narrative; A half-a-trillion-dollar opportunity</div><div class="domain">yourstory.com &bull; October 11, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/10/oratrics-soft-skills-training-us-expansion-ai-platform-edtech"><li><div class="title">How Oratrics is enhancing the soft skills of students the world over</div><div class="domain">yourstory.com &bull; October 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Tsoding Daily (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=qEncl6tdnYo"><li><div class="title">This C++ feature changes everything (again)</div><div class="domain">youtube.com &bull; October 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">theteachr (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=fUEQ-TNcnOI"><li><div class="title">Where is the loop?</div><div class="domain">youtube.com &bull; October 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">thechesswebsite (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=FWK2lT308ws"><li><div class="title">Learn Chess Piece Moves In Minutes</div><div class="domain">youtube.com &bull; October 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The School of Life (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/BRFS2HndzTc"><li><div class="title">The Reason to Travel #animation #travel  #theschooloflife</div><div class="domain">youtube.com &bull; October 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Deshbhakt (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=ABqWCtZzclE"><li><div class="title">Did Maria Corina Deserve The Nobel Peace Prize? | Real 2025 Winners Overlooked? | Akash Banerjee</div><div class="domain">youtube.com &bull; October 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Sheena Melwani (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/_2tNZvwN28M"><li><div class="title">My husband writes the best emails 😂 | #shorts #funny</div><div class="domain">youtube.com &bull; October 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">SciFri (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=N3Sr1i1Hc-w"><li><div class="title">#DownToEarth Mission Control Live: Atlas Obscura</div><div class="domain">youtube.com &bull; October 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Sabine Hossenfelder (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=eGt0hrRYoy4"><li><div class="title">Nuclear Fusion in 5 Years? What is Happening?</div><div class="domain">youtube.com &bull; October 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Papa Mummy Kitchen - Specials (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=0T2Y-U3dpR0"><li><div class="title">बिना सोडा-बेकिंग पाउडर! सिर्फ 10min पोहा-सूजी का सुपर सॉफ्ट नाश्ता | Low Oil Breakfast #recipe</div><div class="domain">youtube.com &bull; October 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">NEVER TOO SMALL (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/qZBCphZFreg"><li><div class="title">Japanese Architects Clever 35sqm/376sqft Apartment 🤍 #nevertoosmall #shorts</div><div class="domain">youtube.com &bull; October 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">MinuteEarth (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/JCDDh7mwx30"><li><div class="title">Why don't all Rivers become Canyons?</div><div class="domain">youtube.com &bull; October 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Laasya (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/_FKTAL8RWYo"><li><div class="title">Watch full video on our channel |Jutti meri | Thumak Thumak | Nivi & Ishanvi | Laasya</div><div class="domain">youtube.com &bull; October 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Kannadhasan Productions by Annadurai Kannadhasan (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/IcfDEdhTGr8"><li><div class="title">பாட்டும் நானே பாடலை நான் தான் எழுதினேன்.. கவியரசு கண்ணதாசன்</div><div class="domain">youtube.com &bull; October 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hoezaay (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=vbgtzh9yHn4"><li><div class="title">sorry no livestream tonight</div><div class="domain">youtube.com &bull; October 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">History of the Universe (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=JNgEMyTxB8E"><li><div class="title">Did We Just Discover The Universe's Greatest Weakness?</div><div class="domain">youtube.com &bull; October 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hasgeek TV (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=lERbomSDJCY"><li><div class="title">Scaling customer delight at Zomato using AI</div><div class="domain">youtube.com &bull; October 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">exurb1a (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=Ctwc8t5CsQs"><li><div class="title">Chess is When You Microdose Infinity</div><div class="domain">youtube.com &bull; October 11, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=BUtzl6b0uKU"><li><div class="title">a pointless ad for my pointless new book</div><div class="domain">youtube.com &bull; October 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Empty Hand (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=sudzlSWotYM"><li><div class="title">VJ Parvathy செய்தது தப்பா - Nandhini Evicted⁉️ Bigg Boss Tamil Season 9 TROLL |  | Vijay Tv | Tamil</div><div class="domain">youtube.com &bull; October 11, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=7Hhix8Ecjsg"><li><div class="title">என்னடா கொடூரமா இருக்கு😱 No Logic Scenes🤣 Hari Hara Veera Mallu | Sikandar | Balakrishna Tamil Troll</div><div class="domain">youtube.com &bull; October 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Circle Line Art School (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=5CvugIw-dnk"><li><div class="title">How to Draw a Country Road Landscape: Step by Step Pencil Sketch</div><div class="domain">youtube.com &bull; October 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">CinemaStix (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=AaEFVQMAmK0"><li><div class="title">they thought they could stop the world’s greatest comedic actor from improvising on set, but they…</div><div class="domain">youtube.com &bull; October 11, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">AVM Productions - Movies (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=1euK4iLVy6g"><li><div class="title">The History of AVM Studios</div><div class="domain">youtube.com &bull; October 11, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>

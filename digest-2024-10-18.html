@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2024-10-18</span>:</h1>
+  <p class="summary">There are 53 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Bear Blog Trending Posts (bearblog.dev)</h2> (3)</summary><ul><a class="li" href="https://tiramisu.bearblog.dev/wake-up-calls/"><li><div class="title">wake up calls</div><div class="domain">tiramisu.bearblog.dev &bull; October 18, 2024</div></li></a><a class="li" href="https://brandons-journal.com/you-have-a-choice/"><li><div class="title">You Have a Choice</div><div class="domain">brandons-journal.com &bull; October 18, 2024</div></li></a><a class="li" href="https://paravoce.bearblog.dev/youre-overcomplicating-production/"><li><div class="title">You're overcomplicating production</div><div class="domain">paravoce.bearblog.dev &bull; October 18, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Big Think (bigthink.com)</h2> (4)</summary><ul><a class="li" href="https://bigthink.com/starts-with-a-bang/ask-ethan-why-big-bang-tube/"><li><div class="title">Ask Ethan: Why is the Big Bang shown as a tube?</div><div class="domain">bigthink.com &bull; October 18, 2024</div></li></a><a class="li" href="https://bigthink.com/series/the-big-think-interview/yuval-noah-harari-full-interview/"><li><div class="title">Yuval Noah Harari’s guidebook for navigating the age of AI</div><div class="domain">bigthink.com &bull; October 18, 2024</div></li></a><a class="li" href="https://bigthink.com/business/the-mcnamara-fallacy-when-data-leads-to-the-worst-decision/"><li><div class="title">The “McNamara fallacy”: When data leads to the worst decision</div><div class="domain">bigthink.com &bull; October 18, 2024</div></li></a><a class="li" href="https://bigthink.com/thinking/everyday-philosophy-do-emojis-help-or-hurt-our-language/"><li><div class="title">Everyday Philosophy: Do emojis help or hurt our language?</div><div class="domain">bigthink.com &bull; October 18, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">kottke.org (feeds.kottke.org)</h2> (5)</summary><ul><a class="li" href="https://kottke.org/24/10/0045474-loving-that-the-ftc-has"><li><div class="title">Loving that the FTC has adopted a click-to-cancel rule. &#8220;Under the rule,...</div><div class="domain">kottke.org &bull; October 18, 2024</div></li></a><a class="li" href="https://kottke.org/24/10/0045476-is-it-perimenopause-or-th"><li><div class="title">Is It Perimenopause or the Fascist Death Knell of Late-Stage Capitalism? &#8220;Is...</div><div class="domain">kottke.org &bull; October 18, 2024</div></li></a><a class="li" href="https://kottke.org/24/10/artfully-arranged-junkyard-objects"><li><div class="title">Artfully Arranged Junkyard Objects</div><div class="domain">kottke.org &bull; October 18, 2024</div></li></a><a class="li" href="https://kottke.org/24/10/0045456-polostan-volume-one-of-bo"><li><div class="title">Polostan: Volume One of Bomb Light: A Riveting Historical Epic of International...</div><div class="domain">kottke.org &bull; October 18, 2024</div></li></a><a class="li" href="https://kottke.org/24/10/0045475-strolls-with-stops-use-mo"><li><div class="title">Strolls with stops use more energy than continuous walking, scientists show. &#8220;Researchers...</div><div class="domain">kottke.org &bull; October 18, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Go Make Things (gomakethings.com)</h2> (1)</summary><ul><a class="li" href="https://gomakethings.com/when-is-the-shadow-dom-useful/"><li><div class="title">When is the shadow DOM useful?</div><div class="domain">gomakethings.com &bull; October 18, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (4)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/L3YkTBNrkcbed5TsX/nao-updates-fall-2024"><li><div class="title">NAO Updates, Fall 2024</div><div class="domain">lesswrong.com &bull; October 18, 2024</div></li></a><a class="li" href="https://www.lesswrong.com/posts/Tzbvdp5rhM4L8aSKL/low-probability-estimation-in-language-models"><li><div class="title">Low Probability Estimation in Language Models</div><div class="domain">lesswrong.com &bull; October 18, 2024</div></li></a><a class="li" href="https://www.lesswrong.com/posts/L3aYFT4RDJYHbbsup/llms-can-learn-about-themselves-by-introspection"><li><div class="title">LLMs can learn about themselves by introspection</div><div class="domain">lesswrong.com &bull; October 18, 2024</div></li></a><a class="li" href="https://www.lesswrong.com/posts/nnvn6kaBLajiicH8e/sabotage-evaluations-for-frontier-models"><li><div class="title">Sabotage Evaluations for Frontier Models</div><div class="domain">lesswrong.com &bull; October 18, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (5)</summary><ul><a class="li" href="https://evanhahn.com/set-big-timeout/"><li><div class="title">setBigTimeout</div><div class="domain">evanhahn.com &bull; October 18, 2024</div></li></a><a class="li" href="https://github.com/whitequark/superlinker"><li><div class="title">superlinker: a tool for reinterpreting ELF executables and shared libraries</div><div class="domain">github.com &bull; October 18, 2024</div></li></a><a class="li" href="https://arcan-fe.com/2024/10/18/accessible-arcan-out-of-sight/"><li><div class="title">Accessible Arcan : Out of Sight</div><div class="domain">arcan-fe.com &bull; October 18, 2024</div></li></a><a class="li" href="https://typst.app/blog/2024/typst-0.12/"><li><div class="title">Typst 0.12 is just ... better</div><div class="domain">typst.app &bull; October 18, 2024</div></li></a><a class="li" href="https://steveklabnik.github.io/jujutsu-tutorial/"><li><div class="title">Steve Klabnik's Tutorial on Jujutsu (git replacement)</div><div class="domain">steveklabnik.github.io &bull; October 18, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Longreads (longreads.com)</h2> (2)</summary><ul><a class="li" href="https://longreads.com/2024/10/18/top-5-longreads-536/"><li><div class="title">The Top 5 Longreads of the Week</div><div class="domain">longreads.com &bull; October 18, 2024</div></li></a><a class="li" href="https://longreads.com/2024/10/18/the-essay-as-realm/"><li><div class="title">The Essay as Realm</div><div class="domain">longreads.com &bull; October 18, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Nautilus (nautil.us)</h2> (2)</summary><ul><a class="li" href="https://nautil.us/lucy-at-50-990900/"><li><div class="title">Lucy at 50</div><div class="domain">nautil.us &bull; October 18, 2024</div></li></a><a class="li" href="https://nautil.us/solving-the-riddle-of-ceres-990927/"><li><div class="title">Solving the Riddle of Ceres</div><div class="domain">nautil.us &bull; October 18, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Letters of Note (news.lettersofnote.com)</h2> (1)</summary><ul><a class="li" href="https://news.lettersofnote.com/p/the-haitian-people-are-noble-and"><li><div class="title">The Haitian people are noble and generous</div><div class="domain">news.lettersofnote.com &bull; October 18, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (9)</summary><ul><a class="li" href="https://spectrum.ieee.org/patent-engineer-lesley-ann-knee"><li><div class="title">Advice for first-time inventors from a patent engineer</div><div class="domain">spectrum.ieee.org &bull; October 18, 2024</div></li></a><a class="li" href="https://arxiv.org/abs/2410.13857"><li><div class="title">Numerical Precision Affects Mathematical Reasoning Capabilities of LLMs</div><div class="domain">arxiv.org &bull; October 18, 2024</div></li></a><a class="li" href="https://www.spakhm.com/ts-wolfram"><li><div class="title">Writing a Mathematica Interpreter in Typescript</div><div class="domain">spakhm.com &bull; October 18, 2024</div></li></a><a class="li" href="https://github.com/nh2/internal-contstrained-pki"><li><div class="title">Just want simple TLS for your .internal network?</div><div class="domain">github.com &bull; October 18, 2024</div></li></a><a class="li" href="https://github.com/clemensmanert/fas"><li><div class="title">Show HN: Floating point arithmetic types in C++ for any size and any base</div><div class="domain">github.com &bull; October 18, 2024</div></li></a><a class="li" href="https://jakearchibald.com/2024/how-should-selectedoption-work/"><li><div class="title">How should the new <selectedoption> element work?</div><div class="domain">jakearchibald.com &bull; October 18, 2024</div></li></a><a class="li" href="https://novalis.org/blog/2024-10-18-building-a-game-with-the-real-engine.html"><li><div class="title">Building a Game with the Real Engine</div><div class="domain">novalis.org &bull; October 18, 2024</div></li></a><a class="li" href="https://www.mosaic51.com/featured/mosaic-realmap-explore-prague-in-unprecedented-detail-with-1-26-million-images/"><li><div class="title">Mosaic REALMAP: Explore Prague in detail with 1.26M images</div><div class="domain">mosaic51.com &bull; October 18, 2024</div></li></a><a class="li" href="https://www.reuters.com/business/autos-transportation/nhtsa-opens-probe-into-24-mln-tesla-vehicles-over-full-self-driving-collisions-2024-10-18/"><li><div class="title">US probes Tesla's Full Self-Driving software after fatal crash</div><div class="domain">reuters.com &bull; October 18, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">notes.druchan.com — RSS Feed (notes.druchan.com)</h2> (1)</summary><ul><a class="li" href="https://notes.druchan.com/haskell-journal-day-12"><li><div class="title">Haskell Journal - Day 12</div><div class="domain">notes.druchan.com &bull; October 18, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Quanta Magazine (quantamagazine.org)</h2> (1)</summary><ul><a class="li" href="https://www.quantamagazine.org/how-the-human-brain-contends-with-the-strangeness-of-zero-20241018/"><li><div class="title">How the Human Brain Contends With the Strangeness of Zero</div><div class="domain">quantamagazine.org &bull; October 18, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Reasons to be Cheerful (reasonstobecheerful.world)</h2> (1)</summary><ul><a class="li" href="https://reasonstobecheerful.world/california-schools-embracing-vegan-meals/"><li><div class="title">More California Schools Than Ever Are Embracing Vegan Meals</div><div class="domain">reasonstobecheerful.world &bull; October 18, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Seth's Blog (seths.blog)</h2> (1)</summary><ul><a class="li" href="https://seths.blog/2024/10/moving-toward-ease/"><li><div class="title">Moving toward ease</div><div class="domain">seths.blog &bull; October 18, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Sympolymathesy, by Chris Krycho (v5.chriskrycho.com)</h2> (1)</summary><ul><a class="li" href="https://v5.chriskrycho.com/journal/read-the-manual/du/"><li><div class="title">[journal] Read the Manual: du</div><div class="domain">v5.chriskrycho.com &bull; October 18, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (10)</summary><ul><a class="li" href="https://yourstory.com/2024/10/ashneer-grover-oppression-mismanagemt-plea-bharatpe-management"><li><div class="title">Ashneer Grover withdraws plea accusing BharatPe of oppression and mismanagement</div><div class="domain">yourstory.com &bull; October 18, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/10/cushman-wakefield-appoints-supriya-chatterjee-as-md-north-india"><li><div class="title">Cushman & Wakefield appoints Supriya Chatterjee as MD-North India</div><div class="domain">yourstory.com &bull; October 18, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/10/zee-ent-q2-profit-up-70-pc-to-rs-209-4-cr"><li><div class="title">Zee Entertainment Q2 net profit surges 70% to Rs 209.4 Cr</div><div class="domain">yourstory.com &bull; October 18, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/10/jiojio-financial-services-profit-growth-in-q2-reliance-mukesh-ambani"><li><div class="title">Jio Financial Services sees over 120% QoQ profit growth in Q2</div><div class="domain">yourstory.com &bull; October 18, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/10/fullerton-acquires-controlling-stake-lendingkart-fintech-startup"><li><div class="title">Fullerton acquires controlling stake in Lendingkart for Rs 252 Cr</div><div class="domain">yourstory.com &bull; October 18, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/10/weekly-funding-roundup-oct-12-18-vc-inflows-continue-rise"><li><div class="title">[Weekly funding roundup Oct 12-18] VC inflows continue to rise</div><div class="domain">yourstory.com &bull; October 18, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/05/hidden-signs-success-early-traits"><li><div class="title">Early signs of success: 9 traits you didn't know mattered</div><div class="domain">yourstory.com &bull; October 18, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/06/cobra-effect-business-strategies"><li><div class="title">The Cobra Effect: Its pitfalls and how to prevent them</div><div class="domain">yourstory.com &bull; October 18, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/10/manorama-infosolutions-global-healthtech-impact"><li><div class="title">Explore Indian ingenuity in action: Join the conversation on Manorama Infosolutions' global healthtech impact</div><div class="domain">yourstory.com &bull; October 18, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/10/ceo-yash-dhaiya-steps-down-policybazaar-audit-committee"><li><div class="title">PolicyBazaar CEO Yashish Dahiya steps down from audit committee in board reshuffle</div><div class="domain">yourstory.com &bull; October 18, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">toha film (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=BYdwibv6ino"><li><div class="title">Sushimichi Sakurada / 寿し道桜田</div><div class="domain">youtube.com &bull; October 18, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">The Closer Look (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=CGr1ixs8FEQ"><li><div class="title">How To Write Better Chemistry</div><div class="domain">youtube.com &bull; October 18, 2024</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>

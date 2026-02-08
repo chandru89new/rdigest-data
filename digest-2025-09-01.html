@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-09-01</span>:</h1>
+  <p class="summary">There are 97 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Aeon | a world of ideas (aeon.co)</h2> (1)</summary><ul><a class="li" href="https://aeon.co/essays/how-to-be-yourself-when-you-have-no-self-lessons-from-zhuangzi?utm_source=rss-feed"><li><div class="title">Essence is fluttering</div><div class="domain">aeon.co &bull; September 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Bear Blog Trending Posts (bearblog.dev)</h2> (7)</summary><ul><a class="li" href="https://notes.jeddacp.com/drowning-in-the-in-between/"><li><div class="title">Drowning in the In-Between</div><div class="domain">notes.jeddacp.com &bull; September 01, 2025</div></li></a><a class="li" href="https://ginoz.bearblog.dev/people-actually-do-this-for-fun/"><li><div class="title">People actually do this for fun?</div><div class="domain">ginoz.bearblog.dev &bull; September 01, 2025</div></li></a><a class="li" href="https://sean666.bearblog.dev/ditching-spotify/"><li><div class="title">Ditching Spotify</div><div class="domain">sean666.bearblog.dev &bull; September 01, 2025</div></li></a><a class="li" href="https://combatdavey.net/september-1-etc/"><li><div class="title">september 1 etc</div><div class="domain">combatdavey.net &bull; September 01, 2025</div></li></a><a class="li" href="https://joshs.bearblog.dev/exploration-exploitation-and-thinking/"><li><div class="title">Exploration, exploitation, and thinking</div><div class="domain">joshs.bearblog.dev &bull; September 01, 2025</div></li></a><a class="li" href="https://prickly.oxhe.art/beginnings/"><li><div class="title">Begin Again. And Again.</div><div class="domain">prickly.oxhe.art &bull; September 01, 2025</div></li></a><a class="li" href="https://tala.bearblog.dev/perfectionism-is-a-form-of-shame/"><li><div class="title">perfectionism is a form of shame</div><div class="domain">tala.bearblog.dev &bull; September 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Big Think (bigthink.com)</h2> (3)</summary><ul><a class="li" href="https://bigthink.com/starts-with-a-bang/logarithmic-view-universe/"><li><div class="title">See the whole Universe at once in this unique logarithmic view</div><div class="domain">bigthink.com &bull; September 01, 2025</div></li></a><a class="li" href="https://bigthink.com/the-well/what-makes-discipline-meaningful/"><li><div class="title">When does self-discipline become virtue?</div><div class="domain">bigthink.com &bull; September 01, 2025</div></li></a><a class="li" href="https://bigthink.com/business/how-contemplative-leadership-can-help-us-face-uncertainty-with-confidence/"><li><div class="title">How “contemplative leadership” can help us face uncertainty with confidence</div><div class="domain">bigthink.com &bull; September 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Two-Wrongs (entropicthoughts.com)</h2> (1)</summary><ul><a class="li" href="https://entropicthoughts.com/search-index-150-lines-haskell"><li><div class="title">Search Index in 150 Lines of Haskell</div><div class="domain">entropicthoughts.com &bull; September 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">HBR.org (feeds.harvardbusiness.org)</h2> (1)</summary><ul><a class="li" href="https://hbr.org/2025/09/when-youre-suddenly-managing-more-people-and-feeling-buried"><li><div class="title">When You’re Suddenly Managing More People—and Feeling Buried</div><div class="domain">hbr.org &bull; September 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Go Make Things (gomakethings.com)</h2> (1)</summary><ul><a class="li" href="https://gomakethings.com/means-of-production/"><li><div class="title">Means of Production</div><div class="domain">gomakethings.com &bull; September 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (5)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/s64EK3kF9rexntpYm/my-ai-predictions-for-2027"><li><div class="title">My AI Predictions for 2027</div><div class="domain">lesswrong.com &bull; September 01, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/BxfscrfGJPq5Yxfit/help-me-understand-how-do-multiverse-acausal-trades-work"><li><div class="title">Help me understand: how do multiverse acausal trades work?</div><div class="domain">lesswrong.com &bull; September 01, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/hxYiwSqmvxzCXuqty/generative-ai-is-not-causing-ycombinator-companies-to-grow"><li><div class="title">Generative AI is not causing YCombinator companies to grow more quickly than usual (yet)</div><div class="domain">lesswrong.com &bull; September 01, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/C6oQaSXmTtqNxh9Ad/should-we-align-ai-with-maternal-instinct"><li><div class="title">Should we align AI with maternal instinct?</div><div class="domain">lesswrong.com &bull; September 01, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/anoK4akwe8PKjtzkL/plurality-and-6pack-care"><li><div class="title">⿻ Plurality & 6pack.care</div><div class="domain">lesswrong.com &bull; September 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (18)</summary><ul><a class="li" href="https://m.youtube.com/watch?v=RLw13wLM5Ko"><li><div class="title">C++ Memory Safety in WebKit</div><div class="domain">m.youtube.com &bull; September 01, 2025</div></li></a><a class="li" href="https://dusty.phillips.codes/roc/"><li><div class="title">Building a WASM compiler in Roc (series)</div><div class="domain">dusty.phillips.codes &bull; September 01, 2025</div></li></a><a class="li" href="https://duckdb.org/2025/08/08/spatial-joins.html"><li><div class="title">[Optimising] Spatial Joins in DuckDB</div><div class="domain">duckdb.org &bull; September 01, 2025</div></li></a><a class="li" href="https://nim-lang.org/araq/nimony.html"><li><div class="title">Nimony: Design principles</div><div class="domain">nim-lang.org &bull; September 01, 2025</div></li></a><a class="li" href="https://lwn.net/SubscriberLink/1035727/4837b0d3dccf1cbb/"><li><div class="title">The future of 32-bit support in the kernel</div><div class="domain">lwn.net &bull; September 01, 2025</div></li></a><a class="li" href="https://blog.rust-lang.org/2025/09/01/rust-lld-on-1.90.0-stable/"><li><div class="title">Faster linking times with 1.90.0 stable on Linux using the LLD linker</div><div class="domain">blog.rust-lang.org &bull; September 01, 2025</div></li></a><a class="li" href="https://lina.sh/blog/spotify-status-without-js"><li><div class="title">Automatic updating Spotify status... without JavaScript</div><div class="domain">lina.sh &bull; September 01, 2025</div></li></a><a class="li" href="https://miguel-martin.com/blog/nim2-review"><li><div class="title">A Review of Nim 2: The Good & Bad with Example Code</div><div class="domain">miguel-martin.com &bull; September 01, 2025</div></li></a><a class="li" href="https://sourcehut.org/blog/2025-09-01-whats-cooking-q3-2025/"><li><div class="title">What's cooking on SourceHut? Q3 2025</div><div class="domain">sourcehut.org &bull; September 01, 2025</div></li></a><a class="li" href="https://lemire.me/blog/2025/09/01/processors-are-getting-wider/"><li><div class="title">Processors are getting wider</div><div class="domain">lemire.me &bull; September 01, 2025</div></li></a><a class="li" href="https://aleyan.com/projects/ascii-side-of-the-moon/"><li><div class="title">The ASCII Side of the Moon</div><div class="domain">aleyan.com &bull; September 01, 2025</div></li></a><a class="li" href="https://smallandnearlysilent.com/baba-yaga/LICENSE.txt"><li><div class="title">Baba Yaga License</div><div class="domain">smallandnearlysilent.com &bull; September 01, 2025</div></li></a><a class="li" href="https://endof10.org/"><li><div class="title">End of (Windows) 10</div><div class="domain">endof10.org &bull; September 01, 2025</div></li></a><a class="li" href="https://www.smokingonabike.com/2025/01/04/passkey-marketing-is-lying-to-you/"><li><div class="title">Passkeys are incompatible with open-source software</div><div class="domain">smokingonabike.com &bull; September 01, 2025</div></li></a><a class="li" href="https://herman.bearblog.dev/license/"><li><div class="title">Bear is now source-available</div><div class="domain">herman.bearblog.dev &bull; September 01, 2025</div></li></a><a class="li" href="https://mcyoung.xyz/2025/08/25/go-default-methods/"><li><div class="title">Default Methods in Go</div><div class="domain">mcyoung.xyz &bull; September 01, 2025</div></li></a><a class="li" href="https://graydon2.dreamwidth.org/218040.html"><li><div class="title">things rust shipped without (2015)</div><div class="domain">graydon2.dreamwidth.org &bull; September 01, 2025</div></li></a><a class="li" href="https://nolanlawson.com/2025/08/31/why-do-browsers-throttle-javascript-timers/"><li><div class="title">Why do browsers throttle JavaScript timers?</div><div class="domain">nolanlawson.com &bull; September 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Longreads (longreads.com)</h2> (1)</summary><ul><a class="li" href="https://longreads.com/2025/09/01/disney-wealth-and-class/"><li><div class="title">Disney Is the Happiest Place on Earth, if You Can Afford It</div><div class="domain">longreads.com &bull; September 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (24)</summary><ul><a class="li" href="https://erikdemaine.org/prints/QR/"><li><div class="title">3D QR Codes</div><div class="domain">erikdemaine.org &bull; September 01, 2025</div></li></a><a class="li" href="https://theswiftdev.com/2025/type-safe-and-user-friendly-error-handling-in-swift-6/"><li><div class="title">Type-safe and user-friendly error handling in Swift 6</div><div class="domain">theswiftdev.com &bull; September 01, 2025</div></li></a><a class="li" href="https://phys.org/news/2025-08-simple-safer.html"><li><div class="title">Simple design changes can make bat boxes safer</div><div class="domain">phys.org &bull; September 01, 2025</div></li></a><a class="li" href="https://gaggiuino.github.io/"><li><div class="title">Gaggiuino</div><div class="domain">gaggiuino.github.io &bull; September 01, 2025</div></li></a><a class="li" href="https://blog.firedrake.org/archive/2025/09/OSMAnd_vs_Organic_Maps.html"><li><div class="title">OSMAnd vs. Organic Maps</div><div class="domain">blog.firedrake.org &bull; September 01, 2025</div></li></a><a class="li" href="https://oscarcunningham.com/792/minesweeper-thermodynamics/"><li><div class="title">Minesweeper thermodynamics</div><div class="domain">oscarcunningham.com &bull; September 01, 2025</div></li></a><a class="li" href="https://cognition.ai/blog/dont-build-multi-agents"><li><div class="title">Don't Build Multi-Agents</div><div class="domain">cognition.ai &bull; September 01, 2025</div></li></a><a class="li" href="https://blog.cocoapods.org/CocoaPods-Specs-Repo/"><li><div class="title">CocoaPods trunk read-only plan</div><div class="domain">blog.cocoapods.org &bull; September 01, 2025</div></li></a><a class="li" href="https://www.desertmountaineer.com/2021/08/06/graves/"><li><div class="title">Desert Graves (2021)</div><div class="domain">desertmountaineer.com &bull; September 01, 2025</div></li></a><a class="li" href="https://news.ycombinator.com/item?id=45093190"><li><div class="title">Ask HN: Who wants to be hired? (September 2025)</div><div class="domain">news.ycombinator.com &bull; September 01, 2025</div></li></a><a class="li" href="https://www.supermemo.com/en/blog/twenty-rules-of-formulating-knowledge"><li><div class="title">Effective learning: Rules of formulating knowledge (1999)</div><div class="domain">supermemo.com &bull; September 01, 2025</div></li></a><a class="li" href="https://arxiv.org/abs/2508.02992"><li><div class="title">Towards Memory Specialization: A Case for Long-Term and Short-Term RAM</div><div class="domain">arxiv.org &bull; September 01, 2025</div></li></a><a class="li" href="https://www.acquired.fm/episodes/the-steve-ballmer-interview"><li><div class="title">Steve Ballmer Interview</div><div class="domain">acquired.fm &bull; September 01, 2025</div></li></a><a class="li" href="https://www.worldofinteriors.com/story/richard-axe-second-hand-books-yorkshire"><li><div class="title">One of Britain's largest stocks of second-hand books ever amassed</div><div class="domain">worldofinteriors.com &bull; September 01, 2025</div></li></a><a class="li" href="https://www.anthropic.com/news/detecting-countering-misuse-aug-2025"><li><div class="title">Detecting and countering misuse of AI</div><div class="domain">anthropic.com &bull; September 01, 2025</div></li></a><a class="li" href="https://www.daemonology.net/blog/2025-09-01-Thoughts-on-Amazonian-Leadership.html"><li><div class="title">Thoughts on (Amazonian) leadership</div><div class="domain">daemonology.net &bull; September 01, 2025</div></li></a><a class="li" href="https://news.ycombinator.com/item?id=45093192"><li><div class="title">Ask HN: Who is hiring? (September 2025)</div><div class="domain">news.ycombinator.com &bull; September 01, 2025</div></li></a><a class="li" href="https://howtogrow.substack.com/p/the-physics-of-sales"><li><div class="title">The buyer-pull and seller-push theories of sales</div><div class="domain">howtogrow.substack.com &bull; September 01, 2025</div></li></a><a class="li" href="https://radar.cloudflare.com/ai-insights"><li><div class="title">Cloudflare Radar: AI Insights</div><div class="domain">radar.cloudflare.com &bull; September 01, 2025</div></li></a><a class="li" href="https://arxiv.org/abs/2508.21141"><li><div class="title">Adaptive LLM routing under budget constraints</div><div class="domain">arxiv.org &bull; September 01, 2025</div></li></a><a class="li" href="https://marc.info/?l=openbsd-cvs&m=175675287220070&w=2"><li><div class="title">Raspberry Pi 5 support (OpenBSD)</div><div class="domain">marc.info &bull; September 01, 2025</div></li></a><a class="li" href="https://www.4rknova.com/blog/2025/08/30/foil-sticker"><li><div class="title">Implementing a Foil Sticker Effect</div><div class="domain">4rknova.com &bull; September 01, 2025</div></li></a><a class="li" href="https://www.businessinsider.com/amazon-ai-talent-wars-internal-document-2025-8"><li><div class="title">Amazon has mostly sat out the AI talent war</div><div class="domain">businessinsider.com &bull; September 01, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=Unzc731iCUY"><li><div class="title">Patrick Winston: How to Speak (2018) [video]</div><div class="domain">youtube.com &bull; September 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Reasons to be Cheerful (reasonstobecheerful.world)</h2> (1)</summary><ul><a class="li" href="https://reasonstobecheerful.world/technology-brain-boost-seniors-dementia/"><li><div class="title">A Brain Boost For Seniors Who Use Everyday Tech</div><div class="domain">reasonstobecheerful.world &bull; September 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Seth's Blog (seths.blog)</h2> (1)</summary><ul><a class="li" href="https://seths.blog/2025/09/walk-away-or-dance/"><li><div class="title">Walk away or dance</div><div class="domain">seths.blog &bull; September 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Diplomat (thediplomat.com)</h2> (8)</summary><ul><a class="li" href="https://thediplomat.com/2025/09/scandal-in-the-sangha/"><li><div class="title">Scandal in the Sangha</div><div class="domain">thediplomat.com &bull; September 01, 2025</div></li></a><a class="li" href="https://thediplomat.com/2025/09/rare-earth-mines-in-myanmar-are-poisoning-thai-rivers/"><li><div class="title">Rare Earth Mines in Myanmar Are Poisoning Thai Rivers</div><div class="domain">thediplomat.com &bull; September 01, 2025</div></li></a><a class="li" href="https://thediplomat.com/2025/09/with-pms-removal-thailand-enters-another-phase-of-political-uncertainty/"><li><div class="title">With PM’s Removal, Thailand Enters Another Phase of Political Uncertainty</div><div class="domain">thediplomat.com &bull; September 01, 2025</div></li></a><a class="li" href="https://thediplomat.com/2025/09/indonesian-lawmakers-agree-to-forego-benefits-after-deadly-protests/"><li><div class="title">Indonesian Lawmakers Agree to Forego Benefits After Deadly Protests</div><div class="domain">thediplomat.com &bull; September 01, 2025</div></li></a><a class="li" href="https://thediplomat.com/2025/09/indonesias-upcoming-defense-policy-paper-must-balance-security-and-democracy/"><li><div class="title">Indonesia’s Upcoming Defense Policy Paper Must Balance Security and Democracy</div><div class="domain">thediplomat.com &bull; September 01, 2025</div></li></a><a class="li" href="https://thediplomat.com/2025/09/growing-pakistan-bangladesh-relations-are-changing-regional-geopolitics/"><li><div class="title">Growing Pakistan-Bangladesh Relations are Changing Regional Geopolitics</div><div class="domain">thediplomat.com &bull; September 01, 2025</div></li></a><a class="li" href="https://thediplomat.com/2025/09/japan-signals-confidence-in-indian-economy-during-pm-modis-visit-to-tokyo/"><li><div class="title">Japan Signals Confidence in Indian Economy During PM Modi’s Visit to Tokyo</div><div class="domain">thediplomat.com &bull; September 01, 2025</div></li></a><a class="li" href="https://thediplomat.com/2025/09/killer-quake-hits-eastern-afghanistan-devastates-villages/"><li><div class="title">Killer Quake Hits Eastern Afghanistan, Devastates Villages</div><div class="domain">thediplomat.com &bull; September 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (19)</summary><ul><a class="li" href="https://yourstory.com/2025/09/india-hsinchu-chip-clusters"><li><div class="title">⁠Can India Build Its Own Hsinchu? Lessons from Taiwan’s Chip Clusters</div><div class="domain">yourstory.com &bull; September 01, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/09/startup-news-and-updates-daily-roundup-september-1-2025-hdfc-bank"><li><div class="title">Startup news and updates: Daily roundup (September 1, 2025)</div><div class="domain">yourstory.com &bull; September 01, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/09/our-major-focus-make-up-trillion-dollar-economy-2029"><li><div class="title">Our major focus is to make state a trillion-dollar economy by 2029: UP’s top bureaucrat</div><div class="domain">yourstory.com &bull; September 01, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/09/upi-crosses-20-billion-monthly-payments-for-the-first-time"><li><div class="title">UPI crosses 20 billion monthly payments for the first time</div><div class="domain">yourstory.com &bull; September 01, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/09/pokerbaazi-mpl-huge-job-cuts-real-money-gaming-ban"><li><div class="title">PokerBaazi, MPL hit by huge job cuts after real-money gaming ban: Report</div><div class="domain">yourstory.com &bull; September 01, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/09/india-ai-38000-gpus-voucher-model"><li><div class="title">India AI Orders 38,000 GPUs, Shifts to Voucher Model</div><div class="domain">yourstory.com &bull; September 01, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/09/india-semiconductor-ip-ownership"><li><div class="title">Owning the Future: Why India Must Secure Semiconductor IP</div><div class="domain">yourstory.com &bull; September 01, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/09/india-lagaan-moment-chipmaking"><li><div class="title">India’s ‘Lagaan Moment’: The Country’s Bold Leap into Chipmaking</div><div class="domain">yourstory.com &bull; September 01, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/09/bengaluru-cloud-kitchen-startup-curefoods-marks-5-years-eatfit"><li><div class="title">Cloud kitchen startup Curefoods marks 5 years, sets eyes on Tier II+ expansion</div><div class="domain">yourstory.com &bull; September 01, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/09/monthly-funding-report-august-sees-vc-fundraise-of-1-billion"><li><div class="title">August sees venture capital inflow of $1 billion with only 87 deals</div><div class="domain">yourstory.com &bull; September 01, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/09/india-chip-pilot-plant-sanand-micron-fab-2025"><li><div class="title">India’s First Chip Pilot Plant Opens in Sanand; Micron Fab Nears 2025</div><div class="domain">yourstory.com &bull; September 01, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/09/ai-kosh-1000-datasets-open-data-india"><li><div class="title">AI Kosh Surpasses 1,000 Datasets as India Expands AI Infra</div><div class="domain">yourstory.com &bull; September 01, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/09/lendenclub-fy25-profit-rbi-curbs-test-p2p-lenders"><li><div class="title">LenDenClub swings to profit in FY25 amid stricter RBI rules</div><div class="domain">yourstory.com &bull; September 01, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/09/flipkart-acquires-majority-stake-in-pinkvilla-gen-z"><li><div class="title">Flipkart acquires majority stake in Pinkvilla; targets Gen Z consumers</div><div class="domain">yourstory.com &bull; September 01, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/09/govt-75-percent-fab-costs-india-chips-rollout"><li><div class="title">Govt to Fund 75% of Fab Costs as India’s First Chips Roll Out</div><div class="domain">yourstory.com &bull; September 01, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/08/india-inc-unknowingly-pushing-talent-away-skill-hiring-jobs"><li><div class="title">Is India Inc. unknowingly pushing talent away?</div><div class="domain">yourstory.com &bull; September 01, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/08/anand-sweets-timeless-legacy-mysore-pak"><li><div class="title">Anand Sweets’ timeless legacy; AI voice agents for BFSI sector</div><div class="domain">yourstory.com &bull; September 01, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/08/mfilterits-decade-long-journey-to-securing-digital-ecosystem"><li><div class="title">mFilterIT’s decade-long journey to securing the digital ecosystem</div><div class="domain">yourstory.com &bull; September 01, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/08/bengaluru-startup-posibl-ai-bfsi-sector-ai-voice-agents"><li><div class="title">Making it ‘Posibl’: The Bengaluru startup helping India’s BFSI sector with AI voice agents</div><div class="domain">yourstory.com &bull; September 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Well (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=NOnZFN6T08g"><li><div class="title">When does self-discipline become virtue? | Sarah Schnitker</div><div class="domain">youtube.com &bull; September 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Socrates Studio (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=KmVrrITBV-I"><li><div class="title">Existentialism - Some Glimpses ll இருத்தலியம் பற்றிய நேரடி வகுப்பின் சிறு பதிவு ll பேரா. இரா.முரளி</div><div class="domain">youtube.com &bull; September 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Newsthink (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=-RvQ269D_0o"><li><div class="title">The Most Tragic Physicist in History</div><div class="domain">youtube.com &bull; September 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Jordindian (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/ld2ssgyaEFQ"><li><div class="title">You want some Sadhya? 🤤 #jordindian #onam</div><div class="domain">youtube.com &bull; September 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Half as Interesting (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=pRR3jo7dUJI"><li><div class="title">The Worst Mistakes We Made This Year (Again)</div><div class="domain">youtube.com &bull; September 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Artist RamyaSadasivam (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/y_uFrry0ItI"><li><div class="title">Look what I found | #shorts</div><div class="domain">youtube.com &bull; September 01, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>

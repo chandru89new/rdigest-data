@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-06-01</span>:</h1>
+  <p class="summary">There are 50 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Bear Blog Trending Posts (bearblog.dev)</h2> (5)</summary><ul><a class="li" href="https://stateofnats.bearblog.dev/new-post/"><li><div class="title">The State of Nats #3: It continues</div><div class="domain">stateofnats.bearblog.dev &bull; June 01, 2025</div></li></a><a class="li" href="https://nicksoulace.bearblog.dev/lonely-men-and-lazy-takes/"><li><div class="title">Male Loneliness and Lazy Takes</div><div class="domain">nicksoulace.bearblog.dev &bull; June 01, 2025</div></li></a><a class="li" href="https://perdana.dev/checkboxes-are-for-multiple-selection-and-radio-buttons-are-for-single-selection/"><li><div class="title">checkboxes are for multiple selection and radio buttons are for single selection</div><div class="domain">perdana.dev &bull; June 01, 2025</div></li></a><a class="li" href="https://cortrinkau.bearblog.dev/is-this-adulthood/"><li><div class="title">is this... adulthood?</div><div class="domain">cortrinkau.bearblog.dev &bull; June 01, 2025</div></li></a><a class="li" href="https://osinttools.bearblog.dev/youtube-user-comment-history-tool-20bs-comments-archived/"><li><div class="title">Youtube user comment history tool (20Bs comments archived)</div><div class="domain">osinttools.bearblog.dev &bull; June 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Big Think (bigthink.com)</h2> (1)</summary><ul><a class="li" href="https://bigthink.com/mini-philosophy/philosophy-grief/"><li><div class="title">Three responses to grief in the philosophy of Kierkegaard, Heidegger, and Camus</div><div class="domain">bigthink.com &bull; June 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">kottke.org (feeds.kottke.org)</h2> (4)</summary><ul><a class="li" href="https://kottke.org/25/06/0046965-taylor-swift-has-bought-b"><li><div class="title">Taylor Swift has bought back the rights to her first six albums....</div><div class="domain">kottke.org &bull; June 01, 2025</div></li></a><a class="li" href="https://kottke.org/25/06/0046964-king-of-the-hill-is"><li><div class="title">King of the Hill is returning after 15 years. &#8220;Hank and Peggy...</div><div class="domain">kottke.org &bull; June 01, 2025</div></li></a><a class="li" href="https://kottke.org/25/06/0046966-astronomers-discover-stra"><li><div class="title">Astronomers discover strange new celestial object in our Milky Way galaxy. &#8220;It...</div><div class="domain">kottke.org &bull; June 01, 2025</div></li></a><a class="li" href="https://kottke.org/25/05/0046963-teaser-trailer-for-wake-u"><li><div class="title">Teaser trailer for Wake Up Dead Man, the third in the Knives...</div><div class="domain">kottke.org &bull; June 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (1)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/YFxpsrph83H25aCLW/the-80-20-playbook-for-mitigating-ai-scheming-in-2025"><li><div class="title">The 80/20 playbook for mitigating AI scheming in 2025</div><div class="domain">lesswrong.com &bull; June 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (13)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=DjOqkVIlEGY"><li><div class="title">The 3D Gaussian Splatting Adventure: Past, Present, Future</div><div class="domain">youtube.com &bull; June 01, 2025</div></li></a><a class="li" href="https://arxiv.org/abs/2504.17178"><li><div class="title">How to Grow an LSM-tree? Towards Bridging the Gap Between Theory and Practice</div><div class="domain">arxiv.org &bull; June 01, 2025</div></li></a><a class="li" href="https://linuxdevices.org/a-developers-perspective-on-gmates-yopy-linux-pda-a/"><li><div class="title">A developer’s perspective on G.Mate’s YOPY Linux PDA (2002)</div><div class="domain">linuxdevices.org &bull; June 01, 2025</div></li></a><a class="li" href="https://southcla.ws/structured-errors-in-go"><li><div class="title">Structured errors in Go</div><div class="domain">southcla.ws &bull; June 01, 2025</div></li></a><a class="li" href="https://probablydance.com/2025/05/31/im-open-sourcing-my-custom-benchmark-gui/"><li><div class="title">I’m Open-Sourcing my Custom Benchmark GUI</div><div class="domain">probablydance.com &bull; June 01, 2025</div></li></a><a class="li" href="https://home.expurple.me/posts/why-use-structured-errors-in-rust-applications/"><li><div class="title">Why Use Structured Errors in Rust Applications?</div><div class="domain">home.expurple.me &bull; June 01, 2025</div></li></a><a class="li" href="https://rachelbythebay.com/w/2025/05/31/sync/"><li><div class="title">rsync's defaults are not always enough</div><div class="domain">rachelbythebay.com &bull; June 01, 2025</div></li></a><a class="li" href="https://github.com/moverest/wl-kbptr"><li><div class="title">wl-kbptr: Control the mouse pointer with the keyboard on Wayland</div><div class="domain">github.com &bull; June 01, 2025</div></li></a><a class="li" href="https://stefan-gloor.ch/yomani-hack"><li><div class="title">Root Shell on Credit Card Terminal</div><div class="domain">stefan-gloor.ch &bull; June 01, 2025</div></li></a><a class="li" href="https://lobste.rs/s/qmtc8m/what_technology_use_for_small_ngo_website"><li><div class="title">What technology to use for a small NGO website?</div><div class="domain">lobste.rs &bull; June 01, 2025</div></li></a><a class="li" href="https://michael.stapelberg.ch/posts/2025-06-01-nixos-installation-declarative/"><li><div class="title">How I like to install NixOS (declaratively)</div><div class="domain">michael.stapelberg.ch &bull; June 01, 2025</div></li></a><a class="li" href="https://www.sitongpeng.com/writing/websockets-guarantee-order-so-why-are-my-messages-scrambled"><li><div class="title">WebSockets guarantee order - so why are my messages scrambled?</div><div class="domain">sitongpeng.com &bull; June 01, 2025</div></li></a><a class="li" href="http://oldvcr.blogspot.com/2025/05/harpoom-of-course-apple-network-server.html"><li><div class="title">Harpoom: of course the Apple Network Server can be hacked into running Doom</div><div class="domain">oldvcr.blogspot.com &bull; June 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (16)</summary><ul><a class="li" href="https://stephencoyle.net/kilnettle"><li><div class="title">Father Ted Kilnettle Shrine Tape Dispenser</div><div class="domain">stephencoyle.net &bull; June 01, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=7cta91Y53gs"><li><div class="title">Why Blender Changing to Vulkan Is Groundbreaking [video]</div><div class="domain">youtube.com &bull; June 01, 2025</div></li></a><a class="li" href="https://github.com/openai/codex/discussions/1174"><li><div class="title">Codex CLI is going native</div><div class="domain">github.com &bull; June 01, 2025</div></li></a><a class="li" href="https://allenpike.com/2025/figma-slides-beautiful-disaster"><li><div class="title">Figma Slides Is a Beautiful Disaster</div><div class="domain">allenpike.com &bull; June 01, 2025</div></li></a><a class="li" href="https://www.theregister.com/2021/07/22/bugs_expense_bs/"><li><div class="title">“Bugs are 100x more expensive to fix in production” study might not exist (2021)</div><div class="domain">theregister.com &bull; June 01, 2025</div></li></a><a class="li" href="https://www.seangoedecke.com/inference-batching-and-deepseek/"><li><div class="title">Why DeepSeek is cheap at scale but expensive to run locally</div><div class="domain">seangoedecke.com &bull; June 01, 2025</div></li></a><a class="li" href="https://www.spaceweatherlive.com/en/news/view/581/20250531-m8-2-solar-flare-strong-g4-geomagnetic-storm-watch.html"><li><div class="title">M8.2 solar flare, Strong G4 geomagnetic storm watch</div><div class="domain">spaceweatherlive.com &bull; June 01, 2025</div></li></a><a class="li" href="https://microsoft.github.io/renderformer/"><li><div class="title">RenderFormer: Neural rendering of triangle meshes with global illumination</div><div class="domain">microsoft.github.io &bull; June 01, 2025</div></li></a><a class="li" href="https://ai.google.dev/edge"><li><div class="title">Google AI Edge – On-device cross-platform AI deployment</div><div class="domain">ai.google.dev &bull; June 01, 2025</div></li></a><a class="li" href="https://www.goto10retro.com/p/atari-means-business-with-the-mega"><li><div class="title">Atari Means Business with the Mega ST</div><div class="domain">goto10retro.com &bull; June 01, 2025</div></li></a><a class="li" href="https://www.pushing-pixels.org/2025/05/20/cinematography-of-andor-interview-with-christophe-nuyens.html"><li><div class="title">Cinematography of “Andor”</div><div class="domain">pushing-pixels.org &bull; June 01, 2025</div></li></a><a class="li" href="https://librivox.org/"><li><div class="title">LibriVox</div><div class="domain">librivox.org &bull; June 01, 2025</div></li></a><a class="li" href="https://animationobsessive.substack.com/p/the-visual-world-of-samurai-jack"><li><div class="title">The Visual World of 'Samurai Jack'</div><div class="domain">animationobsessive.substack.com &bull; June 01, 2025</div></li></a><a class="li" href="https://overreacted.io/progressive-json/"><li><div class="title">Progressive JSON</div><div class="domain">overreacted.io &bull; June 01, 2025</div></li></a><a class="li" href="https://github.com/enhancedformysql/enhancedformysql"><li><div class="title">Enhancing MySQL: MySQL improvement project</div><div class="domain">github.com &bull; June 01, 2025</div></li></a><a class="li" href="https://patio.so"><li><div class="title">Show HN: Patio – Rent tools, learn DIY, reduce waste</div><div class="domain">patio.so &bull; June 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Seth's Blog (seths.blog)</h2> (1)</summary><ul><a class="li" href="https://seths.blog/2025/06/scripts-and-casting/"><li><div class="title">Scripts and casting</div><div class="domain">seths.blog &bull; June 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (7)</summary><ul><a class="li" href="https://yourstory.com/2025/06/tvs-bajaj-battle-e2w-leadership-ola-electrics-market-share-drops-18-may"><li><div class="title">TVS and Bajaj battle for E2W leadership as Ola Electric's market share drops to 18% in May</div><div class="domain">yourstory.com &bull; June 01, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/05/5-sunday-night-rituals-monday"><li><div class="title">Beat Sunday anxiety with these simple night habits</div><div class="domain">yourstory.com &bull; June 01, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/06/gst-collections-stay-above-rs-2-trillion-for-second-straight-month"><li><div class="title">GST collections stay above Rs 2 trillion for second straight month</div><div class="domain">yourstory.com &bull; June 01, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/06/ai-platforms-agriculture-business-creativity-innovation-entrepreneur-education-quiz"><li><div class="title">AI, platforms, agriculture: test your business creativity with Edition 190 of our weekly quiz!</div><div class="domain">yourstory.com &bull; June 01, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/06/karnataka-chitrakala-parishath-namma-art-festival-creativity-photography"><li><div class="title">100 artists, new beginnings: ‘Namma Art’ national festival kicks off in Bengaluru</div><div class="domain">yourstory.com &bull; June 01, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/05/how-interior-design-is-changing-with-ai-blr-brewing-company-beer"><li><div class="title">How interior design is changing with AI; What makes BLR Brewing Co’s model lucrative</div><div class="domain">yourstory.com &bull; June 01, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/05/drug-delivery-emerging-technologies-needle-free-injections"><li><div class="title">Revolutionising drug delivery through emerging technologies</div><div class="domain">yourstory.com &bull; June 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Unphiltered by Samdish (and a fantastic team) (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=YLURkSPMvGM"><li><div class="title">I ‘Interrogated’ this 92 year old Army Veteran | The OG Indians</div><div class="domain">youtube.com &bull; June 01, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Home & Garden (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/BQWoBfp86pM"><li><div class="title">Công việc hàng ngày của nhà nông làm vườn</div><div class="domain">youtube.com &bull; June 01, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>

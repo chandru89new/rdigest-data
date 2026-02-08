@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-03-09</span>:</h1>
+  <p class="summary">There are 83 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Bear Blog Trending Posts (bearblog.dev)</h2> (4)</summary><ul><a class="li" href="https://trueblue.bearblog.dev/me-and-my-mom/"><li><div class="title">me and my mom</div><div class="domain">trueblue.bearblog.dev &bull; March 09, 2025</div></li></a><a class="li" href="https://mhmiller.bearblog.dev/adhd-and-me-getting-a-diagnosis-in-adulthood/"><li><div class="title">ADHD and Me: Getting a Diagnosis in Adulthood</div><div class="domain">mhmiller.bearblog.dev &bull; March 09, 2025</div></li></a><a class="li" href="https://videogames.bearblog.dev/if-smaller-more-focused-games-are-the-solution-to-the-games-industrys-problems/"><li><div class="title">If smaller, more focused games are the solution to the games industry’s problems…</div><div class="domain">videogames.bearblog.dev &bull; March 09, 2025</div></li></a><a class="li" href="https://kalomaze.bearblog.dev/understanding-transformers-beyond-the-math/"><li><div class="title">Understanding Transformers... (beyond the Math)</div><div class="domain">kalomaze.bearblog.dev &bull; March 09, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Marginalian (feeds.feedburner.com)</h2> (1)</summary><ul><a class="li" href="https://www.themarginalian.org/2025/03/08/teotihuacan-magnetite/"><li><div class="title">Obsidian and the Birds: An Odyssey of Wonder from the Aztecs to the Quantum World</div><div class="domain">themarginalian.org &bull; March 09, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (2)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/iBE2azumNdoR8MYMu/phoenix-rising"><li><div class="title">Phoenix Rising</div><div class="domain">lesswrong.com &bull; March 09, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/EoFYB7GuAALnw5wCG/when-will-llms-become-human-level-bloggers"><li><div class="title">when will LLMs become human-level bloggers?</div><div class="domain">lesswrong.com &bull; March 09, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (22)</summary><ul><a class="li" href="https://obrhubr.org/dithering-in-colour"><li><div class="title">Dithering in Colour</div><div class="domain">obrhubr.org &bull; March 09, 2025</div></li></a><a class="li" href="https://medium.com/thefork/automated-architecture-diagrams-53f538f615b7"><li><div class="title">Automated architecture diagrams</div><div class="domain">medium.com &bull; March 09, 2025</div></li></a><a class="li" href="https://marcin.juszkiewicz.com.pl/2025/03/09/i-built-my-first-mechanical-keyboard/"><li><div class="title">I built my first mechanical keyboard</div><div class="domain">marcin.juszkiewicz.com.pl &bull; March 09, 2025</div></li></a><a class="li" href="https://www.antoniomallia.it/sorted-integers-compression-with-elias-fano-encoding.html"><li><div class="title">Sorted integers compression with Elias-Fano encoding</div><div class="domain">antoniomallia.it &bull; March 09, 2025</div></li></a><a class="li" href="https://sw.kovidgoyal.net/kitty/text-sizing-protocol/"><li><div class="title">The text sizing protocol</div><div class="domain">sw.kovidgoyal.net &bull; March 09, 2025</div></li></a><a class="li" href="https://randomaugustine.medium.com/on-apple-exclaves-d683a2c37194"><li><div class="title">On Apple Exclaves</div><div class="domain">randomaugustine.medium.com &bull; March 09, 2025</div></li></a><a class="li" href="https://dmitri.shuralyov.com/idiomatic-go"><li><div class="title">Idiomatic Go</div><div class="domain">dmitri.shuralyov.com &bull; March 09, 2025</div></li></a><a class="li" href="https://matthewbilyeu.com/blog/2025-03-08/ai"><li><div class="title">AI and the Uncertain Future of Work</div><div class="domain">matthewbilyeu.com &bull; March 09, 2025</div></li></a><a class="li" href="https://blog.nelhage.com/post/cpython-tail-call/"><li><div class="title">Performance of the Python 3.14 tail-call interpreter</div><div class="domain">blog.nelhage.com &bull; March 09, 2025</div></li></a><a class="li" href="https://kirancodes.me/posts/log-data-oriented-programming.html"><li><div class="title">Functional vs Data-Driven development: a Case-Study in Clojure & OCaml</div><div class="domain">kirancodes.me &bull; March 09, 2025</div></li></a><a class="li" href="https://nest.pijul.com/pmeunier/nest"><li><div class="title">Open source hosting service for Pijul</div><div class="domain">nest.pijul.com &bull; March 09, 2025</div></li></a><a class="li" href="https://spacetimedb.com/"><li><div class="title">SpacetimeDB</div><div class="domain">spacetimedb.com &bull; March 09, 2025</div></li></a><a class="li" href="https://vegard.blog.engen.priv.no/?p=423"><li><div class="title">Kubernetes@Home – what do you do if your ISP changes your IP addresses?</div><div class="domain">vegard.blog.engen.priv.no &bull; March 09, 2025</div></li></a><a class="li" href="https://aartaka.me/my-generics.html"><li><div class="title">How I Write Generics</div><div class="domain">aartaka.me &bull; March 09, 2025</div></li></a><a class="li" href="https://cheriot.org/auditing/backdoor/2025/03/09/no-esp32-style-backdoor.html"><li><div class="title">Why the alleged ESP32 backdoor couldn’t happen on CHERIOT</div><div class="domain">cheriot.org &bull; March 09, 2025</div></li></a><a class="li" href="https://wokwi.com/rust"><li><div class="title">Online embedded Rust simulator</div><div class="domain">wokwi.com &bull; March 09, 2025</div></li></a><a class="li" href="https://lfortran.org/blog/2025/03/lfortran-compiles-prima/"><li><div class="title">LFortran can now compile PRIMA</div><div class="domain">lfortran.org &bull; March 09, 2025</div></li></a><a class="li" href="https://sr.ht/~oconnor0/zinc/"><li><div class="title">The zinc systems programming language</div><div class="domain">sr.ht &bull; March 09, 2025</div></li></a><a class="li" href="https://daniel.haxx.se/blog/2025/02/16/openssl-does-a-quic-api/"><li><div class="title">OpenSSL does a QUIC API</div><div class="domain">daniel.haxx.se &bull; March 09, 2025</div></li></a><a class="li" href="https://sourcehut.org/blog/2025-03-07-whats-cooking-q1-25/"><li><div class="title">What's cooking on SourceHut? Q1 2025</div><div class="domain">sourcehut.org &bull; March 09, 2025</div></li></a><a class="li" href="https://blog.jim-nielsen.com/2025/lots-of-little-html-pages/"><li><div class="title">Building Websites With Lots of Little HTML Pages</div><div class="domain">blog.jim-nielsen.com &bull; March 09, 2025</div></li></a><a class="li" href="https://gleam.run/news/hello-echo-hello-git/"><li><div class="title">Gleam v1.9.0 released</div><div class="domain">gleam.run &bull; March 09, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (39)</summary><ul><a class="li" href="https://phys.org/news/2025-03-earth-hidden-carbon-recyclers-sulfur.html"><li><div class="title">Carbon recyclers: Sulfur bacteria break down organic substances in seabed</div><div class="domain">phys.org &bull; March 09, 2025</div></li></a><a class="li" href="https://github.com/openui/open-ui"><li><div class="title">Open-UI: Maintain an open standard for UI and promote its adherence and adoption</div><div class="domain">github.com &bull; March 09, 2025</div></li></a><a class="li" href="https://eprint.iacr.org/2025/435.pdf"><li><div class="title">Constant-Time Code: The Pessimist Case [pdf]</div><div class="domain">eprint.iacr.org &bull; March 09, 2025</div></li></a><a class="li" href="https://bluesock.org/~willkg/blog/dev/switch_pyenv_to_uv.html"><li><div class="title">Switching from Pyenv to Uv</div><div class="domain">bluesock.org &bull; March 09, 2025</div></li></a><a class="li" href="https://sites.google.com/site/richgel99/the-early-history-of-deferred-shading-and-lighting"><li><div class="title">The Early History of Deferred Shading and Lighting</div><div class="domain">sites.google.com &bull; March 09, 2025</div></li></a><a class="li" href="https://phys.org/news/2025-03-contrast-earth-mars-middle-atmosphere.html"><li><div class="title">In contrast to Earth, Mars's middle atmosphere appears driven by gravity waves</div><div class="domain">phys.org &bull; March 09, 2025</div></li></a><a class="li" href="https://biradarganesh25.github.io/pluscal/db_migration.html"><li><div class="title">Formal Verification of Zero-Downtime Database Migration in PlusCal</div><div class="domain">biradarganesh25.github.io &bull; March 09, 2025</div></li></a><a class="li" href="https://www.science.org/doi/10.1126/science.adn0953"><li><div class="title">Neonatal fungi: lifelong metabolic health via macrophage β cell development</div><div class="domain">science.org &bull; March 09, 2025</div></li></a><a class="li" href="https://github.com/johnbean393/Sidekick"><li><div class="title">Sidekick: Local-first native macOS LLM app</div><div class="domain">github.com &bull; March 09, 2025</div></li></a><a class="li" href="https://siginthistorian.blogspot.com/2025/02/sigint-in-fiction.html"><li><div class="title">Sigint in Fiction</div><div class="domain">siginthistorian.blogspot.com &bull; March 09, 2025</div></li></a><a class="li" href="https://alexop.dev/posts/how-to-implement-a-cosine-similarity-function-in-typescript-for-vector-comparison/"><li><div class="title">How to Implement a Cosine Similarity Function in TypeScript</div><div class="domain">alexop.dev &bull; March 09, 2025</div></li></a><a class="li" href="https://statmodeling.stat.columbia.edu/2025/03/08/a-post-mortem-on-the-gino-case-committing-fraud-is-right-now-a-viable-career-strategy-that-can-propel-you-at-the-top-of-the-academic-world/"><li><div class="title">A Post Mortem on the Gino Case</div><div class="domain">statmodeling.stat.columbia.edu &bull; March 09, 2025</div></li></a><a class="li" href="https://maskray.me/blog/2025-03-09-compiling-c++-with-clang-api"><li><div class="title">Compiling C++ with the Clang API</div><div class="domain">maskray.me &bull; March 09, 2025</div></li></a><a class="li" href="https://nvim-cheatsheet.vercel.app/"><li><div class="title">Show HN: Searchable Vim Cheat Sheet with Favorites (Open-Source)</div><div class="domain">nvim-cheatsheet.vercel.app &bull; March 09, 2025</div></li></a><a class="li" href="https://phys.org/news/2025-02-nickel-superconductor-233c-threshold-pressure.html"><li><div class="title">Nickel superconductor works above -233°C threshold at normal pressure</div><div class="domain">phys.org &bull; March 09, 2025</div></li></a><a class="li" href="https://rodyne.com/?p=1828"><li><div class="title">With AI you need to think bigger</div><div class="domain">rodyne.com &bull; March 09, 2025</div></li></a><a class="li" href="https://www.ycombinator.com/companies/infisical/jobs/QqCs5fv-full-stack-engineer-sf"><li><div class="title">Infisical (YC W23) Is Hiring for Full Stack Engineers in San Francisco</div><div class="domain">ycombinator.com &bull; March 09, 2025</div></li></a><a class="li" href="https://www.phoronix.com/news/Wine-Framework-Mono-6.14"><li><div class="title">Wine Releases Framework Mono 6.14 in Taking over the Mono Project</div><div class="domain">phoronix.com &bull; March 09, 2025</div></li></a><a class="li" href="https://www.thebignewsletter.com/p/hatching-a-conspiracy-a-big-investigation"><li><div class="title">An investigation into egg prices</div><div class="domain">thebignewsletter.com &bull; March 09, 2025</div></li></a><a class="li" href="https://scitechdaily.com/scientists-just-discovered-an-rna-that-repairs-dna-damage-and-its-a-game-changer/"><li><div class="title">Scientists discover an RNA that repairs DNA damage</div><div class="domain">scitechdaily.com &bull; March 09, 2025</div></li></a><a class="li" href="https://www.theregister.com/2025/03/08/kernel_sanders_apple_rearranges_xnu/"><li><div class="title">Apple rearranged its XNU kernel with exclaves</div><div class="domain">theregister.com &bull; March 09, 2025</div></li></a><a class="li" href="https://github.com/matiasmolinas/evolving-agents"><li><div class="title">Show HN: Evolving Agents Framework</div><div class="domain">github.com &bull; March 09, 2025</div></li></a><a class="li" href="https://blog.ecosia.org/eusp/"><li><div class="title">Ecosia is teaming up with Qwant to build a European search index</div><div class="domain">blog.ecosia.org &bull; March 09, 2025</div></li></a><a class="li" href="https://www.reuters.com/investigates/special-report/tesla-batteries-range/"><li><div class="title">Tesla's team to suppress driving range complaints (2023)</div><div class="domain">reuters.com &bull; March 09, 2025</div></li></a><a class="li" href="https://www.richardmorris.org/blog-1-1/vilhelm-hammershi-the-eminence-in-greys"><li><div class="title">Vilhelm Hammershøi: the eminence in greys</div><div class="domain">richardmorris.org &bull; March 09, 2025</div></li></a><a class="li" href="https://pippinbarr.com/it-is-as-if-you-were-on-your-phone/info/"><li><div class="title">It is as if you were on your phone</div><div class="domain">pippinbarr.com &bull; March 09, 2025</div></li></a><a class="li" href="https://twitter.com/Steve_Yegge/status/1898674257808515242"><li><div class="title">I've been using Claude Code for a couple of days</div><div class="domain">twitter.com &bull; March 09, 2025</div></li></a><a class="li" href="https://h3geo.org/"><li><div class="title">H3: For indexing geographies into a hexagonal grid, by Uber</div><div class="domain">h3geo.org &bull; March 09, 2025</div></li></a><a class="li" href="https://thehustle.co/originals/why-layoffs-dont-work"><li><div class="title">Why Layoffs Don't Work</div><div class="domain">thehustle.co &bull; March 09, 2025</div></li></a><a class="li" href="https://newatlas.com/biology/stem-cell-therapy-reverses-irreversible-damage-cornea/"><li><div class="title">Stem cell therapy trial reverses "irreversible" damage to cornea</div><div class="domain">newatlas.com &bull; March 09, 2025</div></li></a><a class="li" href="https://www.sealambda.com/blog/this-post-passed-unit-tests/"><li><div class="title">This blog post passed unit tests</div><div class="domain">sealambda.com &bull; March 09, 2025</div></li></a><a class="li" href="https://esp32-open-mac.be"><li><div class="title">Building an open-source Wi-Fi Mac layer for the ESP32</div><div class="domain">esp32-open-mac.be &bull; March 09, 2025</div></li></a><a class="li" href="https://docs.google.com/forms/d/e/1FAIpQLScpzOyP_mk3muEpbKrnW8UTZB_yP5SJwjbeT8_6A6fhdvpJCg/viewform?usp=preview"><li><div class="title">Helpcare AI (YC F24) Fullstack Engineer</div><div class="domain">docs.google.com &bull; March 09, 2025</div></li></a><a class="li" href="https://www.goravel.dev"><li><div class="title">Goravel: A Go framework inspired by Laravel</div><div class="domain">goravel.dev &bull; March 09, 2025</div></li></a><a class="li" href="https://github.com/PostHog/posthog/blob/master/.cursorrules"><li><div class="title">Posthog/.cursorrules</div><div class="domain">github.com &bull; March 09, 2025</div></li></a><a class="li" href="https://saigaddam.medium.com/where-are-all-the-self-directed-learners-ccfb2421e52c"><li><div class="title">Where are all the self-directed learners?</div><div class="domain">saigaddam.medium.com &bull; March 09, 2025</div></li></a><a class="li" href="https://dynomight.net/theanine/"><li><div class="title">My 16-month theanine self-experiment</div><div class="domain">dynomight.net &bull; March 09, 2025</div></li></a><a class="li" href="https://educatedguesswork.org/posts/memory-management-2/"><li><div class="title">Understanding Memory Management, Part 2: C++ and RAII</div><div class="domain">educatedguesswork.org &bull; March 09, 2025</div></li></a><a class="li" href="https://daale.club/"><li><div class="title">Show HN: I built an app to get daily wisdom from Mr. Worldwide</div><div class="domain">daale.club &bull; March 09, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Seth's Blog (seths.blog)</h2> (2)</summary><ul><a class="li" href="https://seths.blog/2025/03/worst-possible/"><li><div class="title">Worst possible</div><div class="domain">seths.blog &bull; March 09, 2025</div></li></a><a class="li" href="https://seths.blog/2025/03/the-tactics-trap/"><li><div class="title">The tactics trap</div><div class="domain">seths.blog &bull; March 09, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Diplomat (thediplomat.com)</h2> (3)</summary><ul><a class="li" href="https://thediplomat.com/2025/03/can-marketization-bring-china-closer-to-net-zero-emissions/"><li><div class="title">Can China’s Power Sector Walk the Tight-Rope Between Decarbonization and Market Liberalization?</div><div class="domain">thediplomat.com &bull; March 09, 2025</div></li></a><a class="li" href="https://thediplomat.com/2025/03/eroding-electoral-integrity-in-southeast-asia/"><li><div class="title">Eroding Electoral Integrity in Southeast Asia</div><div class="domain">thediplomat.com &bull; March 09, 2025</div></li></a><a class="li" href="https://thediplomat.com/2025/03/southeast-asia-must-learn-to-defend-itself/"><li><div class="title">Southeast Asia Must Learn to Defend Itself</div><div class="domain">thediplomat.com &bull; March 09, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (10)</summary><ul><a class="li" href="https://yourstory.com/2025/03/ather-energy-ipo-converts-preference-shares-into-equity"><li><div class="title">Ather Energy converts preference shares into equity; likely to launch IPO in April</div><div class="domain">yourstory.com &bull; March 09, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/03/pleasanteeism-at-job-and-its-pitfalls-mughlai-cuisine-women-entrepreneurs"><li><div class="title">‘Pleasanteeism’ at work and its pitfalls; MasterChef Farman Ali on Mughlai cuisine</div><div class="domain">yourstory.com &bull; March 09, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/03/indian-markets-us-tariffs-foreign-investors-fpis-pull-rs-24-753-crore-equities"><li><div class="title">FPIs pull out Rs 24,753 Cr from equities in the first week of March</div><div class="domain">yourstory.com &bull; March 09, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/03/ai-platforms-health-business-creativity-innovation-entrepreneur-quiz-education"><li><div class="title">AI, platforms, health: Test your business creativity with Edition 178 of our weekly quiz!</div><div class="domain">yourstory.com &bull; March 09, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/03/process-patience-passion-art-creativity-success-photography"><li><div class="title">Process, patience, passion: Four artists share what it takes to succeed in creative journeys</div><div class="domain">yourstory.com &bull; March 09, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/03/nbfc-tata-capital-file-draft-ipo-papers-rbi-sebi"><li><div class="title">Tata Capital to file draft IPO papers after NCLT nod on merger with Tata Motors Finance</div><div class="domain">yourstory.com &bull; March 09, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/03/love-emotional-maturity-strong-relationship"><li><div class="title">How to be a mature and responsible adult in relationships</div><div class="domain">yourstory.com &bull; March 09, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/03/mcap-of-seven-of-top-10-valued-firms-jumps-rs-210-lakh-cr-ril-tcs-major-winners"><li><div class="title">Mcap of seven of top-10 valued firms jumps Rs 2.10 lakh Cr; RIL, TCS major winners</div><div class="domain">yourstory.com &bull; March 09, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/03/how-one-indian-entrepreneur-built-two-us-unicorn-giants-dheeraj-pandey"><li><div class="title">From $900 to ~$18B: How an Indian entrepreneur built two US unicorn giants</div><div class="domain">yourstory.com &bull; March 09, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/03/think-chess-grandmaster-life"><li><div class="title">Life’s a chess game: play it with grandmaster strategies</div><div class="domain">yourstory.com &bull; March 09, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
