@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-01-12</span>:</h1>
+  <p class="summary">There are 78 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Bear Blog Trending Posts (bearblog.dev)</h2> (2)</summary><ul><a class="li" href="https://blog.avas.space/social-media-dependency/"><li><div class="title">social media dependency</div><div class="domain">blog.avas.space &bull; January 12, 2025</div></li></a><a class="li" href="https://pondscum.gg/hyper-assassination/"><li><div class="title">🧠 HYPERASSASSINATION</div><div class="domain">pondscum.gg &bull; January 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Big Think (bigthink.com)</h2> (1)</summary><ul><a class="li" href="https://bigthink.com/the-future/how-ai-is-being-drafted-for-a-digital-cold-war/"><li><div class="title">How AI is being drafted for a digital cold war</div><div class="domain">bigthink.com &bull; January 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (4)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/s39XbvtzzmusHxgky/the-purposeful-drunkard"><li><div class="title">The purposeful drunkard</div><div class="domain">lesswrong.com &bull; January 12, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/WJ7y8S9WdKRvrzJmR/building-ai-research-fleets"><li><div class="title">Building AI Research Fleets</div><div class="domain">lesswrong.com &bull; January 12, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/GvMakH65LS86RFn5x/rolling-thresholds-for-agi-scaling-regulation"><li><div class="title">Rolling Thresholds for AGI Scaling Regulation</div><div class="domain">lesswrong.com &bull; January 12, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/onyiPaxnmiDdHn7SR/no-one-has-the-ball-on-1500-russian-olympiad-winners-who-ve"><li><div class="title">No one has the ball on 1500 Russian olympiad winners who've received HPMOR</div><div class="domain">lesswrong.com &bull; January 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (9)</summary><ul><a class="li" href="https://quuxplusone.github.io/blog/2025/01/10/trivially-destructible-after-move/"><li><div class="title">“Trivially relocatable” versus “trivially destructible after move”</div><div class="domain">quuxplusone.github.io &bull; January 12, 2025</div></li></a><a class="li" href="https://www.a1k0n.net/2025/01/10/tiny-tapeout-donut.html"><li><div class="title">From ASCII to ASIC: Porting donut.c to a tiny slice of silicon</div><div class="domain">a1k0n.net &bull; January 12, 2025</div></li></a><a class="li" href="https://github.com/ollien/quicknotes"><li><div class="title">quicknotes: A notes application that makes taking notes... quick</div><div class="domain">github.com &bull; January 12, 2025</div></li></a><a class="li" href="https://wolf.nereid.pl/posts/image-viewer/"><li><div class="title">Viewing images</div><div class="domain">wolf.nereid.pl &bull; January 12, 2025</div></li></a><a class="li" href="https://github.com/YaLTeR/niri/discussions/956"><li><div class="title">niri v25.01 released</div><div class="domain">github.com &bull; January 12, 2025</div></li></a><a class="li" href="https://blogs.perl.org/users/psc/2025/01/this-week-in-psc-175-2025-01-09.html"><li><div class="title">This week in PSC (Perl Steering Council) (175) | 2025-01-09</div><div class="domain">blogs.perl.org &bull; January 12, 2025</div></li></a><a class="li" href="https://niceperl.blogspot.com/2025/01/dxxx-20-great-cpan-modules-released.html"><li><div class="title">(dxxx) 20 great CPAN modules released last week</div><div class="domain">niceperl.blogspot.com &bull; January 12, 2025</div></li></a><a class="li" href="https://github.com/allyourcodebase"><li><div class="title">All Your Codebase: C/C++ projects for the Zig build system</div><div class="domain">github.com &bull; January 12, 2025</div></li></a><a class="li" href="https://blog.djhaskin.com/blog/why-i-chose-common-lisp/"><li><div class="title">Why I Chose Common Lisp</div><div class="domain">blog.djhaskin.com &bull; January 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Letters of Note (news.lettersofnote.com)</h2> (1)</summary><ul><a class="li" href="https://news.lettersofnote.com/p/i-promise-that-your-future-correspondence"><li><div class="title">I promise that your future correspondence will be returned to you unopened</div><div class="domain">news.lettersofnote.com &bull; January 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (46)</summary><ul><a class="li" href="http://beza1e1.tuxen.de/lore/index.html"><li><div class="title">Software Folklore</div><div class="domain">beza1e1.tuxen.de &bull; January 12, 2025</div></li></a><a class="li" href="https://dement.dev"><li><div class="title">My 3D SWE Portfolio - Built with React Three Fiber.</div><div class="domain">dement.dev &bull; January 12, 2025</div></li></a><a class="li" href="https://datafusion.apache.org/"><li><div class="title">Apache DataFusion</div><div class="domain">datafusion.apache.org &bull; January 12, 2025</div></li></a><a class="li" href="https://newatlas.com/lifestyle/syntilay-worlds-first-ai-generated-3d-printed-shoe/"><li><div class="title">First AI-generated and 3D-printed shoe makes its dubious debut</div><div class="domain">newatlas.com &bull; January 12, 2025</div></li></a><a class="li" href="https://github.com/pyper-dev/pyper"><li><div class="title">Show HN: Pyper – Concurrent Python Made Simple</div><div class="domain">github.com &bull; January 12, 2025</div></li></a><a class="li" href="https://github.com/hlorenzi/customasm"><li><div class="title">Customasm – An assembler for custom, user-defined instruction sets</div><div class="domain">github.com &bull; January 12, 2025</div></li></a><a class="li" href="https://iopscience.iop.org/article/10.1088/1361-6382/ad98df#cqgad98dff1"><li><div class="title">Life on a Closed Timelike Curve</div><div class="domain">iopscience.iop.org &bull; January 12, 2025</div></li></a><a class="li" href="http://muratbuffalo.blogspot.com/2023/08/distributed-transactions-at-scale-in.html"><li><div class="title">Distributed Transactions at Scale in Amazon DynamoDB</div><div class="domain">muratbuffalo.blogspot.com &bull; January 12, 2025</div></li></a><a class="li" href="https://freemusicarchive.org/home"><li><div class="title">Free Music Archive</div><div class="domain">freemusicarchive.org &bull; January 12, 2025</div></li></a><a class="li" href="https://modal.com/gpu-glossary/readme"><li><div class="title">The Missing Nvidia GPU Glossary</div><div class="domain">modal.com &bull; January 12, 2025</div></li></a><a class="li" href="https://arstechnica.com/science/2025/01/getting-an-all-optical-ai-to-handle-non-linear-math/"><li><div class="title">Getting an all-optical AI to handle non-linear math</div><div class="domain">arstechnica.com &bull; January 12, 2025</div></li></a><a class="li" href="https://www.instructables.com/Virtual-Vette-Racing-Simulator-Built-From-Wrecked-/"><li><div class="title">Virtual Vette – Racing Simulator Built from Wrecked Corvette</div><div class="domain">instructables.com &bull; January 12, 2025</div></li></a><a class="li" href="https://rodyne.com/?p=1674"><li><div class="title">Das Blinkenlights</div><div class="domain">rodyne.com &bull; January 12, 2025</div></li></a><a class="li" href="https://blog.ubiquity.acm.org/why-cant-programmers-be-more-like-ants-or-a-lesson-in-stigmergy/"><li><div class="title">Why Can't Programmers Be More Like Ants? Or a Lesson in Stigmergy (2015)</div><div class="domain">blog.ubiquity.acm.org &bull; January 12, 2025</div></li></a><a class="li" href="https://www.ams.org/journals/notices/202502/noti3043/noti3043.html"><li><div class="title">What Is Treewidth?</div><div class="domain">ams.org &bull; January 12, 2025</div></li></a><a class="li" href="https://mistysystem.com/"><li><div class="title">A secure distributed actor language</div><div class="domain">mistysystem.com &bull; January 12, 2025</div></li></a><a class="li" href="https://www.hardbreak.wiki"><li><div class="title">I created an open-source Hardware Hacking Wiki – with tutorials for beginners</div><div class="domain">hardbreak.wiki &bull; January 12, 2025</div></li></a><a class="li" href="https://www.cl.cam.ac.uk/~mr10/bcpl4raspi.pdf"><li><div class="title">Young Persons Guide to BCPL Programming on the Raspberry Pi [pdf]</div><div class="domain">cl.cam.ac.uk &bull; January 12, 2025</div></li></a><a class="li" href="http://reassembler.blogspot.com/"><li><div class="title">Ripping Sega System 16 Sprites and Palettes: Brief Guide (2021)</div><div class="domain">reassembler.blogspot.com &bull; January 12, 2025</div></li></a><a class="li" href="https://medhir.com/blog/right-to-root-access"><li><div class="title">Right to Root Access</div><div class="domain">medhir.com &bull; January 12, 2025</div></li></a><a class="li" href="https://english.elpais.com/lifestyle/2025-01-07/the-internet-hasnt-made-us-bad-we-were-already-like-that-the-mistake-of-yearning-for-the-friendly-online-world-of-20-years-ago.html"><li><div class="title">The mistake of yearning for the 'friendly' online world of 20 years ago</div><div class="domain">english.elpais.com &bull; January 12, 2025</div></li></a><a class="li" href="https://eugene-andrienko.com/en/it/2024/01/02/life-in-console"><li><div class="title">I spent 18 years in the Linux console</div><div class="domain">eugene-andrienko.com &bull; January 12, 2025</div></li></a><a class="li" href="https://www.getty.edu/news/why-the-getty-center-is-the-safest-place-for-art-during-a-fire/"><li><div class="title">Why the Getty Center Is the Safest Place for Art During a Fire (2019)</div><div class="domain">getty.edu &bull; January 12, 2025</div></li></a><a class="li" href="https://www.jamesshore.com/v2/blog/2025/the-best-product-engineering-org-in-the-world"><li><div class="title">James Shore: The Best Product Engineering Org in the World</div><div class="domain">jamesshore.com &bull; January 12, 2025</div></li></a><a class="li" href="https://www.theatlantic.com/international/archive/2025/01/havana-syndrome-russia-intelligence/681282/"><li><div class="title">The Consensus on Havana Syndrome Is Cracking</div><div class="domain">theatlantic.com &bull; January 12, 2025</div></li></a><a class="li" href="https://www.righto.com/2025/01/its-time-to-abandon-cargo-cult-metaphor.html"><li><div class="title">It's time to abandon the cargo cult metaphor</div><div class="domain">righto.com &bull; January 12, 2025</div></li></a><a class="li" href="https://www.whonix.org/wiki/Homepage"><li><div class="title">Superior Internet Privacy with Whonix</div><div class="domain">whonix.org &bull; January 12, 2025</div></li></a><a class="li" href="https://github.com/donno2048/snake"><li><div class="title">Snake Game in 56 Bytes</div><div class="domain">github.com &bull; January 12, 2025</div></li></a><a class="li" href="https://www.qubes-os.org/doc/templates/"><li><div class="title">Qubes OS: Templates</div><div class="domain">qubes-os.org &bull; January 12, 2025</div></li></a><a class="li" href="https://www.ycombinator.com/companies/furtherai/jobs"><li><div class="title">FurtherAI (YC W24) Is Hiring Across Research, Engineering, and Design</div><div class="domain">ycombinator.com &bull; January 12, 2025</div></li></a><a class="li" href="https://surfingcomplexity.blog/2024/12/21/the-canva-outage-another-tale-of-saturation-and-resilience/"><li><div class="title">The Canva outage: another tale of saturation and resilience</div><div class="domain">surfingcomplexity.blog &bull; January 12, 2025</div></li></a><a class="li" href="https://www.xtof.info/MacMiniG4-the-best-classic-macintosh-for-retrogaming.html"><li><div class="title">Mac Mini G4 – The best « classic » Macintosh for retro-gaming?</div><div class="domain">xtof.info &bull; January 12, 2025</div></li></a><a class="li" href="https://dfarq.homeip.net/microsoft-bob-microsofts-biggest-flop-of-the-199"><li><div class="title">Microsoft Bob: Microsoft's biggest flop of the 1990s</div><div class="domain">dfarq.homeip.net &bull; January 12, 2025</div></li></a><a class="li" href="https://www.qubes-os.org/"><li><div class="title">Qubes OS: A reasonably secure operating system</div><div class="domain">qubes-os.org &bull; January 12, 2025</div></li></a><a class="li" href="https://labs.watchtowr.com/more-governments-backdoors-in-your-backdoors/"><li><div class="title">Backdooring Your Backdoors – Another $20 Domain, More Governments</div><div class="domain">labs.watchtowr.com &bull; January 12, 2025</div></li></a><a class="li" href="https://github.com/TabbyML/tabby"><li><div class="title">Tabby: Self-hosted AI coding assistant</div><div class="domain">github.com &bull; January 12, 2025</div></li></a><a class="li" href="https://valatka.dev/2025/01/12/on-killer-uv-feature.html"><li><div class="title">Uv's killer feature is making ad-hoc environments easy</div><div class="domain">valatka.dev &bull; January 12, 2025</div></li></a><a class="li" href="https://hackaday.com/2025/01/09/all-band-receiver-lets-you-listen-to-all-the-radio-at-once/"><li><div class="title">All-Band Receiver Lets You Listen to All the Radio at Once</div><div class="domain">hackaday.com &bull; January 12, 2025</div></li></a><a class="li" href="https://www.therepository.email/mullenweg-shuts-down-wordpress-sustainability-team-igniting-backlash"><li><div class="title">Mullenweg Shuts Down WordPress Sustainability Team, Igniting Backlash</div><div class="domain">therepository.email &bull; January 12, 2025</div></li></a><a class="li" href="https://www.potaroo.net/ispcol/2025-01/addr2024.html"><li><div class="title">IP addresses through 2024</div><div class="domain">potaroo.net &bull; January 12, 2025</div></li></a><a class="li" href="https://www.ycombinator.com/companies/harper/jobs/VUe2K9r-founding-operations-lead"><li><div class="title">Harper (YC W25) Is Hiring #1 Founding Growth/Operations Lead</div><div class="domain">ycombinator.com &bull; January 12, 2025</div></li></a><a class="li" href="https://worldsensorium.com/rewilding-the-self/"><li><div class="title">Rewilding the Self</div><div class="domain">worldsensorium.com &bull; January 12, 2025</div></li></a><a class="li" href="https://www.kenney.nl/"><li><div class="title">Kenney.nl: Free Game Assets</div><div class="domain">kenney.nl &bull; January 12, 2025</div></li></a><a class="li" href="https://matt.might.net/articles/phd-school-in-pictures/?_nospa=true"><li><div class="title">The Illustrated Guide to a PhD</div><div class="domain">matt.might.net &bull; January 12, 2025</div></li></a><a class="li" href="https://lukaspetersson.com/blog/2025/bitter-vertical/"><li><div class="title">AI founders will learn The Bitter Lesson</div><div class="domain">lukaspetersson.com &bull; January 12, 2025</div></li></a><a class="li" href="https://bsky.app/profile/matthewraifman.bsky.social/post/3lfaqbygva22j"><li><div class="title">Adobe Lightroom's AI Remove feature added a Bitcoin to bird in flight photo</div><div class="domain">bsky.app &bull; January 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Scattered Thoughts (scattered-thoughts.net)</h2> (1)</summary><ul><a class="li" href="https://www.scattered-thoughts.net/writing/the-missing-tier-for-query-compilers/"><li><div class="title">The missing tier for query compilers</div><div class="domain">scattered-thoughts.net &bull; January 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Seth's Blog (seths.blog)</h2> (1)</summary><ul><a class="li" href="https://seths.blog/2025/01/that-will-never-work/"><li><div class="title">“That will never work”</div><div class="domain">seths.blog &bull; January 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Diplomat (thediplomat.com)</h2> (1)</summary><ul><a class="li" href="https://thediplomat.com/2025/01/sustaining-sri-lankas-nascent-climate-finance-ambitions/"><li><div class="title">Sustaining Sri Lanka’s Nascent Climate Finance Ambitions</div><div class="domain">thediplomat.com &bull; January 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (11)</summary><ul><a class="li" href="https://yourstory.com/2025/01/swiggy-partners-blue-tokai-coffee-snacc-app"><li><div class="title">Swiggy partners with Blue Tokai Coffee for its Snacc app</div><div class="domain">yourstory.com &bull; January 12, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/01/ev-maker-opg-mobility-aims-to-raise-rs-400-crore-for-growth-plans"><li><div class="title">EV maker OPG Mobility aims to raise Rs 400 crore for growth plans</div><div class="domain">yourstory.com &bull; January 12, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/01/aifs-seek-govt-specific-funds-to-invest-in-deeptech-startups"><li><div class="title">AIFs seek govt specific funds to invest in deeptech startups</div><div class="domain">yourstory.com &bull; January 12, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/01/india-joins-un-committee-on-big-data-for-official-statistics"><li><div class="title">India joins UN committee on Big Data for official statistics</div><div class="domain">yourstory.com &bull; January 12, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/01/what-drinkers-will-clink-to-in-2025-alco-bev-italian-restaurant-kutch"><li><div class="title">What drinkers will clink to in 2025; Indian alco-bev industry in 2025</div><div class="domain">yourstory.com &bull; January 12, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/01/indichip-semiconductor-to-invest-rs-14000-cr-in-andhra-pradesh"><li><div class="title">Indichip Semiconductor to invest Rs 14,000 Cr in Andhra Pradesh</div><div class="domain">yourstory.com &bull; January 12, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/01/karnataka-chitrakala-parishath-chitra-santhe-art-creativity-photography"><li><div class="title">From sketches to sales: Highlights from Karnataka Chitrakala Parishath’s flagship art fair</div><div class="domain">yourstory.com &bull; January 12, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/01/the-geospatial-industry-challenges-and-solutions-india-landscape"><li><div class="title">The geospatial industry: Challenges and solutions in today’s landscape</div><div class="domain">yourstory.com &bull; January 12, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/01/platforms-ai-safety-business-creativity-innovation-entrepreneur-education-quiz"><li><div class="title">Platforms, AI, safety: Test your business creativity with Edition 170 of our weekly quiz!</div><div class="domain">yourstory.com &bull; January 12, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/01/start-2025-transform-january"><li><div class="title">Start 2025 right: 7 ways to transform your January</div><div class="domain">yourstory.com &bull; January 12, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/01/2024-rewind-ai-fintech-quick-commerce-startups-2025-predictions-prime-venture-partners"><li><div class="title">2024 startup rewind: AI, fintech, and quick commerce with all partners at Prime Venture Partners</div><div class="domain">yourstory.com &bull; January 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Kannadhasan Productions by Annadurai Kannadhasan (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=PqpCklPjHiw"><li><div class="title">215) கண்ணதாசன், இளையராஜாவுக்கு மாற்றித் தந்த பாடல் வரி</div><div class="domain">youtube.com &bull; January 12, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>

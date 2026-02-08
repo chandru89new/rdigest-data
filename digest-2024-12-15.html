@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2024-12-15</span>:</h1>
+  <p class="summary">There are 61 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Bear Blog Trending Posts (bearblog.dev)</h2> (2)</summary><ul><a class="li" href="https://louplummer.lol/the-real-me-and-the-real-you/"><li><div class="title">The Real Me and The Real You</div><div class="domain">louplummer.lol &bull; December 15, 2024</div></li></a><a class="li" href="https://dostoynikov.com/the-magic-of-go-a-tale-of-stones-and-connection/"><li><div class="title">The magic of Go: a tale of stones and connection</div><div class="domain">dostoynikov.com &bull; December 15, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Big Think (bigthink.com)</h2> (1)</summary><ul><a class="li" href="https://bigthink.com/health/obesity-rate-falling/"><li><div class="title">Has the US reached “peak obesity”?</div><div class="domain">bigthink.com &bull; December 15, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (5)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/PXHCr5WidwA6ZDtLE/charity-as-a-conflationary-alliance-term-2"><li><div class="title">“Charity” as a conflationary alliance term</div><div class="domain">lesswrong.com &bull; December 15, 2024</div></li></a><a class="li" href="https://www.lesswrong.com/posts/beJe3YXbSyaHYGfd7/what-is-miri-currently-doing"><li><div class="title">What is MIRI currently doing?</div><div class="domain">lesswrong.com &bull; December 15, 2024</div></li></a><a class="li" href="https://www.lesswrong.com/posts/JfAZoT5hXWyBPtCZ2/d-and-d-sci-dungeonbuilding-the-dungeon-tournament"><li><div class="title">D&D.Sci Dungeonbuilding: the Dungeon Tournament</div><div class="domain">lesswrong.com &bull; December 15, 2024</div></li></a><a class="li" href="https://www.lesswrong.com/posts/hPLvZsNZGsQSLfMee/remap-your-caps-lock-key"><li><div class="title">Remap your caps lock key</div><div class="domain">lesswrong.com &bull; December 15, 2024</div></li></a><a class="li" href="https://www.lesswrong.com/posts/eCriL3mqgvWGieHpZ/effective-evil-s-ai-misalignment-plan"><li><div class="title">Effective Evil's AI Misalignment Plan</div><div class="domain">lesswrong.com &bull; December 15, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (15)</summary><ul><a class="li" href="https://www.warp.dev/blog/reducing-wasm-binary-size"><li><div class="title">Reducing WASM binary size: lessons from building a web terminal</div><div class="domain">warp.dev &bull; December 15, 2024</div></li></a><a class="li" href="https://vexcess.github.io/blog/creating-a-native-app-in-typescript"><li><div class="title">I Tried Creating a Native App in TypeScript</div><div class="domain">vexcess.github.io &bull; December 15, 2024</div></li></a><a class="li" href="https://frederikbraun.de/home-assistant-can-not-be-secured-for-internet-access.html"><li><div class="title">Home Assistant can not be secured for internet access</div><div class="domain">frederikbraun.de &bull; December 15, 2024</div></li></a><a class="li" href="https://www.youtube.com/watch?v=R3SE4VKj678"><li><div class="title">Hacking the Discord app for $5000 Bounty</div><div class="domain">youtube.com &bull; December 15, 2024</div></li></a><a class="li" href="https://www.haiku-os.org/blog/waddlesplash/2024-12-10-haiku_activity_contract_report_november_2024"><li><div class="title">Haiku Activity & Contract Report, November 2024</div><div class="domain">haiku-os.org &bull; December 15, 2024</div></li></a><a class="li" href="https://leebriggs.co.uk/blog/2024/12/10/the-death-of-devrel"><li><div class="title">The Death of Developer Relations</div><div class="domain">leebriggs.co.uk &bull; December 15, 2024</div></li></a><a class="li" href="https://caddy.ninja/"><li><div class="title">Caddy Ninja - Setup an HTTPS-enabled web server with Caddy on Alpine Linux</div><div class="domain">caddy.ninja &bull; December 15, 2024</div></li></a><a class="li" href="https://dillo-browser.github.io/25-years/"><li><div class="title">25 years of Dillo</div><div class="domain">dillo-browser.github.io &bull; December 15, 2024</div></li></a><a class="li" href="https://alexxcons.github.io/blogpost_14.html"><li><div class="title">Xfce 4.20 released</div><div class="domain">alexxcons.github.io &bull; December 15, 2024</div></li></a><a class="li" href="https://codeberg.org/cve/mott"><li><div class="title">Conway's Game of Life implemented by a manual page</div><div class="domain">codeberg.org &bull; December 15, 2024</div></li></a><a class="li" href="https://kevinlynagh.com/notes/match-vs-lookup/"><li><div class="title">Performance of Rust's match vs. lookup tables (2019)</div><div class="domain">kevinlynagh.com &bull; December 15, 2024</div></li></a><a class="li" href="https://www.dedoimedo.com/computers/ubuntu-24-10-review.html"><li><div class="title">Ubuntu 24.10 review - Oracular but not spectacular</div><div class="domain">dedoimedo.com &bull; December 15, 2024</div></li></a><a class="li" href="https://appdecentral.com/2024/12/13/now-we-are-all-forked/"><li><div class="title">Now we’re all Forked</div><div class="domain">appdecentral.com &bull; December 15, 2024</div></li></a><a class="li" href="https://www.usenix.org/conference/nsdi24/presentation/wydrowski"><li><div class="title">Load is not what you should balance: Introducing Prequal</div><div class="domain">usenix.org &bull; December 15, 2024</div></li></a><a class="li" href="https://lambdaland.org/posts/2024-11-21_powerful_or_safe_languages/"><li><div class="title">Should Programming Languages be Safe or Powerful?</div><div class="domain">lambdaland.org &bull; December 15, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (27)</summary><ul><a class="li" href="https://mascontext.com/issues/trace/kowloon-walled-city-heterotopia-in-a-space-of-disappearance"><li><div class="title">Kowloon Walled City: Heterotopia in a Space of Disappearance (2013)</div><div class="domain">mascontext.com &bull; December 15, 2024</div></li></a><a class="li" href="https://www.psypost.org/scientists-sheds-light-on-how-our-brains-create-mental-chapters-with-new-event-segmentation-study/"><li><div class="title">Our brains create mental "chapters" with new event segmentation study</div><div class="domain">psypost.org &bull; December 15, 2024</div></li></a><a class="li" href="https://www.bloomberg.com/opinion/features/2024-12-11/chip-cities-rise-in-japan-s-fields-of-dreams"><li><div class="title">Chip Cities Rise in Japan's Fields of Dreams</div><div class="domain">bloomberg.com &bull; December 15, 2024</div></li></a><a class="li" href="https://rahul.gopinath.org/post/2019/12/07/python-mci/"><li><div class="title">Python Meta Circular Interpreter (2019)</div><div class="domain">rahul.gopinath.org &bull; December 15, 2024</div></li></a><a class="li" href="https://parametric-architecture.com/3d-printed-dune-chess-set-by-rory-noble-turner/"><li><div class="title">3D-Printed Dune Chess Set by Rory Noble-Turner</div><div class="domain">parametric-architecture.com &bull; December 15, 2024</div></li></a><a class="li" href="https://arun.is/blog/tale-of-two-shanghais/"><li><div class="title">The tale of two Shanghais</div><div class="domain">arun.is &bull; December 15, 2024</div></li></a><a class="li" href="https://www.historytoday.com/archive/history-matters/absinthe-green-fairy-moral-panic"><li><div class="title">Absinthe: From green fairy to moral panic</div><div class="domain">historytoday.com &bull; December 15, 2024</div></li></a><a class="li" href="https://surfingcomplexity.blog/2024/12/14/quick-takes-on-the-recent-openai-public-incident-write-up/"><li><div class="title">Quick takes on the recent OpenAI public incident write-up</div><div class="domain">surfingcomplexity.blog &bull; December 15, 2024</div></li></a><a class="li" href="https://www.rubyvideo.dev/"><li><div class="title">Ruby Video – On a mission to index all Ruby conferences</div><div class="domain">rubyvideo.dev &bull; December 15, 2024</div></li></a><a class="li" href="https://trofi.github.io/posts/238-new-make-shuffle-mode.html"><li><div class="title">New make --shuffle mode (2022)</div><div class="domain">trofi.github.io &bull; December 15, 2024</div></li></a><a class="li" href="https://ycombinator.com/companies/trellis/jobs/7vGTphf-founding-engineer-backend-ai"><li><div class="title">Trellis (YC W24) Is Hiring Eng to Automate PDFs Task at Scale</div><div class="domain">ycombinator.com &bull; December 15, 2024</div></li></a><a class="li" href="https://www.makeuseof.com/reasons-why-dumb-tvs-deserve-a-comeback/"><li><div class="title">Dumb TVs deserve a comeback</div><div class="domain">makeuseof.com &bull; December 15, 2024</div></li></a><a class="li" href="https://news.ycombinator.com/item?id=42425339"><li><div class="title">Ask HN: How do you find part time work?</div><div class="domain">news.ycombinator.com &bull; December 15, 2024</div></li></a><a class="li" href="https://www.futilitycloset.com/2024/12/15/tidy-2/"><li><div class="title">A visual proof that a^2 – b^2 = (a + b)(a – b)</div><div class="domain">futilitycloset.com &bull; December 15, 2024</div></li></a><a class="li" href="https://railgunlabs.com/unicorn/"><li><div class="title">Show HN: I built an embeddable Unicode library with MISRA C conformance</div><div class="domain">railgunlabs.com &bull; December 15, 2024</div></li></a><a class="li" href="https://rish-01.github.io/blog/posts/ml_estimation/"><li><div class="title">Maximum likelihood estimation and loss functions</div><div class="domain">rish-01.github.io &bull; December 15, 2024</div></li></a><a class="li" href="https://smarthome.steviep.xyz"><li><div class="title">Show HN: SmartHome – An Adventure Game</div><div class="domain">smarthome.steviep.xyz &bull; December 15, 2024</div></li></a><a class="li" href="https://leancrew.com/all-this/2024/12/the-antikythera-mechanism/"><li><div class="title">The Antikythera mechanism – 254:19 ratio</div><div class="domain">leancrew.com &bull; December 15, 2024</div></li></a><a class="li" href="https://github.com/JanNeuendorf/SVC16"><li><div class="title">SVC16: Simplest Virtual Computer</div><div class="domain">github.com &bull; December 15, 2024</div></li></a><a class="li" href="https://people.mpim-bonn.mpg.de/zagier/files/doi/10.1007/BF03039306/fulltext.pdf"><li><div class="title">The First 50M Prime Numbers (1975) [pdf]</div><div class="domain">people.mpim-bonn.mpg.de &bull; December 15, 2024</div></li></a><a class="li" href="https://github.com/anvaka/map-of-github"><li><div class="title">Map of GitHub</div><div class="domain">github.com &bull; December 15, 2024</div></li></a><a class="li" href="https://thoughts.jatintiwari.com/pages/starting-business-at-60.html"><li><div class="title">Starting a Business at 60: My Father's Story</div><div class="domain">thoughts.jatintiwari.com &bull; December 15, 2024</div></li></a><a class="li" href="https://www.thebodymatch.com"><li><div class="title">Show HN: Shop Clothes with Models That Match Your Body Shape</div><div class="domain">thebodymatch.com &bull; December 15, 2024</div></li></a><a class="li" href="https://irrationalanalysis.substack.com/p/tenstorrent-and-the-state-of-ai-hardware"><li><div class="title">Tenstorrent and the State of AI Hardware Startups</div><div class="domain">irrationalanalysis.substack.com &bull; December 15, 2024</div></li></a><a class="li" href="https://jpcamara.com/2024/12/14/my-rubyconf-talk.html"><li><div class="title">In-Depth Ruby Concurrency: Navigating the Ruby Concurrency Landscape</div><div class="domain">jpcamara.com &bull; December 15, 2024</div></li></a><a class="li" href="https://elmwealth.com/crystal-ball/"><li><div class="title">When a Crystal Ball Isn't Enough to Make You Rich – Elm Partners</div><div class="domain">elmwealth.com &bull; December 15, 2024</div></li></a><a class="li" href="https://news.ycombinator.com/item?id=42420721"><li><div class="title">I Track My Health Data in Markdown: Lessons in Digital Longevity</div><div class="domain">news.ycombinator.com &bull; December 15, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Seth's Blog (seths.blog)</h2> (1)</summary><ul><a class="li" href="https://seths.blog/2024/12/change-your-shoes/"><li><div class="title">Change your shoes</div><div class="domain">seths.blog &bull; December 15, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Sympolymathesy, by Chris Krycho (v5.chriskrycho.com)</h2> (1)</summary><ul><a class="li" href="https://v5.chriskrycho.com/notes/buttondown-alternatives-page/"><li><div class="title">[notes] Buttondown’s Alternatives Page</div><div class="domain">v5.chriskrycho.com &bull; December 15, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (7)</summary><ul><a class="li" href="https://yourstory.com/2024/12/navigating-regulatory-hurdles-ayurveda-wellness-startups-compliance"><li><div class="title">Navigating regulatory hurdles: How Ayurveda and wellness startups ensure product compliance</div><div class="domain">yourstory.com &bull; December 15, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/12/symphony-seasons-echoes-earth-art-music-festival-environment-photography"><li><div class="title">Symphony of Seasons festival combines music performances and environmental art</div><div class="domain">yourstory.com &bull; December 15, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/12/climate-health-security-business-creativity-entrepreneur-innovation-education-quiz"><li><div class="title">Climate, health, security: test your business creativity with Edition 166 of our weekly quiz!</div><div class="domain">yourstory.com &bull; December 15, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/12/fibroheal-woundcare-bags-rs-63cr-pre-series-round"><li><div class="title">Fibroheal Woundcare bags Rs 6.3 Cr in Pre-Series A round</div><div class="domain">yourstory.com &bull; December 15, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/12/aurobindo-pharma-glenmark-recall-products"><li><div class="title">Aurobindo Pharma, Glenmark recall products in US</div><div class="domain">yourstory.com &bull; December 15, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/12/what-indian-startup-founders-are-reading-amit-trivedi-music-business"><li><div class="title">What Indian startup founders are reading; Amit Trivedi on balancing creativity with business</div><div class="domain">yourstory.com &bull; December 15, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/12/indias-gaming-boom-and-the-cross-platform-revolution"><li><div class="title">India’s gaming boom and the cross-platform revolution</div><div class="domain">yourstory.com &bull; December 15, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">SmarterEveryDay (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=lylCYkgC63Q"><li><div class="title">The Backwards Brain Tractor - Smarter Every Day 305</div><div class="domain">youtube.com &bull; December 15, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Jacob's Piano (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=NoGNHBPdmKA"><li><div class="title">AURORA \\ Original by Jacob's Piano</div><div class="domain">youtube.com &bull; December 15, 2024</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>

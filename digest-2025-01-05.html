@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-01-05</span>:</h1>
+  <p class="summary">There are 79 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Bear Blog Trending Posts (bearblog.dev)</h2> (3)</summary><ul><a class="li" href="https://ani.bearblog.dev/lgbt-test/"><li><div class="title">lgbtq flags and css fun</div><div class="domain">ani.bearblog.dev &bull; January 05, 2025</div></li></a><a class="li" href="https://toska.bearblog.dev/twenty-eight-years-of-being-between-somewhere-and-nowhere/"><li><div class="title">Twenty-eight years of being between somewhere and nowhere</div><div class="domain">toska.bearblog.dev &bull; January 05, 2025</div></li></a><a class="li" href="https://vespertine.bearblog.dev/dear-forgiveness-i-saved-a-plate-for-you/"><li><div class="title">dear forgiveness, i saved a plate for you</div><div class="domain">vespertine.bearblog.dev &bull; January 05, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Big Think (bigthink.com)</h2> (2)</summary><ul><a class="li" href="https://bigthink.com/starts-with-a-bang/back-time-see-space/"><li><div class="title">How far back in time can we see in space?</div><div class="domain">bigthink.com &bull; January 05, 2025</div></li></a><a class="li" href="https://bigthink.com/the-future/how-boom-is-resurrecting-supersonic-flight/"><li><div class="title">How Boom is resurrecting supersonic flight</div><div class="domain">bigthink.com &bull; January 05, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (5)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/Tm8ortXhhpprwga5f/1-meet-the-players-value-diversity"><li><div class="title">1. Meet the Players: Value Diversity</div><div class="domain">lesswrong.com &bull; January 05, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/EhTMM77iKBTBxBKRe/the-laws-of-large-numbers"><li><div class="title">The Laws of Large Numbers</div><div class="domain">lesswrong.com &bull; January 05, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/bmmFLoBAWGnuhnqq5/capital-ownership-will-not-prevent-human-disempowerment"><li><div class="title">Capital Ownership Will Not Prevent Human Disempowerment</div><div class="domain">lesswrong.com &bull; January 05, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/ZqcC6Znyg8YrmKPa4/maximizing-communication-not-traffic"><li><div class="title">Maximizing Communication, not Traffic</div><div class="domain">lesswrong.com &bull; January 05, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/cyYgdYJagkG4HGZBk/reasons-for-and-against-working-on-technical-ai-safety-at-a"><li><div class="title">Reasons for and against working on technical AI safety at a frontier AI lab</div><div class="domain">lesswrong.com &bull; January 05, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (21)</summary><ul><a class="li" href="https://henderson.lol/posts/rescuing-data-from-quiterss.html"><li><div class="title">Rescuing my feeds from QuiteRss</div><div class="domain">henderson.lol &bull; January 05, 2025</div></li></a><a class="li" href="https://usrme.xyz/posts/learning-laravel-by-building-a-postal-code-finder/"><li><div class="title">Learning Laravel by building a postal code finder</div><div class="domain">usrme.xyz &bull; January 05, 2025</div></li></a><a class="li" href="http://www.righto.com/2025/01/pentium-floating-point-ROM.html"><li><div class="title">Pi in the Pentium: reverse-engineering the constants in its floating-point unit</div><div class="domain">righto.com &bull; January 05, 2025</div></li></a><a class="li" href="https://medium.com/@jberkenbilt/from-go-to-rust-1-async-dispatch-866e042cd98a"><li><div class="title">From Go to Rust 1: async Dispatch</div><div class="domain">medium.com &bull; January 05, 2025</div></li></a><a class="li" href="https://blog.mggross.com/intercepting-syscalls/"><li><div class="title">Reliable system call interception</div><div class="domain">blog.mggross.com &bull; January 05, 2025</div></li></a><a class="li" href="https://abhinavsarkar.net/posts/solving-aoc20-seating-system/"><li><div class="title">Solving Advent of Code “Seating System” with Comonads and Stencils</div><div class="domain">abhinavsarkar.net &bull; January 05, 2025</div></li></a><a class="li" href="https://psi3.ru/blog/swl01u/"><li><div class="title">World's First MIDI Shellcode</div><div class="domain">psi3.ru &bull; January 05, 2025</div></li></a><a class="li" href="https://lobste.rs/s/nw5rci/any_standard_graph_representations"><li><div class="title">Any standard graph representations?</div><div class="domain">lobste.rs &bull; January 05, 2025</div></li></a><a class="li" href="https://pubby.games/nesfab.html"><li><div class="title">NESFab</div><div class="domain">pubby.games &bull; January 05, 2025</div></li></a><a class="li" href="https://dl.acm.org/doi/pdf/10.1145/3212477.3212479"><li><div class="title">C Is Not a Low-level Language (2018)</div><div class="domain">dl.acm.org &bull; January 05, 2025</div></li></a><a class="li" href="https://oldvcr.blogspot.com/2025/01/refurb-weekend-atari-stacy.html"><li><div class="title">Refurb weekend: Atari Stacy</div><div class="domain">oldvcr.blogspot.com &bull; January 05, 2025</div></li></a><a class="li" href="https://raniseth.com/blog/2025-01-04-Home-Server-Security.html"><li><div class="title">A story on home server security</div><div class="domain">raniseth.com &bull; January 05, 2025</div></li></a><a class="li" href="https://www.arraycast.com/episodes/episode96-decker"><li><div class="title">John Earnest and Decker</div><div class="domain">arraycast.com &bull; January 05, 2025</div></li></a><a class="li" href="https://spectrum.ieee.org/pcsel"><li><div class="title">The tiny ultrabright laser that can melt steel</div><div class="domain">spectrum.ieee.org &bull; January 05, 2025</div></li></a><a class="li" href="https://ocramz.github.io/posts/2023-12-21-assignment-riemann-opt.html"><li><div class="title">Minimum bipartite matching via Riemann optimization</div><div class="domain">ocramz.github.io &bull; January 05, 2025</div></li></a><a class="li" href="https://mail-index.netbsd.org/tech-repository/2025/01/04/msg000805.html"><li><div class="title">Core statement on version control systems</div><div class="domain">mail-index.netbsd.org &bull; January 05, 2025</div></li></a><a class="li" href="https://www.oilshell.org/blog/2025/01/release-0.24.0.html"><li><div class="title">Oils 0.24.0 - Closures, Objects, and Namespaces</div><div class="domain">oilshell.org &bull; January 05, 2025</div></li></a><a class="li" href="https://users.rust-lang.org/t/game-dev-in-rust-a-year-later/123522"><li><div class="title">Game dev in Rust, a year later</div><div class="domain">users.rust-lang.org &bull; January 05, 2025</div></li></a><a class="li" href="http://rachelbythebay.com/w/2025/01/04/cruft/"><li><div class="title">Web page annoyances that I don't inflict on you here</div><div class="domain">rachelbythebay.com &bull; January 05, 2025</div></li></a><a class="li" href="https://horstmann.com/unblog/2023-01-07/index.html"><li><div class="title">Linux High DPI Settings</div><div class="domain">horstmann.com &bull; January 05, 2025</div></li></a><a class="li" href="https://bernsteinbear.com/blog/weakrefs/"><li><div class="title">Weak references and garbage collectors</div><div class="domain">bernsteinbear.com &bull; January 05, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (39)</summary><ul><a class="li" href="https://www.newyorker.com/culture/the-weekend-essay/writing-as-transformation-louise-gluck"><li><div class="title">Writing as Transformation</div><div class="domain">newyorker.com &bull; January 05, 2025</div></li></a><a class="li" href="https://www.cbc.ca/sports/olympics/summer/athletics/onlyfans-alysha-newman-canada-olympics-1.7290724"><li><div class="title">Olympians turn to OnlyFans to fund dreams due to 'broken' finance system (2024)</div><div class="domain">cbc.ca &bull; January 05, 2025</div></li></a><a class="li" href="https://8dcc.github.io/programming/pool-allocator.html"><li><div class="title">Writing a simple pool allocator in C</div><div class="domain">8dcc.github.io &bull; January 05, 2025</div></li></a><a class="li" href="https://arxiv.org/abs/2501.00021"><li><div class="title">Did we miss P In CAP? Partial Progress Conjecture under Asynchrony</div><div class="domain">arxiv.org &bull; January 05, 2025</div></li></a><a class="li" href="https://fixparser.dev/what-is-fix"><li><div class="title">Brief Introduction to Fix and Fix JSON</div><div class="domain">fixparser.dev &bull; January 05, 2025</div></li></a><a class="li" href="https://www.nytimes.com/2025/01/02/us/mother-orca-tahlequah-calf-dead.html"><li><div class="title">Orca that carried dead calf for weeks appears to be in mourning again</div><div class="domain">nytimes.com &bull; January 05, 2025</div></li></a><a class="li" href="https://github.com/jfalcou/eve"><li><div class="title">Expressive Vector Engine – SIMD in C++</div><div class="domain">github.com &bull; January 05, 2025</div></li></a><a class="li" href="https://skyfall.dev/posts/astro-og-with-satori"><li><div class="title">How to generate OpenGraph images with Astro and Satori</div><div class="domain">skyfall.dev &bull; January 05, 2025</div></li></a><a class="li" href="https://www.ganssle.com/debouncing.htm"><li><div class="title">A Guide to Debouncing, Or, How to Debounce a Contact, by Jack Ganssle (2014)</div><div class="domain">ganssle.com &bull; January 05, 2025</div></li></a><a class="li" href="https://rwxstoned.github.io/2025-01-04-Reviewing-browser-hooks/"><li><div class="title">How is my Browser blocking RWX execution?</div><div class="domain">rwxstoned.github.io &bull; January 05, 2025</div></li></a><a class="li" href="https://wwws.law.northwestern.edu/research-faculty/clbe/events/antitrust/documents/prager_collusion_through_common_leadership.pdf"><li><div class="title">Collusion through Common Leadership [pdf]</div><div class="domain">wwws.law.northwestern.edu &bull; January 05, 2025</div></li></a><a class="li" href="https://www.quantamagazine.org/a-video-tour-of-the-standard-model-20210716/"><li><div class="title">A video tour of the Standard Model (2021)</div><div class="domain">quantamagazine.org &bull; January 05, 2025</div></li></a><a class="li" href="https://github.com/greg7mdp/parallel-hashmap"><li><div class="title">Parallel-hashmap: drop-in replacement for unordered_map, unordered_set</div><div class="domain">github.com &bull; January 05, 2025</div></li></a><a class="li" href="https://justine.lol/sizetricks/"><li><div class="title">Size Optimization Tricks (2022)</div><div class="domain">justine.lol &bull; January 05, 2025</div></li></a><a class="li" href="https://worldhistory.substack.com/p/brush-your-teeth-drink-milk-and-watch"><li><div class="title">Brush Your Teeth, Drink Milk, and Watch Out for Syphilis</div><div class="domain">worldhistory.substack.com &bull; January 05, 2025</div></li></a><a class="li" href="https://nmn.gl/blog/ai-senior-developer"><li><div class="title">A messy experiment that changed how I think about AI code analysis</div><div class="domain">nmn.gl &bull; January 05, 2025</div></li></a><a class="li" href="https://news.ycombinator.com/item?id=42602900"><li><div class="title">Ask HN: Spending Tracking Tools</div><div class="domain">news.ycombinator.com &bull; January 05, 2025</div></li></a><a class="li" href="https://abhisman.notion.site/Understanding-ReplicaSet-vs-StatefulSet-vs-DaemonSet-vs-Deployments-a521f9a46ea446219d98be4972f2e16e"><li><div class="title">Understanding ReplicaSet vs. StatefulSet vs. DaemonSet vs. Deployments</div><div class="domain">abhisman.notion.site &bull; January 05, 2025</div></li></a><a class="li" href="https://github.com/duolicious"><li><div class="title">Duolicious – Open-source dating app</div><div class="domain">github.com &bull; January 05, 2025</div></li></a><a class="li" href="https://news.ycombinator.com/item?id=42604529"><li><div class="title">Ask HN: Favorite Blog in 2024?</div><div class="domain">news.ycombinator.com &bull; January 05, 2025</div></li></a><a class="li" href="https://slate.com/life/2024/12/work-jobs-sales-telemarketing-america.html"><li><div class="title">In my life, I've witnessed three elite salespeople at work</div><div class="domain">slate.com &bull; January 05, 2025</div></li></a><a class="li" href="https://news.ycombinator.com/item?id=42605143"><li><div class="title">Corvus Robotics (YC S18) is hiring a Head of Software to help inventory drones</div><div class="domain">news.ycombinator.com &bull; January 05, 2025</div></li></a><a class="li" href="https://altayakkus.substack.com/p/you-wouldnt-download-an-ai"><li><div class="title">Extracting AI models from mobile apps</div><div class="domain">altayakkus.substack.com &bull; January 05, 2025</div></li></a><a class="li" href="https://github.com/srsran"><li><div class="title">SrsRAN: Open-Source 4G/5G</div><div class="domain">github.com &bull; January 05, 2025</div></li></a><a class="li" href="https://www.bingeclock.com/blog/post/republishing-my-simpsons-fan-site-twenty-years-later"><li><div class="title">Republishing My Simpsons Fan Site, Twenty Years Later</div><div class="domain">bingeclock.com &bull; January 05, 2025</div></li></a><a class="li" href="https://osf.io/preprints/psyarxiv/kgcrq"><li><div class="title">Social Media Distorts Perceptions of Norms</div><div class="domain">osf.io &bull; January 05, 2025</div></li></a><a class="li" href="https://news.ycombinator.com/item?id=42600893"><li><div class="title">CTO / cofounder exit deal after 1.5y at 600k revenue without SHA</div><div class="domain">news.ycombinator.com &bull; January 05, 2025</div></li></a><a class="li" href="https://pierrekim.github.io/blog/2016-11-01-gpon-ftth-networks-insecurity.html#introduction"><li><div class="title">GPON FTTH networks (in)security (2016)</div><div class="domain">pierrekim.github.io &bull; January 05, 2025</div></li></a><a class="li" href="https://www.tomshardware.com/raspberry-pi/it-looks-like-the-raspberry-pi-rp2350-hacking-challenge-has-been-beaten-hacker-gains-access-to-the-otp-secret-by-glitching-the-risc-v-cores-to-enable-debugging"><li><div class="title">Hacker gains access to the RP2350 OTP secret by glitching the RISC-V cores</div><div class="domain">tomshardware.com &bull; January 05, 2025</div></li></a><a class="li" href="https://imgur.com/gallery/KZ4u3c4"><li><div class="title">The funniest thing I ever did – a.k.a. "How To Make $100K From A Dick Joke."</div><div class="domain">imgur.com &bull; January 05, 2025</div></li></a><a class="li" href="https://www.inferable.ai/blog/posts/postgres-nodejs-longpolling.mdx"><li><div class="title">Back to basics: Why we chose long-polling over websockets</div><div class="domain">inferable.ai &bull; January 05, 2025</div></li></a><a class="li" href="http://oldvcr.blogspot.com/2025/01/refurb-weekend-atari-stacy.html"><li><div class="title">Refurb Weekend: Atari Stacy</div><div class="domain">oldvcr.blogspot.com &bull; January 05, 2025</div></li></a><a class="li" href="https://blurbusters.com/blur-busters-open-source-display-initative-refresh-cycle-shaders/"><li><div class="title">Blur Busters Open Source Display Initiative – Refresh Cycle Shaders</div><div class="domain">blurbusters.com &bull; January 05, 2025</div></li></a><a class="li" href="https://www.construction-physics.com/p/the-evolution-of-tunnel-boring-machines"><li><div class="title">The Evolution of Tunnel Boring Machines</div><div class="domain">construction-physics.com &bull; January 05, 2025</div></li></a><a class="li" href="https://amanvir.com/guten"><li><div class="title">Guten: A Tiny Newspaper Printer</div><div class="domain">amanvir.com &bull; January 05, 2025</div></li></a><a class="li" href="https://uwaterloo.ca/news/media/no-more-needles-tracking-blood-sugar-your-wrist"><li><div class="title">Researchers design wearable tech that can sense glucose levels more accurately</div><div class="domain">uwaterloo.ca &bull; January 05, 2025</div></li></a><a class="li" href="https://yoavsbg.github.io/css-flexbox-playground/"><li><div class="title">Show HN: Struggle with CSS Flexbox? This Playground Is for You</div><div class="domain">yoavsbg.github.io &bull; January 05, 2025</div></li></a><a class="li" href="https://tailscale.com/blog/how-nat-traversal-works"><li><div class="title">How Nat Traversal Works (2020)</div><div class="domain">tailscale.com &bull; January 05, 2025</div></li></a><a class="li" href="https://www.reuters.com/legal/former-crypto-executive-do-kwon-due-us-court-criminal-fraud-charges-2025-01-02/"><li><div class="title">Do Kwon pleads not guilty to US fraud charges in $40B crypto collapse</div><div class="domain">reuters.com &bull; January 05, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Scholar's Stage (scholars-stage.org)</h2> (1)</summary><ul><a class="li" href="https://scholars-stage.org/observations-from-india/"><li><div class="title">Observations From India</div><div class="domain">scholars-stage.org &bull; January 05, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Seth's Blog (seths.blog)</h2> (1)</summary><ul><a class="li" href="https://seths.blog/2025/01/working-with-problems-2/"><li><div class="title">Working with problems</div><div class="domain">seths.blog &bull; January 05, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (6)</summary><ul><a class="li" href="https://yourstory.com/2025/01/ofbusiness-plans-to-invest-rs-3k-cr-in-next-3-yrs-to-ramp-up-steel-biz"><li><div class="title">OfBusiness plans to invest Rs 3,000 Cr in next 3 yrs to ramp up steel biz</div><div class="domain">yourstory.com &bull; January 05, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/01/govt-to-launch-another-round-of-pli-scheme-for-steel-sector-on-monday"><li><div class="title">Govt to launch another round of PLI scheme for steel sector on Monday</div><div class="domain">yourstory.com &bull; January 05, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/01/haryana-govt-committed-establish-state-startup-hub-saini-entrepreneurs"><li><div class="title">Haryana govt committed to establish state as startup hub: Saini to entrepreneurs</div><div class="domain">yourstory.com &bull; January 05, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/01/chitra-santhe-art-fair-bengaluru-creativity-photography"><li><div class="title">Chitra Santhe kicks off 22nd edition of annual art fair in Bengaluru</div><div class="domain">yourstory.com &bull; January 05, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/01/gastro-guide-through-abu-dhabi-different-faces-daily-cuppa"><li><div class="title">A gastro guide through Abu Dhabi; Different faces of the daily cuppa</div><div class="domain">yourstory.com &bull; January 05, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/01/maha-kumbh-mela-2025-merging-tradition-technology-pilgrim"><li><div class="title">MahaKumbh Mela 2025: Merging tradition with technology for a seamless pilgrim experience</div><div class="domain">yourstory.com &bull; January 05, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Home & Garden (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=qWu1dLDBgnY"><li><div class="title">Bất ngờ vì trồng bí bơ hạt dẻ dễ như bí ngô thường | How to grow butternut squash is so easy</div><div class="domain">youtube.com &bull; January 05, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>

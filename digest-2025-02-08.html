@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-02-08</span>:</h1>
+  <p class="summary">There are 57 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Bear Blog Trending Posts (bearblog.dev)</h2> (4)</summary><ul><a class="li" href="https://andysblog.uk/how-algorithms-are-killing-the-web/"><li><div class="title">How Algorithms Are Killing The Web</div><div class="domain">andysblog.uk &bull; February 08, 2025</div></li></a><a class="li" href="https://brumph.com/the-nice-guy-mask/"><li><div class="title">the nice guy mask</div><div class="domain">brumph.com &bull; February 08, 2025</div></li></a><a class="li" href="https://mgx.me/why-do-you-live-in-the-woods/"><li><div class="title">why do you live in the woods?</div><div class="domain">mgx.me &bull; February 08, 2025</div></li></a><a class="li" href="https://dhester.me/getting-older/"><li><div class="title">Getting Older</div><div class="domain">dhester.me &bull; February 08, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">DOC (doc.cc)</h2> (1)</summary><ul><a class="li" href="https://www.doc.cc/articles/anthropomorphizing-everything"><li><div class="title">Our human habit of anthropomorphizing everything</div><div class="domain">doc.cc &bull; February 08, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (5)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/viZhwKytJ6Rqahymf/wild-animal-suffering-is-the-worst-thing-in-the-world"><li><div class="title">Wild Animal Suffering Is The Worst Thing In The World</div><div class="domain">lesswrong.com &bull; February 08, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/YXNeA3RyRrrRWS37A/a-problem-to-solve-before-building-a-deception-detector"><li><div class="title">A Problem to Solve Before Building a Deception Detector</div><div class="domain">lesswrong.com &bull; February 08, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/vqsXncwxsxti5L9Ne/racing-towards-fusion-and-ai"><li><div class="title">Racing Towards Fusion and AI</div><div class="domain">lesswrong.com &bull; February 08, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/26SHhxK2yYQbh7ors/research-directions-open-phil-wants-to-fund-in-technical-ai"><li><div class="title">Research directions Open Phil wants to fund in technical AI safety</div><div class="domain">lesswrong.com &bull; February 08, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/Hgj84BSitfSQnfwW6/so-you-want-to-make-marginal-progress"><li><div class="title">So You Want To Make Marginal Progress...</div><div class="domain">lesswrong.com &bull; February 08, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (14)</summary><ul><a class="li" href="https://bsky.bad-example.com/consuming-the-firehose-correctly/"><li><div class="title">Consuming the jetstream atproto firehose correctly</div><div class="domain">bsky.bad-example.com &bull; February 08, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=NUl6QikjR04"><li><div class="title">AI exploits a gamebreaking bug in Trackmania</div><div class="domain">youtube.com &bull; February 08, 2025</div></li></a><a class="li" href="https://blog.danielh.cc/blog/puzzle"><li><div class="title">From hours to 360ms: over-engineering a puzzle solution</div><div class="domain">blog.danielh.cc &bull; February 08, 2025</div></li></a><a class="li" href="https://antirez.com/news/145"><li><div class="title">We are destroying software</div><div class="domain">antirez.com &bull; February 08, 2025</div></li></a><a class="li" href="https://rxi.github.io/a_simple_serialization_system.html"><li><div class="title">A Simple Serialization System</div><div class="domain">rxi.github.io &bull; February 08, 2025</div></li></a><a class="li" href="https://eieio.games/blog/be-skeptical-of-all-code-not-just-the-funny-stuff/"><li><div class="title">Be Skeptical of All Code - Not Just the Funny Stuff</div><div class="domain">eieio.games &bull; February 08, 2025</div></li></a><a class="li" href="https://t-shaped.nl/posts/synctrain-a-rethought-ios-client-for-syncthing"><li><div class="title">Synctrain: a rethought iOS client for Syncthing</div><div class="domain">t-shaped.nl &bull; February 08, 2025</div></li></a><a class="li" href="https://b.tuxes.uk/three-years-of-ephemeral-nixos.html"><li><div class="title">Three Years of Ephemeral NixOS: My Experience Resetting Root on Every Boot</div><div class="domain">b.tuxes.uk &bull; February 08, 2025</div></li></a><a class="li" href="https://herecomesthemoon.net/2025/02/carbon-is-not-a-language/"><li><div class="title">Carbon is not a programming language (sort of)</div><div class="domain">herecomesthemoon.net &bull; February 08, 2025</div></li></a><a class="li" href="https://github.com/secureblue/Trivalent"><li><div class="title">Trivalent: A hardened chromium for desktop Linux inspired by Vanadium</div><div class="domain">github.com &bull; February 08, 2025</div></li></a><a class="li" href="https://video.fosdem.org/2025/h1302/fosdem-2025-6479-a-tale-of-several-distros-joining-forces-for-a-common-goal-reproducible-builds.av1.webm"><li><div class="title">A tale of several distros joining forces for a common goal: reproducible builds</div><div class="domain">video.fosdem.org &bull; February 08, 2025</div></li></a><a class="li" href="https://youtu.be/RYHYiXMJdZI"><li><div class="title">The case for sans-io</div><div class="domain">youtu.be &bull; February 08, 2025</div></li></a><a class="li" href="https://www.docker.com/blog/ga-launch-docker-bake/"><li><div class="title">Docker Bake is Now Generally Available</div><div class="domain">docker.com &bull; February 08, 2025</div></li></a><a class="li" href="https://ziglang.org/devlog/2025/#2025-02-07"><li><div class="title">No-Libc Zig Now Outperforms Glibc Zig</div><div class="domain">ziglang.org &bull; February 08, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (22)</summary><ul><a class="li" href="https://www.lightsource.ca/public/news/2024-25-q4-jan-march/scientists-invent-slime-that-could-be-used-in-new-medical-green-energy-and-robot-applications.php"><li><div class="title">Scientists invent "slime" – could be used in medical, energy, robot applications</div><div class="domain">lightsource.ca &bull; February 08, 2025</div></li></a><a class="li" href="https://literaryreview.co.uk/no-way-home"><li><div class="title">No Way Home</div><div class="domain">literaryreview.co.uk &bull; February 08, 2025</div></li></a><a class="li" href="https://ohmjs.org/"><li><div class="title">Ohm: A user-friendly parsing toolkit for JavaScript and TypeScript</div><div class="domain">ohmjs.org &bull; February 08, 2025</div></li></a><a class="li" href="https://krebsonsecurity.com/2025/02/teen-on-musks-doge-team-graduated-from-the-com/"><li><div class="title">Teen on Musk's DOGE team graduated from 'The Com'</div><div class="domain">krebsonsecurity.com &bull; February 08, 2025</div></li></a><a class="li" href="https://phys.org/news/2025-01-rwandan-scientists-local-yeast-banana.html"><li><div class="title">Rwandan scientists develop local yeast for banana wine-makers</div><div class="domain">phys.org &bull; February 08, 2025</div></li></a><a class="li" href="https://git.sr.ht/~egtann/txtar/"><li><div class="title">Show HN: Chez Scheme txtar port from Go</div><div class="domain">git.sr.ht &bull; February 08, 2025</div></li></a><a class="li" href="https://www.adacore.com/gems"><li><div class="title">Ada Gems (2014)</div><div class="domain">adacore.com &bull; February 08, 2025</div></li></a><a class="li" href="https://www.keelinglabs.com/jobs"><li><div class="title">Keeling Labs (YC W23) Is Hiring an ML Engineer for Applied ML in the Grid</div><div class="domain">keelinglabs.com &bull; February 08, 2025</div></li></a><a class="li" href="https://addons.mozilla.org/en-US/firefox/addon/deep-fake-detector/"><li><div class="title">Deep Fake Detector Extension by Mozilla Firefox</div><div class="domain">addons.mozilla.org &bull; February 08, 2025</div></li></a><a class="li" href="https://github.com/wojciech-kulik/FlashSpace"><li><div class="title">Show HN: FlashSpace – fast, open-source, macOS Spaces replacement</div><div class="domain">github.com &bull; February 08, 2025</div></li></a><a class="li" href="https://github.com/xajik/thedeck"><li><div class="title">The Deck: An open-source cross-platform multiplayer card game engine in Flutter</div><div class="domain">github.com &bull; February 08, 2025</div></li></a><a class="li" href="https://scorpiosoftware.net/2025/02/08/writing-a-simple-driver-in-rust/"><li><div class="title">Writing a simple windows driver in Rust</div><div class="domain">scorpiosoftware.net &bull; February 08, 2025</div></li></a><a class="li" href="https://johnkerl.org/doc/ortho/ortho.html"><li><div class="title">Tips for mathematical handwriting (2007)</div><div class="domain">johnkerl.org &bull; February 08, 2025</div></li></a><a class="li" href="https://datagubbe.se/endofciv/"><li><div class="title">Is software abstraction killing civilization? (2021)</div><div class="domain">datagubbe.se &bull; February 08, 2025</div></li></a><a class="li" href="https://jacksonpollock.org/"><li><div class="title">Jacksonpollock.org</div><div class="domain">jacksonpollock.org &bull; February 08, 2025</div></li></a><a class="li" href="https://github.com/awwaiid/ghostwriter"><li><div class="title">Ghostwriter – use the reMarkable2 as an interface to vision-LLMs</div><div class="domain">github.com &bull; February 08, 2025</div></li></a><a class="li" href="https://www.mining.com/why-gold-loves-arsenic/"><li><div class="title">Why gold loves arsenic (2021)</div><div class="domain">mining.com &bull; February 08, 2025</div></li></a><a class="li" href="https://fly.io/blog/vscode-ssh-wtf/"><li><div class="title">VSCode's SSH agent is bananas</div><div class="domain">fly.io &bull; February 08, 2025</div></li></a><a class="li" href="https://arxiv.org/abs/2502.04327"><li><div class="title">Value-Based Deep RL Scales Predictably</div><div class="domain">arxiv.org &bull; February 08, 2025</div></li></a><a class="li" href="https://www.cambridge.org/core/journals/journal-of-functional-programming/article/turner-bird-eratosthenes-an-eternal-burning-thread/32E2EDF5D5EAEC95F13D313BC97B86F0"><li><div class="title">Turner, Bird, Eratosthenes: An eternal burning thread</div><div class="domain">cambridge.org &bull; February 08, 2025</div></li></a><a class="li" href="https://redpenguin101.github.io/html/posts/2025_01_21_voronoi.html"><li><div class="title">Generating Voronoi Diagrams Using Fortune's Algorithm (With Odin)</div><div class="domain">redpenguin101.github.io &bull; February 08, 2025</div></li></a><a class="li" href="https://www.cbc.ca/radio/ideas/tech-billionaires-ai-utopia-1.7440698"><li><div class="title">The 'dangerous' promise of a techno-utopian future</div><div class="domain">cbc.ca &bull; February 08, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Seth's Blog (seths.blog)</h2> (1)</summary><ul><a class="li" href="https://seths.blog/2025/02/rainy-day-surfer/"><li><div class="title">Rainy day surfer</div><div class="domain">seths.blog &bull; February 08, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Diplomat (thediplomat.com)</h2> (1)</summary><ul><a class="li" href="https://thediplomat.com/2025/02/trump-2-0-in-america-geopolitical-ripples-across-asia-and-the-world/"><li><div class="title">Trump 2.0 in America: Geopolitical Ripples Across Asia and the World</div><div class="domain">thediplomat.com &bull; February 08, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (9)</summary><ul><a class="li" href="https://yourstory.com/2025/02/firstcry-parent-brainbees-trims-losses-by-69-for-q3-fy25"><li><div class="title">FirstCry parent Brainbees trims losses by over two-thirds in Q3 FY25</div><div class="domain">yourstory.com &bull; February 08, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/02/cabinet-clears-new-i-t-bill-to-be-introduced-in-parliament-next-week"><li><div class="title">Cabinet clears new I-T bill; to be introduced in Parliament next week</div><div class="domain">yourstory.com &bull; February 08, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/02/zepto-cafe-daily-orders-achieves-50-mom-growth-ceo-aadit-palicha"><li><div class="title">Zepto Café daily orders hit 75,000, up 50% month-on-month: CEO Aadit Palicha</div><div class="domain">yourstory.com &bull; February 08, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/02/preservation-sustainability-growth-titan-creative-dignity-crafts-entrepreneur-photography"><li><div class="title">Preservation, sustainability, growth: How Titan and Creative Dignity support crafts livelihood</div><div class="domain">yourstory.com &bull; February 08, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/02/govt-approves-skill-india-programme-rs-8800-cr-outlay"><li><div class="title">Govt approves continuation, restructuring of Skill India programme with Rs 8,800 Cr outlay</div><div class="domain">yourstory.com &bull; February 08, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/02/employees-of-samsung-india-resort-to-sit-in-strike-at-tn-plant"><li><div class="title">Employees of Samsung India resort to sit-in strike at TN plant</div><div class="domain">yourstory.com &bull; February 08, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/02/inside-ola-electrics-q3-report-card-mukhwas-mouth-freshners"><li><div class="title">Inside Ola Electric’s Q3 report card; Modernising India’s mukhwas industry</div><div class="domain">yourstory.com &bull; February 08, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/02/the-hidden-costs-of-junk-leads-for-businesses"><li><div class="title">The hidden costs of junk leads for businesses</div><div class="domain">yourstory.com &bull; February 08, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/02/sebi-bans-fininfluencer-asmita-patel-5-others-from-mkt-impound-illegal-gains-of-over-rs-53-cr"><li><div class="title">SEBI bans fininfluencer Asmita Patel, 5 others; impounds illegal gains of Rs 53+ Cr</div><div class="domain">yourstory.com &bull; February 08, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>

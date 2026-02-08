@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-05-25</span>:</h1>
+  <p class="summary">There are 79 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Bear Blog Trending Posts (bearblog.dev)</h2> (7)</summary><ul><a class="li" href="https://notes.jeddacp.com/week-notes-058/"><li><div class="title">Week Notes 058</div><div class="domain">notes.jeddacp.com &bull; May 25, 2025</div></li></a><a class="li" href="https://lunamouse.bearblog.dev/day104/"><li><div class="title">day104 - goodbye</div><div class="domain">lunamouse.bearblog.dev &bull; May 25, 2025</div></li></a><a class="li" href="https://sunshine.bearblog.dev/first-time-on-bear-blog/"><li><div class="title">First time on bear blog....</div><div class="domain">sunshine.bearblog.dev &bull; May 25, 2025</div></li></a><a class="li" href="https://blog.dante.cool/my-open-tabs/"><li><div class="title">my open tabs</div><div class="domain">blog.dante.cool &bull; May 25, 2025</div></li></a><a class="li" href="https://louplummer.lol/minimalism-notforme/"><li><div class="title">Minimalism - Not for Me</div><div class="domain">louplummer.lol &bull; May 25, 2025</div></li></a><a class="li" href="https://bajanbuzz.com/barbados-government-eager-to-forge-closer-ties-with-highly-corrupt-african-countries/"><li><div class="title">Barbados government eager to forge closer ties with highly corrupt African countries</div><div class="domain">bajanbuzz.com &bull; May 25, 2025</div></li></a><a class="li" href="https://blog.pabloecortez.com/i-made-a-public-feed-aggregator-share-your-blog/"><li><div class="title">I made a public feed aggregator. Share your blog!</div><div class="domain">blog.pabloecortez.com &bull; May 25, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Commoncog (commoncog.com)</h2> (1)</summary><ul><a class="li" href="https://commoncog.com/origin-of-the-tatas/"><li><div class="title">The Origin of the Tatas</div><div class="domain">commoncog.com &bull; May 25, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Two-Wrongs (entropicthoughts.com)</h2> (1)</summary><ul><a class="li" href="https://entropicthoughts.com/org-element-reimplements-emphasis-parsing"><li><div class="title">org-element Reimplements Emphasis Parsing</div><div class="domain">entropicthoughts.com &bull; May 25, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (4)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/8CAxLLv5YBWWKnEiJ/priming-effects-are-fake-but-framing-effects-are-real"><li><div class="title">Priming effects are fake, but framing effects are real</div><div class="domain">lesswrong.com &bull; May 25, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/Zhp2Xe8cWqDcf2rsY/meditations-on-doge"><li><div class="title">Meditations on Doge</div><div class="domain">lesswrong.com &bull; May 25, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/PjeZxCivuoyKhs4JB/claude-4-you-safety-and-alignment"><li><div class="title">Claude 4 You: Safety and Alignment</div><div class="domain">lesswrong.com &bull; May 25, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/TBk2dbWkg2F7dB3jb/it-s-hard-to-make-scheming-evals-look-realistic-for-llms"><li><div class="title">It's hard to make scheming evals look realistic for LLMs</div><div class="domain">lesswrong.com &bull; May 25, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (18)</summary><ul><a class="li" href="https://googleprojectzero.blogspot.com/2025/05/the-windows-registry-adventure-7-attack-surface.html"><li><div class="title">The Windows Registry Adventure #7: Attack surface analysis</div><div class="domain">googleprojectzero.blogspot.com &bull; May 25, 2025</div></li></a><a class="li" href="https://codeberg.org/anaseto/goal"><li><div class="title">goal - embeddable scripting array language</div><div class="domain">codeberg.org &bull; May 25, 2025</div></li></a><a class="li" href="https://github.com/bhauman/clojure-mcp"><li><div class="title">Clojure MCP</div><div class="domain">github.com &bull; May 25, 2025</div></li></a><a class="li" href="https://hynek.me/talks/design-pressure/"><li><div class="title">Design Pressure: The Invisible Hand That Shapes Your Code</div><div class="domain">hynek.me &bull; May 25, 2025</div></li></a><a class="li" href="https://dev.to/hmpljs/i-replaced-nextjs-for-my-application-with-this-templating-language-2g74"><li><div class="title">How I Replaced Next.js for My App with HMPL.js</div><div class="domain">dev.to &bull; May 25, 2025</div></li></a><a class="li" href="https://0xda.de/garden/guarantee-red-team-failure/"><li><div class="title">How to Guarantee Your Red Team Will Fail</div><div class="domain">0xda.de &bull; May 25, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=kT3TMb9n26Q"><li><div class="title">UE1 homebrew 1-bit vacuum computer in action</div><div class="domain">youtube.com &bull; May 25, 2025</div></li></a><a class="li" href="https://github.com/Summa-Cogni/Mathpad"><li><div class="title">Mathpad: A mathematical keypad for students and professionals</div><div class="domain">github.com &bull; May 25, 2025</div></li></a><a class="li" href="https://www.asawicki.info/Mirror/Car%20Physics%20for%20Games/Car%20Physics%20for%20Games.html"><li><div class="title">Car Physics for Games</div><div class="domain">asawicki.info &bull; May 25, 2025</div></li></a><a class="li" href="https://www.phoronix.com/news/Fedora-43-Wayland-Only-GNOME"><li><div class="title">Fedora 43 Cleared To Ship With Wayland-Only GNOME</div><div class="domain">phoronix.com &bull; May 25, 2025</div></li></a><a class="li" href="https://kb.databasedesignbook.com/posts/systematic-design-of-join-queries/"><li><div class="title">Systematic design of multi-join GROUP BY queries</div><div class="domain">kb.databasedesignbook.com &bull; May 25, 2025</div></li></a><a class="li" href="https://behind.pretix.eu/2018/01/20/cups-driver/"><li><div class="title">Writing your own CUPS printer driver in 100 lines of Python</div><div class="domain">behind.pretix.eu &bull; May 25, 2025</div></li></a><a class="li" href="https://oppi.li/posts/programming_on_34_keys/"><li><div class="title">Programming On 34 Keys (2022)</div><div class="domain">oppi.li &bull; May 25, 2025</div></li></a><a class="li" href="https://solhsa.com/oldernews2025.html#ON-FILE-FORMATS"><li><div class="title">On File Formats</div><div class="domain">solhsa.com &bull; May 25, 2025</div></li></a><a class="li" href="https://www.galois.com/articles/what-works-and-doesnt-selling-formal-methods"><li><div class="title">What Works (and Doesn't) Selling Formal Methods</div><div class="domain">galois.com &bull; May 25, 2025</div></li></a><a class="li" href="https://github.com/Seeker04/plwm"><li><div class="title">plwm: An X11 window manager written in Prolog</div><div class="domain">github.com &bull; May 25, 2025</div></li></a><a class="li" href="http://oldvcr.blogspot.com/2025/05/prior-art-dept-hierarchical-hypermedia.html"><li><div class="title">The hierarchical hypermedia world of Hyper-G</div><div class="domain">oldvcr.blogspot.com &bull; May 25, 2025</div></li></a><a class="li" href="https://liamoc.net/forest/dt-001Y/index.xml"><li><div class="title">Domain Theory Lecture Notes</div><div class="domain">liamoc.net &bull; May 25, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (29)</summary><ul><a class="li" href="https://kasmana.people.charleston.edu/MATHFICT/default.html"><li><div class="title">Mathematical Fiction</div><div class="domain">kasmana.people.charleston.edu &bull; May 25, 2025</div></li></a><a class="li" href="https://chesshistory.github.io/"><li><div class="title">A Visual History of Chessmen</div><div class="domain">chesshistory.github.io &bull; May 25, 2025</div></li></a><a class="li" href="https://geoffg.net/picomite.html"><li><div class="title">Basic for the Raspberry Pi Pico and Pico 2</div><div class="domain">geoffg.net &bull; May 25, 2025</div></li></a><a class="li" href="https://writings.stephenwolfram.com/2025/05/what-if-we-had-bigger-brains-imagining-minds-beyond-ours/"><li><div class="title">What If We Had Bigger Brains? Imagining Minds Beyond Ours</div><div class="domain">writings.stephenwolfram.com &bull; May 25, 2025</div></li></a><a class="li" href="https://firedbg.sea-ql.org/"><li><div class="title">Visualize and debug Rust programs with a new lens</div><div class="domain">firedbg.sea-ql.org &bull; May 25, 2025</div></li></a><a class="li" href="https://www.together.ai/blog/direct-preference-optimization"><li><div class="title">Direct Preference Optimization vs. RLHF</div><div class="domain">together.ai &bull; May 25, 2025</div></li></a><a class="li" href="https://space.crunchlabs.com/"><li><div class="title">Space Selfie</div><div class="domain">space.crunchlabs.com &bull; May 25, 2025</div></li></a><a class="li" href="https://book.leveldesignbook.com"><li><div class="title">The Level Design Book</div><div class="domain">book.leveldesignbook.com &bull; May 25, 2025</div></li></a><a class="li" href="http://rednafi.com/go/di_frameworks_bleh/"><li><div class="title">Dependency injection frameworks add confusion</div><div class="domain">rednafi.com &bull; May 25, 2025</div></li></a><a class="li" href="https://expressive.app/expressive-animator/"><li><div class="title">Show HN: SVG Animation Software</div><div class="domain">expressive.app &bull; May 25, 2025</div></li></a><a class="li" href="https://www.swlondoner.co.uk/news/16052025-is-tfl-losing-the-battle-against-heat-on-the-victoria-line"><li><div class="title">Is TfL losing the battle against heat on the Victoria line?</div><div class="domain">swlondoner.co.uk &bull; May 25, 2025</div></li></a><a class="li" href="https://www.science.org/content/article/strange-metals-point-whole-new-way-understand-electricity"><li><div class="title">'Strange metals' point to a whole new way to understand electricity</div><div class="domain">science.org &bull; May 25, 2025</div></li></a><a class="li" href="https://www.telegraph.co.uk/world-news/2025/05/23/denmark-raise-retirement-age-70/"><li><div class="title">Denmark to raise retirement age to 70</div><div class="domain">telegraph.co.uk &bull; May 25, 2025</div></li></a><a class="li" href="https://www.ycombinator.com/companies/martin/jobs"><li><div class="title">Martin (YC S23) Is Hiring Founding AI/Product Engineers to Build a Better Siri</div><div class="domain">ycombinator.com &bull; May 25, 2025</div></li></a><a class="li" href="https://drops.dagstuhl.de/storage/00lipics/lipics-vol316-aft2024/LIPIcs.AFT.2024.24/LIPIcs.AFT.2024.24.pdf"><li><div class="title">Wrench Attacks: Physical attacks targeting cryptocurrency users (2024) [pdf]</div><div class="domain">drops.dagstuhl.de &bull; May 25, 2025</div></li></a><a class="li" href="https://github.com/geohot/tt-tiny"><li><div class="title">Advice to Tenstorrent</div><div class="domain">github.com &bull; May 25, 2025</div></li></a><a class="li" href="https://github.com/xcaeser/zli"><li><div class="title">Show HN: Zli – A Batteries-Included CLI Framework for Zig</div><div class="domain">github.com &bull; May 25, 2025</div></li></a><a class="li" href="https://ephemeral.cx/2013/12/writing-a-self-mutating-x86_64-c-program/"><li><div class="title">Writing a Self-Mutating x86_64 C Program (2013)</div><div class="domain">ephemeral.cx &bull; May 25, 2025</div></li></a><a class="li" href="https://github.com/DustinBrett/daedalOS"><li><div class="title">Show HN: DaedalOS – Desktop Environment in the Browser</div><div class="domain">github.com &bull; May 25, 2025</div></li></a><a class="li" href="https://www.nytimes.com/2025/05/25/business/amazon-ai-coders.html"><li><div class="title">At Amazon, some coders say their jobs have begun to resemble warehouse work</div><div class="domain">nytimes.com &bull; May 25, 2025</div></li></a><a class="li" href="https://simonwillison.net/2025/May/25/claude-4-system-card/"><li><div class="title">Claude 4 System Card</div><div class="domain">simonwillison.net &bull; May 25, 2025</div></li></a><a class="li" href="https://chomsky.info/20230503-2/"><li><div class="title">Chomsky on what ChatGPT is good for (2023)</div><div class="domain">chomsky.info &bull; May 25, 2025</div></li></a><a class="li" href="https://lottie.github.io/"><li><div class="title">Lottie is an open format for animated vector graphics</div><div class="domain">lottie.github.io &bull; May 25, 2025</div></li></a><a class="li" href="https://news.ycombinator.com/item?id=44090387"><li><div class="title">Ask HN: What are you working on? (May 2025)</div><div class="domain">news.ycombinator.com &bull; May 25, 2025</div></li></a><a class="li" href="https://github.com/ossu/computer-science"><li><div class="title">Open Source Society University – Path to a free self-taught education in CS</div><div class="domain">github.com &bull; May 25, 2025</div></li></a><a class="li" href="https://self-issued.info/?p=2708"><li><div class="title">Ten Years of JSON Web Token and Preparing for the Future</div><div class="domain">self-issued.info &bull; May 25, 2025</div></li></a><a class="li" href="https://angrystaffofficer.com/2025/03/02/failure-mechanisms-in-democratic-regimes-an-armys-role/"><li><div class="title">Failure Mechanisms in Democratic Regimes – An Army's Role</div><div class="domain">angrystaffofficer.com &bull; May 25, 2025</div></li></a><a class="li" href="https://mirari.vitasys.nl/"><li><div class="title">The Next-Gen Mainboard Designed with AmigaOS4 and MorphOS in Mind</div><div class="domain">mirari.vitasys.nl &bull; May 25, 2025</div></li></a><a class="li" href="https://blog.pipetogrep.org/2025/05/23/how-to-install-windows-nt-4-server-on-proxmox/"><li><div class="title">How to Install Windows NT 4 Server on Proxmox</div><div class="domain">blog.pipetogrep.org &bull; May 25, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Seth's Blog (seths.blog)</h2> (1)</summary><ul><a class="li" href="https://seths.blog/2025/05/the-11-method/"><li><div class="title">The 1:1 method</div><div class="domain">seths.blog &bull; May 25, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Diplomat (thediplomat.com)</h2> (4)</summary><ul><a class="li" href="https://thediplomat.com/2025/05/crisis-without-closure-india-pakistan-confrontation-in-an-era-of-fragile-deterrence/"><li><div class="title">Crisis Without Closure: India-Pakistan Confrontation in an Era of Fragile Deterrence</div><div class="domain">thediplomat.com &bull; May 25, 2025</div></li></a><a class="li" href="https://thediplomat.com/2025/05/myanmar-situation-update-with-paul-greening-3/"><li><div class="title">Myanmar: Situation Update with Paul Greening</div><div class="domain">thediplomat.com &bull; May 25, 2025</div></li></a><a class="li" href="https://thediplomat.com/2025/05/why-the-us-wont-be-able-to-help-build-taiwans-nuclear-future/"><li><div class="title">Why the US Won’t Be Able to Help Build Taiwan’s Nuclear Future</div><div class="domain">thediplomat.com &bull; May 25, 2025</div></li></a><a class="li" href="https://thediplomat.com/2025/05/10-years-of-rohingya-refugees-stranded-at-sea/"><li><div class="title">10 Years of Rohingya Refugees Stranded at Sea</div><div class="domain">thediplomat.com &bull; May 25, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Varun Barad - Curious Developer (varunbarad.com)</h2> (1)</summary><ul><a class="li" href="https://varunbarad.com/blog/fixing-the-torch.html"><li><div class="title">Fixing the torch 🔦</div><div class="domain">varunbarad.com &bull; May 25, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (10)</summary><ul><a class="li" href="https://yourstory.com/2025/05/ai-safety-empowerment-business-creativity-innovation-entrepreneur-education-quiz"><li><div class="title">AI, safety, empowerment: test your business creativity with Edition 189 of our weekly quiz!</div><div class="domain">yourstory.com &bull; May 25, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/05/airtel-jio-vil-joint-telecom-initiative-against-fraud"><li><div class="title">Airtel approaches Jio, VIL on joint telecom initiative against fraud</div><div class="domain">yourstory.com &bull; May 25, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/05/info-edge-shareholders-approve-1000-crore-investment-third-venture-fund"><li><div class="title">Info Edge shareholders approve Rs 1,000 Cr investment in third venture fund</div><div class="domain">yourstory.com &bull; May 25, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/05/tata-motors-regain-50-market-share-electric-passenger-vehicle-segment"><li><div class="title">Tata Motors seeks to regain 50% mkt share in electric PV segment: MD</div><div class="domain">yourstory.com &bull; May 25, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/05/pm-modi-states-centre-team-remove-policy-bottlenecks-global-investors"><li><div class="title">PM asks states to work with Centre as team, remove policy bottlenecks to attract global investors</div><div class="domain">yourstory.com &bull; May 25, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/05/india-worlds-fourth-largest-economy-overtaking-japan"><li><div class="title">India becomes world's fourth largest economy, overtaking Japan: NITI Aayog CEO</div><div class="domain">yourstory.com &bull; May 25, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/05/gender-empowerment-museum-goa-art-creativity-photography"><li><div class="title">Gender and empowerment—how this Museum of Goa exhibition explores new creative frontiers</div><div class="domain">yourstory.com &bull; May 25, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/05/inside-the-suta-story-caf-swasthyas-ayurveda-inspired-meals"><li><div class="title">Inside the Suta story; Café Swasthya’s Ayurveda-inspired meals</div><div class="domain">yourstory.com &bull; May 25, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/05/make-the-most-of-ai-experts-tell-engineers-devsparks"><li><div class="title">Get on board with AI and make the most of it: Experts tell engineers</div><div class="domain">yourstory.com &bull; May 25, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/05/synthetic-data-maintaining-ai-supremacy-while-upholding-individual-rights-deepseek"><li><div class="title">Synthetic data: The key to maintaining AI supremacy while upholding individual rights</div><div class="domain">yourstory.com &bull; May 25, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Unphiltered by Samdish (and a fantastic team) (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=9ogf-LiYdlc"><li><div class="title">What Does an Indian Port Look Like? | Inside One of India’s Oldest Ports</div><div class="domain">youtube.com &bull; May 25, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">theteachr (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/G8kgn29BYQw"><li><div class="title">Bad Switch</div><div class="domain">youtube.com &bull; May 25, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Fun Fun Function (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/2sq9iflZuvk"><li><div class="title">Mathematicans are Feral #d3js #datascience #datavisualization</div><div class="domain">youtube.com &bull; May 25, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>

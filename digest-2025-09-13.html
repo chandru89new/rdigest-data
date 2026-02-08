@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-09-13</span>:</h1>
+  <p class="summary">There are 69 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Bear Blog Trending Posts (bearblog.dev)</h2> (3)</summary><ul><a class="li" href="https://rohithuppala.com/freedom-of-speech/"><li><div class="title">Freedom of speech</div><div class="domain">rohithuppala.com &bull; September 13, 2025</div></li></a><a class="li" href="https://grizzlygazette.bearblog.dev/on-the-bear-blog-license-change/"><li><div class="title">On the Bear Blog license change</div><div class="domain">grizzlygazette.bearblog.dev &bull; September 13, 2025</div></li></a><a class="li" href="https://phong.bearblog.dev/itadakimasu/"><li><div class="title">Itadakimasu</div><div class="domain">phong.bearblog.dev &bull; September 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Marginalian (feeds.feedburner.com)</h2> (1)</summary><ul><a class="li" href="https://www.themarginalian.org/2025/09/12/the-coziest-place-on-the-moon/"><li><div class="title">The Coziest Place on the Moon: An Illustrated Fable about How to Live with Loneliness and What It Means to Love, Inspired by a Real NASA Discovery</div><div class="domain">themarginalian.org &bull; September 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (1)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/qzbDjLZze3WBJfMcG/lesswrong-is-migrating-hosting-providers-report-bugs"><li><div class="title">LessWrong is migrating hosting providers (report bugs!)</div><div class="domain">lesswrong.com &bull; September 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (18)</summary><ul><a class="li" href="https://lemire.me/blog/2025/09/07/splitting-a-long-string-in-lines-efficiently/"><li><div class="title">Splitting a long string in lines using AVX2</div><div class="domain">lemire.me &bull; September 13, 2025</div></li></a><a class="li" href="https://okmij.org/ftp/Scheme/callcc-calc-page.html"><li><div class="title">Normal-order syntax-rules and proving the fix-point of call/cc</div><div class="domain">okmij.org &bull; September 13, 2025</div></li></a><a class="li" href="https://blog.incrementalforgetting.tech/p/ducklake-for-busy-engineering-managers"><li><div class="title">DuckLake for busy engineering managers</div><div class="domain">blog.incrementalforgetting.tech &bull; September 13, 2025</div></li></a><a class="li" href="https://egglog-python.readthedocs.io/latest/tutorials/tut_1_basics.html"><li><div class="title">Basics of Equality Saturation</div><div class="domain">egglog-python.readthedocs.io &bull; September 13, 2025</div></li></a><a class="li" href="https://diesel.rs/news/2_3_0_release.html"><li><div class="title">Diesel 2.3.0</div><div class="domain">diesel.rs &bull; September 13, 2025</div></li></a><a class="li" href="https://github.com/addisoncrump/parking-game-fuzzer"><li><div class="title">Learning to fuzz with LibAFL by solving puzzles</div><div class="domain">github.com &bull; September 13, 2025</div></li></a><a class="li" href="https://interseclab.org/research/the-internet-coup/"><li><div class="title">The Internet Coup</div><div class="domain">interseclab.org &bull; September 13, 2025</div></li></a><a class="li" href="https://justanotherelectronicsblog.com/?p=771"><li><div class="title">Weird CPU architectures: the MOV only CPU</div><div class="domain">justanotherelectronicsblog.com &bull; September 13, 2025</div></li></a><a class="li" href="https://quarters.captaintouch.com/blog/posts/2025-09-13-text-files-%3E-complex-tools:-a-minimalist-snippet-manager.html"><li><div class="title">Text Files > Complex Tools: A Minimalist Snippet Manager</div><div class="domain">quarters.captaintouch.com &bull; September 13, 2025</div></li></a><a class="li" href="https://github.com/carthage-software/mago"><li><div class="title">A fast PHP toolchain written in Rust</div><div class="domain">github.com &bull; September 13, 2025</div></li></a><a class="li" href="https://www.passwordstore.org/"><li><div class="title">Pass: Unix Password Manager</div><div class="domain">passwordstore.org &bull; September 13, 2025</div></li></a><a class="li" href="https://github.com/neurocyte/flow"><li><div class="title">Flow Control: a programmer's text editor</div><div class="domain">github.com &bull; September 13, 2025</div></li></a><a class="li" href="https://geohot.github.io//blog/jekyll/update/2025/09/12/ai-coding.html"><li><div class="title">AI Coding</div><div class="domain">geohot.github.io &bull; September 13, 2025</div></li></a><a class="li" href="https://avi.im/blag/2025/setsum"><li><div class="title">Setsum – order agnostic, additive, subtractive checksum</div><div class="domain">avi.im &bull; September 13, 2025</div></li></a><a class="li" href="https://sibellavia.lol/posts/2025/09/safe-c-proposal-is-not-being-continued/"><li><div class="title">Safe C++ proposal is not being continued</div><div class="domain">sibellavia.lol &bull; September 13, 2025</div></li></a><a class="li" href="https://eissing.org/icing/posts/rip_pthread_cancel/"><li><div class="title">RIP pthread_cancel</div><div class="domain">eissing.org &bull; September 13, 2025</div></li></a><a class="li" href="https://natkr.com/2025-09-13-my-first-cve/"><li><div class="title">My first CVE</div><div class="domain">natkr.com &bull; September 13, 2025</div></li></a><a class="li" href="https://jcarroll.com.au/2025/09/13/i-vibe-coded-an-r-package/"><li><div class="title">I Vibe Coded an R Package and it ... actually works?!?</div><div class="domain">jcarroll.com.au &bull; September 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (22)</summary><ul><a class="li" href="https://doc.cat-v.org/bell_labs/utf-8_history"><li><div class="title">UTF-8 history (2003)</div><div class="domain">doc.cat-v.org &bull; September 13, 2025</div></li></a><a class="li" href="https://spectrum.ieee.org/wind-turbine-blade-transport-plane"><li><div class="title">Wind turbine blade transportation challenges</div><div class="domain">spectrum.ieee.org &bull; September 13, 2025</div></li></a><a class="li" href="https://labs.iximiuz.com/tutorials/container-filesystem-from-scratch"><li><div class="title">How Container Filesystem Works: Building a Docker-Like Container from Scratch</div><div class="domain">labs.iximiuz.com &bull; September 13, 2025</div></li></a><a class="li" href="https://github.com/wait4x/wait4x"><li><div class="title">Wait4X allows you to wait for a port or a service to enter the requested state</div><div class="domain">github.com &bull; September 13, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=_xJ4maWhSNU"><li><div class="title">From unit tests to whole universe tests (with will wilson of antithesis) [video]</div><div class="domain">youtube.com &bull; September 13, 2025</div></li></a><a class="li" href="https://gfw.report/blog/geedge_and_mesa_leak/en/"><li><div class="title">Geedge and MESA leak: Analyzing the great firewall’s largest document leak</div><div class="domain">gfw.report &bull; September 13, 2025</div></li></a><a class="li" href="https://rykarn.se/2025/01/26/wayland"><li><div class="title">Wayland breaks the tools I use to make a living</div><div class="domain">rykarn.se &bull; September 13, 2025</div></li></a><a class="li" href="https://www.jlowin.dev/blog/oss-maintainers-guide-to-saying-no"><li><div class="title">An open-source maintainer's guide to saying “no”</div><div class="domain">jlowin.dev &bull; September 13, 2025</div></li></a><a class="li" href="https://worksinprogress.co/issue/magical-systems-thinking/"><li><div class="title">Magical systems thinking</div><div class="domain">worksinprogress.co &bull; September 13, 2025</div></li></a><a class="li" href="https://skiftos.org"><li><div class="title">SkiftOS: A hobby OS built from scratch using C/C++ for ARM, x86, and RISC-V</div><div class="domain">skiftos.org &bull; September 13, 2025</div></li></a><a class="li" href="https://joincolossus.com/article/ai-will-not-make-you-rich/"><li><div class="title">Will AI be the basis of many future industrial fortunes, or a net loser?</div><div class="domain">joincolossus.com &bull; September 13, 2025</div></li></a><a class="li" href="https://clavier36.com/p/LtZDdcRP3haTWHErgvdM"><li><div class="title">Show HN: CLAVIER-36 – A programming environment for generative music</div><div class="domain">clavier36.com &bull; September 13, 2025</div></li></a><a class="li" href="https://arachnemag.substack.com/p/the-case-against-social-media-is"><li><div class="title">The case against social media is stronger than you think</div><div class="domain">arachnemag.substack.com &bull; September 13, 2025</div></li></a><a class="li" href="https://www.theguardian.com/uk-news/2025/sep/12/wedding-crasher-mystery-solved-four-years-bride-scotland"><li><div class="title">Four-year wedding crasher mystery solved</div><div class="domain">theguardian.com &bull; September 13, 2025</div></li></a><a class="li" href="https://www.eff.org/deeplinks/2025/09/eff-court-supreme-court-must-rein-expansive-secondary-copyright-liability"><li><div class="title">EFF to court: The Supreme Court must rein in secondary copyright liability</div><div class="domain">eff.org &bull; September 13, 2025</div></li></a><a class="li" href="https://nand2mario.github.io/posts/2025/486tang_486_on_a_credit_card_size_fpga_board/"><li><div class="title">486Tang – 486 on a credit-card-sized FPGA board</div><div class="domain">nand2mario.github.io &bull; September 13, 2025</div></li></a><a class="li" href="https://joefatula.com/twoslice.html"><li><div class="title">Two Slice, a font that's only 2px tall</div><div class="domain">joefatula.com &bull; September 13, 2025</div></li></a><a class="li" href="https://chipsandcheese.com/p/amds-rdna4-gpu-architecture-at-hot"><li><div class="title">AMD's RDNA4 GPU Architecture at Hot Chips 2025</div><div class="domain">chipsandcheese.com &bull; September 13, 2025</div></li></a><a class="li" href="https://anycrap.shop/"><li><div class="title">Show HN: A store that generates products from anything you type in search</div><div class="domain">anycrap.shop &bull; September 13, 2025</div></li></a><a class="li" href="https://www.tuni.fi/en/news/myocardial-infarction-may-be-infectious-disease"><li><div class="title">Myocardial infarction may be an infectious disease</div><div class="domain">tuni.fi &bull; September 13, 2025</div></li></a><a class="li" href="https://www.latimes.com/california/story/2025-09-12/california-lawmakers-pass-sb-79-housing-bill-that-brings-dense-housing-to-transit-hubs"><li><div class="title">California lawmakers pass SB 79, housing bill that brings dense housing</div><div class="domain">latimes.com &bull; September 13, 2025</div></li></a><a class="li" href="https://acoup.blog/2025/09/12/collections-life-work-death-and-the-peasant-part-ivc-rent-and-extraction/"><li><div class="title">Life, work, death and the peasant: Rent and extraction</div><div class="domain">acoup.blog &bull; September 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Sean Voisen (sean.voisen.org)</h2> (2)</summary><ul><a class="li" href="https://seanvoisen.com/writing/phenomenology-and-the-impossibility-of-experience-design/"><li><div class="title">Phenomenology and the impossibility of experience design</div><div class="domain">seanvoisen.com &bull; September 13, 2025</div></li></a><a class="li" href="https://seanvoisen.com/blog/phenomenology-and-the-impossibility-of-experience-design/"><li><div class="title">Philosophy for Designers 1: Phenomenology and the impossibility of experience design</div><div class="domain">seanvoisen.com &bull; September 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Seth's Blog (seths.blog)</h2> (1)</summary><ul><a class="li" href="https://seths.blog/2025/09/kinds-of-reckless/"><li><div class="title">Kinds of reckless</div><div class="domain">seths.blog &bull; September 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (10)</summary><ul><a class="li" href="https://yourstory.com/2025/09/sebi-clears-relaxations-on-large-cos-ipos-other-reform-proposals"><li><div class="title">Sebi clears relaxations on large cos IPOs, other reform proposals</div><div class="domain">yourstory.com &bull; September 13, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/09/startups-young-researchers-must-work-to-make-india-global-hub-of-green-hydrogen-innovation-naik"><li><div class="title">Startups, young researchers must work to make India global hub of green hydrogen innovation: Union Minister Naik</div><div class="domain">yourstory.com &bull; September 13, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/09/marico-to-acquire-remaining-46-stake-in-true-elements"><li><div class="title">Marico to acquire remaining 46% stake in True Elements</div><div class="domain">yourstory.com &bull; September 13, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/09/prosus-bets-india-ai-startups-inside-journey-parnika-india"><li><div class="title">Prosus bets on India AI startups; Inside the journey of Parnika India</div><div class="domain">yourstory.com &bull; September 13, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/09/museum-art-photography-exhibition-celestial-companions-culture-photography"><li><div class="title">Companions, enablers, supporters: Museum of Art and Photography’s exhibition subverts the traditional gaze</div><div class="domain">yourstory.com &bull; September 13, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/09/myntra-posts-18x-jump-in-profit-fy25"><li><div class="title">Myntra's net profit soars 18x to Rs 548 crore in FY25; revenue crosses Rs 6,000 Cr</div><div class="domain">yourstory.com &bull; September 13, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/09/bihar-bihar-idea-festival-2025-25000-startup-ideas"><li><div class="title">Bihar Idea Festival: 25,000 Startup Ideas, Bold Policies, and Promises of a New Bihar</div><div class="domain">yourstory.com &bull; September 13, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/09/family-offices-are-rethinking-succession-as-millennials-impact-wealth"><li><div class="title">Family offices are rethinking succession as millennials prioritise impact over wealth preservation</div><div class="domain">yourstory.com &bull; September 13, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/09/this-healtech-startup-is-managing-progressive-conditions-with-deeptech"><li><div class="title">This healtech startup is managing progressive conditions like Parkinson’s disease with deeptech</div><div class="domain">yourstory.com &bull; September 13, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/09/what-most-brands-get-wrong-about-competitor-based-pricing"><li><div class="title">What most brands get wrong about competitor-based pricing</div><div class="domain">yourstory.com &bull; September 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">wolfcrow (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=9Zzi44AVrHA"><li><div class="title">Why 2001: A Space Odyssey Looks More Real Than NASA</div><div class="domain">youtube.com &bull; September 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Diplomat (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=CXSvlBQmhNs"><li><div class="title">Toxic Allies: The Complicated Story of the Pakistan-US Relationship</div><div class="domain">youtube.com &bull; September 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Action Lab (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=ZKz0_kSFSP0"><li><div class="title">Chickens Are Weirder Than You Thought</div><div class="domain">youtube.com &bull; September 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">MinuteEarth (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/0f3DniHfDjg"><li><div class="title">How long will a shipwreck last on the sea floor?</div><div class="domain">youtube.com &bull; September 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Jay Lee Painting (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=DaZN8Pglkoo"><li><div class="title">Painting a Yellow Forest Road / Acrylic / Painting Technique</div><div class="domain">youtube.com &bull; September 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Francesco Parrino (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/U6NZNpRccQA"><li><div class="title">Life - Ludovico Einaudi (Piano Solo) LIVE 😊 #shorts</div><div class="domain">youtube.com &bull; September 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Engineering Facts (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/O7IyfpmDKek"><li><div class="title">நீங்க இளமையா மாற வேண்டுமா? வாங்குவீர் 14000/- water bottle.. 😂😂</div><div class="domain">youtube.com &bull; September 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Einzelgänger (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/shorts/SxRdPJhN92E"><li><div class="title">A Reason Not to Watch the News</div><div class="domain">youtube.com &bull; September 13, 2025</div></li></a><a class="li" href="https://www.youtube.com/shorts/H1f3PyJi9_o"><li><div class="title">Does today's news make you anxious?</div><div class="domain">youtube.com &bull; September 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">darbarfestival (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=uUU3tebMHkY"><li><div class="title">Sarasangi | Shashank Subramanyam & Purbayan Chatterjee | Music of India</div><div class="domain">youtube.com &bull; September 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">CinemaStix (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=AbFKplwHY2c"><li><div class="title">they accidentally made a movie that sucked so much, they decided to cut all the main character’s…</div><div class="domain">youtube.com &bull; September 13, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>

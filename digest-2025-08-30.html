@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-08-30</span>:</h1>
+  <p class="summary">There are 64 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Bear Blog Trending Posts (bearblog.dev)</h2> (4)</summary><ul><a class="li" href="https://everton.xyz/i-sat-down-with-werner-vogels/"><li><div class="title">I sat down with Werner Vogels</div><div class="domain">everton.xyz &bull; August 30, 2025</div></li></a><a class="li" href="https://www.gustavobelo.com/sobreenlutar/"><li><div class="title">Sobre (en)lutar</div><div class="domain">gustavobelo.com &bull; August 30, 2025</div></li></a><a class="li" href="https://tiramisu.bearblog.dev/choosing-to-walk-away-from-ai/"><li><div class="title">choosing to walk (away from AI)</div><div class="domain">tiramisu.bearblog.dev &bull; August 30, 2025</div></li></a><a class="li" href="https://sarthak2143.bearblog.dev/make_cool_stuff/"><li><div class="title">make cool stuff</div><div class="domain">sarthak2143.bearblog.dev &bull; August 30, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Go Make Things (gomakethings.com)</h2> (1)</summary><ul><a class="li" href="https://gomakethings.com/wild-gardening/"><li><div class="title">Wild gardening</div><div class="domain">gomakethings.com &bull; August 30, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (3)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/gcyurCxxPguPPdGKw/defensiveness-does-not-equal-guilt"><li><div class="title">Defensiveness does not equal guilt</div><div class="domain">lesswrong.com &bull; August 30, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/cHqCGG5dTmpnM7y92/female-sexual-attractiveness-seems-more-egalitarian-than"><li><div class="title">Female sexual attractiveness seems more egalitarian than people acknowledge</div><div class="domain">lesswrong.com &bull; August 30, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/GvgmoDts5kphwGyS2/60-u-k-lawmakers-accuse-google-of-breaking-ai-safety-pledge"><li><div class="title">60 U.K. Lawmakers Accuse Google of Breaking AI Safety Pledge</div><div class="domain">lesswrong.com &bull; August 30, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (15)</summary><ul><a class="li" href="https://ruudvanasseldonk.com/2024/a-type-system-for-rcl-part-1-introduction"><li><div class="title">A type system for RCL (2024)</div><div class="domain">ruudvanasseldonk.com &bull; August 30, 2025</div></li></a><a class="li" href="https://github.com/tweag/nickel/blob/master/RATIONALE.md"><li><div class="title">The rationale for the Nickel configuration language</div><div class="domain">github.com &bull; August 30, 2025</div></li></a><a class="li" href="https://sailor.li/ints-to-enums"><li><div class="title">Rust ints to Rust enums with less instructions</div><div class="domain">sailor.li &bull; August 30, 2025</div></li></a><a class="li" href="https://tia.mat.br/posts/2025/08/30/forth-haiku.html"><li><div class="title">Bootstrapping a Forth for Art</div><div class="domain">tia.mat.br &bull; August 30, 2025</div></li></a><a class="li" href="https://old.chipsandcheese.com/2025/08/29/condors-cuzco-risc-v-core-at-hot-chips-2025/"><li><div class="title">Condor’s Cuzco RISC-V Core at Hot Chips 2025</div><div class="domain">old.chipsandcheese.com &bull; August 30, 2025</div></li></a><a class="li" href="https://github.com/gershwin-desktop/gershwin-desktop"><li><div class="title">gershwin-desktop: OS X-like Desktop Environment available exclusively in GhostBSD as a community flavor</div><div class="domain">github.com &bull; August 30, 2025</div></li></a><a class="li" href="https://www.anildash.com//2012/12/13/the_web_we_lost/"><li><div class="title">The Web We Lost (2012)</div><div class="domain">anildash.com &bull; August 30, 2025</div></li></a><a class="li" href="https://kvachev.com/blog/posts/triangular-grid/"><li><div class="title">Triangle Grids</div><div class="domain">kvachev.com &bull; August 30, 2025</div></li></a><a class="li" href="https://arewedecentralizedyet.online/"><li><div class="title">Are We Decentralized Yet?</div><div class="domain">arewedecentralizedyet.online &bull; August 30, 2025</div></li></a><a class="li" href="https://discourse.llvm.org/t/tpde-llvm-10-20x-faster-llvm-o0-back-end/86664"><li><div class="title">10-20x Faster LLVM -O0 Back-End</div><div class="domain">discourse.llvm.org &bull; August 30, 2025</div></li></a><a class="li" href="https://lwn.net/Articles/1035736/"><li><div class="title">Linus Torvalds marks bcachefs as "externally maintained"</div><div class="domain">lwn.net &bull; August 30, 2025</div></li></a><a class="li" href="https://blog.liw.fi/posts/2025/why-debian/"><li><div class="title">Why I use Debian</div><div class="domain">blog.liw.fi &bull; August 30, 2025</div></li></a><a class="li" href="https://akselmo.dev/posts/netsurf-on-remarkable-2/"><li><div class="title">NetSurf on reMarkable 2</div><div class="domain">akselmo.dev &bull; August 30, 2025</div></li></a><a class="li" href="https://lobste.rs/s/zoirhl/appealing_ban_user_friendlysock"><li><div class="title">Appealing the ban of user friendlysock</div><div class="domain">lobste.rs &bull; August 30, 2025</div></li></a><a class="li" href="https://github.com/YaLTeR/niri/releases/tag/v25.08"><li><div class="title">Niri v25.08</div><div class="domain">github.com &bull; August 30, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">matklad (matklad.github.io)</h2> (1)</summary><ul><a class="li" href="https://matklad.github.io/2025/08/30/ads-are-a-positional-good.html"><li><div class="title">Ads Are a Positional Good</div><div class="domain">matklad.github.io &bull; August 30, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (20)</summary><ul><a class="li" href="https://eclecticlight.co/2025/08/29/what-happens-during-startup/"><li><div class="title">What Happens During Startup?</div><div class="domain">eclecticlight.co &bull; August 30, 2025</div></li></a><a class="li" href="https://www.nbcnews.com/world/europe/viva-verdis-man-declares-country-unclaimed-pocket-land-serbia-croatia-rcna228004"><li><div class="title">Man declares country in unclaimed pocket of land between Serbia and Croatia</div><div class="domain">nbcnews.com &bull; August 30, 2025</div></li></a><a class="li" href="https://planning.e-psychometrics.com/test/icar60"><li><div class="title">University of Cambridge Cognitive Ability Test</div><div class="domain">planning.e-psychometrics.com &bull; August 30, 2025</div></li></a><a class="li" href="https://vinithavn.medium.com/from-multi-head-to-latent-attention-the-evolution-of-attention-mechanisms-64e3c0505f24"><li><div class="title">From multi-head to latent attention: The evolution of attention mechanisms</div><div class="domain">vinithavn.medium.com &bull; August 30, 2025</div></li></a><a class="li" href="https://www.gally.net/miscellaneous/hn-em-dash-user-leaderboard.html"><li><div class="title">Show HN: Hacker News em dash user leaderboard pre-ChatGPT</div><div class="domain">gally.net &bull; August 30, 2025</div></li></a><a class="li" href="https://andrewmarder.net/firefox/"><li><div class="title">Hardening Firefox – a checklist for improved browser privacy</div><div class="domain">andrewmarder.net &bull; August 30, 2025</div></li></a><a class="li" href="https://krebsonsecurity.com/2025/08/affiliates-flock-to-soulless-scam-gambling-machine/"><li><div class="title">Affiliates flock to scam gambling machine</div><div class="domain">krebsonsecurity.com &bull; August 30, 2025</div></li></a><a class="li" href="https://landchad.net"><li><div class="title">LandChad, a site dedicated to turning internet peasants into Internet Landlords</div><div class="domain">landchad.net &bull; August 30, 2025</div></li></a><a class="li" href="https://natesnewsletter.substack.com/p/the-default-trap-why-anthropics-data"><li><div class="title">The Default Trap: Why Anthropic's Data Policy Change Matters</div><div class="domain">natesnewsletter.substack.com &bull; August 30, 2025</div></li></a><a class="li" href="https://chipsandcheese.com/p/condors-cuzco-risc-v-core-at-hot"><li><div class="title">Condor's Cuzco RISC-V Core at Hot Chips 2025</div><div class="domain">chipsandcheese.com &bull; August 30, 2025</div></li></a><a class="li" href="https://mitchellh.com/writing/feel-it"><li><div class="title">You Have to Feel It</div><div class="domain">mitchellh.com &bull; August 30, 2025</div></li></a><a class="li" href="https://www.wsj.com/business/retail/trump-tariff-business-price-impact-37b630c8"><li><div class="title">Six months into tariffs, businesses have no idea how to price anything</div><div class="domain">wsj.com &bull; August 30, 2025</div></li></a><a class="li" href="https://yekdeveloper.com/p/4-the-rise-of-hybrid-php"><li><div class="title">The Rise of Hybrid PHP: Blending PHP with Go and Rust</div><div class="domain">yekdeveloper.com &bull; August 30, 2025</div></li></a><a class="li" href="https://agentclientprotocol.com/overview/introduction"><li><div class="title">Agent Client Protocol (ACP)</div><div class="domain">agentclientprotocol.com &bull; August 30, 2025</div></li></a><a class="li" href="https://blog.sigplan.org/2025/08/29/ai-models-need-a-virtual-machine/"><li><div class="title">AI models need a virtual machine</div><div class="domain">blog.sigplan.org &bull; August 30, 2025</div></li></a><a class="li" href="https://www.livescience.com/planet-earth/hurricanes/now-is-the-time-hurricane-category-6-could-be-introduced-under-new-storm-severity-scale"><li><div class="title">Hurricane category 6 could be introduced under new storm severity scale</div><div class="domain">livescience.com &bull; August 30, 2025</div></li></a><a class="li" href="https://sydneyreviewofbooks.com/reviews/just-a-little-longer"><li><div class="title">Why did books start being divided into chapters? A new history</div><div class="domain">sydneyreviewofbooks.com &bull; August 30, 2025</div></li></a><a class="li" href="https://github.com/zakirullin/cognitive-load"><li><div class="title">Cognitive load is what matters</div><div class="domain">github.com &bull; August 30, 2025</div></li></a><a class="li" href="https://theintercept.com/2025/08/25/pentagon-military-ai-propaganda-influence/"><li><div class="title">Pentagon Docs: US Wants to "Suppress Dissenting Arguments" Using AI Propaganda</div><div class="domain">theintercept.com &bull; August 30, 2025</div></li></a><a class="li" href="https://www.palladiummag.com/2025/08/29/why-romania-excels-in-international-olympiads/"><li><div class="title">Why Romania excels in international Olympiads</div><div class="domain">palladiummag.com &bull; August 30, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Seth's Blog (seths.blog)</h2> (2)</summary><ul><a class="li" href="https://seths.blog/2025/08/brittle-systems/"><li><div class="title">Brittle systems</div><div class="domain">seths.blog &bull; August 30, 2025</div></li></a><a class="li" href="https://seths.blog/2025/08/food-bonus-post/"><li><div class="title">Food bonus post</div><div class="domain">seths.blog &bull; August 30, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Varun Barad - Curious Developer (varunbarad.com)</h2> (2)</summary><ul><a class="li" href="https://varunbarad.com/blog/keyboard-kc-v6max-basic-customization.html"><li><div class="title">⌨️ Customizing the new keyboard</div><div class="domain">varunbarad.com &bull; August 30, 2025</div></li></a><a class="li" href="https://varunbarad.com/blog/til-subdirectory-based-git-identity.html"><li><div class="title">📝 Set git identity based on project-directory</div><div class="domain">varunbarad.com &bull; August 30, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (6)</summary><ul><a class="li" href="https://yourstory.com/2025/08/charm-creativity-community-art-and-charlie-gallery-photography"><li><div class="title">Charm, creativity, community: Art and Charlie gallery carves out a unique cultural space</div><div class="domain">yourstory.com &bull; August 30, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/08/ather-energy-unveils-el-platform-pothole-alerts-atherstack"><li><div class="title">Ather Energy unveils new EL platform and new features, including pothole alerts, under AtherStack 7.0</div><div class="domain">yourstory.com &bull; August 30, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/08/cognizant-to-deploy-1000-context-engineers-for-agentic-ai"><li><div class="title">Cognizant to deploy 1,000 context engineers to industrialise agentic AI</div><div class="domain">yourstory.com &bull; August 30, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/08/khosla-ventures-kognitos-english-as-code-enterprise-automation"><li><div class="title">Khosla Ventures-backed Kognitos is betting on English as code to simplify enterprise automation</div><div class="domain">yourstory.com &bull; August 30, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/08/rising-chargeback-fraud-india-digital-economy-merchants-consumer"><li><div class="title">Rising chargeback fraud in India's digital economy and the merchant's defence</div><div class="domain">yourstory.com &bull; August 30, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/08/reliance-gets-an-ai-unit-meta-google-cloud"><li><div class="title">Reliance gets an AI unit; Building India’s forensic future</div><div class="domain">yourstory.com &bull; August 30, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Action Lab (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=JFAAEPnbL58"><li><div class="title">Can Power Lines Really Light a Bulb in Your Hand?</div><div class="domain">youtube.com &bull; August 30, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Sisyphus 55 (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=hNIbd4mUVeU"><li><div class="title">watch this when you're depressed</div><div class="domain">youtube.com &bull; August 30, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Nirmal Pillai (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/mxqUWOwqDvo"><li><div class="title">Swayamvara | first move ep 9</div><div class="domain">youtube.com &bull; August 30, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Mohak Mangal (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=oOkg5D8VJWA"><li><div class="title">I Investigated India's Stray Dogs Problem</div><div class="domain">youtube.com &bull; August 30, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Let's Game It Out (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=nPZRxpBwtAQ"><li><div class="title">The People Needed a Kingdom, I Built Them Insanity and Suffering - Noble Legacy</div><div class="domain">youtube.com &bull; August 30, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">John Bartholomew (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=h77ANE90aLU"><li><div class="title">Playing an NM, FM, IM, and two GMs | Using the Clock as a Weapon #65</div><div class="domain">youtube.com &bull; August 30, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Jay Lee Painting (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=UZ961WNxALk"><li><div class="title">How to Draw A Black Cat in Watercolor</div><div class="domain">youtube.com &bull; August 30, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">India in Pixels by Ashris (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/GNJqrHbAptw"><li><div class="title">Why do cultures ululate? And is there a pattern to where people ululate?</div><div class="domain">youtube.com &bull; August 30, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Francesco Parrino (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=-PjVYIDgnHI"><li><div class="title">I Say A Little Prayer - Aretha Franklin | Piano Cover + Sheet Music</div><div class="domain">youtube.com &bull; August 30, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Circle Line Art School (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=vEHQFnfkx2M"><li><div class="title">Drawing a Truck: Step by Step (How to Draw a Truck)</div><div class="domain">youtube.com &bull; August 30, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>

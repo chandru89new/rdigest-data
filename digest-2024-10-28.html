@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2024-10-28</span>:</h1>
+  <p class="summary">There are 53 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Bear Blog Trending Posts (bearblog.dev)</h2> (5)</summary><ul><a class="li" href="https://www.njkumar.com/literature-review-sampling-techniques/"><li><div class="title">Literature Review on Sampling Techniques for Language Models</div><div class="domain">njkumar.com &bull; October 28, 2024</div></li></a><a class="li" href="https://damien.zone/end-of-october-2024-update/"><li><div class="title">End of October 2024 update</div><div class="domain">damien.zone &bull; October 28, 2024</div></li></a><a class="li" href="https://tiramisu.bearblog.dev/sky-blue/"><li><div class="title">is the sky still blue?</div><div class="domain">tiramisu.bearblog.dev &bull; October 28, 2024</div></li></a><a class="li" href="https://flecha248.bearblog.dev/rock-bottom/"><li><div class="title">rock bottom</div><div class="domain">flecha248.bearblog.dev &bull; October 28, 2024</div></li></a><a class="li" href="https://josephlee.bearblog.dev/cant-figure-out-your-personality-type/"><li><div class="title">Can’t Figure Out Your Personality Type?</div><div class="domain">josephlee.bearblog.dev &bull; October 28, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Big Think (bigthink.com)</h2> (4)</summary><ul><a class="li" href="https://bigthink.com/starts-with-a-bang/mystery-bizarre-supernova/"><li><div class="title">The mystery of the Milky Way’s most bizarre supernova</div><div class="domain">bigthink.com &bull; October 28, 2024</div></li></a><a class="li" href="https://bigthink.com/sponsored/creativity-pioneer/"><li><div class="title">Creativity is essential. Here’s how it can catalyze social justice.</div><div class="domain">bigthink.com &bull; October 28, 2024</div></li></a><a class="li" href="https://bigthink.com/business/founder-syndrome-how-to-move-forward-when-leaders-stagnate/"><li><div class="title">“Founder syndrome”: How to move forward when leaders stagnate</div><div class="domain">bigthink.com &bull; October 28, 2024</div></li></a><a class="li" href="https://bigthink.com/high-culture/how-viral-misquotes-evolve-and-replicate/"><li><div class="title">Einstein didn’t say that: How viral misquotes evolve and replicate</div><div class="domain">bigthink.com &bull; October 28, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">https://danluu.com/atom.xml (danluu.com)</h2> (1)</summary><ul><a class="li" href="https://danluu.com/ballmer/"><li><div class="title">Steve Ballmer was an underrated CEO</div><div class="domain">danluu.com &bull; October 28, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Two-Wrongs (entropicthoughts.com)</h2> (1)</summary><ul><a class="li" href="https://two-wrongs.com/probability-generating-functions"><li><div class="title">Probability-Generating Functions</div><div class="domain">two-wrongs.com &bull; October 28, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">kottke.org (feeds.kottke.org)</h2> (11)</summary><ul><a class="li" href="https://kottke.org/24/10/0045529-timothee-chalamet-makes-s"><li><div class="title">&#8220;Timothée Chalamet makes surprise appearance at NYC lookalike contest just as cops...</div><div class="domain">kottke.org &bull; October 28, 2024</div></li></a><a class="li" href="https://kottke.org/24/10/a-recent-seismic-map-of-the-world"><li><div class="title">A Recent Seismic Map of the World</div><div class="domain">kottke.org &bull; October 28, 2024</div></li></a><a class="li" href="https://kottke.org/24/10/0045530-hear-a-chopin-waltz-unear"><li><div class="title">Hear a Chopin Waltz Unearthed After Nearly 200 Years. A leading Chopin...</div><div class="domain">kottke.org &bull; October 28, 2024</div></li></a><a class="li" href="https://kottke.org/24/10/0045532-what-in-sverris-saga-the"><li><div class="title">WHAT?! &#8220;In Sverris Saga, the Old Norse saga of King Sverre Sigurdsson,...</div><div class="domain">kottke.org &bull; October 28, 2024</div></li></a><a class="li" href="https://kottke.org/24/10/the-nirvana-concert-sabotaged-by-kurt-cobain-to-spite-an-angry-crowd"><li><div class="title">The Nirvana Concert &#8220;Sabotaged&#8221; by Kurt Cobain to Spite an Angry Crowd</div><div class="domain">kottke.org &bull; October 28, 2024</div></li></a><a class="li" href="https://kottke.org/24/10/0045531-some-speculative-analysis"><li><div class="title">Some speculative analysis about how the ever-decreasing projections of global population (now...</div><div class="domain">kottke.org &bull; October 28, 2024</div></li></a><a class="li" href="https://kottke.org/24/10/0045534-oxfam-analysis-investment"><li><div class="title">Oxfam analysis: &#8220;Investment emissions are the most significant part of a billionaire&#8217;s...</div><div class="domain">kottke.org &bull; October 28, 2024</div></li></a><a class="li" href="https://kottke.org/24/10/0045539-five-ways-a-trump-preside"><li><div class="title">Five ways a Trump presidency would be disastrous for the climate. He...</div><div class="domain">kottke.org &bull; October 28, 2024</div></li></a><a class="li" href="https://kottke.org/24/10/the-last-of-us-season-two-trailer"><li><div class="title">The Last of Us Season Two Trailer</div><div class="domain">kottke.org &bull; October 28, 2024</div></li></a><a class="li" href="https://kottke.org/24/10/0045540-a-list-of-the-20"><li><div class="title">A list of the 20 best art museums in America, including the...</div><div class="domain">kottke.org &bull; October 28, 2024</div></li></a><a class="li" href="https://kottke.org/24/10/chris-ware-on-richard-scarry"><li><div class="title">Chris Ware on Richard Scarry</div><div class="domain">kottke.org &bull; October 28, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (3)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/ZJzyDdKsDhFvqQhdQ/80-interesting-questions-about-foundation-model-agent-safety"><li><div class="title">~80 Interesting Questions about Foundation Model Agent Safety</div><div class="domain">lesswrong.com &bull; October 28, 2024</div></li></a><a class="li" href="https://www.lesswrong.com/posts/hiuTzNBqG2EYg6qM5/winners-of-the-essay-competition-on-the-automation-of-wisdom"><li><div class="title">Winners of the Essay competition on the Automation of Wisdom and Philosophy</div><div class="domain">lesswrong.com &bull; October 28, 2024</div></li></a><a class="li" href="https://www.lesswrong.com/posts/YGn5ryzAS4L2mkmtd/finishing-the-sb-1047-documentary-in-6-weeks"><li><div class="title">Finishing The SB-1047 Documentary In 6 Weeks</div><div class="domain">lesswrong.com &bull; October 28, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (3)</summary><ul><a class="li" href="https://www.arp242.net/jia-tan-go.html"><li><div class="title">Jia Tanning Go code</div><div class="domain">arp242.net &bull; October 28, 2024</div></li></a><a class="li" href="https://protomaps.com/"><li><div class="title">A free and open source map of the world, deployable as a single static file</div><div class="domain">protomaps.com &bull; October 28, 2024</div></li></a><a class="li" href="https://blog.toast.cafe/posix2024-xcu"><li><div class="title">What’s New in POSIX 2024 – XCU</div><div class="domain">blog.toast.cafe &bull; October 28, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Nautilus (nautil.us)</h2> (1)</summary><ul><a class="li" href="https://nautil.us/climate-vs-invasive-species-1005988/"><li><div class="title">Climate vs. Invasive Species</div><div class="domain">nautil.us &bull; October 28, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Letters of Note (news.lettersofnote.com)</h2> (1)</summary><ul><a class="li" href="https://news.lettersofnote.com/p/hail-to-you-who-forever-holds-a-tender"><li><div class="title">Hail to you who forever holds a tender spot in this immigrant’s heart</div><div class="domain">news.lettersofnote.com &bull; October 28, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (13)</summary><ul><a class="li" href="https://dmytroengineering.com/content/projects/t2s-plus-thermal-camera-hacking"><li><div class="title">Hacking the T2S+ Out of Fear: Get Lock-In Thermography for Free</div><div class="domain">dmytroengineering.com &bull; October 28, 2024</div></li></a><a class="li" href="https://systemsapproach.org/2024/10/28/repeatability-as-difficult-as-it-is-important/"><li><div class="title">Repeatability: As Difficult as it is Important</div><div class="domain">systemsapproach.org &bull; October 28, 2024</div></li></a><a class="li" href="https://www.projectgus.com/2024/01/kona-motor-turns/"><li><div class="title">The motor turns too much</div><div class="domain">projectgus.com &bull; October 28, 2024</div></li></a><a class="li" href="https://www.historytoday.com/archive/explicit-content"><li><div class="title">The 1600s Were a Watershed for Swear Words (2022)</div><div class="domain">historytoday.com &bull; October 28, 2024</div></li></a><a class="li" href="https://dropbox.tech/infrastructure/robinhood-in-house-load-balancing-service"><li><div class="title">What's new with Robinhood, our in-house load balancing service</div><div class="domain">dropbox.tech &bull; October 28, 2024</div></li></a><a class="li" href="https://github.com/eshaz/wasm-audio-decoders"><li><div class="title">Web Assembly audio decoders highly optimized for size and performance</div><div class="domain">github.com &bull; October 28, 2024</div></li></a><a class="li" href="https://github.com/kelindar/search"><li><div class="title">Go library for in-process vector search and embeddings with llama.cpp</div><div class="domain">github.com &bull; October 28, 2024</div></li></a><a class="li" href="https://wazuh.com/"><li><div class="title">Wazuh – open-source Security Platform</div><div class="domain">wazuh.com &bull; October 28, 2024</div></li></a><a class="li" href="https://jgeekstudies.org/2024/10/27/on-the-influence-of-japanese-archaeological-heritage-on-the-legend-of-zelda-breath-of-the-wild/"><li><div class="title">The Influence of Japanese Archaeology on the Legend of Zelda: Breath of the Wild</div><div class="domain">jgeekstudies.org &bull; October 28, 2024</div></li></a><a class="li" href="https://onepercentrule.substack.com/p/could-you-pass-this-8th-grade-test"><li><div class="title">Could you pass this 8th grade test from 1912?</div><div class="domain">onepercentrule.substack.com &bull; October 28, 2024</div></li></a><a class="li" href="https://mindstalk.net/vinge/vinge-sing.html"><li><div class="title">The Coming Technological Singularity (1993)</div><div class="domain">mindstalk.net &bull; October 28, 2024</div></li></a><a class="li" href="https://www.spoon-tamago.com/jimi-mundane-halloween-2024/"><li><div class="title">Japan's Jimi 'Mundane' Halloween Costumes of 2024</div><div class="domain">spoon-tamago.com &bull; October 28, 2024</div></li></a><a class="li" href="https://gitlab.com/android_translation_layer/android_translation_layer/-/blob/master/README.md"><li><div class="title">ATL: A layer to run Android apps on Linux</div><div class="domain">gitlab.com &bull; October 28, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">The Pudding (pudding.cool)</h2> (1)</summary><ul><a class="li" href="https://youtu.be/2r3gElTiLik"><li><div class="title">An expert explains why queues are so tricky</div><div class="domain">youtu.be &bull; October 28, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Reasons to be Cheerful (reasonstobecheerful.world)</h2> (1)</summary><ul><a class="li" href="https://reasonstobecheerful.world/community-first-electric-car-shares/"><li><div class="title">EVs for All: How Car Shares Are Making Electric Vehicles Accessible</div><div class="domain">reasonstobecheerful.world &bull; October 28, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Seth's Blog (seths.blog)</h2> (1)</summary><ul><a class="li" href="https://seths.blog/2024/10/promises-and-our-best/"><li><div class="title">Promises and our best</div><div class="domain">seths.blog &bull; October 28, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Trevor I. Lasn Thoughts (trevorlasn.com)</h2> (1)</summary><ul><a class="li" href="https://www.trevorlasn.com/blog/the-problem-with-local-storage"><li><div class="title">Stop Using localStorage for Sensitive Data: Here's Why and What to Use Instead</div><div class="domain">trevorlasn.com &bull; October 28, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (4)</summary><ul><a class="li" href="https://yourstory.com/2024/10/crorepati-brands-and-quick-commerce-elasticrun-prosus-softbank"><li><div class="title">Crorepati brands and quick commerce to propel ElasticRun’s growth in FY25</div><div class="domain">yourstory.com &bull; October 28, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/10/inside-the-green-jobs-market-elasticruns-growth-plan-for-fy25"><li><div class="title">Inside the green jobs market; ElasticRun’s growth plan for FY25</div><div class="domain">yourstory.com &bull; October 28, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/10/green-jobs-market-awaits-skilled-talent-amid-ripe-opportunities-sustainability"><li><div class="title">Green pastures: Green jobs market awaits skilled talent amid ripe opportunities</div><div class="domain">yourstory.com &bull; October 28, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/10/collaboration-is-the-key-for-india-to-lead-in-the-genai-landscape"><li><div class="title">Collaboration is the key for India to lead in the global GenAI landscape</div><div class="domain">yourstory.com &bull; October 28, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Journey to the Microcosmos (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=DoQ5RXflnuY"><li><div class="title">The Future of Microscopy (and end of our Journey)</div><div class="domain">youtube.com &bull; October 28, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Fun Fun Function (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=fA40FgHVnyI"><li><div class="title">Untutorial: Recreating Hans Rosling's famous data visualization using Observable Framework</div><div class="domain">youtube.com &bull; October 28, 2024</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>

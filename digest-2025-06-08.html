@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-06-08</span>:</h1>
+  <p class="summary">There are 69 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Bear Blog Trending Posts (bearblog.dev)</h2> (2)</summary><ul><a class="li" href="https://pondscum.gg/rewilding-the-psychosubstrate/"><li><div class="title">🧠 Ending Psychorape: Ritually Rewilding the Psychosubstrate</div><div class="domain">pondscum.gg &bull; June 08, 2025</div></li></a><a class="li" href="https://skeleton.bearblog.dev/learning-jp-05/"><li><div class="title">Learning JP #05 - Similar days & Worksheets</div><div class="domain">skeleton.bearblog.dev &bull; June 08, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Marginalian (feeds.feedburner.com)</h2> (1)</summary><ul><a class="li" href="https://www.themarginalian.org/2025/06/07/doris-lessing-a-small-personal-voice/"><li><div class="title">Against the Pleasurable Luxury of Despair and the Aridity of Self-pity: Doris Lessing on the Artist’s Task in Trying Times</div><div class="domain">themarginalian.org &bull; June 08, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Go Make Things (gomakethings.com)</h2> (1)</summary><ul><a class="li" href="https://gomakethings.com/rules-not-rulers/"><li><div class="title">Rules, not rulers</div><div class="domain">gomakethings.com &bull; June 08, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (2)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/KnvHZiAMzjnRLnKym/on-working-80"><li><div class="title">On working 80%</div><div class="domain">lesswrong.com &bull; June 08, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/KvB28n3CPwourTFFW/letting-kids-be-outside"><li><div class="title">Letting Kids Be Outside</div><div class="domain">lesswrong.com &bull; June 08, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (17)</summary><ul><a class="li" href="https://www.bsdhowto.ch/doh.html"><li><div class="title">Why not use DNS over HTTPS (DoH)?</div><div class="domain">bsdhowto.ch &bull; June 08, 2025</div></li></a><a class="li" href="https://webtide.com/if-virtual-threads-are-the-solution-what-is-the-problem/"><li><div class="title">If Virtual Threads are the solution, what is the problem? (2023)</div><div class="domain">webtide.com &bull; June 08, 2025</div></li></a><a class="li" href="https://people.csail.mit.edu/rrw/time-vs-space.pdf"><li><div class="title">Simulating Time With Square-Root Space</div><div class="domain">people.csail.mit.edu &bull; June 08, 2025</div></li></a><a class="li" href="https://sebastiano.tronto.net/blog/2024-09-20-c-scripting/"><li><div class="title">Shell scripting in C</div><div class="domain">sebastiano.tronto.net &bull; June 08, 2025</div></li></a><a class="li" href="https://www.cyberark.com/resources/threat-research-blog/poison-everywhere-no-output-from-your-mcp-server-is-safe"><li><div class="title">Poison everywhere: No output from your MCP server is safe</div><div class="domain">cyberark.com &bull; June 08, 2025</div></li></a><a class="li" href="https://sebastiano.tronto.net/blog/2025-04-04-qt-minimal/"><li><div class="title">Getting started with Qt, without the nonsense</div><div class="domain">sebastiano.tronto.net &bull; June 08, 2025</div></li></a><a class="li" href="https://github.com/tesseract-ocr/tesseract"><li><div class="title">Tesseract Open Source OCR [optical character recognition] Engine</div><div class="domain">github.com &bull; June 08, 2025</div></li></a><a class="li" href="https://gist.github.com/gsquire/f2b572da529e7aed1227c51fee1cc130"><li><div class="title">Pocket to linkhut</div><div class="domain">gist.github.com &bull; June 08, 2025</div></li></a><a class="li" href="https://mastodon.social/@nixCraft/114649024218795319"><li><div class="title">What next after vibe coding</div><div class="domain">mastodon.social &bull; June 08, 2025</div></li></a><a class="li" href="https://machinelearning.apple.com/research/illusion-of-thinking"><li><div class="title">The Illusion of Thinking: Understanding the Strengths and Limitations of Reasoning Models via the Lens of Problem Complexity</div><div class="domain">machinelearning.apple.com &bull; June 08, 2025</div></li></a><a class="li" href="https://tools.simonwillison.net/colophon"><li><div class="title">105 vibe-coded tools</div><div class="domain">tools.simonwillison.net &bull; June 08, 2025</div></li></a><a class="li" href="https://arch.dog/bark/ditching-haproxy"><li><div class="title">Ditching HAProxy (in my homelab)</div><div class="domain">arch.dog &bull; June 08, 2025</div></li></a><a class="li" href="https://pijul.org/posts/2025-06-08-elpe/"><li><div class="title">Pijul - Elpe. Yaks big. Razors bigger</div><div class="domain">pijul.org &bull; June 08, 2025</div></li></a><a class="li" href="https://www.naff.dev/blog/lobsters-keybase-impersonation"><li><div class="title">A Low-Impact Keybase Impersonation Issue on Lobsters</div><div class="domain">naff.dev &bull; June 08, 2025</div></li></a><a class="li" href="https://einops.rocks"><li><div class="title">Einops</div><div class="domain">einops.rocks &bull; June 08, 2025</div></li></a><a class="li" href="https://linebender.org/blog/a-plan-for-simd/"><li><div class="title">A plan for SIMD</div><div class="domain">linebender.org &bull; June 08, 2025</div></li></a><a class="li" href="https://dotat.at/@/2025-06-08-floats.html"><li><div class="title">Performance of random floats</div><div class="domain">dotat.at &bull; June 08, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (23)</summary><ul><a class="li" href="https://thereader.mitpress.mit.edu/the-many-sides-of-erik-satie/"><li><div class="title">The Many Sides of Erik Satie</div><div class="domain">thereader.mitpress.mit.edu &bull; June 08, 2025</div></li></a><a class="li" href="https://www.sciencedaily.com/releases/2025/06/250602155001.htm"><li><div class="title">Dancing brainwaves: How sound reshapes your brain networks in real time</div><div class="domain">sciencedaily.com &bull; June 08, 2025</div></li></a><a class="li" href="https://moroso.emarhavil.com/~joshua/2pf-characterization.html"><li><div class="title">Characterizing my first attempt at copper-only passives</div><div class="domain">moroso.emarhavil.com &bull; June 08, 2025</div></li></a><a class="li" href="https://www.foxnews.com/travel/mystery-americas-lost-colony-may-finally-solved-after-440-years-archaeologists-say"><li><div class="title">Researchers discover evidence in the mystery of America's 'Lost Colony'</div><div class="domain">foxnews.com &bull; June 08, 2025</div></li></a><a class="li" href="https://leejo.github.io/2025/06/08/alttpr/"><li><div class="title">A Thousand Tiny Optimisations</div><div class="domain">leejo.github.io &bull; June 08, 2025</div></li></a><a class="li" href="https://www.vox.com/health/415812/cancer-death-rates-myeloma-immunotherapy-smoking"><li><div class="title">We’re secretly winning the war on cancer</div><div class="domain">vox.com &bull; June 08, 2025</div></li></a><a class="li" href="https://www.tomshardware.com/pc-components/storage/the-faa-seeks-to-eliminate-floppy-disk-usage-in-air-traffic-control-systems"><li><div class="title">FAA to eliminate floppy disks used in air traffic control systems</div><div class="domain">tomshardware.com &bull; June 08, 2025</div></li></a><a class="li" href="https://danq.me/2020/11/11/blink-and-marquee/"><li><div class="title"><Blink> and <Marquee> (2020)</div><div class="domain">danq.me &bull; June 08, 2025</div></li></a><a class="li" href="http://testou.free.fr/www.beatjapan.org/mirror/www.be.com/support/guides/hitachi_boot.html"><li><div class="title">Launching the BeOS on Hitachi Flora Prius Systems (1999)</div><div class="domain">testou.free.fr &bull; June 08, 2025</div></li></a><a class="li" href="https://www.netfort.gr.jp/~dancer/software/binfmtc.html.en"><li><div class="title">Binfmtc – binfmt_misc C scripting interface</div><div class="domain">netfort.gr.jp &bull; June 08, 2025</div></li></a><a class="li" href="https://simonwillison.net/2025/Jun/6/six-months-in-llms/"><li><div class="title">The last six months in LLMs, illustrated by pelicans on bicycles</div><div class="domain">simonwillison.net &bull; June 08, 2025</div></li></a><a class="li" href="https://lifehacker.com/health/ai-powered-calorie-counting-apps-worse-than-expected"><li><div class="title">I used AI-powered calorie counting apps, and they were even worse than expected</div><div class="domain">lifehacker.com &bull; June 08, 2025</div></li></a><a class="li" href="https://rohangautam.github.io/blog/chebyshev_gauss/"><li><div class="title">Gaussian integration is cool</div><div class="domain">rohangautam.github.io &bull; June 08, 2025</div></li></a><a class="li" href="https://letsbend.de"><li><div class="title">Show HN: Let’s Bend – Open-Source Harmonica Bending Trainer</div><div class="domain">letsbend.de &bull; June 08, 2025</div></li></a><a class="li" href="https://www.atlasobscura.com/articles/eruv-manhattan-invisible-wire-jewish-symbolic-religious-home"><li><div class="title">The wire that transforms much of Manhattan into one big, symbolic home</div><div class="domain">atlasobscura.com &bull; June 08, 2025</div></li></a><a class="li" href="https://www.owlposting.com/p/the-time-of-day-that-immunotherapy"><li><div class="title">Administering immunotherapy in the morning seems to matter. Why?</div><div class="domain">owlposting.com &bull; June 08, 2025</div></li></a><a class="li" href="https://ziglang.org/devlog/2025/#2025-06-08"><li><div class="title">Zig Devlog: Self-Hosted x86 Back End Is Now Default in Debug Mode</div><div class="domain">ziglang.org &bull; June 08, 2025</div></li></a><a class="li" href="https://computer.rip/2025-06-08-Omnimax.html"><li><div class="title">Omnimax</div><div class="domain">computer.rip &bull; June 08, 2025</div></li></a><a class="li" href="https://helentoner.substack.com/p/supercomputers-for-autocrats"><li><div class="title">Building supercomputers for autocrats probably isn't good for democracy</div><div class="domain">helentoner.substack.com &bull; June 08, 2025</div></li></a><a class="li" href="https://www.theguardian.com/travel/2025/jun/09/riding-high-in-germany-on-the-worlds-oldest-suspended-railway"><li><div class="title">Riding high in Germany on the world's oldest suspended railway</div><div class="domain">theguardian.com &bull; June 08, 2025</div></li></a><a class="li" href="https://jordemort.dev/blog/why-android-cant-use-cdc-ethernet/"><li><div class="title">Why Android can't use CDC Ethernet (2023)</div><div class="domain">jordemort.dev &bull; June 08, 2025</div></li></a><a class="li" href="https://monaspace.githubnext.com/"><li><div class="title">An innovative superfamily of fonts for code (2023)</div><div class="domain">monaspace.githubnext.com &bull; June 08, 2025</div></li></a><a class="li" href="https://shouldiuseacarousel.com/"><li><div class="title">Should I Use a Carousel? (2013)</div><div class="domain">shouldiuseacarousel.com &bull; June 08, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Seth's Blog (seths.blog)</h2> (1)</summary><ul><a class="li" href="https://seths.blog/2025/06/squeaky-wheels-2/"><li><div class="title">Squeaky wheels</div><div class="domain">seths.blog &bull; June 08, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Diplomat (thediplomat.com)</h2> (2)</summary><ul><a class="li" href="https://thediplomat.com/2025/06/a-chance-for-india-to-return-to-rcep/"><li><div class="title">A Chance for India to Return to RCEP?</div><div class="domain">thediplomat.com &bull; June 08, 2025</div></li></a><a class="li" href="https://thediplomat.com/2025/06/what-president-lee-jae-myung-means-for-northeast-asian-security/"><li><div class="title">What President Lee Jae-myung Means for Northeast Asian Security</div><div class="domain">thediplomat.com &bull; June 08, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Varun Barad - Curious Developer (varunbarad.com)</h2> (2)</summary><ul><a class="li" href="https://varunbarad.com/blog/til-rust-build-time-env-vars.html"><li><div class="title">📝 Rust read build-time environment variables at run-time</div><div class="domain">varunbarad.com &bull; June 08, 2025</div></li></a><a class="li" href="https://varunbarad.com/blog/til-read-smb-share-password-from-macos-keychain.html"><li><div class="title">📝 Read SMB share password from MacOS Keychain</div><div class="domain">varunbarad.com &bull; June 08, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (10)</summary><ul><a class="li" href="https://yourstory.com/2025/06/nclat-rejects-byjus-resolution-professionals-petit"><li><div class="title">NCLAT rejects BYJU'S plea in Aakash ownership dispute</div><div class="domain">yourstory.com &bull; June 08, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/06/mohandas-pai-indian-startups-fund-crunch-fund-of-funds"><li><div class="title">Biggest issue for Indian startups is the lack of adequate capital: Mohandas Pai</div><div class="domain">yourstory.com &bull; June 08, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/06/technology-media-impact-business-creativity-entrepreneur-education-impact"><li><div class="title">Technology, media, impact: Test your business creativity with Edition 191 of our weekly quiz!</div><div class="domain">yourstory.com &bull; June 08, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/06/top-9-most-valued-firms-add-rs-1-lakh-cr-in-market"><li><div class="title">Top 9 most-valued firms add Rs 1 lakh Cr in market cap; Reliance, HDFC Bank lead gains</div><div class="domain">yourstory.com &bull; June 08, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/06/namma-art-festival-karnataka-chitrakala-parishath-creativity-photography"><li><div class="title">Karnataka Chitrakala Parishath’s newly-launched national art festival delights viewers and artists</div><div class="domain">yourstory.com &bull; June 08, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/06/india-is-key-strategic-market-for-global-brands-myntra-ceo"><li><div class="title">India is key strategic market for global brands: Myntra CEO</div><div class="domain">yourstory.com &bull; June 08, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/06/passenger-ev-sales-growth-in-may-2025-fada-four-wheelers-suv"><li><div class="title">Passenger EVs now account for 4% of total four-wheeler sales: FADA</div><div class="domain">yourstory.com &bull; June 08, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/06/5-fictional-friendships-books"><li><div class="title">5 iconic fictional friendships from must-read books</div><div class="domain">yourstory.com &bull; June 08, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/06/true-sichuan-flavours-in-india-khmer-cuisine-for-global-palates"><li><div class="title">True Sichuan flavours in India; Khmer cuisine for global palates</div><div class="domain">yourstory.com &bull; June 08, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/06/how-mid-tier-gccs-outhire-big-tech-post-layoff-world"><li><div class="title">Survival of the smartest: How mid-tier GCCs can out-hire Big Tech in a post-layoff world</div><div class="domain">yourstory.com &bull; June 08, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The House of Tabula (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=UBohr8PyOoc"><li><div class="title">Ye, The Fool.</div><div class="domain">youtube.com &bull; June 08, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">SmarterEveryDay (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=3ZTGwcHQfLY"><li><div class="title">I Tried To Make Something In America (The Smarter Scrubber Experiment) - Smarter Every Day 308</div><div class="domain">youtube.com &bull; June 08, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Plip Plip (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=tUikQr0zViw"><li><div class="title">Thug Life Roast | Plip Plip</div><div class="domain">youtube.com &bull; June 08, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Jacob's Piano (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=HQOll8Lwvts"><li><div class="title">LUMINA \\ Original by Jacob's Piano [Relaxing Felt Piano]</div><div class="domain">youtube.com &bull; June 08, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Home & Garden (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/lFI8xVXn7ac"><li><div class="title">Một buổi sáng ...</div><div class="domain">youtube.com &bull; June 08, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hasgeek TV (youtube.com)</h2> (3)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=OV_9W-b8Nl8"><li><div class="title">Understanding API dispatch in Scientific Python eco-systems | Aditi Juneja</div><div class="domain">youtube.com &bull; June 08, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=Ls6o32Be2aQ"><li><div class="title">Valkey clusters unboxed | Harkrishn Patro, Software engineer at AWS</div><div class="domain">youtube.com &bull; June 08, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=EdCTpcnv2q4"><li><div class="title">How Flipkart runs HBase across zones and clouds seamlessly | Mallikarjun, Sr Architect at Flipkart</div><div class="domain">youtube.com &bull; June 08, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>

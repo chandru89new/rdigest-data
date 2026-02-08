@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-07-04</span>:</h1>
+  <p class="summary">There are 100 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Aeon | a world of ideas (aeon.co)</h2> (1)</summary><ul><a class="li" href="https://aeon.co/essays/are-humans-destined-to-evolve-into-crabs?utm_source=rss-feed"><li><div class="title">Homo crustaceous</div><div class="domain">aeon.co &bull; July 04, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Bear Blog Trending Posts (bearblog.dev)</h2> (3)</summary><ul><a class="li" href="https://fabiansjournal.bearblog.dev/when-in-doubt-go-for-a-walk/"><li><div class="title">When in doubt, Go for a Walk</div><div class="domain">fabiansjournal.bearblog.dev &bull; July 04, 2025</div></li></a><a class="li" href="https://wayan.me/setting-constraint/"><li><div class="title">Setting constraint</div><div class="domain">wayan.me &bull; July 04, 2025</div></li></a><a class="li" href="https://skeleton.bearblog.dev/learning-jp-12/"><li><div class="title">Learning JP #12 - Japanese Compendium</div><div class="domain">skeleton.bearblog.dev &bull; July 04, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Big Think (bigthink.com)</h2> (2)</summary><ul><a class="li" href="https://bigthink.com/starts-with-a-bang/cmb-from-galaxies-not-big-bang/"><li><div class="title">Ask Ethan: Could the CMB arise from galaxies, not the Big Bang?</div><div class="domain">bigthink.com &bull; July 04, 2025</div></li></a><a class="li" href="https://bigthink.com/series/full-interview/emily-nagoski/"><li><div class="title">The science-backed guide to having better sex</div><div class="domain">bigthink.com &bull; July 04, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Marginalian (feeds.feedburner.com)</h2> (1)</summary><ul><a class="li" href="https://www.themarginalian.org/2025/07/04/mario-benedetti-defensa-de-la-alegria/"><li><div class="title">A Defense of Joy</div><div class="domain">themarginalian.org &bull; July 04, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">HBR.org (feeds.harvardbusiness.org)</h2> (3)</summary><ul><a class="li" href="https://hbr.org/2025/07/research-being-well-connected-isnt-always-good-for-your-career"><li><div class="title">Research: Being Well Connected Isn’t Always Good for Your Career</div><div class="domain">hbr.org &bull; July 04, 2025</div></li></a><a class="li" href="https://hbr.org/2025/07/how-to-communicate-with-your-team-when-business-is-bad"><li><div class="title">How to Communicate with Your Team When Business Is Bad</div><div class="domain">hbr.org &bull; July 04, 2025</div></li></a><a class="li" href="https://hbr.org/2025/07/brave-leadership-in-uncertain-times"><li><div class="title">Brave Leadership In Uncertain Times</div><div class="domain">hbr.org &bull; July 04, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Go Make Things (gomakethings.com)</h2> (1)</summary><ul><a class="li" href="https://gomakethings.com/web-components-dont-need-a-constructor/"><li><div class="title">Web components don't need a constructor()</div><div class="domain">gomakethings.com &bull; July 04, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (4)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/J482p4hJBevBbwdmF/miri-newsletter-123"><li><div class="title">MIRI Newsletter #123</div><div class="domain">lesswrong.com &bull; July 04, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/QqTiCz2Xz96MuEFsF/outlive-a-critical-review"><li><div class="title">Outlive: A Critical Review</div><div class="domain">lesswrong.com &bull; July 04, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/kvZyCJ4qMihiJpfCr/ai-for-societal-uplift-as-a-path-to-victory"><li><div class="title">‘AI for societal uplift’ as a path to victory</div><div class="domain">lesswrong.com &bull; July 04, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/5zsLpcTMtesgF7c8p/two-proposed-projects-on-abstract-analogies-for-scheming"><li><div class="title">Two proposed projects on abstract analogies for scheming</div><div class="domain">lesswrong.com &bull; July 04, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (18)</summary><ul><a class="li" href="https://lcamtuf.substack.com/p/monkeys-typewriters-and-busy-beavers"><li><div class="title">Gödel's beavers, or the limits of knowledge</div><div class="domain">lcamtuf.substack.com &bull; July 04, 2025</div></li></a><a class="li" href="https://www.evalapply.org/posts/llms-are-diamonds/index.html"><li><div class="title">Riff: LLMs are Software Diamonds</div><div class="domain">evalapply.org &bull; July 04, 2025</div></li></a><a class="li" href="https://github.com/donBarbos/awesome-standards"><li><div class="title">awesome-standards: A curated list of technical standards</div><div class="domain">github.com &bull; July 04, 2025</div></li></a><a class="li" href="https://github.com/awwaiid/gremllm"><li><div class="title">gremllm: A slight upgrade to the Gremlins in your code</div><div class="domain">github.com &bull; July 04, 2025</div></li></a><a class="li" href="https://blog.nelhage.com/post/ittage-branch-predictor/"><li><div class="title">The ITTAGE indirect branch predictor</div><div class="domain">blog.nelhage.com &bull; July 04, 2025</div></li></a><a class="li" href="https://lwn.net/Articles/1025893/"><li><div class="title">Getting extensions to work with free-threaded Python</div><div class="domain">lwn.net &bull; July 04, 2025</div></li></a><a class="li" href="https://github.com/iris-sast/iris"><li><div class="title">iris: A neurosymbolic framework for vulnerability detection in code</div><div class="domain">github.com &bull; July 04, 2025</div></li></a><a class="li" href="https://www.winestockwebdesign.com/Essays/Eternal_Mainframe.html"><li><div class="title">The Eternal Mainframe</div><div class="domain">winestockwebdesign.com &bull; July 04, 2025</div></li></a><a class="li" href="https://blog.sebin-nyshkim.net/posts/nvidia-is-full-of-shit/"><li><div class="title">NVIDIA is full of shit</div><div class="domain">blog.sebin-nyshkim.net &bull; July 04, 2025</div></li></a><a class="li" href="https://lobste.rs/s/zixaut/what_are_you_doing_this_weekend"><li><div class="title">What are you doing this weekend?</div><div class="domain">lobste.rs &bull; July 04, 2025</div></li></a><a class="li" href="https://eev.ee/blog/2025/07/03/the-rise-of-whatever/"><li><div class="title">The rise of Whatever</div><div class="domain">eev.ee &bull; July 04, 2025</div></li></a><a class="li" href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Compression_dictionary_transport"><li><div class="title">Compression Dictionary Transport</div><div class="domain">developer.mozilla.org &bull; July 04, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=x3hOiOcbgeA"><li><div class="title">Zig Roadmap 2026</div><div class="domain">youtube.com &bull; July 04, 2025</div></li></a><a class="li" href="https://codeberg.org/owl/mawkdown"><li><div class="title">mawkdown, a lightweight, line-oriented(ish) text markup tool implemented in awk</div><div class="domain">codeberg.org &bull; July 04, 2025</div></li></a><a class="li" href="https://github.com/jb55/oot_bitset"><li><div class="title">A compact bitset implementation used in Ocarina of Time save files</div><div class="domain">github.com &bull; July 04, 2025</div></li></a><a class="li" href="https://ahelwer.ca/post/2025-07-04-tla-contracts/"><li><div class="title">A supposedly worthwhile contract I'll never do again</div><div class="domain">ahelwer.ca &bull; July 04, 2025</div></li></a><a class="li" href="https://pksunkara.com/thoughts/git-experts-should-try-jujutsu/"><li><div class="title">Git experts should try Jujutsu</div><div class="domain">pksunkara.com &bull; July 04, 2025</div></li></a><a class="li" href="https://write.as/conjure-utopia/lets-say-youre-working-in-tech-and-you-have-a-technical-role-youre-a"><li><div class="title">I want to leave tech: what do I do?</div><div class="domain">write.as &bull; July 04, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Longreads (longreads.com)</h2> (1)</summary><ul><a class="li" href="https://longreads.com/2025/07/04/last-call-at-bed-vyne-brew/"><li><div class="title">Last Call at Bed-Vyne & Brew</div><div class="domain">longreads.com &bull; July 04, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Nautilus (nautil.us)</h2> (1)</summary><ul><a class="li" href="https://nautil.us/monumental-burial-mounds-rewrite-ancient-history-1222246/"><li><div class="title">Monumental Burial Mounds Rewrite Ancient History</div><div class="domain">nautil.us &bull; July 04, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (34)</summary><ul><a class="li" href="https://flak.tedunangst.com/post/can-an-email-go-500-miles-in-2025"><li><div class="title">Can an email go 500 miles in 2025?</div><div class="domain">flak.tedunangst.com &bull; July 04, 2025</div></li></a><a class="li" href="https://archaeologymag.com/2025/07/neanderthals-operated-fat-factory-125000-years-ago/"><li><div class="title">Neanderthals operated prehistoric “fat factory” on German lakeshore</div><div class="domain">archaeologymag.com &bull; July 04, 2025</div></li></a><a class="li" href="https://mathshistory.st-andrews.ac.uk/Extras/Babbage_deciphering/"><li><div class="title">Charles Babbage and deciphering codes (1864)</div><div class="domain">mathshistory.st-andrews.ac.uk &bull; July 04, 2025</div></li></a><a class="li" href="https://phys.org/news/2025-07-hymn-babylon-millennium.html"><li><div class="title">Hymn to Babylon, missing for a millennium, has been discovered</div><div class="domain">phys.org &bull; July 04, 2025</div></li></a><a class="li" href="https://sarahrenaeclark.com/lightfast-testing-pencils/"><li><div class="title">Lightfastness Testing of Colored Pencils</div><div class="domain">sarahrenaeclark.com &bull; July 04, 2025</div></li></a><a class="li" href="https://briannazigler.substack.com/p/why-are-there-no-good-dinosaur-films"><li><div class="title">Why are there no good dinosaur films?</div><div class="domain">briannazigler.substack.com &bull; July 04, 2025</div></li></a><a class="li" href="https://link.springer.com/article/10.1007/s12520-025-02175-w"><li><div class="title">Analysing Roman itineraries using GIS tooling</div><div class="domain">link.springer.com &bull; July 04, 2025</div></li></a><a class="li" href="https://macwright.com/2025/07/03/epanet-placemark"><li><div class="title">Epanet-JS</div><div class="domain">macwright.com &bull; July 04, 2025</div></li></a><a class="li" href="https://www.bbc.com/future/article/20250701-the-chemical-secrets-that-help-keep-honey-fresh-for-so-long"><li><div class="title">The chemical secrets that help keep honey fresh for so long</div><div class="domain">bbc.com &bull; July 04, 2025</div></li></a><a class="li" href="https://serd.es/2025/07/04/Switch-project-pt3.html"><li><div class="title">What Microchip doesn't (officially) tell you about the VSC8512</div><div class="domain">serd.es &bull; July 04, 2025</div></li></a><a class="li" href="https://github.com/paper-design/shaders"><li><div class="title">Paper Shaders: Zero-dependency canvas shaders</div><div class="domain">github.com &bull; July 04, 2025</div></li></a><a class="li" href="https://aclanthology.org/2024.findings-emnlp.552/"><li><div class="title">Evaluating the factuality of verifiable claims in long-form text generation</div><div class="domain">aclanthology.org &bull; July 04, 2025</div></li></a><a class="li" href="https://entropicthoughts.com/lessons-from-creating-first-text-adventure"><li><div class="title">Lessons from creating my first text adventure</div><div class="domain">entropicthoughts.com &bull; July 04, 2025</div></li></a><a class="li" href="https://ryanfarley.co/ai-show-hn-data/"><li><div class="title">Data on AI-related Show HN posts</div><div class="domain">ryanfarley.co &bull; July 04, 2025</div></li></a><a class="li" href="https://www.engineersneedart.com/blog/almostfired/almostfired.html"><li><div class="title">The First Time I Was Almost Fired from Apple</div><div class="domain">engineersneedart.com &bull; July 04, 2025</div></li></a><a class="li" href="https://privateisland.tech/betsy"><li><div class="title">Open Source and FPGA Maker Board for Networking</div><div class="domain">privateisland.tech &bull; July 04, 2025</div></li></a><a class="li" href="https://github.com/ziglang/zig/pull/24329"><li><div class="title">Zig breaking change – Initial Writergate</div><div class="domain">github.com &bull; July 04, 2025</div></li></a><a class="li" href="https://crates.io/crates/tinykv"><li><div class="title">Show HN: Tinykv – Minimal file-backed key-value store for Rust</div><div class="domain">crates.io &bull; July 04, 2025</div></li></a><a class="li" href="https://www.theregister.com/2025/07/03/ai_phishing_websites/"><li><div class="title">ChatGPT creates phisher's paradise by serving the wrong URLs for major companies</div><div class="domain">theregister.com &bull; July 04, 2025</div></li></a><a class="li" href="https://kepler.gl/"><li><div class="title">Kepler.gl</div><div class="domain">kepler.gl &bull; July 04, 2025</div></li></a><a class="li" href="https://dmitriid.com/everything-around-llms-is-still-magical-and-wishful-thinking"><li><div class="title">Everything around LLMs is still magical and wishful thinking</div><div class="domain">dmitriid.com &bull; July 04, 2025</div></li></a><a class="li" href="https://linoscope.github.io/writing-a-game-boy-emulator-in-ocaml/"><li><div class="title">Writing a Game Boy Emulator in OCaml</div><div class="domain">linoscope.github.io &bull; July 04, 2025</div></li></a><a class="li" href="https://github.com/maciej-trebacz/tower-of-time-game"><li><div class="title">Show HN: I AI-coded a tower defense game and documented the whole process</div><div class="domain">github.com &bull; July 04, 2025</div></li></a><a class="li" href="https://www.nanassound.com/products/software/airbending"><li><div class="title">Show HN: AirBending – Hand gesture based macOS app MIDI controller</div><div class="domain">nanassound.com &bull; July 04, 2025</div></li></a><a class="li" href="https://www.ycombinator.com/companies/continue/jobs"><li><div class="title">Continue (YC S23) is hiring software engineers in San Francisco</div><div class="domain">ycombinator.com &bull; July 04, 2025</div></li></a><a class="li" href="https://en.wikipedia.org/wiki/Larry_(cat)"><li><div class="title">Larry (cat)</div><div class="domain">en.wikipedia.org &bull; July 04, 2025</div></li></a><a class="li" href="https://www.marketwatch.com/story/sleeping-beauty-bitcoin-wallets-wake-up-after-14-years-to-the-tune-of-2-billion-79f1f11f"><li><div class="title">Sleeping beauty Bitcoin wallets wake up after 14 years to the tune of $2B</div><div class="domain">marketwatch.com &bull; July 04, 2025</div></li></a><a class="li" href="https://sailhealth.substack.com/p/why-i-left-my-tech-job-to-work-on"><li><div class="title">Why I left my tech job to work on chronic pain</div><div class="domain">sailhealth.substack.com &bull; July 04, 2025</div></li></a><a class="li" href="https://www.nationalgeographic.com/travel/article/story-behind-caesar-salad"><li><div class="title">The story behind Caesar salad</div><div class="domain">nationalgeographic.com &bull; July 04, 2025</div></li></a><a class="li" href="https://backlit.neocities.org/incapacitate-google-tag-manager"><li><div class="title">How to Incapacitate Google Tag Manager and Why You Should (2022)</div><div class="domain">backlit.neocities.org &bull; July 04, 2025</div></li></a><a class="li" href="https://www.filfre.net/2025/07/everquest/"><li><div class="title">EverQuest</div><div class="domain">filfre.net &bull; July 04, 2025</div></li></a><a class="li" href="https://maalvika.substack.com/p/being-too-ambitious-is-a-clever-form"><li><div class="title">Being too ambitious is a clever form of self-sabotage</div><div class="domain">maalvika.substack.com &bull; July 04, 2025</div></li></a><a class="li" href="https://www.jeffgeerling.com/blog/2025/mini-nases-marry-nvme-intels-efficient-chip"><li><div class="title">Mini NASes marry NVMe to Intel's efficient chip</div><div class="domain">jeffgeerling.com &bull; July 04, 2025</div></li></a><a class="li" href="https://twitter.com/soham_btw/status/1940952786491027886"><li><div class="title">My open source project was stolen and relicensed by a YC company</div><div class="domain">twitter.com &bull; July 04, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Psyche | on the human condition (psyche.co)</h2> (2)</summary><ul><a class="li" href="https://psyche.co/notes-to-self/research-suggests-our-relationships-differ-on-five-dimensions?utm_source=rss-feed"><li><div class="title">Our relationships, in five dimensions</div><div class="domain">psyche.co &bull; July 04, 2025</div></li></a><a class="li" href="https://psyche.co/ideas/plato-warned-that-some-pleasures-separate-us-from-reality?utm_source=rss-feed"><li><div class="title">Plato warned that some pleasures separate us from reality</div><div class="domain">psyche.co &bull; July 04, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Reasons to be Cheerful (reasonstobecheerful.world)</h2> (1)</summary><ul><a class="li" href="https://reasonstobecheerful.world/zion-electric-shuttle-buses/"><li><div class="title">In Zion National Park, ‘the Smog Is Gone’</div><div class="domain">reasonstobecheerful.world &bull; July 04, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Seth's Blog (seths.blog)</h2> (1)</summary><ul><a class="li" href="https://seths.blog/2025/07/refocusing/"><li><div class="title">Refocusing</div><div class="domain">seths.blog &bull; July 04, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Diplomat (thediplomat.com)</h2> (7)</summary><ul><a class="li" href="https://thediplomat.com/2025/07/indonesia-offers-to-purchase-34-billion-in-us-goods-ahead-of-tariff-deadline/"><li><div class="title">Indonesia Offers to Purchase $34 Billion in US Goods Ahead of Tariff Deadline</div><div class="domain">thediplomat.com &bull; July 04, 2025</div></li></a><a class="li" href="https://thediplomat.com/2025/07/how-imran-khans-all-or-nothing-approach-could-cost-his-party-everything/"><li><div class="title">How Imran Khan’s All-or-nothing Approach Could Cost His Party Everything</div><div class="domain">thediplomat.com &bull; July 04, 2025</div></li></a><a class="li" href="https://thediplomat.com/2025/07/birds-of-a-feather-shaped-east-asias-development-miracles/"><li><div class="title">‘Birds of a Feather’ Shaped East Asia’s Development ‘Miracles’</div><div class="domain">thediplomat.com &bull; July 04, 2025</div></li></a><a class="li" href="https://thediplomat.com/2025/07/cambodia-us-nearing-agreement-on-trade-phnom-penh-says/"><li><div class="title">Cambodia, US Nearing Agreement on Trade, Phnom Penh Says</div><div class="domain">thediplomat.com &bull; July 04, 2025</div></li></a><a class="li" href="https://thediplomat.com/2025/07/chinas-accelerating-efforts-to-internationalize-the-renminbi/"><li><div class="title">China’s Accelerating Efforts to Internationalize the Renminbi</div><div class="domain">thediplomat.com &bull; July 04, 2025</div></li></a><a class="li" href="https://thediplomat.com/2025/07/chinas-military-diplomacy-in-the-new-era/"><li><div class="title">China’s Military Diplomacy in the New Era</div><div class="domain">thediplomat.com &bull; July 04, 2025</div></li></a><a class="li" href="https://thediplomat.com/2025/07/reframing-the-french-indo-pacific-new-caledonia-how-to-overcome-the-geopolitical-impasse/"><li><div class="title">Reframing the French Indo-Pacific: New Caledonia, How to Overcome the Geopolitical Impasse?</div><div class="domain">thediplomat.com &bull; July 04, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">XML.com Atom feed for articles and news items (xml.com)</h2> (1)</summary><ul><a class="li" href="https://www.xml.com/news/2025-07-oxygen-ai-positron-assistant-version-60/"><li><div class="title">Oxygen AI Positron Assistant version 6.0 has been released!</div><div class="domain">xml.com &bull; July 04, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (18)</summary><ul><a class="li" href="https://yourstory.com/2025/07/lenskart-makes-a-strategic-investment-in-ajna-lens"><li><div class="title">Lenskart makes a strategic investment in deep-tech XR startup Ajna Lens</div><div class="domain">yourstory.com &bull; July 04, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/techsparks-indias-startup-tech-summit-returns"><li><div class="title">Get Ready to Spark Innovation: TechSparks, India’s Ultimate Startup-Tech Summit, Returns</div><div class="domain">yourstory.com &bull; July 04, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/good-glamm-group-financial-crisis-salary-delay-ceo-darpan-sanghvi"><li><div class="title">'Restructuring discussions underway': CEO Darpan Sanghvi on financial crisis at Good Glamm</div><div class="domain">yourstory.com &bull; July 04, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/weekly-funding-roundup-june-28-july-4-vc-indian-startups-fewer-deals"><li><div class="title">[Weekly funding roundup June 28-July 4] VC inflow dips as Indian startups see fewer deals</div><div class="domain">yourstory.com &bull; July 04, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/swiggy-block-deal-32-lakh-shares-worth-rs-122-cr-change-hands"><li><div class="title">Swiggy block deal: 3.2 lakh shares worth Rs 12.2 Cr change hands</div><div class="domain">yourstory.com &bull; July 04, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/myntra-content-to-commerce-platform-glamstream-launch"><li><div class="title">Myntra hits gas on content-to-commerce with Glamstream rollout</div><div class="domain">yourstory.com &bull; July 04, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/fibe-elevates-vimal-saboo-ceo-nbfc-earlysalary-services"><li><div class="title">Fibe elevates Vimal Saboo to CEO of NBFC arm EarlySalary Services</div><div class="domain">yourstory.com &bull; July 04, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/truefoundry-working-create-ai-builds-manages-agentic-ai"><li><div class="title">TrueFoundry is working to create AI that builds and manages agentic AI</div><div class="domain">yourstory.com &bull; July 04, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/flipkarts-ravi-krishnan-exits-product-labs-category-leadership"><li><div class="title">Flipkart’s Ravi Krishnan exits after decade-long stint across product, labs and category leadership</div><div class="domain">yourstory.com &bull; July 04, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/startup-collaboration-key-india-beauty-tech-opportunity"><li><div class="title">Beauty’s next big bang: Why startup collaboration is key to India’s beauty tech opportunity</div><div class="domain">yourstory.com &bull; July 04, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/reimagining-gcc-success-google-clouds-agentic-ai-platform"><li><div class="title">Reimagining GCC success: The power of Google Cloud’s agentic AI platform</div><div class="domain">yourstory.com &bull; July 04, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/designing-seamless-omnichannel-experiences-via-ai"><li><div class="title">Designing seamless omnichannel experiences with AI</div><div class="domain">yourstory.com &bull; July 04, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/bizongo-allegations-of-misappropriation-in-tradecred-complaint-accel-b-capital"><li><div class="title">Bizongo refutes allegations of misappropriation in TradeCred complaint</div><div class="domain">yourstory.com &bull; July 04, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/india-fintech-funding-falls-to-five-year-low-at-889-m-in-h1-2025"><li><div class="title">India fintech funding falls to five-year low at $889M in H1 2025: Report</div><div class="domain">yourstory.com &bull; July 04, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/gccs-redefining-productivity-via-purpose-driven-ai"><li><div class="title">Purpose over process: GCCs redefine productivity with purpose-driven AI</div><div class="domain">yourstory.com &bull; July 04, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/startup-news-and-updates-daily-roundup-july-4-2025"><li><div class="title">Startup news and updates: Daily roundup (July 4, 2025)</div><div class="domain">yourstory.com &bull; July 04, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/artha-global-makes-rs-700-cr-debut-in-indian-private-credit"><li><div class="title">Artha Global makes Rs 700 Cr debut in Indian private credit with Phoenix Triton deal</div><div class="domain">yourstory.com &bull; July 04, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/all-about-meesho-sneaky-ipo-move"><li><div class="title">All about Meesho’s sneaky IPO move; India’s EV financing challenge</div><div class="domain">yourstory.com &bull; July 04, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Adrian Bliss (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/3scwKqBa-mM"><li><div class="title">A cold moves in</div><div class="domain">youtube.com &bull; July 04, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>

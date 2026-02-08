@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-04-13</span>:</h1>
+  <p class="summary">There are 64 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Bear Blog Trending Posts (bearblog.dev)</h2> (7)</summary><ul><a class="li" href="https://wayan.me/going-paperless/"><li><div class="title">Going paperless</div><div class="domain">wayan.me &bull; April 13, 2025</div></li></a><a class="li" href="https://notes.jeddacp.com/week-notes-052/"><li><div class="title">Week Notes 052</div><div class="domain">notes.jeddacp.com &bull; April 13, 2025</div></li></a><a class="li" href="https://vongiorno.bearblog.dev/thank-you-for-reading/"><li><div class="title">Thank you for reading</div><div class="domain">vongiorno.bearblog.dev &bull; April 13, 2025</div></li></a><a class="li" href="https://kami.bearblog.dev/i-hate-the-person-linux-turns-me-into-im-sorry-but-youre-holding-it-wrong/"><li><div class="title">re: I Hate The Person Linux Turns Me Into - I'm sorry, but you're holding it wrong.</div><div class="domain">kami.bearblog.dev &bull; April 13, 2025</div></li></a><a class="li" href="https://bluelander.bearblog.dev/linux-hate/"><li><div class="title">I Hate The Person Linux Turns Me Into</div><div class="domain">bluelander.bearblog.dev &bull; April 13, 2025</div></li></a><a class="li" href="https://blog.avas.space/damn-phone/"><li><div class="title">it may not just be the damn phone</div><div class="domain">blog.avas.space &bull; April 13, 2025</div></li></a><a class="li" href="https://posthuman.blog/archive/"><li><div class="title">Archive</div><div class="domain">posthuman.blog &bull; April 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">kottke.org (feeds.kottke.org)</h2> (2)</summary><ul><a class="li" href="https://kottke.org/25/04/0046571-new-study-finds-average-a"><li><div class="title">New Study Finds Average American Stands No Chance Against What&#8217;s Coming. &#8220;The...</div><div class="domain">kottke.org &bull; April 13, 2025</div></li></a><a class="li" href="https://kottke.org/25/04/0046616-i-am-catching-up-on"><li><div class="title">I am catching up on what happened in season one of The...</div><div class="domain">kottke.org &bull; April 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Go Make Things (gomakethings.com)</h2> (1)</summary><ul><a class="li" href="https://gomakethings.com/shut-up-youre-being-an-asshole/"><li><div class="title">Shut up, you're being an asshole</div><div class="domain">gomakethings.com &bull; April 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (3)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/9Kq2JRqmJHnzckxKn/college-advice-for-people-like-me"><li><div class="title">College Advice For People Like Me</div><div class="domain">lesswrong.com &bull; April 13, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/CYDakfFgjHFB7DGXk/untitled-draft-wn6w"><li><div class="title">Steelmanning heuristic arguments</div><div class="domain">lesswrong.com &bull; April 13, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/qvCCQwnvM4Gb6W8Bg/how-i-switched-careers-from-software-engineer-to-ai-policy"><li><div class="title">How I switched careers from software engineer to AI policy operations</div><div class="domain">lesswrong.com &bull; April 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (16)</summary><ul><a class="li" href="https://healeycodes.com/visualizing-chess-bitboards"><li><div class="title">Visualizing Chess Bitboards</div><div class="domain">healeycodes.com &bull; April 13, 2025</div></li></a><a class="li" href="https://transactional.blog/blog/2025-torn-writes"><li><div class="title">Torn Write Detection and Protection</div><div class="domain">transactional.blog &bull; April 13, 2025</div></li></a><a class="li" href="https://www.microsoft.com/en-us/research/publication/trueskill-2-improved-bayesian-skill-rating-system/"><li><div class="title">TrueSkill 2: An improved Bayesian skill rating system</div><div class="domain">microsoft.com &bull; April 13, 2025</div></li></a><a class="li" href="https://www.glicko.net/glicko.html"><li><div class="title">Glicko Rating Systems</div><div class="domain">glicko.net &bull; April 13, 2025</div></li></a><a class="li" href="https://m.slashdot.org/story/440853"><li><div class="title">Torvalds Celebrates Git's 20th Anniversay. Is It More Famous Than Linux?</div><div class="domain">m.slashdot.org &bull; April 13, 2025</div></li></a><a class="li" href="https://github.com/alexpusch/rust-magic-patterns/blob/master/visual-journey-through-async-rust/Readme.md"><li><div class="title">A Visual Journey Through Async Rust</div><div class="domain">github.com &bull; April 13, 2025</div></li></a><a class="li" href="https://www.miakoring.de/blog/sudoku"><li><div class="title">Solving One Million Sudoku Puzzles per hour</div><div class="domain">miakoring.de &bull; April 13, 2025</div></li></a><a class="li" href="http://www.righto.com/2025/04/commodore-pet-repair.html"><li><div class="title">A tricky Commodore PET repair: tracking down 6 1/2 bad chips</div><div class="domain">righto.com &bull; April 13, 2025</div></li></a><a class="li" href="https://www.bejarano.io/terraform-overlayfs/"><li><div class="title">Speeding up Terraform caching with OverlayFS</div><div class="domain">bejarano.io &bull; April 13, 2025</div></li></a><a class="li" href="https://github.com/dtolnay/no-panic"><li><div class="title">no-panic: Attribute macro to require that the compiler prove a function can't ever panic</div><div class="domain">github.com &bull; April 13, 2025</div></li></a><a class="li" href="https://github.com/ashtf8/EinkPDA"><li><div class="title">An E-Ink PDA device using the ESP32 S3</div><div class="domain">github.com &bull; April 13, 2025</div></li></a><a class="li" href="https://utcc.utoronto.ca/~cks/space/blog/web/ShortTLSCertificatesComing"><li><div class="title">Mandatory short duration TLS certificates are probably coming soon</div><div class="domain">utcc.utoronto.ca &bull; April 13, 2025</div></li></a><a class="li" href="https://kerrick.blog/articles/2025/ship-software-that-does-nothing/"><li><div class="title">Ship Software That Does Nothing</div><div class="domain">kerrick.blog &bull; April 13, 2025</div></li></a><a class="li" href="https://doc.cat-v.org/bell_labs/why_pascal/why_pascal_is_not_my_favorite_language.pdf"><li><div class="title">Why Pascal is Not My Favourite Language (1981)</div><div class="domain">doc.cat-v.org &bull; April 13, 2025</div></li></a><a class="li" href="https://lantian.pub/en/article/modify-computer/nix-trigonometric-math-library-from-zero.lantian/"><li><div class="title">Nix Trigonometric Math Library from Ground Zero</div><div class="domain">lantian.pub &bull; April 13, 2025</div></li></a><a class="li" href="https://unnamed.website/posts/rng-cosine-nix/"><li><div class="title">RNG and Cosine in Nix</div><div class="domain">unnamed.website &bull; April 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (20)</summary><ul><a class="li" href="https://www.paloaltoonline.com/technology/2025/04/12/silicon-valley-crosswalk-buttons-apparently-hacked-to-imitate-musk-zuckerberg-voices/"><li><div class="title">Silicon Valley crosswalk buttons apparently hacked to imitate Musk, Zuck voices</div><div class="domain">paloaltoonline.com &bull; April 13, 2025</div></li></a><a class="li" href="https://www.washingtonpost.com/technology/2025/04/12/waymo-handwritten-notes-jobs-ads/"><li><div class="title">Tech workers are leaving notes in robot taxis seeking workers and lovers</div><div class="domain">washingtonpost.com &bull; April 13, 2025</div></li></a><a class="li" href="https://notes.victor.earth/youre-probably-breaking-the-llama-community-license/"><li><div class="title">Breaking the Llama Community License</div><div class="domain">notes.victor.earth &bull; April 13, 2025</div></li></a><a class="li" href="https://pubs.acs.org/doi/10.1021/acs.jafc.4c12651"><li><div class="title">Mushroom A.stiptica Bitter Compounds and Human Taste Receptor Activation</div><div class="domain">pubs.acs.org &bull; April 13, 2025</div></li></a><a class="li" href="https://github.com/ariebovenberg/whenever"><li><div class="title">Whenever – typed and DST-safe datetimes for Python</div><div class="domain">github.com &bull; April 13, 2025</div></li></a><a class="li" href="https://worksonmymachine.substack.com/p/wasting-inferences-with-aider"><li><div class="title">Wasting Inferences with Aider</div><div class="domain">worksonmymachine.substack.com &bull; April 13, 2025</div></li></a><a class="li" href="https://inleo.io/@gentleshaid/are-plants-farming-us-a-thoughtful-look-at-natures-silent-masters-jx9"><li><div class="title">Are Plants Farming Us?</div><div class="domain">inleo.io &bull; April 13, 2025</div></li></a><a class="li" href="https://alexanderell.is/posts/orange/"><li><div class="title">How much oranger do red orange bags make oranges look?</div><div class="domain">alexanderell.is &bull; April 13, 2025</div></li></a><a class="li" href="https://github.com/emacs-exwm/exwm"><li><div class="title">Exwm: Emacs X Window Manager</div><div class="domain">github.com &bull; April 13, 2025</div></li></a><a class="li" href="https://www.newstatesman.com/culture/books/2025/04/dark-side-of-the-moomins-tove-jansson"><li><div class="title">The dark side of the Moomins</div><div class="domain">newstatesman.com &bull; April 13, 2025</div></li></a><a class="li" href="https://fennel-lang.org/rationale"><li><div class="title">Why Fennel?</div><div class="domain">fennel-lang.org &bull; April 13, 2025</div></li></a><a class="li" href="https://github.com/policy-gradient/GRPO-Zero"><li><div class="title">Implementing DeepSeek R1's GRPO algorithm from scratch</div><div class="domain">github.com &bull; April 13, 2025</div></li></a><a class="li" href="https://www.math.uci.edu/~ndonalds/math13/notes.pdf"><li><div class="title">Math 13 – An Introduction to Abstract Mathematics [pdf]</div><div class="domain">math.uci.edu &bull; April 13, 2025</div></li></a><a class="li" href="https://www.signalbloom.ai/news/"><li><div class="title">Show HN: I made a free tool that analyzes SEC filings and posts detailed reports</div><div class="domain">signalbloom.ai &bull; April 13, 2025</div></li></a><a class="li" href="https://www.polarsparc.com/xhtml/MCP.html"><li><div class="title">Quick Primer on MCP Using Ollama and LangChain</div><div class="domain">polarsparc.com &bull; April 13, 2025</div></li></a><a class="li" href="https://github.com/jlevy/og-equity-compensation"><li><div class="title">Open guide to equity compensation</div><div class="domain">github.com &bull; April 13, 2025</div></li></a><a class="li" href="https://blog.sshh.io/p/everything-wrong-with-mcp"><li><div class="title">Everything wrong with MCP</div><div class="domain">blog.sshh.io &bull; April 13, 2025</div></li></a><a class="li" href="https://www.livescience.com/technology/engineering/new-urinal-designs-could-prevent-up-to-265-000-gallons-of-urine-from-spilling-onto-the-floor-each-day"><li><div class="title">New urinal designs prevent 265,000 gallons of urine splashing onto the floor</div><div class="domain">livescience.com &bull; April 13, 2025</div></li></a><a class="li" href="https://medicalxpress.com/news/2025-03-hunger-shifts-attention-healthy-food.html"><li><div class="title">Hunger shifts attention towards less healthy food options, study finds</div><div class="domain">medicalxpress.com &bull; April 13, 2025</div></li></a><a class="li" href="https://grapheneos.social/@GrapheneOS/114327666433966529"><li><div class="title">Experimental release of GrapheneOS for Pixel 9a</div><div class="domain">grapheneos.social &bull; April 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Seth's Blog (seths.blog)</h2> (1)</summary><ul><a class="li" href="https://seths.blog/2025/04/charged-by-the-word/"><li><div class="title">Charged by the word</div><div class="domain">seths.blog &bull; April 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Diplomat (thediplomat.com)</h2> (2)</summary><ul><a class="li" href="https://thediplomat.com/2025/04/vietnam-to-cut-provinces-by-half-in-radical-administrative-restructure/"><li><div class="title">Vietnam to Cut Provinces by Half in Radical Administrative Restructure</div><div class="domain">thediplomat.com &bull; April 13, 2025</div></li></a><a class="li" href="https://thediplomat.com/2025/04/the-usaid-freeze-a-view-from-sri-lanka-and-the-global-south/"><li><div class="title">The USAID Freeze: A View From Sri Lanka and the Global South</div><div class="domain">thediplomat.com &bull; April 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Trevor I. Lasn Thoughts (trevorlasn.com)</h2> (1)</summary><ul><a class="li" href="https://www.trevorlasn.com/blog/agent-2-agent-protocol-a2a"><li><div class="title">Understanding Agent2Agent (A2A): A Protocol for LLM Communication</div><div class="domain">trevorlasn.com &bull; April 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (8)</summary><ul><a class="li" href="https://yourstory.com/2025/04/7-ways-love-reading"><li><div class="title">7 Little ways to rekindle your love for reading again</div><div class="domain">yourstory.com &bull; April 13, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/04/5-books-overcome-work-challenges"><li><div class="title">Feeling stuck at work? 5 books can change the way you work</div><div class="domain">yourstory.com &bull; April 13, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/04/7-low-key-lifestyle-benefits"><li><div class="title">7 powerful reasons to embrace the low-key life today</div><div class="domain">yourstory.com &bull; April 13, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/04/casa-pasta-bar-indian-accents-new-tasting-menu-us-bond-market-fall"><li><div class="title">Learn your pasta before you eat; Indian Accent’s new tasting menu</div><div class="domain">yourstory.com &bull; April 13, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/04/ai-energy-fashion-business-creativity-innovation-entrepreneur-education-quiz"><li><div class="title">AI, energy, fashion: test your business creativity with Edition 183 of our weekly quiz!</div><div class="domain">yourstory.com &bull; April 13, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/04/india-art-festival-creativity-inspiration-photography-nehru-centre-mumbai"><li><div class="title">30 exhibitions and 4 cities: How this art festival spreads creativity far and wide</div><div class="domain">yourstory.com &bull; April 13, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/04/how-zoho-cracked-global-markets-with-3-iconic-marketing-campaigns"><li><div class="title">How Zoho cracked global markets with 3 iconic marketing campaigns</div><div class="domain">yourstory.com &bull; April 13, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/04/navigating-ai-privacy-debate-hyper-personalisation-chatgpt-ghibli-trend"><li><div class="title">How much is too much? Navigating the AI privacy debate on personalisation</div><div class="domain">yourstory.com &bull; April 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Suvaissance (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=WnJHAG2rj9A"><li><div class="title">This Enthiran 3.0 theme song demo will blow your mind!</div><div class="domain">youtube.com &bull; April 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Plip Plip (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=O_hxuCF6bVw"><li><div class="title">Good Bad Ugly Roast | Plip Plip</div><div class="domain">youtube.com &bull; April 13, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">CGP Grey (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=58SrtQNt4YE"><li><div class="title">Why Nickels Should Die</div><div class="domain">youtube.com &bull; April 13, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>

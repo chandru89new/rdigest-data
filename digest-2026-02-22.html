@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2026-02-22</span>:</h1>
+  <p class="summary">There are 26 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (4)</summary><ul><a class="li" href="https://blog.discourse.org/2026/02/how-we-fixed-yaml-comment-preservation-in-ruby-and-why-we-sponsored-it/"><li><div class="title">How We Fixed YAML Comment Preservation in Ruby (And Why We Sponsored It)</div><div class="domain">blog.discourse.org &bull; February 22, 2026</div></li></a><a class="li" href="https://msf.github.io/blogpost/local-llm-performance-framework13.html"><li><div class="title">How and Why Local LLMs Perform On Framework 13 AMD Strix Point</div><div class="domain">msf.github.io &bull; February 22, 2026</div></li></a><a class="li" href="https://ochagavia.nl/blog/fix-your-tools/"><li><div class="title">Fix your tools</div><div class="domain">ochagavia.nl &bull; February 22, 2026</div></li></a><a class="li" href="https://atgreen.github.io/repl-yell/posts/cl-kawa/"><li><div class="title">cl-kawa: A Turducken of Programming Languages</div><div class="domain">atgreen.github.io &bull; February 22, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (5)</summary><ul><a class="li" href="https://opennhp.org/blog/the-internet-is-becoming-a-dark-forest.html"><li><div class="title">The Internet Is Becoming a Dark Forest – and AI Is the Hunter</div><div class="domain">opennhp.org &bull; February 22, 2026</div></li></a><a class="li" href="https://ukiyo-e.org/"><li><div class="title">Japanese Woodblock Print Search</div><div class="domain">ukiyo-e.org &bull; February 22, 2026</div></li></a><a class="li" href="https://www.sambent.com/a-botnet-accidentally-destroyed-i2p-the-full-story/"><li><div class="title">A Botnet Accidentally Destroyed I2P</div><div class="domain">sambent.com &bull; February 22, 2026</div></li></a><a class="li" href="https://github.com/Leading-AI-IO/palantir-ontology-strategy"><li><div class="title">Palantir's secret weapon isn't AI – it's Ontology. An open-source deep dive</div><div class="domain">github.com &bull; February 22, 2026</div></li></a><a class="li" href="https://boristane.com/blog/how-i-use-claude-code/"><li><div class="title">How I use Claude Code: Separation of planning and execution</div><div class="domain">boristane.com &bull; February 22, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (2)</summary><ul><a class="li" href="https://yourstory.com/2026/02/adobe-mission-to-empower-creators-women-redefining-entrepreneurship"><li><div class="title">Adobe’s mission to empower creators; Women redefining entrepreneurship</div><div class="domain">yourstory.com &bull; February 22, 2026</div></li></a><a class="li" href="https://yourstory.com/2026/02/scaling-deeptech-manufacturing-needs-a-different-capital-logic"><li><div class="title">Scaling deeptech manufacturing needs a different capital logic</div><div class="domain">yourstory.com &bull; February 22, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">Veritasium (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/qtPPfM7Tz1o"><li><div class="title">The Crazy Physics of Jet Engines</div><div class="domain">youtube.com &bull; February 22, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">Trevor Noah (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/kE5OgzMBm9o"><li><div class="title">When a South African fan asks for a selfie…</div><div class="domain">youtube.com &bull; February 22, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">ThePrint (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=7z1iQKouIbU"><li><div class="title">Naga rapper Moko Koza speaks on racism, tribal identity and being an artist in the Northeast</div><div class="domain">youtube.com &bull; February 22, 2026</div></li></a><a class="li" href="https://www.youtube.com/watch?v=ECtjeSuz6z4"><li><div class="title">'AI won’t replace bureaucrats, will reshape governance': UPSC chief calls for AI-ready bureaucracy</div><div class="domain">youtube.com &bull; February 22, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">The Hindu (youtube.com)</h2> (4)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=zng4paCmNEE"><li><div class="title">Are reduced percentiles reasonable in NEET PG 2026?</div><div class="domain">youtube.com &bull; February 22, 2026</div></li></a><a class="li" href="https://www.youtube.com/watch?v=a-kKLQ5CsYw"><li><div class="title">PM Modi joins groundbreaking of India Chip Limited OSAT facility</div><div class="domain">youtube.com &bull; February 22, 2026</div></li></a><a class="li" href="https://www.youtube.com/shorts/DFeZufImniI"><li><div class="title">Women can travel to work, but where are the jobs? TN’s skill gap widens</div><div class="domain">youtube.com &bull; February 22, 2026</div></li></a><a class="li" href="https://www.youtube.com/watch?v=LVvkMlhyIbk"><li><div class="title">Droupadi Murmu hosts banquet for Luiz Inácio Lula da Silva, boosts India–Brazil ties</div><div class="domain">youtube.com &bull; February 22, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">The Dodo (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/OTVNtBgm6iY"><li><div class="title">33-Year-Old Blind Pony Gets A Seeing-Eye Donkey | The Dodo</div><div class="domain">youtube.com &bull; February 22, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">newslaundry (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/shorts/HfYyXQq3hSg"><li><div class="title">It takes a village to transform the media landscape. Here are a few who did their bit.</div><div class="domain">youtube.com &bull; February 22, 2026</div></li></a><a class="li" href="https://www.youtube.com/watch?v=3SMpjJujRDM"><li><div class="title">The News Minute turns 12 and here is how they got this far | South Central Special</div><div class="domain">youtube.com &bull; February 22, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">ICM Indian Classical Music (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/wxhsMKjFErI"><li><div class="title">Classical Bada Khayal Gayan By Arnav Buwa #icmvocal #classical #music #shorts</div><div class="domain">youtube.com &bull; February 22, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">DiscoveryChannelInd (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=n1ot356Xcz0"><li><div class="title">Parker Schnabel Faces His Wildest Mining Challenges | Gold Rush S6 E4,9,13,18 |</div><div class="domain">youtube.com &bull; February 22, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">DD Movies (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/IRhTnZyqffs"><li><div class="title">கல்யாணத்த பண்ணிப்பாரு சும்மாவா சொன்னாங்க | DD Movies</div><div class="domain">youtube.com &bull; February 22, 2026</div></li></a></ul></details><details open><summary><h2 class="summary">Bob & Brad (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/lDxNcM9NKOQ"><li><div class="title">All of the Uses of the Booyah Stik! (Link in Description)</div><div class="domain">youtube.com &bull; February 22, 2026</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>

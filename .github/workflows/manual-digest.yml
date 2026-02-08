@@ -1,0 +1,69 @@
+name: Create digest
+
+on:
+  workflow_dispatch:
+    inputs:
+      from:
+        description: "Starting date for the digest (YYYY-MM-DD)"
+        required: true
+        default: ""
+      to:
+        description: "Ending date for the digest (YYYY-MM-DD)"
+        required: true
+        default: ""
+
+permissions:
+  contents: write
+
+jobs:
+  create-digest:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Checkout the current repo
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # Step 2: Download the latest binary dynamically
+      - name: Download rdigest
+        run: |
+          REPO_OWNER="chandru89new" # Replace with actual owner
+          REPO_NAME="rdigest"   # Replace with actual repo name
+
+          # Fetch the latest release tag
+          LATEST_TAG=$(curl -s https://api.github.com/repos/$REPO_OWNER/$REPO_NAME/releases/latest | jq -r .tag_name)
+
+          # Construct the download URL
+          BINARY_URL="https://github.com/$REPO_OWNER/$REPO_NAME/releases/download/$LATEST_TAG/rdigest_linux_amd64_$LATEST_TAG.tar.gz"
+
+          # Download and make the binary executable
+          curl -L $BINARY_URL --output rdigest.tar.gz
+          tar -xzf rdigest.tar.gz
+          chmod +x ./rdigest
+
+      - name: Refresh feeds first
+        run: |
+          export RDIGEST_FOLDER=.
+          ./rdigest refresh
+
+      - name: Create the digest for the given date range
+        run: |
+          export RDIGEST_FOLDER=.
+          ./rdigest digest --from ${{ inputs.from }} --to ${{ inputs.to }}
+
+      - name: Remove binary
+        run: |
+          rm rdigest
+          rm *.tar.gz
+
+      - name: Configure Git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+      # Step 5: Commit and Push Changes
+      - name: Commit and Push Changes
+        run: |
+          git add .
+          git commit -m "Update repo with new digest."
+          git push origin main

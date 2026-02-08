@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-06-15</span>:</h1>
+  <p class="summary">There are 55 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Bear Blog Trending Posts (bearblog.dev)</h2> (3)</summary><ul><a class="li" href="https://blog.lauramichet.com/had-a-very-crazy-day/"><li><div class="title">Had a very crazy day</div><div class="domain">blog.lauramichet.com &bull; June 15, 2025</div></li></a><a class="li" href="https://toska.bearblog.dev/i-met-my-sister-for-the-first-time/"><li><div class="title">I met my sister for the first time</div><div class="domain">toska.bearblog.dev &bull; June 15, 2025</div></li></a><a class="li" href="https://kami.bearblog.dev/why-comment-sections-suck-rei-want-to-comment-on-your-blog-post/"><li><div class="title">Why Comment Sections suck - re:I want to comment on your blog post</div><div class="domain">kami.bearblog.dev &bull; June 15, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (5)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/ezkPRdJ6PNMbK3tp5/unsupervised-elicitation-of-language-models"><li><div class="title">Unsupervised Elicitation of Language Models</div><div class="domain">lesswrong.com &bull; June 15, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/GicDDmpS4mRnXzic5/endometriosis-is-an-incredibly-interesting-disease"><li><div class="title">Endometriosis is an incredibly interesting disease</div><div class="domain">lesswrong.com &bull; June 15, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/mDMnyqt52CrFskXLc/estrogen-a-trip-report"><li><div class="title">Estrogen: A trip report</div><div class="domain">lesswrong.com &bull; June 15, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/FBvWM5HgSWwJa5xHc/intelligence-is-not-magic-but-your-threshold-for-magic-is"><li><div class="title">Intelligence Is Not Magic, But Your Threshold For "Magic" Is Pretty Low</div><div class="domain">lesswrong.com &bull; June 15, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/6tvxuJE7jFLSQ2WFd/why-we-re-still-doing-normal-school"><li><div class="title">Why we’re still doing normal school</div><div class="domain">lesswrong.com &bull; June 15, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (14)</summary><ul><a class="li" href="https://www.dreamsongs.com/ArtOfLisp.html"><li><div class="title">The Art of Lisp & Writing</div><div class="domain">dreamsongs.com &bull; June 15, 2025</div></li></a><a class="li" href="https://simonwillison.net/2025/May/15/building-on-llms/"><li><div class="title">Building software on top of Large Language Models</div><div class="domain">simonwillison.net &bull; June 15, 2025</div></li></a><a class="li" href="https://www.downtowndougbrown.com/2025/06/modifying-an-hdmi-dummy-plugs-edid-using-a-raspberry-pi/"><li><div class="title">Modifying an HDMI dummy plug’s EDID using a Raspberry Pi</div><div class="domain">downtowndougbrown.com &bull; June 15, 2025</div></li></a><a class="li" href="https://pypy.org/posts/2025/06/rpython-gc-allocation-speed.html"><li><div class="title">How fast can the RPython GC allocate?</div><div class="domain">pypy.org &bull; June 15, 2025</div></li></a><a class="li" href="https://blog.kowalczyk.info/a-stsj/simplest-c-callback-from-sumatrapdf.html"><li><div class="title">Simplest C++ callback, from SumatraPDF</div><div class="domain">blog.kowalczyk.info &bull; June 15, 2025</div></li></a><a class="li" href="https://dev.to/adolfont/the-elixir-pipe-operator-38fa"><li><div class="title">The Elixir Pipe Operator</div><div class="domain">dev.to &bull; June 15, 2025</div></li></a><a class="li" href="https://surfingcomplexity.blog/2025/06/14/quick-takes-on-the-gcp-public-incident-write-up/"><li><div class="title">Quick takes on the GCP public incident write-up</div><div class="domain">surfingcomplexity.blog &bull; June 15, 2025</div></li></a><a class="li" href="https://deosjr.github.io/dynamicland/datalog.html"><li><div class="title">Datalog in Minikanren</div><div class="domain">deosjr.github.io &bull; June 15, 2025</div></li></a><a class="li" href="https://github.com/danthegoodman1/gRPSQLite"><li><div class="title">A SQLite VFS for remote databases via gRPC</div><div class="domain">github.com &bull; June 15, 2025</div></li></a><a class="li" href="https://www.akpain.net/blog/breaking-secnet-assignments/"><li><div class="title">Breaking my Security Assignments</div><div class="domain">akpain.net &bull; June 15, 2025</div></li></a><a class="li" href="https://www.ultratechnology.com/1xforth.htm"><li><div class="title">1x Forth (1999)</div><div class="domain">ultratechnology.com &bull; June 15, 2025</div></li></a><a class="li" href="https://tim.dierks.org/2014/05/security-standards-and-name-changes-in.html"><li><div class="title">Why SSL was renamed to TLS in late 90s (2014)</div><div class="domain">tim.dierks.org &bull; June 15, 2025</div></li></a><a class="li" href="https://www.jsbarretto.com/blog/software-is-joy/"><li><div class="title">Writing Toy Software Is A Joy</div><div class="domain">jsbarretto.com &bull; June 15, 2025</div></li></a><a class="li" href="https://www.modular.com/blog/democratizing-ai-compute-part-8-what-about-the-mlir-compiler-infrastructure"><li><div class="title">Modular: What about the MLIR compiler infrastructure? (Democratizing AI Compute, Part 8)</div><div class="domain">modular.com &bull; June 15, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (22)</summary><ul><a class="li" href="https://mertbulan.com/2025/06/14/munich-from-a-hamburgers-perspective/"><li><div class="title">Munich from a Hamburger's perspective</div><div class="domain">mertbulan.com &bull; June 15, 2025</div></li></a><a class="li" href="https://www.latimes.com/science/story/2025-06-15/l-a-seeks-help-for-a-patient-with-no-name"><li><div class="title">Strangers in the Middle of a City: The John and Jane Does of L.A. Medical Center</div><div class="domain">latimes.com &bull; June 15, 2025</div></li></a><a class="li" href="https://oisinmoran.com/sumertime"><li><div class="title">Show HN: I made an online Unicode Cuneiform digital clock</div><div class="domain">oisinmoran.com &bull; June 15, 2025</div></li></a><a class="li" href="https://phys.org/news/2025-06-3d-device-white-noise-acoustic.html"><li><div class="title">3D-printed device splits white noise into an acoustic rainbow without power</div><div class="domain">phys.org &bull; June 15, 2025</div></li></a><a class="li" href="https://github.com/rorosen/zeekstd"><li><div class="title">Show HN: Zeekstd – Rust Implementation of the ZSTD Seekable Format</div><div class="domain">github.com &bull; June 15, 2025</div></li></a><a class="li" href="https://zxonline.net/zx-spectrum-graphics-magic-the-basics-every-spectrum-fan-should-know/"><li><div class="title">ZX Spectrum Graphics Magic: The Basics Every Spectrum Fan Should Know</div><div class="domain">zxonline.net &bull; June 15, 2025</div></li></a><a class="li" href="https://strangemachine.tv/safespace/popov/"><li><div class="title">The experience continues until you stop experiencing it</div><div class="domain">strangemachine.tv &bull; June 15, 2025</div></li></a><a class="li" href="https://news.kaist.ac.kr/newsen/html/news/?mode=V&mng_no=47450"><li><div class="title">KAIST Succeeds in Real-Time CO2 Monitoring Without Batteries or External Power</div><div class="domain">news.kaist.ac.kr &bull; June 15, 2025</div></li></a><a class="li" href="https://visionbook.mit.edu"><li><div class="title">Foundations of Computer Vision</div><div class="domain">visionbook.mit.edu &bull; June 15, 2025</div></li></a><a class="li" href="https://www.openculture.com/2018/08/hobo-code-introduction-hieroglyphic-language-early-1900s-train-hoppers.html"><li><div class="title">An Introduction to the Hieroglyphic Language of Early 1900s Train-Hoppers</div><div class="domain">openculture.com &bull; June 15, 2025</div></li></a><a class="li" href="https://thehustle.co/why-its-nearly-impossible-to-buy-an-original-bob-ross-painting"><li><div class="title">It’s nearly impossible to buy an original Bob Ross painting (2021)</div><div class="domain">thehustle.co &bull; June 15, 2025</div></li></a><a class="li" href="https://default.blog/p/lets-talk-about-chatgpt-induced-spiritual"><li><div class="title">Let's Talk About ChatGPT-Induced Spiritual Psychosis</div><div class="domain">default.blog &bull; June 15, 2025</div></li></a><a class="li" href="https://www.thetimes.com/life-style/celebrity/article/david-attenborough-book-extract-age-99-lj3rd2fg7"><li><div class="title">David Attenborough at 99: 'I will not see how the story ends'</div><div class="domain">thetimes.com &bull; June 15, 2025</div></li></a><a class="li" href="https://www.darpa.mil/news/2025/darpa-program-distance-record-power-beaming"><li><div class="title">DARPA program sets distance record for power beaming</div><div class="domain">darpa.mil &bull; June 15, 2025</div></li></a><a class="li" href="https://olegkutkov.me/2025/06/15/how-to-modify-starlink-mini-to-run-without-the-built-in-wifi-router/"><li><div class="title">How to modify Starlink Mini to run without the built-in WiFi router</div><div class="domain">olegkutkov.me &bull; June 15, 2025</div></li></a><a class="li" href="https://ourworldindata.org/childhood-leukemia-treatment-history"><li><div class="title">Childhood leukemia: how a deadly cancer became treatable</div><div class="domain">ourworldindata.org &bull; June 15, 2025</div></li></a><a class="li" href="https://canyonmid.com/"><li><div class="title">Canyon.mid</div><div class="domain">canyonmid.com &bull; June 15, 2025</div></li></a><a class="li" href="https://github.com/cosmos72/twin"><li><div class="title">Twin – A Textmode WINdow Environment</div><div class="domain">github.com &bull; June 15, 2025</div></li></a><a class="li" href="https://telephone-exchanges.org.uk/"><li><div class="title">Telephone Exchanges in the UK</div><div class="domain">telephone-exchanges.org.uk &bull; June 15, 2025</div></li></a><a class="li" href="https://spectrum.ieee.org/sf6-gas-replacement"><li><div class="title">A new high-voltage breaker can clear grid-scale faults without greenhouse gas</div><div class="domain">spectrum.ieee.org &bull; June 15, 2025</div></li></a><a class="li" href="https://www.bbc.com/future/article/20250613-untangling-the-mysteries-of-what-we-dont-know-about-sperm"><li><div class="title">Why sperm is still so mysterious</div><div class="domain">bbc.com &bull; June 15, 2025</div></li></a><a class="li" href="https://seohong.me/blog/q-learning-is-not-yet-scalable/"><li><div class="title">Q-learning is not yet scalable</div><div class="domain">seohong.me &bull; June 15, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Seth's Blog (seths.blog)</h2> (1)</summary><ul><a class="li" href="https://seths.blog/2025/06/the-power-of-a-pause/"><li><div class="title">The power of a pause</div><div class="domain">seths.blog &bull; June 15, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Sympolymathesy, by Chris Krycho (v5.chriskrycho.com)</h2> (1)</summary><ul><a class="li" href="https://v5.chriskrycho.com/elsewhere/true-myth-zod/"><li><div class="title">[elsewhere] true-myth-zod</div><div class="domain">v5.chriskrycho.com &bull; June 15, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Varun Barad - Curious Developer (varunbarad.com)</h2> (1)</summary><ul><a class="li" href="https://varunbarad.com/blog/til-macos_mount_remote_smb_share.html"><li><div class="title">📝 Mount an SMB share on Mac OS using Rust</div><div class="domain">varunbarad.com &bull; June 15, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (7)</summary><ul><a class="li" href="https://yourstory.com/2025/06/affordable-pet-care-inside"><li><div class="title">Affordable pet care; Inside Gauri Khan’s experience centre</div><div class="domain">yourstory.com &bull; June 15, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/06/space-production-health-business-creativity-entrepreneur-innovation-education-quiz"><li><div class="title">Space, production, health: Test your business creativity with Edition 192 of our weekly quiz!</div><div class="domain">yourstory.com &bull; June 15, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/06/hero-fincorp-raises-rs-260-crore-pre-ipo-round-trims-total-issue-size"><li><div class="title">Hero FinCorp raises Rs 260 Cr in pre-IPO round, trims total issue size to Rs 3,408 Cr</div><div class="domain">yourstory.com &bull; June 15, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/06/top-indian-firms-lose-165-lakh-crore-in-market-value"><li><div class="title">Top Indian firms lose Rs 1.65 lakh crore in market value; HDFC bank suffers the most</div><div class="domain">yourstory.com &bull; June 15, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/06/museum-pasifika-bali-art-creativity-culture-photography"><li><div class="title">Museum Pasifika: A showcase of the universal message of art in Bali</div><div class="domain">yourstory.com &bull; June 15, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/06/this-startup-doesnt-just-use-ai-its-run-by-ai"><li><div class="title">This startup doesn’t just use AI, it’s run by AI</div><div class="domain">yourstory.com &bull; June 15, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/06/family-offices-in-india-pioneering-startup-investm"><li><div class="title">Family offices in India: Pioneering startup investments with due diligence</div><div class="domain">yourstory.com &bull; June 15, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Home & Garden (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=RErmKaClXQI"><li><div class="title">Trồng đậu xanh trong khu vườn nhỏ | Growing green beans in a small garden</div><div class="domain">youtube.com &bull; June 15, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>

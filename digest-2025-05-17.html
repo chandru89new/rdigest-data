@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-05-17</span>:</h1>
+  <p class="summary">There are 69 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Bear Blog Trending Posts (bearblog.dev)</h2> (3)</summary><ul><a class="li" href="https://elmc.at/bluesky-comments-fixed/"><li><div class="title">Bluesky Comments Fixed</div><div class="domain">elmc.at &bull; May 17, 2025</div></li></a><a class="li" href="https://nicefuckingshirt.com/why-do-you-blog/"><li><div class="title">Why Do You Blog?</div><div class="domain">nicefuckingshirt.com &bull; May 17, 2025</div></li></a><a class="li" href="https://toska.bearblog.dev/i-dont-know-how-to-be-a-sister/"><li><div class="title">I don't know how to be a sister</div><div class="domain">toska.bearblog.dev &bull; May 17, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Big Think (bigthink.com)</h2> (1)</summary><ul><a class="li" href="https://bigthink.com/mini-philosophy/samvega-philosophy/"><li><div class="title">Saṃvega: The urgent realization that you need a more meaningful life</div><div class="domain">bigthink.com &bull; May 17, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Marginalian (feeds.feedburner.com)</h2> (1)</summary><ul><a class="li" href="https://www.themarginalian.org/2025/05/16/marie-howe-the-maples/"><li><div class="title">How Should You Live Your Life: Marie Howe’s Spare, Stunning Poem “The Maples”</div><div class="domain">themarginalian.org &bull; May 17, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (5)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/qhjNejRxbMGQp4wHt/how-fast-can-algorithms-advance-capabilities-or-epoch"><li><div class="title">How Fast Can Algorithms Advance Capabilities? | Epoch Gradient Update</div><div class="domain">lesswrong.com &bull; May 17, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/bBSJzAM6hchi4bX2G/untitled-draft-u5po"><li><div class="title">time is event based</div><div class="domain">lesswrong.com &bull; May 17, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/sW3GH2wiDFqZySQdt/events-debate-and-fiction-project"><li><div class="title">Events: Debate & Fiction Project</div><div class="domain">lesswrong.com &bull; May 17, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/wFC44bs2CZJDnF5gy/social-anxiety-isn-t-about-being-liked"><li><div class="title">Social Anxiety Isn’t About Being Liked</div><div class="domain">lesswrong.com &bull; May 17, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/rhLbcWna8npw8BavC/management-is-the-near-future"><li><div class="title">Management is the Near Future</div><div class="domain">lesswrong.com &bull; May 17, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (18)</summary><ul><a class="li" href="https://moonside.games/posts/layers-all-the-way-down/"><li><div class="title">Layers All The Way Down: The Untold Story of Shader Compilation</div><div class="domain">moonside.games &bull; May 17, 2025</div></li></a><a class="li" href="https://www.lfe.pt/latex/fonts/typography/2022/11/21/latex-fonts-part1.html"><li><div class="title">My favourite fonts to use with LaTeX (2022)</div><div class="domain">lfe.pt &bull; May 17, 2025</div></li></a><a class="li" href="https://flang.llvm.org/docs/FortranForCProgrammers.html"><li><div class="title">Fortran For C Programmers</div><div class="domain">flang.llvm.org &bull; May 17, 2025</div></li></a><a class="li" href="https://www.dedoimedo.com/life/passwords-passkeys.html"><li><div class="title">Passwords are okay, impulsive Internet isn't</div><div class="domain">dedoimedo.com &bull; May 17, 2025</div></li></a><a class="li" href="https://nealstephenson.substack.com/p/remarks-on-ai-from-nz"><li><div class="title">Remarks on AI from NZ</div><div class="domain">nealstephenson.substack.com &bull; May 17, 2025</div></li></a><a class="li" href="https://seiya.me/blog/riscv-hypervisor"><li><div class="title">Implementing a RISC-V hypervisor</div><div class="domain">seiya.me &bull; May 17, 2025</div></li></a><a class="li" href="https://xata.io/blog/xata-postgres-with-data-branching-and-pii-anonymization"><li><div class="title">Xata: Postgres with data branching and PII anonymization</div><div class="domain">xata.io &bull; May 17, 2025</div></li></a><a class="li" href="https://www.complete.org/easily-using-ssh-with-fido2-u2f-hardware-security-keys/"><li><div class="title">Easily Using SSH with FIDO2/U2F Hardware Security Keys</div><div class="domain">complete.org &bull; May 17, 2025</div></li></a><a class="li" href="https://matklad.github.io/2023/11/15/push-ifs-up-and-fors-down.html"><li><div class="title">Push Ifs Up And Fors Down</div><div class="domain">matklad.github.io &bull; May 17, 2025</div></li></a><a class="li" href="https://blog.celes42.com/the_language_that_never_was.html"><li><div class="title">The Language That Never Was</div><div class="domain">blog.celes42.com &bull; May 17, 2025</div></li></a><a class="li" href="https://burntsushi.net/unwrap/"><li><div class="title">Using unwrap() in Rust is Okay (2022)</div><div class="domain">burntsushi.net &bull; May 17, 2025</div></li></a><a class="li" href="https://mmapped.blog/posts/38-static-types-perfectionism"><li><div class="title">Static types are for perfectionists</div><div class="domain">mmapped.blog &bull; May 17, 2025</div></li></a><a class="li" href="https://aruarian.dance/blog/japan-ic-cards/"><li><div class="title">Japan's IC cards are weird and wonderful</div><div class="domain">aruarian.dance &bull; May 17, 2025</div></li></a><a class="li" href="https://mastdatabase.co.uk/blog/2025/05/o2-expose-customer-location-call-4g/"><li><div class="title">O2 VoLTE: locating any customer with a phone call</div><div class="domain">mastdatabase.co.uk &bull; May 17, 2025</div></li></a><a class="li" href="https://anonymousdata.medium.com/postman-is-logging-all-your-secrets-and-environment-variables-9c316e92d424"><li><div class="title">Postman is logging all your secrets and environment variables</div><div class="domain">anonymousdata.medium.com &bull; May 17, 2025</div></li></a><a class="li" href="https://blog.mozilla.org/security/2025/05/17/firefox-security-response-to-pwn2own-2025/"><li><div class="title">Firefox Security Response to pwn2own 2025</div><div class="domain">blog.mozilla.org &bull; May 17, 2025</div></li></a><a class="li" href="https://www.taler.net/en/news/2025-01.html"><li><div class="title">GNU Taler v1.0 released</div><div class="domain">taler.net &bull; May 17, 2025</div></li></a><a class="li" href="https://cheriot.org/cheri/history/2025/05/16/last-ten-years.html"><li><div class="title">CHERIoT: The last ten years</div><div class="domain">cheriot.org &bull; May 17, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (27)</summary><ul><a class="li" href="https://www.legacy.com/us/obituaries/name/gail-wellington-obituary?id=58418580"><li><div class="title">Gail Wellington, former Commodore executive, has died</div><div class="domain">legacy.com &bull; May 17, 2025</div></li></a><a class="li" href="https://www.cyberdemon.org/2023/07/19/bunch-of-bits.html"><li><div class="title">A disk is a bunch of bits (2023)</div><div class="domain">cyberdemon.org &bull; May 17, 2025</div></li></a><a class="li" href="https://news.ycombinator.com/item?id=44012549"><li><div class="title">Ask HN: Conversational AI to Learn a Language</div><div class="domain">news.ycombinator.com &bull; May 17, 2025</div></li></a><a class="li" href="https://www.crick.ac.uk/news/2025-05-15_new-stem-cell-model-sheds-light-on-human-amniotic-sac-development"><li><div class="title">New stem cell model sheds light on human amniotic sac development</div><div class="domain">crick.ac.uk &bull; May 17, 2025</div></li></a><a class="li" href="https://dwheeler.com/essays/dont-use-iso-14977-ebnf.html"><li><div class="title">Don't Use ISO/IEC 14977:1996 Extended Backus-Naur Form (EBNF) (2023)</div><div class="domain">dwheeler.com &bull; May 17, 2025</div></li></a><a class="li" href="https://www.theverge.com/tech/663899/wi-charge-alfred-smart-lock-wireless-power-review"><li><div class="title">I let lasers power my smart home – and I don't want to go back</div><div class="domain">theverge.com &bull; May 17, 2025</div></li></a><a class="li" href="https://www.seangoedecke.com/patience-too-cheap-to-meter/"><li><div class="title">Patience too cheap to meter</div><div class="domain">seangoedecke.com &bull; May 17, 2025</div></li></a><a class="li" href="https://dezyne.org/dezyne/manual/dezyne/dezyne.html"><li><div class="title">Dezyne Programming Language</div><div class="domain">dezyne.org &bull; May 17, 2025</div></li></a><a class="li" href="https://arxiv.org/abs/2505.09662"><li><div class="title">LLMs are more persuasive than incentivized human persuaders</div><div class="domain">arxiv.org &bull; May 17, 2025</div></li></a><a class="li" href="https://engineering.fb.com/2025/05/15/developer-tools/introducing-pyrefly-a-new-type-checker-and-ide-experience-for-python/"><li><div class="title">Pyrefly: A new type checker and IDE experience for Python</div><div class="domain">engineering.fb.com &bull; May 17, 2025</div></li></a><a class="li" href="https://new.knife.day/blog/knife-steel-comparisons/all"><li><div class="title">Show HN: I built a knife steel comparison tool</div><div class="domain">new.knife.day &bull; May 17, 2025</div></li></a><a class="li" href="https://graphthinking.blogspot.com/2025/05/leverage-and-sanction-between-coworkers.html"><li><div class="title">Unspoken Currency of Office Politics: Leverage and Sanction Between Coworkers</div><div class="domain">graphthinking.blogspot.com &bull; May 17, 2025</div></li></a><a class="li" href="https://30fps.net/pages/palette-lighting-tricks-n64/"><li><div class="title">Palette lighting tricks on the Nintendo 64</div><div class="domain">30fps.net &bull; May 17, 2025</div></li></a><a class="li" href="https://webkit.org/blog/16929/contrast-color/"><li><div class="title">How to have the browser pick a contrasting color in CSS</div><div class="domain">webkit.org &bull; May 17, 2025</div></li></a><a class="li" href="https://arxiv.org/abs/2407.12034"><li><div class="title">Understanding Transformers via N-gram Statistics</div><div class="domain">arxiv.org &bull; May 17, 2025</div></li></a><a class="li" href="https://johncarlosbaez.wordpress.com/2025/05/17/dead-stars-dont-radiate-and-shrink/"><li><div class="title">Dead Stars Don’t Radiate</div><div class="domain">johncarlosbaez.wordpress.com &bull; May 17, 2025</div></li></a><a class="li" href="https://www.techradar.com/vpn/vpn-privacy-security/we-would-be-less-confidential-than-google-proton-threatens-to-quit-switzerland-over-new-surveillance-law"><li><div class="title">Proton threatens to quit Switzerland over new surveillance law</div><div class="domain">techradar.com &bull; May 17, 2025</div></li></a><a class="li" href="https://github.com/chatmcp/mcpso"><li><div class="title">Directory of MCP Servers</div><div class="domain">github.com &bull; May 17, 2025</div></li></a><a class="li" href="https://suberic.net/~dmm/projects/mystical/README.html"><li><div class="title">Mystical</div><div class="domain">suberic.net &bull; May 17, 2025</div></li></a><a class="li" href="https://freebasic.net/"><li><div class="title">FreeBASIC is a free/open source BASIC compiler for Windows DOS and Linux</div><div class="domain">freebasic.net &bull; May 17, 2025</div></li></a><a class="li" href="https://komiko.app/video/AniSora"><li><div class="title">AniSora: Open-source anime video generation model</div><div class="domain">komiko.app &bull; May 17, 2025</div></li></a><a class="li" href="https://www.journaldulapin.com/2025/05/17/the-lost-japanese-rom-of-the-macintosh-plus-which-isnt-lost-anymore/"><li><div class="title">The Lost Japanese ROM of the Macintosh Plus</div><div class="domain">journaldulapin.com &bull; May 17, 2025</div></li></a><a class="li" href="https://www.roastmydish.online/"><li><div class="title">Show HN: Roast My Dish – AI roasts your food photos with brutal honesty</div><div class="domain">roastmydish.online &bull; May 17, 2025</div></li></a><a class="li" href="https://github.com/xtool-org/xtool"><li><div class="title">XTool – Cross-platform Xcode replacement</div><div class="domain">github.com &bull; May 17, 2025</div></li></a><a class="li" href="http://www.mrob.com/pub/comp/xmorphia/ogl/index.html"><li><div class="title">WebGL Gray-Scott Explorer (2012)</div><div class="domain">mrob.com &bull; May 17, 2025</div></li></a><a class="li" href="https://lwn.net/SubscriberLink/1017945/93d12d28178b372e/"><li><div class="title">A Linux kernel developer plays with Home Assistant: case studies</div><div class="domain">lwn.net &bull; May 17, 2025</div></li></a><a class="li" href="https://github.com/merliot/hub"><li><div class="title">Show HN: Merliot – plugging physical devices into LLMs</div><div class="domain">github.com &bull; May 17, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Seth's Blog (seths.blog)</h2> (1)</summary><ul><a class="li" href="https://seths.blog/2025/05/getting-to-next/"><li><div class="title">Getting to next</div><div class="domain">seths.blog &bull; May 17, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (12)</summary><ul><a class="li" href="https://yourstory.com/2025/05/determination-dedication-discipline-india-art-festival-photography"><li><div class="title">Determination, dedication, discipline–20 artists share how they bounce back from failure</div><div class="domain">yourstory.com &bull; May 17, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/05/dailyhunt-parent-verse-lay-off-350-employees-focus-ai-transformation"><li><div class="title">DailyHunt parent VerSe to lay off 350 employees, focus on AI-led transformation</div><div class="domain">yourstory.com &bull; May 17, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/05/open-ai-launches-ai-coding-agent-codex"><li><div class="title">Open AI launches AI coding agent Codex</div><div class="domain">yourstory.com &bull; May 17, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/05/wrapping-up-devsparks-bengaluru-2025-heres-all-that-happened"><li><div class="title">It's a wrap at DevSparks Bengaluru 2025: Here’s all that happened</div><div class="domain">yourstory.com &bull; May 17, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/05/senior-living-care-core-part-every-long-term-financial-plan"><li><div class="title">Why senior living should be a core part of every long-term financial plan</div><div class="domain">yourstory.com &bull; May 17, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/05/yourstory-launches-builders-guild-devsparks"><li><div class="title">YourStory launches Builders’ Guild to power India’s developer communities</div><div class="domain">yourstory.com &bull; May 17, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/05/gensol-cfo-jabirmahendi-mohammedraza-aga-resigns"><li><div class="title">Gensol CFO Jabirmahendi Mohammedraza Aga resigns</div><div class="domain">yourstory.com &bull; May 17, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/05/bta-bike-taxi-drivers-convene-karnataka-transport-min-office"><li><div class="title">Bike Taxi Association calls for an inclusive regulatory framework in Karnataka</div><div class="domain">yourstory.com &bull; May 17, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/05/nclt-issues-notice-to-gensol-engineering-on-iredas"><li><div class="title">NCLT issues notice to Gensol Engineering on Ireda's insolvency plea</div><div class="domain">yourstory.com &bull; May 17, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/05/delhi-govt-to-set-up-welfare-board-for-gig-workers"><li><div class="title">Delhi govt to set up welfare board for gig workers</div><div class="domain">yourstory.com &bull; May 17, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/05/pb-fintechs-dream-quarter-gaming-meets-neuroscience"><li><div class="title">PB Fintech’s dream quarter; Gaming meets neuroscience</div><div class="domain">yourstory.com &bull; May 17, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/05/devsparks-developer-summit-bengaluru-ai-ml-data"><li><div class="title">1000+ devs, 15+ learning sessions on AI/ML and data: Everything in store today at DevSparks Bengaluru 2025</div><div class="domain">yourstory.com &bull; May 17, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Cini Mini Movies (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/lDDcG9C8ycU"><li><div class="title">Head Officer Miss useing Its Power In Jail Scene From SATHURANGAM Episode - 5 | Tamil Serial #cmm</div><div class="domain">youtube.com &bull; May 17, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
