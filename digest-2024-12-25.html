@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2024-12-25</span>:</h1>
+  <p class="summary">There are 72 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Bear Blog Trending Posts (bearblog.dev)</h2> (4)</summary><ul><a class="li" href="https://unprinted.bearblog.dev/on-using-parentheses-i-have-so-much-more-to-say/"><li><div class="title">on using parentheses (i have so much more to say)</div><div class="domain">unprinted.bearblog.dev &bull; December 25, 2024</div></li></a><a class="li" href="https://christo.sh/building-agi-on-the-tokio-runtime/"><li><div class="title">My failed attempt at AGI on the Tokio Runtime</div><div class="domain">christo.sh &bull; December 25, 2024</div></li></a><a class="li" href="https://louplummer.lol/my-holiday-was-pretty-good-how-was-yours/"><li><div class="title">My Holiday Was Pretty Good, How Was Yours?</div><div class="domain">louplummer.lol &bull; December 25, 2024</div></li></a><a class="li" href="https://xavierhm.blog/i-lied-this-is-the-last-test/"><li><div class="title">I lied, this is the last test</div><div class="domain">xavierhm.blog &bull; December 25, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Big Think (bigthink.com)</h2> (2)</summary><ul><a class="li" href="https://bigthink.com/high-culture/carl-sagan-an-amazing-life-lesson/"><li><div class="title">In Carl Sagan’s death, an amazing life lesson</div><div class="domain">bigthink.com &bull; December 25, 2024</div></li></a><a class="li" href="https://bigthink.com/starts-with-a-bang/galaxies-in-universe/"><li><div class="title">Our Universe has more galaxies than Carl Sagan ever imagined</div><div class="domain">bigthink.com &bull; December 25, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">The Marginalian (feeds.feedburner.com)</h2> (2)</summary><ul><a class="li" href="https://www.themarginalian.org/2024/12/24/marett-humility/"><li><div class="title">The Art of the Sacred Pause and Despair as a Catalyst of Regeneration</div><div class="domain">themarginalian.org &bull; December 25, 2024</div></li></a><a class="li" href="https://www.themarginalian.org/2024/12/25/best-of-2024/"><li><div class="title">Birds, Loves, and Obscure Sorrows: The Best of The Marginalian 2024</div><div class="domain">themarginalian.org &bull; December 25, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">kottke.org (feeds.kottke.org)</h2> (1)</summary><ul><a class="li" href="https://kottke.org/24/12/louis-armstrong-reads-twas-the-night-before-christmas"><li><div class="title">Louis Armstrong Reads &#8216;Twas The Night Before Christmas</div><div class="domain">kottke.org &bull; December 25, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (2)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/Q8bBhqzuKyLAQcamg/what-have-been-your-most-valuable-casual-conversations-at"><li><div class="title">What Have Been Your Most Valuable Casual Conversations At Conferences?</div><div class="domain">lesswrong.com &bull; December 25, 2024</div></li></a><a class="li" href="https://www.lesswrong.com/posts/Bxv69g6MKhdEzoxTh/the-deep-lore-of-lighthaven-with-oliver-habryka-tbc-episode"><li><div class="title">The Deep Lore of LightHaven, with Oliver Habryka (TBC episode 228)</div><div class="domain">lesswrong.com &bull; December 25, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (21)</summary><ul><a class="li" href="https://rustwasm.github.io/docs/book/"><li><div class="title">Rust and WebAssembly (2019)</div><div class="domain">rustwasm.github.io &bull; December 25, 2024</div></li></a><a class="li" href="http://catless.ncl.ac.uk/Risks/5.80.html#subj1.1"><li><div class="title">IBM Christmas Virus (1987)</div><div class="domain">catless.ncl.ac.uk &bull; December 25, 2024</div></li></a><a class="li" href="https://medium.com/@abdurohman/mind-blowing-postgresql-meets-scylladbs-lightning-speed-and-monstrous-scalability-7dcda1eb1cea"><li><div class="title">PostgreSQL Meets ScyllaDB's Lightning Speed and Monstrous Scalability</div><div class="domain">medium.com &bull; December 25, 2024</div></li></a><a class="li" href="http://www.os2museum.com/wp/i-thought-i-found-a-bug/"><li><div class="title">I Thought I Found a Bug…</div><div class="domain">os2museum.com &bull; December 25, 2024</div></li></a><a class="li" href="https://ankush.dev/p/race-condition-strikes-back"><li><div class="title">How I debugged a 2 year old "fake debugged" multithreading bug</div><div class="domain">ankush.dev &bull; December 25, 2024</div></li></a><a class="li" href="https://bigdanzblog.wordpress.com/2024/12/25/electronics-test-gear-on-the-cheap/"><li><div class="title">Electronics Test Gear on the Cheap</div><div class="domain">bigdanzblog.wordpress.com &bull; December 25, 2024</div></li></a><a class="li" href="https://github.com/facundoolano/software-papers"><li><div class="title">150 papers for Software Engineers</div><div class="domain">github.com &bull; December 25, 2024</div></li></a><a class="li" href="https://lobste.rs/s/ppbc9q/38c3_lobste_rs_meetup"><li><div class="title">38C3 lobste.rs meetup</div><div class="domain">lobste.rs &bull; December 25, 2024</div></li></a><a class="li" href="https://fratti.ch/articles/posts/countering-petrostate-concerntrolls-with-tls-power-draw-measurements/"><li><div class="title">Gathering Data On TLS Power Draw Measurements</div><div class="domain">fratti.ch &bull; December 25, 2024</div></li></a><a class="li" href="https://bernsteinbear.com/blog/cps/"><li><div class="title">Into CPS, never to return</div><div class="domain">bernsteinbear.com &bull; December 25, 2024</div></li></a><a class="li" href="https://lobste.rs/s/btyxra/ncurses_rs_has_been_archived"><li><div class="title">ncurses-rs has been archived</div><div class="domain">lobste.rs &bull; December 25, 2024</div></li></a><a class="li" href="https://ashwiniag.com/interfaces-in-go-simplified-with-a-silly-analogy/"><li><div class="title">Interfaces in Go: Simplified with a silly Analogy</div><div class="domain">ashwiniag.com &bull; December 25, 2024</div></li></a><a class="li" href="https://jimmyhmiller.github.io/advent-of-papers/2024/dec-24-against-types"><li><div class="title">Against a universal definition of ‘type’</div><div class="domain">jimmyhmiller.github.io &bull; December 25, 2024</div></li></a><a class="li" href="https://github.com/workhunters/clipboard-core/tree/main"><li><div class="title">ClipboardManager for macOS which can clip images, text and can sync to your Obsidian vault</div><div class="domain">github.com &bull; December 25, 2024</div></li></a><a class="li" href="https://lowentropy.net/posts/local-https/"><li><div class="title">Expanding what HTTPS means</div><div class="domain">lowentropy.net &bull; December 25, 2024</div></li></a><a class="li" href="https://moddingwiki.shikadi.net/wiki/B800_Text"><li><div class="title">B800 Text</div><div class="domain">moddingwiki.shikadi.net &bull; December 25, 2024</div></li></a><a class="li" href="https://www.geoffreylitt.com/2024/12/22/making-programming-more-fun-with-an-ai-generated-debugger"><li><div class="title">AI-generated tools can make programming more fun</div><div class="domain">geoffreylitt.com &bull; December 25, 2024</div></li></a><a class="li" href="https://blog.adelielinux.org/2024/12/24/2024-state-of-the-adelie-linux-distribution/"><li><div class="title">2024 State of the Adélie Linux Distribution</div><div class="domain">blog.adelielinux.org &bull; December 25, 2024</div></li></a><a class="li" href="https://lobste.rs/s/jmxa6m/what_custom_keyboard_layout_are_you_using"><li><div class="title">What custom keyboard or layout are you using?</div><div class="domain">lobste.rs &bull; December 25, 2024</div></li></a><a class="li" href="https://www.ruby-lang.org/en/news/2024/12/25/ruby-3-4-0-released/"><li><div class="title">Ruby 3.4.0 Released</div><div class="domain">ruby-lang.org &bull; December 25, 2024</div></li></a><a class="li" href="https://dfarq.homeip.net/cashing-in-on-gif-by-charging-royalties/"><li><div class="title">Cashing in on GIF by charging royalties</div><div class="domain">dfarq.homeip.net &bull; December 25, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Nautilus (nautil.us)</h2> (2)</summary><ul><a class="li" href="https://nautil.us/science-from-the-tsunami-1172038/"><li><div class="title">Science from the Tsunami</div><div class="domain">nautil.us &bull; December 25, 2024</div></li></a><a class="li" href="https://nautil.us/how-to-read-a-tsunami-1172042/"><li><div class="title">How to Read a Tsunami</div><div class="domain">nautil.us &bull; December 25, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (26)</summary><ul><a class="li" href="https://arstechnica.com/gadgets/2022/03/the-ars-technica-guide-to-mechanical-keyboards/"><li><div class="title">Guide to mechanical keyboards</div><div class="domain">arstechnica.com &bull; December 25, 2024</div></li></a><a class="li" href="https://journals.aps.org/prapplied/abstract/10.1103/PhysRevApplied.22.064078"><li><div class="title">Coupling nitrogen-vacancy center spins in diamond to a grape dimer</div><div class="domain">journals.aps.org &bull; December 25, 2024</div></li></a><a class="li" href="https://www.atlasobscura.com/articles/how-to-make-ponche-navideno"><li><div class="title">Christmas Punch Requires a Formerly Forbidden Fruit</div><div class="domain">atlasobscura.com &bull; December 25, 2024</div></li></a><a class="li" href="https://devblogs.microsoft.com/oldnewthing/20241224-00/?p=110675"><li><div class="title">A design flaw in the Windows 3D Pipes screen saver pointed out by a customer</div><div class="domain">devblogs.microsoft.com &bull; December 25, 2024</div></li></a><a class="li" href="https://monoli-shop.com/products/pixlens-コピー"><li><div class="title">PixLens: A lens that turns the scenery you see into pixel art</div><div class="domain"> &bull; December 25, 2024</div></li></a><a class="li" href="https://fhur.me/posts/2024/thats-not-an-abstraction"><li><div class="title">That's not an abstraction, that's a layer of indirection</div><div class="domain">fhur.me &bull; December 25, 2024</div></li></a><a class="li" href="https://github.com/carlos-menezes/caravan"><li><div class="title">Show HN: Caravan, a flexible, transport-based logging system for TypeScript apps</div><div class="domain">github.com &bull; December 25, 2024</div></li></a><a class="li" href="https://en.wikipedia.org/wiki/Phugoid"><li><div class="title">Phugoid</div><div class="domain">en.wikipedia.org &bull; December 25, 2024</div></li></a><a class="li" href="http://marginalrevolution.com/marginalrevolution/2013/12/are-seasonal-business-cycles-inefficient.html"><li><div class="title">Is Christmas Efficient? (2013)</div><div class="domain">marginalrevolution.com &bull; December 25, 2024</div></li></a><a class="li" href="https://radiosocial.de/@hennichodernich/113714518196988714"><li><div class="title">Installing OpenWRT on an Unsupported Router</div><div class="domain">radiosocial.de &bull; December 25, 2024</div></li></a><a class="li" href="https://news.ycombinator.com/item?id=42509730"><li><div class="title">Ask HN: Resources for general purpose GPU development on Apple's M* chips?</div><div class="domain">news.ycombinator.com &bull; December 25, 2024</div></li></a><a class="li" href="https://www.youtube.com/watch?v=Kqx9blbYDB0"><li><div class="title">I Saved an Electron Microscope from the Trash [video]</div><div class="domain">youtube.com &bull; December 25, 2024</div></li></a><a class="li" href="https://www.euronews.com/2024/12/25/azerbaijani-passenger-plane-crashes-near-kazakh-city-of-aktau"><li><div class="title">Air missile accident emerges as probable cause of Azerbaijan E190tragedy</div><div class="domain">euronews.com &bull; December 25, 2024</div></li></a><a class="li" href="https://yc-map.vercel.app/"><li><div class="title">Show HN: Map of YC Startups</div><div class="domain">yc-map.vercel.app &bull; December 25, 2024</div></li></a><a class="li" href="https://sherlockproject.xyz/"><li><div class="title">Sherlock: Hunt down social media accounts by username across 400 social networks</div><div class="domain">sherlockproject.xyz &bull; December 25, 2024</div></li></a><a class="li" href="https://fstar-lang.org/"><li><div class="title">F*: A proof oriented general purpose programming language</div><div class="domain">fstar-lang.org &bull; December 25, 2024</div></li></a><a class="li" href="https://igorstechnoclub.com/server-sent-events-sse-are-underrated/"><li><div class="title">Server-Sent Events (SSE) Are Underrated</div><div class="domain">igorstechnoclub.com &bull; December 25, 2024</div></li></a><a class="li" href="https://www.os2museum.com/wp/i-thought-i-found-a-bug/"><li><div class="title">I Thought I Found a Bug</div><div class="domain">os2museum.com &bull; December 25, 2024</div></li></a><a class="li" href="https://github.com/drk1wi/portspoof"><li><div class="title">Portspoof: Emulate a valid service on all 65535 TCP ports</div><div class="domain">github.com &bull; December 25, 2024</div></li></a><a class="li" href="https://www.cnn.com/2024/12/21/travel/united-pilot-reunites-bone-marrow-donor/index.html"><li><div class="title">A pilot raced through the airport to surprise the woman who saved his life</div><div class="domain">cnn.com &bull; December 25, 2024</div></li></a><a class="li" href="https://blurbusters.com/crt-simulation-in-a-gpu-shader-looks-better-than-bfi/"><li><div class="title">CRT Simulation in a GPU Shader, Looks Better Than Black Frame Insertion</div><div class="domain">blurbusters.com &bull; December 25, 2024</div></li></a><a class="li" href="https://papermatch.mitanshu.tech/"><li><div class="title">Show HN: I made a website to semantically search ArXiv papers</div><div class="domain">papermatch.mitanshu.tech &bull; December 25, 2024</div></li></a><a class="li" href="https://www.fixbrowser.org/"><li><div class="title">Show HN: FixBrowser – a lightweight web browser created from scratch</div><div class="domain">fixbrowser.org &bull; December 25, 2024</div></li></a><a class="li" href="https://news.ycombinator.com/item?id=42506577"><li><div class="title">Merry Christmas Everyone</div><div class="domain">news.ycombinator.com &bull; December 25, 2024</div></li></a><a class="li" href="https://community.wolfram.com/c/portal/getImageAttachment?filename=tree.gif&userId=93201"><li><div class="title">T * sin (t)' ≈ Ornamented Christmas Tree (2013)</div><div class="domain">community.wolfram.com &bull; December 25, 2024</div></li></a><a class="li" href="https://www.nytimes.com/2024/12/17/science/ultrablack-velvet-ant-brazil.html"><li><div class="title">Brazilian velvet ant is ultrablack</div><div class="domain">nytimes.com &bull; December 25, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Seth's Blog (seths.blog)</h2> (1)</summary><ul><a class="li" href="https://seths.blog/2024/12/our-new-school/"><li><div class="title">Our new school</div><div class="domain">seths.blog &bull; December 25, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (9)</summary><ul><a class="li" href="https://yourstory.com/2024/12/gomechanic-eyes-over-3-fold-biz-growth-to-rs-700-cr"><li><div class="title">GoMechanic eyes over 3-fold biz growth to Rs 700 Cr by 2027 before launching IPO</div><div class="domain">yourstory.com &bull; December 25, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/12/international-destinations-and-spiritual-connections-travel-sector-2024"><li><div class="title">International destinations and spiritual connections shaped India's travel sector in 2024</div><div class="domain">yourstory.com &bull; December 25, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/12/gym-home-hyderabad-fitness-tech-startup-portl-launch-strength-training"><li><div class="title">Gym at home: Hyderabad fitness tech startup Portl launches strength training device</div><div class="domain">yourstory.com &bull; December 25, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/12/indiqubes-first-step-to-the-markets"><li><div class="title">IndiQube’s first step to the markets; Building digital clones</div><div class="domain">yourstory.com &bull; December 25, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/12/proxgy-adds--ajinkya-rahane-investor-series-a-round"><li><div class="title">Proxgy adds Ajinkya Rahane as investor in Series A round</div><div class="domain">yourstory.com &bull; December 25, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/12/hidden-books-entrepreneurial-freedom-2025"><li><div class="title">Hidden gems: 7 books for entrepreneurial freedom in 2025</div><div class="domain">yourstory.com &bull; December 25, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/12/secrets-look-expensive-elegant"><li><div class="title">10 secrets to instantly look expensive and elegant</div><div class="domain">yourstory.com &bull; December 25, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/12/tech-skills-2025-resume"><li><div class="title">How to optimise your tech resume for your next job in 2025</div><div class="domain">yourstory.com &bull; December 25, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/12/ai-clone-personateai-making-digital-doubles-real"><li><div class="title">Your AI clone is ready: How Personate.ai is bringing digital doubles to life</div><div class="domain">yourstory.com &bull; December 25, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">하루한끼 one meal a day (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=UAVZTqtQvX0"><li><div class="title">바나나 카레 만들기</div><div class="domain">youtube.com &bull; December 25, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Chess with Suren (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=cQC0mKBLC34"><li><div class="title">Carlsen's Masterclass: Effortless Victory Against the French Defense</div><div class="domain">youtube.com &bull; December 25, 2024</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>

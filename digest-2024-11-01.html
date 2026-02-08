@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2024-11-01</span>:</h1>
+  <p class="summary">There are 81 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Bear Blog Trending Posts (bearblog.dev)</h2> (4)</summary><ul><a class="li" href="https://blog.radicaldream.land/beastieball-early-access-ost-pre-order/"><li><div class="title">Beastieball Early Access Date & OST Pre-Order!!</div><div class="domain">blog.radicaldream.land &bull; November 01, 2024</div></li></a><a class="li" href="https://notes.jeddacp.com/fountain-pens-and-writing-challenges/"><li><div class="title">Fountain Pens and Writing Challenges</div><div class="domain">notes.jeddacp.com &bull; November 01, 2024</div></li></a><a class="li" href="https://yordi.me/write-for-yourself-inspire-others/"><li><div class="title">Write for Yourself, Inspire Others</div><div class="domain">yordi.me &bull; November 01, 2024</div></li></a><a class="li" href="https://brandons-journal.com/finding-the-authentic-web/"><li><div class="title">Finding the Authentic Web</div><div class="domain">brandons-journal.com &bull; November 01, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Big Think (bigthink.com)</h2> (4)</summary><ul><a class="li" href="https://bigthink.com/starts-with-a-bang/why-richard-feynman-hero/"><li><div class="title">Ask Ethan: Why isn’t Richard Feynman your personal hero?</div><div class="domain">bigthink.com &bull; November 01, 2024</div></li></a><a class="li" href="https://bigthink.com/series/devils-advocate/yuval-noah-harari-inorganic-evoluton/"><li><div class="title">What are the consequences of living as a human in an “always on” digital world?</div><div class="domain">bigthink.com &bull; November 01, 2024</div></li></a><a class="li" href="https://bigthink.com/business/grasp-essentially-contested-concepts-for-smoother-productivity/"><li><div class="title">Grasp “essentially contested concepts” for smoother productivity</div><div class="domain">bigthink.com &bull; November 01, 2024</div></li></a><a class="li" href="https://bigthink.com/thinking/everyday-philosophy-why-does-heartbreak-hurt/"><li><div class="title">Everyday Philosophy: Why does heartbreak hurt?</div><div class="domain">bigthink.com &bull; November 01, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">The Marginalian (feeds.feedburner.com)</h2> (1)</summary><ul><a class="li" href="https://www.themarginalian.org/2024/11/01/emerson-indian-summer/"><li><div class="title">Emerson on the Singular Enchantment of Indian Summer (and a Better Term for These Luminous Liminal Days Today)</div><div class="domain">themarginalian.org &bull; November 01, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">kottke.org (feeds.kottke.org)</h2> (7)</summary><ul><a class="li" href="https://kottke.org/24/11/0045544-the-newest-book-from-atla"><li><div class="title">The newest book from Atlas Obscura: Wild Life: An Explorer&#8217;s Guide to...</div><div class="domain">kottke.org &bull; November 01, 2024</div></li></a><a class="li" href="https://kottke.org/24/11/no-fate-but-what-we-make"><li><div class="title">No Fate But What We Make</div><div class="domain">kottke.org &bull; November 01, 2024</div></li></a><a class="li" href="https://kottke.org/24/11/0045537-iceland-embraced-a-shorte"><li><div class="title">Iceland embraced a shorter work week. Here&#8217;s how it turned out. &#8220;Iceland&#8217;s...</div><div class="domain">kottke.org &bull; November 01, 2024</div></li></a><a class="li" href="https://kottke.org/24/11/letter-of-recommendation-drm-free-audiobooks-from-librofm"><li><div class="title">Letter of Recommendation: DRM-free Audiobooks From Libro.fm</div><div class="domain">kottke.org &bull; November 01, 2024</div></li></a><a class="li" href="https://kottke.org/24/11/0045571-type-revival-for-film"><li><div class="title">Type Revival for Film & TV. &#8220;Type revival involves recreating period lettering...</div><div class="domain">kottke.org &bull; November 01, 2024</div></li></a><a class="li" href="https://kottke.org/24/11/0045567-crows-hold-grudges-when-a"><li><div class="title">Crows hold grudges. &#8220;When a murder of crows singles out a person...</div><div class="domain">kottke.org &bull; November 01, 2024</div></li></a><a class="li" href="https://kottke.org/24/11/a-new-visualization-of-the-atomic-nucleus"><li><div class="title">A New Visualization of the Atomic Nucleus</div><div class="domain">kottke.org &bull; November 01, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (5)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/LncYobrn3vRr7qkZW/the-slingshot-helps-with-learning"><li><div class="title">The slingshot helps with learning</div><div class="domain">lesswrong.com &bull; November 01, 2024</div></li></a><a class="li" href="https://www.lesswrong.com/posts/7AzexLYpXKMqevttN/seeking-collaborators"><li><div class="title">Seeking Collaborators</div><div class="domain">lesswrong.com &bull; November 01, 2024</div></li></a><a class="li" href="https://www.lesswrong.com/posts/xAYbPv33gvZZJZsgo/dentistry-oral-surgeons-and-the-inefficiency-of-small"><li><div class="title">Dentistry, Oral Surgeons, and the Inefficiency of Small Markets</div><div class="domain">lesswrong.com &bull; November 01, 2024</div></li></a><a class="li" href="https://www.lesswrong.com/posts/HHkYEyFaigRpczhHy/ai-88-thanks-for-the-memos"><li><div class="title">AI #88: Thanks for the Memos</div><div class="domain">lesswrong.com &bull; November 01, 2024</div></li></a><a class="li" href="https://www.lesswrong.com/posts/sZvMLWrWomN28uWA9/jargonbot-beta-test"><li><div class="title">JargonBot Beta Test</div><div class="domain">lesswrong.com &bull; November 01, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (20)</summary><ul><a class="li" href="https://blog.rust-lang.org/inside-rust/2024/10/31/this-development-cycle-in-cargo-1.83.html"><li><div class="title">This Development-cycle in Cargo: 1.83</div><div class="domain">blog.rust-lang.org &bull; November 01, 2024</div></li></a><a class="li" href="https://engineeringblog.yelp.com/2024/10/migrating-from-postgres-to-mysql.html"><li><div class="title">Migrating in-place from PostgreSQL to MySQL</div><div class="domain">engineeringblog.yelp.com &bull; November 01, 2024</div></li></a><a class="li" href="https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/bugtracker-separate/"><li><div class="title">Separation of concerns in a bug tracker</div><div class="domain">chiark.greenend.org.uk &bull; November 01, 2024</div></li></a><a class="li" href="https://blog.val.town/blog/val-town-town/"><li><div class="title">Val Town Town - Can we implement Val Town on Val Town?</div><div class="domain">blog.val.town &bull; November 01, 2024</div></li></a><a class="li" href="https://timcoatesinsights.wordpress.com/2024/10/31/why-pascal-deserves-a-second-look/"><li><div class="title">Why Pascal Deserves a Second Look</div><div class="domain">timcoatesinsights.wordpress.com &bull; November 01, 2024</div></li></a><a class="li" href="https://matt.might.net/articles/crapl/"><li><div class="title">The CRAPL: An academic-strength open source license</div><div class="domain">matt.might.net &bull; November 01, 2024</div></li></a><a class="li" href="https://pgrs.net/2024/11/01/duckdb-over-pandas-polars/"><li><div class="title">DuckDB over Pandas/Polars</div><div class="domain">pgrs.net &bull; November 01, 2024</div></li></a><a class="li" href="https://v5.chriskrycho.com/elsewhere/seeing-like-a-programmer/"><li><div class="title">Seeing Like a Programmer: Resiliency, Limits, and Moral Hazards</div><div class="domain">v5.chriskrycho.com &bull; November 01, 2024</div></li></a><a class="li" href="https://mccd.space/posts/purity/"><li><div class="title">Purity is Great for Collaboration</div><div class="domain">mccd.space &bull; November 01, 2024</div></li></a><a class="li" href="https://github.com/goblint/cil"><li><div class="title">cil: C Intermediate Language</div><div class="domain">github.com &bull; November 01, 2024</div></li></a><a class="li" href="https://www.redhat.com/en/blog/announcing-fedora-41"><li><div class="title">Announcing Fedora 41</div><div class="domain">redhat.com &bull; November 01, 2024</div></li></a><a class="li" href="https://www.iso.org/standard/82075.html"><li><div class="title">ISO/IEC 9899:2024</div><div class="domain">iso.org &bull; November 01, 2024</div></li></a><a class="li" href="https://gitlab.com/edent/activity-bot/"><li><div class="title">ActivityBot - single file PHP activity pub bot server</div><div class="domain">gitlab.com &bull; November 01, 2024</div></li></a><a class="li" href="https://www.youtube.com/watch?v=i3yVqWYFbCE"><li><div class="title">Porting ioquake3 from SDL2 to SDL3</div><div class="domain">youtube.com &bull; November 01, 2024</div></li></a><a class="li" href="https://notes.eatonphil.com/2024-10-31-checking-linearizability-in-go.html"><li><div class="title">Checking linearizability in Go</div><div class="domain">notes.eatonphil.com &bull; November 01, 2024</div></li></a><a class="li" href="https://poniesandlight.co.uk/reflect/debug_print_text/"><li><div class="title">Texture-less Text Rendering</div><div class="domain">poniesandlight.co.uk &bull; November 01, 2024</div></li></a><a class="li" href="https://lobste.rs/s/ye0eqf/what_are_you_doing_this_weekend"><li><div class="title">What are you doing this weekend?</div><div class="domain">lobste.rs &bull; November 01, 2024</div></li></a><a class="li" href="https://pragprog.com/titles/dzseven/seven-obscure-languages-in-seven-weeks/"><li><div class="title">Seven Obscure Languages in Seven Weeks</div><div class="domain">pragprog.com &bull; November 01, 2024</div></li></a><a class="li" href="https://poor.dev/blog/why-zellij/"><li><div class="title">Why Zellij?</div><div class="domain">poor.dev &bull; November 01, 2024</div></li></a><a class="li" href="https://dirkjonker.bearblog.dev/rewrite-it-in-rails/"><li><div class="title">Rewrite it in Rails</div><div class="domain">dirkjonker.bearblog.dev &bull; November 01, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Longreads (longreads.com)</h2> (2)</summary><ul><a class="li" href="https://longreads.com/2024/11/01/the-top-5-longreads-of-the-week-538/"><li><div class="title">The Top 5 Longreads of the Week</div><div class="domain">longreads.com &bull; November 01, 2024</div></li></a><a class="li" href="https://longreads.com/2024/11/01/stevie-nicks-i-believe-in-the-church-of-stevie/"><li><div class="title">Stevie Nicks: ‘I Believe in the Church of Stevie’</div><div class="domain">longreads.com &bull; November 01, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Nautilus (nautil.us)</h2> (1)</summary><ul><a class="li" href="https://nautil.us/the-mystery-of-the-siberian-craters-1051317/"><li><div class="title">The Mystery of the Siberian Craters</div><div class="domain">nautil.us &bull; November 01, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Letters of Note (news.lettersofnote.com)</h2> (1)</summary><ul><a class="li" href="https://news.lettersofnote.com/p/i-am-danny-devitos-mother"><li><div class="title">I am Danny DeVito’s mother</div><div class="domain">news.lettersofnote.com &bull; November 01, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (21)</summary><ul><a class="li" href="https://wiki.xxiivv.com/site/now_lie_in_it.html"><li><div class="title">Now lie in it: an uxntal retrospective</div><div class="domain">wiki.xxiivv.com &bull; November 01, 2024</div></li></a><a class="li" href="https://research.google/blog/scalable-self-improvement-for-compiler-optimization/"><li><div class="title">Scalable self-improvement for compiler optimization</div><div class="domain">research.google &bull; November 01, 2024</div></li></a><a class="li" href="https://pubs.acs.org/doi/10.1021/acs.cgd.2c01017"><li><div class="title">Ritonavir Form III: A Coincidental Concurrent Discovery</div><div class="domain">pubs.acs.org &bull; November 01, 2024</div></li></a><a class="li" href="https://www.ashu1461.com/interview-gone-wrong/"><li><div class="title">Interview gone wrong</div><div class="domain">ashu1461.com &bull; November 01, 2024</div></li></a><a class="li" href="https://eieio.games/paccam/"><li><div class="title">PacCam: Pac-Man controlled with your face</div><div class="domain">eieio.games &bull; November 01, 2024</div></li></a><a class="li" href="https://www.getxtp.com/blog/meet-xtp"><li><div class="title">XTP: Make Squishy Software</div><div class="domain">getxtp.com &bull; November 01, 2024</div></li></a><a class="li" href="https://gist.github.com/rendello/d37552507a389656e248f3255a618127"><li><div class="title">UTF-8 characters that behave oddly when the case is changed</div><div class="domain">gist.github.com &bull; November 01, 2024</div></li></a><a class="li" href="https://makeityourself.org/"><li><div class="title">Make It Yourself</div><div class="domain">makeityourself.org &bull; November 01, 2024</div></li></a><a class="li" href="https://www.ycombinator.com/companies/pythagora-gpt-pilot/jobs/CNr5q8B-ux-designer-wanted-to-design-a-new-user-experience-for-developers-in-the-ai-world"><li><div class="title">Pythagora (GPT Pilot) (YC W24) Is Hiring</div><div class="domain">ycombinator.com &bull; November 01, 2024</div></li></a><a class="li" href="https://martinfowler.com/articles/strangler-fig-mobile-apps.html"><li><div class="title">Using the Strangler Fig with Mobile Apps</div><div class="domain">martinfowler.com &bull; November 01, 2024</div></li></a><a class="li" href="https://www.theguardian.com/science/2024/nov/01/infinite-monkey-theorem-keyboard-tyepwriter-shakespeare-study"><li><div class="title">Universe would die before monkey with keyboard writes Shakespeare, study finds</div><div class="domain">theguardian.com &bull; November 01, 2024</div></li></a><a class="li" href="https://github.com/mxmlnkn/ratarmount"><li><div class="title">Show HN: Ratarmount 1.0.0 – Rapid access to large archives via a FUSE filesystem</div><div class="domain">github.com &bull; November 01, 2024</div></li></a><a class="li" href="https://oasis-model.github.io/"><li><div class="title">Oasis: A Universe in a Transformer</div><div class="domain">oasis-model.github.io &bull; November 01, 2024</div></li></a><a class="li" href="https://blog.jonudell.net/2021/09/03/notes-for-an-annotation-sdk/"><li><div class="title">Notes for an Annotation SDK (2021)</div><div class="domain">blog.jonudell.net &bull; November 01, 2024</div></li></a><a class="li" href="https://mitmuseum.mit.edu/collections/object/2007.030.011"><li><div class="title">Throbac: THrifty Roman numeral BAckwards-looking Computer</div><div class="domain">mitmuseum.mit.edu &bull; November 01, 2024</div></li></a><a class="li" href="https://github.com/vadimdemedes/ink"><li><div class="title">Ink: React for Interactive CLI Apps</div><div class="domain">github.com &bull; November 01, 2024</div></li></a><a class="li" href="https://arstechnica.com/health/2024/11/more-dentists-are-pulling-healthy-teeth-to-sell-pricy-implants-experts-warn/"><li><div class="title">A new dental scam is to pull healthy teeth to sell you expensive fake ones</div><div class="domain">arstechnica.com &bull; November 01, 2024</div></li></a><a class="li" href="https://arxiv.org/abs/2410.23168"><li><div class="title">TokenFormer: Rethinking Transformer Scaling with Tokenized Model Parameters</div><div class="domain">arxiv.org &bull; November 01, 2024</div></li></a><a class="li" href="https://www.pixelmator.com/blog/2024/11/01/a-new-home-for-pixelmator/"><li><div class="title">Apple Acquires Pixelmator</div><div class="domain">pixelmator.com &bull; November 01, 2024</div></li></a><a class="li" href="https://www.tandfonline.com/doi/full/10.1080/00934690.2024.2409503#abstract"><li><div class="title">Alexander the Great's tunic identified in royal tomb at Vergina</div><div class="domain">tandfonline.com &bull; November 01, 2024</div></li></a><a class="li" href="https://news.ycombinator.com/item?id=42017580"><li><div class="title">Ask HN: Who is hiring? (November 2024)</div><div class="domain">news.ycombinator.com &bull; November 01, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Quanta Magazine (quantamagazine.org)</h2> (1)</summary><ul><a class="li" href="https://www.quantamagazine.org/maths-bunkbed-conjecture-has-been-debunked-20241101/"><li><div class="title">Math’s ‘Bunkbed Conjecture’ Has Been Debunked</div><div class="domain">quantamagazine.org &bull; November 01, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Reasons to be Cheerful (reasonstobecheerful.world)</h2> (1)</summary><ul><a class="li" href="https://reasonstobecheerful.world/no-matter-who-wins-workplaces-more-equitable/"><li><div class="title">No Matter Who Wins, Workplaces Will Keep Getting More Equitable</div><div class="domain">reasonstobecheerful.world &bull; November 01, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Seth's Blog (seths.blog)</h2> (1)</summary><ul><a class="li" href="https://seths.blog/2024/11/wont-get-fooled-again-2/"><li><div class="title">“Won’t get fooled again”</div><div class="domain">seths.blog &bull; November 01, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Trevor I. Lasn Thoughts (trevorlasn.com)</h2> (1)</summary><ul><a class="li" href="https://www.trevorlasn.com/blog/pkl-apple-new-configuration-language"><li><div class="title">Pkl: Apple's New Configuration Language That Could Replace JSON and YAML</div><div class="domain">trevorlasn.com &bull; November 01, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Sympolymathesy, by Chris Krycho (v5.chriskrycho.com)</h2> (1)</summary><ul><a class="li" href="https://v5.chriskrycho.com/journal/read-the-manual/uptime/"><li><div class="title">[journal] Read the Manual: uptime</div><div class="domain">v5.chriskrycho.com &bull; November 01, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (8)</summary><ul><a class="li" href="https://yourstory.com/2024/11/walmart-india-slashes-losses-by-68-to-rs-154-crore-in-fy24"><li><div class="title">Walmart India slashes losses by 68% YoY to Rs 154 Cr in FY24</div><div class="domain">yourstory.com &bull; November 01, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/11/openai-releases-chatgpt-search-engine-sam-altman-google-rival"><li><div class="title">OpenAI takes on Google, releases ChatGPT search engine</div><div class="domain">yourstory.com &bull; November 01, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/11/ola-electric-vehicle-registrations-up-74-at-41-605-units-october"><li><div class="title">Ola Electric vehicle registrations up 74% at 41,605 units in Oct</div><div class="domain">yourstory.com &bull; November 01, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/11/sebi-proposes-doubling-threshold-for-high-value-debt"><li><div class="title">SEBI proposes doubling threshold for 'High Value Debt Listed Entities' to Rs 1,000 Cr</div><div class="domain">yourstory.com &bull; November 01, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/10/shine-bright-like-a-lab-grown-diamond-mental-well-being-diwali"><li><div class="title">Shine bright like a lab-grown diamond!; Mental well-being during festivities</div><div class="domain">yourstory.com &bull; November 01, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/11/tim-cook-apple-enthusiasm-in-india-sets-all-time-revenue-record"><li><div class="title">Tim Cook ‘excited by the enthusiasm’ in India as Apple sets all-time revenue record</div><div class="domain">yourstory.com &bull; November 01, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/11/amazon-profit-soars-55-percent-q3-driven-cloud-growth-andy-jassy"><li><div class="title">Amazon profit soars 55% in Q3 driven by cloud growth</div><div class="domain">yourstory.com &bull; November 01, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/10/demystifying-composability-a-roadmap-for-indian-retailers"><li><div class="title">Demystifying composability: A roadmap for Indian retailers</div><div class="domain">yourstory.com &bull; November 01, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">The Closer Look (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=_Urb3xl0VPY"><li><div class="title">The Writing Trap That Spoiled Beetlejuice 2</div><div class="domain">youtube.com &bull; November 01, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">minutephysics (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=-gWHh1a5FOA"><li><div class="title">I'm giving away 14 years of drawings</div><div class="domain">youtube.com &bull; November 01, 2024</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>

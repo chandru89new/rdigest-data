@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-07-12</span>:</h1>
+  <p class="summary">There are 65 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Bear Blog Trending Posts (bearblog.dev)</h2> (3)</summary><ul><a class="li" href="https://forkingmad.blog/can-we-just-have-the-news/"><li><div class="title">Can we just have the news?</div><div class="domain">forkingmad.blog &bull; July 12, 2025</div></li></a><a class="li" href="https://mirroredworld.bearblog.dev/minimalism-is-a-cult/"><li><div class="title">Minimalism is a Cult</div><div class="domain">mirroredworld.bearblog.dev &bull; July 12, 2025</div></li></a><a class="li" href="https://blog.avas.space/llm-superstitions/"><li><div class="title">LLM prompt superstitions</div><div class="domain">blog.avas.space &bull; July 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Marginalian (feeds.feedburner.com)</h2> (1)</summary><ul><a class="li" href="https://www.themarginalian.org/2025/07/11/bats/"><li><div class="title">Why Bats Shouldn’t Exist: The Limits of Knowledge, the Pitfalls of Prediction, and the Triumph of the Possible Over the Probable</div><div class="domain">themarginalian.org &bull; July 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">kottke.org (feeds.kottke.org)</h2> (1)</summary><ul><a class="li" href="https://kottke.org/25/07/0047135-not-a-joke-there-is"><li><div class="title">Not a joke: there is a new Commodore 64 coming out. &#8220;The...</div><div class="domain">kottke.org &bull; July 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Go Make Things (gomakethings.com)</h2> (1)</summary><ul><a class="li" href="https://gomakethings.com/spreading-joy/"><li><div class="title">Spreading Joy</div><div class="domain">gomakethings.com &bull; July 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (2)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/3xjgM7hcNznACRzBi/the-jackpot-age"><li><div class="title">the jackpot age</div><div class="domain">lesswrong.com &bull; July 12, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/zuuQwueBpv9ZCpNuX/vitalik-s-response-to-ai-2027"><li><div class="title">Vitalik's Response to AI 2027</div><div class="domain">lesswrong.com &bull; July 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (11)</summary><ul><a class="li" href="https://github.com/microsoft/sca-fuzzer"><li><div class="title">sca-fuzzer: Revizor - a fuzzer to search for microarchitectural leaks in CPUs</div><div class="domain">github.com &bull; July 12, 2025</div></li></a><a class="li" href="https://github.com/aeron-io/aeron"><li><div class="title">aeron: Efficient reliable UDP unicast, UDP multicast, and IPC message transport</div><div class="domain">github.com &bull; July 12, 2025</div></li></a><a class="li" href="https://angr.io/"><li><div class="title">angr (open-source binary analysis platform for Python)</div><div class="domain">angr.io &bull; July 12, 2025</div></li></a><a class="li" href="https://github.com/vanhoefm/tunneltester"><li><div class="title">Haunted by Legacy: Discovering and Exploiting Vulnerable Tunnelling Hosts</div><div class="domain">github.com &bull; July 12, 2025</div></li></a><a class="li" href="https://github.com/vpetersson/dslf"><li><div class="title">Damn Small Link Forwarder (DSLF): a bit.ly replacement written in rust</div><div class="domain">github.com &bull; July 12, 2025</div></li></a><a class="li" href="https://www.granola.ai/blog/dont-animate-height"><li><div class="title">Don't animate height</div><div class="domain">granola.ai &bull; July 12, 2025</div></li></a><a class="li" href="https://store.steampowered.com/news/app/1366540/view/543361383085900510"><li><div class="title">Dyson Sphere Program's new multithreading framework</div><div class="domain">store.steampowered.com &bull; July 12, 2025</div></li></a><a class="li" href="https://www.kvr.at/posts/easy-dynamic-dispatch-using-GLIBC-hardware-capabilities/"><li><div class="title">Easy dynamic dispatch using GLIBC Hardware Capabilities</div><div class="domain">kvr.at &bull; July 12, 2025</div></li></a><a class="li" href="https://leanrada.com/notes/simple-live-reload/"><li><div class="title">Simple live reload for developing static sites</div><div class="domain">leanrada.com &bull; July 12, 2025</div></li></a><a class="li" href="https://jollygoodsw.wordpress.com/2025/03/13/working-through-writing-a-c-compiler/"><li><div class="title">Working through ‘Writing A C Compiler’</div><div class="domain">jollygoodsw.wordpress.com &bull; July 12, 2025</div></li></a><a class="li" href="https://hanamirb.org/blog/2025/07/11/hanami-and-the-elephant-in-the-room/"><li><div class="title">Hanami and the elephant in the room</div><div class="domain">hanamirb.org &bull; July 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (23)</summary><ul><a class="li" href="http://www.pianorollmusic.org/rolldatabase.php"><li><div class="title">Scanned piano rolls database</div><div class="domain">pianorollmusic.org &bull; July 12, 2025</div></li></a><a class="li" href="https://www.hillelwayne.com/post/influential-dead-languages/"><li><div class="title">Mostly dead influential programming languages (2020)</div><div class="domain">hillelwayne.com &bull; July 12, 2025</div></li></a><a class="li" href="https://users.cs.utah.edu/~elb/folklore/mel-annotated/node1.html#SECTION00010000000000000000"><li><div class="title">The Story of Mel, A Real Programmer, Annotated (1996)</div><div class="domain">users.cs.utah.edu &bull; July 12, 2025</div></li></a><a class="li" href="https://www.vox.com/culture/419070/childhood-literacy-college-students-reading-crisis-ai"><li><div class="title">How bad are childhood literacy rates?</div><div class="domain">vox.com &bull; July 12, 2025</div></li></a><a class="li" href="https://eieio.games/blog/a-million-realtime-chess-boards-in-a-single-process/"><li><div class="title">Running a million-board chess MMO in a single process</div><div class="domain">eieio.games &bull; July 12, 2025</div></li></a><a class="li" href="https://www.nytimes.com/2025/07/12/science/daniel-kleppner-dead.html"><li><div class="title">Daniel Kleppner, Physicist Who Brought Atomic Clock Precision to GPS, Has Died</div><div class="domain">nytimes.com &bull; July 12, 2025</div></li></a><a class="li" href="https://www.independent.co.uk/news/health/arizona-plague-death-cases-b2787325.html"><li><div class="title">Arizona resident dies from the plague less than 24 hours after showing symptoms</div><div class="domain">independent.co.uk &bull; July 12, 2025</div></li></a><a class="li" href="https://atomic14.substack.com/p/vibe-coding-a-pcb-surprisingly-good"><li><div class="title">Vibe-Coding a PCB – surprisingly good</div><div class="domain">atomic14.substack.com &bull; July 12, 2025</div></li></a><a class="li" href="https://www.designarena.ai/"><li><div class="title">Show HN: DesignArena – crowdsourced benchmark for AI-generated UI/UX</div><div class="domain">designarena.ai &bull; July 12, 2025</div></li></a><a class="li" href="https://patchstack.com/articles/critical-malware-found-in-gravityforms-official-plugin-site/"><li><div class="title">Malware found in official gravityforms plugin indicating supply chain breach</div><div class="domain">patchstack.com &bull; July 12, 2025</div></li></a><a class="li" href="https://skyandtelescope.org/astronomy-news/proposed-noaa-budget-kills-program-to-prevent-satellite-collisions/"><li><div class="title">Proposed NOAA Budget Kills Program Designed to Prevent Satellite Collisions</div><div class="domain">skyandtelescope.org &bull; July 12, 2025</div></li></a><a class="li" href="https://jsdate.wtf"><li><div class="title">New Date("wtf") – How well do you know JavaScript's Date class?</div><div class="domain">jsdate.wtf &bull; July 12, 2025</div></li></a><a class="li" href="https://ellsberg.substack.com/p/free-speech"><li><div class="title">Supreme Court's ruling practically wipes out free speech for sex writing online</div><div class="domain">ellsberg.substack.com &bull; July 12, 2025</div></li></a><a class="li" href="https://nautil.us/is-this-new-swim-stroke-the-fastest-yet-235511/"><li><div class="title">The fish kick may be the fastest subsurface swim stroke yet (2015)</div><div class="domain">nautil.us &bull; July 12, 2025</div></li></a><a class="li" href="https://github.com/jtang613/GhidrAssistMCP"><li><div class="title">A better Ghidra MCP server – GhidrAssistMCP</div><div class="domain">github.com &bull; July 12, 2025</div></li></a><a class="li" href="https://inventwithpython.com/blog/lost-av-chapter.html"><li><div class="title">Lost Chapter of Automate the Boring Stuff: Audio, Video, and Webcams in Python</div><div class="domain">inventwithpython.com &bull; July 12, 2025</div></li></a><a class="li" href="https://langfa.st/"><li><div class="title">Show HN: I made a JSFiddle-style playground to test and share prompts fast</div><div class="domain">langfa.st &bull; July 12, 2025</div></li></a><a class="li" href="https://www.medrxiv.org/content/10.1101/2025.06.20.25329961v1"><li><div class="title">Light exposure at night predicts incidence of cardiovascular diseases</div><div class="domain">medrxiv.org &bull; July 12, 2025</div></li></a><a class="li" href="https://blog.decryption.net.au/posts/macpaint.html"><li><div class="title">MacPaint Art from the Mid-80s Still Looks Great Today</div><div class="domain">blog.decryption.net.au &bull; July 12, 2025</div></li></a><a class="li" href="https://github.com/MoonshotAI/Kimi-K2"><li><div class="title">Kimi k2 largest open source SOTA model?</div><div class="domain">github.com &bull; July 12, 2025</div></li></a><a class="li" href="https://twitter.com/sama/status/1943837550369812814"><li><div class="title">Sam Altman delays open weights model release</div><div class="domain">twitter.com &bull; July 12, 2025</div></li></a><a class="li" href="https://www.serdashop.com/HDDClicker"><li><div class="title">HDD Clicker generates HDD clicking sounds, based on HDD Led activity</div><div class="domain">serdashop.com &bull; July 12, 2025</div></li></a><a class="li" href="https://eprint.iacr.org/2025/1237.pdf"><li><div class="title">Cheeky Computer Scientist replicates Quantum Factoring record with a dog [pdf]</div><div class="domain">eprint.iacr.org &bull; July 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Seth's Blog (seths.blog)</h2> (1)</summary><ul><a class="li" href="https://seths.blog/2025/07/flailing/"><li><div class="title">Flailing</div><div class="domain">seths.blog &bull; July 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Diplomat (thediplomat.com)</h2> (1)</summary><ul><a class="li" href="https://thediplomat.com/2025/07/the-biggest-misconception-about-the-philippines-south-china-sea-case-against-china/"><li><div class="title">The Biggest Misconception About the Philippines’ South China Sea Case Against China</div><div class="domain">thediplomat.com &bull; July 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">XML.com Atom feed for articles and news items (xml.com)</h2> (1)</summary><ul><a class="li" href="https://www.xml.com/news/2025-07-25-years-xml-summer-school/"><li><div class="title">Come and celebrate 25 Years of the XML Summer School – Join Us in Oxford!</div><div class="domain">xml.com &bull; July 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (14)</summary><ul><a class="li" href="https://yourstory.com/2025/07/surrealism-positioning-design-montreal-museum-art-creativity-photography"><li><div class="title">Surrealism, positioning, design – how Montreal Museum of Fine Arts educates and provokes viewers</div><div class="domain">yourstory.com &bull; July 12, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/tesla-maharashtra-rto-nod-start-showroom-evs-elon-musk"><li><div class="title">Tesla gets regulatory go-ahead to sell EVs in Maharashtra</div><div class="domain">yourstory.com &bull; July 12, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/equity-boom-bihar-top-10-stock-investor-states-2025"><li><div class="title">Bihar Breaks Barriers: Enters India’s Top 10 for Equity Investors</div><div class="domain">yourstory.com &bull; July 12, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/incentive-scheme-worth-rs-1-345-cr-proposed-rare-earth-magnets-china"><li><div class="title">Incentive scheme worth Rs 1,345 Cr proposed for rare earth magnets production in India</div><div class="domain">yourstory.com &bull; July 12, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/x-slashes-subscription-fees-india-48"><li><div class="title">X slashes subscription fees in India by up to 48%</div><div class="domain">yourstory.com &bull; July 12, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/ai-talent-wars-google-hires-ai-coding-startup-windsurf-ceo-open-ai"><li><div class="title">AI talent war intensifies, as Google hires Windsurf CEO, others in $2.4B deal: Report</div><div class="domain">yourstory.com &bull; July 12, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/mhi-support-deployment-5-600-e-trucks-pm-e-drive"><li><div class="title">MHI to support deployment of 5,600 e-trucks under PM E-DRIVE</div><div class="domain">yourstory.com &bull; July 12, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/swiggy-expands-esop-pool-rs-150-crore"><li><div class="title">Swiggy expands ESOP pool, allots grants worth Rs 150 Cr</div><div class="domain">yourstory.com &bull; July 12, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/ai-transforming-music-production-performance"><li><div class="title">How AI is changing music creation, production, and performance</div><div class="domain">yourstory.com &bull; July 12, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/skillveri-xr-simulation-training"><li><div class="title">How Skillveri Bridges India's Industrial Skills Gap</div><div class="domain">yourstory.com &bull; July 12, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/quick-fashion-startup-blip-shuts-shop-year"><li><div class="title">Quick fashion startup Blip shuts shop after under a year</div><div class="domain">yourstory.com &bull; July 12, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/building-diagnostics-network-aarthi-scans"><li><div class="title">Building a diagnostics network; Giving brands control over data</div><div class="domain">yourstory.com &bull; July 12, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/sparring-player-junior-athletes-spar-with-senior-pros-to-get-match-ready"><li><div class="title">Game, set, match: Sparring Player helps junior athletes spar with senior pros to get match-ready</div><div class="domain">yourstory.com &bull; July 12, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/navigating-compliance-how-emerging-beauty-startups-regulations"><li><div class="title">Navigating compliance: How emerging beauty startups tackle regulatory challenges in India</div><div class="domain">yourstory.com &bull; July 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Thought Emporium (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/VBg4eNehNUs"><li><div class="title">Open Sauce is nearly here!!</div><div class="domain">youtube.com &bull; July 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Mohak Mangal (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=1s1tBSkrK2M"><li><div class="title">The REAL STORY of Puja Khedkar | New Details Revealed</div><div class="domain">youtube.com &bull; July 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Lex Fridman (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=vagyIcmIGOQ"><li><div class="title">DHH: Future of Programming, AI, Ruby on Rails, Productivity & Parenting | Lex Fridman Podcast #474</div><div class="domain">youtube.com &bull; July 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">India in Pixels by Ashris (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/NePkgVqp5WM"><li><div class="title">Why Some Indians Can Drink Dairy and Others Can't?</div><div class="domain">youtube.com &bull; July 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">CinemaStix (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=110-zXTzXmM"><li><div class="title">they needed an actor who could actually act, so they pulled someone who’d basically only ever done…</div><div class="domain">youtube.com &bull; July 12, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Academy of Ideas (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=XJzx--8Db2k"><li><div class="title">The Psychology of War - Are We Doomed to Destroy Ourselves?</div><div class="domain">youtube.com &bull; July 12, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>

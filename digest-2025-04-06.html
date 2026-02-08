@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-04-06</span>:</h1>
+  <p class="summary">There are 61 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Bear Blog Trending Posts (bearblog.dev)</h2> (3)</summary><ul><a class="li" href="https://robertbirming.com/keep-writing/"><li><div class="title">Just keep writing</div><div class="domain">robertbirming.com &bull; April 06, 2025</div></li></a><a class="li" href="https://writtenbywinter.bearblog.dev/new-post-new-new-new/"><li><div class="title">Cannibalism as a Metaphor For Love | personal essay</div><div class="domain">writtenbywinter.bearblog.dev &bull; April 06, 2025</div></li></a><a class="li" href="https://edriffles.us/populist-deception-the-economic-disaster-of-tariffs/"><li><div class="title">Populist Deception: The Economic Disaster of Tariffs</div><div class="domain">edriffles.us &bull; April 06, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Big Think (bigthink.com)</h2> (1)</summary><ul><a class="li" href="https://bigthink.com/mini-philosophy/misunderstood-philosophy-quotes/"><li><div class="title">5 of the most misunderstood quotes in philosophy</div><div class="domain">bigthink.com &bull; April 06, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Marginalian (feeds.feedburner.com)</h2> (1)</summary><ul><a class="li" href="https://www.themarginalian.org/2025/04/06/rockwell-kent-n-by-e/"><li><div class="title">How to Be More Alive: Artist and Philosopher Rockwell Kent on Breaking the Trance of Near-living</div><div class="domain">themarginalian.org &bull; April 06, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">kottke.org (feeds.kottke.org)</h2> (3)</summary><ul><a class="li" href="https://kottke.org/25/04/0046580-a-rare-interview-with-tra"><li><div class="title">A rare interview with Tracy Chapman. &#8220;But I grew up across the...</div><div class="domain">kottke.org &bull; April 06, 2025</div></li></a><a class="li" href="https://kottke.org/25/04/photos-of-the-hands-off-protests"><li><div class="title">Photos of the Hands Off! Protests</div><div class="domain">kottke.org &bull; April 06, 2025</div></li></a><a class="li" href="https://kottke.org/25/04/0046582-this-is-the-holocaust-sto"><li><div class="title">This Is the Holocaust Story I Said I Wouldn&#8217;t Write by Taffy...</div><div class="domain">kottke.org &bull; April 06, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (5)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/GBfMkaBdAnWLab2dj/how-much-progress-actually-happens-in-theoretical-physics"><li><div class="title">How much progress actually happens in theoretical physics?</div><div class="domain">lesswrong.com &bull; April 06, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/3ki4mt4BA6eTx56Tc/deepmind-an-approach-to-technical-agi-safety-and-security"><li><div class="title">DeepMind: An Approach to Technical AGI Safety and Security</div><div class="domain">lesswrong.com &bull; April 06, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/X6Nx9QzzvDhj8Ek9w/a-slow-guide-to-confronting-doom"><li><div class="title">A Slow Guide to Confronting Doom</div><div class="domain">lesswrong.com &bull; April 06, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/ZE4xhZHDHHXPuXzxh/a-collection-of-approaches-to-confronting-doom-and-my"><li><div class="title">A collection of approaches to confronting doom, and my thoughts on them</div><div class="domain">lesswrong.com &bull; April 06, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/Ry9KCEDBMGWoEMGAj/the-lizardman-and-the-black-hat-bobcat"><li><div class="title">The Lizardman and the Black Hat Bobcat</div><div class="domain">lesswrong.com &bull; April 06, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Irrational Exuberance (lethain.com)</h2> (2)</summary><ul><a class="li" href="https://lethain.com/images-consistent-book/"><li><div class="title">Making images consistent for book.</div><div class="domain">lethain.com &bull; April 06, 2025</div></li></a><a class="li" href="https://lethain.com/links-script-book/"><li><div class="title">Script for consistent linking within book.</div><div class="domain">lethain.com &bull; April 06, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (17)</summary><ul><a class="li" href="https://github.com/mtgrosser/nodo"><li><div class="title">nodo: Call Node.js from Ruby</div><div class="domain">github.com &bull; April 06, 2025</div></li></a><a class="li" href="https://www.npr.org/2025/04/04/nx-s1-5328683/microsoft-50-year-anniversary-computing-revolution"><li><div class="title">Microsoft turns 50: A look back at everything from the Altair to the Zune</div><div class="domain">npr.org &bull; April 06, 2025</div></li></a><a class="li" href="https://art.teleportacia.org/observation/vernacular/"><li><div class="title">Vernacular Web: Indigenous and Barbarians</div><div class="domain">art.teleportacia.org &bull; April 06, 2025</div></li></a><a class="li" href="https://aerique.blogspot.com/2011/01/baby-steps-into-genetic-programming.html"><li><div class="title">Baby Steps into Genetic Programming</div><div class="domain">aerique.blogspot.com &bull; April 06, 2025</div></li></a><a class="li" href="https://github.com/melisgl/try"><li><div class="title">Try: test anti-framework via CL Condition System</div><div class="domain">github.com &bull; April 06, 2025</div></li></a><a class="li" href="https://surfingcomplexity.blog/2025/04/06/model-error/"><li><div class="title">Model error</div><div class="domain">surfingcomplexity.blog &bull; April 06, 2025</div></li></a><a class="li" href="https://github.com/sebadob/rauthy"><li><div class="title">rauthy: OpenID Connect Single Sign-On Identity & Access Management</div><div class="domain">github.com &bull; April 06, 2025</div></li></a><a class="li" href="https://lobste.rs/s/4ixrx6/tag_proposal_atproto"><li><div class="title">Tag proposal: ATProto</div><div class="domain">lobste.rs &bull; April 06, 2025</div></li></a><a class="li" href="http://oldvcr.blogspot.com/2025/04/maclynx-beta-6-back-to-power-mac.html"><li><div class="title">MacLynx beta 6: back to the Power Mac</div><div class="domain">oldvcr.blogspot.com &bull; April 06, 2025</div></li></a><a class="li" href="https://utcc.utoronto.ca/~cks/space/blog/sysadmin/OpenSSHConfigOrderMatters"><li><div class="title">The order of files in /etc/ssh/sshd_config.d/ matters (and may surprise you)</div><div class="domain">utcc.utoronto.ca &bull; April 06, 2025</div></li></a><a class="li" href="https://0x1.pt/2025/04/06/the-insanity-of-being-a-software-engineer/"><li><div class="title">The Insanity of Being a Software Engineer</div><div class="domain">0x1.pt &bull; April 06, 2025</div></li></a><a class="li" href="https://0xda.de/blog/2025/04/hiding-elements-that-require-javascript-without-javascript/"><li><div class="title">Hiding elements that require JavaScript without JavaScript</div><div class="domain">0xda.de &bull; April 06, 2025</div></li></a><a class="li" href="https://huijzer.xyz/posts/jas/"><li><div class="title">Done with GitHub Actions Supply Chain Attacks</div><div class="domain">huijzer.xyz &bull; April 06, 2025</div></li></a><a class="li" href="https://bernsteinbear.com/blog/nix-by-hand/"><li><div class="title">Nix derivations by hand, without guessing</div><div class="domain">bernsteinbear.com &bull; April 06, 2025</div></li></a><a class="li" href="https://easylang.online/apps/story.html"><li><div class="title">A short story of my programming language Easylang</div><div class="domain">easylang.online &bull; April 06, 2025</div></li></a><a class="li" href="https://arch.dog/bark/2025-03-30-infrastructure"><li><div class="title">Ran out of infrastructure titles</div><div class="domain">arch.dog &bull; April 06, 2025</div></li></a><a class="li" href="https://robcasloz.github.io/blog/2024/02/14/when-should-a-compiler-expand-garbage-collection-barriers.html"><li><div class="title">When should a compiler expand garbage collection barriers?</div><div class="domain">robcasloz.github.io &bull; April 06, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (17)</summary><ul><a class="li" href="https://lareviewofbooks.org/blog/essays/reflections-mirror-stage/"><li><div class="title">Reflections on the Mirror Stage</div><div class="domain">lareviewofbooks.org &bull; April 06, 2025</div></li></a><a class="li" href="http://beyondloom.com/blog/images.html"><li><div class="title">The Treachery of Image Files (2020)</div><div class="domain">beyondloom.com &bull; April 06, 2025</div></li></a><a class="li" href="https://larstofus.com/2025/04/05/how-deleting-multiplayer-from-the-engine-can-save-memory/"><li><div class="title">Deleting multiplayer from the Unreal engine can save memory</div><div class="domain">larstofus.com &bull; April 06, 2025</div></li></a><a class="li" href="https://motifanalytics.medium.com/my-browser-wasmt-prepared-for-this-using-duckdb-apache-arrow-and-web-workers-in-real-life-e3dd4695623d"><li><div class="title">My Browser WASM't Prepared for This. Using DuckDB, Apache Arrow and Web Workers</div><div class="domain">motifanalytics.medium.com &bull; April 06, 2025</div></li></a><a class="li" href="https://www.bleepingcomputer.com/news/security/max-severity-rce-flaw-discovered-in-widely-used-apache-parquet/"><li><div class="title">Max severity RCE flaw discovered in widely used Apache Parquet</div><div class="domain">bleepingcomputer.com &bull; April 06, 2025</div></li></a><a class="li" href="https://www.ycombinator.com/companies/foundry/jobs/WvDDlqc-founding-fullstack-engineer-building-the-future-of-browser-agents"><li><div class="title">Foundry (YC F24) Is Hiring</div><div class="domain">ycombinator.com &bull; April 06, 2025</div></li></a><a class="li" href="https://elenacross7.medium.com/%EF%B8%8F-the-s-in-mcp-stands-for-security-91407b33ed6b"><li><div class="title">The “S” in MCP Stands for Security</div><div class="domain">elenacross7.medium.com &bull; April 06, 2025</div></li></a><a class="li" href="https://sciop.net/uploads/"><li><div class="title">SciOp torrents: download, seed erased US Gov sites and datasets</div><div class="domain">sciop.net &bull; April 06, 2025</div></li></a><a class="li" href="https://old.reddit.com/r/RTLSDR/comments/1jsr9jv/eavesdropping_on_smartphone_1356mhz_nfc_polling/"><li><div class="title">Eavesdropping on smartphone 13.56MHz NFC polling during screen wake-up/unlock</div><div class="domain">old.reddit.com &bull; April 06, 2025</div></li></a><a class="li" href="https://standardebooks.org"><li><div class="title">Standard Ebooks: liberated ebooks, carefully produced for the true book lover</div><div class="domain">standardebooks.org &bull; April 06, 2025</div></li></a><a class="li" href="https://gerrymcgovern.com/data-centers-contain-90-crap-data/"><li><div class="title">Data centers contain 90% crap data</div><div class="domain">gerrymcgovern.com &bull; April 06, 2025</div></li></a><a class="li" href="https://technicshistory.com/2025/04/06/microcomputers-the-first-wave-responding-to-altair/"><li><div class="title">Microcomputers – The First Wave: Responding to Altair</div><div class="domain">technicshistory.com &bull; April 06, 2025</div></li></a><a class="li" href="http://www.moohar.com/blog/why_domino"><li><div class="title">Why Lotus Domino?</div><div class="domain">moohar.com &bull; April 06, 2025</div></li></a><a class="li" href="https://www.capitoltrades.com/"><li><div class="title">Capital Trades: Tracking Stock Market Transactions of Politicians</div><div class="domain">capitoltrades.com &bull; April 06, 2025</div></li></a><a class="li" href="https://gtoolkit.com//"><li><div class="title">Glamorous Toolkit</div><div class="domain">gtoolkit.com &bull; April 06, 2025</div></li></a><a class="li" href="https://derflounder.wordpress.com/2025/04/06/rsync-replaced-with-openrsync-on-macos-sequoia/"><li><div class="title">Rsync replaced with openrsync on macOS Sequoia</div><div class="domain">derflounder.wordpress.com &bull; April 06, 2025</div></li></a><a class="li" href="https://www.nbcnews.com/news/us-news/5-nurses-work-floor-massachusetts-hospital-brain-tumors-rcna199798"><li><div class="title">Five Nurses who work on the same floor at hospital have brain tumors</div><div class="domain">nbcnews.com &bull; April 06, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Seth's Blog (seths.blog)</h2> (1)</summary><ul><a class="li" href="https://seths.blog/2025/04/hobby-mindset/"><li><div class="title">Hobby mindset</div><div class="domain">seths.blog &bull; April 06, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Diplomat (thediplomat.com)</h2> (1)</summary><ul><a class="li" href="https://thediplomat.com/2025/04/new-law-gives-government-a-foothold-in-indian-muslim-waqf-properties/"><li><div class="title">New Law Gives Government a Foothold in Indian Muslim Waqf Properties</div><div class="domain">thediplomat.com &bull; April 06, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Trevor I. Lasn Thoughts (trevorlasn.com)</h2> (1)</summary><ul><a class="li" href="https://www.trevorlasn.com/blog/cve-2025-29927-nextjs-middleware"><li><div class="title">CVE-2025-29927 - Next.js Middleware Bypass Explained In Simple Terms</div><div class="domain">trevorlasn.com &bull; April 06, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (8)</summary><ul><a class="li" href="https://yourstory.com/2025/04/nykaa-projects-strong-q4-fy25-revenue-gmv-growth-beauty-vertical"><li><div class="title">Nykaa projects strong Q4 FY25 revenue growth</div><div class="domain">yourstory.com &bull; April 06, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/04/zomato-food-delivery-business-coo-steps-down-mamaearth-cmo-resign"><li><div class="title">Zomato Food Delivery business COO steps down</div><div class="domain">yourstory.com &bull; April 06, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/04/seafood-exporters-see-severe-impact-from-us-tariff"><li><div class="title">Indian seafood exporters see severe impact from US tariffs</div><div class="domain">yourstory.com &bull; April 06, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/04/swiggy-receives-rs-759-crore-it-notice-a-second-one-in-a-month"><li><div class="title">Swiggy receives Rs 7.59 crore IT notice, a second one in a month</div><div class="domain">yourstory.com &bull; April 06, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/04/govt-approves-second-fund-of-funds-indian-startups-india-desk"><li><div class="title">Govt approves second Fund of Funds for Indian startups, sets up Startup India Desk</div><div class="domain">yourstory.com &bull; April 06, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/04/indian-food-french-cooking-vivek-salunkhe-restaurant-sri-lanka-resort"><li><div class="title">Indian food cooked French; Revitalising traditional Pichwai art</div><div class="domain">yourstory.com &bull; April 06, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/04/genres-generations-india-art-festival-creativity-photography"><li><div class="title">Genres and generations: Artistic highlights and insights from IAF 2025 exhibition</div><div class="domain">yourstory.com &bull; April 06, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/04/ai-powered-workforce-planning-talent-recruitment-artificial-intelligence"><li><div class="title">AI-powered workforce planning: Predicting talent needs before they arise</div><div class="domain">yourstory.com &bull; April 06, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">toha film (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=hOQG_MySGEw"><li><div class="title">House in Nagano / 長野の家</div><div class="domain">youtube.com &bull; April 06, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>

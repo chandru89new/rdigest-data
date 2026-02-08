@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-03-16</span>:</h1>
+  <p class="summary">There are 74 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Bear Blog Trending Posts (bearblog.dev)</h2> (8)</summary><ul><a class="li" href="https://linkage.lol/amazon-exit-toolkit/"><li><div class="title">Amazon Exit Toolkit</div><div class="domain">linkage.lol &bull; March 16, 2025</div></li></a><a class="li" href="https://blog.avas.space/immature/"><li><div class="title">does being alone make you immature?</div><div class="domain">blog.avas.space &bull; March 16, 2025</div></li></a><a class="li" href="https://blog.dante.cool/you-should-watch-on-cinema/"><li><div class="title">you should watch On Cinema.</div><div class="domain">blog.dante.cool &bull; March 16, 2025</div></li></a><a class="li" href="https://fusednix.com/satechi-slim-x1-bluetooth-keyboard-not-bad-but-theres-a-serious-firmware-issue-causing-key-chatter/"><li><div class="title">Satechi Slim X1 Bluetooth Keyboard – not bad, but there's a serious firmware issue causing key chatter</div><div class="domain">fusednix.com &bull; March 16, 2025</div></li></a><a class="li" href="https://robertbirming.com/stop-searching-start-living/"><li><div class="title">Stop searching, start living</div><div class="domain">robertbirming.com &bull; March 16, 2025</div></li></a><a class="li" href="https://blog.avas.space/ai-scapegoat/"><li><div class="title">personal accountability in the age of AI</div><div class="domain">blog.avas.space &bull; March 16, 2025</div></li></a><a class="li" href="https://unsorted.bearblog.dev/to-gaslight-others-you-must-gaslight-yourself-first/"><li><div class="title">to gaslight others you must gaslight yourself first..</div><div class="domain">unsorted.bearblog.dev &bull; March 16, 2025</div></li></a><a class="li" href="https://tiramisu.bearblog.dev/no-alibi/"><li><div class="title">a man with no alibi</div><div class="domain">tiramisu.bearblog.dev &bull; March 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">kottke.org (feeds.kottke.org)</h2> (3)</summary><ul><a class="li" href="https://kottke.org/25/03/0046439-ross-andersen-writes-thou"><li><div class="title">Ross Andersen writes thoughtfully about LeBron James&#8217; protectiveness of his son Bronny...</div><div class="domain">kottke.org &bull; March 16, 2025</div></li></a><a class="li" href="https://kottke.org/25/03/0046440-something-new-from-radioh"><li><div class="title">Something new from Radiohead on the horizon? Radiohead Members Form New LLP,...</div><div class="domain">kottke.org &bull; March 16, 2025</div></li></a><a class="li" href="https://kottke.org/25/03/0046441-beginning-april-20-pride"><li><div class="title">Beginning April 20, Pride & Prejudice (w/ Keira Knightley & Matthew Macfadyen)...</div><div class="domain">kottke.org &bull; March 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Go Make Things (gomakethings.com)</h2> (1)</summary><ul><a class="li" href="https://gomakethings.com/kipo-and-the-age-of-the-wonderbeasts/"><li><div class="title">Kipo and the Age of the Wonderbeasts</div><div class="domain">gomakethings.com &bull; March 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (4)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/rwAZKjizBmM3vFEga/any-benefit-mindset-and-any-reason-reasoning"><li><div class="title">Any-Benefit Mindset and Any-Reason Reasoning</div><div class="domain">lesswrong.com &bull; March 16, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/bFdoSCiJF9z8fdhsf/announcing-exp-experimental-summer-workshop-on-collective-1"><li><div class="title">Announcing EXP: Experimental Summer Workshop on Collective Cognition</div><div class="domain">lesswrong.com &bull; March 16, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/8wxTCSHwhkfHXaSYB/i-make-several-million-dollars-per-year-and-have-hundreds-of"><li><div class="title">I make several million dollars per year and have hundreds of thousands of followers—what is the straightest line path to utilizing these resources to reduce existential-level AI threats?</div><div class="domain">lesswrong.com &bull; March 16, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/MnYnCFgT3hF6LJPwn/why-white-box-redteaming-makes-me-feel-weird-1"><li><div class="title">Why White-Box Redteaming Makes Me Feel Weird</div><div class="domain">lesswrong.com &bull; March 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (19)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=vpedn6HkP7E"><li><div class="title">Frontside, Effection, and Structured Concurrency</div><div class="domain">youtube.com &bull; March 16, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=-aGyDDoaHww"><li><div class="title">The many ends of programming</div><div class="domain">youtube.com &bull; March 16, 2025</div></li></a><a class="li" href="https://oldvcr.blogspot.com/2025/03/more-pro-for-dec-professional-380.html"><li><div class="title">More pro for the DEC Professional 380 (featuring PRO/VENIX)</div><div class="domain">oldvcr.blogspot.com &bull; March 16, 2025</div></li></a><a class="li" href="https://www.youtube.com/live/Jff0pIbj8PM?t=7267"><li><div class="title">Grove: A Bidirectionally typed collaborative structure editor calculus</div><div class="domain">youtube.com &bull; March 16, 2025</div></li></a><a class="li" href="https://blog.codingconfessions.com/p/context-switching-and-performance"><li><div class="title">Context Switching and Performance: What Every Developer Should Know</div><div class="domain">blog.codingconfessions.com &bull; March 16, 2025</div></li></a><a class="li" href="https://codeberg.org/calebccff/6502.sh"><li><div class="title">6502.sh: a 6502 emulator in Bourne shell</div><div class="domain">codeberg.org &bull; March 16, 2025</div></li></a><a class="li" href="https://youtu.be/PUv66718DII"><li><div class="title">Inventing On Principle (2012)</div><div class="domain">youtu.be &bull; March 16, 2025</div></li></a><a class="li" href="https://lobste.rs/s/wsw3ue/what_s_best_git_tutorial"><li><div class="title">What’s the best git tutorial?</div><div class="domain">lobste.rs &bull; March 16, 2025</div></li></a><a class="li" href="https://blog.gitbutler.com/going-down-the-rabbit-hole-of-gits-new-bundle-uri/"><li><div class="title">Going down the rabbit hole of Git's new bundle-uri</div><div class="domain">blog.gitbutler.com &bull; March 16, 2025</div></li></a><a class="li" href="https://northflank.com/blog/why-we-ditched-next-js-and-never-looked-back"><li><div class="title">Why we ditched Next.js and never looked back</div><div class="domain">northflank.com &bull; March 16, 2025</div></li></a><a class="li" href="https://www.reddit.com/r/golang/comments/1jbzuot/someone_copied_our_github_project_made_it_look/"><li><div class="title">Attacker Copied GitHub Project, Added Fake Stars and Malicious Code</div><div class="domain">reddit.com &bull; March 16, 2025</div></li></a><a class="li" href="https://social.treehouse.systems/@cas/114171610700263367"><li><div class="title">A 6502 emulator written in busybox ash</div><div class="domain">social.treehouse.systems &bull; March 16, 2025</div></li></a><a class="li" href="https://simonsafar.com/2020/sbcl/"><li><div class="title">Exploration of SBCL Internals</div><div class="domain">simonsafar.com &bull; March 16, 2025</div></li></a><a class="li" href="https://www.phoronix.com/news/Git-2.49-Released"><li><div class="title">Git 2.49 released with faster packing, Rust foreign language interface</div><div class="domain">phoronix.com &bull; March 16, 2025</div></li></a><a class="li" href="https://thephd.dev/c2y-the-defer-technical-specification-its-time-go-go-go"><li><div class="title">The Defer Technical Specification: It Is Time</div><div class="domain">thephd.dev &bull; March 16, 2025</div></li></a><a class="li" href="https://wattenberger.com/thoughts/our-interfaces-have-lost-their-senses"><li><div class="title">Our interfaces have lost their senses</div><div class="domain">wattenberger.com &bull; March 16, 2025</div></li></a><a class="li" href="https://felix-knorr.net/posts/2025-03-16-helix-review.html"><li><div class="title">A Review of Helix after 1.5 Years</div><div class="domain">felix-knorr.net &bull; March 16, 2025</div></li></a><a class="li" href="https://docs.numerique.gouv.fr/"><li><div class="title">Docs: Open-source collaborative notes, wiki, and documentation platform by the French government</div><div class="domain">docs.numerique.gouv.fr &bull; March 16, 2025</div></li></a><a class="li" href="https://www.fast.ai/posts/2023-05-03-mojo-launch.html"><li><div class="title">Mojo may be the biggest programming language advance in decades (2023)</div><div class="domain">fast.ai &bull; March 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (29)</summary><ul><a class="li" href="https://nicolashery.com/decoding-json-sum-types-in-go/"><li><div class="title">Decoding JSON sum types in Go without panicking</div><div class="domain">nicolashery.com &bull; March 16, 2025</div></li></a><a class="li" href="https://readbunce.com/p/how-i-got-100-off-my-train-travel"><li><div class="title">How I got 100% off my train travel</div><div class="domain">readbunce.com &bull; March 16, 2025</div></li></a><a class="li" href="https://news.err.ee/1609634600/muons-used-to-test-the-condition-of-a-road-bridge-in-estonia"><li><div class="title">Muons used to test the condition of a road bridge in Estonia</div><div class="domain">news.err.ee &bull; March 16, 2025</div></li></a><a class="li" href="https://thejpster.org.uk/blog/blog-2024-08-08/"><li><div class="title">Rust on the RP2350 (2024)</div><div class="domain">thejpster.org.uk &bull; March 16, 2025</div></li></a><a class="li" href="https://artint.info/index.html"><li><div class="title">Artificial Intelligence: Foundations of Computational Agents</div><div class="domain">artint.info &bull; March 16, 2025</div></li></a><a class="li" href="https://www.emaculation.com/doku.php/sheepshaver"><li><div class="title">SheepShaver is an open source PowerPC Apple Macintosh emulator</div><div class="domain">emaculation.com &bull; March 16, 2025</div></li></a><a class="li" href="https://shkspr.mobi/blog/2025/03/towards-extracting-content-from-an-lcp-protected-epub/"><li><div class="title">Extracting content from an LCP “protected” ePub</div><div class="domain">shkspr.mobi &bull; March 16, 2025</div></li></a><a class="li" href="https://github.com/casparwylie/cascii-core"><li><div class="title">Show HN: Cascii – A portable ASCII diagram builder written in vanilla JavaScript</div><div class="domain">github.com &bull; March 16, 2025</div></li></a><a class="li" href="https://printedlabs.uni-bayreuth.de/en"><li><div class="title">PrintedLabs – 3D printable optical experiment equipment</div><div class="domain">printedlabs.uni-bayreuth.de &bull; March 16, 2025</div></li></a><a class="li" href="https://simonwillison.net/2025/Mar/16/olmo2/"><li><div class="title">Mlx-community/OLMo-2-0325-32B-Instruct-4bit</div><div class="domain">simonwillison.net &bull; March 16, 2025</div></li></a><a class="li" href="https://brainsteam.co.uk/2025/2/15/personal-archive-hoarder/"><li><div class="title">Building a Personal Archive with Hoarder</div><div class="domain">brainsteam.co.uk &bull; March 16, 2025</div></li></a><a class="li" href="https://drive.google.com/file/d/1_9V6lBTIfDsPdKCohQBc5Ed5UzDbnsrI/view?usp=sharing"><li><div class="title">Show HN: My high school team’s space probe</div><div class="domain">drive.google.com &bull; March 16, 2025</div></li></a><a class="li" href="https://www.gl-inet.com/products/gl-rm1/"><li><div class="title">Comet open source remote KVM from GL-iNet</div><div class="domain">gl-inet.com &bull; March 16, 2025</div></li></a><a class="li" href="https://antirez.com/news/147"><li><div class="title">Big LLMs weights are a piece of history</div><div class="domain">antirez.com &bull; March 16, 2025</div></li></a><a class="li" href="https://twitter.com/nexta_tv/status/1901244199220982213"><li><div class="title">Military grade sonic weapon is used against protesters in Serbia</div><div class="domain">twitter.com &bull; March 16, 2025</div></li></a><a class="li" href="https://dicedb.io/"><li><div class="title">DiceDB</div><div class="domain">dicedb.io &bull; March 16, 2025</div></li></a><a class="li" href="https://tanzer.io/"><li><div class="title">Tänzer: The lovable web server framework for Tcl</div><div class="domain">tanzer.io &bull; March 16, 2025</div></li></a><a class="li" href="https://tante.cc/2025/03/03/who-is-free-software-for/"><li><div class="title">Who Is Free Software For?</div><div class="domain">tante.cc &bull; March 16, 2025</div></li></a><a class="li" href="https://repository.kulib.kyoto-u.ac.jp/dspace/bitstream/2433/139379/1/42_161.pdf"><li><div class="title">“QWERTY wasn't designed to solve type bar jamming” [pdf]</div><div class="domain">repository.kulib.kyoto-u.ac.jp &bull; March 16, 2025</div></li></a><a class="li" href="https://github.com/yilinjuang/wify"><li><div class="title">Show HN: Quickly connect to WiFi by scanning text, no typing needed</div><div class="domain">github.com &bull; March 16, 2025</div></li></a><a class="li" href="https://www.ycombinator.com/companies/kastle/jobs/XSq5nJT-founding-applied-ai-engineer-at-kastle"><li><div class="title">Kastle (YC S24) Is Hiring Engineer #3</div><div class="domain">ycombinator.com &bull; March 16, 2025</div></li></a><a class="li" href="https://dfarq.homeip.net/when-the-dotcom-bubble-burst/"><li><div class="title">When the Dotcom Bubble Burst</div><div class="domain">dfarq.homeip.net &bull; March 16, 2025</div></li></a><a class="li" href="https://picolisp.com/wiki/?Documentation"><li><div class="title">Everything Picolisp can do, and more</div><div class="domain">picolisp.com &bull; March 16, 2025</div></li></a><a class="li" href="https://stevelosh.com/blog/2013/09/teach-dont-tell/"><li><div class="title">Teach, Don't Tell (2013)</div><div class="domain">stevelosh.com &bull; March 16, 2025</div></li></a><a class="li" href="https://dfarq.homeip.net/microsofts-1986-ipo/"><li><div class="title">Microsoft's 1986 IPO</div><div class="domain">dfarq.homeip.net &bull; March 16, 2025</div></li></a><a class="li" href="https://bye-tracker.net"><li><div class="title">Show HN: 10 teams are racing to build a pivotal tracker replacement</div><div class="domain">bye-tracker.net &bull; March 16, 2025</div></li></a><a class="li" href="https://www.tcl-lang.org/man/tcl8.5/tutorial/tcltutorial.html"><li><div class="title">Tcl Tutorial</div><div class="domain">tcl-lang.org &bull; March 16, 2025</div></li></a><a class="li" href="https://dfarq.homeip.net/amiga-600-the-amiga-no-one-wanted/"><li><div class="title">Amiga 600: From the Amiga No One Wanted to Retro Favorite</div><div class="domain">dfarq.homeip.net &bull; March 16, 2025</div></li></a><a class="li" href="https://github.com/suitenumerique/docs"><li><div class="title">Docs – Open source alternative to Notion or Outline</div><div class="domain">github.com &bull; March 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Seth's Blog (seths.blog)</h2> (1)</summary><ul><a class="li" href="https://seths.blog/2025/03/asking-for-directions/"><li><div class="title">Asking for directions</div><div class="domain">seths.blog &bull; March 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Diplomat (thediplomat.com)</h2> (1)</summary><ul><a class="li" href="https://thediplomat.com/2025/03/bougainville-continues-its-struggle-for-independence/"><li><div class="title">Bougainville Continues Its Struggle For Independence</div><div class="domain">thediplomat.com &bull; March 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (8)</summary><ul><a class="li" href="https://yourstory.com/2025/03/bis-cracks-down-on-e-commerce-giants-over-non-certified-products"><li><div class="title">BIS cracks down on ecommerce giants over non-certified products</div><div class="domain">yourstory.com &bull; March 16, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/03/art-exhibition-avyanna-oorja-cause-inspiration-creativity-photography"><li><div class="title">60 artworks, 12 artists: This exhibition celebrates art with a cause</div><div class="domain">yourstory.com &bull; March 16, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/03/ai-has-potential-to-enable-collusion-regulators-needs-cci-chief"><li><div class="title">AI has potential to enable collusion; regulators need to adopt forward-looking approach: CCI chief</div><div class="domain">yourstory.com &bull; March 16, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/03/uber-in-talks-to-acquire-ev-ride-hailing-firm-blusmart"><li><div class="title">Uber in talks to acquire EV ride-hailing firm BluSmart: Report</div><div class="domain">yourstory.com &bull; March 16, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/03/ola-electric-insolvency-rosmerta-digital-non-payment-nclt-electric-vehicle"><li><div class="title">Ola Electric subsidiary faces insolvency as operational creditor alleges non-payment of dues</div><div class="domain">yourstory.com &bull; March 16, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/03/ministry-of-beers-big-goa-bet-fine-dining-with-a-twist"><li><div class="title">Ministry of Beer’s big Goa bet; Fine dining with a twist</div><div class="domain">yourstory.com &bull; March 16, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/03/ai-payment-environment-business-creativity-entrepreneur-innovation-education-quiz"><li><div class="title">AI, payment, environment: test your business creativity with Edition 179 of our weekly quiz!</div><div class="domain">yourstory.com &bull; March 16, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/03/edtechs-comeback-story-innovation-shaping-stronger-future"><li><div class="title">Edtech’s comeback story: How innovation is shaping a stronger future</div><div class="domain">yourstory.com &bull; March 16, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>

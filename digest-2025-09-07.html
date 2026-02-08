@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-09-07</span>:</h1>
+  <p class="summary">There are 83 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Bear Blog Trending Posts (bearblog.dev)</h2> (2)</summary><ul><a class="li" href="https://secret-humanist.bearblog.dev/we-are-not-speaking-from-a-framework-of-shared-humanity/"><li><div class="title">We are not speaking from a framework of shared humanity</div><div class="domain">secret-humanist.bearblog.dev &bull; September 07, 2025</div></li></a><a class="li" href="https://phong.bearblog.dev/i-turned-my-personal-website-into-a-now-page/"><li><div class="title">I turned my personal website into a Now page</div><div class="domain">phong.bearblog.dev &bull; September 07, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Kevin Martin Jose (kevinmartinjose.com)</h2> (1)</summary><ul><a class="li" href="https://kevinmartinjose.com/2025/09/08/binformer-part-0-can-we-speed-up-model-training-by-using-binary-weights/"><li><div class="title">Thinking aloud: Can we speed up model training by using binary weights?</div><div class="domain">kevinmartinjose.com &bull; September 07, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (18)</summary><ul><a class="li" href="https://steelcake.com/blog/nvme-zig/"><li><div class="title">Hitting Peak File IO Performance with Zig</div><div class="domain">steelcake.com &bull; September 07, 2025</div></li></a><a class="li" href="https://vegard.blog.engen.priv.no/?p=518"><li><div class="title">Longhorn – a Kubernetes-native filesystem</div><div class="domain">vegard.blog.engen.priv.no &bull; September 07, 2025</div></li></a><a class="li" href="https://www.androidauthority.com/psa-spotify-messages-tracker-urls-3593498/"><li><div class="title">Ever shared a Spotify link on the internet? Someone you don't know can now message you</div><div class="domain">androidauthority.com &bull; September 07, 2025</div></li></a><a class="li" href="https://github.com/Quuxplusone/difdef"><li><div class="title">difdef: Utility to do an N-way diff and N-way merge, for N>2</div><div class="domain">github.com &bull; September 07, 2025</div></li></a><a class="li" href="https://johnmacfarlane.net/beyond-markdown.html"><li><div class="title">Beyond Markdown (2018)</div><div class="domain">johnmacfarlane.net &bull; September 07, 2025</div></li></a><a class="li" href="https://world.hey.com/dhh/engineering-excellence-starts-on-edge-c36e4c59"><li><div class="title">Engineering excellence starts on edge</div><div class="domain">world.hey.com &bull; September 07, 2025</div></li></a><a class="li" href="https://sembr.org"><li><div class="title">Semantic Line Breaks</div><div class="domain">sembr.org &bull; September 07, 2025</div></li></a><a class="li" href="https://www.relax.software/blog/flix-effects-intro/"><li><div class="title">Algebraic Effects in Practice with Flix</div><div class="domain">relax.software &bull; September 07, 2025</div></li></a><a class="li" href="https://eli.thegreenplace.net/2025/hilbert-space-treating-functions-as-vectors/"><li><div class="title">Hilbert space: treating functions as vectors</div><div class="domain">eli.thegreenplace.net &bull; September 07, 2025</div></li></a><a class="li" href="https://eli.thegreenplace.net/2016/the-expression-problem-and-its-solutions"><li><div class="title">The Expression Problem and its solutions (2016)</div><div class="domain">eli.thegreenplace.net &bull; September 07, 2025</div></li></a><a class="li" href="https://picocss.com"><li><div class="title">Pico CSS • Minimal CSS Framework for semantic HTML</div><div class="domain">picocss.com &bull; September 07, 2025</div></li></a><a class="li" href="https://www.openmymind.net/Everything-Is-A-u8-array/"><li><div class="title">Everything is a []u8</div><div class="domain">openmymind.net &bull; September 07, 2025</div></li></a><a class="li" href="https://lobste.rs/s/odeql3/do_you_have_personal_wiki"><li><div class="title">Do you have a personal wiki?</div><div class="domain">lobste.rs &bull; September 07, 2025</div></li></a><a class="li" href="https://michael.stapelberg.ch/posts/2025-09-07-bye-intel-hi-amd-9950x3d/"><li><div class="title">Bye Intel, hi AMD! I’m done after 2 dead Intels</div><div class="domain">michael.stapelberg.ch &bull; September 07, 2025</div></li></a><a class="li" href="https://www.marginalia.nu/log/a_125_ai_assistants/"><li><div class="title">The CoPilot productivity paradox</div><div class="domain">marginalia.nu &bull; September 07, 2025</div></li></a><a class="li" href="https://blog.clew.se/posts/secret-web/"><li><div class="title">A Secret Web</div><div class="domain">blog.clew.se &bull; September 07, 2025</div></li></a><a class="li" href="https://jamesoswald.dev/posts/jai-result/"><li><div class="title">Emulating Rust's Result and ? in Jai with Metaprogramming</div><div class="domain">jamesoswald.dev &bull; September 07, 2025</div></li></a><a class="li" href="https://lobste.rs/s/dnsdwz/how_can_i_help_volunteer_opportunities"><li><div class="title">How can I help? Volunteer opportunities: Lobste.rs, OSS, programming, Internet related, other?</div><div class="domain">lobste.rs &bull; September 07, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (27)</summary><ul><a class="li" href="https://www.infoq.com/presentations/Clojure-Expression-Problem/"><li><div class="title">Clojure's Solutions to the Expression Problem</div><div class="domain">infoq.com &bull; September 07, 2025</div></li></a><a class="li" href="https://eli.thegreenplace.net/2016/a-polyglots-guide-to-multiple-dispatch/"><li><div class="title">A polyglot's guide to multiple-dispatch</div><div class="domain">eli.thegreenplace.net &bull; September 07, 2025</div></li></a><a class="li" href="https://www.differentshelf.com/cassette-logic/"><li><div class="title">Cassette Logic: technology that never dies but is already dead</div><div class="domain">differentshelf.com &bull; September 07, 2025</div></li></a><a class="li" href="https://github.com/alshdavid/ion"><li><div class="title">Show HN: Ion, a Rust/Tokio powered JavaScript runtime for embedders</div><div class="domain">github.com &bull; September 07, 2025</div></li></a><a class="li" href="https://mahesh-hegde.github.io/posts/what_debugger_can/"><li><div class="title">Things you can do with a debugger but not with print debugging</div><div class="domain">mahesh-hegde.github.io &bull; September 07, 2025</div></li></a><a class="li" href="https://bottlefire.dev/"><li><div class="title">Show HN: Bottlefire – Build single-executable microVMs from Docker images</div><div class="domain">bottlefire.dev &bull; September 07, 2025</div></li></a><a class="li" href="https://en.wikipedia.org/wiki/Axial_twist_theory"><li><div class="title">Axial twist theory</div><div class="domain">en.wikipedia.org &bull; September 07, 2025</div></li></a><a class="li" href="https://stlab.cc/tips/about-mvc.html"><li><div class="title">The key to getting MVC correct is understanding what models are</div><div class="domain">stlab.cc &bull; September 07, 2025</div></li></a><a class="li" href="https://lwn.net/Articles/1034121/"><li><div class="title">The “impossibly small” Microdot web framework</div><div class="domain">lwn.net &bull; September 07, 2025</div></li></a><a class="li" href="https://www.valleyofdoubt.com/p/taking-buildkite-from-a-side-project"><li><div class="title">Taking Buildkite from a side project to a global company</div><div class="domain">valleyofdoubt.com &bull; September 07, 2025</div></li></a><a class="li" href="https://lists.ding.net/othersite/isoc-internet-history/2009/oct/msg00000.html"><li><div class="title">What is the origin of the private network address 192.168.*.*? (2009)</div><div class="domain">lists.ding.net &bull; September 07, 2025</div></li></a><a class="li" href="https://github.com/pion/example-webrtc-applications/blob/master/gocv-to-webrtc/README.md"><li><div class="title">Show HN: OpenCV over WebRTC (in Go)</div><div class="domain">github.com &bull; September 07, 2025</div></li></a><a class="li" href="https://www.abortretry.fail/p/the-story-of-creative-technology"><li><div class="title">Creative Technology: The Sound Blaster</div><div class="domain">abortretry.fail &bull; September 07, 2025</div></li></a><a class="li" href="https://eli.thegreenplace.net/2016/the-expression-problem-and-its-solutions/"><li><div class="title">The Expression Problem and its solutions (2016)</div><div class="domain">eli.thegreenplace.net &bull; September 07, 2025</div></li></a><a class="li" href="https://www.tcl-lang.org/community/tcl2017/assets/talk93/Paper.html"><li><div class="title">SQLite's Use of Tcl (2017)</div><div class="domain">tcl-lang.org &bull; September 07, 2025</div></li></a><a class="li" href="https://www.guru3d.com/story/intel-arc-pro-b50-gpu-launched-at-for-compact-workstations/"><li><div class="title">Intel Arc Pro B50 GPU Launched at $349 for Compact Workstations</div><div class="domain">guru3d.com &bull; September 07, 2025</div></li></a><a class="li" href="https://molecheck.info/"><li><div class="title">Show HN: I'm a dermatologist and I vibe coded a skin cancer learning app</div><div class="domain">molecheck.info &bull; September 07, 2025</div></li></a><a class="li" href="https://www.csiro.au/en/news/All/Articles/2025/August/Metals-out-of-martian-dirt"><li><div class="title">How to make metals from Martian dirt</div><div class="domain">csiro.au &bull; September 07, 2025</div></li></a><a class="li" href="https://www.cs.unc.edu/techreports/86-020.pdf"><li><div class="title">No Silver Bullet: Essence and Accidents of Software Engineering (1986) [pdf]</div><div class="domain">cs.unc.edu &bull; September 07, 2025</div></li></a><a class="li" href="https://allan.reyes.sh/posts/keeping-secrets-out-of-logs/"><li><div class="title">Keeping secrets out of logs (2024)</div><div class="domain">allan.reyes.sh &bull; September 07, 2025</div></li></a><a class="li" href="https://maxleiter.com/blog/formatting"><li><div class="title">Formatting code should be unnecessary</div><div class="domain">maxleiter.com &bull; September 07, 2025</div></li></a><a class="li" href="https://www.trendingbuffalo.com/life/uncle-steves-buffalo/everything-from-1991-radio-shack-ad-now/"><li><div class="title">Everything from 1991 Radio Shack ad I now do with my phone (2014)</div><div class="domain">trendingbuffalo.com &bull; September 07, 2025</div></li></a><a class="li" href="https://www.datagubbe.se/sceneherit/"><li><div class="title">The demo scene is dying, but that's alright</div><div class="domain">datagubbe.se &bull; September 07, 2025</div></li></a><a class="li" href="https://twitter.com/samhenrigold/status/1964428927159382261"><li><div class="title">The MacBook has a sensor that knows the exact angle of the screen hinge</div><div class="domain">twitter.com &bull; September 07, 2025</div></li></a><a class="li" href="https://github.com/SoapboxRaceWorld/GameLauncher_NFSW/issues/276"><li><div class="title">Game launcher installs Root CA certificate on your machine (2024)</div><div class="domain">github.com &bull; September 07, 2025</div></li></a><a class="li" href="https://jetgirl.art/blogs-used-to-be-very-different/"><li><div class="title">Blogs used to be different</div><div class="domain">jetgirl.art &bull; September 07, 2025</div></li></a><a class="li" href="https://mitchivin.com/"><li><div class="title">Show HN: I recreated Windows XP as my portfolio</div><div class="domain">mitchivin.com &bull; September 07, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Seth's Blog (seths.blog)</h2> (1)</summary><ul><a class="li" href="https://seths.blog/2025/09/false-scarcity/"><li><div class="title">False scarcity</div><div class="domain">seths.blog &bull; September 07, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Stepan Parunashvili (stopa.io)</h2> (1)</summary><ul><a class="li" href="https://stopa.io/post/297"><li><div class="title">iPhone dumbphone</div><div class="domain">stopa.io &bull; September 07, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Trevor I. Lasn Thoughts (trevorlasn.com)</h2> (1)</summary><ul><a class="li" href="https://www.trevorlasn.com/blog/anthropic-sequential-thinking-mcp"><li><div class="title">Anthropic's Sequential Thinking MCP</div><div class="domain">trevorlasn.com &bull; September 07, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (17)</summary><ul><a class="li" href="https://yourstory.com/2025/09/cbic-to-address-industry-concerns-on-gst-rate-cut"><li><div class="title">CBIC to address industry concerns if GST rate cuts don't reach consumers</div><div class="domain">yourstory.com &bull; September 07, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/09/edtech-unicorn-physicswallah-raise-funds-through-ipo-sebi"><li><div class="title">PhysicsWallah eyes Rs 3,820 Cr through IPO, updates draft papers with SEBI</div><div class="domain">yourstory.com &bull; September 07, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/09/oyo-changes-corporate-entity-name-to-prism"><li><div class="title">OYO parent rebrands corporate entity to Prism to align with expanding portfolio</div><div class="domain">yourstory.com &bull; September 07, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/09/quick-commerce-swiggy-instamart-annual-sale-10-minute-delivery"><li><div class="title">Instamart to hold its first annual sale as quick commerce finds fresh momentum</div><div class="domain">yourstory.com &bull; September 07, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/09/food-delivery-likely-to-get-costlier-zomato-swiggy-magicpin"><li><div class="title">GST levy and platform fee hike to make food delivery costlier: Report</div><div class="domain">yourstory.com &bull; September 07, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/09/exploration-introspection-commentary-art-vishal-kavatekar-photography"><li><div class="title">Exploration, introspection, commentary: The journey of sculptor Vishal Kavatekar</div><div class="domain">yourstory.com &bull; September 07, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/09/india-linkedin-biggest-market-country-manager-networking-platform"><li><div class="title">India to become LinkedIn’s biggest market in 2–3 years: Country Manager</div><div class="domain">yourstory.com &bull; September 07, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/09/health-ethics-ai-business-creativity-entrepreneur-education-quiz"><li><div class="title">Health, ethics, AI: Test your business creativity with Edition 204 of our weekly quiz!</div><div class="domain">yourstory.com &bull; September 07, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/09/ecommerce-urban-festive-shopping-trends-localcircles-report"><li><div class="title">Ecommerce urban festive shopping may jump 115% in 2025: Report</div><div class="domain">yourstory.com &bull; September 07, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/09/young-india-drives-growth-in-the-used-car-market"><li><div class="title">Young India drives growth in the used car market</div><div class="domain">yourstory.com &bull; September 07, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/09/consumption-boost-to-aid-revenues-fiscal-deficit-nirmala-sitharaman"><li><div class="title">Consumption boost to aid revenues, fiscal deficit target on track: Nirmala Sitharaman</div><div class="domain">yourstory.com &bull; September 07, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/09/must-read-books-still-relevant"><li><div class="title">6 timeless must-read books that will still matter in 2030</div><div class="domain">yourstory.com &bull; September 07, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/09/edtech-physicswallah-hybrid-model-fuels-3000-crore-growth-ipo"><li><div class="title">PhysicsWallah’s hybrid model fuels Rs 3,000-Cr growth ahead of IPO</div><div class="domain">yourstory.com &bull; September 07, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/08/5-ways-overcome-victim-mindset"><li><div class="title">5 powerful ways to break free from a victim mindset</div><div class="domain">yourstory.com &bull; September 07, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/08/zero-click-search-trend"><li><div class="title">Zero-click searches: The future of search engines in 2025</div><div class="domain">yourstory.com &bull; September 07, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/09/the-gst-cost-on-food-delivery-fees-building-with-no-code"><li><div class="title">The GST cost on food delivery fees; Building with no code</div><div class="domain">yourstory.com &bull; September 07, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/09/purpose-led-professionals-grow-wealth-mindfully"><li><div class="title">How purpose-led professionals can grow wealth mindfully</div><div class="domain">yourstory.com &bull; September 07, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">쿠킹하루 Cooking Haru :) (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/fEr3reN3FBM"><li><div class="title">겹겹이 바삭바삭 소세지 감자볼!! ASMR #potato #sausage #frenchfries #chips</div><div class="domain">youtube.com &bull; September 07, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Unphiltered by Samdish (and a fantastic team) (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=jW-HSx2zvfw"><li><div class="title">India’s Gig Worker Speaks His Heart Out to Samdish</div><div class="domain">youtube.com &bull; September 07, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">SmarterEveryDay (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=dt_CG_xRnrY"><li><div class="title">Pompeii Changed How I Think About The Roman Empire - Smarter Every Day 310</div><div class="domain">youtube.com &bull; September 07, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Plip Plip (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=tP8JO1lvccU"><li><div class="title">Madharaasi - A Confused Discussion | Plip Plip</div><div class="domain">youtube.com &bull; September 07, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Man of Recaps (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=jigTTbCviL8"><li><div class="title">The Walking Dead: Daryl Dixon RECAP: Season 2</div><div class="domain">youtube.com &bull; September 07, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">M M F A Mellisai Mannar Fans Association (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=iLAFRKaYS5k"><li><div class="title">47 MELLISAI MANNARGAL ISAIPPAYANAM  FILM PERIA IDATHU PENN 1963 PAARAPPA PAZHANIAPPA TMS KANNADASAN</div><div class="domain">youtube.com &bull; September 07, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lucaas (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=NrohauikCLs"><li><div class="title">777 Landing Goes Wrong</div><div class="domain">youtube.com &bull; September 07, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Laasya (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=90sIUPSD9LQ"><li><div class="title">Sahiba | Aditya Rikhari | Dance cover | Nivi and Ishanvi | Laasya</div><div class="domain">youtube.com &bull; September 07, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Idhu Namma Stories - Vini & Anandh (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/qimjeT-t8D8"><li><div class="title">🙅🏻‍♂️Now I won’t play games with her anymore 🫣#youtube #funny #comedy #couple #viral #trending</div><div class="domain">youtube.com &bull; September 07, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">GreatScott! (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=_R7HFDz1AdU"><li><div class="title">The Most Handy Gadget can be done...Cheaper?! (DIY or Buy)</div><div class="domain">youtube.com &bull; September 07, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">darbarfestival (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/shorts/zhuW2rtcqZk"><li><div class="title">Learn to Play Tabla with Gurdain Rayatt | Lesson 01 | Darbar Academy</div><div class="domain">youtube.com &bull; September 07, 2025</div></li></a><a class="li" href="https://www.youtube.com/shorts/8XH95eOJv4I"><li><div class="title">Tabla Solo| Supreet Deshpande | Music of India</div><div class="domain">youtube.com &bull; September 07, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Adrian Bliss (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/qcHr9XwCH7k"><li><div class="title">Henry the 8th’s wedding vows</div><div class="domain">youtube.com &bull; September 07, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">3Blue1Brown (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=_BrFKp-U8GI"><li><div class="title">Exploration & Epiphany | Guest video by Paul Dancstep</div><div class="domain">youtube.com &bull; September 07, 2025</div></li></a><a class="li" href="https://www.youtube.com/shorts/1lZpowy21Gc"><li><div class="title">Incomplete open cubes</div><div class="domain">youtube.com &bull; September 07, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>

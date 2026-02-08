@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2024-12-07</span>:</h1>
+  <p class="summary">There are 58 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Bear Blog Trending Posts (bearblog.dev)</h2> (3)</summary><ul><a class="li" href="https://blog.curiousquail.com/sparkle-peered-into-our-souls-2016-2024/"><li><div class="title">Sparkle Peered Into Our Souls (08/13/2016 - 12/07/2024)</div><div class="domain">blog.curiousquail.com &bull; December 07, 2024</div></li></a><a class="li" href="https://brandons-journal.com/default-apps-for-2024/"><li><div class="title">Default Apps for 2024</div><div class="domain">brandons-journal.com &bull; December 07, 2024</div></li></a><a class="li" href="https://shilin.ca/my-post-blew-up-on-hacker-news/"><li><div class="title">my post blew up on hacker news</div><div class="domain">shilin.ca &bull; December 07, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Big Think (bigthink.com)</h2> (2)</summary><ul><a class="li" href="https://bigthink.com/the-future/personhood-credentials/"><li><div class="title">Can humans purge the bots without sacrificing our privacy?</div><div class="domain">bigthink.com &bull; December 07, 2024</div></li></a><a class="li" href="https://bigthink.com/starts-with-a-bang/starts-with-a-bang-podcast-112-galactic-archaeology/"><li><div class="title">Starts With A Bang Podcast #112 – Galactic Archaeology</div><div class="domain">bigthink.com &bull; December 07, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">kottke.org (feeds.kottke.org)</h2> (1)</summary><ul><a class="li" href="https://kottke.org/24/12/0045804-a-fantastic-interactive-f"><li><div class="title">A fantastic interactive feature about the newly restored Notre-Dame cathedral. &#8220;Each day...</div><div class="domain">kottke.org &bull; December 07, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (2)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/uFpomJHBah768JGiY/a-car-journey-with-conservative-evangelicals-understanding"><li><div class="title">A car journey with conservative evangelicals - Understanding some British political-religious beliefs</div><div class="domain">lesswrong.com &bull; December 07, 2024</div></li></a><a class="li" href="https://www.lesswrong.com/posts/6dixnRRYSLTqCdJzG/understanding-shapley-values-with-venn-diagrams"><li><div class="title">Understanding Shapley Values with Venn Diagrams</div><div class="domain">lesswrong.com &bull; December 07, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (11)</summary><ul><a class="li" href="https://tudorr.ro/blog/ansible-service-in-jail/"><li><div class="title">How to manage services in FreeBSD jails with Ansible</div><div class="domain">tudorr.ro &bull; December 07, 2024</div></li></a><a class="li" href="https://13ros27.github.io/blog/const-array-from-fn/"><li><div class="title">Designing a const `array::from_fn` in stable Rust</div><div class="domain">13ros27.github.io &bull; December 07, 2024</div></li></a><a class="li" href="https://theconversation.com/how-a-solar-minecraft-server-is-changing-the-way-we-play-video-games-242473"><li><div class="title">How a solar Minecraft server is changing the way we play video games</div><div class="domain">theconversation.com &bull; December 07, 2024</div></li></a><a class="li" href="https://odinbook.com/"><li><div class="title">Understanding the Odin Programming Language</div><div class="domain">odinbook.com &bull; December 07, 2024</div></li></a><a class="li" href="https://avi.im/blag/2024/galloping-search/"><li><div class="title">Galloping Search</div><div class="domain">avi.im &bull; December 07, 2024</div></li></a><a class="li" href="https://jimmyhmiller.github.io/advent-of-papers/2024/dec-6-intuition"><li><div class="title">Intuition in Software Development</div><div class="domain">jimmyhmiller.github.io &bull; December 07, 2024</div></li></a><a class="li" href="https://medium.com/freely-sharing-the-sum-of-all-knowledge/how-we-designed-page-previews-for-wikipedia-and-what-could-be-done-with-them-in-the-future-7a5fa6b07b96"><li><div class="title">How we designed page previews for Wikipedia — and what could be done with them in the future</div><div class="domain">medium.com &bull; December 07, 2024</div></li></a><a class="li" href="https://jarosz.dev/article/how-to-prevent-panics/"><li><div class="title">How to prevent panics in Go</div><div class="domain">jarosz.dev &bull; December 07, 2024</div></li></a><a class="li" href="https://asindu.xyz/posts/switching-to-firefox/"><li><div class="title">Firefox is the superior browser</div><div class="domain">asindu.xyz &bull; December 07, 2024</div></li></a><a class="li" href="https://github.com/oils-for-unix/oils/wiki/The-Biggest-Shell-Programs-in-the-World"><li><div class="title">The Biggest Shell Programs in the World (wiki)</div><div class="domain">github.com &bull; December 07, 2024</div></li></a><a class="li" href="https://oldbytes.space/@kenshirriff/113606898880486330"><li><div class="title">The Pentium FDIV bug, reverse-engineered</div><div class="domain">oldbytes.space &bull; December 07, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (30)</summary><ul><a class="li" href="https://bitsavers.computerhistory.org/pdf/microsoft/gw-basic/Microsoft_GW-BASIC_Users_Guide_and_Reference_1989.pdf"><li><div class="title">Microsoft GW-Basic User's Guide and Reference (1989) [pdf]</div><div class="domain">bitsavers.computerhistory.org &bull; December 07, 2024</div></li></a><a class="li" href="https://retro64.altervista.org/blog/hi-res-bitmap-graphics-with-commodore-64-basic-2-0-fast-screen-clearing-routine/"><li><div class="title">Tricking c64 basic into clearing a hi-res screen quickly</div><div class="domain">retro64.altervista.org &bull; December 07, 2024</div></li></a><a class="li" href="https://publicdomainreview.org/essay/charles-fort-and-the-book-of-the-damned/"><li><div class="title">Gods: Charles Fort's Book of the Damned (1919)</div><div class="domain">publicdomainreview.org &bull; December 07, 2024</div></li></a><a class="li" href="https://www.cs.usfca.edu/~galles/visualization/BPlusTree.html"><li><div class="title">B+ Tree Visualization</div><div class="domain">cs.usfca.edu &bull; December 07, 2024</div></li></a><a class="li" href="https://airport.revolvertype.com/"><li><div class="title">Now Boarding: The Story of Airport</div><div class="domain">airport.revolvertype.com &bull; December 07, 2024</div></li></a><a class="li" href="https://paul.mycpanel.princeton.edu/music242/shaefferinterview.html"><li><div class="title">Pierre Schaeffer looking back on his career in musique concrète (1987)</div><div class="domain">paul.mycpanel.princeton.edu &bull; December 07, 2024</div></li></a><a class="li" href="https://www.youtube.com/watch?v=dfYSBlV90NQ"><li><div class="title">I made a satellite ion thruster [video]</div><div class="domain">youtube.com &bull; December 07, 2024</div></li></a><a class="li" href="https://newatlas.com/technology/starlink-direct-to-phone-satellites-orbit/"><li><div class="title">Starlink's first constellation of direct-to-phone satellites is now in orbit</div><div class="domain">newatlas.com &bull; December 07, 2024</div></li></a><a class="li" href="https://www.degruyter.com/document/doi/10.1515/pz-2024-2017/html"><li><div class="title">Stimulants in Germanic communities of the Roman period</div><div class="domain">degruyter.com &bull; December 07, 2024</div></li></a><a class="li" href="https://www.nytimes.com/2024/12/06/science/moths-hearing-plant-sounds.html"><li><div class="title">Insects rely on sounds made by distressed vegetation to guide reproduction</div><div class="domain">nytimes.com &bull; December 07, 2024</div></li></a><a class="li" href="https://github.com/jdx/mise"><li><div class="title">Mise: Dev tools, env vars, task runner</div><div class="domain">github.com &bull; December 07, 2024</div></li></a><a class="li" href="http://mynor.org/my4th_xs.htm"><li><div class="title">My4th Light – Custom 8-Bit Forth CPU</div><div class="domain">mynor.org &bull; December 07, 2024</div></li></a><a class="li" href="https://aaka.sh/posts/20230129-bgp-at-home.html"><li><div class="title">"BGP at home": getting a DIA circuit installed at home</div><div class="domain">aaka.sh &bull; December 07, 2024</div></li></a><a class="li" href="https://github.com/Mathics3/mathics-core/releases/tag/7.0.0"><li><div class="title">Mathics 7.0 – Open-source alternative to Mathematica</div><div class="domain">github.com &bull; December 07, 2024</div></li></a><a class="li" href="https://www.bleepingcomputer.com/news/security/ultralytics-ai-model-hijacked-to-infect-thousands-with-cryptominer/"><li><div class="title">Ultralytics AI model hijacked to infect thousands with cryptominer</div><div class="domain">bleepingcomputer.com &bull; December 07, 2024</div></li></a><a class="li" href="https://www.paecon.net/PAEReview/issue109/Podkaminer109.pdf"><li><div class="title">From the Bretton Woods system to global stagnation [pdf]</div><div class="domain">paecon.net &bull; December 07, 2024</div></li></a><a class="li" href="https://spectrum.ieee.org/undersea-internet-cables-protection-tech"><li><div class="title">Protecting undersea internet cables is a tech nightmare</div><div class="domain">spectrum.ieee.org &bull; December 07, 2024</div></li></a><a class="li" href="https://thehomefront.substack.com/p/economics-and-homemakers"><li><div class="title">Economics and Homemakers</div><div class="domain">thehomefront.substack.com &bull; December 07, 2024</div></li></a><a class="li" href="https://radio.ea1iti.es/"><li><div class="title">Show HN: I built an HTML5 RTL-SDR application</div><div class="domain">radio.ea1iti.es &bull; December 07, 2024</div></li></a><a class="li" href="https://apnews.com/article/notre-dame-paris-latest-e50813cf016f08607c20ab115bc4b153"><li><div class="title">The famed Notre Dame Cathedral in Paris reopens to great fanfare</div><div class="domain">apnews.com &bull; December 07, 2024</div></li></a><a class="li" href="https://just.systems/"><li><div class="title">Just: Just a Command Runner</div><div class="domain">just.systems &bull; December 07, 2024</div></li></a><a class="li" href="https://www.youtube.com/watch?v=0JouTsMQsEA"><li><div class="title">RollerCoaster Tycoon was the last of its kind [video]</div><div class="domain">youtube.com &bull; December 07, 2024</div></li></a><a class="li" href="https://johncarlosbaez.wordpress.com/2024/12/07/martianus-capella/"><li><div class="title">Precursors of Copernicus' heliocentric theory</div><div class="domain">johncarlosbaez.wordpress.com &bull; December 07, 2024</div></li></a><a class="li" href="https://www.eecg.utoronto.ca/~mcj/papers/2024.mqrouter.fpt.pdf"><li><div class="title">MultiQueue-Based FPGA Routing: Relaxed A* Priority Ordering-Improved Parallelism [pdf]</div><div class="domain">eecg.utoronto.ca &bull; December 07, 2024</div></li></a><a class="li" href="https://www.birmingham.ac.uk/news/2024/the-birmingham-blade-the-worlds-first-geographically-tailored-urban-wind-turbine-designed-by-ai"><li><div class="title">The Birmingham Blade: geographically tailored urban wind turbine designed by AI</div><div class="domain">birmingham.ac.uk &bull; December 07, 2024</div></li></a><a class="li" href="https://www.centauri-dreams.org/2024/12/06/can-life-emerge-around-a-white-dwarf/"><li><div class="title">Can Life Emerge Around a White Dwarf?</div><div class="domain">centauri-dreams.org &bull; December 07, 2024</div></li></a><a class="li" href="https://htmhell.dev/adventcalendar/2024/7/"><li><div class="title">Htmhail</div><div class="domain">htmhell.dev &bull; December 07, 2024</div></li></a><a class="li" href="https://countless.dev/"><li><div class="title">Show HN: Countless.dev – A website to compare every AI model: LLMs, TTSs, STTs</div><div class="domain">countless.dev &bull; December 07, 2024</div></li></a><a class="li" href="https://github.com/Olshansk/postgres_for_everything"><li><div class="title">Postgres for everything (e/Postgres)</div><div class="domain">github.com &bull; December 07, 2024</div></li></a><a class="li" href="https://ollama.com/blog/structured-outputs"><li><div class="title">Structured Outputs with Ollama</div><div class="domain">ollama.com &bull; December 07, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Seth's Blog (seths.blog)</h2> (1)</summary><ul><a class="li" href="https://seths.blog/2024/12/youve-already-failed/"><li><div class="title">You’ve already failed</div><div class="domain">seths.blog &bull; December 07, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Trevor I. Lasn Thoughts (trevorlasn.com)</h2> (1)</summary><ul><a class="li" href="https://www.trevorlasn.com/blog/javascript-navigator-clipboard"><li><div class="title">navigator.clipboard - The New Asynchronous Clipboard API in JavaScript</div><div class="domain">trevorlasn.com &bull; December 07, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (7)</summary><ul><a class="li" href="https://yourstory.com/2024/12/find-your-calm-indian-philosophy-shyam-bhat"><li><div class="title">Find your calm; Indian philosophy for mental health</div><div class="domain">yourstory.com &bull; December 07, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/12/indias-inclusive-growth-applauded-by-international-community"><li><div class="title">India's inclusive growth applauded by international community: K Subramanian</div><div class="domain">yourstory.com &bull; December 07, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/12/creativity-collaboration-qatar-museums-art-culture-design-heritage-photography"><li><div class="title">Creativity and collaboration: how Qatar Museums promote heritage and art</div><div class="domain">yourstory.com &bull; December 07, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/12/finmin-asks-banks-to-use-mulehunter-ai-to-check-digital-fraud"><li><div class="title">Finmin asks banks to use MuleHunter.AI to check digital fraud</div><div class="domain">yourstory.com &bull; December 07, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/12/paytm-singapore-sells-stake-japan-paypay-softbank-vision-fund-2-2792m"><li><div class="title">Paytm Singapore sells stake in Japan's PayPay to SoftBank Vision Fund 2 for $279.2M</div><div class="domain">yourstory.com &bull; December 07, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/12/rajasthan-takes-bold-leap-via-avgc-xr-policy"><li><div class="title">Rajasthan takes a bold leap into the future with AVGC-XR policy</div><div class="domain">yourstory.com &bull; December 07, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/12/foxo-health-is-building-a-personal-health-assistant"><li><div class="title">Foxo Health is building a personal healthcare assistant that gives insights into your health and wellness</div><div class="domain">yourstory.com &bull; December 07, 2024</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>

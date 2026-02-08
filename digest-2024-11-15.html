@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2024-11-15</span>:</h1>
+  <p class="summary">There are 84 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Bear Blog Trending Posts (bearblog.dev)</h2> (3)</summary><ul><a class="li" href="https://blog.avas.space/tech-utopia-fantasy/"><li><div class="title">the tech utopia fantasy is over</div><div class="domain">blog.avas.space &bull; November 15, 2024</div></li></a><a class="li" href="https://blackentropy.com/please-stop-the-absurd-coding-challenges/"><li><div class="title">Please, Stop the Absurd Coding Challenges</div><div class="domain">blackentropy.com &bull; November 15, 2024</div></li></a><a class="li" href="https://birming.com/bear-micro-blog/"><li><div class="title">Bear Micro Blog</div><div class="domain">birming.com &bull; November 15, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">The Marginalian (feeds.feedburner.com)</h2> (1)</summary><ul><a class="li" href="https://www.themarginalian.org/2024/11/15/the-dictionary-story/"><li><div class="title">The Dictionary Story: A Love Letter to Language Tucked Into a Delightful Fable about the Difficult Question of How to Be Yourself</div><div class="domain">themarginalian.org &bull; November 15, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">kottke.org (feeds.kottke.org)</h2> (11)</summary><ul><a class="li" href="https://kottke.org/24/11/fake-bear-commits-insurance-fraud"><li><div class="title">Fake Bear Commits Insurance Fraud</div><div class="domain">kottke.org &bull; November 15, 2024</div></li></a><a class="li" href="https://kottke.org/24/11/0045642-a-report-from-the-america"><li><div class="title">A report from the American Immigration Council on Trump&#8217;s mass deportation plan....</div><div class="domain">kottke.org &bull; November 15, 2024</div></li></a><a class="li" href="https://kottke.org/24/11/might-as-well-face-it-youre-addicted-to-running"><li><div class="title">Might As Well Face It, You&#8217;re Addicted to Running</div><div class="domain">kottke.org &bull; November 15, 2024</div></li></a><a class="li" href="https://kottke.org/24/11/0045645-todays-google-doodle-is-a"><li><div class="title">Today&#8217;s Google Doodle is a celebration of the kayak, illustrated by Inuit...</div><div class="domain">kottke.org &bull; November 15, 2024</div></li></a><a class="li" href="https://kottke.org/24/11/0045647-trans-posters-were-the-ea"><li><div class="title">&#8220;&#8230;trans posters were the earliest adopters of Bluesky and were able to...</div><div class="domain">kottke.org &bull; November 15, 2024</div></li></a><a class="li" href="https://kottke.org/24/11/0045646-youll-soon-be-able-to"><li><div class="title">You&#8217;ll soon be able to watch your local PBS station & PBS...</div><div class="domain">kottke.org &bull; November 15, 2024</div></li></a><a class="li" href="https://kottke.org/24/11/lets-build-a-massive-meta-mcdonalds-in-times-square-1"><li><div class="title">Let&#8217;s Build a Massive Meta McDonald&#8217;s in Times Square</div><div class="domain">kottke.org &bull; November 15, 2024</div></li></a><a class="li" href="https://kottke.org/24/11/0045648-scientists-have-found-an-"><li><div class="title">Scientists have found an individual coral colony that&#8217;s large enough to be...</div><div class="domain">kottke.org &bull; November 15, 2024</div></li></a><a class="li" href="https://kottke.org/24/11/0045652-this-is-a-canny-observati"><li><div class="title">This is an astute observation about the conservative sense of permanent resentment:...</div><div class="domain">kottke.org &bull; November 15, 2024</div></li></a><a class="li" href="https://kottke.org/24/11/0045653-jason-koebler-at-404-medi"><li><div class="title">Jason Koebler at 404 Media: The Great Migration to Bluesky Gives Me...</div><div class="domain">kottke.org &bull; November 15, 2024</div></li></a><a class="li" href="https://kottke.org/24/11/0045654-haymarket-books-is-giving"><li><div class="title">Haymarket Books is giving away 10 free ebooks that meet this moment...</div><div class="domain">kottke.org &bull; November 15, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Nautilus (nautil.us)</h2> (2)</summary><ul><a class="li" href="https://nautil.us/your-datas-strange-undersea-voyage-1138554/"><li><div class="title">Your Data’s Strange Undersea Voyage</div><div class="domain">nautil.us &bull; November 15, 2024</div></li></a><a class="li" href="https://nautil.us/the-power-of-small-brain-networks-1138987/"><li><div class="title">The Power of Small Brain Networks</div><div class="domain">nautil.us &bull; November 15, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Quanta Magazine (quantamagazine.org)</h2> (1)</summary><ul><a class="li" href="https://www.quantamagazine.org/how-public-key-cryptography-really-works-20241115/"><li><div class="title">How Public Key Cryptography Really Works, Using Only Simple Math</div><div class="domain">quantamagazine.org &bull; November 15, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Reasons to be Cheerful (reasonstobecheerful.world)</h2> (1)</summary><ul><a class="li" href="https://reasonstobecheerful.world/how-lush-hillside-farms-are-protecting-nairobis-water-supply/"><li><div class="title">How Lush Hillside Farms Are Protecting Nairobi’s Water Supply</div><div class="domain">reasonstobecheerful.world &bull; November 15, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Seth's Blog (seths.blog)</h2> (1)</summary><ul><a class="li" href="https://seths.blog/2024/11/take-good-notes-2/"><li><div class="title">Take good notes</div><div class="domain">seths.blog &bull; November 15, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Trevor I. Lasn Thoughts (trevorlasn.com)</h2> (2)</summary><ul><a class="li" href="https://www.trevorlasn.com/blog/ghost-jobs-should-be-illegal"><li><div class="title">Ghost Jobs Should Be Illegal</div><div class="domain">trevorlasn.com &bull; November 15, 2024</div></li></a><a class="li" href="https://www.trevorlasn.com/blog/symbols-in-javascript"><li><div class="title">Exploring JavaScript Symbols</div><div class="domain">trevorlasn.com &bull; November 15, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">XML.com Atom feed for articles and news items (xml.com)</h2> (1)</summary><ul><a class="li" href="https://www.xml.com/news/2024-11-release-of-xmlmind-xml-editor-v1010/"><li><div class="title">Release of XMLmind XML Editor v10.10</div><div class="domain">xml.com &bull; November 15, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">John Mayer (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=zUrS-hjI6c0"><li><div class="title">John Mayer - World Tour 2019</div><div class="domain">youtube.com &bull; November 15, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Hans Zimmer (youtube.com)</h2> (3)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=EXBD-kBpS90"><li><div class="title">Hans Zimmer Live | 2023 Double Album Trailer</div><div class="domain">youtube.com &bull; November 15, 2024</div></li></a><a class="li" href="https://www.youtube.com/watch?v=UzyLj64fudI"><li><div class="title">Interstellar Suite | Hans Zimmer Live Double Album</div><div class="domain">youtube.com &bull; November 15, 2024</div></li></a><a class="li" href="https://www.youtube.com/watch?v=_IaKtRVJop0"><li><div class="title">Why Hans Zimmer Scored The Lion King | HZL Live Double Album</div><div class="domain">youtube.com &bull; November 15, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Vikkals (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=irHB34JjLaU"><li><div class="title">For Smart Booking Go With GOIBIBO #vikkals #goibibo</div><div class="domain">youtube.com &bull; November 15, 2024</div></li></a><a class="li" href="https://www.youtube.com/watch?v=2IdFxWXPMs8"><li><div class="title">En Kadhal Solla Song Recording Session 😂🤣 #vikkals #shorts</div><div class="domain">youtube.com &bull; November 15, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">V3Cars (youtube.com)</h2> (3)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=YkfHBWJxVV0"><li><div class="title">Lexus RX 350h: Better Mileage than Swift & Aura. #V3Cars #Lexus #LexusRX #RX350h #Hybrid</div><div class="domain">youtube.com &bull; November 15, 2024</div></li></a><a class="li" href="https://www.youtube.com/watch?v=3skuRWq1RII"><li><div class="title">Creta vs Grand Vitara: Best SUV under Rs 15 Lakh | Which Car Is More Value for Money?</div><div class="domain">youtube.com &bull; November 15, 2024</div></li></a><a class="li" href="https://www.youtube.com/watch?v=QKzS806FP40"><li><div class="title">2024 Mahindra Thar Roxx scores a 5 star safety rating in the latest Bharat NCAP crash test. #V3Cars</div><div class="domain">youtube.com &bull; November 15, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Tsoding Daily (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=JaG4kdyS_I8"><li><div class="title">Generative Shaders</div><div class="domain">youtube.com &bull; November 15, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">ThePrimeTime (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=ycTOEWqjeHI"><li><div class="title">2 Idiots 1 Keyboard</div><div class="domain">youtube.com &bull; November 15, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">The Royal Institution (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=fh5jQGgPrNI"><li><div class="title">How the James Webb Space Telescope was designed - with Mark Clampin</div><div class="domain">youtube.com &bull; November 15, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">The Knowledge Project Podcast (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=2pL3i8S0If0"><li><div class="title">Behind The Scenes Of Pro Sports</div><div class="domain">youtube.com &bull; November 15, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">The Graham Norton Show (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=pNz59jKhfpU"><li><div class="title">ARE YOU NOT ENTERTAINED?! | Gladiator | The Graham Norton Show</div><div class="domain">youtube.com &bull; November 15, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">The Economist (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=QnxiHweCIkM"><li><div class="title">Parting Scholz: what next for Germany?</div><div class="domain">youtube.com &bull; November 15, 2024</div></li></a><a class="li" href="https://www.youtube.com/watch?v=S8j0iT-IZjo"><li><div class="title">Needs Musk: Donald Trump’s new appointments</div><div class="domain">youtube.com &bull; November 15, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">The Deshbhakt (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=aBu0K9Tx8Xs"><li><div class="title">Who Created Harappan / Indus Valley Civilisation? | How Did It End? | Samvaad With Devdutt Pattanaik</div><div class="domain">youtube.com &bull; November 15, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">TED (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=YKufhUZRJ1E"><li><div class="title">Listen to Your Intuition — It Can Help You Navigate the Future | Hrund Gunnsteinsdóttir | TED</div><div class="domain">youtube.com &bull; November 15, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Soft White Underbelly (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=C0a6O972RY0"><li><div class="title">Almost a School Shooter-Kenneth</div><div class="domain">youtube.com &bull; November 15, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Sheena Melwani (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=P5h_idFpBP4"><li><div class="title">It’s giving expensive chimney sweep?! 😂 | #shorts #funny</div><div class="domain">youtube.com &bull; November 15, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Qiskit (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=OoQSdcKAIZc"><li><div class="title">Correcting Quantum Errors | Understanding Quantum Information and Computation - Lesson 13</div><div class="domain">youtube.com &bull; November 15, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">PomplamooseMusic (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=OGgbQ_hccS0"><li><div class="title">Presenting… “Sexy Quiet Hits”</div><div class="domain">youtube.com &bull; November 15, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">PBS Space Time (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=hRXAbMe_THw"><li><div class="title">How Can Humanity Become a Kardashev Type 1 Civilization?</div><div class="domain">youtube.com &bull; November 15, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Parithabangal (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=PAb7Cyhy-tA"><li><div class="title">No Beard Paavangal | Parithabangal</div><div class="domain">youtube.com &bull; November 15, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Papa Mummy Kitchen - Specials (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=W5jE3ah6vnk"><li><div class="title">बस दही में मक्की के दाने मिला लें, कम तेल में बनेगा सबसे स्वादिष्ट नाश्ता😋</div><div class="domain">youtube.com &bull; November 15, 2024</div></li></a><a class="li" href="https://www.youtube.com/watch?v=NWgjoUHIMRI"><li><div class="title">"आज खाने में क्या बनाऊं?"🤔 अगर यही सोच रहे हैं तो एक बार इस पारंपरिक तरीके से पत्तागोभी बनाकार देखें</div><div class="domain">youtube.com &bull; November 15, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Numberphile (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=OEGGz1sCS5w"><li><div class="title">The Change from Roman Numerals - Numberphile</div><div class="domain">youtube.com &bull; November 15, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">newline (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=W8uTeR-RjJU"><li><div class="title">How I used the emitEvent method to fit into my dream implementation with AI Domain Specialist, Louis</div><div class="domain">youtube.com &bull; November 15, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Mouth and Foot Painting Artists (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=KnNNIUboZjg"><li><div class="title">Happy Children's Day 🎉</div><div class="domain">youtube.com &bull; November 15, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">MIT OpenCourseWare (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=16Dd9TVWGP4"><li><div class="title">Lotfullah from Afghanistan: An Open Learner's Story</div><div class="domain">youtube.com &bull; November 15, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">minutephysics (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=r4xGVk_2eT8"><li><div class="title">The Periodic Table in a 2D World</div><div class="domain">youtube.com &bull; November 15, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">MinuteFood (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=TgyjAtwQPk4"><li><div class="title">Why Japan's Food is SO Good</div><div class="domain">youtube.com &bull; November 15, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Megaprojects (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=E10O2fghqZc"><li><div class="title">The UAE's "Zero Carbon" City is a Huge Failure. Here's Why.</div><div class="domain">youtube.com &bull; November 15, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">M M F A Mellisai Mannar Fans Association (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=N1fvVvdXyuY"><li><div class="title">BREEZY MELODIES.POSITIVE VIBES MSV MAGIC THRU THE NIGHTINGALE'S VOICE.BIRTH DAY TRIBUTE TO PSUSHEELA</div><div class="domain">youtube.com &bull; November 15, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Kannadhasan Productions by Annadurai Kannadhasan (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=PlrRzaEnFKo"><li><div class="title">214 ) எம்.ஜி.ஆரின்  திருடாதே படமும் கண்ணதாசனும்</div><div class="domain">youtube.com &bull; November 15, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Jay Lee Painting (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=_YdSfif-S4g"><li><div class="title">Painting a Yellow Forest Road / Acrylic Painting with Net Sponge</div><div class="domain">youtube.com &bull; November 15, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Home & Garden (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=2uklUboW1QY"><li><div class="title">Cách tạo khu vườn treo tường với nhà diện tích nhỏ | How to create a wall garden with a small house</div><div class="domain">youtube.com &bull; November 15, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Hoezaay (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=eFSod41dWTU"><li><div class="title">always hire a good editor/pay your editor on time-don't blink #shorts ft. miopizza_almatty on insta</div><div class="domain">youtube.com &bull; November 15, 2024</div></li></a><a class="li" href="https://www.youtube.com/watch?v=C9mDAOPrwEM"><li><div class="title">Ghost Stories Episode 026 - with  @SureshNMenonOFFICIAL  & maybe  @CyrilDAbs  maybe  not</div><div class="domain">youtube.com &bull; November 15, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Half as Interesting (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=KCCjwHFzeJY"><li><div class="title">Why Hawaii's H-3 is the Most Expensive Interstate Ever</div><div class="domain">youtube.com &bull; November 15, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Groww (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=hQYgWqrOHYw"><li><div class="title">Watch out for this fake police scam! Fake cop alert #shorts</div><div class="domain">youtube.com &bull; November 15, 2024</div></li></a><a class="li" href="https://www.youtube.com/watch?v=d5rACzfQlc4"><li><div class="title">2 secret market leaders you need to know | Market cap over ₹10,000 crores</div><div class="domain">youtube.com &bull; November 15, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Francesco Parrino (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=mSE8ewwyzZU"><li><div class="title">Choosing the best fingers on day 7! 😱 #shorts</div><div class="domain">youtube.com &bull; November 15, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">European Space Agency, ESA (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=tnnqZVNIZA4"><li><div class="title">Happy New Year, Mars! 🔴 #shorts</div><div class="domain">youtube.com &bull; November 15, 2024</div></li></a><a class="li" href="https://www.youtube.com/watch?v=Dlx6SvkWIFE"><li><div class="title">Introducing the Smile mission | Let's Smile (episode 1)</div><div class="domain">youtube.com &bull; November 15, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Engineering Facts (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=F9v8OS59kII"><li><div class="title">Guvi video clarification & Skill improvement</div><div class="domain">youtube.com &bull; November 15, 2024</div></li></a><a class="li" href="https://www.youtube.com/watch?v=MCl-gTSWusk"><li><div class="title">10mm Driver vs 13mm Driver, எது சிறந்தது?</div><div class="domain">youtube.com &bull; November 15, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">DW Documentary (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=BMuGTv17iZY"><li><div class="title">From reforestation to CO2 compensation - Companies' dirty tricks | DW Documentary</div><div class="domain">youtube.com &bull; November 15, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">DD Movies (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=W6sGUZQojQw"><li><div class="title">Idhu Enga Boomi - Tamil Movie | Vijayakanth | Jaishankar | Jayamalini #ddmovies #ddcinemas</div><div class="domain">youtube.com &bull; November 15, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Curiosity Stream (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=eVLb-LETa88"><li><div class="title">What Are Solar Sails And How Can They Help? | Bright Now</div><div class="domain">youtube.com &bull; November 15, 2024</div></li></a><a class="li" href="https://www.youtube.com/watch?v=a6GGN-Dl6Dc"><li><div class="title">The Dangers Of Space Debris | Breakthrough</div><div class="domain">youtube.com &bull; November 15, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Continuous Delivery (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=_zUkNrUp0Ok"><li><div class="title">*NEW STUDY* Does Co-Development With AI Assistants Improve Code?</div><div class="domain">youtube.com &bull; November 15, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">ClojureTV (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=W2Y6G9tSg5E"><li><div class="title">Unsession: "Clojure 1.12 Overview"</div><div class="domain">youtube.com &bull; November 15, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Cini Mini Movies (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=bdNQ8i91leY"><li><div class="title">Naina - Comedy Horror Film | Vadivelu and Jayaram Superhit Comedy Scene | CMM</div><div class="domain">youtube.com &bull; November 15, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">ChessNetwork (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=QQGqnqcqs_U"><li><div class="title">CAUTION: This Rapid chess video may put you to sleep #11</div><div class="domain">youtube.com &bull; November 15, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Chef Ranveer Brar (youtube.com)</h2> (3)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=Z2LS6MTlJdM"><li><div class="title">Follow this ratio for perfect Pasta #pastarecipe #tomatosaucepasta #cookingtips #ranveerbrar</div><div class="domain">youtube.com &bull; November 15, 2024</div></li></a><a class="li" href="https://www.youtube.com/watch?v=Toe52Hb-2a8"><li><div class="title">Achaari masala ke liye ye important hai! #cookingtips #acharipaneer #ranveerbrar</div><div class="domain">youtube.com &bull; November 15, 2024</div></li></a><a class="li" href="https://www.youtube.com/watch?v=QasJHGu2ySg"><li><div class="title">Nalka खुल गया 🤧😁 #meme #TheBuckinghamMurders #ranveerbrar</div><div class="domain">youtube.com &bull; November 15, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">agadmator's Chess Channel (youtube.com)</h2> (2)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=MnQmXDFKTdQ"><li><div class="title">f6 Square is Sacred - You Insult it, You Pay the Ultimate Price!</div><div class="domain">youtube.com &bull; November 15, 2024</div></li></a><a class="li" href="https://www.youtube.com/watch?v=Xzs92X7XKPc"><li><div class="title">"What Was Once Yours Isn’t Forever" || Keymer vs Abdusattorov || Tata Steel Chess India (2024)</div><div class="domain">youtube.com &bull; November 15, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Academy of Ideas (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=T4o9G3y5ylI"><li><div class="title">The Mating Psychology of Women</div><div class="domain">youtube.com &bull; November 15, 2024</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>

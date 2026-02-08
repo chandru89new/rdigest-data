@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-07-27</span>:</h1>
+  <p class="summary">There are 57 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Bear Blog Trending Posts (bearblog.dev)</h2> (3)</summary><ul><a class="li" href="https://curiously.bearblog.dev/too-much-social-media/"><li><div class="title">too much social media</div><div class="domain">curiously.bearblog.dev &bull; July 27, 2025</div></li></a><a class="li" href="https://blog.avas.space/defeatism-antidote/"><li><div class="title">defeatism antidote</div><div class="domain">blog.avas.space &bull; July 27, 2025</div></li></a><a class="li" href="https://jetgirl.art/why-dont-you-make-art-anymore/"><li><div class="title">"Why don't you make art anymore?"</div><div class="domain">jetgirl.art &bull; July 27, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (3)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/88xgGLnLo64AgjGco/where-are-the-ai-safety-replications"><li><div class="title">Where are the AI safety replications?</div><div class="domain">lesswrong.com &bull; July 27, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/mmbFEhqebgwtPjkJn/the-purpose-of-a-system-is-what-it-rewards"><li><div class="title">The Purpose of a System is what it Rewards</div><div class="domain">lesswrong.com &bull; July 27, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/ydsrFDwdq7kxbxvxc/maya-s-escape"><li><div class="title">Maya's Escape</div><div class="domain">lesswrong.com &bull; July 27, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (17)</summary><ul><a class="li" href="https://kchousos.github.io/BSc-Thesis/"><li><div class="title">OverHAuL: Harnessing Automation for C Libraries with Large Language Models</div><div class="domain">kchousos.github.io &bull; July 27, 2025</div></li></a><a class="li" href="https://quantum5.ca/2025/05/11/fast-cheap-bulk-storage-using-lvm-to-cache-hdds-on-ssds/"><li><div class="title">Fast and cheap bulk storage: using LVM to cache HDDs on SSDs</div><div class="domain">quantum5.ca &bull; July 27, 2025</div></li></a><a class="li" href="https://www.brendangregg.com/specials.html"><li><div class="title">Specials (2021)</div><div class="domain">brendangregg.com &bull; July 27, 2025</div></li></a><a class="li" href="https://github.com/dannyboy1996/printSim"><li><div class="title">printSim: a command-line python program that turns gcode into realistic 3d printer sound</div><div class="domain">github.com &bull; July 27, 2025</div></li></a><a class="li" href="https://surfingcomplexity.blog/2025/07/26/formal-specs-as-sets-of-behaviors/"><li><div class="title">Formal specs as sets of behaviors</div><div class="domain">surfingcomplexity.blog &bull; July 27, 2025</div></li></a><a class="li" href="https://aider.chat/2024/08/14/code-in-json.html"><li><div class="title">LLMs are bad at returning code in JSON</div><div class="domain">aider.chat &bull; July 27, 2025</div></li></a><a class="li" href="https://kevinlynagh.com/newsletter/2025_07_flatpack/"><li><div class="title">Designing a flatpack bed</div><div class="domain">kevinlynagh.com &bull; July 27, 2025</div></li></a><a class="li" href="https://ipng.ch/s/articles/2025/07/26/certificate-transparency-part-1/"><li><div class="title">IPng Networks - Certificate Transparency - Part 1</div><div class="domain">ipng.ch &bull; July 27, 2025</div></li></a><a class="li" href="https://github.com/9001/copyparty"><li><div class="title">copyparty: portable file server with resumable uploads, dedup, WebDAV, and more</div><div class="domain">github.com &bull; July 27, 2025</div></li></a><a class="li" href="https://nexy.blog/2025/07/27/how-i-hacked-my-washing-machine/"><li><div class="title">How I hacked my washing machine</div><div class="domain">nexy.blog &bull; July 27, 2025</div></li></a><a class="li" href="https://codeberg.org/akselmo/Revontuli"><li><div class="title">Revontuli Colorscheme Collection</div><div class="domain">codeberg.org &bull; July 27, 2025</div></li></a><a class="li" href="https://michael.stapelberg.ch/posts/2025-07-27-dev-shells-with-nix-4-quick-examples/"><li><div class="title">Development shells with Nix: four quick examples</div><div class="domain">michael.stapelberg.ch &bull; July 27, 2025</div></li></a><a class="li" href="https://daniel.feldroy.com/posts/til-2025-05-exception-add_note"><li><div class="title">TIL: Exception.add_note</div><div class="domain">daniel.feldroy.com &bull; July 27, 2025</div></li></a><a class="li" href="https://github.com/jkoppel/jj-workshop"><li><div class="title">The JJ VCS Workshop: A Zero-to-Hero Speedrun</div><div class="domain">github.com &bull; July 27, 2025</div></li></a><a class="li" href="https://eugene-andrienko.com/en/it/2025/07/24/x11-configuration-simple.html"><li><div class="title">How to configure X11 in a simple way</div><div class="domain">eugene-andrienko.com &bull; July 27, 2025</div></li></a><a class="li" href="https://github.com/mrdaemon/exosphere"><li><div class="title">exosphere: A simple centralized patch management and reporting tool for unix systems</div><div class="domain">github.com &bull; July 27, 2025</div></li></a><a class="li" href="https://utcc.utoronto.ca/~cks/space/blog/programming/BashGoodSetEReports"><li><div class="title">Getting decent error reports in Bash when you're using 'set -e'</div><div class="domain">utcc.utoronto.ca &bull; July 27, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Letters of Note (news.lettersofnote.com)</h2> (1)</summary><ul><a class="li" href="https://news.lettersofnote.com/p/what-cure-is-there-for-human-stupidity"><li><div class="title">What cure is there for human stupidity?</div><div class="domain">news.lettersofnote.com &bull; July 27, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (18)</summary><ul><a class="li" href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0151099"><li><div class="title">Ultra-Rapid Vision in Birds</div><div class="domain">journals.plos.org &bull; July 27, 2025</div></li></a><a class="li" href="https://app.vidyaarthi.ai/ai-tutor?session_id=2YBSyF3WNzMNn_80jygEp&action=replay&shared=true"><li><div class="title">Boston Dynamics' Atlas does backflips (lesson and breakdown)</div><div class="domain">app.vidyaarthi.ai &bull; July 27, 2025</div></li></a><a class="li" href="https://time.com/archive/6850749/business-the-day-wall-street-was-silent/"><li><div class="title">The Day Wall Street Was Silent (1979)</div><div class="domain">time.com &bull; July 27, 2025</div></li></a><a class="li" href="https://fffej.substack.com/p/measuring-engineering"><li><div class="title">Measuring Engineering</div><div class="domain">fffej.substack.com &bull; July 27, 2025</div></li></a><a class="li" href="https://obsoless.com/products/iph0n3-usb-c-protection-case"><li><div class="title">USB-C for Lightning iPhones</div><div class="domain">obsoless.com &bull; July 27, 2025</div></li></a><a class="li" href="https://wassimulator.com/blog/programming/av-racer/devlog_1.html"><li><div class="title">AV-Racer Devlog (1): Getting a functional car model</div><div class="domain">wassimulator.com &bull; July 27, 2025</div></li></a><a class="li" href="https://nonint.com/2023/03/09/gpt-might-be-an-information-virus/"><li><div class="title">GPT might be an information virus (2023)</div><div class="domain">nonint.com &bull; July 27, 2025</div></li></a><a class="li" href="https://www.narcap.org"><li><div class="title">National Aviation Reporting Center on Anomalous Phenomena</div><div class="domain">narcap.org &bull; July 27, 2025</div></li></a><a class="li" href="https://buttondown.com/whatever_jamie/archive/the-many-many-many-javascript-runtimes-of-the-last-decade/"><li><div class="title">The many JavaScript runtimes of the last decade</div><div class="domain">buttondown.com &bull; July 27, 2025</div></li></a><a class="li" href="https://techcrunch.com/2025/07/26/allianz-life-says-majority-of-customers-personal-data-stolen-in-cyberattack/"><li><div class="title">Allianz Life says 'majority' of customers' personal data stolen in cyberattack</div><div class="domain">techcrunch.com &bull; July 27, 2025</div></li></a><a class="li" href="https://www.nytimes.com/2025/07/27/arts/music/tom-lehrer-dead.html"><li><div class="title">Tom Lehrer has died</div><div class="domain">nytimes.com &bull; July 27, 2025</div></li></a><a class="li" href="https://sharktastica.co.uk/topics/patents"><li><div class="title">IBM Keyboard Patents</div><div class="domain">sharktastica.co.uk &bull; July 27, 2025</div></li></a><a class="li" href="https://news.ycombinator.com/item?id=44702833"><li><div class="title">Ask HN: What are you working on? (July 2025)</div><div class="domain">news.ycombinator.com &bull; July 27, 2025</div></li></a><a class="li" href="https://github.com/babycommando/zuse"><li><div class="title">ZUSE – The Modern IRC Chat for the Terminal Made in Go/Bubbletea</div><div class="domain">github.com &bull; July 27, 2025</div></li></a><a class="li" href="https://www.reddit.com/r/degoogle/s/YxmPgFes8a"><li><div class="title">EU age verification app to ban any Android system not licensed by Google</div><div class="domain">reddit.com &bull; July 27, 2025</div></li></a><a class="li" href="https://byteofdev.com/posts/making-postgres-slow/"><li><div class="title">Making Postgres slower</div><div class="domain">byteofdev.com &bull; July 27, 2025</div></li></a><a class="li" href="https://www.dumbpipe.dev/"><li><div class="title">Dumb Pipe</div><div class="domain">dumbpipe.dev &bull; July 27, 2025</div></li></a><a class="li" href="https://github.com/segmentationf4u1t/trae_telemetry_research"><li><div class="title">Performance and telemetry analysis of Trae IDE, ByteDance's VSCode fork</div><div class="domain">github.com &bull; July 27, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Sean Voisen (sean.voisen.org)</h2> (1)</summary><ul><a class="li" href="https://seanvoisen.com/blog/recently-1-july-2025/"><li><div class="title">Recently №1: Socrates, Stoicism and the joy of lingering</div><div class="domain">seanvoisen.com &bull; July 27, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Seth's Blog (seths.blog)</h2> (1)</summary><ul><a class="li" href="https://seths.blog/2025/07/hi-beams/"><li><div class="title">Hi beams</div><div class="domain">seths.blog &bull; July 27, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Diplomat (thediplomat.com)</h2> (2)</summary><ul><a class="li" href="https://thediplomat.com/2025/07/trumps-new-ai-action-plan-looks-awfully-familiar/"><li><div class="title">In Some Ways, Trump’s New AI Action Plan Actually Looks Familiar</div><div class="domain">thediplomat.com &bull; July 27, 2025</div></li></a><a class="li" href="https://thediplomat.com/2025/07/legal-minimalism-how-the-notion-of-sentience-disappeared-from-chinese-law/"><li><div class="title">Legal Minimalism: How the Notion of Sentience Disappeared From Chinese Law</div><div class="domain">thediplomat.com &bull; July 27, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Sympolymathesy, by Chris Krycho (v5.chriskrycho.com)</h2> (1)</summary><ul><a class="li" href="https://v5.chriskrycho.com/notes/jj-workshop/"><li><div class="title">[notes] jj workshop</div><div class="domain">v5.chriskrycho.com &bull; July 27, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (5)</summary><ul><a class="li" href="https://yourstory.com/2025/07/montreal-international-jazz-festival-music-creativity-photography"><li><div class="title">Jazz, blues and more: Montreal International Jazz Festival celebrates its spectacular 45th edition</div><div class="domain">yourstory.com &bull; July 27, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/ai-environment-inclusion-business-creativity-entrepreneur-education-quiz"><li><div class="title">AI, environment, inclusion: test your business creativity with Edition 198 of our weekly quiz!</div><div class="domain">yourstory.com &bull; July 27, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/lenskart-ipo-eyewear-retailer-to-raise-rs-2-150-crore-via-fresh-issue"><li><div class="title">Lenskart gets shareholder approval for IPO, targets Rs 8,500 Cr market debut</div><div class="domain">yourstory.com &bull; July 27, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/india-master-of-wine-makaibari-tea-meta-openai-china-ai-plans-amagi-media-labs-ipo"><li><div class="title">Meet India’s Master of Wine; The tea traditions of Makaibari</div><div class="domain">yourstory.com &bull; July 27, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/preventive-healthcare-non-invasive-technology-devices-future"><li><div class="title">Preventive healthcare: Why non-invasive tech is the future</div><div class="domain">yourstory.com &bull; July 27, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Numberphile (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=tsZkzxEhpHk"><li><div class="title">Treasure Trove (Zeeman Medal Lecture by Brady Haran) - Numberphile</div><div class="domain">youtube.com &bull; July 27, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Laasya (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=WpyDNjYSkq4"><li><div class="title">Eli Re Eli | Simple wedding/ bridesmaid dance | Nivi and Ishanvi | Laasya</div><div class="domain">youtube.com &bull; July 27, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">John Bartholomew (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=0dHvRYjcWwA"><li><div class="title">LoneWolf League: GAME 9</div><div class="domain">youtube.com &bull; July 27, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Jacob's Piano (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=NZIs51ts4gw"><li><div class="title">Song From A Secret Garden \\ Jacob's Piano</div><div class="domain">youtube.com &bull; July 27, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">GreatScott! (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=Jj6VQgw1ZvM"><li><div class="title">I tried finding Hidden Gems on AliExpress AGAIN! (Part 15)</div><div class="domain">youtube.com &bull; July 27, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>

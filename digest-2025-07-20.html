@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-07-20</span>:</h1>
+  <p class="summary">There are 67 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Bear Blog Trending Posts (bearblog.dev)</h2> (5)</summary><ul><a class="li" href="https://blog.happyfellow.dev/computational-tyranny/"><li><div class="title">Computational Tyranny</div><div class="domain">blog.happyfellow.dev &bull; July 20, 2025</div></li></a><a class="li" href="https://headintheelectricclouds.bearblog.dev/entertaining-myself-to-death/"><li><div class="title">Entertaining myself to death</div><div class="domain">headintheelectricclouds.bearblog.dev &bull; July 20, 2025</div></li></a><a class="li" href="https://tiramisu.bearblog.dev/hot-people-read-poetry/"><li><div class="title">hot people read poetry</div><div class="domain">tiramisu.bearblog.dev &bull; July 20, 2025</div></li></a><a class="li" href="https://blog.avas.space/reply-indieweb-needs/"><li><div class="title">re: what does the indie web need right now?</div><div class="domain">blog.avas.space &bull; July 20, 2025</div></li></a><a class="li" href="https://anotherjournal.bearblog.dev/why-do-people-in-france-read-books-everywhere/"><li><div class="title">why do people in france read books everywhere?</div><div class="domain">anotherjournal.bearblog.dev &bull; July 20, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Go Make Things (gomakethings.com)</h2> (1)</summary><ul><a class="li" href="https://gomakethings.com/boats-and-community/"><li><div class="title">Boats and Community</div><div class="domain">gomakethings.com &bull; July 20, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (2)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/jzgqTtcHhXpSDNgcF/your-ai-safety-org-could-get-eu-funding-up-to-eur9-08m-here"><li><div class="title">Your AI Safety org could get EU funding up to €9.08M. Here’s how (+ free personalized support)</div><div class="domain">lesswrong.com &bull; July 20, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/Zf2Kib3GrEAEiwdrE/shallow-water-is-dangerous-too"><li><div class="title">Shallow Water is Dangerous Too</div><div class="domain">lesswrong.com &bull; July 20, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Irrational Exuberance (lethain.com)</h2> (2)</summary><ul><a class="li" href="https://lethain.com/notion-agent/"><li><div class="title">An agent to use Notion docs as prompts to comment on Notion docs.</div><div class="domain">lethain.com &bull; July 20, 2025</div></li></a><a class="li" href="https://lethain.com/commenting-notion-open-ai-zapier/"><li><div class="title">Commenting on Notion docs via OpenAI and Zapier.</div><div class="domain">lethain.com &bull; July 20, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (16)</summary><ul><a class="li" href="https://fatbobman.com/en/posts/exploring-the-secrets-of-layoutpriority-in-zstack/"><li><div class="title">Exploring the Secrets of layoutPriority in SwiftUI ZStack</div><div class="domain">fatbobman.com &bull; July 20, 2025</div></li></a><a class="li" href="https://davidweiss.blogspot.com/2006/04/tour-of-microsofts-mac-lab.html"><li><div class="title">A tour of Microsoft's MacBU lab (2006)</div><div class="domain">davidweiss.blogspot.com &bull; July 20, 2025</div></li></a><a class="li" href="https://soda.privatevoid.net/foo/"><li><div class="title">The Foo Archive</div><div class="domain">soda.privatevoid.net &bull; July 20, 2025</div></li></a><a class="li" href="https://www.jjude.com/responsible-ai-in-enterprise-apps/"><li><div class="title">Responsible AI in Enterprise Applications: A Practitioner's View</div><div class="domain">jjude.com &bull; July 20, 2025</div></li></a><a class="li" href="https://frasertweedale.github.io/blog-fp/posts/2025-07-19-type-nats-and-constraints.html"><li><div class="title">Type-level programming for safer resource management</div><div class="domain">frasertweedale.github.io &bull; July 20, 2025</div></li></a><a class="li" href="https://paddy.carvers.com/posts/2025/07/ai/"><li><div class="title">I’m Tired of Talking About AI</div><div class="domain">paddy.carvers.com &bull; July 20, 2025</div></li></a><a class="li" href="https://nothings.org/gamedev/how_i_found_myself_in_the_game_industry.html"><li><div class="title">How I Found Myself In the Game Industry</div><div class="domain">nothings.org &bull; July 20, 2025</div></li></a><a class="li" href="https://blog.canoozie.net/async-i-o-on-linux-and-durability/"><li><div class="title">Async I/O on Linux and durability</div><div class="domain">blog.canoozie.net &bull; July 20, 2025</div></li></a><a class="li" href="https://blog.goose.love/posts/clippy-performance-status-update/"><li><div class="title">Rust Clippy performance status update</div><div class="domain">blog.goose.love &bull; July 20, 2025</div></li></a><a class="li" href="https://undeadly.org/cgi?action=article;sid=20250717103345"><li><div class="title">stdio(3) change: FILE is now opaque</div><div class="domain">undeadly.org &bull; July 20, 2025</div></li></a><a class="li" href="https://gashlin.net/blog/pages/2025-07-19-bad-apple-cdg.html"><li><div class="title">Bad Apple!! CD+G on a karaoke machine</div><div class="domain">gashlin.net &bull; July 20, 2025</div></li></a><a class="li" href="https://blog.foxtrotluna.social/theyre-putting-blue-food-coloring-in-everything/"><li><div class="title">They're putting blue food coloring in everything</div><div class="domain">blog.foxtrotluna.social &bull; July 20, 2025</div></li></a><a class="li" href="https://github.com/oils-for-unix/oils/wiki/Why-Lexing-and-Parsing-Should-Be-Separate"><li><div class="title">Why Lexing and Parsing Should Be Separate</div><div class="domain">github.com &bull; July 20, 2025</div></li></a><a class="li" href="https://antirez.com/news/154"><li><div class="title">Coding with LLMs in the summer of 2025 (an update)</div><div class="domain">antirez.com &bull; July 20, 2025</div></li></a><a class="li" href="https://youtu.be/Kvsvd67XUKw"><li><div class="title">Parallelizing the physics solver</div><div class="domain">youtu.be &bull; July 20, 2025</div></li></a><a class="li" href="https://biffweb.com/p/structuring-large-codebases/"><li><div class="title">Structuring large Clojure codebases with Biff</div><div class="domain">biffweb.com &bull; July 20, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (21)</summary><ul><a class="li" href="https://www.futilitycloset.com/2025/07/12/bus-bunching/"><li><div class="title">Bus Bunching</div><div class="domain">futilitycloset.com &bull; July 20, 2025</div></li></a><a class="li" href="https://medium.com/@jensenbox/quantum-wont-replace-your-computer-c6a9bf30fc9c"><li><div class="title">Quantum Won't Replace Your Computer</div><div class="domain">medium.com &bull; July 20, 2025</div></li></a><a class="li" href="https://utcc.utoronto.ca/~cks/space/blog/sysadmin/ChecklistsAreHardButGood"><li><div class="title">Checklists are hard, but still a good thing</div><div class="domain">utcc.utoronto.ca &bull; July 20, 2025</div></li></a><a class="li" href="https://www.discovermagazine.com/the-sciences/the-seven-sisters-eclipse-will-temporarily-block-stars-from-view"><li><div class="title">Seven Sisters eclipse will temporarily block stars from view</div><div class="domain">discovermagazine.com &bull; July 20, 2025</div></li></a><a class="li" href="https://about.gitea.com/"><li><div class="title">Gitea Private, Fast, Reliable DevOps Platform</div><div class="domain">about.gitea.com &bull; July 20, 2025</div></li></a><a class="li" href="https://github.com/thomasdavis/llm-benchmark/blob/main/tutorial.md"><li><div class="title">Show HN: benchmark code snippets perf improvements with multiple llm's</div><div class="domain">github.com &bull; July 20, 2025</div></li></a><a class="li" href="https://brusselssignal.eu/2025/07/digital-vassals-french-government-exposes-citizens-data-to-us/"><li><div class="title">Digital vassals? French Government 'exposes citizens' data to US'</div><div class="domain">brusselssignal.eu &bull; July 20, 2025</div></li></a><a class="li" href="https://blog.teufelaudio.com/visionary-mynds-insights-on-teufels-first-open-source-speaker/"><li><div class="title">Insights on Teufel's First Open-Source Speaker</div><div class="domain">blog.teufelaudio.com &bull; July 20, 2025</div></li></a><a class="li" href="https://github.com/lucianmarin/subreply"><li><div class="title">Subreply – an open source text-only social network</div><div class="domain">github.com &bull; July 20, 2025</div></li></a><a class="li" href="https://scottspence.com/posts/speeding-up-my-zsh-shell"><li><div class="title">Speeding up my ZSH shell</div><div class="domain">scottspence.com &bull; July 20, 2025</div></li></a><a class="li" href="https://www.tomshardware.com/software/the-biggest-speedup-ive-seen-so-far-ffmpeg-devs-boast-of-another-100x-leap-thanks-to-handwritten-assembly-code"><li><div class="title">FFmpeg devs boast of another 100x leap thanks to handwritten assembly code</div><div class="domain">tomshardware.com &bull; July 20, 2025</div></li></a><a class="li" href="https://canvas.openbased.org/"><li><div class="title">IPv6 Based Canvas</div><div class="domain">canvas.openbased.org &bull; July 20, 2025</div></li></a><a class="li" href="https://digitalseams.com/blog/what-birdsong-and-backends-can-teach-us-about-magic"><li><div class="title">What birdsong and back ends can teach us about magic</div><div class="domain">digitalseams.com &bull; July 20, 2025</div></li></a><a class="li" href="https://mattlakeman.org/2020/01/22/peep-show-the-most-realistic-portrayal-of-evil-ive-ever-seen/"><li><div class="title">Peep Show – The Most Realistic Portrayal of Evil Ever Made (2020)</div><div class="domain">mattlakeman.org &bull; July 20, 2025</div></li></a><a class="li" href="https://www.theguardian.com/business/2025/jul/20/eu-commissioner-shocked-dangerous-goods-sold-shein-temu"><li><div class="title">EU commissioner shocked by dangers of some goods sold by Shein and Temu</div><div class="domain">theguardian.com &bull; July 20, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=FhmLb2DhNYM"><li><div class="title">The Genius Device That Rocked F1</div><div class="domain">youtube.com &bull; July 20, 2025</div></li></a><a class="li" href="https://news.samsung.com/global/interview-staying-cool-without-refrigerants-how-samsung-is-pioneering-next-generation-peltier-cooling"><li><div class="title">Staying cool without refrigerants: Next-generation Peltier cooling</div><div class="domain">news.samsung.com &bull; July 20, 2025</div></li></a><a class="li" href="https://www.tomshardware.com/tech-industry/semiconductors/intel-draws-a-line-in-the-sand-to-boost-gross-margins-new-products-must-deliver-50-percent-to-get-the-green-light"><li><div class="title">Intel to boost gross margins – new products must deliver 50% gross profit</div><div class="domain">tomshardware.com &bull; July 20, 2025</div></li></a><a class="li" href="https://www.sciencedaily.com/releases/2025/07/250718035156.htm"><li><div class="title">Erythritol linked to brain cell damage and stroke risk</div><div class="domain">sciencedaily.com &bull; July 20, 2025</div></li></a><a class="li" href="https://www.etany.org/statements/impeding-progress-costing-riders-opto"><li><div class="title">Bill Banning One-Person Train Operation Would Lock NY Transit in the Past</div><div class="domain">etany.org &bull; July 20, 2025</div></li></a><a class="li" href="https://data4democracy.substack.com/p/on-data-and-democracy-mid-year-roundup"><li><div class="title">Data and Democracy: Charting Assault on American Democracy and a Path Forward</div><div class="domain">data4democracy.substack.com &bull; July 20, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Kindred Spirits (readkindredspirits.com)</h2> (1)</summary><ul><a class="li" href="https://www.readkindredspirits.com/p/two-ways-to-create-reality"><li><div class="title">two ways to create reality</div><div class="domain">readkindredspirits.com &bull; July 20, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Seth's Blog (seths.blog)</h2> (1)</summary><ul><a class="li" href="https://seths.blog/2025/07/lunging/"><li><div class="title">Lunging</div><div class="domain">seths.blog &bull; July 20, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Diplomat (thediplomat.com)</h2> (3)</summary><ul><a class="li" href="https://thediplomat.com/2025/07/could-thailands-cash-handout-scheme-have-worked/"><li><div class="title">Could Thailand’s Cash Handout Scheme Have Worked?</div><div class="domain">thediplomat.com &bull; July 20, 2025</div></li></a><a class="li" href="https://thediplomat.com/2025/07/bangladeshs-youth-led-ncps-countrywide-march-to-win-rural-voters/"><li><div class="title">Bangladesh’s Youth-led NCP’s Countrywide March to Win Rural Voters</div><div class="domain">thediplomat.com &bull; July 20, 2025</div></li></a><a class="li" href="https://thediplomat.com/2025/07/princeton-university-press-stumbles-into-a-xinjiang-tour-debacle/"><li><div class="title">Princeton University Press Stumbles Into a Xinjiang Tour Debacle</div><div class="domain">thediplomat.com &bull; July 20, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (10)</summary><ul><a class="li" href="https://yourstory.com/2025/07/tn-minister-inaugurates-facilitation-centre-at-anna-university-deeptech"><li><div class="title">Tamil Nadu sets up deeptech centre at Anna University to facilitate innovation</div><div class="domain">yourstory.com &bull; July 20, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/pocket-fm-cuts-production-cost-using-ai-generates-50000-shows"><li><div class="title">Pocket FM cuts production cost using AI, generates over 50,000 shows</div><div class="domain">yourstory.com &bull; July 20, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/ipo-bound-indiqube-spaces-fy25-net-loss-at-rs-140-crore"><li><div class="title">IPO-bound Indiqube Spaces FY25 net loss at Rs 140 Cr, revenue rises 27%</div><div class="domain">yourstory.com &bull; July 20, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/coindcx-security-breach-customer-funds-ceo-waxirx-bitcoin-cryptocurrency-safe"><li><div class="title">CoinDCX loses $44M in security breach, customer funds untouched, says CEO</div><div class="domain">yourstory.com &bull; July 20, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/ipo-fundraising-jan-jun-h1-2025-despite-global-trade-headwinds"><li><div class="title">IPO fundraising in H1 up 45% to Rs 45,350 Cr despite global trade headwinds</div><div class="domain">yourstory.com &bull; July 20, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/indias-drone-nation-dreams-are-ready-to-take-flight"><li><div class="title">India’s drone nation dreams are ready to take flight</div><div class="domain">yourstory.com &bull; July 20, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/from-snapfish-to-aadhaar-to-moneytap-to-ai-bala-parthasarathy"><li><div class="title">From Snapfish to Aadhaar to MoneyTap to AI: Bala Parthasarathy on building across eras</div><div class="domain">yourstory.com &bull; July 20, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/connection-reflection-conversation-india-art-festival-creativity-photography"><li><div class="title">Connection, reflection, conversation: How IAF artists assess impacts of their creativity</div><div class="domain">yourstory.com &bull; July 20, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/ai-performance-environment-business-creativity-entrepreneur-quiz-education"><li><div class="title">AI, performance, environment: test your business creativity with Edition 197 of our weekly quiz!</div><div class="domain">yourstory.com &bull; July 20, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/07/slice-old-world-england-perks-meditating-before-meals"><li><div class="title">A slice of old-world England; Perks of meditating before meals</div><div class="domain">yourstory.com &bull; July 20, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Suvaissance (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=B3xvTPa4r9o"><li><div class="title">Why Rahman used sounds we didn't know existed!</div><div class="domain">youtube.com &bull; July 20, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Lex Fridman (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/upeawiM1Sag"><li><div class="title">DHH rant against Apple</div><div class="domain">youtube.com &bull; July 20, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">GreatScott! (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/shorts/iYO-UpiJakU"><li><div class="title">Make your own Radio Station?! #diy #radio #electronics #engieering #electrical</div><div class="domain">youtube.com &bull; July 20, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Cinemawali (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=88-qb24t9EI"><li><div class="title">Q&A - Painting my wall & answering your questions!</div><div class="domain">youtube.com &bull; July 20, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">achalchitra (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=CM6q9EJ58ps"><li><div class="title">Chaar Phool Hain Aur Duniya Hai - Vinod Kumar Shukla - Film</div><div class="domain">youtube.com &bull; July 20, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>

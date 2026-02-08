@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2024-10-25</span>:</h1>
+  <p class="summary">There are 96 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Bear Blog Trending Posts (bearblog.dev)</h2> (4)</summary><ul><a class="li" href="https://bearblog.jasonkratz.me/my-mom-had-a-stroke/"><li><div class="title">My mom had a stroke</div><div class="domain">bearblog.jasonkratz.me &bull; October 25, 2024</div></li></a><a class="li" href="https://blog.platinumtulip.net/studyin-art/"><li><div class="title">studyin' art</div><div class="domain">blog.platinumtulip.net &bull; October 25, 2024</div></li></a><a class="li" href="https://plume.pink/blog-cohost/"><li><div class="title">I've never used cohost. But I miss it.</div><div class="domain">plume.pink &bull; October 25, 2024</div></li></a><a class="li" href="https://circlesoflife.bearblog.dev/the-most-powerful-method-for-personal-growth/"><li><div class="title">The Most Powerful Method For Personal Growth</div><div class="domain">circlesoflife.bearblog.dev &bull; October 25, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Big Think (bigthink.com)</h2> (2)</summary><ul><a class="li" href="https://bigthink.com/starts-with-a-bang/ask-ethan-cosmic-inflation-big-bang/"><li><div class="title">Ask Ethan: What’s the deal with cosmic inflation and the Big Bang?</div><div class="domain">bigthink.com &bull; October 25, 2024</div></li></a><a class="li" href="https://bigthink.com/thinking/everyday-philosophy-can-you-self-identify-as-a-different-generation/"><li><div class="title">Everyday Philosophy: Can you self-identify as a different generation?</div><div class="domain">bigthink.com &bull; October 25, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Jon Udell (blog.jonudell.net)</h2> (1)</summary><ul><a class="li" href="https://blog.jonudell.net/2024/10/25/what-claude-and-chatgpt-can-see-on-your-screen/"><li><div class="title">What Claude and ChatGPT can see on your screen</div><div class="domain">blog.jonudell.net &bull; October 25, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">kottke.org (feeds.kottke.org)</h2> (9)</summary><ul><a class="li" href="https://kottke.org/24/10/above"><li><div class="title">Above</div><div class="domain">kottke.org &bull; October 25, 2024</div></li></a><a class="li" href="https://kottke.org/24/10/0045526-the-ny-times-editorial-bo"><li><div class="title">The NY Times Editorial Board: &#8220;Donald Trump says he will prosecute his...</div><div class="domain">kottke.org &bull; October 25, 2024</div></li></a><a class="li" href="https://kottke.org/24/10/dua-lipas-proper-tiny-desk-concert"><li><div class="title">Dua Lipa&#8217;s (Proper) Tiny Desk Concert</div><div class="domain">kottke.org &bull; October 25, 2024</div></li></a><a class="li" href="https://kottke.org/24/10/0045525-new-book-from-john-green"><li><div class="title">New book from John Green: Everything Is Tuberculosis, the story of &#8220;the...</div><div class="domain">kottke.org &bull; October 25, 2024</div></li></a><a class="li" href="https://kottke.org/24/10/the-system-of-international-maritime-signal-flags"><li><div class="title">The System of International Maritime Signal Flags</div><div class="domain">kottke.org &bull; October 25, 2024</div></li></a><a class="li" href="https://kottke.org/24/10/0045519-polls-are-not-votes-the"><li><div class="title">&#8220;Polls are not votes. The candidates are not deadlocked. There is no...</div><div class="domain">kottke.org &bull; October 25, 2024</div></li></a><a class="li" href="https://kottke.org/24/10/0045521-heres-how-foods-that-were"><li><div class="title">Here&#8217;s how foods that were a part of WWII soldiers&#8217; rations (like...</div><div class="domain">kottke.org &bull; October 25, 2024</div></li></a><a class="li" href="https://kottke.org/24/10/if-adam-picked-the-apple"><li><div class="title">If Adam Picked the Apple</div><div class="domain">kottke.org &bull; October 25, 2024</div></li></a><a class="li" href="https://kottke.org/24/10/0045524-overturning-roe-v-wade-re"><li><div class="title">Overturning Roe v. Wade resulted in more infant deaths. &#8220;Hundreds more babies...</div><div class="domain">kottke.org &bull; October 25, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (4)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/iA87ke4so2eqiJfsi/balancing-label-quantity-and-quality-for-scalable"><li><div class="title">Balancing Label Quantity and Quality for Scalable Elicitation</div><div class="domain">lesswrong.com &bull; October 25, 2024</div></li></a><a class="li" href="https://www.lesswrong.com/posts/TZgNFfJY4T7CnakvR/linkpost-memorandum-on-advancing-the-united-states"><li><div class="title">Linkpost: Memorandum on Advancing the United States’ Leadership in Artificial Intelligence</div><div class="domain">lesswrong.com &bull; October 25, 2024</div></li></a><a class="li" href="https://www.lesswrong.com/posts/yYDSyDHzDHri6MDpS/big-tech-transitions-are-slow-with-implications-for-ai"><li><div class="title">Big tech transitions are slow (with implications for AI)</div><div class="domain">lesswrong.com &bull; October 25, 2024</div></li></a><a class="li" href="https://www.lesswrong.com/posts/LmhpAyCn8Xpqfwvhb/iaps-mapping-technical-safety-research-at-ai-companies"><li><div class="title">IAPS: Mapping Technical Safety Research at AI Companies</div><div class="domain">lesswrong.com &bull; October 25, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (19)</summary><ul><a class="li" href="https://youtu.be/KHxZ3mT9BSo"><li><div class="title">A Multi-Language-Oriented Macro System by Michael Ballantyne at the (fourteenth RacketCon) is now available</div><div class="domain">youtu.be &bull; October 25, 2024</div></li></a><a class="li" href="https://www.downtowndougbrown.com/2024/10/hardware-repair-of-an-elgato-hd60-s-that-only-worked-on-mac/"><li><div class="title">Hardware repair of an Elgato HD60 S that only worked on Mac</div><div class="domain">downtowndougbrown.com &bull; October 25, 2024</div></li></a><a class="li" href="https://forums.swift.org/t/swift-foundation-2024-annual-update/75609"><li><div class="title">Swift-Foundation 2024 Annual Update</div><div class="domain">forums.swift.org &bull; October 25, 2024</div></li></a><a class="li" href="https://libcello.org/learn/a-fat-pointer-library"><li><div class="title">Cello •  A Fat Pointer Library</div><div class="domain">libcello.org &bull; October 25, 2024</div></li></a><a class="li" href="https://www.adobe.com/max/2024/sessions/project-turntable-gs3-9.html"><li><div class="title">Project Turntable</div><div class="domain">adobe.com &bull; October 25, 2024</div></li></a><a class="li" href="https://blog.trailofbits.com/2024/10/25/a-deep-dive-into-linuxs-new-mseal-syscall"><li><div class="title">A deep dive into Linux’s new mseal syscall</div><div class="domain">blog.trailofbits.com &bull; October 25, 2024</div></li></a><a class="li" href="https://nyxspace.com/hifitime/#time-scales"><li><div class="title">Understanding leap seconds and time scales</div><div class="domain">nyxspace.com &bull; October 25, 2024</div></li></a><a class="li" href="https://fgiesen.wordpress.com/2024/10/24/inserting-a-0-bit-in-the-middle-of-a-value/"><li><div class="title">Inserting a 0 bit in the middle of a value</div><div class="domain">fgiesen.wordpress.com &bull; October 25, 2024</div></li></a><a class="li" href="https://asciinema.org/a/684031"><li><div class="title">Building & using simple utils in Rye console</div><div class="domain">asciinema.org &bull; October 25, 2024</div></li></a><a class="li" href="https://lobste.rs/s/6ljpkb/what_are_you_doing_this_weekend"><li><div class="title">What are you doing this weekend?</div><div class="domain">lobste.rs &bull; October 25, 2024</div></li></a><a class="li" href="https://gieseanw.wordpress.com/2024/10/09/how-to-make-product-give-a-shit-about-your-architecture-proposal/"><li><div class="title">How to make Product give a shit about your architecture proposal</div><div class="domain">gieseanw.wordpress.com &bull; October 25, 2024</div></li></a><a class="li" href="https://blogs.gnome.org/adrianvovk/2024/10/25/a-desktop-for-all/"><li><div class="title">A Desktop for All</div><div class="domain">blogs.gnome.org &bull; October 25, 2024</div></li></a><a class="li" href="https://composio.dev/blog/claude-computer-use"><li><div class="title">Notes on Anthropic's Computer Use Ability</div><div class="domain">composio.dev &bull; October 25, 2024</div></li></a><a class="li" href="https://without.boats/blog/generators-with-unpin-cell/"><li><div class="title">Generators with UnpinCell</div><div class="domain">without.boats &bull; October 25, 2024</div></li></a><a class="li" href="https://chadaustin.me/2024/10/intrusive-linked-list-in-rust/"><li><div class="title">Unsafe Rust Is Harder Than C</div><div class="domain">chadaustin.me &bull; October 25, 2024</div></li></a><a class="li" href="https://lobste.rs/s/6bca9e/is_it_ok_ethical_scrape_display_full_page"><li><div class="title">Is it ok (ethical) to scrape and display full-page content when blog author did not include in it RSS?</div><div class="domain">lobste.rs &bull; October 25, 2024</div></li></a><a class="li" href="https://30fps.net/pages/videogame-shadows/"><li><div class="title">Classic 3D videogame shadow techniques</div><div class="domain">30fps.net &bull; October 25, 2024</div></li></a><a class="li" href="https://www.circle-lang.org/draft-profiles.html"><li><div class="title">Why Safety Profiles Failed</div><div class="domain">circle-lang.org &bull; October 25, 2024</div></li></a><a class="li" href="https://www.scriptalert.one/2024/10/24/ghidra-dyld-extraction.html"><li><div class="title">Viewing MacOS system libraries in Ghidra</div><div class="domain">scriptalert.one &bull; October 25, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Longreads (longreads.com)</h2> (1)</summary><ul><a class="li" href="https://longreads.com/2024/10/25/the-top-5-longreads-of-the-week-537/"><li><div class="title">The Top 5 Longreads of the Week</div><div class="domain">longreads.com &bull; October 25, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Nautilus (nautil.us)</h2> (2)</summary><ul><a class="li" href="https://nautil.us/and-new-yorkers-think-the-gowanus-canal-is-bad-1013612/"><li><div class="title">And New Yorkers Think the Gowanus Canal Is Bad</div><div class="domain">nautil.us &bull; October 25, 2024</div></li></a><a class="li" href="https://nautil.us/motion-made-minds-1010268/"><li><div class="title">Motion Made Minds</div><div class="domain">nautil.us &bull; October 25, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Letters of Note (news.lettersofnote.com)</h2> (1)</summary><ul><a class="li" href="https://news.lettersofnote.com/p/me-have-cookie"><li><div class="title">ME HAVE COOKIE</div><div class="domain">news.lettersofnote.com &bull; October 25, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (29)</summary><ul><a class="li" href="https://jamesclear.com/wp-content/uploads/2015/03/copy-machine-study-ellen-langer.pdf"><li><div class="title">The Mindlessness of Ostensibly Thoughtful Action (1978) [pdf]</div><div class="domain">jamesclear.com &bull; October 25, 2024</div></li></a><a class="li" href="https://theconversation.com/why-ghosts-wear-clothes-or-white-sheets-instead-of-appearing-in-the-nude-241948"><li><div class="title">Why ghosts wear clothes or white sheets</div><div class="domain">theconversation.com &bull; October 25, 2024</div></li></a><a class="li" href="https://www.netsurf-browser.org/projects/libnsfb/"><li><div class="title">LibNSFB – Framebuffer (bitmap on screen) abstraction library, written in C</div><div class="domain">netsurf-browser.org &bull; October 25, 2024</div></li></a><a class="li" href="https://redact-a-chat.com/#/"><li><div class="title">Redact-a-Chat</div><div class="domain">redact-a-chat.com &bull; October 25, 2024</div></li></a><a class="li" href="https://www.cell.com/joule/fulltext/S2542-4351(24)00429-X"><li><div class="title">Electro-agriculture: Revolutionizing farming for a sustainable future</div><div class="domain">cell.com &bull; October 25, 2024</div></li></a><a class="li" href="https://www.theguardian.com/uk-news/2020/nov/06/companies-house-forces-business-name-change-to-prevent-security-risk"><li><div class="title">Company named "><SCRIPT SRC=HTTPS://MJT.XSS.HT> LTD" forced to change it (2020)</div><div class="domain">theguardian.com &bull; October 25, 2024</div></li></a><a class="li" href="https://en.wikipedia.org/wiki/Asian_News_International_vs._Wikimedia_Foundation"><li><div class="title">Wikipedia article blocked worldwide by Delhi high court</div><div class="domain">en.wikipedia.org &bull; October 25, 2024</div></li></a><a class="li" href="https://klecko.github.io/posts/selinux-bypasses/"><li><div class="title">SELinux bypasses</div><div class="domain">klecko.github.io &bull; October 25, 2024</div></li></a><a class="li" href="https://microsoft.github.io/OmniParser/"><li><div class="title">OmniParser for Pure Vision Based GUI Agent</div><div class="domain">microsoft.github.io &bull; October 25, 2024</div></li></a><a class="li" href="https://arxiv.org/abs/2311.11793"><li><div class="title">Universal optimality of Dijkstra via beyond-worst-case heaps</div><div class="domain">arxiv.org &bull; October 25, 2024</div></li></a><a class="li" href="https://investigatemidwest.org/2024/10/11/regenerative-farming-practices-require-unlearning-past-advice/"><li><div class="title">In the US, regenerative farming practices require unlearning past advice</div><div class="domain">investigatemidwest.org &bull; October 25, 2024</div></li></a><a class="li" href="https://www.bryanbraun.com/2024/10/25/before-you-buy-a-domain-name-first-check-to-see-if-its-haunted/"><li><div class="title">Before you buy a domain name, first check to see if it's haunted</div><div class="domain">bryanbraun.com &bull; October 25, 2024</div></li></a><a class="li" href="https://www.ifixit.com/News/102368/victory-is-sweet-we-can-now-fix-mcdonalds-ice-cream-machines"><li><div class="title">We can now fix McDonald's ice cream machines</div><div class="domain">ifixit.com &bull; October 25, 2024</div></li></a><a class="li" href="https://www.sciencealert.com/astronomers-discover-complex-carbon-molecules-in-interstellar-space"><li><div class="title">Astronomers Discover Complex Carbon Molecules in Interstellar Space</div><div class="domain">sciencealert.com &bull; October 25, 2024</div></li></a><a class="li" href="https://www.cnet.com/tech/mobile/with-apple-intelligence-on-the-horizon-a-quarter-of-smartphone-owners-are-unimpressed-by-ai/"><li><div class="title">Smartphone buyers meh on AI, care more about battery life</div><div class="domain">cnet.com &bull; October 25, 2024</div></li></a><a class="li" href="https://www.nature.com/articles/d41586-024-03484-1"><li><div class="title">New species of tardigrade reveals secrets of radiation-resisting powers</div><div class="domain">nature.com &bull; October 25, 2024</div></li></a><a class="li" href="https://medicalxpress.com/news/2024-10-plastic-chemical-phthalate-dna-breakage.html"><li><div class="title">Plastic chemical phthalate causes DNA breakage, chromosome defects, study finds</div><div class="domain">medicalxpress.com &bull; October 25, 2024</div></li></a><a class="li" href="https://simonwillison.net/2024/Oct/24/claude-analysis-tool/"><li><div class="title">Notes on the new Claude analysis JavaScript code execution tool</div><div class="domain">simonwillison.net &bull; October 25, 2024</div></li></a><a class="li" href="https://www.instantdb.com/hiring"><li><div class="title">Instant (YC S22) Is Hiring a Founding Engineer to Build a Modern Firebase</div><div class="domain">instantdb.com &bull; October 25, 2024</div></li></a><a class="li" href="https://www.economist.com/leaders/2024/10/24/its-not-just-obesity-drugs-like-ozempic-will-change-the-world"><li><div class="title">It's not just obesity. Drugs like Ozempic will change the world</div><div class="domain">economist.com &bull; October 25, 2024</div></li></a><a class="li" href="https://www.thariq.io/blog/entropix/"><li><div class="title">Detecting when LLMs are uncertain</div><div class="domain">thariq.io &bull; October 25, 2024</div></li></a><a class="li" href="https://blog.trailofbits.com/2024/10/25/a-deep-dive-into-linuxs-new-mseal-syscall/"><li><div class="title">A deep dive into Linux's new mseal syscall</div><div class="domain">blog.trailofbits.com &bull; October 25, 2024</div></li></a><a class="li" href="https://lukerissacher.com/battleships"><li><div class="title">Battleships Logic Puzzle</div><div class="domain">lukerissacher.com &bull; October 25, 2024</div></li></a><a class="li" href="https://abuseofnotation.github.io/category-theory-illustrated/05_logic/"><li><div class="title">Category Theory Illustrated: Logic(2021)</div><div class="domain">abuseofnotation.github.io &bull; October 25, 2024</div></li></a><a class="li" href="https://rsbuild.dev/"><li><div class="title">Rsbuild – A Better Vite?</div><div class="domain">rsbuild.dev &bull; October 25, 2024</div></li></a><a class="li" href="https://www.wsj.com/articles/u-s-consumer-watchdog-cautions-businesses-on-surveillance-of-workers-8262bee3"><li><div class="title">U.S. Consumer Watchdog Cautions Businesses on Surveillance of Workers</div><div class="domain">wsj.com &bull; October 25, 2024</div></li></a><a class="li" href="https://www.ycombinator.com/companies/vapi/jobs/BnVHTaQ-founding-senior-engineer-infrastructure"><li><div class="title">Vapi (YC W21) is hiring a founding infra engineer to handle scale</div><div class="domain">ycombinator.com &bull; October 25, 2024</div></li></a><a class="li" href="https://github.com/resola-ai/rust-aws-tui"><li><div class="title">Show HN: Rust based AWS Lambda Logs Viewer (TUI)</div><div class="domain">github.com &bull; October 25, 2024</div></li></a><a class="li" href="https://github.com/open-feature"><li><div class="title">OpenFeature – a vendor-agnostic, community-driven API for feature flagging</div><div class="domain">github.com &bull; October 25, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">notes.druchan.com — RSS Feed (notes.druchan.com)</h2> (1)</summary><ul><a class="li" href="https://notes.druchan.com/haskell-journal-day-14"><li><div class="title">Haskell Journal - Day 14</div><div class="domain">notes.druchan.com &bull; October 25, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Quanta Magazine (quantamagazine.org)</h2> (1)</summary><ul><a class="li" href="https://www.quantamagazine.org/computer-scientists-establish-the-best-way-to-traverse-a-graph-20241025/"><li><div class="title">Computer Scientists Establish the Best Way to Traverse a Graph</div><div class="domain">quantamagazine.org &bull; October 25, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Reasons to be Cheerful (reasonstobecheerful.world)</h2> (1)</summary><ul><a class="li" href="https://reasonstobecheerful.world/kangaroo-mother-care-newborns/"><li><div class="title">An Age-Old Midwife Tradition’s Revival Is Saving Vulnerable Newborns</div><div class="domain">reasonstobecheerful.world &bull; October 25, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Seth's Blog (seths.blog)</h2> (1)</summary><ul><a class="li" href="https://seths.blog/2024/10/intuition-2/"><li><div class="title">Intuition</div><div class="domain">seths.blog &bull; October 25, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Trevor I. Lasn Thoughts (trevorlasn.com)</h2> (3)</summary><ul><a class="li" href="https://www.trevorlasn.com/blog/why-browsers-block-css-file-modifications"><li><div class="title">Why Browsers Block CSS File Modifications</div><div class="domain">trevorlasn.com &bull; October 25, 2024</div></li></a><a class="li" href="https://www.trevorlasn.com/blog/css-object-model-cssom"><li><div class="title">Inside the CSS Engine: CSSOM Explained</div><div class="domain">trevorlasn.com &bull; October 25, 2024</div></li></a><a class="li" href="https://www.trevorlasn.com/blog/why-cant-javascript-modify-css-files"><li><div class="title">Why Can't JavaScript Modify CSS Files?</div><div class="domain">trevorlasn.com &bull; October 25, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (16)</summary><ul><a class="li" href="https://yourstory.com/2024/10/startup-news-and-updates-daily-roundup-october-25-2024-zoho-zypp"><li><div class="title">Startup news and updates: Daily roundup (October 25, 2024)</div><div class="domain">yourstory.com &bull; October 25, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/10/swiggy-launches-international-logins-for-nris-from-27-countries"><li><div class="title">Swiggy launches ‘International Logins’ for NRIs from 27 countries</div><div class="domain">yourstory.com &bull; October 25, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/10/zomato-launches-advance-order-scheduling-following-swiggy"><li><div class="title">After Swiggy, Zomato launches advance order scheduling</div><div class="domain">yourstory.com &bull; October 25, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/10/weekly-funding-roundup-oct-19-25-vc-inflow-dips-in-the-absence-of-large-deals"><li><div class="title">(Weekly funding roundup Oct 19-25) VC inflow dips in the absence of large deals</div><div class="domain">yourstory.com &bull; October 25, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/10/majority-of-indian-manufacturers-adopting-ai-robotics-to-boost-sustainable-biz-practices-report"><li><div class="title">Indian manufacturers adopting AI, robotics to boost sustainable biz practices: Report</div><div class="domain">yourstory.com &bull; October 25, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/10/crypto-exchange-wazirx-cryptocurrency-total-reserves-reports-41-decline-from-june"><li><div class="title">WazirX reserves total $298.17M, reports 41% decline from June</div><div class="domain">yourstory.com &bull; October 25, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/10/youtube-expands-shopping-programme-india"><li><div class="title">YouTube expands Shopping programme to India to boost creator earnings</div><div class="domain">yourstory.com &bull; October 25, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/10/arihant-academy-acquires-51-pc-stake-zeal-academy"><li><div class="title">Arihant Academy acquires 51% stake in ZEAL Academy</div><div class="domain">yourstory.com &bull; October 25, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/10/dpiit-announces-partnership-with-hclsoftware-in-manufacturing-incubation-initiative"><li><div class="title">DPIIT partners with HCLSoftware in manufacturing incubation initiative</div><div class="domain">yourstory.com &bull; October 25, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/10/ratan-tatas-will-estate-shantanu-naidu-dog-tito-butler-philanthropy"><li><div class="title">Who's in Ratan Tata's Rs 10,000 Cr will? Dog, butler get special mentions</div><div class="domain">yourstory.com &bull; October 25, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/10/satya-nadella-compensation-salary-pay-cut-microsoft-cybersecurity"><li><div class="title">Satya Nadella asked for pay cut, Microsoft handed him $79.1 million</div><div class="domain">yourstory.com &bull; October 25, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/10/flam-powers-kamala-harris-presidential-campaign-mixed-reality"><li><div class="title">Flam powers Kamala Harris’ US presidential campaign in Mixed Reality</div><div class="domain">yourstory.com &bull; October 25, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/10/vettaiyan-rajinikanth-ott-amazon-prime-video-november-7"><li><div class="title">Vettaiyan to stream on OTT from November 7?</div><div class="domain">yourstory.com &bull; October 25, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/10/healthify-raises-20m-fresh-capital-drive-us-expansion"><li><div class="title">Healthify raises $20M in fresh capital to drive US expansion</div><div class="domain">yourstory.com &bull; October 25, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/10/ai-legal-tech-nutrabay-d2c-startup-counterfeit-product-entrepreneur"><li><div class="title">Is AI legal tech a recipe for disaster?; Nutrabay combats counterfeit products</div><div class="domain">yourstory.com &bull; October 25, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/10/evolution-green-buildings-technology-sustainability-construction"><li><div class="title">The evolution of green buildings: Technology driving sustainability in construction</div><div class="domain">yourstory.com &bull; October 25, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Official PeeingHuman (youtube.com)</h2> (1)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=4wOkbRty_tM"><li><div class="title">I APOLOGISE to Abhijit Iyer Mitra 🫣</div><div class="domain">youtube.com &bull; October 25, 2024</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>

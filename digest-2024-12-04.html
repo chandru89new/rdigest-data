@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2024-12-04</span>:</h1>
+  <p class="summary">There are 101 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Bear Blog Trending Posts (bearblog.dev)</h2> (1)</summary><ul><a class="li" href="https://tiramisu.bearblog.dev/uhc-murder/"><li><div class="title">somebody said dignity was the first to leave</div><div class="domain">tiramisu.bearblog.dev &bull; December 04, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Big Think (bigthink.com)</h2> (3)</summary><ul><a class="li" href="https://bigthink.com/health/ten-americas-for-life-expectancy/"><li><div class="title">When it comes to life expectancy, there are 10 Americas</div><div class="domain">bigthink.com &bull; December 04, 2024</div></li></a><a class="li" href="https://bigthink.com/business/principles-for-leading-with-ai/"><li><div class="title">Ethan Mollick’s 4 guiding principles for leading with AI</div><div class="domain">bigthink.com &bull; December 04, 2024</div></li></a><a class="li" href="https://bigthink.com/starts-with-a-bang/b-mesons-break-standard-model/"><li><div class="title">How B-mesons are threatening to break the Standard Model</div><div class="domain">bigthink.com &bull; December 04, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">kottke.org (feeds.kottke.org)</h2> (6)</summary><ul><a class="li" href="https://kottke.org/24/12/0045772-a-universal-plug-and-char"><li><div class="title">A universal &#8220;Plug and Charge&#8221; framework for EV charging is rolling out...</div><div class="domain">kottke.org &bull; December 04, 2024</div></li></a><a class="li" href="https://kottke.org/24/12/0045773-bloomberg-businessweeks-j"><li><div class="title">Bloomberg Businessweek&#8217;s Jealousy List for 2024, &#8220;We&#8217;ve asked our editors & contributors...</div><div class="domain">kottke.org &bull; December 04, 2024</div></li></a><a class="li" href="https://kottke.org/24/12/2024-kottke-holiday-gift-guide"><li><div class="title">The 2024 Kottke Holiday Gift Guide</div><div class="domain">kottke.org &bull; December 04, 2024</div></li></a><a class="li" href="https://kottke.org/24/12/0045779-jesus-this-story-about-a"><li><div class="title">Jesus, this story about an IVF clinic mix-up&#8230; &#8220;Two couples in California...</div><div class="domain">kottke.org &bull; December 04, 2024</div></li></a><a class="li" href="https://kottke.org/24/12/0045778-the-war-on-poverty-is"><li><div class="title">The War on Poverty Is Over. Rich People Won. &#8220;Why do so...</div><div class="domain">kottke.org &bull; December 04, 2024</div></li></a><a class="li" href="https://kottke.org/24/12/0045713-rob-stephenson-is-current"><li><div class="title">Rob Stephenson is currently visiting and photographing all 350 neighborhoods in NYC....</div><div class="domain">kottke.org &bull; December 04, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Go Make Things (gomakethings.com)</h2> (1)</summary><ul><a class="li" href="https://gomakethings.com/building-a-code-sandbox/"><li><div class="title">Building a code sandbox</div><div class="domain">gomakethings.com &bull; December 04, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (3)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/avhKKnJyJ6kisvkzk/fertility-roundup-4"><li><div class="title">Fertility Roundup #4</div><div class="domain">lesswrong.com &bull; December 04, 2024</div></li></a><a class="li" href="https://www.lesswrong.com/posts/pudQtkre7f9GLmb2b/the-2023-lesswrong-review-the-basic-ask"><li><div class="title">The 2023 LessWrong Review: The Basic Ask</div><div class="domain">lesswrong.com &bull; December 04, 2024</div></li></a><a class="li" href="https://www.lesswrong.com/posts/e5aE96YsbdEqRyKeH/a-qualitative-case-for-ltff-filling-critical-ecosystem-gaps-1"><li><div class="title">A Qualitative Case for LTFF: Filling Critical Ecosystem Gaps</div><div class="domain">lesswrong.com &bull; December 04, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (23)</summary><ul><a class="li" href="https://matduggan.com/making-fun-flask-apps-for-no-reason/"><li><div class="title">Making Fun Flask Apps for No Reason</div><div class="domain">matduggan.com &bull; December 04, 2024</div></li></a><a class="li" href="https://alexey.radul.name/ideas/2019/computational-murk/"><li><div class="title">Computational murk</div><div class="domain">alexey.radul.name &bull; December 04, 2024</div></li></a><a class="li" href="https://www.youtube.com/watch?v=xgmGK0_KyKc"><li><div class="title">Full-stack quantum computing, from hardware to compilers and algorithms</div><div class="domain">youtube.com &bull; December 04, 2024</div></li></a><a class="li" href="https://dspace.mit.edu/handle/1721.1/44215"><li><div class="title">The Art of the Propagator</div><div class="domain">dspace.mit.edu &bull; December 04, 2024</div></li></a><a class="li" href="https://www.gingerbill.org/article/2024/01/22/comparing-language-benchmarks/"><li><div class="title">Why I Hate Language Benchmarks</div><div class="domain">gingerbill.org &bull; December 04, 2024</div></li></a><a class="li" href="https://robertheaton.com/pymyflyspy/"><li><div class="title">PyMyFlySpy: track your flight using its headrest data</div><div class="domain">robertheaton.com &bull; December 04, 2024</div></li></a><a class="li" href="https://johnwickerson.wordpress.com/2024/12/04/the-hoare-cube/"><li><div class="title">The Hoare Cube</div><div class="domain">johnwickerson.wordpress.com &bull; December 04, 2024</div></li></a><a class="li" href="https://blog.plover.com/prog/bug/timing.html"><li><div class="title">A complex bug with a ⸢simple⸣ fix</div><div class="domain">blog.plover.com &bull; December 04, 2024</div></li></a><a class="li" href="https://www.pulumi.com/blog/cursed-container-iceberg/"><li><div class="title">The Cloud Container Iceberg</div><div class="domain">pulumi.com &bull; December 04, 2024</div></li></a><a class="li" href="https://simonwillison.net/2024/Dec/4/amazon-nova/"><li><div class="title">First impressions of the new Amazon Nova LLMs (via a new llm-bedrock plugin)</div><div class="domain">simonwillison.net &bull; December 04, 2024</div></li></a><a class="li" href="https://kokada.dev/blog/praise-to-scdoc-to-generate-man-pages/"><li><div class="title">Praise to scdoc to generate man pages</div><div class="domain">kokada.dev &bull; December 04, 2024</div></li></a><a class="li" href="https://blog.sequinstream.com/keyset-cursors-not-offsets-for-postgres-pagination/"><li><div class="title">Keyset Cursors, Not Offsets, for Postgres Pagination</div><div class="domain">blog.sequinstream.com &bull; December 04, 2024</div></li></a><a class="li" href="https://brooker.co.za/blog/2024/12/03/aurora-dsql.html"><li><div class="title">DSQL Vignette: Aurora DSQL, and A Personal Story</div><div class="domain">brooker.co.za &bull; December 04, 2024</div></li></a><a class="li" href="https://brooker.co.za/blog/2024/04/25/memorydb.html"><li><div class="title">MemoryDB: Speed, Durability, and Composition</div><div class="domain">brooker.co.za &bull; December 04, 2024</div></li></a><a class="li" href="https://shape-of-code.com/2024/12/01/21-algol-60-compilers-in-1962/"><li><div class="title">21 Algol 60 compilers in 1962</div><div class="domain">shape-of-code.com &bull; December 04, 2024</div></li></a><a class="li" href="https://aws.amazon.com/blogs/database/introducing-amazon-aurora-dsql/"><li><div class="title">Introducing Amazon Aurora DSQL</div><div class="domain">aws.amazon.com &bull; December 04, 2024</div></li></a><a class="li" href="https://azeemba.com/posts/certificate-authorities-and-the-fragility-of-internet-safety.html"><li><div class="title">Certificate Authorities and the Fragility of Internet Safety</div><div class="domain">azeemba.com &bull; December 04, 2024</div></li></a><a class="li" href="https://linuxjournal.rubdos.be/ljarchive/LJ/298/12538.html"><li><div class="title">Linux TCP SO_REUSEPORT: Usage and Implementation</div><div class="domain">linuxjournal.rubdos.be &bull; December 04, 2024</div></li></a><a class="li" href="https://jpcamara.com/2024/12/01/speeding-up-ruby.html"><li><div class="title">Speeding up Ruby by rewriting C in Ruby</div><div class="domain">jpcamara.com &bull; December 04, 2024</div></li></a><a class="li" href="https://gregoryszorc.com/blog/2024/12/03/transferring-python-build-standalone-stewardship-to-astral/"><li><div class="title">Transferring Python Build Standalone Stewardship to Astral</div><div class="domain">gregoryszorc.com &bull; December 04, 2024</div></li></a><a class="li" href="https://egoless.engineering/"><li><div class="title">Egoless Engineering</div><div class="domain">egoless.engineering &bull; December 04, 2024</div></li></a><a class="li" href="https://seri.tools/blog/rust9x-1-84/"><li><div class="title">Rust9x update: Rust 1.84.0-beta</div><div class="domain">seri.tools &bull; December 04, 2024</div></li></a><a class="li" href="https://people.freebsd.org/~dch/posts/2024-12-04-freebsd-containers"><li><div class="title">A Brief Introduction to OCI Containers on FreeBSD</div><div class="domain">people.freebsd.org &bull; December 04, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Longreads (longreads.com)</h2> (4)</summary><ul><a class="li" href="https://longreads.com/2024/12/04/the-struggle-for-land-reparations-and-belonging-in-california/"><li><div class="title">The Struggle for Land, Reparations, and Belonging in California</div><div class="domain">longreads.com &bull; December 04, 2024</div></li></a><a class="li" href="https://longreads.com/2024/12/04/inside-the-vaticans-secret-saint-making-process/"><li><div class="title">Inside the Vatican’s Secret Saint-Making Process</div><div class="domain">longreads.com &bull; December 04, 2024</div></li></a><a class="li" href="https://longreads.com/2024/12/04/on-slowing-down-to-cook/"><li><div class="title">On Slowing Down to Cook</div><div class="domain">longreads.com &bull; December 04, 2024</div></li></a><a class="li" href="https://longreads.com/2024/12/04/black-earth/"><li><div class="title">Black Earth</div><div class="domain">longreads.com &bull; December 04, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Nautilus (nautil.us)</h2> (1)</summary><ul><a class="li" href="https://nautil.us/an-archaeological-reckoning-1167536/"><li><div class="title">An Archaeological Reckoning</div><div class="domain">nautil.us &bull; December 04, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (33)</summary><ul><a class="li" href="https://www.oum.ox.ac.uk/bacterialworld/"><li><div class="title">Bacterial World</div><div class="domain">oum.ox.ac.uk &bull; December 04, 2024</div></li></a><a class="li" href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0310835"><li><div class="title">Misperception of the facial appearance that the opposite-sex desires</div><div class="domain">journals.plos.org &bull; December 04, 2024</div></li></a><a class="li" href="https://github.com/alxyng/flappybird"><li><div class="title">Flappy Bird in 1000 lines of C</div><div class="domain">github.com &bull; December 04, 2024</div></li></a><a class="li" href="https://divisbyzero.com/2024/11/30/make-a-magic-eye-image-using-excel/"><li><div class="title">Make a "Magic Eye" image using Excel</div><div class="domain">divisbyzero.com &bull; December 04, 2024</div></li></a><a class="li" href="https://gwern.net/harberger"><li><div class="title">Self-Funding Harberger Taxes</div><div class="domain">gwern.net &bull; December 04, 2024</div></li></a><a class="li" href="https://blog.helix.ml/p/building-reliable-genai-applications"><li><div class="title">Test Driven Development (TDD) for your LLMs? Yes please, more of that please</div><div class="domain">blog.helix.ml &bull; December 04, 2024</div></li></a><a class="li" href="https://acamh.onlinelibrary.wiley.com/doi/10.1111/jcpp.14072"><li><div class="title">Contribution of childhood lead exposure to psychopathology in the US</div><div class="domain">acamh.onlinelibrary.wiley.com &bull; December 04, 2024</div></li></a><a class="li" href="https://www.alberta.ca/history-of-rat-control-in-alberta"><li><div class="title">History of rat control in Alberta</div><div class="domain">alberta.ca &bull; December 04, 2024</div></li></a><a class="li" href="https://thereader.mitpress.mit.edu/how-typing-transformed-nietzsches-consciousness/"><li><div class="title">How Typing Transformed Nietzsche's Consciousness</div><div class="domain">thereader.mitpress.mit.edu &bull; December 04, 2024</div></li></a><a class="li" href="https://600f3559.prunt-docs.pages.dev/"><li><div class="title">Show HN: A 5th order motion planner with PH spline blending, written in Ada</div><div class="domain">600f3559.prunt-docs.pages.dev &bull; December 04, 2024</div></li></a><a class="li" href="https://www.ft.com/content/1201f834-6407-4bb5-ac9d-18496ec2948b"><li><div class="title">Why America's economy is soaring ahead of its rivals</div><div class="domain">ft.com &bull; December 04, 2024</div></li></a><a class="li" href="https://www.ashbyhq.com/careers?utm_source=hn&ashby_jid=213c15c5-8e96-4fce-82da-dab268edc4c0"><li><div class="title">Ashby (YC W19) Is Hiring Principal Platform Engineers</div><div class="domain">ashbyhq.com &bull; December 04, 2024</div></li></a><a class="li" href="https://news.ycombinator.com/item?id=42319315"><li><div class="title">Launch HN: Parsagon (YC W21) – AI for public affairs and government relations</div><div class="domain">news.ycombinator.com &bull; December 04, 2024</div></li></a><a class="li" href="https://www.kapa.ai/blog/ai-hallucination"><li><div class="title">AI hallucinations: Why LLMs make things up (and how to fix it)</div><div class="domain">kapa.ai &bull; December 04, 2024</div></li></a><a class="li" href="https://www.limejourney.com"><li><div class="title">Show HN: LimeJourney – open-source Customer Engagement Platform</div><div class="domain">limejourney.com &bull; December 04, 2024</div></li></a><a class="li" href="https://www.ginkgonotes.com/"><li><div class="title">Show HN: I combined spaced repetition with emails so you can remember anything</div><div class="domain">ginkgonotes.com &bull; December 04, 2024</div></li></a><a class="li" href="https://muffinman.io/blog/native-dual-range-input/"><li><div class="title">Native dual-range input</div><div class="domain">muffinman.io &bull; December 04, 2024</div></li></a><a class="li" href="https://github.com/outerbase/studio"><li><div class="title">Show HN: Outerbase Studio – Open-Source Database GUI</div><div class="domain">github.com &bull; December 04, 2024</div></li></a><a class="li" href="https://newscenter.lbl.gov/2024/12/04/ai-helps-researchers-dig-through-old-maps-to-find-lost-oil-and-gas-wells/"><li><div class="title">AI helps researchers dig through old maps to find lost oil and gas wells</div><div class="domain">newscenter.lbl.gov &bull; December 04, 2024</div></li></a><a class="li" href="https://kevinboone.me/dx7.html"><li><div class="title">They don't make them like that any more: the Yamaha DX7 keyboard</div><div class="domain">kevinboone.me &bull; December 04, 2024</div></li></a><a class="li" href="https://deno.com/blog/deno-v-oracle/20241204-notice-of-appearance.pdf"><li><div class="title">Oracle Files Notice of Appearance for JavaScript Trademark [pdf]</div><div class="domain">deno.com &bull; December 04, 2024</div></li></a><a class="li" href="https://bkiran.com/blog/deploying-containers-nixos"><li><div class="title">Deploying Containers on NixOS: A Guide</div><div class="domain">bkiran.com &bull; December 04, 2024</div></li></a><a class="li" href="https://deepmind.google/discover/blog/genie-2-a-large-scale-foundation-world-model/"><li><div class="title">Genie 2: A large-scale foundation world model</div><div class="domain">deepmind.google &bull; December 04, 2024</div></li></a><a class="li" href="https://oxfordclarion.uk/the-bird-and-baby-grows-up-inside-the-new-eagle-child/"><li><div class="title">The "Bird and Baby" grows up: inside the new Eagle and Child</div><div class="domain">oxfordclarion.uk &bull; December 04, 2024</div></li></a><a class="li" href="https://blocksandfiles.com/2024/12/02/pinecone-integrates-ai-inferencing-with-its-vector-database/"><li><div class="title">Pinecone integrates AI inferencing with vector database</div><div class="domain">blocksandfiles.com &bull; December 04, 2024</div></li></a><a class="li" href="https://github.com/athina-ai/rag-cookbooks"><li><div class="title">Show HN: Open-Source Colab Notebooks to Implement Advanced RAG Techniques</div><div class="domain">github.com &bull; December 04, 2024</div></li></a><a class="li" href="https://news.ycombinator.com/item?id=42316644"><li><div class="title">Reprompt (YC W24) Is Hiring an Engineer to Build Location Agents</div><div class="domain">news.ycombinator.com &bull; December 04, 2024</div></li></a><a class="li" href="https://ppc.web.cern.ch/"><li><div class="title">A particle physics course for high-school students</div><div class="domain">ppc.web.cern.ch &bull; December 04, 2024</div></li></a><a class="li" href="https://cloud.google.com/blog/products/ai-machine-learning/introducing-veo-and-imagen-3-on-vertex-ai"><li><div class="title">Veo and Imagen 3: Announcing new video and image generation models on Vertex AI</div><div class="domain">cloud.google.com &bull; December 04, 2024</div></li></a><a class="li" href="https://www.openttd.org/"><li><div class="title">OpenTTD is an open source simulation game based upon Transport Tycoon Deluxe</div><div class="domain">openttd.org &bull; December 04, 2024</div></li></a><a class="li" href="https://tej.as/blog/how-to-grow-professional-relationships-tjs-model"><li><div class="title">How to Grow Professional Relationships</div><div class="domain">tej.as &bull; December 04, 2024</div></li></a><a class="li" href="https://walzr.com/IMG_0001/"><li><div class="title">IMG_0001</div><div class="domain">walzr.com &bull; December 04, 2024</div></li></a><a class="li" href="https://aws.amazon.com/blogs/aws/prevent-factual-errors-from-llm-hallucinations-with-mathematically-sound-automated-reasoning-checks-preview/"><li><div class="title">Automated reasoning to remove LLM hallucinations</div><div class="domain">aws.amazon.com &bull; December 04, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Quanta Magazine (quantamagazine.org)</h2> (1)</summary><ul><a class="li" href="https://www.quantamagazine.org/the-ai-pioneer-with-provocative-plans-for-humanity-20241204/"><li><div class="title">The AI Pioneer With Provocative Plans for Humanity</div><div class="domain">quantamagazine.org &bull; December 04, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Reasons to be Cheerful (reasonstobecheerful.world)</h2> (1)</summary><ul><a class="li" href="https://reasonstobecheerful.world/what-were-reading-cervical-cancer-deaths-drop/"><li><div class="title">What We’re Reading: A Dramatic Drop in US Cervical Cancer Deaths</div><div class="domain">reasonstobecheerful.world &bull; December 04, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Seth's Blog (seths.blog)</h2> (1)</summary><ul><a class="li" href="https://seths.blog/2024/12/elites-vs-elitism/"><li><div class="title">Elites (vs. elitism)</div><div class="domain">seths.blog &bull; December 04, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Trevor I. Lasn Thoughts (trevorlasn.com)</h2> (2)</summary><ul><a class="li" href="https://www.trevorlasn.com/blog/module-preload"><li><div class="title">link rel='modulepreload': Optimize JavaScript Module Loading</div><div class="domain">trevorlasn.com &bull; December 04, 2024</div></li></a><a class="li" href="https://www.trevorlasn.com/blog/has-css-functional-pseudo-class"><li><div class="title">CSS :has() - The Parent Selector We've Always Wanted</div><div class="domain">trevorlasn.com &bull; December 04, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Sympolymathesy, by Chris Krycho (v5.chriskrycho.com)</h2> (4)</summary><ul><a class="li" href="https://v5.chriskrycho.com/notes/psa-default-to-cargo-install-locked/"><li><div class="title">[notes] PSA: Default to cargo install --locked</div><div class="domain">v5.chriskrycho.com &bull; December 04, 2024</div></li></a><a class="li" href="https://v5.chriskrycho.com/notes/on-cargo-install-not-defaulting-to-locked/"><li><div class="title">[notes] On cargo install Not Defaulting to --locked</div><div class="domain">v5.chriskrycho.com &bull; December 04, 2024</div></li></a><a class="li" href="https://v5.chriskrycho.com/notes/no-ai-on-this-site/"><li><div class="title">[notes] No AI on This Site</div><div class="domain">v5.chriskrycho.com &bull; December 04, 2024</div></li></a><a class="li" href="https://v5.chriskrycho.com/elsewhere/true-myth-v8.1.0/"><li><div class="title">[elsewhere] True Myth 8.1.0</div><div class="domain">v5.chriskrycho.com &bull; December 04, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (17)</summary><ul><a class="li" href="https://yourstory.com/2024/12/money-trap-alok-sama-swiggy-instamart-quick-commerce"><li><div class="title">The Money Trap; Quick commerce drives Swiggy’s growth in Q2</div><div class="domain">yourstory.com &bull; December 04, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/12/amazon-rolls-out-nova-genai-models-text-image-video-creation"><li><div class="title">Amazon rolls out 'Nova': GenAI Models for text, image, and video creation</div><div class="domain">yourstory.com &bull; December 04, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/12/dentalkart-raises-85-crores-funding-online-dental-shopping-tooth"><li><div class="title">Dental marketplace Dentalkart scoops Rs 85 Cr funding from foreign institutional investors</div><div class="domain">yourstory.com &bull; December 04, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/12/rbis-green-bonds-green-dreammissed-opportunity"><li><div class="title">RBI’s Green Bonds: A Green Dream or a Missed Opportunity?</div><div class="domain">yourstory.com &bull; December 04, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/12/white-collar-hiring-activity-rises-by-2-in-november"><li><div class="title">White collar hiring activity rises by 2% in November: Report</div><div class="domain">yourstory.com &bull; December 04, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/12/short-books-read-year-end"><li><div class="title">10 Short books you can read before the end of the year</div><div class="domain">yourstory.com &bull; December 04, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/12/bolt-food-delivery-swiggy-rohit-kapoor-ceo-food-marketplace"><li><div class="title">Bolt has the potential to reshape food delivery: Rohit Kapoor, CEO of Food Marketplace, Swiggy</div><div class="domain">yourstory.com &bull; December 04, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/12/startup-news-and-updates-daily-roundup-dec4-2024"><li><div class="title">Startup news and updates: Daily roundup (Dec 4, 2024)</div><div class="domain">yourstory.com &bull; December 04, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/12/ai-startup-enterpret-raises-208-million-series-a-canaan-partners"><li><div class="title">AI startup Enterpret raises $20.8M in Series A funding led by Canaan Partners</div><div class="domain">yourstory.com &bull; December 04, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/12/beyond-the-rs-35-crore-mapmyindia-governance-crisis"><li><div class="title">Beyond the Rs 35 crore: Why MapmyIndia's governance crisis won't end here</div><div class="domain">yourstory.com &bull; December 04, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/12/aws-unveils-product-features-thrust-on-generative-ai"><li><div class="title">AWS unveils new product features with a thrust on generative AI</div><div class="domain">yourstory.com &bull; December 04, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/12/tech-enabled-companies-india-top-50-sensex-nifty-deepak-shenoy-zomato"><li><div class="title">More tech in Top 50: Deepak Shenoy sees Zomato's Sensex entry as start of market makeover</div><div class="domain">yourstory.com &bull; December 04, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/12/mouldy-whopper-marketing-success"><li><div class="title">Why Burger King's Mouldy Whopper was pure marketing genius</div><div class="domain">yourstory.com &bull; December 04, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/12/doms-success-story-pencil-market-india"><li><div class="title">How DOMS reshaped India’s Rs 4000 crore pencil market</div><div class="domain">yourstory.com &bull; December 04, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/12/meet-10-companies-helping-shape-tomorrows-landscape-today"><li><div class="title">Meet the 10 companies that have made an impact in 2024</div><div class="domain">yourstory.com &bull; December 04, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/12/tata-docomo-failure-lessons"><li><div class="title">Tata DoCoMo: Lessons from the telecom brand's rise and fall</div><div class="domain">yourstory.com &bull; December 04, 2024</div></li></a><a class="li" href="https://yourstory.com/2024/12/black-friday-sale-india-beauty-home-travel-fashion-ecommerce-d2c"><li><div class="title">Black Friday sale in India: Beauty, home, travel, fashion lead the charge</div><div class="domain">yourstory.com &bull; December 04, 2024</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>

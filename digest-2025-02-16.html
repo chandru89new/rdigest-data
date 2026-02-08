@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2025-02-16</span>:</h1>
+  <p class="summary">There are 81 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Bear Blog Trending Posts (bearblog.dev)</h2> (4)</summary><ul><a class="li" href="https://trueblue.bearblog.dev/on-being-mildly-online/"><li><div class="title">on being mildly online</div><div class="domain">trueblue.bearblog.dev &bull; February 16, 2025</div></li></a><a class="li" href="https://blog.avas.space/good-job-babe/"><li><div class="title">you can be proud of yourself</div><div class="domain">blog.avas.space &bull; February 16, 2025</div></li></a><a class="li" href="https://birming.com/choosing-blogging-platform/"><li><div class="title">Choosing the Right Blogging Platform</div><div class="domain">birming.com &bull; February 16, 2025</div></li></a><a class="li" href="https://hwisnu.bearblog.dev/static-analyzer-in-c/"><li><div class="title">Static Analyzer in C</div><div class="domain">hwisnu.bearblog.dev &bull; February 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">LessWrong (lesswrong.com)</h2> (3)</summary><ul><a class="li" href="https://www.lesswrong.com/posts/m4NMk6EinRzvvvW5Y/gauging-interest-for-a-learning-theoretic-agenda-mentorship"><li><div class="title">Gauging Interest for a Learning-Theoretic Agenda Mentorship Programme</div><div class="domain">lesswrong.com &bull; February 16, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/GjbXGybzszw8eN3oB/microplastics-much-less-than-you-wanted-to-know"><li><div class="title">Microplastics: Much Less Than You Wanted To Know</div><div class="domain">lesswrong.com &bull; February 16, 2025</div></li></a><a class="li" href="https://www.lesswrong.com/posts/KGSidqLRXkpizsbcc/it-s-been-ten-years-i-propose-hpmor-anniversary-parties"><li><div class="title">It's been ten years. I propose HPMOR Anniversary Parties.</div><div class="domain">lesswrong.com &bull; February 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">lobste.rs (lobste.rs)</h2> (15)</summary><ul><a class="li" href="https://gist.github.com/animetosho/d3ca95da2131b5813e16b5bb1b137ca0"><li><div class="title">Unexpected uses of the GF2P8AFFINEQB bit matrix multiply instruction</div><div class="domain">gist.github.com &bull; February 16, 2025</div></li></a><a class="li" href="https://interoperable-europe.ec.europa.eu/sites/default/files/discussion/attachment/2024-01/How%20could%20open%20licensing%20protect%20democracy.pdf"><li><div class="title">The seven pillars of wisdom</div><div class="domain">interoperable-europe.ec.europa.eu &bull; February 16, 2025</div></li></a><a class="li" href="https://berthub.eu/articles/posts/a-brief-post-on-sqlite3-database-locked-despite-timeout/"><li><div class="title">What to do about SQLITE_BUSY errors despite setting a timeout</div><div class="domain">berthub.eu &bull; February 16, 2025</div></li></a><a class="li" href="https://github.com/siddharth1729/github_report_generator"><li><div class="title">A Simple Github Report Generator</div><div class="domain">github.com &bull; February 16, 2025</div></li></a><a class="li" href="https://github.com/aleyan/dela"><li><div class="title">Dela: a task runner that delegates the work to other tools</div><div class="domain">github.com &bull; February 16, 2025</div></li></a><a class="li" href="https://github.com/flywhl/logis"><li><div class="title">logis - an automatic scientific log in your git commit history</div><div class="domain">github.com &bull; February 16, 2025</div></li></a><a class="li" href="https://www.jpt.sh/posts/third-wave-civic-tech/"><li><div class="title">Civic Tech's Third Wave</div><div class="domain">jpt.sh &bull; February 16, 2025</div></li></a><a class="li" href="https://chadnauseam.com/coding/random/calculator-app"><li><div class="title">How Android's calculator works with real numbers</div><div class="domain">chadnauseam.com &bull; February 16, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=F5m2JxplnXk"><li><div class="title">Modding the Gulf of Mexico Back (in Google Maps)</div><div class="domain">youtube.com &bull; February 16, 2025</div></li></a><a class="li" href="https://github.com/HeavyHorst/remco"><li><div class="title">remco is a lightweight configuration management tool (2023)</div><div class="domain">github.com &bull; February 16, 2025</div></li></a><a class="li" href="https://kracekumar.com/post/ai_copilot_code_quality_paper/"><li><div class="title">Notes: AI Copilot Code Quality</div><div class="domain">kracekumar.com &bull; February 16, 2025</div></li></a><a class="li" href="https://bsky.bad-example.com/can-atproto-scale-down/"><li><div class="title">Can atproto scale down?</div><div class="domain">bsky.bad-example.com &bull; February 16, 2025</div></li></a><a class="li" href="https://gist.github.com/pizlonator/cf1e72b8600b1437dda8153ea3fdb963"><li><div class="title">How I implement SSA form</div><div class="domain">gist.github.com &bull; February 16, 2025</div></li></a><a class="li" href="https://defn.io/2025/02/16/type-safe-watchos-communication/"><li><div class="title">DSLs for Safe iOS/watchOS Communication — defn.io</div><div class="domain">defn.io &bull; February 16, 2025</div></li></a><a class="li" href="https://github.com/TodePond/GulfOfMexico"><li><div class="title">GulfOfMexico: perfect programming language</div><div class="domain">github.com &bull; February 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Hacker News (news.ycombinator.com)</h2> (33)</summary><ul><a class="li" href="https://communityforums.atmeta.com/t5/General-VR-MR-Development/Suggestion-for-Developing-an-SDK-for-Meta-Ray-ban-Glasses/td-p/1196341/page/2"><li><div class="title">Requesting SDK for Meta Ray-Ban Smart Glasses for Visually Impaired Users</div><div class="domain">communityforums.atmeta.com &bull; February 16, 2025</div></li></a><a class="li" href="https://kyunghyuncho.me/softmax-forever-or-why-i-like-softmax/"><li><div class="title">Softmax forever, or why I like softmax</div><div class="domain">kyunghyuncho.me &bull; February 16, 2025</div></li></a><a class="li" href="https://medium.com/@solidi/the-tomy-screwball-scramble-9f4eab3681da"><li><div class="title">The TOMY Screwball Scramble</div><div class="domain">medium.com &bull; February 16, 2025</div></li></a><a class="li" href="https://humanaigc.github.io/animate-anyone-2/"><li><div class="title">Animate Anyone 2: High-Fidelity Character Image Animation&Environment Affordance</div><div class="domain">humanaigc.github.io &bull; February 16, 2025</div></li></a><a class="li" href="https://bumbershootsoft.wordpress.com/2025/02/15/the-8-bit-eras-weird-uncle-the-ti-99-4a/"><li><div class="title">The 8-Bit Era's Weird Uncle: The TI-99/4A</div><div class="domain">bumbershootsoft.wordpress.com &bull; February 16, 2025</div></li></a><a class="li" href="https://www.projectaria.com/research-kit/?_fb_noscript=1"><li><div class="title">Meta Project Aria - Smart Glasses Research Kit</div><div class="domain">projectaria.com &bull; February 16, 2025</div></li></a><a class="li" href="https://www.x-plane.com/desktop/how-x-plane-works/"><li><div class="title">How X-Plane Works</div><div class="domain">x-plane.com &bull; February 16, 2025</div></li></a><a class="li" href="http://gameshelf.jmac.org/2008/11/13/GrimPuzzleDoc_small.pdf"><li><div class="title">Grim Fandango Puzzle Document (1996) [pdf]</div><div class="domain">gameshelf.jmac.org &bull; February 16, 2025</div></li></a><a class="li" href="https://www.nature.com/articles/s41598-021-02311-1"><li><div class="title">670nm red light exposure improved aged mitochondrial function, colour vision</div><div class="domain">nature.com &bull; February 16, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=qp9UG0plBRQ"><li><div class="title">What will happen if you do an entire woodworking project using a VR headset? [video]</div><div class="domain">youtube.com &bull; February 16, 2025</div></li></a><a class="li" href="https://xyzlabs.substack.com/p/large-language-models-show-concerning"><li><div class="title">Large Language Models Show Concerning Tendency to Flatter Users</div><div class="domain">xyzlabs.substack.com &bull; February 16, 2025</div></li></a><a class="li" href="https://nchagnet.pages.dev/blog/physics-informed-neural-networks/"><li><div class="title">Physics Informed Neural Networks</div><div class="domain">nchagnet.pages.dev &bull; February 16, 2025</div></li></a><a class="li" href="https://warontherocks.com/2019/07/when-not-to-obey-orders/"><li><div class="title">When Not to Obey Orders (2019)</div><div class="domain">warontherocks.com &bull; February 16, 2025</div></li></a><a class="li" href="https://www.tomshardware.com/raspberry-pi/portable-raspberry-pi-tactical-software-defines-radio-doubles-as-a-drone-jammer"><li><div class="title">Portable drone jammer uses a Raspberry Pi tactical Software Defined Radio</div><div class="domain">tomshardware.com &bull; February 16, 2025</div></li></a><a class="li" href="https://caddyserver.com/"><li><div class="title">Caddy – The Ultimate Server with Automatic HTTPS</div><div class="domain">caddyserver.com &bull; February 16, 2025</div></li></a><a class="li" href="https://www.coindesk.com/business/2025/02/15/javier-milei-backtracks-on-usd4-4b-memecoin-after-insiders-pocket-usd87m"><li><div class="title">Javier Milei Backtracks on $4.4B Memecoin After 'Insiders' Pocket $87M</div><div class="domain">coindesk.com &bull; February 16, 2025</div></li></a><a class="li" href="https://thenewstack.io/vim-after-bram-a-core-maintainer-on-how-theyve-kept-it-going/"><li><div class="title">Vim after Bram: a core maintainer on how they've kept it going</div><div class="domain">thenewstack.io &bull; February 16, 2025</div></li></a><a class="li" href="https://poweroutage.us/"><li><div class="title">United States Power Outage Map</div><div class="domain">poweroutage.us &bull; February 16, 2025</div></li></a><a class="li" href="https://www.bbc.com/news/articles/cm21g0052dno"><li><div class="title">Critics say new Google rules put profits over privacy</div><div class="domain">bbc.com &bull; February 16, 2025</div></li></a><a class="li" href="https://www.eurogamer.net/half-life-2-and-dishonored-art-lead-viktor-antonov-dies-aged-just-52"><li><div class="title">Half-Life 2 and Dishonored art lead Viktor Antonov has died</div><div class="domain">eurogamer.net &bull; February 16, 2025</div></li></a><a class="li" href="https://techlog.jenslink.net/posts/ipv6-is-hard/"><li><div class="title">IPv6 Is Hard</div><div class="domain">techlog.jenslink.net &bull; February 16, 2025</div></li></a><a class="li" href="https://www.chillyatc.com/"><li><div class="title">Show HN: Air traffic control radio and chill music for focus</div><div class="domain">chillyatc.com &bull; February 16, 2025</div></li></a><a class="li" href="https://rtestardi.github.io/usbte/flea-scope.pdf"><li><div class="title">Flea-Scope: $18 Source Available USB Oscilloscope, Logic Analyzer and More [pdf]</div><div class="domain">rtestardi.github.io &bull; February 16, 2025</div></li></a><a class="li" href="https://www.surrey.ac.uk/news/physicists-uncover-evidence-two-arrows-time-emerging-quantum-realm"><li><div class="title">Opposing arrows of time can theoretically emerge from certain quantum systems</div><div class="domain">surrey.ac.uk &bull; February 16, 2025</div></li></a><a class="li" href="https://retrocomputing.stackexchange.com/questions/31288/does-or-did-cobol-default-to-1875-05-20-for-corrupt-or-missing-dates"><li><div class="title">Does or did COBOL default to 1875-05-20 for corrupt or missing dates?</div><div class="domain">retrocomputing.stackexchange.com &bull; February 16, 2025</div></li></a><a class="li" href="https://uchu.style"><li><div class="title">Uchū · the color scheme for internet lovers</div><div class="domain">uchu.style &bull; February 16, 2025</div></li></a><a class="li" href="https://apnews.com/article/brazil-amazon-indigenous-uncontacted-isolated-tribe-funai-0552568846327f9e4b296f83152c1afc"><li><div class="title">Man from uncontacted tribe emerges in Amazon, villagers demonstrate a lighter</div><div class="domain">apnews.com &bull; February 16, 2025</div></li></a><a class="li" href="https://simplyfabulicious.wordpress.com/2016/09/09/dinner-at-a-north-korean-restaurant-in-shanghai/"><li><div class="title">Dinner at a North Korean Restaurant in Shanghai (2016)</div><div class="domain">simplyfabulicious.wordpress.com &bull; February 16, 2025</div></li></a><a class="li" href="https://langfuse.com/careers"><li><div class="title">Langfuse (YC W23) Is Hiring Product Engineers in Berlin</div><div class="domain">langfuse.com &bull; February 16, 2025</div></li></a><a class="li" href="https://github.com/dvershinin/gixy"><li><div class="title">Gixy: Nginx Configuration Static Analyzer</div><div class="domain">github.com &bull; February 16, 2025</div></li></a><a class="li" href="https://www.ssp.sh/blog/finding-flow/"><li><div class="title">Finding Flow: Escaping digital distractions through deep work and slow living</div><div class="domain">ssp.sh &bull; February 16, 2025</div></li></a><a class="li" href="https://donhopkins.com/home/TheSimsDesignDocuments/"><li><div class="title">The Sims Game Design Documents (1997)</div><div class="domain">donhopkins.com &bull; February 16, 2025</div></li></a><a class="li" href="https://blunderchess.net"><li><div class="title">Show HN: Blunderchess.net – blunder for your opponent every five moves</div><div class="domain">blunderchess.net &bull; February 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">notes.druchan.com — RSS Feed (notes.druchan.com)</h2> (1)</summary><ul><a class="li" href="https://notes.druchan.com/chequera"><li><div class="title">Is it time for another side-project yet?</div><div class="domain">notes.druchan.com &bull; February 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">Seth's Blog (seths.blog)</h2> (1)</summary><ul><a class="li" href="https://seths.blog/2025/02/time-well-spent/"><li><div class="title">Time well spent</div><div class="domain">seths.blog &bull; February 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">The Diplomat (thediplomat.com)</h2> (5)</summary><ul><a class="li" href="https://thediplomat.com/2025/02/how-the-ccp-co-opted-an-ancient-buddhist-monk/"><li><div class="title">How the CCP Co-opted an Ancient Buddhist Monk</div><div class="domain">thediplomat.com &bull; February 16, 2025</div></li></a><a class="li" href="https://thediplomat.com/2025/02/argentinian-court-issues-arrest-warrants-for-myanmar-officials-over-rohingya-atrocities/"><li><div class="title">Argentinian Court Issues Arrest Warrants for Myanmar Officials Over Rohingya Atrocities</div><div class="domain">thediplomat.com &bull; February 16, 2025</div></li></a><a class="li" href="https://thediplomat.com/2025/02/election-campaign-begins-in-the-philippines-with-marcos-duterte-war-of-words/"><li><div class="title">Election Campaign Begins in the Philippines with Marcos-Duterte War of Words</div><div class="domain">thediplomat.com &bull; February 16, 2025</div></li></a><a class="li" href="https://thediplomat.com/2025/02/modi-trump-meeting-promising-developments-good-optics-but-challenges-remain/"><li><div class="title">Modi-Trump Meeting: Promising Developments, Good Optics, But Challenges Remain</div><div class="domain">thediplomat.com &bull; February 16, 2025</div></li></a><a class="li" href="https://thediplomat.com/2025/02/presidents-rule-imposed-in-disturbed-manipur-in-indias-northeast/"><li><div class="title">President’s Rule Imposed in Disturbed Manipur in India’s Northeast</div><div class="domain">thediplomat.com &bull; February 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">YourStory RSS Feed (yourstory.com)</h2> (13)</summary><ul><a class="li" href="https://yourstory.com/2025/02/over-29500-drones-registered-in-india-delhi-tamil-nadu-maharashtra-on-top"><li><div class="title">Over 29,500 drones registered in India; Delhi, Tamil Nadu, Maharashtra on top</div><div class="domain">yourstory.com &bull; February 16, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/02/bihar-industry-tourism-minister-nitish-mishra-london-award"><li><div class="title">Bihar Industry & Tourism Minister Nitish Mishra honoured in London for driving reforms</div><div class="domain">yourstory.com &bull; February 16, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/02/raise-workplace-concerns-effectively"><li><div class="title">Raise workplace concerns without risking your reputation</div><div class="domain">yourstory.com &bull; February 16, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/02/govt-deregulation-commission-to-further-reduce-states-role-pm-modi"><li><div class="title">Govt to set up deregulation commission to further reduce state's role: PM Modi</div><div class="domain">yourstory.com &bull; February 16, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/02/abu-dhabi-blend-modernity-history-exploring-indias-spice-mixes"><li><div class="title">Abu Dhabi’s blend of modernity and history; Exploring India’s spice mixes</div><div class="domain">yourstory.com &bull; February 16, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/02/ed-seizesrs-1646-cr-cryptocurrency-in-mega-money-laundering-probe"><li><div class="title">ED seizes cryptocurrency worth Rs 1,646 Cr in mega money laundering probe</div><div class="domain">yourstory.com &bull; February 16, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/02/comics-community-industry-creativity-education-entertainment-photography"><li><div class="title">Comics in India are a community rather than just an industry: Jatin Varma, Founder, Comic Con India</div><div class="domain">yourstory.com &bull; February 16, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/02/madhya-pradesh-unveils-gcc-policy-2025-to-attract-global-investments"><li><div class="title">Madhya Pradesh unveils GCC Policy 2025 to attract global investments</div><div class="domain">yourstory.com &bull; February 16, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/02/five-eye-opening-psychology-books"><li><div class="title">Must-read psychology books to understand human behaviour</div><div class="domain">yourstory.com &bull; February 16, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/02/health-ai-management-business-creativity-quiz-education-inspiration-entrepreneur"><li><div class="title">Health, AI, management: Test your business creativity with Edition 175 of our weekly quiz!</div><div class="domain">yourstory.com &bull; February 16, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/02/launch-business-online-opportunities-february"><li><div class="title">6 untapped online businesses to launch this February</div><div class="domain">yourstory.com &bull; February 16, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/02/build-trust-workplace-phrases"><li><div class="title">10 simple phrases that can strengthen workplace trust</div><div class="domain">yourstory.com &bull; February 16, 2025</div></li></a><a class="li" href="https://yourstory.com/2025/02/data-driven-decision-making-enabling-business-intelligence-through-automation"><li><div class="title">Data-driven decision-making: Enabling Business Intelligence through automation</div><div class="domain">yourstory.com &bull; February 16, 2025</div></li></a></ul></details><details open><summary><h2 class="summary">myNoise • Focus • Relax • Sleep (youtube.com)</h2> (6)</summary><ul><a class="li" href="https://www.youtube.com/watch?v=2d9-4gMrrFU"><li><div class="title">FOREST RAIN • A Delicate & Relaxing Background Noise to Help Study</div><div class="domain">youtube.com &bull; February 16, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=84mqz_saNTo"><li><div class="title">WHISPERING TREES • Natural Background Noise Masker</div><div class="domain">youtube.com &bull; February 16, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=reDrYJ8M2DQ"><li><div class="title">MIDNIGHT OWLS • You Are Studying Too Late :D</div><div class="domain">youtube.com &bull; February 16, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=WdgdVCugHmM"><li><div class="title">COSY RAIN • A Desk in Front of a Rainy Window Is the Perfect Place to Study</div><div class="domain">youtube.com &bull; February 16, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=zshJ5a135r8"><li><div class="title">THE SEA • An Audio Postcard from the Portugal Sampling Session</div><div class="domain">youtube.com &bull; February 16, 2025</div></li></a><a class="li" href="https://www.youtube.com/watch?v=-Yq37xzb2RU"><li><div class="title">THE LAND • An Audio Postcard from the Portugal Sampling Session</div><div class="domain">youtube.com &bull; February 16, 2025</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>

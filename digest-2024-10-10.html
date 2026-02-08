@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title>Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    h1,
+    h1 span {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2.summary {
+      display: inline-block;
+      cursor: pointer;
+      color: slategray;
+      font-size: 1.25rem;
+    }
+
+    details+details {
+      margin-top: 0.5rem;
+    }
+
+    details ul {
+      margin-bottom: 1rem;
+      margin-top: 0.5rem;
+    }
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+    }
+
+    a.li {
+      display: block;
+    }
+
+    ul li {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background: aliceblue;
+    }
+
+    a.li+a.li {
+      border-top: 1px solid aliceblue;
+    }
+
+    li .date {
+      font-size: 0.65em;
+      color: slategray;
+    }
+
+    ul li .domain {
+      font-size: 14px;
+      color: slategray;
+    }
+
+    @media (max-width:767px) {
+      ul li .domain {
+        display: none;
+      }
+    }
+
+    a {
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue !important;
+    }
+
+    a:visited * {
+      opacity: 0.5;
+    }
+
+    p.summary {
+      font-style: italic;
+      margin: 0 0 2rem 0;
+    }
+
+    p.toggler {
+      margin-bottom: 1rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    span.digest-date {
+      color: slategray;
+    }
+  </style>
+  <script>
+    let toggleState = false;
+    function toggle() {
+      toggleState = !toggleState;
+      setTimeout(() => {
+        const details = document.querySelectorAll("details");
+        details.forEach((detail) => {
+          detail.open = toggleState;
+        });
+      }, 10)
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Digest — <span class="digest-date">2024-10-10</span>:</h1>
+  <p class="summary">There are 17 posts.</p>
+  <p class="toggler">
+    <span onclick="toggle();">Expand/collapse all</span>
+  </p>
+  <article>
+    <details open><summary><h2 class="summary">Jon Udell (blog.jonudell.net)</h2> (1)</summary><ul><a class="li" href="https://blog.jonudell.net/2024/10/10/mix-human-expertise-with-llm-assistance-for-easier-coding/"><li><div class="title">Mix Human Expertise With LLM Assistance for Easier Coding</div><div class="domain">blog.jonudell.net &bull; October 10, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">kottke.org (feeds.kottke.org)</h2> (11)</summary><ul><a class="li" href="https://kottke.org/24/10/0045420-forums-are-still-alive-ac"><li><div class="title">Forums Are Still Alive, Active, And A Treasure Trove Of Information. A...</div><div class="domain">kottke.org &bull; October 10, 2024</div></li></a><a class="li" href="https://kottke.org/24/10/0045429-this-simple-tool-finds-yo"><li><div class="title">This simple tool finds your Letterboxd besties, people who have listed the...</div><div class="domain">kottke.org &bull; October 10, 2024</div></li></a><a class="li" href="https://kottke.org/24/10/photo-remakes-of-famous-art-1"><li><div class="title">Photo Remakes of Famous Art</div><div class="domain">kottke.org &bull; October 10, 2024</div></li></a><a class="li" href="https://kottke.org/24/10/0045433-who-died-and-left-the"><li><div class="title">Who died and left the US $7 billion? &#8220;It was the biggest...</div><div class="domain">kottke.org &bull; October 10, 2024</div></li></a><a class="li" href="https://kottke.org/24/10/0045430-the-myth-of-the-climate"><li><div class="title">The myth of the climate haven. &#8220;Because of its speed and scale,...</div><div class="domain">kottke.org &bull; October 10, 2024</div></li></a><a class="li" href="https://kottke.org/24/10/the-best-panoramic-photos-of-2024"><li><div class="title">The Best Panoramic Photos of 2024</div><div class="domain">kottke.org &bull; October 10, 2024</div></li></a><a class="li" href="https://kottke.org/24/10/0045432-one-woman-and-two-men"><li><div class="title">&#8220;One woman and two men with severe autoimmune conditions have gone into...</div><div class="domain">kottke.org &bull; October 10, 2024</div></li></a><a class="li" href="https://kottke.org/24/10/0045428-covid-19-may-increase-the"><li><div class="title">&#8220;Covid-19 may increase the risk of heart attacks, strokes and deaths for...</div><div class="domain">kottke.org &bull; October 10, 2024</div></li></a><a class="li" href="https://kottke.org/24/10/0045431-whoa-new-nintendo-hardwar"><li><div class="title">Whoa, new Nintendo hardware! And it&#8217;s&#8230;an interactive alarm clock? You can wake...</div><div class="domain">kottke.org &bull; October 10, 2024</div></li></a><a class="li" href="https://kottke.org/24/10/radioheads-everything-in-its-right-place-800-slower"><li><div class="title">Radiohead&#8217;s Everything in Its Right Place, 800% Slower</div><div class="domain">kottke.org &bull; October 10, 2024</div></li></a><a class="li" href="https://kottke.org/24/10/0045435-the-trailer-for-season-2"><li><div class="title">The trailer for season 2 of The Diplomat. Keri Russell? Witty banter?...</div><div class="domain">kottke.org &bull; October 10, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Go Make Things (gomakethings.com)</h2> (1)</summary><ul><a class="li" href="https://gomakethings.com/plain-vanilla-web/"><li><div class="title">Plain Vanilla Web</div><div class="domain">gomakethings.com &bull; October 10, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">notes.druchan.com — RSS Feed (notes.druchan.com)</h2> (1)</summary><ul><a class="li" href="https://notes.druchan.com/haskell-journal-day-4"><li><div class="title">Haskell Journal - Day 4</div><div class="domain">notes.druchan.com &bull; October 10, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Quanta Magazine (quantamagazine.org)</h2> (1)</summary><ul><a class="li" href="https://www.quantamagazine.org/how-can-math-help-beat-cancer-20241010/"><li><div class="title">How Can Math Help Beat Cancer?</div><div class="domain">quantamagazine.org &bull; October 10, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Reasons to be Cheerful (reasonstobecheerful.world)</h2> (1)</summary><ul><a class="li" href="https://reasonstobecheerful.world/radical-terraces-transforming-hills-of-rwanda/"><li><div class="title">Radical Terraces Are Transforming the Hills of Rwanda</div><div class="domain">reasonstobecheerful.world &bull; October 10, 2024</div></li></a></ul></details><details open><summary><h2 class="summary">Sympolymathesy, by Chris Krycho (v5.chriskrycho.com)</h2> (1)</summary><ul><a class="li" href="https://v5.chriskrycho.com/journal/rant-on-pl-docs/"><li><div class="title">[journal] Programming Language Learning: A Rant</div><div class="domain">v5.chriskrycho.com &bull; October 10, 2024</div></li></a></ul></details>
+  </article>
+</body>
+
+</html>
