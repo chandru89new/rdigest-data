@@ -32,18 +32,13 @@ jobs:
           tar -xzf rdigest.tar.gz
           chmod +x ./rdigest
 
+      - name: Setup node
+        uses: actions/setup-node@v6
+
       - name: Refresh feeds
         run: |
           export RDIGEST_FOLDER=.
-          ./rdigest refresh
-
-      - name: Notify on TG
-        if: false
-        run: |
-          export RDIGEST_FOLDER=.
-          export TG_TOKEN=${{ secrets.TG_TOKEN }}
-          export TG_CHAN_ID=${{ secrets.TG_CHAN_ID }}
-          ./rdigest notify
+          ./refresh
 
       - name: Remove binary
         run: |
