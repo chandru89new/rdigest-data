@@ -1,0 +1,118 @@
+<html>
+
+<head>
+    <title>Digest</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-weight: 400;
+            font-family:
+                system-ui,
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                Roboto,
+                Oxygen,
+                Ubuntu,
+                Cantarell,
+                "Open Sans",
+                "Helvetica Neue",
+                sans-serif;
+            font-size: 16px;
+        }
+
+        body {
+            font-size: 1rem;
+            padding: 1rem;
+        }
+
+        p {
+            margin-bottom: 0.5rem;
+        }
+
+        h1 {
+            margin-bottom: 2rem;
+            font-weight: bold;
+        }
+
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin-top: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+
+
+        pre#app {
+            display: none;
+        }
+
+        #links { display: flex; gap: 0.5rem; align-content: center; margin-bottom: 1rem; }
+
+        hr { height: 1px; background: #ccc; margin: 1rem 0; border: 0 !important; }
+
+        #render p { margin-top: 0.75rem; }
+
+    </style>
+</head>
+
+<body>
+    <div id="links">
+        <a href="./upcoming.html">Upcoming</a>
+        <a href="./">Latest</a>
+        <a href="./previous.html">Previous</a>
+    </div>
+    <pre id="app"># Digest for date: 2026-07-24
+
+## Bubbles Briefing
+[Bubbles Briefing — Friday, July 24, 2026](https://bubbles.town/briefing/2026-07-24)
+
+## Hacker News
+[The Corporate Creep of Plex: Why it may be time to move to Jellyfin](https://reprodev.com/the-corporate-creep-of-plex-why-it-may-be-time-to-move-to-jellyfin-and-the-open-source-reality/)
+[Police Removed Prominent Scientists from the ADA Meeting. Researchers Respond](https://www.the-scientist.com/police-removed-prominent-scientists-from-the-ada-meeting-researchers-respond-74607)
+
+## LessWrong
+[Pulling the Fire Alarm](https://www.lesswrong.com/posts/fGJGzZdGG8jj7Mt6P/pulling-the-fire-alarm)
+[Not Pinning Your OpenRouter Provider Might Invalidate Your Research](https://www.lesswrong.com/posts/KsyoSAyBRXtwzSugg/not-pinning-your-openrouter-provider-might-invalidate-your)
+[Pseudpocalypse](https://www.lesswrong.com/posts/eaxoBCmQd4vew9ZXX/pseudpocalypse)
+
+## The Daily Show
+[Karolina Wydra - Emmy-Nominated Role in “Pluribus” | The Daily Show](https://www.youtube.com/watch?v=RK74_9qukBI)
+[Trump Rails Against Communism at Georgia Rally & Don Jr. Swears He Doesn’t Do Coke | The Daily Show](https://www.youtube.com/watch?v=wyzHlTpoDko)
+
+## World News
+[/r/WorldNews Live Thread: Russian Invasion of Ukraine Day 1611, Part 1 (Thread #1758)](https://www.reddit.com/r/worldnews/comments/1v50eo1/rworldnews_live_thread_russian_invasion_of/)
+[US says Saudi nuclear deal off without Israel recognition](https://www.reddit.com/r/worldnews/comments/1v4vbe5/us_says_saudi_nuclear_deal_off_without_israel/)
+[Prime Minister Carney says Canada is ready to respond if Trump's new tariffs go into effect](https://www.reddit.com/r/worldnews/comments/1v4w7s4/prime_minister_carney_says_canada_is_ready_to/)
+[Laura Loomer meets Zelenskyy in Ukraine after her major reversal on the war](https://www.reddit.com/r/worldnews/comments/1v4yt13/laura_loomer_meets_zelenskyy_in_ukraine_after_her/)
+[Iran Rejects U.S. Cease-Fire Deal Presented by Iraqi Leader](https://www.reddit.com/r/worldnews/comments/1v4vp10/iran_rejects_us_ceasefire_deal_presented_by_iraqi/)
+[NZ rejects US claims of 'forced labour', as tariffs hiked.](https://www.reddit.com/r/worldnews/comments/1v4zfln/nz_rejects_us_claims_of_forced_labour_as_tariffs/)
+[Brazil says US tariffs related to forced labor are 'arbitrary' and 'unjustified'](https://www.reddit.com/r/worldnews/comments/1v4y2nv/brazil_says_us_tariffs_related_to_forced_labor/)
+
+## YourStory RSS Feed
+[Infosys names new CEO; Helping small farmers earn more](https://yourstory.com/2026/07/infosys-q1-net-profit-rises-helping-small-farmers-earn-more)
+[How meaning helps us endure life's toughest challenges](https://yourstory.com/2026/07/meaning-endure-lifes-toughest-challenges)
+[The future of Bharat’s economy is being built beyond cities](https://yourstory.com/2026/07/the-future-of-bharats-economy-is-being-built-beyond-cities)
+
+## lobste.rs
+[Mourning Dan Williams](https://lwn.net/Articles/1084545/)
+</pre>
+    <div id="render"></div>
+    <script src="https://cdn.jsdelivr.net/npm/marked/lib/marked.umd.js"></script>
+    <script>
+        let pre = document.getElementById('app')
+        let render = document.getElementById('render')
+        let md = pre.innerText?.split("\n").filter(t => t !== "\n").map(t => t.trim()).join("\n\n");
+        render.innerHTML = marked.parse(md);
+        let links = Array.from(document.querySelectorAll('#render a'));
+        document.querySelector('h1').innerText = document.querySelector('h1').innerText + ' — ' + links.length + ' links.'
+    </script>
+</body>
+
+</html>
