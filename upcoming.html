@@ -1,0 +1,110 @@
+<html>
+
+<head>
+    <title>Digest</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-weight: 400;
+            font-family:
+                system-ui,
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                Roboto,
+                Oxygen,
+                Ubuntu,
+                Cantarell,
+                "Open Sans",
+                "Helvetica Neue",
+                sans-serif;
+            font-size: 16px;
+        }
+
+        body {
+            font-size: 1rem;
+            padding: 1rem;
+        }
+
+        p {
+            margin-bottom: 0.5rem;
+        }
+
+        h1 {
+            margin-bottom: 2rem;
+            font-weight: bold;
+        }
+
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin-top: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+
+
+        pre#app {
+            display: none;
+        }
+
+        #links { display: flex; gap: 0.5rem; align-content: center; margin-bottom: 1rem; }
+
+        hr { height: 1px; background: #ccc; margin: 1rem 0; border: 0 !important; }
+
+        #render p { margin-top: 0.75rem; }
+
+    </style>
+</head>
+
+<body>
+    <div id="links">
+        <a href="./upcoming.html">Upcoming</a>
+        <a href="./">Latest</a>
+        <a href="./previous.html">Previous</a>
+    </div>
+    <pre id="app"># Digest for date: 2026-07-02
+
+## Bubbles Briefing
+[Bubbles Briefing — Thursday, July 2, 2026](https://bubbles.town/briefing/2026-07-02)
+
+## Hacker News
+[Senior SWE-Bench: open-source benchmark that assesses agents as senior engineers](https://senior-swe-bench.snorkel.ai/)
+[Global review confirms mRNA vaccines are safe, effective and full of promise](https://news.ubc.ca/2026/06/mrna-vaccines-are-safe-effective-and-full-of-promise/)
+[Bring back crappy forums](https://tedium.co/2026/07/01/online-web-forums-retrospective/)
+
+## World News
+[/r/WorldNews Live Thread: Russian Invasion of Ukraine Day 1589, Part 1 (Thread #1736)](https://www.reddit.com/r/worldnews/comments/1ul7lea/rworldnews_live_thread_russian_invasion_of/)
+[US reportedly mulls pulling troops from Saudi Arabia as ties sour over Iran war](https://www.reddit.com/r/worldnews/comments/1ul4rfn/us_reportedly_mulls_pulling_troops_from_saudi/)
+[Kazakhstan will provide Russia with 50,000 metric tons of gasoline as humanitarian aid](https://www.reddit.com/r/worldnews/comments/1ul45ip/kazakhstan_will_provide_russia_with_50000_metric/)
+
+## YourStory RSS Feed
+[Indian startups raise $6.9B in H1 2026 as VC funding rebounds](https://yourstory.com/2026/07/indian-startups-raise-69b-in-h1-2026-as-vc-funding-rebounds)
+[Turning parents into co-therapists; Atomgrid’s big bet on speciality chemicals](https://yourstory.com/2026/07/turning-parents-into-co-therapists)
+
+## lobste.rs
+[Artificial adventures](https://www.scattered-thoughts.net/writing/artificial-adventures/)
+[Creating a development sandbox with crosvm](https://www.erat.org/crosvm.html)
+[The Physics of Memory (aka can Javascript ECS?)](https://www.dmurph.com/posts/2026/06/ecs_vs_oop_benchmark/ecs_vs_oop_benchmark.html)
+[Unprivileged root via an out-of-bounds write in the FUSE readdir cache (CVE-2026-31694)](https://cyberstan.co.uk/fuse-readdir-oob/)
+[Improving token efficiency for GitHub Copilot in VS Code](https://code.visualstudio.com/blogs/2026/06/17/improving-token-efficiency-in-github-copilot)
+[OpenFeature - Standardizing Feature Flagging for Everyone](https://openfeature.dev/)
+</pre>
+    <div id="render"></div>
+    <script src="https://cdn.jsdelivr.net/npm/marked/lib/marked.umd.js"></script>
+    <script>
+        let pre = document.getElementById('app')
+        let render = document.getElementById('render')
+        let md = pre.innerText?.split("\n").filter(t => t !== "\n").map(t => t.trim()).join("\n\n");
+        render.innerHTML = marked.parse(md);
+        let links = Array.from(document.querySelectorAll('#render a'));
+        document.querySelector('h1').innerText = document.querySelector('h1').innerText + ' — ' + links.length + ' links.'
+    </script>
+</body>
+
+</html>
