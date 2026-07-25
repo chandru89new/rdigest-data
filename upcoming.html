@@ -1,0 +1,115 @@
+<html>
+
+<head>
+    <title>Digest</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-weight: 400;
+            font-family:
+                system-ui,
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                Roboto,
+                Oxygen,
+                Ubuntu,
+                Cantarell,
+                "Open Sans",
+                "Helvetica Neue",
+                sans-serif;
+            font-size: 16px;
+        }
+
+        body {
+            font-size: 1rem;
+            padding: 1rem;
+        }
+
+        p {
+            margin-bottom: 0.5rem;
+        }
+
+        h1 {
+            margin-bottom: 2rem;
+            font-weight: bold;
+        }
+
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin-top: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+
+
+        pre#app {
+            display: none;
+        }
+
+        #links { display: flex; gap: 0.5rem; align-content: center; margin-bottom: 1rem; }
+
+        hr { height: 1px; background: #ccc; margin: 1rem 0; border: 0 !important; }
+
+        #render p { margin-top: 0.75rem; }
+
+    </style>
+</head>
+
+<body>
+    <div id="links">
+        <a href="./upcoming.html">Upcoming</a>
+        <a href="./">Latest</a>
+        <a href="./previous.html">Previous</a>
+    </div>
+    <pre id="app"># Digest for date: 2026-09-13
+
+## AskPhilosophy: Philosophical questions and answers
+[Is it considered generally unwanted to email people questions about their dissertation?](https://www.reddit.com/r/askphilosophy/comments/1wet57c/is_it_considered_generally_unwanted_to_email/)
+[How to understand the philosophy of language and Wittgenstein's *Tractatus*](https://www.reddit.com/r/askphilosophy/comments/1wev149/how_to_understand_the_philosophy_of_language_and/)
+
+## Bubbles Briefing
+[Bubbles Briefing — Sunday, September 13, 2026](https://bubbles.town/briefing/2026-09-13)
+
+## Hacker News
+[Align AI and Mathematics–To Something Else](https://liorpachter.wordpress.com/2026/09/12/align-ai-and-mathematics-to-something-else/)
+[Recurrent Looped Transformer](https://yifanzhang-pro.github.io/recurrent-looped-tranformer/)
+[Everyone should slow down AI development except for me](https://xeiaso.net/notes/2026/everyone-slowdown-but-me/)
+[A succession crisis that tore England apart](https://www.historytoday.com/archive/feature/succession-crisis-tore-england-apart)
+[Why are AI agents lying, cheating and coordinating?](https://yoshuabengio.org/en/publication/why-are-ai-agents-lying-cheating-and-coordinating)
+[Don't call yourself an artisanal programmer](https://purplesyringa.moe/blog/dont-call-yourself-an-artisanal-programmer/)
+[After Math](https://terrytao.wordpress.com/2026/09/12/after-math/)
+
+## LessWrong
+[The Talker Does Not Control The Doer (in Current AIs)](https://www.lesswrong.com/posts/cJX2ssssGoYqnijwi/the-talker-does-not-control-the-doer-in-current-ais)
+
+## YourStory RSS Feed
+[Health, AI, growth: test your business creativity with Edition 249 of our weekly quiz!](https://yourstory.com/2026/09/health-ai-growth-business-creativity-entrepreneur-quiz)
+[Natural seasons, human seasons: An exploration by artist Meena Das Narayan](https://yourstory.com/2026/09/seasons-life-art-exhibition-meena-das-narayan-photography)
+[PM Modi wants BRICS to help 100 startups scale yearly; Shuddh Swad turns Bihari thekua into a Rs 1 Cr D2C business](https://yourstory.com/2026/09/pm-modi-wants-brics-to-help-100-startups-scale-yearly)
+
+## lobste.rs
+[A Dick Smith VZ200 without the Dick Smith](http://oldvcr.blogspot.com/2026/09/a-dick-smith-vz200-without-dick-smith.html)
+[a better way of blocking macOS updates](https://zoey-on-github.github.io/blog/updates.html)
+[Lua Pattern Tester](https://iamreiyn.github.io/lua-pattern-tester/)
+[Metacarp](https://blog.veitheller.de/Metacarp.html)
+</pre>
+    <div id="render"></div>
+    <script src="https://cdn.jsdelivr.net/npm/marked/lib/marked.umd.js"></script>
+    <script>
+        let pre = document.getElementById('app')
+        let render = document.getElementById('render')
+        let md = pre.innerText?.split("\n").filter(t => t !== "\n").map(t => t.trim()).join("\n\n");
+        render.innerHTML = marked.parse(md);
+        let links = Array.from(document.querySelectorAll('#render a'));
+        document.querySelector('h1').innerText = document.querySelector('h1').innerText + ' — ' + links.length + ' links.'
+    </script>
+</body>
+
+</html>
