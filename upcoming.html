@@ -1,0 +1,129 @@
+<html>
+
+<head>
+    <title>Digest</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-weight: 400;
+            font-family:
+                system-ui,
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                Roboto,
+                Oxygen,
+                Ubuntu,
+                Cantarell,
+                "Open Sans",
+                "Helvetica Neue",
+                sans-serif;
+            font-size: 16px;
+        }
+
+        body {
+            font-size: 1rem;
+            padding: 1rem;
+        }
+
+        p {
+            margin-bottom: 0.5rem;
+        }
+
+        h1 {
+            margin-bottom: 2rem;
+            font-weight: bold;
+        }
+
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin-top: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+
+
+        pre#app {
+            display: none;
+        }
+
+        #links { display: flex; gap: 0.5rem; align-content: center; margin-bottom: 1rem; }
+
+        hr { height: 1px; background: #ccc; margin: 1rem 0; border: 0 !important; }
+
+        #render p { margin-top: 0.75rem; }
+
+    </style>
+</head>
+
+<body>
+    <div id="links">
+        <a href="./upcoming.html">Upcoming</a>
+        <a href="./">Latest</a>
+        <a href="./previous.html">Previous</a>
+    </div>
+    <pre id="app"># Digest for date: 2026-10-18
+
+## AskPhilosophy: Philosophical questions and answers
+[Do we even have a choice? (determinism + science)](https://www.reddit.com/r/askphilosophy/comments/1x8r39a/do_we_even_have_a_choice_determinism_science/)
+[Como podría ser dios? Sólo basándose en cómo el universo está "diseñado" de existir.](https://www.reddit.com/r/askphilosophy/comments/1x8sftk/como_podría_ser_dios_sólo_basándose_en_cómo_el/)
+[Where to Find Argumentative Papers to Read?](https://www.reddit.com/r/askphilosophy/comments/1x8pu31/where_to_find_argumentative_papers_to_read/)
+[What is the most profound outlooks on vengeance you’ve heard or read?](https://www.reddit.com/r/askphilosophy/comments/1x8sizx/what_is_the_most_profound_outlooks_on_vengeance/)
+
+## Bear Blog Trending Posts
+[some photos i took today](https://icyti.me/some-photos-i-took-today/)
+
+## Bubbles Briefing
+[Bubbles Briefing — Sunday, October 18, 2026](https://bubbles.town/briefing/2026-10-18)
+
+## Elm - Latest topics
+[Acadia feedback: More information about registered installations](https://discourse.elm-lang.org/t/acadia-feedback-more-information-about-registered-installations/10946)
+
+## Hacker News
+[Zuckerberg's Meta Takes Down No Kings Instagram During Protest Day](https://meidasnews.com/news/zuckerbergs-meta-takes-down-no-kings-instagram-during-massive-protest-day)
+[NY announces game ownership bill requiring ownership rather than licensing](https://www.tomshardware.com/video-games/new-york-rep-announces-game-ownership-bill-that-would-require-consumer-ownership-rather-than-sale-of-licenses-would-also-require-publishers-to-keep-the-game-functional-after-support-ends)
+[Show HN: Sphinx – a hook that quizzes you on your AI's code before shipping](https://sphinx-six-theta.vercel.app/)
+[My AI agent caught most of our sites saying sent while no email left the server](https://iampneuma.com/the-function-returned-true/)
+[How the Elizabeth Holmes Doc 'You Can See Everything' Is Deceiving You](https://www.readtheprofile.com/p/elizabeth-holmes-documentary-you-can-see-everything)
+[A Mole Infiltrated the Highest Ranks of American Militias](https://www.propublica.org/article/ap3-oath-keepers-militia-mole)
+
+## Haskell Community - Latest topics
+[Kalesvolgh - a text editor in haskell, brick and all](https://discourse.haskell.org/t/kalesvolgh-a-text-editor-in-haskell-brick-and-all/14858)
+
+## LessWrong
+[AI by Default](https://www.lesswrong.com/posts/iQMzXuNJ3M6EEHZyv/ai-by-default)
+
+## PureScript Language Forum - Latest posts
+[Core libraries migrated to Spago](https://discourse.purescript.org/t/core-libraries-migrated-to-spago/6209#post_1)
+
+## Tamil Nadu - தமிழ்நாடு
+[135KG. Is TN situation that bad?](https://www.reddit.com/r/TamilNadu/comments/1x8qkzx/135kg_is_tn_situation_that_bad/)
+[So called Secularists, Read this!](https://www.reddit.com/r/TamilNadu/comments/1x8udrw/so_called_secularists_read_this/)
+
+## The Marginalian
+[Celebrating 20 Years of The Marginalian and the Search for Meaning: Free Livestream This Friday](https://www.themarginalian.org/2026/10/18/20/)
+
+## YourStory RSS Feed
+[Health, inclusion, computing: Test your business creativity with Edition 254 of our weekly quiz!](https://yourstory.com/2026/10/health-inclusion-computing-business-entrepreneur-creativity-quiz)
+[Cancellation: A creator’s biggest turning point; Scaling India’s research multiplier](https://yourstory.com/2026/10/cancellation-creator-biggest-turning-point-scaling-india-research-multiplier)
+[How art platforms, exhibitions and awards strengthen the creative economy](https://yourstory.com/2026/10/art-platforms-exhibitions-awards-creative-economy-photography)
+</pre>
+    <div id="render"></div>
+    <script src="https://cdn.jsdelivr.net/npm/marked/lib/marked.umd.js"></script>
+    <script>
+        let pre = document.getElementById('app')
+        let render = document.getElementById('render')
+        let md = pre.innerText?.split("\n").filter(t => t !== "\n").map(t => t.trim()).join("\n\n");
+        render.innerHTML = marked.parse(md);
+        let links = Array.from(document.querySelectorAll('#render a'));
+        document.querySelector('h1').innerText = document.querySelector('h1').innerText + ' — ' + links.length + ' links.'
+    </script>
+</body>
+
+</html>
