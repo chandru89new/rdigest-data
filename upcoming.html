@@ -1,0 +1,103 @@
+<html>
+
+<head>
+    <title>Digest</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-weight: 400;
+            font-family:
+                system-ui,
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                Roboto,
+                Oxygen,
+                Ubuntu,
+                Cantarell,
+                "Open Sans",
+                "Helvetica Neue",
+                sans-serif;
+            font-size: 16px;
+        }
+
+        body {
+            font-size: 1rem;
+            padding: 1rem;
+        }
+
+        p {
+            margin-bottom: 0.5rem;
+        }
+
+        h1 {
+            margin-bottom: 2rem;
+            font-weight: bold;
+        }
+
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin-top: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+
+
+        pre#app {
+            display: none;
+        }
+
+        #links { display: flex; gap: 0.5rem; align-content: center; margin-bottom: 1rem; }
+
+        hr { height: 1px; background: #ccc; margin: 1rem 0; border: 0 !important; }
+
+        #render p { margin-top: 0.75rem; }
+
+    </style>
+</head>
+
+<body>
+    <div id="links">
+        <a href="./upcoming.html">Upcoming</a>
+        <a href="./">Latest</a>
+        <a href="./previous.html">Previous</a>
+    </div>
+    <pre id="app"># Digest for date: 2026-08-22
+
+## AskPhilosophy: Philosophical questions and answers
+[What is studying Philosophy like? What is the life after look like?](https://www.reddit.com/r/askphilosophy/comments/1vuzjyo/what_is_studying_philosophy_like_what_is_the_life/)
+[Can utilitarianism defend selfish actions if the most joy is reached even if it's for yourself](https://www.reddit.com/r/askphilosophy/comments/1vuz998/can_utilitarianism_defend_selfish_actions_if_the/)
+
+## Hacker News
+[There's no reason for software to be slow anymore](https://danluu.com/perf-opt/)
+[Initial focus for our partnership with Motorola is a regular non-folding device](https://grapheneos.social/@GrapheneOS/117136278553665985)
+
+## Hank Green
+[What’s the best way to get a voter’s attention?](https://www.youtube.com/shorts/sHgbDE9_Kg0)
+
+## Steve Mould
+[This Device Goes Past Equilibrium](https://www.youtube.com/watch?v=NvkZaWLe0Sk)
+
+## YourStory RSS Feed
+[Zomato founder’s brain wearable is (almost) here](https://yourstory.com/2026/08/zomato-founders-brain-wearable-is-almost-here)
+[Heritage and design: how this Mithila transformation initiative empowers artisans](https://yourstory.com/2026/08/heritage-design-mithila-transformation-artisans-creativity-photography)
+</pre>
+    <div id="render"></div>
+    <script src="https://cdn.jsdelivr.net/npm/marked/lib/marked.umd.js"></script>
+    <script>
+        let pre = document.getElementById('app')
+        let render = document.getElementById('render')
+        let md = pre.innerText?.split("\n").filter(t => t !== "\n").map(t => t.trim()).join("\n\n");
+        render.innerHTML = marked.parse(md);
+        let links = Array.from(document.querySelectorAll('#render a'));
+        document.querySelector('h1').innerText = document.querySelector('h1').innerText + ' — ' + links.length + ' links.'
+    </script>
+</body>
+
+</html>
