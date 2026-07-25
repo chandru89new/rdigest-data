@@ -1,0 +1,127 @@
+<html>
+
+<head>
+    <title>Digest</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-weight: 400;
+            font-family:
+                system-ui,
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                Roboto,
+                Oxygen,
+                Ubuntu,
+                Cantarell,
+                "Open Sans",
+                "Helvetica Neue",
+                sans-serif;
+            font-size: 16px;
+        }
+
+        body {
+            font-size: 1rem;
+            padding: 1rem;
+        }
+
+        p {
+            margin-bottom: 0.5rem;
+        }
+
+        h1 {
+            margin-bottom: 2rem;
+            font-weight: bold;
+        }
+
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin-top: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+
+
+        pre#app {
+            display: none;
+        }
+
+        #links { display: flex; gap: 0.5rem; align-content: center; margin-bottom: 1rem; }
+
+        hr { height: 1px; background: #ccc; margin: 1rem 0; border: 0 !important; }
+
+        #render p { margin-top: 0.75rem; }
+
+    </style>
+</head>
+
+<body>
+    <div id="links">
+        <a href="./upcoming.html">Upcoming</a>
+        <a href="./">Latest</a>
+        <a href="./previous.html">Previous</a>
+    </div>
+    <pre id="app"># Digest for date: 2026-10-31
+
+## BBC News
+[Why a toxic choking haze has gripped Indonesia for months | BBC News](https://www.youtube.com/watch?v=2izq7nMcsa4)
+[Are farmers and ranchers turning on Trump in Kansas? | BBC News](https://www.youtube.com/watch?v=lOnYUMxff6g)
+
+## Bear Blog Trending Posts
+[Why Training Can Keep Improving at the Edge of Stability](https://observations.frwd.dev/training-at-the-edge-of-stability/)
+
+## Bubbles Briefing
+[Bubbles Briefing — Saturday, October 31, 2026](https://bubbles.town/briefing/2026-10-31)
+
+## Hacker News
+[Tell HN: Scribd Breached](https://news.ycombinator.com/item?id=50312756)
+[Tools Hacker News keeps asking for](https://stillunbuilt.shiptiffin.app/)
+[OpenAI raises less than half of $30B target](https://www.wsj.com/tech/ai/openai-raises-less-than-half-of-30-billion-target-in-latest-round-91aecdc5)
+[Flock camera searches fell 95% after a dispatcher's misconduct was caught](https://www.wkyc.com/article/news/investigations/flock-camera-searches-fall-95-percent-highland-heights-dispatcher-misconduct-caught/95-94b18f33-60e2-4bc7-a00f-d71d1e1fdd5e)
+
+## Hank Green
+[Why Halloween is the Best American Holiday](https://www.youtube.com/watch?v=Lz-XZJ--q1k)
+
+## LessWrong
+[Childhood and Education #22: Voice Without Exit](https://www.lesswrong.com/posts/2STd6qthbJS6fqxBr/childhood-and-education-22-voice-without-exit)
+
+## World News
+[/r/WorldNews Live Thread: Russian Invasion of Ukraine Day 1711, Part 1 (Thread #1858)](https://www.reddit.com/r/worldnews/comments/1xk0g20/rworldnews_live_thread_russian_invasion_of/)
+[Canada pledges 500 million euros toward Ukraine support loan amid 2027 budget shortfall](https://www.reddit.com/r/worldnews/comments/1xjyusd/canada_pledges_500_million_euros_toward_ukraine/)
+[Brazil summons Argentinian diplomat over Bolsonaro’s flight to US](https://www.reddit.com/r/worldnews/comments/1xjyjze/brazil_summons_argentinian_diplomat_over/)
+[Pope Leo XIV becomes first pope to vote in U.S. election](https://www.reddit.com/r/worldnews/comments/1xk1r34/pope_leo_xiv_becomes_first_pope_to_vote_in_us/)
+[Canada stops using 'avalanche dogs' for rescues in Rocky Mountains, stirring outrage.](https://www.reddit.com/r/worldnews/comments/1xjy67e/canada_stops_using_avalanche_dogs_for_rescues_in/)
+[Canada is taking steps toward becoming European Union's first associate member](https://www.reddit.com/r/worldnews/comments/1xjzdat/canada_is_taking_steps_toward_becoming_european/)
+
+## YourStory RSS Feed
+[This art festival reveals why the creative economy is as much about audiences as creators](https://yourstory.com/2026/10/contemporary-now-art-festival-creative-economy-photography)
+[Binance hit with $6.3B breach; Delhivery reports net profit of Rs 41 Cr in Q2](https://yourstory.com/2026/10/binance-hit-with-63b-breach-delhivery-reports-net-profit-of-rs-41-cr-in-q2)
+
+## freefincal
+[What does it take to become a successful equity mutual fund investor?](https://freefincal.com/what-does-it-take-to-become-a-successful-equity-mutual-fund-investor/)
+
+## lobste.rs
+[The support case of a customer who said that all they could see was a black screen](https://devblogs.microsoft.com/oldnewthing/20261029-00/?p=112808/)
+[Tactical-Retreat: a freely available, multi-platform QuakeC-based Counter-Strike v1.5 port](https://www.frag-net.com/project_tacticalretreat.html)
+[Clojure/Conj 2026](http://www.youtube.com/playlist?list=PLAkHRk3lgU_Q)
+</pre>
+    <div id="render"></div>
+    <script src="https://cdn.jsdelivr.net/npm/marked/lib/marked.umd.js"></script>
+    <script>
+        let pre = document.getElementById('app')
+        let render = document.getElementById('render')
+        let md = pre.innerText?.split("\n").filter(t => t !== "\n").map(t => t.trim()).join("\n\n");
+        render.innerHTML = marked.parse(md);
+        let links = Array.from(document.querySelectorAll('#render a'));
+        document.querySelector('h1').innerText = document.querySelector('h1').innerText + ' — ' + links.length + ' links.'
+    </script>
+</body>
+
+</html>
