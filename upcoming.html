@@ -1,0 +1,120 @@
+<html>
+
+<head>
+    <title>Digest</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-weight: 400;
+            font-family:
+                system-ui,
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                Roboto,
+                Oxygen,
+                Ubuntu,
+                Cantarell,
+                "Open Sans",
+                "Helvetica Neue",
+                sans-serif;
+            font-size: 16px;
+        }
+
+        body {
+            font-size: 1rem;
+            padding: 1rem;
+        }
+
+        p {
+            margin-bottom: 0.5rem;
+        }
+
+        h1 {
+            margin-bottom: 2rem;
+            font-weight: bold;
+        }
+
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin-top: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+
+
+        pre#app {
+            display: none;
+        }
+
+        #links { display: flex; gap: 0.5rem; align-content: center; margin-bottom: 1rem; }
+
+        hr { height: 1px; background: #ccc; margin: 1rem 0; border: 0 !important; }
+
+        #render p { margin-top: 0.75rem; }
+
+    </style>
+</head>
+
+<body>
+    <div id="links">
+        <a href="./upcoming.html">Upcoming</a>
+        <a href="./">Latest</a>
+        <a href="./previous.html">Previous</a>
+    </div>
+    <pre id="app"># Digest for date: 2026-11-14
+
+## AskPhilosophy: Philosophical questions and answers
+[Question to the philosophers of Reddit from a layman—what gives us the right?](https://www.reddit.com/r/askphilosophy/comments/1xvuyh1/question_to_the_philosophers_of_reddit_from_a/)
+[Best approach for studying Whitehead without mathematics background?](https://www.reddit.com/r/askphilosophy/comments/1xvpop5/best_approach_for_studying_whitehead_without/)
+[Should I annotate my first philosophy books?](https://www.reddit.com/r/askphilosophy/comments/1xvs5z0/should_i_annotate_my_first_philosophy_books/)
+[What makes the Mary's Room thought experiment a problem for materialism/physicalism?](https://www.reddit.com/r/askphilosophy/comments/1xvpgts/what_makes_the_marys_room_thought_experiment_a/)
+[Moral lines no one would ever cross?](https://www.reddit.com/r/askphilosophy/comments/1xvuldq/moral_lines_no_one_would_ever_cross/)
+
+## Big Think
+[Listen: The imperfect world of pulsars](https://bigthink.com/starts-with-a-bang/listen-imperfect-world-pulsars/)
+
+## Bubbles Briefing
+[Bubbles Briefing — Saturday, November 14, 2026](https://bubbles.town/briefing/2026-11-14)
+
+## Hacker News
+[Ggml v1.0.0](https://github.com/ggml-org/ggml/releases/tag/v1.0.0)
+[Nvidia Allegedly Engineered Scarcity by Funding AI Startups to Buy Its GPUs](https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus)
+[Unsloth Qwen3.8-27B Quantizations – Dynamic v3.1 Update](https://unsloth.ai/docs/models/qwen3.8)
+[Elephants found to be increasingly isolated leading to fractured social networks](https://today.ucsd.edu/story/elephants-found-to-be-increasingly-isolated-leading-to-fractured-social-networks)
+[Nvidia director sold nearly $1B in stock weeks before the Jensen Huang scandal](https://finance.yahoo.com/markets/stocks/articles/nvidia-director-sold-nearly-1b-160000846.html)
+[Amtrak booking system experiencing major issues amid nationwide FAA ground stop](https://www.fox5dc.com/news/amtrak-outage-ticket-booking-faa-ground-stop-november-13-2026)
+[Philip Roth and David Remnick getting personal (2001)](https://salmagundi.skidmore.edu/articles/2001-philip-roth-david-remnick)
+[Security Agencies Worldwide Found to Use Ad-Based Surveillance System](https://citizenlab.ca/security-agencies-worldwide-found-to-use-ad-based-surveillance-system/)
+
+## YourStory RSS Feed
+[How art exhibitions provide unmatched experiences of aesthetics, scale and technique](https://yourstory.com/2026/11/lalit-kala-akademi-art-exhibition-experience-creativity-photography)
+[Microsoft’s global outage; Vidya Balan’s call to put child safety first](https://yourstory.com/2026/11/microsofts-global-outage-vidya-balan-call-child-safety-first)
+
+## freefincal
+[A Strategy to Minimize Risk in Your Investment Portfolio](https://freefincal.com/a-strategy-to-minimize-risk-in-your-investment-portfolio/)
+
+## lobste.rs
+[What happened to 3com?](https://dfarq.homeip.net/what-happened-to-3com/)
+[The Little Book of Generative AI Foundations: An Intuitive Mathematical Primer](https://arxiv.org/abs/2605.29713)
+[Writing a DSL for high performance parallel programming in OxCaml](https://blog.janestreet.com/writing-a-dsl-for-high-performance-parallel-programming-in-oxcaml/)
+</pre>
+    <div id="render"></div>
+    <script src="https://cdn.jsdelivr.net/npm/marked/lib/marked.umd.js"></script>
+    <script>
+        let pre = document.getElementById('app')
+        let render = document.getElementById('render')
+        let md = pre.innerText?.split("\n").filter(t => t !== "\n").map(t => t.trim()).join("\n\n");
+        render.innerHTML = marked.parse(md);
+        let links = Array.from(document.querySelectorAll('#render a'));
+        document.querySelector('h1').innerText = document.querySelector('h1').innerText + ' — ' + links.length + ' links.'
+    </script>
+</body>
+
+</html>
