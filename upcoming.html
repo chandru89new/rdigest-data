@@ -1,0 +1,119 @@
+<html>
+
+<head>
+    <title>Digest</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-weight: 400;
+            font-family:
+                system-ui,
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                Roboto,
+                Oxygen,
+                Ubuntu,
+                Cantarell,
+                "Open Sans",
+                "Helvetica Neue",
+                sans-serif;
+            font-size: 16px;
+        }
+
+        body {
+            font-size: 1rem;
+            padding: 1rem;
+        }
+
+        p {
+            margin-bottom: 0.5rem;
+        }
+
+        h1 {
+            margin-bottom: 2rem;
+            font-weight: bold;
+        }
+
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin-top: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+
+
+        pre#app {
+            display: none;
+        }
+
+        #links { display: flex; gap: 0.5rem; align-content: center; margin-bottom: 1rem; }
+
+        hr { height: 1px; background: #ccc; margin: 1rem 0; border: 0 !important; }
+
+        #render p { margin-top: 0.75rem; }
+
+    </style>
+</head>
+
+<body>
+    <div id="links">
+        <a href="./upcoming.html">Upcoming</a>
+        <a href="./">Latest</a>
+        <a href="./previous.html">Previous</a>
+    </div>
+    <pre id="app"># Digest for date: 2026-10-24
+
+## AskPhilosophy: Philosophical questions and answers
+[Why do many philosophers seem to think meaning and value of life exist?](https://www.reddit.com/r/askphilosophy/comments/1xdzhse/why_do_many_philosophers_seem_to_think_meaning/)
+[Natural Deduction Help Request](https://www.reddit.com/r/askphilosophy/comments/1xdu5g4/natural_deduction_help_request/)
+[Book recommendations](https://www.reddit.com/r/askphilosophy/comments/1xdvjl6/book_recommendations/)
+
+## Bubbles Briefing
+[Bubbles Briefing — Saturday, October 24, 2026](https://bubbles.town/briefing/2026-10-24)
+
+## Hacker News
+[Twelve years of distributed SQLite](https://philipotoole.com/twelve-years-of-distributed-sqlite/)
+[Alzheimer's breakthrough: 2 hrs of sleep restored without clearing brain plaques](https://www.sciencedaily.com/releases/2026/10/261018084421.htm)
+
+## Haskell Community - Latest topics
+[Haskell.ing, a Haskell Learning site](https://discourse.haskell.org/t/haskell-ing-a-haskell-learning-site/14890)
+
+## LessWrong
+[Simulated Control Evaluations](https://www.lesswrong.com/posts/uXiqyoKwpfjWfQXk5/simulated-control-evaluations)
+[The Hackening](https://www.lesswrong.com/posts/iqgZaJMnmyDCYfnuC/the-hackening-1)
+
+## Sympolymathesy, by Chris Krycho
+[[journal] 80/20 Endurance Norwegian Marathon Plan Review](https://v5.chriskrycho.com/journal/80-20-endurance-norwegian-marathon-plan-review/)
+
+## YourStory RSS Feed
+[Rs 10,000 Cr into restaurants. But why do 80% fail? Here's the Hotshare F&B investment playbook](https://yourstory.com/2026/10/the-hotshare-fb-investment-playbook)
+[Why India’s flying taxi revolution begins with electric air ambulances](https://yourstory.com/2026/10/why-indias-flying-taxi-revolution-begins-with-electric-air-ambulances)
+[Infosys AI revenue jumps 29%; Apple’s foldable iPhone fully pre-booked in week 1](https://yourstory.com/2026/10/infosys-ai-revenue-jumps-29-but-growth-outlook-dims)
+
+## freefincal
+[FD Alternatives for 1–2 Years: What the Rolling Returns Show](https://freefincal.com/fd-alternatives-for-1-2-years-what-the-rolling-returns-show/)
+
+## lobste.rs
+[Indian government sites are serving revoked eMudhra certificates](https://captnemo.in/blog/2026/10/23/emsign-revoked-gov-in/)
+[An Incremental Approach to JIT Construction](https://dl.acm.org/doi/pdf/10.1145/3830440.3832304)
+</pre>
+    <div id="render"></div>
+    <script src="https://cdn.jsdelivr.net/npm/marked/lib/marked.umd.js"></script>
+    <script>
+        let pre = document.getElementById('app')
+        let render = document.getElementById('render')
+        let md = pre.innerText?.split("\n").filter(t => t !== "\n").map(t => t.trim()).join("\n\n");
+        render.innerHTML = marked.parse(md);
+        let links = Array.from(document.querySelectorAll('#render a'));
+        document.querySelector('h1').innerText = document.querySelector('h1').innerText + ' — ' + links.length + ' links.'
+    </script>
+</body>
+
+</html>
