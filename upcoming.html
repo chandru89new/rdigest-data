@@ -1,0 +1,127 @@
+<html>
+
+<head>
+    <title>Digest</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-weight: 400;
+            font-family:
+                system-ui,
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                Roboto,
+                Oxygen,
+                Ubuntu,
+                Cantarell,
+                "Open Sans",
+                "Helvetica Neue",
+                sans-serif;
+            font-size: 16px;
+        }
+
+        body {
+            font-size: 1rem;
+            padding: 1rem;
+        }
+
+        p {
+            margin-bottom: 0.5rem;
+        }
+
+        h1 {
+            margin-bottom: 2rem;
+            font-weight: bold;
+        }
+
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin-top: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+
+
+        pre#app {
+            display: none;
+        }
+
+        #links { display: flex; gap: 0.5rem; align-content: center; margin-bottom: 1rem; }
+
+        hr { height: 1px; background: #ccc; margin: 1rem 0; border: 0 !important; }
+
+        #render p { margin-top: 0.75rem; }
+
+    </style>
+</head>
+
+<body>
+    <div id="links">
+        <a href="./upcoming.html">Upcoming</a>
+        <a href="./">Latest</a>
+        <a href="./previous.html">Previous</a>
+    </div>
+    <pre id="app"># Digest for date: 2026-09-26
+
+## AskPhilosophy: Philosophical questions and answers
+[Is it okay for a 13 year old to study Philosophy?](https://www.reddit.com/r/askphilosophy/comments/1wqfzuh/is_it_okay_for_a_13_year_old_to_study_philosophy/)
+[Why does every moral philosophy have edge cases with horrifying implications?](https://www.reddit.com/r/askphilosophy/comments/1wqgn90/why_does_every_moral_philosophy_have_edge_cases/)
+[Is Hegel's logic just a prolix Heraclitus?](https://www.reddit.com/r/askphilosophy/comments/1wqczob/is_hegels_logic_just_a_prolix_heraclitus/)
+[I'm not a fascist but why do some philosophers who define fascism ignore what fascists themselves understood about their ideology that they themselves developed?](https://www.reddit.com/r/askphilosophy/comments/1wqfh5h/im_not_a_fascist_but_why_do_some_philosophers_who/)
+[My Dispute to Roko's Basilisk](https://www.reddit.com/r/askphilosophy/comments/1wqhf6c/my_dispute_to_rokos_basilisk/)
+[What secondary literature on Anselm should I read if I want to understand his ontological argument?](https://www.reddit.com/r/askphilosophy/comments/1wqg1kr/what_secondary_literature_on_anselm_should_i_read/)
+[Was Socrates' death less "principled sacrifice" and more "attachment to an abstraction" — with Aristotle's survival being the more rational, self-interested choice given what each man had left to lose?](https://www.reddit.com/r/askphilosophy/comments/1wqeerg/was_socrates_death_less_principled_sacrifice_and/)
+
+## Bear Blog Trending Posts
+[i love screensavers](https://rnotte.art/i-love-screensavers/)
+[Out of print](https://zuma9pt5.com/out-of-print/)
+[Built for Steve Jobs](https://thisismylast.bearblog.dev/built-for-steve-jobs/)
+[Been a while, huh?](https://writer-point.com/been-a-while-huh/)
+
+## Bubbles Briefing
+[Bubbles Briefing — Saturday, September 26, 2026](https://bubbles.town/briefing/2026-09-26)
+
+## Hacker News
+[A single function Jev-like wrapper for LLMs, including vision models](http://allanrbo.blogspot.com/2026/09/a-jev-like-wrapper-for-llms-including.html)
+[We're gonna need a lot more mathematicians](https://terrytao.wordpress.com/2026/09/24/were-gonna-need-a-lot-more-mathematicians/)
+[Jury finds Facebook liable for deceiving users in Cambridge Analytica case](https://www.cbsnews.com/news/facebook-liable-deceiving-users-cambridge-analytica/)
+[One Piece of Flock Camera Data Put This Innocent Woman in Jail for 13 Days](https://www.jezebel.com/flock-cameras-data-innocent-woman-arrested-lindsey-isaacs-palm-beach-florida-lawsuit-vehicular-homicide)
+[TiddlyInstall: A universal, reusable, install system](https://robertsdotpm.github.io/_static/tiddlyinstall.html)
+[Show HN: A game about fake news and memes](https://unspin.app/)
+
+## LessWrong
+[Plan R: AI Safety by ASICs](https://www.lesswrong.com/posts/n8u3BfqFoGh4jnzpo/plan-r-ai-safety-by-asics)
+
+## PureScript Language Forum - Latest posts
+[Leveraging modern low-level: a Rust backend for PureScript](https://discourse.purescript.org/t/leveraging-modern-low-level-a-rust-backend-for-purescript/5932?page=2#post_28)
+[Leveraging modern low-level: a Rust backend for PureScript](https://discourse.purescript.org/t/leveraging-modern-low-level-a-rust-backend-for-purescript/5932?page=2#post_27)
+
+## YourStory RSS Feed
+[India’s connected car push: How simulation is preparing vehicles for real-world chaos](https://yourstory.com/2026/09/connected-car-push-simulation-making-vehicles-safer-dspace)
+[Community, knowledge, media: Museum of Art and Photography features two diverse exhibitions](https://yourstory.com/2026/09/community-knowledge-media-museum-art-photography-exhibitions)
+[India’s shooting stars win gold at Asian Games; Meet the solar didis of Bihar](https://yourstory.com/2026/09/indias-shooting-stars-win-gold-at-asian-games)
+
+## lobste.rs
+[NetBSD Playing with disklabels](https://movq.de/blog/postings/2026-09-25/0/POSTING-en.html)
+[Keep if clauses side-effect free](https://www.teamten.com/lawrence/programming/keep-if-clauses-side-effect-free.html)
+</pre>
+    <div id="render"></div>
+    <script src="https://cdn.jsdelivr.net/npm/marked/lib/marked.umd.js"></script>
+    <script>
+        let pre = document.getElementById('app')
+        let render = document.getElementById('render')
+        let md = pre.innerText?.split("\n").filter(t => t !== "\n").map(t => t.trim()).join("\n\n");
+        render.innerHTML = marked.parse(md);
+        let links = Array.from(document.querySelectorAll('#render a'));
+        document.querySelector('h1').innerText = document.querySelector('h1').innerText + ' — ' + links.length + ' links.'
+    </script>
+</body>
+
+</html>
