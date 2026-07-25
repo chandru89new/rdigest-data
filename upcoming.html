@@ -1,0 +1,107 @@
+<html>
+
+<head>
+    <title>Digest</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-weight: 400;
+            font-family:
+                system-ui,
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                Roboto,
+                Oxygen,
+                Ubuntu,
+                Cantarell,
+                "Open Sans",
+                "Helvetica Neue",
+                sans-serif;
+            font-size: 16px;
+        }
+
+        body {
+            font-size: 1rem;
+            padding: 1rem;
+        }
+
+        p {
+            margin-bottom: 0.5rem;
+        }
+
+        h1 {
+            margin-bottom: 2rem;
+            font-weight: bold;
+        }
+
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin-top: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+
+
+        pre#app {
+            display: none;
+        }
+
+        #links { display: flex; gap: 0.5rem; align-content: center; margin-bottom: 1rem; }
+
+        hr { height: 1px; background: #ccc; margin: 1rem 0; border: 0 !important; }
+
+        #render p { margin-top: 0.75rem; }
+
+    </style>
+</head>
+
+<body>
+    <div id="links">
+        <a href="./upcoming.html">Upcoming</a>
+        <a href="./">Latest</a>
+        <a href="./previous.html">Previous</a>
+    </div>
+    <pre id="app"># Digest for date: 2026-10-17
+
+## Bubbles Briefing
+[Bubbles Briefing — Saturday, October 17, 2026](https://bubbles.town/briefing/2026-10-17)
+
+## Hacker News
+[Butlerian Jihad](https://dune.fandom.com/wiki/Butlerian_Jihad)
+["In every study that considered the question"](https://unsung.aresluna.org/in-every-study-that-considered-the-question/)
+
+## LessWrong
+[Neural networks are not already clean](https://www.lesswrong.com/posts/Dkh7pXKjoNWkkxQDz/neural-networks-are-not-already-clean)
+[Tips for Multiagent Work with Claude Opus 5.5](https://www.lesswrong.com/posts/5uyo9fsd2wbuzXZE4/tips-for-multiagent-work-with-claude-opus-5-5)
+[Headwinds Everywhere (in the Chinese AI Safety Field)](https://www.lesswrong.com/posts/AdM6Sdg5fZPnrHWSe/headwinds-everywhere-in-the-chinese-ai-safety-field)
+
+## Tamil Nadu - தமிழ்நாடு
+[Need urgent help from Connemara Library!](https://www.reddit.com/r/TamilNadu/comments/1x7y4py/need_urgent_help_from_connemara_library/)
+
+## YourStory RSS Feed
+[India’s massive AI opportunity; Women entrepreneurs in this year’s Mann Ki Baat](https://yourstory.com/2026/10/india-massive-ai-opportunity-women-entrepreneurship)
+
+## lobste.rs
+[Interactive refactoring in gopls](https://go.dev/blog/interactive-refactoring)
+[orib: Bringing back the old Reddit interface, with a few new enhancements](https://github.com/rajtilakjee/orib)
+</pre>
+    <div id="render"></div>
+    <script src="https://cdn.jsdelivr.net/npm/marked/lib/marked.umd.js"></script>
+    <script>
+        let pre = document.getElementById('app')
+        let render = document.getElementById('render')
+        let md = pre.innerText?.split("\n").filter(t => t !== "\n").map(t => t.trim()).join("\n\n");
+        render.innerHTML = marked.parse(md);
+        let links = Array.from(document.querySelectorAll('#render a'));
+        document.querySelector('h1').innerText = document.querySelector('h1').innerText + ' — ' + links.length + ' links.'
+    </script>
+</body>
+
+</html>
