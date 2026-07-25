@@ -1,0 +1,120 @@
+<html>
+
+<head>
+    <title>Digest</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-weight: 400;
+            font-family:
+                system-ui,
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                Roboto,
+                Oxygen,
+                Ubuntu,
+                Cantarell,
+                "Open Sans",
+                "Helvetica Neue",
+                sans-serif;
+            font-size: 16px;
+        }
+
+        body {
+            font-size: 1rem;
+            padding: 1rem;
+        }
+
+        p {
+            margin-bottom: 0.5rem;
+        }
+
+        h1 {
+            margin-bottom: 2rem;
+            font-weight: bold;
+        }
+
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin-top: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+
+
+        pre#app {
+            display: none;
+        }
+
+        #links { display: flex; gap: 0.5rem; align-content: center; margin-bottom: 1rem; }
+
+        hr { height: 1px; background: #ccc; margin: 1rem 0; border: 0 !important; }
+
+        #render p { margin-top: 0.75rem; }
+
+    </style>
+</head>
+
+<body>
+    <div id="links">
+        <a href="./upcoming.html">Upcoming</a>
+        <a href="./">Latest</a>
+        <a href="./previous.html">Previous</a>
+    </div>
+    <pre id="app"># Digest for date: 2026-10-03
+
+## AskPhilosophy: Philosophical questions and answers
+[Is tenacity admirable even if it is in service of a morally unnecessary goal](https://www.reddit.com/r/askphilosophy/comments/1wwfl97/is_tenacity_admirable_even_if_it_is_in_service_of/)
+[Have there been any works or efforts to integrate philosophy into decision-making at the political level ?](https://www.reddit.com/r/askphilosophy/comments/1wwcz0w/have_there_been_any_works_or_efforts_to_integrate/)
+
+## Bubbles Briefing
+[Bubbles Briefing — Saturday, October 3, 2026](https://bubbles.town/briefing/2026-10-03)
+
+## Hacker News
+[Newgrounds.com – A community of games, music, and art](https://www.newgrounds.com/)
+[Extra Big Ass Intelligence](https://www.extrabigassintelligence.com/)
+[Cloudflare OHTTP gateway](https://blog.cloudflare.com/announcing-cloudflare-ohttp-gateway/)
+[Things that apparently cause cancer](https://www.breakthroughjournal.org/p/things-that-apparently-cause-cancer)
+[NTSB Preliminary Report: Prime Air 767 Runway Overrun [pdf]](https://www.ntsb.gov/investigations/Documents/DCA26MA352%20Prelim.pdf)
+[Where Is the Planet](http://whereistheplanet.com)
+[What if AI worked at 1.000.000 tokens per seconds?](https://www.echohive.ai/one-million-tokens-per-second)
+
+## LessWrong
+[How to apply to AI safety fellowships (and beyond)](https://www.lesswrong.com/posts/PiP4JqQFKhoqHGG2n/how-to-apply-to-ai-safety-fellowships-and-beyond)
+[[Video] Why acausal dynamics are important](https://www.lesswrong.com/posts/eXiP9A5KnkatjAX7y/video-why-acausal-dynamics-are-important)
+
+## The Marginalian
+[The Dandelion and the Meaning of Life: G.K. Chesterton on How to Live in Wonder](https://www.themarginalian.org/2026/10/03/g-k-chesterton-dandelion/)
+[Ocean of Stars: A Painted Poem About How to Bear the Astonishment of Life](https://www.themarginalian.org/2026/10/02/ocean-of-stars-azita-ardakani/)
+[How Do You Know That You Love Somebody? Philosopher Martha Nussbaum’s Incompleteness Theorem of the Heart’s Truth, from Plato to Proust](https://www.themarginalian.org/2026/10/02/martha-nussbaum-loves-knowledge/)
+
+## YourStory RSS Feed
+[Business trends and success tips: entrepreneur advice from Gifts World Expo](https://yourstory.com/2026/10/business-trends-success-tips-entrepreneur-advice-gifts-world-expo-photography)
+[Quantum World Ventures looks to move the technology beyond the lab](https://yourstory.com/2026/10/quantum-world-ventures-looks-to-move-the-technology-beyond-the-lab)
+[Women power India to Asian Games gold in hockey, boxing](https://yourstory.com/2026/10/women-power-india-to-asian-games-gold-in-hockey-boxing)
+
+## lobste.rs
+[gVisor is being donated to CNCF](https://gvisor.dev/blog/2026/10/02/gvisor-cncf/)
+[Upstream Rust maintenance report](https://kobzol.github.io/rust/2026/09/30/stf-august-september-2026.html)
+[The Era of Programming Languages Exploration is upon Us](https://kirancodes.me/posts/log-end-of-pl.html)
+</pre>
+    <div id="render"></div>
+    <script src="https://cdn.jsdelivr.net/npm/marked/lib/marked.umd.js"></script>
+    <script>
+        let pre = document.getElementById('app')
+        let render = document.getElementById('render')
+        let md = pre.innerText?.split("\n").filter(t => t !== "\n").map(t => t.trim()).join("\n\n");
+        render.innerHTML = marked.parse(md);
+        let links = Array.from(document.querySelectorAll('#render a'));
+        document.querySelector('h1').innerText = document.querySelector('h1').innerText + ' — ' + links.length + ' links.'
+    </script>
+</body>
+
+</html>
